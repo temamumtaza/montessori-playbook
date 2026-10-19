@@ -131,10 +131,12 @@ export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDa
   )
 }
 
-function AddChildForm({ onAdd }: { onAdd: (nickname: string, birthDate: string) => void }) {
+function AddChildForm({ onAdd }: { onAdd: (nickname: string, birthDate: string, avatar?: string) => void }) {
   const [open, setOpen] = useState(false)
   const [nickname, setNickname] = useState('')
   const [birth, setBirth] = useState('')
+  const [avatar, setAvatar] = useState('🐥')
+  const avatars = ['🐥', '🧸', '🎈', '☀️', '🌿', '🚂', '🎨', '🚀']
 
   if (!open)
     return (
@@ -152,10 +154,30 @@ function AddChildForm({ onAdd }: { onAdd: (nickname: string, birthDate: string) 
       onSubmit={(e) => {
         e.preventDefault()
         if (!nickname.trim() || !birth) return
-        onAdd(nickname.trim(), birth)
-        setNickname(''); setBirth(''); setOpen(false)
+        onAdd(nickname.trim(), birth, avatar)
+        setNickname(''); setBirth(''); setAvatar('🐥'); setOpen(false)
       }}
     >
+      <div>
+        <p className="text-sm font-semibold mb-2">Pilih avatar</p>
+        <div className="grid grid-cols-4 gap-2" role="radiogroup" aria-label="Avatar anak">
+          {avatars.map((option) => (
+            <button
+              key={option}
+              type="button"
+              role="radio"
+              aria-checked={avatar === option}
+              aria-label={`Avatar ${option}`}
+              onClick={() => setAvatar(option)}
+              className={`w-12 h-12 rounded-full bg-sky-50 dark:bg-navy-700 text-2xl grid place-items-center transition ${
+                avatar === option ? 'ring-4 ring-sky-300 dark:ring-sky-600' : 'ring-1 ring-sky-100 dark:ring-navy-600'
+              }`}
+            >
+              {option}
+            </button>
+          ))}
+        </div>
+      </div>
       <input
         value={nickname}
         onChange={(e) => setNickname(e.target.value)}

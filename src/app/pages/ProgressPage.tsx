@@ -38,6 +38,11 @@ export function ProgressPage() {
         <p className="text-sm opacity-75 mt-1">
           {doneCount} tanda dicatat. Setiap anak punya tempo sendiri — ini peta, bukan lomba.
         </p>
+        {milestones.length > 0 && (
+          <a href="#/belajar" className="mt-3 inline-flex items-center rounded-full border border-sky-600 bg-white/80 px-4 min-h-[48px] font-semibold text-sky-700 dark:border-sky-300 dark:bg-navy-800/80 dark:text-sky-200">
+            🚩 Lihat red flags usia ini
+          </a>
+        )}
       </section>
 
       {milestones.length === 0 ? (

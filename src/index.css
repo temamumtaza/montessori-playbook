@@ -118,6 +118,9 @@ button, nav, header, [role='tablist'], .no-select {
   animation: pageIn 0.22s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
+.shadow-sky-sm { box-shadow: 0 4px 16px rgba(2,132,199,.08); }
+.shadow-sky-md { box-shadow: 0 8px 24px rgba(2,132,199,.12); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;

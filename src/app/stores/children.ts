@@ -6,6 +6,7 @@ export type Child = {
   id: string
   nickname: string
   birthDate: string // ISO date
+  avatar?: string
 }
 
 export function ageBandFromBirth(birthDate: string, now = new Date()): AgeBandId {
@@ -26,7 +27,7 @@ type ChildStore = {
   children: Child[]
   activeId: string | null
   onboarded: boolean
-  addChild: (nickname: string, birthDate: string) => void
+  addChild: (nickname: string, birthDate: string, avatar?: string) => void
   setActive: (id: string) => void
   removeChild: (id: string) => void
 }
@@ -37,10 +38,10 @@ export const useChildStore = create<ChildStore>()(
       children: [],
       activeId: null,
       onboarded: false,
-      addChild: (nickname, birthDate) => {
+      addChild: (nickname, birthDate, avatar) => {
         const id = crypto.randomUUID()
         set((s) => ({
-          children: [...s.children, { id, nickname, birthDate }],
+          children: [...s.children, { id, nickname, birthDate, avatar }],
           activeId: s.activeId ?? id,
           onboarded: true,
         }))

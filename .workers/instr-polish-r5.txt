@@ -1,0 +1,14 @@
+Kamu senior React+TS developer. Proyek: PWA Montessori Playbook (Vite+React18+TS+Tailwind v4 CSS-first, HashRouter, design: sky palette, kartu rounded-3xl bg-white dark:bg-navy-800, dark mode navy). TypeScript strict. JANGAN menyentuh file selain yang disebut.
+
+TIGA PERBAIKAN:
+
+1. ONBOARDING AVATAR PICKER (komponen wajib desain) — file: src/app/pages/MorePage.tsx
+   Di AddChildForm, tambah pilihan avatar SEBELUM input nama: grid 8 pilihan bulat (emoji maskot app): 🐥 🧸 🎈 ☀️ 🌿 🚂 🎨 🚀 — masing-masing button bulat 48px+ dengan ring saat terpilih (role=radio, aria-checked, state selected). Simpan pilihan ke state; Child type di src/app/stores/children.ts dapat field opsional `avatar?: string` — update addChild signature jadi (nickname, birthDate, avatar?) dan simpan. Di pemakaian avatar (TodayPage child switcher — cari `{cBand?.mascot ?? '🙂'}`) tampilkan `child.avatar ?? cBand?.mascot ?? '🙂'`.
+
+2. RED FLAGS LINK DARI PROGRES — file: src/app/pages/ProgressPage.tsx
+   Di bawah section gradient atas (setelah <p>), tambah link jelas: <a href="#/belajar" className="...tombol pill putih/outline min-h-[48px]...">🚩 Lihat red flags usia ini</a> (hanya render bila milestones.length > 0).
+
+3. SHADOW TOKEN SKY-TINTED — file: src/index.css
+   Tambah utility class: .shadow-sky-sm { box-shadow: 0 4px 16px rgba(2,132,199,.08); } .shadow-sky-md { box-shadow: 0 8px 24px rgba(2,132,199,.12); } (letakkan sebelum @media prefers-reduced-motion). Lalu di src/app/pages/TodayPage.tsx dan PlaybookPage.tsx GANTI semua `shadow-sm` pada kartu article/div menjadi `shadow-sky-sm` (pakai replace all — hati-hati jangan ubah shadow-md di tombol). 
+
+SETELAH selesai: npm run typecheck (harus 0 error) lalu npm run build (sukses). Jawab terakhir: DONE POLISH-R5

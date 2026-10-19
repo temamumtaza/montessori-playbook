@@ -41,7 +41,30 @@
     <div id="boot-splash">
       <div class="logo">☁️</div>
     </div>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Prerendered app shell: tampil instan sebelum React hydrate (native-feel, LCP dari HTML) -->
+      <header class="sticky top-0" style="background:rgba(240,249,255,.85);backdrop-filter:blur(12px);padding-top:max(env(safe-area-inset-top),8px)">
+        <div style="padding:0 20px 8px;height:84px">
+          <h1 style="font:700 30px/84px system-ui,-apple-system,sans-serif;color:#0369a1;margin:0">Hari Ini</h1>
+        </div>
+      </header>
+      <main style="padding:8px 20px 112px">
+        <div style="background:linear-gradient(135deg,#e0f2fe,#fdfaf3);border-radius:28px;padding:24px;text-align:center">
+          <div style="width:96px;height:96px;margin:0 auto;border-radius:30px;background:linear-gradient(135deg,#7dd3fc,#0284c7);display:flex;align-items:center;justify-content:center;font-size:48px;box-shadow:0 8px 24px rgba(14,165,233,.35)">☁️</div>
+          <div style="font:700 24px system-ui,-apple-system,sans-serif;color:#075985;margin-top:16px">Selamat datang!</div>
+          <div style="height:14px;width:70%;margin:12px auto 0;border-radius:7px;background:#bae6fd"></div>
+          <div style="height:14px;width:50%;margin:8px auto 0;border-radius:7px;background:#e0f2fe"></div>
+          <div style="height:48px;width:60%;margin:18px auto 0;border-radius:24px;background:#0284c7"></div>
+        </div>
+      </main>
+      <nav style="position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-top:1px solid #e0f2fe;display:grid;grid-template-columns:repeat(5,1fr);padding-bottom:env(safe-area-inset-bottom)">
+        <span style="padding:10px 0;text-align:center;font:500 11px system-ui;color:#0284c7">☀️<br/>Hari Ini</span>
+        <span style="padding:10px 0;text-align:center;font:500 11px system-ui;color:#0c4a6e73">📖<br/>Playbook</span>
+        <span style="padding:10px 0;text-align:center;font:500 11px system-ui;color:#0c4a6e73">📝<br/>Jurnal</span>
+        <span style="padding:10px 0;text-align:center;font:500 11px system-ui;color:#0c4a6e73">🌱<br/>Progres</span>
+        <span style="padding:10px 0;text-align:center;font:500 11px system-ui;color:#0c4a6e73">⋯<br/>Lainnya</span>
+      </nav>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     <!-- SW registration via src/app/pwa.ts (sudah dipanggil di main.tsx); registerSW.js redundan dimatikan via plugin config -->
   </body>

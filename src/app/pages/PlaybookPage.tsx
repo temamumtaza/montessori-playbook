@@ -107,7 +107,7 @@ export function PlaybookPage() {
               const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-500 to-sky-700'
               return (
                 <li key={a.id}>
-                  <article className="relative rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition">
+                  <article className="relative rounded-3xl bg-white dark:bg-navy-800 shadow-sky-sm overflow-hidden active:scale-[0.98] transition">
                     <a href={`#/aktivitas/${a.id}`} aria-label={a.title} className="block">
                       <div className={`relative h-24 bg-gradient-to-br ${grad} grid place-items-center bg-black/15 bg-blend-overlay`}>
                         <AreaIcon area={a.areas[0]} className="w-11 h-11 text-white/95 drop-shadow" />

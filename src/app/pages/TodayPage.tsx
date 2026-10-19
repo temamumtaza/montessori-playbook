@@ -92,7 +92,7 @@ export function TodayPage() {
                 }`}
               >
                 <span className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-200 to-sky-400 dark:from-navy-600 dark:to-navy-500 grid place-items-center text-lg" aria-hidden>
-                  {cBand?.mascot ?? '🙂'}
+                  {c.avatar ?? cBand?.mascot ?? '🙂'}
                 </span>
                 <span className="text-left leading-tight">
                   <span className="block text-sm font-semibold">{c.nickname}</span>
@@ -132,7 +132,7 @@ export function TodayPage() {
               const area = areaById(a.areas[0])
               const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-500 to-sky-700'
               return (
-                <article key={a.id} className="relative snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.97] transition">
+                <article key={a.id} className="relative snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sky-sm overflow-hidden active:scale-[0.97] transition">
                   <a href={`#/aktivitas/${a.id}`} aria-label={a.title} className="block">
                     <div className={`relative h-28 bg-gradient-to-br ${grad} grid place-items-center bg-black/15 bg-blend-overlay`}>
                       <AreaIcon area={a.areas[0]} className="w-14 h-14 text-white/95 drop-shadow" />
@@ -164,7 +164,7 @@ export function TodayPage() {
             { n: stats.momen, l: 'momen berharga', c: 'text-apple-600' },
             { n: stats.kebiasaan, l: 'kebiasaan baru', c: 'text-sky-600' },
           ].map((s) => (
-            <div key={s.l} className="rounded-2xl bg-white dark:bg-navy-800 shadow-sm p-2.5 text-center">
+            <div key={s.l} className="rounded-2xl bg-white dark:bg-navy-800 shadow-sky-sm p-2.5 text-center">
               <p className={`font-[family-name:var(--font-display)] font-bold text-xl ${s.c}`}>{s.n}</p>
               <p className="text-[10px] opacity-70 leading-tight mt-0.5">{s.l}</p>
             </div>
@@ -214,7 +214,7 @@ export function OnboardPrompt() {
     <div className="px-5 relative">
       <CloudDeco className="absolute -top-2 -right-2 w-24 text-white/70 dark:text-navy-700" />
       <StarDeco className="absolute top-8 left-4 w-5 text-sunny-400" />
-      <div className="rounded-blob bg-white dark:bg-navy-800 p-6 text-center shadow-sm relative overflow-hidden">
+      <div className="rounded-blob bg-white dark:bg-navy-800 p-6 text-center shadow-sky-sm relative overflow-hidden">
         <Mascot className="w-36 mx-auto" />
         <h1 className="font-[family-name:var(--font-display)] text-lg font-bold"><span className="text-sky-700">Montessori</span> <span className="text-candy-600">Playbook</span></h1>
         <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold mt-2">Selamat datang!</h2>
