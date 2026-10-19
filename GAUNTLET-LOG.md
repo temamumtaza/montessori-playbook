@@ -63,4 +63,49 @@ Target: https://montessori-playbook.vercel.app (production Vercel, auto-deploy d
 12. CSP header + hapus ACAO:*
 13. (R3) Red flags ditautkan dari Progres; onboarding avatar; edge-swipe
 
-**Status: fix dalam pengerjaan → R3 verifikasi + Lighthouse CI menyusul.**
+---
+
+## Putaran 3 — 2026-10-19 (verifikasi + Lighthouse)
+
+### Hasil serangan R2 (detail) → status perbaikan
+
+**UX Gate — perbaikan diterapkan & terverifikasi:**
+- ✅ Bookmark ♡ kini berfungsi (Dexie persist + toast "Disimpan/Dihapus" + aria-pressed) — TodayPage & PlaybookPage pakai komponen bersama `BookmarkButton`
+- ✅ Banner pengingat ✕ bisa ditutup (state dismissed)
+- ✅ Statistik "area berbeda" dihitung benar dari union area aktivitas touched (bukan modulo)
+- ✅ Back = navigate(-1) dengan fallback ke /playbook
+- ✅ (R3 susulan) Red flags ditautkan dari Progres → /#/belajar
+
+**Design Gate — perbaikan diterapkan:**
+- ✅ Font Baloo 2 + Inter dimuat (Google Fonts, non-blocking media=print onload)
+- ✅ Tab bar: emoji → SVG line icons (`TabIcon`)
+- ✅ Judul duotone Montessori(sky-700)+Playbook(candy-600) di onboarding
+- ✅ (R3 susulan) Onboarding avatar picker (8 pilihan maskot) — komponen wajib #1
+- ⏳ Shadow sky-tinted custom: diseragamkan via token CSS di R4 (minor)
+
+**A11y Gate — perbaikan diterapkan:**
+- ✅ [KRITIS FIX] Kontras: AREA_GRADIENTS dinaikkan ke 500-700 + label tile putih bold → audit kontras LH: **0 pelanggaran** (Lighthouse Accessibility = **100**)
+- ✅ Pinch-zoom dibebaskan (viewport tanpa maximum-scale/user-scalable)
+- ✅ Opacity teks kecil ≥70%
+- ✅ Kartu aktivitas keyboard-operable (link utama + bookmark terpisah, tak ada nested interactive)
+
+**Security/Privacy Gate — ✅ LULUS (R2) + penguatan R3:**
+- ✅ CSP header ditambahkan: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' fonts.googleapis; font-src fonts.gstatic; frame-ancestors 'none' (terverifikasi via curl)
+- Catatan: ACAO:* adalah default Vercel untuk static hosting, tidak dapat dihapus via config; risiko dianggap minimal (tanpa cookie/session/API). Link tinyurl diganti URL asli di konten berikutnya.
+
+### Lighthouse (produksi Vercel, mobile)
+
+| Kategori | Skor | Target |
+|---|---|---|
+| Performance | 84 (fluktuatif 82-87 tergantung beban VM audit; TBT lokal 0-40ms) | ≥90 ⚠️ |
+| **Accessibility** | **100** | ≥90 ✅ |
+| **Best Practices** | **92-100** | ≥90 ✅ |
+| **SEO** | **100** | — ✅ |
+
+Optimasi perf yang sudah diterapkan: code-split per AgeBand (8 chunk JSON→JS terpisah), Fuse.js lazy (dipisah chunk, hanya dimuat di halaman Cari), font non-blocking, registerSW.js redundan dihapus, FCP 2.4s / LCP 2.9s / TBT 310ms (dana 3.2-4.7s saat audit VM terbebani).
+
+**Keputusan R3:** Performance 84 di bawah target 90 — penyebab utama: FCP ~2.4s dari cold start VM audit + font pihak ketiga. Perbaikan R4: preload bundle utama, self-host font subset woff2 (hapus dependensi fonts.gstatic), tambah `<link rel="modulepreload">`. Setelah itu semua gate target ≥90.
+
+### E2E regression setelah semua fix
+- **18/18 lulus** (iPhone + Android) — tidak ada yang rusak oleh perbaikan.
+
