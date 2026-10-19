@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import './fonts.css';
 
 @theme {
   /* ===== Brand: SKY BLUE (skala penuh) ===== */
