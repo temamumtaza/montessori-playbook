@@ -9,6 +9,7 @@ import { ActivityDetailPage } from './pages/ActivityDetailPage'
 import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
 import { EnvironmentPage } from './pages/EnvironmentPage'
 import { LearnPage } from './pages/LearnPage'
+import { OnboardingPage } from './pages/OnboardingPage'
 import { UpdateToast } from './components/UpdateToast'
 import { swUpdate } from './pwa'
 import { useChildStore } from './stores/children'
@@ -37,6 +38,7 @@ export default function App() {
       (localStorage.getItem('mp-theme') === null && window.matchMedia('(prefers-color-scheme: dark)').matches),
   )
   const activeChild = useChildStore((s) => s.children[0])
+  const isOnboarding = location.pathname === '/onboarding'
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDark)
@@ -58,12 +60,12 @@ export default function App() {
   return (
     <ScrollCtx.Provider value={{ save: () => {}, get: (t) => scrollMem[t] ?? 0 }}>
       <div className="min-h-dvh bg-sky-50 dark:bg-navy-900 text-sky-900 dark:text-sky-100 transition-colors">
-        {/* Header collapsing large title */}
-        <Header title={titleFor(location.pathname)} />
+        {!isOnboarding && <Header title={titleFor(location.pathname)} />}
 
-        <main className="px-safe pb-28 pt-2 page-enter" key={location.pathname}>
+        <main className={`${isOnboarding ? 'px-safe' : 'px-safe pb-28 pt-2'} page-enter`} key={location.pathname}>
           <Routes location={location}>
             <Route path="/" element={<TodayPage />} />
+            <Route path="/onboarding" element={<OnboardingPage />} />
             <Route path="/playbook" element={<PlaybookPage />} />
             <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
             <Route path="/cari" element={<SearchGlossaryPage />} />
@@ -75,7 +77,7 @@ export default function App() {
           </Routes>
         </main>
 
-        <TabBar tabs={TABS} />
+        {!isOnboarding && <TabBar tabs={TABS} />}
         <UpdateToast swUpdate={swUpdate} />
         {/* a11y: nama anak di judul dinamis */}
         <span className="sr-only" aria-live="polite">{activeChild ? `Profil aktif: ${activeChild.nickname}` : ''}</span>

@@ -20,15 +20,15 @@ for (const [name, device] of [['iphone', iphone], ['android', android]]) {
     })
 
     test('onboarding profil anak → rekomendasi hari ini', async ({ page }) => {
-      await page.goto(BASE + '/#/lainnya', { waitUntil: 'domcontentloaded' })
-      await page.getByRole('button', { name: /Tambah anak/i }).click()
+      await page.goto(BASE + '/#/', { waitUntil: 'domcontentloaded' })
+      await page.getByRole('link', { name: /Buat profil anak/i }).click()
+      await expect(page).toHaveURL(/\/onboarding/)
       await page.getByPlaceholder('Nama panggilan').fill('Tema')
       await page.locator('input[type="date"]').fill('2024-05-10')
-      await page.getByRole('button', { name: 'Simpan' }).click()
-      await expect(page.getByText('Profil anak')).toBeVisible()
-      // ke beranda, harus ada halo
-      await page.goto(BASE + '/#/', { waitUntil: 'domcontentloaded' })
-      await expect(page.getByText(/Halo, Tema/)).toBeVisible({ timeout: 15000 })
+      await page.getByRole('button', { name: 'Lanjut' }).click()
+      await page.getByRole('button', { name: 'Mulai Sekarang' }).click()
+      await expect(page).toHaveURL(/#\/$/)
+      await expect(page.getByText('Halo, Mama Tema')).toBeVisible({ timeout: 15000 })
     })
 
     test('playbook: grid area + filter + buka aktivitas', async ({ page }) => {

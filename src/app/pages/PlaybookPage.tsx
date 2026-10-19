@@ -6,7 +6,7 @@ import { EmptyState, SkeletonCards, AREA_GRADIENTS, BookmarkButton } from './Tod
 import { AreaIcon } from '../components/icons'
 import { AgeBandIcon, IconClock, IconHome } from '../components/ui-icons'
 
-type Filters = { band: AgeBandId | 'semua'; area: string | 'semua'; durasi: 'semua' | 'pendek' | 'sedang'; fromHome: boolean }
+type Filters = { band: AgeBandId | 'semua'; area: string | 'semua'; prepLevel: 'semua' | 'rendah' | 'sedang' | 'tinggi'; durasi: 'semua' | 'pendek' | 'sedang'; fromHome: boolean }
 
 const CHIP_ACTIVE: Record<string, string> = {
   '0-3m': 'bg-sky-500', '3-6m': 'bg-tosca-500', '6-9m': 'bg-leaf-500',
@@ -16,7 +16,7 @@ const CHIP_ACTIVE: Record<string, string> = {
 
 export function PlaybookPage() {
   const [acts, setActs] = useState<Activity[] | null>(null)
-  const [f, setF] = useState<Filters>({ band: 'semua', area: 'semua', durasi: 'semua', fromHome: false })
+  const [f, setF] = useState<Filters>({ band: 'semua', area: 'semua', prepLevel: 'semua', durasi: 'semua', fromHome: false })
   const [toast, setToast] = useState('')
   useEffect(() => {
     if (!toast) return
@@ -31,6 +31,7 @@ export function PlaybookPage() {
   const filtered = (acts ?? []).filter((a) => {
     if (f.band !== 'semua' && !a.ageBands.includes(f.band)) return false
     if (f.area !== 'semua' && !a.areas.includes(f.area as never)) return false
+    if (f.prepLevel !== 'semua' && a.prepLevel !== f.prepLevel) return false
     if (f.durasi === 'pendek' && a.durationMinutes > 15) return false
     if (f.durasi === 'sedang' && (a.durationMinutes < 15 || a.durationMinutes > 40)) return false
     if (f.fromHome && !a.materials.every((m) => m.fromHome)) return false
@@ -82,6 +83,18 @@ export function PlaybookPage() {
               </button>
             )
           })}
+        </div>
+      </section>
+
+      {/* Filter tingkat persiapan */}
+      <section aria-label="Filter tingkat persiapan">
+        <h3 className="font-[family-name:var(--font-display)] font-bold text-lg mb-2">Tingkat Persiapan</h3>
+        <div className="hide-scrollbar -mx-5 px-5 flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Filter tingkat persiapan">
+          {(['semua', 'rendah', 'sedang', 'tinggi'] as const).map((level) => (
+            <Chip key={level} active={f.prepLevel === level} onClick={() => setF({ ...f, prepLevel: level })}>
+              {level === 'semua' ? 'Semua' : level[0].toUpperCase() + level.slice(1)}
+            </Chip>
+          ))}
         </div>
       </section>
 

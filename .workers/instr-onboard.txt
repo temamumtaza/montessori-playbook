@@ -1,0 +1,16 @@
+Kamu senior React+TS developer. Proyek: PWA Montessori Playbook (Vite+React18+TS strict, Tailwind v4, HashRouter). DILARANG pakai emoji — semua ikon dari src/app/components/ui-icons.tsx (IconChevronLeft/Right, IconCheck, IconCamera, dst) & icons.tsx (AgeBandIcon, Mascot, CloudDeco, StarDeco). Warna: sky palette, kartu putih rounded-3xl, dark navy.
+
+MISI: ONBOARDING FIRST-RUN FLOW (2 langkah + stepper dots) sesuai barometer docs/design/reference-ui.jpg panel 2.
+
+1. Buat src/app/pages/OnboardingPage.tsx:
+   - Route baru '/onboarding' di App.tsx.
+   - Trigger: di App.tsx atau OnboardPrompt (TodayPage), tombol "Buat profil anak" sekarang arahkan ke #/onboarding (bukan #/lainnya).
+   - Stepper dots di atas (2 titik, titik aktif memanjang pill sky-600) + tombol back IconChevronLeft (kembali ke langkah 1 / keluar ke home).
+   - LANGKAH 1 "Buat Profil Anak": ilustrasi avatar bulat besar (pakai pilihan avatar yang dipilih, default AgeBandIcon band '2-3y' dalam lingkaran sky-100 dengan badge IconCamera kanan-bawah — klik avatar = cycle ke avatar berikutnya dari 8 pilihan emoji-like SVG AgeBandIcon untuk semua band + IconStar variasi; simpan pilihan di state) + teks selamat datang + input Nama Panggilan (label + input, ada ✕ clear) + input Tanggal Lahir (type=date, ada IconCalendar) + Toggle switch "Bisa memilih beberapa anak" (persist ke localStorage 'mp-multi-child', default on) + tombol full-width "Lanjut" (IconChevronRight) — disabled sampai nama & tanggal terisi.
+   - LANGKAH 2 "Konfirmasi": ringkasan kartu (avatar + nama + usia terhitung via ageBandFromBirth + label band) + 3 bullet nilai app (IconSparkle "Aktivitas sesuai usia", IconHeart "Catat momen tumbuh", IconShield "Data hanya di perangkat") + tombol "Mulai Sekarang" → panggil addChild(nickname, birthDate, avatar) lalu navigate('/') .
+   - Jika localStorage 'mp-multi-child' on, setelah selesai tetap di home (user bisa tambah lain dari Lainnya).
+2. PLAYBOOK filter Tingkat Persiapan — src/app/pages/PlaybookPage.tsx: tambah chips row "Tingkat Persiapan": Semua | Rendah | Sedang | Tinggi (filter a.prepLevel). Letakkan setelah filter area. Update Filters type.
+3. HOME greeting — src/app/pages/TodayPage.tsx: ubah "Halo, {nickname}" jadi "Halo, Mama {nickname}" (referensi barometer). Di child switcher, tambah IconChevronDown kecil di kanan chip aktif.
+4. Update tests/gauntlet.spec.ts test "onboarding profil anak" untuk flow baru: goto /#/ → klik "Buat profil anak" → expect URL mengandung /onboarding → isi nama "Tema" + tanggal "2024-05-10" → klik Lanjut → klik "Mulai Sekarang" → expect "Halo, Mama Tema" di home.
+5. npm run typecheck (0) + npm run build (sukses) + npx playwright test tests/gauntlet.spec.ts SAMPAI SEMUA PASS (20 tests).
+Jawab terakhir: DONE ONBOARDING (pass count)

@@ -4,7 +4,7 @@ import { activeAgeBand, useChildStore, ageBandFromBirth } from '../stores/childr
 import { ageBandById, areaById } from '../../content/meta'
 import type { Activity } from '../../content/schema'
 import { AreaIcon, Mascot, StarDeco, CloudDeco, TabIcon } from '../components/icons'
-import { AgeBandIcon, IconBell, IconChart, IconCheck, IconClock, IconClose, IconHeart, IconRefresh, IconSearch, IconShare, IconStar, IconSun } from '../components/ui-icons'
+import { AgeBandIcon, IconBell, IconChart, IconCheck, IconChevronDown, IconChevronRight, IconClock, IconClose, IconHeart, IconRefresh, IconSearch, IconShare, IconStar, IconSun } from '../components/ui-icons'
 import { db } from '../db'
 import { ActionSheet } from '../components/ActionSheet'
 
@@ -108,7 +108,7 @@ export function TodayPage() {
         <div className="flex items-center justify-between">
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold text-sky-900 dark:text-sky-100">
-              Halo, {child.nickname}
+              Halo, Mama {child.nickname}
             </h2>
             <p className="text-sm opacity-75 mt-0.5">Siap main dan belajar hari ini?</p>
           </div>
@@ -139,6 +139,7 @@ export function TodayPage() {
                   <span className="block text-sm font-semibold">{c.nickname}</span>
                   <span className={`block text-[11px] ${activeId === c.id ? 'text-white/80' : 'opacity-70'}`}>{cBand?.label ?? '—'}</span>
                 </span>
+                {activeId === c.id && <IconChevronDown className="w-4 h-4 ml-auto" />}
               </button>
             )
           })}
@@ -288,10 +289,10 @@ export function OnboardPrompt() {
           Ceritakan tentang si kecil, agar kami bisa menyiapkan rekomendasi yang tepat.
         </p>
         <a
-          href="#/lainnya"
+          href="#/onboarding"
           className="inline-block mt-4 rounded-full bg-sky-700 px-8 py-3 text-white font-semibold min-h-[48px] leading-[24px] active:scale-95 transition shadow-md shadow-sky-700/20"
         >
-          Buat profil anak →
+          <span className="inline-flex items-center gap-2">Buat profil anak <IconChevronRight className="h-5 w-5" /></span>
         </a>
       </div>
     </div>
