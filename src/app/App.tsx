@@ -1,6 +1,5 @@
 import { useEffect, useState, createContext, useContext } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
 import { TodayPage } from './pages/TodayPage'
 import { PlaybookPage } from './pages/PlaybookPage'
 import { JournalPage } from './pages/JournalPage'
@@ -62,28 +61,18 @@ export default function App() {
         {/* Header collapsing large title */}
         <Header title={titleFor(location.pathname)} />
 
-        <main className="px-safe pb-28 pt-2">
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={location.pathname}
-              initial={{ opacity: 0, x: 24 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -24 }}
-              transition={{ duration: 0.22, ease: [0.32, 0.72, 0, 1] }}
-            >
-              <Routes location={location}>
-                <Route path="/" element={<TodayPage />} />
-                <Route path="/playbook" element={<PlaybookPage />} />
-                <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
-                <Route path="/cari" element={<SearchGlossaryPage />} />
-                <Route path="/jurnal" element={<JournalPage />} />
-                <Route path="/progres" element={<ProgressPage />} />
-                <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
-                <Route path="/lingkungan" element={<EnvironmentPage />} />
-                <Route path="/belajar" element={<LearnPage />} />
-              </Routes>
-            </motion.div>
-          </AnimatePresence>
+        <main className="px-safe pb-28 pt-2 page-enter" key={location.pathname}>
+          <Routes location={location}>
+            <Route path="/" element={<TodayPage />} />
+            <Route path="/playbook" element={<PlaybookPage />} />
+            <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
+            <Route path="/cari" element={<SearchGlossaryPage />} />
+            <Route path="/jurnal" element={<JournalPage />} />
+            <Route path="/progres" element={<ProgressPage />} />
+            <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
+            <Route path="/lingkungan" element={<EnvironmentPage />} />
+            <Route path="/belajar" element={<LearnPage />} />
+          </Routes>
         </main>
 
         <TabBar tabs={TABS} />
@@ -149,7 +138,7 @@ function TabBar({ tabs }: { tabs: typeof TABS }) {
                 <TabIcon name={t.icon} className="w-5 h-5" />
                 <span>{t.label}</span>
                 {isActive && (
-                  <motion.span layoutId="tabdot" className="absolute top-0 h-0.5 w-8 rounded-full bg-sky-500" />
+                  <span className="absolute top-0 h-0.5 w-8 rounded-full bg-sky-500 transition-all" aria-hidden />
                 )}
               </>
             )}
