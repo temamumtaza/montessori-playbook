@@ -169,7 +169,7 @@ export const AgeBandMeta = z.object({
   label: z.string().min(3),
   rangeMonths: z.tuple([z.number(), z.number()]),
   color: z.enum(['sky', 'apple', 'mango', 'sunny', 'leaf', 'grape', 'candy', 'tosca']),
-  mascot: z.string().min(1),
+  icon: AgeBandId,
 })
 export type AgeBandMeta = z.infer<typeof AgeBandMeta>
 

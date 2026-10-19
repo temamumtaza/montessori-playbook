@@ -1,0 +1,22 @@
+Kamu senior React+TS developer. Proyek: PWA Montessori Playbook (Vite+React18+TS strict, Tailwind v4, HashRouter). ATURAN MUTLAK BARU: DILARANG ADA EMOJI di UI app — semua ikon harus SVG buatan sendiri (flat-cute, stroke/fill, konsisten dengan gaya AreaIcon di src/app/components/icons.tsx).
+
+TUGAS BESAR: BASMI SEMUA EMOJI + BANGUN IKON LIBRARY.
+
+1. Buat src/app/components/ui-icons.tsx — export komponen-komponen SVG (viewBox 24, stroke=currentColor strokeWidth 2, fill none kecuali disebut, className props):
+   - Ikon UI: IconBell, IconClock, IconHeart({filled}), IconShare, IconStar, IconSun, IconCamera, IconCalendar, IconChevronRight, IconChevronLeft, IconChevronDown, IconCheck, IconClose, IconSearch, IconFilter (slider horizontal), IconHome, IconBook, IconJournal (pensil+buku), IconChart (batang naik), IconDots (3 titik horizontal), IconWifiOff, IconSparkle, IconTarget (tujuan), IconBasket (bahan), IconShield (keselamatan), IconRecycle (variasi), IconFlag (red flag), IconGlobe, IconDownload, IconUpload, IconTrash, IconPencil, IconPlus, IconRefresh, IconLock.
+   - AgeBandIcon({band}: '0-3m'|'3-6m'|'6-9m'|'9-12m'|'12-18m'|'18-24m'|'2-3y'|'3-4y'|'4-5y') — 9 ikon flat-cute fill yang MENGgantikan emoji mascot: 0-3m=bayi tertidur wajah bundar, 3-6m=bayi guling, 6-9m=merangkak, 9-12m=berdiri pegang, 12-18m=langkah pertama, 18-24m=balok susun, 2-3y=kereta kecil, 3-4y=kuas+palet, 4-5y=raket/bola. Fill multi-warna lembut (sky/mango/leaf dsb), bukan monokrom.
+2. UPDATE src/content/meta.ts: hapus field mascot (emoji), GANTI dengan icon: key AgeBandIcon yang sesuai. Update semua pemakaian mascot di src/app/pages/*.tsx → <AgeBandIcon band={...} className="w-5 h-5" />.
+3. BASMI emoji di SEMUA file berikut (ganti dengan ikon dari ui-icons.tsx yang semantik cocok — JANGAN sekadar dihapus):
+   - TodayPage.tsx (12): 👋→IconWave? tidak ada → hapus saja; 🔔→IconBell; 🔍→IconSearch; ⏱→IconClock; ♡/♥→IconHeart; 🌞→IconSun; ✕→IconClose; ✦→IconSparkle; 🏠→IconHome; emoji stats stats icons → IconChart/IconStar/IconHeart/IconRefresh.
+   - ActivityDetailPage.tsx (11): 📖 Baca → IconBook; ⏱ Praktik → IconClock; 🧺 persiapan → IconBasket; 🛡️ Keselamatan → IconShield; ✅ kontrol kesalahan → IconCheck; ← back → IconChevronLeft; ♥/♡ → IconHeart; ✦ → IconSparkle; 🎉 → IconSparkle.
+   - MorePage.tsx (16): 🔔→IconBell; 🌙/ikon mode gelap→IconSun matikan/IconMoon (buat IconMoon); 📥📤 ekspor/impor→IconDownload/IconUpload; 🌍 bahasa→IconGlobe; ❌ hapus→IconTrash; ☁️ footer→CloudDeco kecil; ❤️→IconHeart; ikon list menu (Pengingat/Install/Tentang/RedFlag/Panduan/Disklaimer)→IconBell/IconDownload/IconGlobe/IconFlag/IconBook/IconShield.
+   - ProgressPage.tsx (3): 🌱→AgeBandIcon band aktif; 🚩→IconFlag; 🎉→IconSparkle.
+   - EnvironmentPage.tsx (11): emoji ruangan/room icons → buat IconRoom({room}) di ui-icons: kamar-anak=tempat tidur, kamar-mandi=tetesan+dada, dapur=panci, ruang-keluarga=sofa, area-makan=sendok-garpu, outdoor=pohon. Ganti semua.
+   - LearnPage.tsx (3), SearchGlossaryPage.tsx (2): 🕘 riwayat→IconClock; emoji lain→ikon cocok.
+   - PlaybookPage.tsx (1), UpdateToast.tsx (1): ✨→IconSparkle; chip mascot→AgeBandIcon.
+   - src/app/App.tsx: TABS icon string emoji sudah diganti TabIcon — pastikan tidak ada emoji sisa (label "⋯" → IconDots).
+4. Audit akhir WAJIB: jalankan
+   grep -roP '[\x{1F300}-\x{1FAFF}\x{2600}-\x{27BF}\x{2B00}-\x{2BFF}]' src/ | wc -l
+   harus 0 (0 emoji tersisa di src/, kecuali file .md). Kalau masih ada, perbaiki sampai 0.
+5. npm run typecheck (0 error) + npm run build (sukses) + npx playwright test tests/gauntlet.spec.ts (18/18; fix regression jika ada — tes lama mungkin pakai emoji di selector, perbarui test ke role/label).
+Jawab terakhir: DONE EMOJI-PURGE (sertakan angka emoji tersisa = 0)

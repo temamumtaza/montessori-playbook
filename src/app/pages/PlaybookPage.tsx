@@ -4,6 +4,7 @@ import { AGE_BANDS, AREAS, areaById } from '../../content/meta'
 import type { Activity, AgeBandId } from '../../content/schema'
 import { EmptyState, SkeletonCards, AREA_GRADIENTS, BookmarkButton } from './TodayPage'
 import { AreaIcon } from '../components/icons'
+import { AgeBandIcon, IconClock, IconHome } from '../components/ui-icons'
 
 type Filters = { band: AgeBandId | 'semua'; area: string | 'semua'; durasi: 'semua' | 'pendek' | 'sedang'; fromHome: boolean }
 
@@ -52,7 +53,7 @@ export function PlaybookPage() {
                 : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700 text-sky-900 dark:text-sky-100'
             }`}
           >
-            <span className="block text-base leading-none" aria-hidden>{b.mascot}</span>
+            <AgeBandIcon band={b.id} className="mx-auto block w-7 h-7" />
             <span className="block text-[10px] font-semibold mt-1">{b.id}</span>
           </button>
         ))}
@@ -88,7 +89,7 @@ export function PlaybookPage() {
       <div className="hide-scrollbar -mx-5 px-5 flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Filter lainnya">
         <Chip active={f.durasi === 'pendek'} onClick={() => setF({ ...f, durasi: f.durasi === 'pendek' ? 'semua' : 'pendek' })}>≤ 15 menit</Chip>
         <Chip active={f.durasi === 'sedang'} onClick={() => setF({ ...f, durasi: f.durasi === 'sedang' ? 'semua' : 'sedang' })}>15–40 menit</Chip>
-        <Chip active={f.fromHome} onClick={() => setF({ ...f, fromHome: !f.fromHome })}>🏠 Bahan di Rumah</Chip>
+        <Chip active={f.fromHome} onClick={() => setF({ ...f, fromHome: !f.fromHome })}><IconHome className="inline w-4 h-4 mr-1" />Bahan di Rumah</Chip>
       </div>
 
       {/* Hasil */}
@@ -116,7 +117,7 @@ export function PlaybookPage() {
                       <div className="p-4">
                         <h4 className="font-semibold">{a.title}</h4>
                         <p className="text-sm opacity-70 mt-1 line-clamp-2">{a.summary}</p>
-                        <div className="flex gap-1.5 mt-2.5 flex-wrap"><Badge>⏱ {a.durationMinutes} mnt</Badge><Badge>{a.ageBands.join(' · ')}</Badge></div>
+                        <div className="flex gap-1.5 mt-2.5 flex-wrap"><Badge><IconClock className="inline w-3.5 h-3.5 mr-1" />{a.durationMinutes} mnt</Badge><Badge>{a.ageBands.join(' · ')}</Badge></div>
                       </div>
                     </a>
                     <BookmarkButton activityId={a.id} onToast={setToast} />

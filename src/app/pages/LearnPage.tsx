@@ -5,6 +5,7 @@ import type { Milestone, ParentGuide } from '../../content/schema'
 import { AGE_BANDS } from '../../content/meta'
 import { EmptyState } from './TodayPage'
 import { ageBandFromBirth, useChildStore } from '../stores/children'
+import { IconCheck, IconShield, IconChevronDown, IconChevronRight } from '../components/ui-icons'
 
 type Tab = 'guides' | 'red-flags'
 
@@ -70,7 +71,7 @@ export function LearnPage() {
   return (
     <div className="px-5 space-y-4">
       <section className="rounded-3xl bg-sunny-100 dark:bg-navy-800 p-4 flex items-start gap-3">
-        <span className="text-xl" aria-hidden>⚠️</span>
+        <IconShield className="w-5 h-5 shrink-0 text-sunny-700" />
         <p className="text-sm text-sky-900 dark:text-sky-100">
           Bukan pengganti nasihat dokter. Jika ada kekhawatiran tentang tumbuh kembang anak, konsultasikan dengan dokter atau tenaga kesehatan.
         </p>
@@ -99,7 +100,7 @@ export function LearnPage() {
             <article key={milestone.id} className="rounded-3xl bg-white dark:bg-navy-800 shadow-sm p-4">
               <h2 className="font-[family-name:var(--font-display)] font-bold">{milestone.title}</h2>
               <ul className="mt-2 space-y-2 text-sm text-apple-700 dark:text-apple-300">
-                {milestone.redFlags.map((flag) => <li key={flag} className="flex gap-2"><span aria-hidden>•</span><span>{flag}</span></li>)}
+                {milestone.redFlags.map((flag) => <li key={flag} className="flex gap-2"><IconFlagDot /><span>{flag}</span></li>)}
               </ul>
             </article>
           ))}
@@ -134,18 +135,20 @@ function GuideCard({ guide }: { guide: ParentGuide }) {
           <span className={`rounded-full px-2.5 py-1 text-[11px] font-semibold ${CATEGORY_CLASSES[guide.category]}`}>
             {CATEGORY_LABELS[guide.category]}
           </span>
-          <span className="text-sky-600 dark:text-sky-300" aria-hidden>{open ? '⌃' : '⌄'}</span>
+          {open ? <IconChevronDown className="w-5 h-5 text-sky-600 dark:text-sky-300" /> : <IconChevronRight className="w-5 h-5 text-sky-600 dark:text-sky-300" />}
         </div>
         <h2 className="font-[family-name:var(--font-display)] text-lg font-bold mt-2">{guide.title}</h2>
         {bandLabels.length > 0 && <p className="text-xs opacity-70 mt-1">{bandLabels.join(' · ')}</p>}
         <ul className="mt-3 space-y-1 text-sm opacity-80">
-          {guide.keyTakeaways.slice(0, 2).map((takeaway) => <li key={takeaway} className="flex gap-2"><span className="text-leaf-600" aria-hidden>✓</span><span>{takeaway}</span></li>)}
+          {guide.keyTakeaways.slice(0, 2).map((takeaway) => <li key={takeaway} className="flex gap-2"><IconCheck className="w-4 h-4 shrink-0 text-leaf-600" /><span>{takeaway}</span></li>)}
         </ul>
       </button>
       {open && <div className="border-t border-sky-100 dark:border-navy-700 px-4 pb-4 pt-3 text-sm leading-relaxed space-y-3">{renderBody(guide.body)}</div>}
     </article>
   )
 }
+
+function IconFlagDot() { return <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-apple-600" aria-hidden /> }
 
 function renderBody(body: string) {
   return body.split(/\n\n+/).map((paragraph, index) => (

@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react'
 import type { Milestone } from '../../content/schema'
 import { EmptyState } from './TodayPage'
 import { ConfettiBurst } from '../components/icons'
+import { AgeBandIcon, IconFlag } from '../components/ui-icons'
+import { activeAgeBand } from '../stores/children'
 
 export function ProgressPage() {
   const activeId = useChildStore((s) => s.activeId)
@@ -49,13 +51,13 @@ export function ProgressPage() {
   return (
     <div className="px-5 space-y-4">
       <section className="rounded-blob bg-gradient-to-br from-leaf-100 to-cream-100 dark:from-navy-800 dark:to-navy-700 p-5">
-        <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">Perkembangan 🌱</h2>
+        <h2 className="font-[family-name:var(--font-display)] text-xl font-bold"><AgeBandIcon band={activeAgeBand() ?? '0-3m'} className="inline w-6 h-6 mr-1 align-middle" />Perkembangan</h2>
         <p className="text-sm opacity-75 mt-1">
           {doneCount} tanda dicatat. Setiap anak punya tempo sendiri — ini peta, bukan lomba.
         </p>
         {milestones.length > 0 && (
           <a href="#/belajar" className="mt-3 inline-flex items-center rounded-full border border-sky-600 bg-white/80 px-4 min-h-[48px] font-semibold text-sky-700 dark:border-sky-300 dark:bg-navy-800/80 dark:text-sky-200">
-            🚩 Lihat red flags usia ini
+            <IconFlag className="inline w-4 h-4 mr-1" />Lihat red flags usia ini
           </a>
         )}
       </section>
@@ -79,7 +81,7 @@ export function ProgressPage() {
                       if (!activeId) return
                       if (lv === 'mahir' && rec?.level !== 'mahir') {
                         setConfettiSeed(Date.now())
-                        setToast('🎉 Milestone mahir!')
+                        setToast('Milestone mahir!')
                       }
                       await db.mastery.put({ childId: activeId, targetId: m.id, kind: 'milestone', level: lv, updatedAt: Date.now() })
                     }}

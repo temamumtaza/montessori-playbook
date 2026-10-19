@@ -4,6 +4,7 @@ import { activeAgeBand, useChildStore, ageBandFromBirth } from '../stores/childr
 import { ageBandById, areaById } from '../../content/meta'
 import type { Activity } from '../../content/schema'
 import { AreaIcon, Mascot, StarDeco, CloudDeco, TabIcon } from '../components/icons'
+import { AgeBandIcon, IconBell, IconChart, IconCheck, IconClock, IconClose, IconHeart, IconRefresh, IconSearch, IconShare, IconStar, IconSun } from '../components/ui-icons'
 import { db } from '../db'
 import { ActionSheet } from '../components/ActionSheet'
 
@@ -107,12 +108,12 @@ export function TodayPage() {
         <div className="flex items-center justify-between">
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold text-sky-900 dark:text-sky-100">
-              Halo, {child.nickname} <span aria-hidden>👋</span>
+              Halo, {child.nickname}
             </h2>
             <p className="text-sm opacity-75 mt-0.5">Siap main dan belajar hari ini?</p>
           </div>
           <button aria-label="Pengingat" className="w-11 h-11 rounded-full bg-white dark:bg-navy-800 shadow-sm grid place-items-center text-lg active:scale-95 transition">
-            🔔
+            <IconBell className="w-5 h-5" />
           </button>
         </div>
 
@@ -131,8 +132,8 @@ export function TodayPage() {
                     : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
                 }`}
               >
-                <span className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-200 to-sky-400 dark:from-navy-600 dark:to-navy-500 grid place-items-center text-lg" aria-hidden>
-                  {c.avatar ?? cBand?.mascot ?? '🙂'}
+                <span className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-200 to-sky-400 dark:from-navy-600 dark:to-navy-500 grid place-items-center" aria-hidden>
+                  <AgeBandIcon band={cBand?.id ?? '0-3m'} className="w-7 h-7" />
                 </span>
                 <span className="text-left leading-tight">
                   <span className="block text-sm font-semibold">{c.nickname}</span>
@@ -149,7 +150,7 @@ export function TodayPage() {
         href="#/cari"
         className="flex items-center gap-3 rounded-full bg-white dark:bg-navy-800 shadow-sm px-5 min-h-[48px] text-sm text-sky-900/50 dark:text-sky-100/50 active:scale-[0.98] transition"
       >
-        <span aria-hidden>🔍</span>
+        <IconSearch className="w-5 h-5" />
         Cari aktivitas, misal "menuang", "sensorik"…
       </a>
 
@@ -187,7 +188,7 @@ export function TodayPage() {
                     </div>
                     <div className="p-3">
                       <h4 className="font-semibold text-sm leading-snug line-clamp-2 min-h-[2.5rem]">{a.title}</h4>
-                      <p className="text-[11px] opacity-70 mt-1.5">⏱ {a.durationMinutes} mnt · {a.ageBands[0]}</p>
+                      <p className="text-[11px] opacity-70 mt-1.5"><IconClock className="inline w-3.5 h-3.5 mr-1" />{a.durationMinutes} mnt · {a.ageBands[0]}</p>
                     </div>
                   </a>
                   <BookmarkButton activityId={a.id} onToast={setToast} />
@@ -214,12 +215,13 @@ export function TodayPage() {
         </div>
         <div className="grid grid-cols-4 gap-2">
           {[
-            { n: stats.aktivitas, l: 'aktivitas', c: 'text-leaf-600' },
-            { n: stats.area, l: 'area berbeda', c: 'text-sunny-700' },
-            { n: stats.momen, l: 'momen berharga', c: 'text-apple-600' },
-            { n: stats.kebiasaan, l: 'kebiasaan baru', c: 'text-sky-600' },
+            { n: stats.aktivitas, l: 'aktivitas', c: 'text-leaf-600', Icon: IconChart },
+            { n: stats.area, l: 'area berbeda', c: 'text-sunny-700', Icon: IconStar },
+            { n: stats.momen, l: 'momen berharga', c: 'text-apple-600', Icon: IconHeart },
+            { n: stats.kebiasaan, l: 'kebiasaan baru', c: 'text-sky-600', Icon: IconRefresh },
           ].map((s) => (
             <div key={s.l} className="rounded-2xl bg-white dark:bg-navy-800 shadow-sky-sm p-2.5 text-center">
+              <s.Icon className={`mx-auto mb-0.5 w-4 h-4 ${s.c}`} />
               <p className={`font-[family-name:var(--font-display)] font-bold text-xl ${s.c}`}>{s.n}</p>
               <p className="text-[10px] opacity-70 leading-tight mt-0.5">{s.l}</p>
             </div>
@@ -229,21 +231,21 @@ export function TodayPage() {
 
       {/* Reminder banner */}
       {!dismissed && <section className="rounded-3xl bg-sunny-100 dark:bg-navy-800 p-4 flex items-start gap-3">
-        <span className="text-2xl" aria-hidden>🌞</span>
+        <IconSun className="w-6 h-6 text-sunny-600" />
         <div className="flex-1">
           <p className="text-sm font-semibold">Jangan lupa istirahat, ya!</p>
           <p className="text-xs opacity-70 mt-0.5">Anak juga belajar dari momen santai bersama Mama & Papa.</p>
         </div>
-        <button aria-label="Tutup pengingat" onClick={() => setDismissed(true)} className="opacity-70 text-sm px-1">✕</button>
+        <button aria-label="Tutup pengingat" onClick={() => setDismissed(true)} className="opacity-70 text-sm px-1"><IconClose className="w-4 h-4" /></button>
       </section>}
       {toast && <div className="fixed bottom-24 inset-x-0 z-50 mx-auto w-fit rounded-full bg-navy-800 px-4 py-2 text-sm text-white shadow-lg" role="status" aria-live="polite">{toast}</div>}
       <ActionSheet
         open={actionActivity !== null}
         onClose={() => setActionActivity(null)}
         actions={actionActivity ? [
-          { label: 'Bagikan Aktivitas', icon: '↗️', onSelect: () => { void shareActivity(actionActivity) } },
-          { label: 'Tambah ke Favorit', icon: '♥', onSelect: () => { void toggleActivityBookmark(actionActivity) } },
-          { label: 'Simpan Offline', icon: '✓', onSelect: () => setToast('Sudah offline — app ini local-first ✅') },
+          { label: 'Bagikan Aktivitas', icon: <IconShare className="w-5 h-5" />, onSelect: () => { void shareActivity(actionActivity) } },
+          { label: 'Tambah ke Favorit', icon: <IconHeart className="w-5 h-5" />, onSelect: () => { void toggleActivityBookmark(actionActivity) } },
+          { label: 'Simpan Offline', icon: <IconCheck className="w-5 h-5" />, onSelect: () => setToast('Sudah offline — app ini local-first') },
         ] : []}
       />
     </div>
@@ -265,7 +267,7 @@ export function BookmarkButton({ activityId, onToast }: { activityId: string; on
     setBookmarked(!bookmarked)
     onToast(!bookmarked ? 'Disimpan' : 'Dihapus')
   }
-  return <button onClick={toggle} aria-label={bookmarked ? 'Hapus bookmark' : 'Simpan ke bookmark'} aria-pressed={bookmarked} className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 grid place-items-center text-xs text-sky-800">{bookmarked ? '♥' : '♡'}</button>
+  return <button onClick={toggle} aria-label={bookmarked ? 'Hapus bookmark' : 'Simpan ke bookmark'} aria-pressed={bookmarked} className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 grid place-items-center text-xs text-sky-800"><IconHeart className="w-4 h-4" filled={bookmarked} /></button>
 }
 
 function childBand(birth: string) {

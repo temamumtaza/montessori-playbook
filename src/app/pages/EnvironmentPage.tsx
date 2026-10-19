@@ -4,14 +4,15 @@ import type { RoomSetup } from '../../content/schema'
 import { db } from '../db'
 import { useChildStore } from '../stores/children'
 import { Mascot, RainbowDeco } from '../components/icons'
+import { IconCheck, IconRoom } from '../components/ui-icons'
 
-const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
-  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
-  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
-  dapur: { label: 'Dapur', icon: '🍳' },
-  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
-  'area-makan': { label: 'Area makan', icon: '🍽️' },
-  outdoor: { label: 'Outdoor', icon: '🌿' },
+const ROOM_META: Record<RoomSetup['room'], { label: string }> = {
+  'kamar-anak': { label: 'Kamar anak' },
+  'kamar-mandi': { label: 'Kamar mandi' },
+  dapur: { label: 'Dapur' },
+  'ruang-keluarga': { label: 'Ruang keluarga' },
+  'area-makan': { label: 'Area makan' },
+  outdoor: { label: 'Outdoor' },
 }
 
 const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
@@ -82,7 +83,7 @@ export function EnvironmentPage() {
                   selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
                 } ${!available ? 'opacity-40' : ''}`}
               >
-                <span className="block text-xl" aria-hidden>{meta.icon}</span>
+                <IconRoom room={roomId} className="mx-auto block w-7 h-7" />
                 <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
               </button>
             )
@@ -112,7 +113,7 @@ export function EnvironmentPage() {
           <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
             <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
             <ul className="mt-3 space-y-3 text-sm">
-              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
+              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><IconCheck className="w-4 h-4 shrink-0 text-sky-500" /><span>{principle}</span></li>)}
             </ul>
           </section>
 
@@ -136,7 +137,7 @@ export function EnvironmentPage() {
 
           <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
             <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
-            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
+            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><IconRoom room={room.room} className="w-4 h-4 shrink-0 text-tosca-600" /><span>{tip}</span></li>)}</ul>
           </section>
         </>
       )}

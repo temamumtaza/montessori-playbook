@@ -22,8 +22,8 @@ for (const [name, device] of [['iphone', iphone], ['android', android]]) {
     test('onboarding profil anak → rekomendasi hari ini', async ({ page }) => {
       await page.goto(BASE + '/#/lainnya', { waitUntil: 'domcontentloaded' })
       await page.getByRole('button', { name: /Tambah anak/i }).click()
-      await page.getByLabel('Nama panggilan anak').fill('Tema')
-      await page.getByLabel('Tanggal lahir anak').fill('2024-05-10')
+      await page.getByPlaceholder('Nama panggilan').fill('Tema')
+      await page.locator('input[type="date"]').fill('2024-05-10')
       await page.getByRole('button', { name: 'Simpan' }).click()
       await expect(page.getByText('Profil anak')).toBeVisible()
       // ke beranda, harus ada halo
@@ -85,9 +85,12 @@ for (const [name, device] of [['iphone', iphone], ['android', android]]) {
         const praktik = page.getByRole('tab', { name: /Praktik/ })
         if (await praktik.count() > 0) {
           await praktik.click()
-          await page.waitForTimeout(2100)
-          // timer jalan
-          await expect(page.getByText(/⏱ 00:0[12]/)).toBeVisible()
+          const durationSheet = page.getByRole('dialog', { name: 'Pilih Durasi Aktivitas' })
+          await expect(durationSheet).toBeVisible()
+          await durationSheet.locator('button', { hasText: /^5 mnt$/ }).click()
+          await durationSheet.getByRole('button', { name: 'Mulai Aktivitas' }).click()
+          await expect(page.getByText(/[0-9]:[0-9]{2}/).or(page.getByText(/0[0-9]:[0-9]{2}/))).toBeVisible()
+          await expect(page.getByText(/Layar tidak akan mati|Layar mungkin mati otomatis/)).toBeVisible()
         }
         // safety section ada di aktivitas bayi
         const safety = page.getByText(/Keselamatan/)
@@ -97,12 +100,19 @@ for (const [name, device] of [['iphone', iphone], ['android', android]]) {
 
     test('dark mode toggle bekerja', async ({ page }) => {
       await page.goto(BASE + '/#/lainnya', { waitUntil: 'domcontentloaded' })
-      const sw = page.getByRole('switch')
-      if (await sw.count() > 0) {
-        const before = await page.evaluate(() => document.documentElement.classList.contains('dark'))
-        await sw.click()
-        const after = await page.evaluate(() => document.documentElement.classList.contains('dark'))
-        expect(after).not.toBe(before)
+      const sw = page.getByRole('switch', { name: 'Mode gelap' })
+      const before = await page.evaluate(() => document.documentElement.classList.contains('dark'))
+      await sw.click()
+      const after = await page.evaluate(() => document.documentElement.classList.contains('dark'))
+      expect(after).not.toBe(before)
+    })
+
+    test('0 emoji di UI', async ({ page }) => {
+      for (const route of ['/', '/#/playbook', '/#/lainnya', '/#/cari']) {
+        await page.goto(BASE + route, { waitUntil: 'domcontentloaded' })
+        await expect(page.locator('body')).toBeVisible()
+        const bodyText = await page.locator('body').innerText()
+        expect(bodyText).not.toMatch(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}]/u)
       }
     })
 
