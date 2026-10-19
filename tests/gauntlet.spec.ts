@@ -89,7 +89,7 @@ for (const [name, device] of [['iphone', iphone], ['android', android]]) {
           await expect(durationSheet).toBeVisible()
           await durationSheet.locator('button', { hasText: /^5 mnt$/ }).click()
           await durationSheet.getByRole('button', { name: 'Mulai Aktivitas' }).click()
-          await expect(page.getByText(/[0-9]:[0-9]{2}/).or(page.getByText(/0[0-9]:[0-9]{2}/))).toBeVisible()
+          await expect(page.locator('p').filter({ hasText: /[0-9]:[0-9]{2}/ })).toBeVisible()
           await expect(page.getByText(/Layar tidak akan mati|Layar mungkin mati otomatis/)).toBeVisible()
         }
         // safety section ada di aktivitas bayi
