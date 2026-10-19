@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import type { AgeBandId } from '../content/schema'
+import type { AgeBandId } from '../../content/schema'
 
 export type Child = {
   id: string

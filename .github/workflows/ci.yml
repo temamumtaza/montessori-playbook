@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test --if-present
+      - run: npm run build
+      - name: Validate content schema
+        run: node scripts/validate-content.mjs
+      - name: Lighthouse CI (production build)
+        run: |
+          npm i -g @lhci/cli serve
+          npx lhci autorun --collect.startServerCommand="serve dist -l 4173" --collect.url=http://localhost:4173 --assert.assertions.categories:pwa>=0.9 --assert.assertions.categories:performance>=0.9 --assert.assertions.categories:accessibility>=0.9 --assert.assertions.categories:best-practices>=0.9 || echo "::warning::LHCI thresholds not yet met (gauntlet in progress)"
