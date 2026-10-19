@@ -111,7 +111,38 @@ Optimasi perf yang sudah diterapkan: code-split per AgeBand (8 chunk JSON→JS t
 
 ---
 
-## Putaran 6 — 2026-10-19 (barometer-2: showcase fitur)
+## Putaran 7 — 2026-10-19 (emoji purge + onboarding + barometer alignment)
+
+### Misi user: (1) 0 emoji, (2) gap visual vs barometer, (3) onboarding first-run
+
+**1. Emoji purge — ✅ 0 emoji di src/ + index.html**
+- Library baru `ui-icons.tsx`: 35+ ikon SVG line + **AgeBandIcon** (9 ikon flat-cute menggantikan emoji maskot usia)
+- Semua pemakaian emoji di 10 halaman diganti ikon semantik (Bell, Clock, Heart, Basket, Shield, IconRoom per ruangan, dsb.)
+- Test baru "0 emoji di UI": audit innerText tiap halaman — lulus
+- Splash & prerender shell: emoji awan diganti inline SVG cloud
+
+**2. Gap visual vs barometer — diperbaiki:**
+- Greeting "Halo, Mama {nama}" + chevron di child switcher (sesuai referensi)
+- Filter "Tingkat Persiapan" (Rendah/Sedang/Tinggi) di Playbook
+- Prerender shell nav pakai SVG line icons
+- (Onboarding avatar picker — komponen wajib #1, sekarang bagian flow onboarding)
+
+**3. Onboarding first-run — ✅ baru**
+- Route `/onboarding` (tab bar & header disembunyikan saat onboarding)
+- Langkah 1: avatar cycle besar + badge kamera, Nama Panggilan (✕ clear), Tanggal Lahir (IconCalendar), toggle "Bisa memilih beberapa anak" (persist), tombol Lanjut (disabled sampai valid)
+- Langkah 2: ringkasan (avatar+nama+usia terhitung) + 3 bullet nilai app + "Mulai Sekarang"
+- Stepper dots 2 langkah + back button
+- E2E baru: full flow onboarding → home "Halo, Mama {nama}"
+
+### Bug nyata yang ketemu & difix saat iterasi
+- **BottomSheet tertutup tab bar** (tombol "Mulai Aktivitas" unreachable) → z-index 50→70 ✅
+- Production sempat menyaji build lama (perubahan belum di-commit saat deploy) → proses commit-sebelum-deploy diperketat
+- Strict-mode Playwright: durasi "5 mnt" vs "5 mnt · rekomendasi" → locator di-scope; timer assertion di-scope ke <p>
+
+### Verifikasi akhir R7
+- `grep emoji src/ index.html` = **0**
+- typecheck 0 error · build ✅ · **Playwright 20/20** (18 lama diperbarui + onboarding + 0-emoji audit)
+
 
 Barometer visual kedua (`docs/design/reference-features.jpg`) — showcase fitur native-like. Diimplementasikan penuh via Codex luna (2 worker):
 
