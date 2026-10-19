@@ -1,0 +1,32 @@
+Kamu senior React+TS developer. Proyek: PWA Montessori Playbook (Vite+React18+TS+Tailwind v4 CSS-first, HashRouter). Kualitas kode: TypeScript strict, a11y WCAG AA.
+
+PERBAIKAN YANG HARUS DILAKUKAN (semua wajib):
+
+1. [A11y-KRITIS] Kontras label tile area di PlaybookPage.tsx & kartu di TodayPage.tsx: teks putih 11px di atas warna cerah (leaf-400, sunny-500, mango-500 dst) kontrasnya 1.7-4.1:1. FIX: (a) naikkan gradient ke skala 500→700 (contoh: 'from-apple-500 to-apple-700', 'from-leaf-500 to-leaf-700', dst untuk SEMUA entri AREA_GRADIENTS), (b) label tile jadi text-xs font-bold + drop shadow tipis, (c) verifikasi mental: putih di atas *-600 dengan overlay rgba(0,0,0,0.18) via class 'bg-black/10' tambahan pada tile → kontras ≥4.5:1. Terapkan overlay bg-black/15 di tile grid.
+
+2. [A11y] Hapus 'maximum-scale=1.0, user-scalable=no' dari meta viewport di index.html (WCAG 1.4.4). Ganti: content="width=device-width, initial-scale=1.0, viewport-fit=cover". Double-tap zoom tetap tercegah via touch-action: manipulation di CSS (sudah ada).
+
+3. [A11y] Teks opacity rendah: ganti semua opacity-55 dan opacity-60 di teks ukuran kecil (<14px) menjadi opacity-70; opacity-65 → opacity-75. Cari di seluruh src/app/pages/*.tsx dan terapkan.
+
+4. [A11y] Kartu aktivitas (article onClick) tidak bisa diakses keyboard + nested button: ubah article menjadi <article> non-klik yang berisi <a href={`#/aktivitas/${a.id}`} className="block"> membungkus KONTEN UTAMA (judul+summary), dan pindahkan tombol bookmark KELUAR dari elemen klik (posisikan absolute di pojok kartu, beri e.stopPropagation). Struktur: article relative > a(block, aria-label=judul) + button bookmark absolute.
+
+5. [UX] Tombol bookmark ♡ di TodayPage & PlaybookPage tidak berfungsi: implementasikan toggle bookmark nyata pakai db.bookmarks (import { db } dari '../db', useChildStore untuk activeId). State per-aktivitas: cek keberadaan saat render (useLiveQuery atau local state), tampil ♥ (terisi) vs ♡, aria-pressed, dan toast kecil 'Disimpan'/'Dihapus' (div fixed bottom, aria-live=polite, auto-hide 1.5s).
+
+6. [UX] Tombol ✕ banner pengingat tidak berfungsi: tambah useState dismissed — jika true banner tidak dirender.
+
+7. [UX] Statistik 'area berbeda' memakai modulo: ganti hitungan benar — jumlah area unik dari aktivitas yang level≠'belum': const areaSet = new Set(touched.filter(m=>m.kind==='activity').map(m=>m.targetId.split('-')[0])) — atau lebih baik: import { loadAllActivities } dari '../../content/store', build Map activityId→areas, hitung union area dari aktivitas yang touched. Tampilkan angka asli.
+
+8. [UX] Tombol Kembali di ActivityDetailPage pakai history.back() yang bisa jalan buntu: ganti pakai useNavigate() dari react-router-dom; logic: if (window.history.length > 1) navigate(-1) else navigate('/playbook').
+
+9. [Design] Font tidak termuat: tambahkan ke index.html SEBELUM css bundle: <link rel="preconnect" href="https://fonts.googleapis.com">, <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>, <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">. Font tetap tampil offline karena fallback system-ui — itu sudah tertangani.
+
+10. [Design] Tab bar emoji → ikon SVG line sederhana: buat komponen TabIcon di icons.tsx (5 ikon: home, book-open, pencil/journal, chart/sprout, dots/ellipsis) stroke=currentColor strokeWidth=2 fill=none viewBox 24. Ganti emoji di TABS App.tsx jadi komponen ikon.
+
+11. [Design] Judul app duotone di OnboardPrompt: 'Montessori' pakai text-sky-600, 'Playbook' pakai text-candy-500. Tambahkan heading brand di OnboardPrompt TodayPage.
+
+12. [UX-kecil] MorePage: header 'Tampilan' ganda — pastikan section 'Persiapan rumah' dan 'Panduan orang tua' punya section sendiri dengan heading benar (bukan berada di bawah section 'Tampilan').
+
+13. [Security] Tambahkan CSP header di vercel.json: {"key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'"} dan hapus/di-allow access-control-allow-origin (jangan set '*' untuk dokumen HTML).
+
+SETELAH semua selesai: jalankan npm run build sampai sukses, lalu npx playwright test tests/gauntlet.spec.ts sampai 18/18 pass (fix regression bila ada).
+Jawab terakhir: DONE FIX-R2

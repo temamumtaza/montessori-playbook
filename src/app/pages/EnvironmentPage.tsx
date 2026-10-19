@@ -57,7 +57,7 @@ export function EnvironmentPage() {
     await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
   }
 
-  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
+  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-75">Menyiapkan panduan ruangan…</div>
 
   return (
     <div className="px-5 space-y-5">
@@ -124,7 +124,7 @@ export function EnvironmentPage() {
                   <span className="flex items-start gap-3">
                     <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
                     <span className="min-w-0 flex-1">
-                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
+                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-70' : ''}`}>{item.name}</span>
                       <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
                       <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
                     </span>

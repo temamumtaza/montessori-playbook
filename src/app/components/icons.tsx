@@ -1,6 +1,17 @@
 // Ikon area flat-cute (putih, dipakai di tile warna) + dekorasi langit
 type P = { className?: string }
 
+export function TabIcon({ name, className }: { name: 'home' | 'book-open' | 'journal' | 'chart' | 'ellipsis'; className?: string }) {
+  const common = { className, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true }
+  switch (name) {
+    case 'home': return <svg {...common}><path d="m3 10 9-7 9 7" /><path d="M5 9v11h14V9M9 20v-6h6v6" /></svg>
+    case 'book-open': return <svg {...common}><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3H12v17H5.5A2.5 2.5 0 0 1 3 17.5z" /><path d="M21 5.5A2.5 2.5 0 0 0 18.5 3H12v17h6.5a2.5 2.5 0 0 0 2.5-2.5z" /></svg>
+    case 'journal': return <svg {...common}><path d="M4 4h12a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z" /><path d="M7 4v16M9 9h6M9 13h6" /><path d="m16 3 3 3" /></svg>
+    case 'chart': return <svg {...common}><path d="M4 19V5M4 19h16" /><path d="m7 15 3-4 3 2 5-7" /><path d="M18 6h-3" /></svg>
+    case 'ellipsis': return <svg {...common}><circle cx="5" cy="12" r="1" /><circle cx="12" cy="12" r="1" /><circle cx="19" cy="12" r="1" /></svg>
+  }
+}
+
 export function AreaIcon({ area, className }: { area: string; className?: string }) {
   const cls = className ?? 'w-8 h-8'
   switch (area) {

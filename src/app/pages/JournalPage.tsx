@@ -57,14 +57,14 @@ export function JournalPage() {
 
       <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Timeline</h2>
       {!entries ? (
-        <p className="text-sm opacity-60">Memuat…</p>
+        <p className="text-sm opacity-70">Memuat…</p>
       ) : entries.length === 0 ? (
         <EmptyState title="Belum ada catatan" text="Observasi pertamamu akan muncul di sini." />
       ) : (
         <ol className="space-y-3">
           {entries.map((e) => (
             <li key={e.id} className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
-              <p className="text-xs opacity-60">{new Date(e.createdAt).toLocaleString('id-ID')}</p>
+              <p className="text-xs opacity-70">{new Date(e.createdAt).toLocaleString('id-ID')}</p>
               <p className="text-sm mt-1">{e.note}</p>
               {e.mood && <p className="text-xs mt-2 opacity-70">Mood: {e.mood}</p>}
             </li>

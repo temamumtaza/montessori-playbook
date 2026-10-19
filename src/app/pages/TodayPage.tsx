@@ -1,27 +1,25 @@
 import { useEffect, useState } from 'react'
-import { pickToday } from '../../content/store'
+import { loadAllActivities, pickToday } from '../../content/store'
 import { activeAgeBand, useChildStore, ageBandFromBirth } from '../stores/children'
 import { ageBandById, areaById } from '../../content/meta'
 import type { Activity } from '../../content/schema'
 import { AreaIcon, Mascot, StarDeco, CloudDeco } from '../components/icons'
 import { db } from '../db'
-import { useNavigate } from 'react-router-dom'
 
 export const AREA_GRADIENTS: Record<string, string> = {
-  'practical-life': 'from-apple-400 to-apple-600',
-  sensorial: 'from-grape-400 to-grape-600',
-  language: 'from-sky-400 to-sky-600',
-  math: 'from-leaf-400 to-leaf-600',
-  culture: 'from-tosca-400 to-tosca-600',
-  movement: 'from-mango-400 to-mango-600',
-  'grace-courtesy': 'from-candy-400 to-candy-600',
-  'self-care': 'from-sunny-400 to-sunny-600',
-  'art-music': 'from-grape-400 to-candy-500',
-  outdoor: 'from-leaf-400 to-tosca-500',
+  'practical-life': 'from-apple-500 to-apple-700',
+  sensorial: 'from-grape-500 to-grape-700',
+  language: 'from-sky-500 to-sky-700',
+  math: 'from-leaf-500 to-leaf-700',
+  culture: 'from-tosca-500 to-tosca-700',
+  movement: 'from-mango-500 to-mango-700',
+  'grace-courtesy': 'from-candy-500 to-candy-700',
+  'self-care': 'from-sunny-500 to-sunny-700',
+  'art-music': 'from-grape-500 to-candy-700',
+  outdoor: 'from-leaf-500 to-tosca-700',
 }
 
 export function TodayPage() {
-  const navigate = useNavigate()
   const [acts, setActs] = useState<Activity[]>([])
   const [loading, setLoading] = useState(true)
   const band = activeAgeBand()
@@ -29,16 +27,26 @@ export function TodayPage() {
   const child = children.find((c) => c.id === activeId)
 
   const [stats, setStats] = useState({ aktivitas: 0, area: 0, momen: 0, kebiasaan: 0 })
+  const [toast, setToast] = useState('')
+  const [dismissed, setDismissed] = useState(false)
+  useEffect(() => {
+    if (!toast) return
+    const timer = window.setTimeout(() => setToast(''), 1500)
+    return () => window.clearTimeout(timer)
+  }, [toast])
   useEffect(() => {
     if (!activeId) return
     Promise.all([
       db.mastery.where('childId').equals(activeId).toArray(),
       db.journal.where('childId').equals(activeId).count(),
-    ]).then(([mastery, journalCount]) => {
+      loadAllActivities(),
+    ]).then(([mastery, journalCount, allActivities]) => {
       const touched = mastery.filter((m) => m.level !== 'belum')
+      const areasByActivity = new Map(allActivities.map((a) => [a.id, a.areas]))
+      const areaSet = new Set(touched.filter((m) => m.kind === 'activity').flatMap((m) => areasByActivity.get(m.targetId) ?? []))
       setStats({
         aktivitas: touched.filter((m) => m.kind === 'activity').length,
-        area: touched.length % 12,
+        area: areaSet.size,
         momen: journalCount,
         kebiasaan: touched.filter((m) => m.kind === 'milestone').length,
       })
@@ -61,7 +69,7 @@ export function TodayPage() {
             <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold text-sky-900 dark:text-sky-100">
               Halo, {child.nickname} <span aria-hidden>👋</span>
             </h2>
-            <p className="text-sm opacity-65 mt-0.5">Siap main dan belajar hari ini?</p>
+            <p className="text-sm opacity-75 mt-0.5">Siap main dan belajar hari ini?</p>
           </div>
           <button aria-label="Pengingat" className="w-11 h-11 rounded-full bg-white dark:bg-navy-800 shadow-sm grid place-items-center text-lg active:scale-95 transition">
             🔔
@@ -88,7 +96,7 @@ export function TodayPage() {
                 </span>
                 <span className="text-left leading-tight">
                   <span className="block text-sm font-semibold">{c.nickname}</span>
-                  <span className={`block text-[11px] ${activeId === c.id ? 'text-white/80' : 'opacity-55'}`}>{cBand?.label ?? '—'}</span>
+                  <span className={`block text-[11px] ${activeId === c.id ? 'text-white/80' : 'opacity-70'}`}>{cBand?.label ?? '—'}</span>
                 </span>
               </button>
             )
@@ -122,28 +130,20 @@ export function TodayPage() {
           <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-5 px-5 pb-1 snap-x snap-mandatory">
             {acts.map((a) => {
               const area = areaById(a.areas[0])
-              const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-400 to-sky-600'
+              const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-500 to-sky-700'
               return (
-                <article
-                  key={a.id}
-                  onClick={() => navigate(`/aktivitas/${a.id}`)}
-                  className="snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.97] transition cursor-pointer"
-                >
-                  <div className={`relative h-28 bg-gradient-to-br ${grad} grid place-items-center`}>
-                    <AreaIcon area={a.areas[0]} className="w-14 h-14 text-white/95 drop-shadow" />
-                    <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">
-                      {area?.label}
-                    </span>
-                    <button aria-label="Simpan ke bookmark" className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 grid place-items-center text-xs">
-                      ♡
-                    </button>
-                  </div>
-                  <div className="p-3">
-                    <h4 className="font-semibold text-sm leading-snug line-clamp-2 min-h-[2.5rem]">{a.title}</h4>
-                    <p className="text-[11px] opacity-60 mt-1.5">
-                      ⏱ {a.durationMinutes} mnt · {a.ageBands[0]}
-                    </p>
-                  </div>
+                <article key={a.id} className="relative snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.97] transition">
+                  <a href={`#/aktivitas/${a.id}`} aria-label={a.title} className="block">
+                    <div className={`relative h-28 bg-gradient-to-br ${grad} grid place-items-center bg-black/15 bg-blend-overlay`}>
+                      <AreaIcon area={a.areas[0]} className="w-14 h-14 text-white/95 drop-shadow" />
+                      <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">{area?.label}</span>
+                    </div>
+                    <div className="p-3">
+                      <h4 className="font-semibold text-sm leading-snug line-clamp-2 min-h-[2.5rem]">{a.title}</h4>
+                      <p className="text-[11px] opacity-70 mt-1.5">⏱ {a.durationMinutes} mnt · {a.ageBands[0]}</p>
+                    </div>
+                  </a>
+                  <BookmarkButton activityId={a.id} onToast={setToast} />
                 </article>
               )
             })}
@@ -166,23 +166,42 @@ export function TodayPage() {
           ].map((s) => (
             <div key={s.l} className="rounded-2xl bg-white dark:bg-navy-800 shadow-sm p-2.5 text-center">
               <p className={`font-[family-name:var(--font-display)] font-bold text-xl ${s.c}`}>{s.n}</p>
-              <p className="text-[10px] opacity-60 leading-tight mt-0.5">{s.l}</p>
+              <p className="text-[10px] opacity-70 leading-tight mt-0.5">{s.l}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Reminder banner */}
-      <section className="rounded-3xl bg-sunny-100 dark:bg-navy-800 p-4 flex items-start gap-3">
+      {!dismissed && <section className="rounded-3xl bg-sunny-100 dark:bg-navy-800 p-4 flex items-start gap-3">
         <span className="text-2xl" aria-hidden>🌞</span>
         <div className="flex-1">
           <p className="text-sm font-semibold">Jangan lupa istirahat, ya!</p>
           <p className="text-xs opacity-70 mt-0.5">Anak juga belajar dari momen santai bersama Mama & Papa.</p>
         </div>
-        <button aria-label="Tutup pengingat" className="opacity-40 text-sm px-1">✕</button>
-      </section>
+        <button aria-label="Tutup pengingat" onClick={() => setDismissed(true)} className="opacity-70 text-sm px-1">✕</button>
+      </section>}
+      {toast && <div className="fixed bottom-24 inset-x-0 z-50 mx-auto w-fit rounded-full bg-navy-800 px-4 py-2 text-sm text-white shadow-lg" role="status" aria-live="polite">{toast}</div>}
     </div>
   )
+}
+
+export function BookmarkButton({ activityId, onToast }: { activityId: string; onToast: (message: string) => void }) {
+  const activeId = useChildStore((s) => s.activeId)
+  const [bookmarked, setBookmarked] = useState(false)
+  useEffect(() => {
+    if (!activeId) return
+    db.bookmarks.where('[childId+targetId]').equals([activeId, activityId]).first().then((b) => setBookmarked(!!b))
+  }, [activeId, activityId])
+  async function toggle(event: React.MouseEvent<HTMLButtonElement>) {
+    event.stopPropagation()
+    if (!activeId) return
+    if (bookmarked) await db.bookmarks.where('[childId+targetId]').equals([activeId, activityId]).delete()
+    else await db.bookmarks.add({ childId: activeId, targetId: activityId, createdAt: Date.now() })
+    setBookmarked(!bookmarked)
+    onToast(!bookmarked ? 'Disimpan' : 'Dihapus')
+  }
+  return <button onClick={toggle} aria-label={bookmarked ? 'Hapus bookmark' : 'Simpan ke bookmark'} aria-pressed={bookmarked} className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 grid place-items-center text-xs text-sky-800">{bookmarked ? '♥' : '♡'}</button>
 }
 
 function childBand(birth: string) {
@@ -197,6 +216,7 @@ export function OnboardPrompt() {
       <StarDeco className="absolute top-8 left-4 w-5 text-sunny-400" />
       <div className="rounded-blob bg-white dark:bg-navy-800 p-6 text-center shadow-sm relative overflow-hidden">
         <Mascot className="w-36 mx-auto" />
+        <h1 className="font-[family-name:var(--font-display)] text-lg font-bold"><span className="text-sky-600">Montessori</span> <span className="text-candy-500">Playbook</span></h1>
         <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold mt-2">Selamat datang!</h2>
         <p className="text-sm opacity-70 mt-2 max-w-[280px] mx-auto">
           Ceritakan tentang si kecil, agar kami bisa menyiapkan rekomendasi yang tepat.
@@ -217,7 +237,7 @@ export function EmptyState({ title, text, mood = 'happy' }: { title: string; tex
     <div className="py-10 text-center px-6">
       <Mascot className="w-28 mx-auto" mood={mood} />
       <h3 className="font-[family-name:var(--font-display)] font-bold text-lg mt-2">{title}</h3>
-      <p className="text-sm opacity-65 mt-1 max-w-xs mx-auto">{text}</p>
+      <p className="text-sm opacity-70 mt-1 max-w-xs mx-auto">{text}</p>
     </div>
   )
 }

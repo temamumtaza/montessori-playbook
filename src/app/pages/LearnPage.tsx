@@ -110,7 +110,7 @@ function TabButton({ active, onClick, id, children }: { active: boolean; onClick
       role="tab"
       aria-selected={active}
       onClick={onClick}
-      className={`rounded-full min-h-[48px] px-4 text-sm font-semibold transition ${active ? 'bg-white dark:bg-navy-700 text-sky-700 dark:text-sky-200 shadow-sm' : 'opacity-60'}`}
+      className={`rounded-full min-h-[48px] px-4 text-sm font-semibold transition ${active ? 'bg-white dark:bg-navy-700 text-sky-700 dark:text-sky-200 shadow-sm' : 'opacity-70'}`}
     >
       {children}
     </button>
@@ -131,7 +131,7 @@ function GuideCard({ guide }: { guide: ParentGuide }) {
           <span className="text-sky-600 dark:text-sky-300" aria-hidden>{open ? '⌃' : '⌄'}</span>
         </div>
         <h2 className="font-[family-name:var(--font-display)] text-lg font-bold mt-2">{guide.title}</h2>
-        {bandLabels.length > 0 && <p className="text-xs opacity-55 mt-1">{bandLabels.join(' · ')}</p>}
+        {bandLabels.length > 0 && <p className="text-xs opacity-70 mt-1">{bandLabels.join(' · ')}</p>}
         <ul className="mt-3 space-y-1 text-sm opacity-80">
           {guide.keyTakeaways.slice(0, 2).map((takeaway) => <li key={takeaway} className="flex gap-2"><span className="text-leaf-600" aria-hidden>✓</span><span>{takeaway}</span></li>)}
         </ul>
@@ -156,5 +156,5 @@ function renderBold(text: string) {
 }
 
 function Loading() {
-  return <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center text-sm opacity-60">Memuat panduan…</div>
+  return <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center text-sm opacity-70">Memuat panduan…</div>
 }

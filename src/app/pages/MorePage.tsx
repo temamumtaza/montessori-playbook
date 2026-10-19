@@ -61,7 +61,7 @@ export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDa
         <AddChildForm onAdd={addChild} />
       </section>
 
-      {/* Tampilan */}
+      {/* Persiapan rumah */}
       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
         <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
         <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
@@ -82,7 +82,7 @@ export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDa
       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
         <div>
           <h2 className="font-semibold">Mode gelap</h2>
-          <p className="text-xs opacity-65">Sky navy, nyaman untuk sesi malam.</p>
+          <p className="text-xs opacity-75">Sky navy, nyaman untuk sesi malam.</p>
         </div>
         <button
           role="switch"
@@ -97,7 +97,7 @@ export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDa
       {/* Data */}
       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm space-y-2">
         <h2 className="font-semibold">Data kamu</h2>
-        <p className="text-xs opacity-65">Semua data tersimpan di perangkat ini saja. Tidak ada server, tidak ada tracking.</p>
+        <p className="text-xs opacity-75">Semua data tersimpan di perangkat ini saja. Tidak ada server, tidak ada tracking.</p>
         <div className="flex gap-2 pt-1">
           <button onClick={onExport} className="flex-1 rounded-full border border-sky-300 dark:border-navy-600 min-h-[44px] font-medium active:scale-[0.98] transition">
             Ekspor JSON

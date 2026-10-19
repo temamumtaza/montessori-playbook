@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { loadAllActivities } from '../../content/store'
 import { areaById, ageBandById } from '../../content/meta'
 import type { Activity } from '../../content/schema'
@@ -12,6 +12,7 @@ type Mode = 'baca' | 'praktik'
 
 export function ActivityDetailPage() {
   const { id } = useParams<{ id: string }>()
+  const navigate = useNavigate()
   const [act, setAct] = useState<Activity | null>(null)
   const [notFound, setNotFound] = useState(false)
   const [mode, setMode] = useState<Mode>('baca')
@@ -65,16 +66,17 @@ export function ActivityDetailPage() {
   async function markDone(level: 'mulai' | 'mahir') {
     if (!act || !activeId) return
     await db.mastery.put({ childId: activeId, targetId: act.id, kind: 'activity', level, updatedAt: Date.now() })
-    history.back()
+    if (window.history.length > 1) navigate(-1)
+    else navigate('/playbook')
   }
 
   if (notFound) {
     return <div className="px-5 py-10 text-center"><p className="font-semibold">Aktivitas tidak ditemukan</p><a href="#/playbook" className="text-sky-600 text-sm">← Kembali ke Playbook</a></div>
   }
-  if (!act) return <div className="px-5 text-sm opacity-60">Memuat…</div>
+  if (!act) return <div className="px-5 text-sm opacity-70">Memuat…</div>
 
   const area = areaById(act.areas[0])
-  const grad = AREA_GRADIENTS[act.areas[0]] ?? 'from-sky-400 to-sky-600'
+  const grad = AREA_GRADIENTS[act.areas[0]] ?? 'from-sky-500 to-sky-700'
   const mm = String(Math.floor(elapsed / 60)).padStart(2, '0')
   const ss = String(elapsed % 60).padStart(2, '0')
 
@@ -83,7 +85,7 @@ export function ActivityDetailPage() {
       {/* Hero */}
       <div className={`relative bg-gradient-to-br ${grad} px-5 pt-safe pb-6`}>
         <div className="flex items-center justify-between pt-2">
-          <button onClick={() => history.back()} aria-label="Kembali" className="w-11 h-11 rounded-full bg-white/25 backdrop-blur grid place-items-center text-white text-lg active:scale-95 transition">←</button>
+          <button onClick={() => { if (window.history.length > 1) navigate(-1); else navigate('/playbook') }} aria-label="Kembali" className="w-11 h-11 rounded-full bg-white/25 backdrop-blur grid place-items-center text-white text-lg active:scale-95 transition">←</button>
           <div className="flex gap-2">
             <button onClick={toggleBookmark} aria-label={bookmarked ? 'Hapus bookmark' : 'Bookmark'} aria-pressed={bookmarked} className="w-11 h-11 rounded-full bg-white/25 backdrop-blur grid place-items-center text-white active:scale-95 transition">
               {bookmarked ? '♥' : '♡'}
@@ -119,7 +121,7 @@ export function ActivityDetailPage() {
           ))}
         </div>
         {mode === 'praktik' && (
-          <p className="text-center text-xs mt-1.5 opacity-60">
+          <p className="text-center text-xs mt-1.5 opacity-70">
             {wakeLocked ? '🔒 Layar tidak akan mati' : 'Layar mungkin mati otomatis'} · ⏱ {mm}:{ss}
           </p>
         )}

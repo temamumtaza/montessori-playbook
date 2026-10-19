@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { loadGlobal, searchActivities } from '../../content/store'
 import type { Activity, GlossaryEntry } from '../../content/schema'
 import { areaById } from '../../content/meta'
@@ -7,7 +6,6 @@ import { AreaIcon } from '../components/icons'
 import { AREA_GRADIENTS, EmptyState, SkeletonCards } from './TodayPage'
 
 export function SearchGlossaryPage() {
-  const navigate = useNavigate()
   const [query, setQuery] = useState('')
   const [activities, setActivities] = useState<Activity[]>([])
   const [glossary, setGlossary] = useState<GlossaryEntry[]>([])
@@ -92,7 +90,7 @@ export function SearchGlossaryPage() {
           ) : (
             <ul className="space-y-3">
               {activities.map((activity) => (
-                <ActivityResult key={activity.id} activity={activity} onClick={() => navigate(`/aktivitas/${activity.id}`)} />
+                <ActivityResult key={activity.id} activity={activity} />
               ))}
             </ul>
           )}
@@ -124,24 +122,24 @@ export function SearchGlossaryPage() {
   )
 }
 
-function ActivityResult({ activity, onClick }: { activity: Activity; onClick: () => void }) {
+function ActivityResult({ activity }: { activity: Activity }) {
   const area = areaById(activity.areas[0])
-  const gradient = AREA_GRADIENTS[activity.areas[0]] ?? 'from-sky-400 to-sky-600'
+  const gradient = AREA_GRADIENTS[activity.areas[0]] ?? 'from-sky-500 to-sky-700'
 
   return (
     <li>
-      <article onClick={onClick} className="flex items-stretch rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition cursor-pointer">
-        <div className={`w-24 shrink-0 bg-gradient-to-br ${gradient} grid place-items-center relative`}>
-          <AreaIcon area={activity.areas[0]} className="w-10 h-10 text-white/95 drop-shadow" />
-          <span className="absolute bottom-2 left-1.5 right-1.5 text-center text-[9px] font-semibold bg-white/90 text-sky-800 rounded-full px-1 py-0.5 truncate">
-            {area?.label}
-          </span>
-        </div>
-        <div className="p-3.5 min-w-0">
-          <h3 className="font-semibold leading-snug">{activity.title}</h3>
-          <p className="text-xs opacity-65 mt-1 line-clamp-2">{activity.summary}</p>
-          <p className="text-[11px] opacity-60 mt-2">⏱ {activity.durationMinutes} mnt</p>
-        </div>
+      <article className="rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition">
+        <a href={`#/aktivitas/${activity.id}`} aria-label={activity.title} className="flex items-stretch">
+          <div className={`w-24 shrink-0 bg-gradient-to-br ${gradient} bg-black/15 bg-blend-overlay grid place-items-center relative`}>
+            <AreaIcon area={activity.areas[0]} className="w-10 h-10 text-white/95 drop-shadow" />
+            <span className="absolute bottom-2 left-1.5 right-1.5 text-center text-[9px] font-semibold bg-white/90 text-sky-800 rounded-full px-1 py-0.5 truncate">{area?.label}</span>
+          </div>
+          <div className="p-3.5 min-w-0">
+            <h3 className="font-semibold leading-snug">{activity.title}</h3>
+            <p className="text-xs opacity-75 mt-1 line-clamp-2">{activity.summary}</p>
+            <p className="text-[11px] opacity-70 mt-2">⏱ {activity.durationMinutes} mnt</p>
+          </div>
+        </a>
       </article>
     </li>
   )

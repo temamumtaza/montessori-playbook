@@ -29,7 +29,7 @@ export function ProgressPage() {
 
   const doneCount = mastery?.filter((m) => m.level !== 'belum').length ?? 0
 
-  if (!milestones) return <p className="px-5 text-sm opacity-60">Memuat…</p>
+  if (!milestones) return <p className="px-5 text-sm opacity-70">Memuat…</p>
 
   return (
     <div className="px-5 space-y-4">
@@ -51,7 +51,7 @@ export function ProgressPage() {
                 <div className="flex justify-between gap-2">
                   <div>
                     <h3 className="font-semibold text-sm">{m.title}</h3>
-                    <p className="text-xs opacity-65 mt-1">{m.description}</p>
+                    <p className="text-xs opacity-75 mt-1">{m.description}</p>
                   </div>
                   <Segmented
                     value={rec?.level ?? 'belum'}

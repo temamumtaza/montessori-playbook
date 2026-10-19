@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react'
 import { loadAllActivities } from '../../content/store'
 import { AGE_BANDS, AREAS, areaById } from '../../content/meta'
 import type { Activity, AgeBandId } from '../../content/schema'
-import { EmptyState, SkeletonCards, AREA_GRADIENTS } from './TodayPage'
+import { EmptyState, SkeletonCards, AREA_GRADIENTS, BookmarkButton } from './TodayPage'
 import { AreaIcon } from '../components/icons'
-import { useNavigate } from 'react-router-dom'
 
 type Filters = { band: AgeBandId | 'semua'; area: string | 'semua'; durasi: 'semua' | 'pendek' | 'sedang'; fromHome: boolean }
 
@@ -15,9 +14,14 @@ const CHIP_ACTIVE: Record<string, string> = {
 }
 
 export function PlaybookPage() {
-  const navigate = useNavigate()
   const [acts, setActs] = useState<Activity[] | null>(null)
   const [f, setF] = useState<Filters>({ band: 'semua', area: 'semua', durasi: 'semua', fromHome: false })
+  const [toast, setToast] = useState('')
+  useEffect(() => {
+    if (!toast) return
+    const timer = window.setTimeout(() => setToast(''), 1500)
+    return () => window.clearTimeout(timer)
+  }, [toast])
 
   useEffect(() => {
     loadAllActivities().then(setActs)
@@ -60,18 +64,18 @@ export function PlaybookPage() {
         <div className="grid grid-cols-3 gap-2.5">
           {AREAS.map((a) => {
             const active = f.area === a.id
-            const grad = AREA_GRADIENTS[a.id] ?? 'from-sky-400 to-sky-600'
+            const grad = AREA_GRADIENTS[a.id] ?? 'from-sky-500 to-sky-700'
             return (
               <button
                 key={a.id}
                 onClick={() => setF({ ...f, area: active ? 'semua' : a.id })}
                 aria-pressed={active}
-                className={`rounded-3xl p-3.5 text-left aspect-[5/4] bg-gradient-to-br ${grad} text-white shadow-sm transition active:scale-[0.96] relative overflow-hidden ${
+                className={`rounded-3xl p-3.5 text-left aspect-[5/4] bg-gradient-to-br ${grad} bg-black/15 bg-blend-overlay text-white shadow-sm transition active:scale-[0.96] relative overflow-hidden ${
                   active ? 'ring-4 ring-sky-300 scale-[1.02]' : ''
                 }`}
               >
                 <AreaIcon area={a.id} className="w-9 h-9 drop-shadow" />
-                <span className="absolute bottom-2.5 left-3 right-2 text-[11px] font-bold leading-tight drop-shadow-sm">
+                <span className="absolute bottom-2.5 left-3 right-2 text-xs font-bold leading-tight drop-shadow-sm">
                   {a.label}
                 </span>
               </button>
@@ -100,25 +104,22 @@ export function PlaybookPage() {
           <ul className="space-y-3">
             {filtered.map((a) => {
               const area = areaById(a.areas[0])
-              const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-400 to-sky-600'
+              const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-500 to-sky-700'
               return (
                 <li key={a.id}>
-                  <article onClick={() => navigate(`/aktivitas/${a.id}`)} className="rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition cursor-pointer">
-                    <div className={`relative h-24 bg-gradient-to-br ${grad} grid place-items-center`}>
-                      <AreaIcon area={a.areas[0]} className="w-11 h-11 text-white/95 drop-shadow" />
-                      <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">
-                        {area?.label}
-                      </span>
-                      <button aria-label="Bookmark" className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 grid place-items-center text-xs">♡</button>
-                    </div>
-                    <div className="p-4">
-                      <h4 className="font-semibold">{a.title}</h4>
-                      <p className="text-sm opacity-70 mt-1 line-clamp-2">{a.summary}</p>
-                      <div className="flex gap-1.5 mt-2.5 flex-wrap">
-                        <Badge>⏱ {a.durationMinutes} mnt</Badge>
-                        <Badge>{a.ageBands.join(' · ')}</Badge>
+                  <article className="relative rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition">
+                    <a href={`#/aktivitas/${a.id}`} aria-label={a.title} className="block">
+                      <div className={`relative h-24 bg-gradient-to-br ${grad} grid place-items-center bg-black/15 bg-blend-overlay`}>
+                        <AreaIcon area={a.areas[0]} className="w-11 h-11 text-white/95 drop-shadow" />
+                        <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">{area?.label}</span>
                       </div>
-                    </div>
+                      <div className="p-4">
+                        <h4 className="font-semibold">{a.title}</h4>
+                        <p className="text-sm opacity-70 mt-1 line-clamp-2">{a.summary}</p>
+                        <div className="flex gap-1.5 mt-2.5 flex-wrap"><Badge>⏱ {a.durationMinutes} mnt</Badge><Badge>{a.ageBands.join(' · ')}</Badge></div>
+                      </div>
+                    </a>
+                    <BookmarkButton activityId={a.id} onToast={setToast} />
                   </article>
                 </li>
               )
@@ -126,6 +127,7 @@ export function PlaybookPage() {
           </ul>
         )}
       </section>
+      {toast && <div className="fixed bottom-24 inset-x-0 z-50 mx-auto w-fit rounded-full bg-navy-800 px-4 py-2 text-sm text-white shadow-lg" role="status" aria-live="polite">{toast}</div>}
     </div>
   )
 }

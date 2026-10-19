@@ -13,6 +13,7 @@ import { LearnPage } from './pages/LearnPage'
 import { UpdateToast } from './components/UpdateToast'
 import { swUpdate } from './pwa'
 import { useChildStore } from './stores/children'
+import { TabIcon } from './components/icons'
 
 type TabScroll = Record<string, number>
 const ScrollCtx = createContext<{ save: (tab: string, y: number) => void; get: (tab: string) => number }>({
@@ -22,11 +23,11 @@ const ScrollCtx = createContext<{ save: (tab: string, y: number) => void; get: (
 export const useTabScroll = () => useContext(ScrollCtx)
 
 const TABS = [
-  { to: '/', label: 'Hari Ini', icon: '☀️' },
-  { to: '/playbook', label: 'Playbook', icon: '📖' },
-  { to: '/jurnal', label: 'Jurnal', icon: '📝' },
-  { to: '/progres', label: 'Progres', icon: '🌱' },
-  { to: '/lainnya', label: 'Lainnya', icon: '⋯' },
+  { to: '/', label: 'Hari Ini', icon: 'home' as const },
+  { to: '/playbook', label: 'Playbook', icon: 'book-open' as const },
+  { to: '/jurnal', label: 'Jurnal', icon: 'journal' as const },
+  { to: '/progres', label: 'Progres', icon: 'chart' as const },
+  { to: '/lainnya', label: 'Lainnya', icon: 'ellipsis' as const },
 ]
 
 export default function App() {
@@ -145,7 +146,7 @@ function TabBar({ tabs }: { tabs: typeof TABS }) {
           >
             {({ isActive }) => (
               <>
-                <span aria-hidden className="text-xl leading-none">{t.icon}</span>
+                <TabIcon name={t.icon} className="w-5 h-5" />
                 <span>{t.label}</span>
                 {isActive && (
                   <motion.span layoutId="tabdot" className="absolute top-0 h-0.5 w-8 rounded-full bg-sky-500" />
