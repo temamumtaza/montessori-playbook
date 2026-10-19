@@ -9,6 +9,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'prompt',
+      injectRegister: false,
       includeAssets: ['icons/*.png', 'screenshots/*.png'],
       manifest: {
         id: '/',

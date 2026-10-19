@@ -15,9 +15,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Playbook" />
     <meta name="theme-color" content="#38bdf8" />
+    <!-- Fonts: dimuat non-blocking (swap), fallback system saat offline -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
     <!-- Splash screen inline: cegah white flash sebelum JS hidup -->
     <style>
       html { background: #f0f7fb; }
@@ -44,5 +45,6 @@
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- SW registration via src/app/pwa.ts (sudah dipanggil di main.tsx); registerSW.js redundan dimatikan via plugin config -->
   </body>
 </html>

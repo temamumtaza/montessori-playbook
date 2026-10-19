@@ -1,6 +1,5 @@
 import type { Activity, GlobalBundle, AgeBandBundle, AgeBandId } from './schema'
 import { AGE_BANDS, AREAS } from './meta'
-import Fuse from 'fuse.js'
 
 // Lazy-load semua bundle per AgeBand (ditandatangani Vite sebagai chunk terpisah)
 const bundleModules = import.meta.glob('../../content/bundles/*.json')
@@ -67,18 +66,19 @@ function emptyGlobal(): GlobalBundle {
   }
 }
 
-// Pencarian offline penuh (Fuse.js) — indeks dibangun sekali, di-cache
-let fusePromise: Promise<Fuse<Activity>> | null = null
+// Pencarian offline penuh (Fuse.js lazy-load) — indeks dibangun sekali, di-cache
+type FuseType = import('fuse.js').default<Activity>
+let fusePromise: Promise<FuseType> | null = null
 export async function searchActivities(q: string): Promise<Activity[]> {
   if (!q.trim()) return []
   if (!fusePromise) {
-    fusePromise = loadAllActivities().then(
-      (acts) =>
+    fusePromise = Promise.all([loadAllActivities(), import('fuse.js')]).then(
+      ([acts, { default: Fuse }]) =>
         new Fuse(acts, {
           keys: ['title', 'summary', 'skills', 'materials.name'],
           threshold: 0.35,
           ignoreLocation: true,
-        }),
+        }) as FuseType,
     )
   }
   const fuse = await fusePromise

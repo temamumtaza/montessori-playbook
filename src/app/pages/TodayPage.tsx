@@ -216,14 +216,14 @@ export function OnboardPrompt() {
       <StarDeco className="absolute top-8 left-4 w-5 text-sunny-400" />
       <div className="rounded-blob bg-white dark:bg-navy-800 p-6 text-center shadow-sm relative overflow-hidden">
         <Mascot className="w-36 mx-auto" />
-        <h1 className="font-[family-name:var(--font-display)] text-lg font-bold"><span className="text-sky-600">Montessori</span> <span className="text-candy-500">Playbook</span></h1>
+        <h1 className="font-[family-name:var(--font-display)] text-lg font-bold"><span className="text-sky-700">Montessori</span> <span className="text-candy-600">Playbook</span></h1>
         <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold mt-2">Selamat datang!</h2>
         <p className="text-sm opacity-70 mt-2 max-w-[280px] mx-auto">
           Ceritakan tentang si kecil, agar kami bisa menyiapkan rekomendasi yang tepat.
         </p>
         <a
           href="#/lainnya"
-          className="inline-block mt-4 rounded-full bg-sky-600 px-8 py-3 text-white font-semibold min-h-[48px] leading-[24px] active:scale-95 transition shadow-md shadow-sky-600/20"
+          className="inline-block mt-4 rounded-full bg-sky-700 px-8 py-3 text-white font-semibold min-h-[48px] leading-[24px] active:scale-95 transition shadow-md shadow-sky-700/20"
         >
           Buat profil anak →
         </a>
