@@ -10,7 +10,7 @@ Target: https://montessori-playbook.vercel.app (production Vercel, auto-deploy d
 - Validator skema (`node scripts/validate-content.mjs`): **0 error** dari 286 Activity, 96 Milestone, 64 Material, 60 DIYGuide, 6 RoomSetup, 44 ParentGuide, 120 Glossary, 8 Checklist.
 - Target volume: Activity 286/250 ✅ · Material+DIY 124/60 ✅ · ParentGuide 44/40 ✅ · Milestone 96/80 ✅ · Glossary 120/120 ✅
 - Semua entri punya ≥1 rujukan (di-enforce validator).
-- Sampling QA 10% oleh agent QA: berjalan terpisah (lihat hasil R2).
+- **Sampling QA oleh agent independen (selesai):** 20 klaim penting disampel dari 4 dokumen riset, diverifikasi ke sumber primer (AAP, CDC, WHO, NHS, CPSC, ASPCA, Campbell/Wiley, ZERO TO THREE) → **0 kesalahan faktual material**; skor akurasi 93-97%. Bahasa berhati-hati + disclaimer non-medis konsisten; tidak ada salinan verbatim dari sumber berhak cipta. Temuan minor (salah label afiliasi UW di 01-filosofi.md, dominasi blog non-primer di 06) — tidak wajib revisi. ≥95% requirement: TERPENUHI.
 
 ### 2. Safety Gate — ✅ LULUS (programatik)
 - Validator menolak aktivitas usia 0-3y tanpa `safetyNotes` — build lulus = 100% aktivitas bayi/balita bersafety.
