@@ -7,6 +7,7 @@ import { AreaIcon } from '../components/icons'
 import { AREA_GRADIENTS } from './TodayPage'
 import { db } from '../db'
 import { useChildStore } from '../stores/children'
+import { BottomSheet } from '../components/BottomSheet'
 
 type Mode = 'baca' | 'praktik'
 
@@ -16,11 +17,20 @@ export function ActivityDetailPage() {
   const [act, setAct] = useState<Activity | null>(null)
   const [notFound, setNotFound] = useState(false)
   const [mode, setMode] = useState<Mode>('baca')
-  const [elapsed, setElapsed] = useState(0)
+  const [duration, setDuration] = useState<number | null>(null)
+  const [remaining, setRemaining] = useState(0)
+  const [durationChoice, setDurationChoice] = useState(10)
+  const [toast, setToast] = useState('')
   const [wakeLocked, setWakeLocked] = useState(false)
   const [bookmarked, setBookmarked] = useState(false)
   const wakeRef = useRef<WakeLockSentinel | null>(null)
   const activeId = useChildStore((s) => s.activeId)
+
+  useEffect(() => {
+    if (!toast) return
+    const timer = window.setTimeout(() => setToast(''), 1800)
+    return () => window.clearTimeout(timer)
+  }, [toast])
 
   useEffect(() => {
     loadAllActivities().then((all) => {
@@ -38,19 +48,30 @@ export function ActivityDetailPage() {
   // Mode praktik: timer jalan + Wake Lock
   useEffect(() => {
     if (mode !== 'praktik') {
-      setElapsed(0)
+      setDuration(null)
+      setRemaining(0)
       wakeRef.current?.release().then(() => setWakeLocked(false)).catch(() => {})
       wakeRef.current = null
       return
     }
-    const t = setInterval(() => setElapsed((s) => s + 1), 1000)
+    if (duration === null) return
+    const t = window.setInterval(() => {
+      setRemaining((seconds) => {
+        if (seconds <= 1) {
+          window.clearInterval(t)
+          setToast('Waktu selesai! 🎉')
+          return 0
+        }
+        return seconds - 1
+      })
+    }, 1000)
     type NavWithLock = Navigator & { wakeLock?: { request: (t: 'screen') => Promise<WakeLockSentinel> } }
     const nav = navigator as NavWithLock
     if (nav.wakeLock) {
       nav.wakeLock.request('screen').then((s) => { wakeRef.current = s; setWakeLocked(true) }).catch(() => {})
     }
     return () => clearInterval(t)
-  }, [mode])
+  }, [mode, duration])
 
   async function toggleBookmark() {
     if (!act || !activeId) return
@@ -77,8 +98,8 @@ export function ActivityDetailPage() {
 
   const area = areaById(act.areas[0])
   const grad = AREA_GRADIENTS[act.areas[0]] ?? 'from-sky-500 to-sky-700'
-  const mm = String(Math.floor(elapsed / 60)).padStart(2, '0')
-  const ss = String(elapsed % 60).padStart(2, '0')
+  const countdownMm = String(Math.floor(remaining / 60)).padStart(2, '0')
+  const countdownSs = String(remaining % 60).padStart(2, '0')
 
   return (
     <div className="pb-8">
@@ -116,16 +137,39 @@ export function ActivityDetailPage() {
               onClick={() => setMode(m)}
               className={`rounded-full min-h-[44px] text-sm font-semibold transition ${mode === m ? 'bg-sky-600 text-white' : 'text-sky-700 dark:text-sky-300'}`}
             >
-              {m === 'baca' ? '📖 Baca' : `⏱ Praktik${mode === 'praktik' ? ` ${mm}:${ss}` : ''}`}
+              {m === 'baca' ? '📖 Baca' : `⏱ Praktik${mode === 'praktik' && duration !== null ? ` ${countdownMm}:${countdownSs}` : ''}`}
             </button>
           ))}
         </div>
         {mode === 'praktik' && (
           <p className="text-center text-xs mt-1.5 opacity-70">
-            {wakeLocked ? '🔒 Layar tidak akan mati' : 'Layar mungkin mati otomatis'} · ⏱ {mm}:{ss}
+            {wakeLocked ? '🔒 Layar tidak akan mati' : 'Layar mungkin mati otomatis'} · ⏱ {duration !== null ? `${countdownMm}:${countdownSs}` : 'belum mulai'}
           </p>
         )}
       </div>
+
+      <BottomSheet open={mode === 'praktik' && duration === null} onClose={() => setMode('baca')} title="Pilih Durasi Aktivitas">
+        <div className="mt-4 grid grid-cols-2 gap-2">
+          {[5, 10, 15, 30, act.durationMinutes].map((minutes, index) => (
+            <button
+              key={`${minutes}-${index}`}
+              aria-label={`Pilih durasi ${minutes} menit`}
+              aria-pressed={durationChoice === minutes}
+              onClick={() => setDurationChoice(minutes)}
+              className={`min-h-[44px] rounded-full border-2 text-sm font-semibold transition ${durationChoice === minutes ? 'border-sky-600 bg-sky-600 text-white' : 'border-sky-200 text-sky-700 dark:border-navy-600 dark:text-sky-200'}`}
+            >
+              {index === 4 ? `⏱ ${minutes} mnt · rekomendasi` : `${minutes} mnt`}
+            </button>
+          ))}
+        </div>
+        <button
+          aria-label="Mulai Aktivitas"
+          onClick={() => { setDuration(durationChoice); setRemaining(durationChoice * 60) }}
+          className="mt-4 min-h-[48px] w-full rounded-full bg-sky-600 font-semibold text-white shadow-md shadow-sky-600/20"
+        >
+          Mulai Aktivitas
+        </button>
+      </BottomSheet>
 
       <div className="px-5 space-y-4 mt-4">
         {/* Meta chips */}
@@ -221,6 +265,13 @@ export function ActivityDetailPage() {
         </section>
 
         {/* Aksi utama di zona jempol */}
+        {mode === 'praktik' && duration !== null && (
+          <div className="text-center">
+            <button aria-label="Atur ulang durasi" onClick={() => setDuration(null)} className="text-xs font-semibold text-sky-600 underline dark:text-sky-300">
+              atur ulang durasi
+            </button>
+          </div>
+        )}
         <div className="grid grid-cols-2 gap-3 pt-2">
           <button onClick={() => markDone('mulai')} className="rounded-full border-2 border-sky-500 text-sky-700 dark:text-sky-300 font-semibold min-h-[48px] active:scale-[0.98] transition">
             Mulai dicoba
@@ -230,6 +281,7 @@ export function ActivityDetailPage() {
           </button>
         </div>
       </div>
+      {toast && <div className="fixed bottom-24 inset-x-0 z-50 mx-auto w-fit rounded-full bg-navy-800 px-4 py-2 text-sm text-white shadow-lg" role="status" aria-live="polite">{toast}</div>}
     </div>
   )
 }

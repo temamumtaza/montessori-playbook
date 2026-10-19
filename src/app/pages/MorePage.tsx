@@ -5,203 +5,27 @@ import { exportAllData, importAllData } from '../db'
 export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDark: () => void }) {
   const { children, activeId, setActive, addChild, removeChild } = useChildStore()
   const fileRef = useRef<HTMLInputElement>(null)
-
-  async function onExport() {
-    const json = await exportAllData()
-    const blob = new Blob([json], { type: 'application/json' })
-    const a = document.createElement('a')
-    a.href = URL.createObjectURL(blob)
-    a.download = `montessori-playbook-backup-${new Date().toISOString().slice(0, 10)}.json`
-    a.click()
-    URL.revokeObjectURL(a.href)
-  }
-
-  async function onImportFile(f: File) {
-    const text = await f.text()
-    try {
-      await importAllData(text)
-      alert('Data berhasil diimpor.')
-    } catch {
-      alert('File tidak dikenali. Gunakan file hasil ekspor app ini.')
-    }
-  }
-
-  return (
-    <div className="px-5 space-y-4">
-      {/* Profil anak */}
-      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
-        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Profil anak</h2>
-        {children.length === 0 ? (
-          <p className="text-sm opacity-70 mt-1">Belum ada profil.</p>
-        ) : (
-          <ul className="mt-2 space-y-2">
-            {children.map((c) => (
-              <li key={c.id} className="flex items-center gap-2">
-                <button
-                  onClick={() => setActive(c.id)}
-                  aria-pressed={activeId === c.id}
-                  className={`flex-1 text-left rounded-2xl px-4 min-h-[48px] border transition ${
-                    activeId === c.id ? 'bg-sky-600 text-white border-sky-600' : 'border-sky-200 dark:border-navy-700'
-                  }`}
-                >
-                  <span className="font-semibold">{c.nickname}</span>
-                  <span className="block text-xs opacity-70">Lahir {c.birthDate}</span>
-                </button>
-                <button
-                  onClick={() => { if (confirm(`Hapus profil ${c.nickname}? Data jurnalnya tetap tersimpan.`)) removeChild(c.id) }}
-                  aria-label={`Hapus profil ${c.nickname}`}
-                  className="rounded-full border border-apple-400 text-apple-600 min-w-[48px] min-h-[48px]"
-                >
-                  ✕
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
-        <AddChildForm onAdd={addChild} />
-      </section>
-
-      {/* Persiapan rumah */}
-      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
-        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
-        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
-        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
-          Lihat planner per ruangan <span aria-hidden>→</span>
-        </a>
-      </section>
-
-      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
-        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Panduan orang tua</h2>
-        <p className="text-sm opacity-70 mt-1">Baca panduan dan pantau tanda perkembangan sesuai usia anak.</p>
-        <a href="#/belajar" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
-          Buka Panduan & Pemantauan <span aria-hidden>→</span>
-        </a>
-      </section>
-
-      {/* Tampilan */}
-      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
-        <div>
-          <h2 className="font-semibold">Mode gelap</h2>
-          <p className="text-xs opacity-75">Sky navy, nyaman untuk sesi malam.</p>
-        </div>
-        <button
-          role="switch"
-          aria-checked={isDark}
-          onClick={onToggleDark}
-          className={`w-14 h-8 rounded-full transition relative ${isDark ? 'bg-sky-600' : 'bg-sky-200'}`}
-        >
-          <span className={`absolute top-1 h-6 w-6 rounded-full bg-white shadow transition-all ${isDark ? 'left-7' : 'left-1'}`} />
-        </button>
-      </section>
-
-      {/* Data */}
-      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm space-y-2">
-        <h2 className="font-semibold">Data kamu</h2>
-        <p className="text-xs opacity-75">Semua data tersimpan di perangkat ini saja. Tidak ada server, tidak ada tracking.</p>
-        <div className="flex gap-2 pt-1">
-          <button onClick={onExport} className="flex-1 rounded-full border border-sky-300 dark:border-navy-600 min-h-[44px] font-medium active:scale-[0.98] transition">
-            Ekspor JSON
-          </button>
-          <button onClick={() => fileRef.current?.click()} className="flex-1 rounded-full border border-sky-300 dark:border-navy-600 min-h-[44px] font-medium active:scale-[0.98] transition">
-            Impor JSON
-          </button>
-          <input
-            ref={fileRef}
-            type="file"
-            accept="application/json"
-            className="hidden"
-            onChange={(e) => e.target.files?.[0] && onImportFile(e.target.files[0])}
-          />
-        </div>
-      </section>
-
-      {/* Disclaimer */}
-      <section className="rounded-blob bg-sunny-100 dark:bg-navy-800 p-4 text-sm">
-        <h2 className="font-bold">⚠️ Disclaimer</h2>
-        <p className="mt-1 opacity-80">
-          Montessori Playbook adalah panduan edukatif untuk orang tua, bukan pengganti nasihat dokter, terapis,
-          atau tenaga kesehatan. Setiap anak berkembang dengan temponya sendiri. Jika ada kekhawatiran tentang
-          tumbuh kembang anak, konsultasikan ke dokter atau ahli terapi. Dalam keadaan darurat, hubungi layanan
-          gawat darurat setempat.
-        </p>
-      </section>
-
-      <p className="text-center text-xs opacity-50 pb-2">Montessori Playbook v0.1 · dibuat dengan ☁️ untuk orang tua Indonesia</p>
-    </div>
-  )
+  const [reminder, setReminder] = useState(() => localStorage.getItem('mp-reminder') !== 'off')
+  const [hour, setHour] = useState(() => localStorage.getItem('mp-reminder-hour') ?? '07')
+  const [installOpen, setInstallOpen] = useState(false)
+  const [aboutOpen, setAboutOpen] = useState(false)
+  const [disclaimerOpen, setDisclaimerOpen] = useState(false)
+  const toggleReminder = () => { const next = !reminder; setReminder(next); localStorage.setItem('mp-reminder', next ? 'on' : 'off') }
+  const chooseHour = (value: string) => { setHour(value); localStorage.setItem('mp-reminder-hour', value) }
+  async function onExport() { const json = await exportAllData(); const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([json], { type: 'application/json' })); a.download = `montessori-playbook-backup-${new Date().toISOString().slice(0, 10)}.json`; a.click() }
+  async function onImport(file: File) { try { await importAllData(await file.text()); alert('Data berhasil diimpor.') } catch { alert('File tidak dikenali. Gunakan file hasil ekspor app ini.') } }
+  return <div className="px-5 space-y-4">
+    <section className="rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sky-sm"><h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Profil anak</h2>{children.length === 0 ? <p className="text-sm opacity-70 mt-1">Belum ada profil.</p> : <ul className="mt-2 space-y-2">{children.map((child) => <li key={child.id} className="flex gap-2"><button onClick={() => setActive(child.id)} aria-pressed={activeId === child.id} className={`flex-1 text-left rounded-2xl px-4 min-h-[48px] border ${activeId === child.id ? 'bg-sky-600 text-white border-sky-600' : 'border-sky-200 dark:border-navy-700'}`}><strong>{child.nickname}</strong><span className="block text-xs opacity-70">Lahir {child.birthDate}</span></button><button onClick={() => { if (confirm(`Hapus profil ${child.nickname}? Data jurnalnya tetap tersimpan.`)) removeChild(child.id) }} aria-label={`Hapus profil ${child.nickname}`} className="rounded-full border border-apple-400 text-apple-600 min-w-[48px]">✕</button></li>)}</ul>}<AddChildForm onAdd={addChild} /></section>
+    <InfoSection title="Persiapan rumah" text="Atur ruangan agar si kecil lebih mudah bergerak dan mandiri." href="#/lingkungan">Lihat planner per ruangan</InfoSection>
+    <section><h2 className="font-[family-name:var(--font-display)] font-bold text-lg mb-2">Pengaturan Aplikasi</h2><div className="rounded-3xl bg-white dark:bg-navy-800 shadow-sky-sm overflow-hidden"><Row icon="🔔" color="bg-apple-100" title="Pengingat Lembut" subtitle="Atur waktu pengingat aktivitas"><Switch checked={reminder} onClick={toggleReminder} label="Aktifkan pengingat" /></Row>{reminder && <div className="px-4 pb-3 flex gap-1.5">{['07', '12', '16', '19'].map((value) => <button key={value} onClick={() => chooseHour(value)} aria-pressed={hour === value} className={`flex-1 rounded-full min-h-[36px] text-xs font-semibold ${hour === value ? 'bg-sky-600 text-white' : 'bg-sky-50 dark:bg-navy-700 text-sky-700 dark:text-sky-200'}`}>{value}:00</button>)}</div>}<Row icon="💾" color="bg-sky-100" title="Ekspor / Impor Data" subtitle="Cadangkan data di perangkat ini"><div className="flex gap-1"><button onClick={onExport} className="rounded-full border border-sky-200 dark:border-navy-600 px-3 min-h-[36px] text-xs font-semibold">Ekspor</button><button onClick={() => fileRef.current?.click()} className="rounded-full border border-sky-200 dark:border-navy-600 px-3 min-h-[36px] text-xs font-semibold">Impor</button><input ref={fileRef} type="file" accept="application/json" className="hidden" onChange={(event) => event.target.files?.[0] && onImport(event.target.files[0])} /></div></Row><Row icon="🌐" color="bg-tosca-100" title="Bahasa Aplikasi" subtitle="Bahasa Indonesia"><span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-1 text-[10px] font-bold opacity-60">ID</span></Row><Row icon="🌙" color="bg-grape-100" title="Mode Gelap" subtitle="Sky navy, nyaman untuk sesi malam."><Switch checked={isDark} onClick={onToggleDark} label="Mode gelap" /></Row></div></section>
+    <section><h2 className="font-[family-name:var(--font-display)] font-bold text-lg mb-2">Panduan & Dukungan</h2><div className="rounded-3xl bg-white dark:bg-navy-800 shadow-sky-sm overflow-hidden"><LinkRow icon="📖" color="bg-sky-100" title="Panduan Montessori Playbook" subtitle="Mulai dari dasar-dasarnya" href="#/belajar" /><LinkRow icon="🚩" color="bg-apple-100" title="Red Flag Perkembangan" subtitle="Kenali tanda yang perlu diperhatikan" href="#/belajar?tab=red-flags" /><Expandable open={installOpen} setOpen={setInstallOpen} icon="📲" color="bg-leaf-100" title="Cara Install Aplikasi" subtitle="Tambahkan ke layar utama"><ol className="list-decimal pl-5 space-y-1.5"><li><strong>iOS:</strong> Safari → Bagikan → Tambahkan ke Layar Utama.</li><li><strong>Android:</strong> Chrome → menu ⋮ → Instal aplikasi.</li><li>Konfirmasi nama aplikasi lalu tekan Tambahkan/Instal.</li><li>Buka dari ikon baru untuk pengalaman seperti aplikasi.</li></ol></Expandable><Expandable open={aboutOpen} setOpen={setAboutOpen} icon="💙" color="bg-candy-100" title="Tentang Montessori Playbook" subtitle="Versi 1.0.0">Versi 1.0.0, dibuat dengan ❤️ untuk keluarga Indonesia. <a className="font-semibold text-sky-700 dark:text-sky-300" href="https://github.com/temamumtaza/montessori-playbook" target="_blank" rel="noreferrer">Lihat GitHub repo ↗</a></Expandable><Expandable open={disclaimerOpen} setOpen={setDisclaimerOpen} icon="⚠️" color="bg-sunny-100" title="Disclaimer" subtitle="Panduan edukatif, bukan nasihat medis">Montessori Playbook bukan pengganti nasihat dokter, terapis, atau tenaga kesehatan. Jika ada kekhawatiran tentang tumbuh kembang anak, konsultasikan ke tenaga kesehatan.</Expandable></div></section>
+    <p className="text-center text-xs opacity-50 pb-2">Montessori Playbook v1.0.0 · dibuat dengan ❤️ untuk keluarga Indonesia</p>
+  </div>
 }
 
-function AddChildForm({ onAdd }: { onAdd: (nickname: string, birthDate: string, avatar?: string) => void }) {
-  const [open, setOpen] = useState(false)
-  const [nickname, setNickname] = useState('')
-  const [birth, setBirth] = useState('')
-  const [avatar, setAvatar] = useState('🐥')
-  const avatars = ['🐥', '🧸', '🎈', '☀️', '🌿', '🚂', '🎨', '🚀']
-
-  if (!open)
-    return (
-      <button
-        onClick={() => setOpen(true)}
-        className="mt-3 w-full rounded-full border-2 border-dashed border-sky-300 dark:border-navy-600 text-sky-700 dark:text-sky-300 min-h-[48px] font-medium active:scale-[0.98] transition"
-      >
-        + Tambah anak
-      </button>
-    )
-
-  return (
-    <form
-      className="mt-3 space-y-2"
-      onSubmit={(e) => {
-        e.preventDefault()
-        if (!nickname.trim() || !birth) return
-        onAdd(nickname.trim(), birth, avatar)
-        setNickname(''); setBirth(''); setAvatar('🐥'); setOpen(false)
-      }}
-    >
-      <div>
-        <p className="text-sm font-semibold mb-2">Pilih avatar</p>
-        <div className="grid grid-cols-4 gap-2" role="radiogroup" aria-label="Avatar anak">
-          {avatars.map((option) => (
-            <button
-              key={option}
-              type="button"
-              role="radio"
-              aria-checked={avatar === option}
-              aria-label={`Avatar ${option}`}
-              onClick={() => setAvatar(option)}
-              className={`w-12 h-12 rounded-full bg-sky-50 dark:bg-navy-700 text-2xl grid place-items-center transition ${
-                avatar === option ? 'ring-4 ring-sky-300 dark:ring-sky-600' : 'ring-1 ring-sky-100 dark:ring-navy-600'
-              }`}
-            >
-              {option}
-            </button>
-          ))}
-        </div>
-      </div>
-      <input
-        value={nickname}
-        onChange={(e) => setNickname(e.target.value)}
-        placeholder="Nama panggilan"
-        aria-label="Nama panggilan anak"
-        className="w-full rounded-2xl border border-sky-200 dark:border-navy-700 bg-sky-50/50 dark:bg-navy-700/40 px-4 min-h-[48px]"
-        required
-      />
-      <input
-        type="date"
-        value={birth}
-        onChange={(e) => setBirth(e.target.value)}
-        aria-label="Tanggal lahir anak"
-        className="w-full rounded-2xl border border-sky-200 dark:border-navy-700 bg-sky-50/50 dark:bg-navy-700/40 px-4 min-h-[48px]"
-        required
-      />
-      <div className="flex gap-2">
-        <button type="button" onClick={() => setOpen(false)} className="flex-1 rounded-full border border-sky-200 dark:border-navy-700 min-h-[44px]">
-          Batal
-        </button>
-        <button type="submit" className="flex-1 rounded-full bg-sky-600 text-white font-semibold min-h-[44px]">
-          Simpan
-        </button>
-      </div>
-    </form>
-  )
-}
+function Switch({ checked, onClick, label }: { checked: boolean; onClick: () => void; label: string }) { return <button role="switch" aria-label={label} aria-checked={checked} onClick={onClick} className={`w-12 h-7 rounded-full relative ${checked ? 'bg-sky-600' : 'bg-sky-200 dark:bg-navy-600'}`}><span className={`absolute top-1 h-5 w-5 rounded-full bg-white shadow ${checked ? 'left-6' : 'left-1'}`} /></button> }
+function Row({ icon, color, title, subtitle, children }: { icon: string; color: string; title: string; subtitle: string; children: React.ReactNode }) { return <div className="flex items-center gap-3 px-4 min-h-[68px] border-b border-sky-100 dark:border-navy-700"><span className={`w-10 h-10 rounded-full ${color} grid place-items-center`} aria-hidden>{icon}</span><span className="flex-1 min-w-0"><strong className="block text-sm">{title}</strong><span className="block text-xs opacity-65 mt-0.5">{subtitle}</span></span>{children}</div> }
+function LinkRow({ icon, color, title, subtitle, href }: { icon: string; color: string; title: string; subtitle: string; href: string }) { return <a href={href} className="flex items-center gap-3 px-4 min-h-[68px] border-b border-sky-100 dark:border-navy-700"><span className={`w-10 h-10 rounded-full ${color} grid place-items-center`} aria-hidden>{icon}</span><span className="flex-1"><strong className="block text-sm">{title}</strong><span className="block text-xs opacity-65 mt-0.5">{subtitle}</span></span><span className="text-xl text-sky-600 dark:text-sky-300" aria-hidden>›</span></a> }
+function Expandable({ open, setOpen, icon, color, title, subtitle, children }: { open: boolean; setOpen: (value: boolean) => void; icon: string; color: string; title: string; subtitle: string; children: React.ReactNode }) { return <><button onClick={() => setOpen(!open)} aria-expanded={open} className="w-full text-left"><div className="flex items-center gap-3 px-4 min-h-[68px] border-b border-sky-100 dark:border-navy-700"><span className={`w-10 h-10 rounded-full ${color} grid place-items-center`} aria-hidden>{icon}</span><span className="flex-1"><strong className="block text-sm">{title}</strong><span className="block text-xs opacity-65 mt-0.5">{subtitle}</span></span><span className="text-xl text-sky-600 dark:text-sky-300" aria-hidden>{open ? '⌃' : '›'}</span></div></button>{open && <div className="border-b border-sky-100 dark:border-navy-700 px-4 py-3 text-sm leading-relaxed">{children}</div>}</> }
+function InfoSection({ title, text, href, children }: { title: string; text: string; href: string; children: React.ReactNode }) { return <section className="rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sky-sm"><h2 className="font-[family-name:var(--font-display)] font-bold text-lg">{title}</h2><p className="text-sm opacity-70 mt-1">{text}</p><a href={href} className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">{children}<span aria-hidden>→</span></a></section> }
+function AddChildForm({ onAdd }: { onAdd: (nickname: string, birthDate: string, avatar?: string) => void }) { const [open, setOpen] = useState(false); const [nickname, setNickname] = useState(''); const [birth, setBirth] = useState(''); if (!open) return <button onClick={() => setOpen(true)} className="mt-3 w-full rounded-full border-2 border-dashed border-sky-300 dark:border-navy-600 text-sky-700 dark:text-sky-300 min-h-[48px] font-medium">+ Tambah anak</button>; return <form className="mt-3 space-y-2" onSubmit={(event) => { event.preventDefault(); if (!nickname.trim() || !birth) return; onAdd(nickname.trim(), birth, '🐥'); setOpen(false); setNickname(''); setBirth('') }}><input value={nickname} onChange={(event) => setNickname(event.target.value)} placeholder="Nama panggilan" className="w-full rounded-2xl border border-sky-200 dark:border-navy-700 px-4 min-h-[48px]" required /><input type="date" value={birth} onChange={(event) => setBirth(event.target.value)} className="w-full rounded-2xl border border-sky-200 dark:border-navy-700 px-4 min-h-[48px]" required /><div className="flex gap-2"><button type="button" onClick={() => setOpen(false)} className="flex-1 rounded-full border min-h-[44px]">Batal</button><button type="submit" className="flex-1 rounded-full bg-sky-600 text-white min-h-[44px]">Simpan</button></div></form> }

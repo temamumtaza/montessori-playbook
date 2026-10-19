@@ -1,5 +1,5 @@
 // Ikon area flat-cute (putih, dipakai di tile warna) + dekorasi langit
-type P = { className?: string }
+type P = { className?: string; style?: React.CSSProperties }
 
 export function TabIcon({ name, className }: { name: 'home' | 'book-open' | 'journal' | 'chart' | 'ellipsis'; className?: string }) {
   const common = { className, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 2, strokeLinecap: 'round' as const, strokeLinejoin: 'round' as const, 'aria-hidden': true }
@@ -170,9 +170,9 @@ export function Mascot({ className, mood = 'happy' }: { className?: string; mood
   )
 }
 
-export function ConfettiBurst({ className }: P) {
+export function ConfettiBurst({ className, style }: P) {
   return (
-    <svg viewBox="0 0 80 40" className={className} fill="none" aria-hidden>
+    <svg viewBox="0 0 80 40" className={className} style={style} fill="none" aria-hidden>
       <path d="M8 30L12 18 16 30 20 18 24 30" stroke="#f87171" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
       <path d="M40 28l2.4 5 5 2.4-5 2.4-2.4 5-2.4-5-5-2.4 5-2.4 2.4-5z" fill="#facc15"/>
       <path d="M58 30a12 12 0 0 1 20 0" stroke="#4ade80" strokeWidth="4" strokeLinecap="round"/>

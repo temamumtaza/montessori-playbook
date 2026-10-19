@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { loadBundle, loadGlobal } from '../../content/store'
 import type { Milestone, ParentGuide } from '../../content/schema'
 import { AGE_BANDS } from '../../content/meta'
@@ -34,11 +35,16 @@ const CATEGORY_CLASSES: Record<ParentGuide['category'], string> = {
 }
 
 export function LearnPage() {
+  const [searchParams] = useSearchParams()
   const activeId = useChildStore((s) => s.activeId)
   const child = useChildStore((s) => s.children.find((c) => c.id === s.activeId))
   const [tab, setTab] = useState<Tab>('guides')
   const [guides, setGuides] = useState<ParentGuide[] | null>(null)
   const [redFlags, setRedFlags] = useState<Milestone[] | null>(null)
+
+  useEffect(() => {
+    setTab(searchParams.get('tab') === 'red-flags' ? 'red-flags' : 'guides')
+  }, [searchParams])
 
   useEffect(() => {
     let cancelled = false

@@ -1,0 +1,17 @@
+Kamu senior React+TS developer. Proyek: PWA Montessori Playbook (Vite+React18+TS strict, Tailwind v4, HashRouter). Files: src/app/pages/ActivityDetailPage.tsx (sudah punya mode praktik + timer + Wake Lock + segmented Baca/Praktik), src/app/pages/TodayPage.tsx (EmptyState dsb), src/app/components/icons.tsx.
+
+TIGA TAMBAHAN (barometer: docs/design/reference-features.jpg panel kanan):
+
+1. BOTTOM SHEET "PILIH DURASI AKTIVITAS" di mode Praktik:
+   Buat komponen reusable src/app/components/BottomSheet.tsx: props { open, onClose, title, children }, render fixed inset-0 z-50: backdrop bg-black/40 (klik = onClose) + panel bawah rounded-t-3xl bg-white dark:bg-navy-800 p-5 pb-safe dengan drag handle bar (w-10 h-1.5 rounded-full bg-sky-200 mx-auto mt-2), animasi slide-up pakai CSS keyframes (tambahkan @keyframes sheetUp di src/index.css: from translateY(100%) → 0; class .sheet-enter). ARIA: role=dialog aria-modal aria-label={title}. Tutup dengan Escape (useEffect keydown).
+   Gunakan di ActivityDetailPage: saat user aktifkan mode Praktik dan durasi belum dipilih, tampilkan BottomSheet "Pilih Durasi Aktivitas" dengan chips preset: 5 mnt / 10 mnt (default, aktif) / 15 mnt / 30 mnt / ⏱ {act.durationMinutes} mnt (rekomendasi) + tombol full-width "Mulai Aktivitas" (bg-sky-600). Setelah pilih, timer di-set ke durasi itu dan COUNTDOWN turun (bukan naik); saat habis → toast "Waktu selesai! 🎉". Tetap ada tombol kecil "atur ulang durasi" di bawah timer untuk buka sheet lagi.
+
+2. SWIPE-ACTION + ACTION SHEET di daftar:
+   a. Buat src/app/components/ActionSheet.tsx serupa BottomSheet (judul "Pilih Aksi", daftar aksi berikon, tombol Batal).
+   b. Di TodayPage: long-press (onPointerDown timer 500ms) ATAU tombol ⋯ (aria-label "Aksi lainnya") di kartu rekomendasi → buka ActionSheet dengan aksi: "Bagikan Aktivitas" (navigator.share fallback copy link + toast), "Tambah ke Favorit" (=toggleBookmark), "Simpan Offline" (toast "Sudah offline — app ini local-first ✅"). Implement aksi nyata, toast pakai pola yang sudah ada.
+
+3. CONFETTI SAAT MILESTONE MAHIR:
+   Di ProgressPage saat user set status 'mahir' pada milestone: render overlay confetti singkat (1.8s) — komponen src/app/components/ConfettiBurst sudah ada (pakai 3-5 instance posisi acak + animasi CSS fall/pop keyframes baru di index.css, aria-hidden, pointer-events-none). Plus toast kecil "🎉 Milestone mahir!". HANYA trigger saat transisi ke 'mahir' (bukan saat load).
+
+TypeScript strict, typecheck 0, build sukses, semua elemen interaktif punya aria-label, dark mode konsisten.
+Jawab terakhir: DONE INTERACT-R6

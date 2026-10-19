@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { loadAllActivities, pickToday } from '../../content/store'
 import { activeAgeBand, useChildStore, ageBandFromBirth } from '../stores/children'
 import { ageBandById, areaById } from '../../content/meta'
 import type { Activity } from '../../content/schema'
-import { AreaIcon, Mascot, StarDeco, CloudDeco } from '../components/icons'
+import { AreaIcon, Mascot, StarDeco, CloudDeco, TabIcon } from '../components/icons'
 import { db } from '../db'
+import { ActionSheet } from '../components/ActionSheet'
 
 export const AREA_GRADIENTS: Record<string, string> = {
   'practical-life': 'from-apple-500 to-apple-700',
@@ -29,6 +30,9 @@ export function TodayPage() {
   const [stats, setStats] = useState({ aktivitas: 0, area: 0, momen: 0, kebiasaan: 0 })
   const [toast, setToast] = useState('')
   const [dismissed, setDismissed] = useState(false)
+  const [actionActivity, setActionActivity] = useState<Activity | null>(null)
+  const longPressTimer = useRef<number | null>(null)
+  const longPressTriggered = useRef(false)
   useEffect(() => {
     if (!toast) return
     const timer = window.setTimeout(() => setToast(''), 1500)
@@ -59,6 +63,42 @@ export function TodayPage() {
   }, [band])
 
   if (!child) return <OnboardPrompt />
+
+  function startLongPress(activity: Activity) {
+    longPressTriggered.current = false
+    if (longPressTimer.current !== null) window.clearTimeout(longPressTimer.current)
+    longPressTimer.current = window.setTimeout(() => {
+      longPressTriggered.current = true
+      setActionActivity(activity)
+    }, 500)
+  }
+
+  function cancelLongPress() {
+    if (longPressTimer.current !== null) window.clearTimeout(longPressTimer.current)
+    longPressTimer.current = null
+  }
+
+  async function shareActivity(activity: Activity) {
+    const url = `${window.location.origin}${window.location.pathname}#/aktivitas/${activity.id}`
+    if (navigator.share) {
+      await navigator.share({ title: activity.title, text: activity.summary, url }).catch(() => {})
+    } else {
+      await navigator.clipboard?.writeText(url)
+      setToast('Link aktivitas disalin')
+    }
+  }
+
+  async function toggleActivityBookmark(activity: Activity) {
+    if (!activeId) return
+    const existing = await db.bookmarks.where('[childId+targetId]').equals([activeId, activity.id]).first()
+    if (existing) {
+      await db.bookmarks.where('[childId+targetId]').equals([activeId, activity.id]).delete()
+      setToast('Dihapus dari favorit')
+    } else {
+      await db.bookmarks.add({ childId: activeId, targetId: activity.id, createdAt: Date.now() })
+      setToast('Ditambahkan ke favorit')
+    }
+  }
 
   return (
     <div className="px-5 space-y-5">
@@ -132,8 +172,15 @@ export function TodayPage() {
               const area = areaById(a.areas[0])
               const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-500 to-sky-700'
               return (
-                <article key={a.id} className="relative snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sky-sm overflow-hidden active:scale-[0.97] transition">
-                  <a href={`#/aktivitas/${a.id}`} aria-label={a.title} className="block">
+                <article
+                  key={a.id}
+                  onPointerDown={() => startLongPress(a)}
+                  onPointerUp={cancelLongPress}
+                  onPointerCancel={cancelLongPress}
+                  onPointerLeave={cancelLongPress}
+                  className="relative snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sky-sm overflow-hidden active:scale-[0.97] transition"
+                >
+                  <a href={`#/aktivitas/${a.id}`} aria-label={a.title} className="block" onClick={(event) => { if (longPressTriggered.current) { event.preventDefault(); longPressTriggered.current = false } }}>
                     <div className={`relative h-28 bg-gradient-to-br ${grad} grid place-items-center bg-black/15 bg-blend-overlay`}>
                       <AreaIcon area={a.areas[0]} className="w-14 h-14 text-white/95 drop-shadow" />
                       <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">{area?.label}</span>
@@ -144,6 +191,14 @@ export function TodayPage() {
                     </div>
                   </a>
                   <BookmarkButton activityId={a.id} onToast={setToast} />
+                  <button
+                    aria-label="Aksi lainnya"
+                    onPointerDown={(event) => event.stopPropagation()}
+                    onClick={(event) => { event.stopPropagation(); setActionActivity(a) }}
+                    className="absolute right-2 bottom-2 grid h-7 w-7 place-items-center rounded-full bg-white/90 text-sky-800"
+                  >
+                    <TabIcon name="ellipsis" className="h-4 w-4" />
+                  </button>
                 </article>
               )
             })}
@@ -182,6 +237,15 @@ export function TodayPage() {
         <button aria-label="Tutup pengingat" onClick={() => setDismissed(true)} className="opacity-70 text-sm px-1">✕</button>
       </section>}
       {toast && <div className="fixed bottom-24 inset-x-0 z-50 mx-auto w-fit rounded-full bg-navy-800 px-4 py-2 text-sm text-white shadow-lg" role="status" aria-live="polite">{toast}</div>}
+      <ActionSheet
+        open={actionActivity !== null}
+        onClose={() => setActionActivity(null)}
+        actions={actionActivity ? [
+          { label: 'Bagikan Aktivitas', icon: '↗️', onSelect: () => { void shareActivity(actionActivity) } },
+          { label: 'Tambah ke Favorit', icon: '♥', onSelect: () => { void toggleActivityBookmark(actionActivity) } },
+          { label: 'Simpan Offline', icon: '✓', onSelect: () => setToast('Sudah offline — app ini local-first ✅') },
+        ] : []}
+      />
     </div>
   )
 }

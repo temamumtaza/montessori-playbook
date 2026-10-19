@@ -114,6 +114,19 @@ button, nav, header, [role='tablist'], .no-select {
   from { opacity: 0; transform: translateX(16px); }
   to { opacity: 1; transform: translateX(0); }
 }
+
+@keyframes sheetUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+.sheet-enter { animation: sheetUp 0.24s cubic-bezier(0.32, 0.72, 0, 1); }
+
+@keyframes confettiFall {
+  0% { opacity: 0; transform: translateY(-18px) rotate(0deg) scale(.6); }
+  12% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(170px) rotate(250deg) scale(1); }
+}
+.confetti-fall { animation: confettiFall 1.8s ease-out forwards; }
 .page-enter {
   animation: pageIn 0.22s cubic-bezier(0.32, 0.72, 0, 1);
 }

@@ -5,10 +5,25 @@ import { loadBundle } from '../../content/store'
 import { useEffect, useState } from 'react'
 import type { Milestone } from '../../content/schema'
 import { EmptyState } from './TodayPage'
+import { ConfettiBurst } from '../components/icons'
 
 export function ProgressPage() {
   const activeId = useChildStore((s) => s.activeId)
   const [milestones, setMilestones] = useState<Milestone[] | null>(null)
+  const [confettiSeed, setConfettiSeed] = useState<number | null>(null)
+  const [toast, setToast] = useState('')
+
+  useEffect(() => {
+    if (!toast) return
+    const timer = window.setTimeout(() => setToast(''), 1800)
+    return () => window.clearTimeout(timer)
+  }, [toast])
+
+  useEffect(() => {
+    if (confettiSeed === null) return
+    const timer = window.setTimeout(() => setConfettiSeed(null), 1800)
+    return () => window.clearTimeout(timer)
+  }, [confettiSeed])
 
   useEffect(() => {
     const st = useChildStore.getState()
@@ -62,6 +77,10 @@ export function ProgressPage() {
                     value={rec?.level ?? 'belum'}
                     onChange={async (lv) => {
                       if (!activeId) return
+                      if (lv === 'mahir' && rec?.level !== 'mahir') {
+                        setConfettiSeed(Date.now())
+                        setToast('🎉 Milestone mahir!')
+                      }
                       await db.mastery.put({ childId: activeId, targetId: m.id, kind: 'milestone', level: lv, updatedAt: Date.now() })
                     }}
                   />
@@ -71,6 +90,18 @@ export function ProgressPage() {
           })}
         </ul>
       )}
+      {confettiSeed !== null && (
+        <div className="pointer-events-none fixed inset-x-0 top-20 z-50 h-48 overflow-hidden" aria-hidden>
+          {[0, 1, 2, 3, 4].map((i) => (
+            <ConfettiBurst
+              key={`${confettiSeed}-${i}`}
+              className="confetti-fall absolute h-10 w-20"
+              style={{ left: `${12 + ((confettiSeed + i * 23) % 76)}%`, top: `${i * 4}px`, animationDelay: `${i * 0.06}s` }}
+            />
+          ))}
+        </div>
+      )}
+      {toast && <div className="fixed bottom-24 inset-x-0 z-50 mx-auto w-fit rounded-full bg-navy-800 px-4 py-2 text-sm text-white shadow-lg" role="status" aria-live="polite">{toast}</div>}
     </div>
   )
 }
