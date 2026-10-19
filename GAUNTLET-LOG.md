@@ -109,3 +109,39 @@ Optimasi perf yang sudah diterapkan: code-split per AgeBand (8 chunk JSON→JS t
 ### E2E regression setelah semua fix
 - **18/18 lulus** (iPhone + Android) — tidak ada yang rusak oleh perbaikan.
 
+---
+
+## Putaran 4 — 2026-10-19 (perf optimization round)
+
+### Eksperimen & hasil
+| Eksperimen | Perf | TBT | Keputusan |
+|---|---|---|---|
+| R3 baseline | 84-87 | 310-410ms | — |
+| + font self-host woff2 (latin subset, preload, masuk SW precache) | 84-85 | 330-400ms | **KEEP** (offline penuh + hilang dependensi fonts.gstatic; render-blocking CSS eksternal = 0) |
+| + framer-motion dibuang → transisi CSS murni (`page-enter`, -39KB gzip) | 86 | 410ms | **KEEP** (bundle awal turun; TBT naik-turun = noise VM) |
+| + lazy-load semua 9 halaman (React.lazy) | 72 | 840ms | **REVERT** (chunk waterfall bikin TBT naik; halaman kecil, tidak worth) |
+
+### Lighthouse produksi akhir (R4d)
+| Kategori | Skor | Target |
+|---|---|---|
+| Performance | **85** (rentang uji 82-87) | 90 ⚠️ |
+| **Accessibility** | **100** | ≥90 ✅ |
+| **Best Practices** | **100** | ≥90 ✅ |
+| **SEO** | **100** | ≥90 ✅ |
+
+Bundle awal: **~210KB gzip** (target <250KB ✅) — react 59 + index 54 + fonts 62 woff2 (precache) + css 7.7.
+
+### Analisis jujur Performance 85 vs target 90
+- TBT 400ms didominasi **parse+eval react-QTsEREoP.js (393ms long task)** — itu React 18 + react-router + runtime inti, bukan kode aplikasi.
+- FCP 2.2s / LCP 2.4s: sebagian besar TTFB jaringan VM audit (~1.2s). Di perangkat nyata dengan koneksi 4G/wifi, metrik ini jauh lebih baik; app juga sudah offline-penuh setelah install.
+- Jalur satu-satunya tembus 90: migrasi ke Preact (compat) atau SSG/prerender — di luar stack yang disepakati (Vite+React). Direkam sebagai opsi roadmap, bukan blocker rilis.
+- Keputusan: **Performance = 85, di bawah target 90, dengan akar penyebab terdokumentasi**. 9 dari 10 kriteria gate lain lulus penuh. Ini dilaporkan apa adanya sesuai aturan bagian 7 (maksimum iterasi, jujur soal blocker).
+
+### Fix R4 lain yang ikut masuk
+- robots.txt + llms.txt (SEO/agentic)
+- Judul duotone kontras dinaikkan (sky-700/candy-600)
+- Toast update pakai CSS animation (konsisten tanpa framer-motion)
+
+### E2E final: 18/18 ✅
+
+
