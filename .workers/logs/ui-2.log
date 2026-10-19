@@ -1,0 +1,3478 @@
+Reading additional input from stdin...
+OpenAI Codex v0.162.1
+--------
+workdir: /home/temamumtaza/Documents/dev/montessori-playbook
+model: gpt-5.6-luna
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR]
+reasoning effort: none
+reasoning summaries: none
+session id: 01a15467-25e6-7473-a2c6-629ad3d37c72
+--------
+user
+Kamu senior React+TS developer. Proyek: PWA Montessori Playbook (Vite+React18+TS+Tailwind v4 CSS-first, react-router-dom HashRouter). JANGAN mengubah file lain selain yang diminta. Gunakan komponen & pattern yang sudah ada: src/content/store.ts (loadGlobal, searchActivities), src/content/meta.ts (AGE_BANDS, AREAS, areaById), src/app/components/icons.tsx (Mascot, AreaIcon, CloudDeco, StarDeco, RainbowDeco), src/app/pages/TodayPage.tsx (EmptyState, SkeletonCards, AREA_GRADIENTS), src/app/db.ts (db Dexie). Desain: latar sky-50, kartu putih rounded-3xl shadow-sm, teks sky-900, dark mode navy (dark:bg-navy-800), tombol pill sky-600 min-h 48px, font display var(--font-display). Tailwind v4: warna custom (sky/leaf/apple/mango/sunny/grape/candy/tosca/navy/cream) sudah terdaftar via @theme. TypeScript strict. Setelah selesai: jalankan npm run build dan pastikan sukses (abaikan warning). Jawab terakhir: DONE UI.
+
+TUGAS: Buat src/app/pages/EnvironmentPage.tsx — planner prepared environment per ruangan.
+Data: loadGlobal().roomSetups (id, room enum, title, principles[], items[{name,essential,budgetRendah,budgetSedang,diy}], layoutTips[], ageBands[]).
+Fitur: (1) chips pilih ruangan (ikon + label, semua 6 room); (2) tampil principles sebagai list, items sebagai checklist interaktif — state tersimpan via db.checklists (key [childId+checklistId+itemId], checklistId = room id, import db dari ../db dan useChildStore untuk childId); (3) tiap item tampil budget rendah/sedang + badge DIY; (4) layoutTips section; (5) progress bar sederhana (berapa item dicentang / total).
+Route '/lingkungan' di App.tsx + tambah link di MorePage (section baru 'Persiapan rumah' dengan <a href="#/lingkungan">).
+npm run build harus lulus. DONE UI.
+codex
+Saya akan meninjau pola halaman, store, database, routing, dan MorePage yang ada, lalu menambahkan hanya file/route/link yang diminta. Setelah itu saya jalankan `npm run build` untuk verifikasi.
+exec
+/bin/bash -lc "sed -n '1,240p' src/app/pages/TodayPage.tsx && sed -n '1,220p' src/content/store.ts && sed -n '1,220p' src/content/meta.ts && sed -n '1,240p' src/app/db.ts && sed -n '1,220p' src/app/App.tsx && sed -n '1,260p' src/app/pages/MorePage.tsx && rg -n \"useChildStore|checklists|roomSetups|Environment|MorePage\" src" in /home/temamumtaza/Documents/dev/montessori-playbook
+ succeeded in 0ms:
+import { useEffect, useState } from 'react'
+import { pickToday } from '../../content/store'
+import { activeAgeBand, useChildStore, ageBandFromBirth } from '../stores/children'
+import { ageBandById, areaById } from '../../content/meta'
+import type { Activity } from '../../content/schema'
+import { AreaIcon, Mascot, StarDeco, CloudDeco } from '../components/icons'
+import { db } from '../db'
+import { useNavigate } from 'react-router-dom'
+
+export const AREA_GRADIENTS: Record<string, string> = {
+  'practical-life': 'from-apple-400 to-apple-600',
+  sensorial: 'from-grape-400 to-grape-600',
+  language: 'from-sky-400 to-sky-600',
+  math: 'from-leaf-400 to-leaf-600',
+  culture: 'from-tosca-400 to-tosca-600',
+  movement: 'from-mango-400 to-mango-600',
+  'grace-courtesy': 'from-candy-400 to-candy-600',
+  'self-care': 'from-sunny-400 to-sunny-600',
+  'art-music': 'from-grape-400 to-candy-500',
+  outdoor: 'from-leaf-400 to-tosca-500',
+}
+
+export function TodayPage() {
+  const navigate = useNavigate()
+  const [acts, setActs] = useState<Activity[]>([])
+  const [loading, setLoading] = useState(true)
+  const band = activeAgeBand()
+  const { children, activeId, setActive } = useChildStore()
+  const child = children.find((c) => c.id === activeId)
+
+  const [stats, setStats] = useState({ aktivitas: 0, area: 0, momen: 0, kebiasaan: 0 })
+  useEffect(() => {
+    if (!activeId) return
+    Promise.all([
+      db.mastery.where('childId').equals(activeId).toArray(),
+      db.journal.where('childId').equals(activeId).count(),
+    ]).then(([mastery, journalCount]) => {
+      const touched = mastery.filter((m) => m.level !== 'belum')
+      setStats({
+        aktivitas: touched.filter((m) => m.kind === 'activity').length,
+        area: touched.length % 12,
+        momen: journalCount,
+        kebiasaan: touched.filter((m) => m.kind === 'milestone').length,
+      })
+    })
+  }, [activeId, acts])
+
+  useEffect(() => {
+    if (!band) return
+    pickToday(band).then((a) => { setActs(a); setLoading(false) })
+  }, [band])
+
+  if (!child) return <OnboardPrompt />
+
+  return (
+    <div className="px-5 space-y-5">
+      {/* Halo header */}
+      <section>
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold text-sky-900 dark:text-sky-100">
+              Halo, {child.nickname} <span aria-hidden>👋</span>
+            </h2>
+            <p className="text-sm opacity-65 mt-0.5">Siap main dan belajar hari ini?</p>
+          </div>
+          <button aria-label="Pengingat" className="w-11 h-11 rounded-full bg-white dark:bg-navy-800 shadow-sm grid place-items-center text-lg active:scale-95 transition">
+            🔔
+          </button>
+        </div>
+
+        {/* Child switcher */}
+        <div className="mt-3 flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1" role="group" aria-label="Pilih anak">
+          {children.map((c) => {
+            const cBand = ageBandById(ageBandFromBirth(c.birthDate))
+            return (
+              <button
+                key={c.id}
+                onClick={() => setActive(c.id)}
+                aria-pressed={activeId === c.id}
+                className={`shrink-0 flex items-center gap-2 rounded-full pl-1.5 pr-4 min-h-[48px] border-2 transition active:scale-[0.97] ${
+                  activeId === c.id
+                    ? 'bg-sky-600 border-sky-600 text-white shadow-md'
+                    : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
+                }`}
+              >
+                <span className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-200 to-sky-400 dark:from-navy-600 dark:to-navy-500 grid place-items-center text-lg" aria-hidden>
+                  {cBand?.mascot ?? '🙂'}
+                </span>
+                <span className="text-left leading-tight">
+                  <span className="block text-sm font-semibold">{c.nickname}</span>
+                  <span className={`block text-[11px] ${activeId === c.id ? 'text-white/80' : 'opacity-55'}`}>{cBand?.label ?? '—'}</span>
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      </section>
+
+      {/* Search bar */}
+      <a
+        href="#/cari"
+        className="flex items-center gap-3 rounded-full bg-white dark:bg-navy-800 shadow-sm px-5 min-h-[48px] text-sm text-sky-900/50 dark:text-sky-100/50 active:scale-[0.98] transition"
+      >
+        <span aria-hidden>🔍</span>
+        Cari aktivitas, misal "menuang", "sensorik"…
+      </a>
+
+      {/* Rekomendasi Hari Ini */}
+      <section>
+        <div className="flex items-center justify-between mb-2.5">
+          <h3 className="font-[family-name:var(--font-display)] font-bold text-lg">Rekomendasi Hari Ini</h3>
+          <a href="#/playbook" className="text-sm font-medium text-sky-600 dark:text-sky-400">Lihat Semua ›</a>
+        </div>
+        {loading ? (
+          <SkeletonCards n={3} />
+        ) : acts.length === 0 ? (
+          <EmptyState
+            title="Konten sedang disiapkan"
+            text="Aktivitas untuk usia ini belum tersedia. Cek playbook usia lain dulu ya."
+          />
+        ) : (
+          <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-5 px-5 pb-1 snap-x snap-mandatory">
+            {acts.map((a) => {
+              const area = areaById(a.areas[0])
+              const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-400 to-sky-600'
+              return (
+                <article
+                  key={a.id}
+                  onClick={() => navigate(`/aktivitas/${a.id}`)}
+                  className="snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.97] transition cursor-pointer"
+                >
+                  <div className={`relative h-28 bg-gradient-to-br ${grad} grid place-items-center`}>
+                    <AreaIcon area={a.areas[0]} className="w-14 h-14 text-white/95 drop-shadow" />
+                    <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">
+                      {area?.label}
+                    </span>
+                    <button aria-label="Simpan ke bookmark" className="absolute top-2 right-2 w-7 h-7 rounded-full bg-white/90 grid place-items-center text-xs">
+                      ♡
+                    </button>
+                  </div>
+                  <div className="p-3">
+                    <h4 className="font-semibold text-sm leading-snug line-clamp-2 min-h-[2.5rem]">{a.title}</h4>
+                    <p className="text-[11px] opacity-60 mt-1.5">
+                      ⏱ {a.durationMinutes} mnt · {a.ageBands[0]}
+                    </p>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
+        )}
+      </section>
+
+      {/* Progres Minggu Ini */}
+      <section>
+        <div className="flex items-center justify-between mb-2.5">
+          <h3 className="font-[family-name:var(--font-display)] font-bold text-lg">Progres Minggu Ini</h3>
+          <a href="#/progres" className="text-sm font-medium text-sky-600 dark:text-sky-400">Lihat Detail ›</a>
+        </div>
+        <div className="grid grid-cols-4 gap-2">
+          {[
+            { n: stats.aktivitas, l: 'aktivitas', c: 'text-leaf-600' },
+            { n: stats.area, l: 'area berbeda', c: 'text-sunny-700' },
+            { n: stats.momen, l: 'momen berharga', c: 'text-apple-600' },
+            { n: stats.kebiasaan, l: 'kebiasaan baru', c: 'text-sky-600' },
+          ].map((s) => (
+            <div key={s.l} className="rounded-2xl bg-white dark:bg-navy-800 shadow-sm p-2.5 text-center">
+              <p className={`font-[family-name:var(--font-display)] font-bold text-xl ${s.c}`}>{s.n}</p>
+              <p className="text-[10px] opacity-60 leading-tight mt-0.5">{s.l}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Reminder banner */}
+      <section className="rounded-3xl bg-sunny-100 dark:bg-navy-800 p-4 flex items-start gap-3">
+        <span className="text-2xl" aria-hidden>🌞</span>
+        <div className="flex-1">
+          <p className="text-sm font-semibold">Jangan lupa istirahat, ya!</p>
+          <p className="text-xs opacity-70 mt-0.5">Anak juga belajar dari momen santai bersama Mama & Papa.</p>
+        </div>
+        <button aria-label="Tutup pengingat" className="opacity-40 text-sm px-1">✕</button>
+      </section>
+    </div>
+  )
+}
+
+function childBand(birth: string) {
+  return ageBandById(ageBandFromBirth(birth))
+}
+void childBand
+
+export function OnboardPrompt() {
+  return (
+    <div className="px-5 relative">
+      <CloudDeco className="absolute -top-2 -right-2 w-24 text-white/70 dark:text-navy-700" />
+      <StarDeco className="absolute top-8 left-4 w-5 text-sunny-400" />
+      <div className="rounded-blob bg-white dark:bg-navy-800 p-6 text-center shadow-sm relative overflow-hidden">
+        <Mascot className="w-36 mx-auto" />
+        <h2 className="font-[family-name:var(--font-display)] text-2xl font-bold mt-2">Selamat datang!</h2>
+        <p className="text-sm opacity-70 mt-2 max-w-[280px] mx-auto">
+          Ceritakan tentang si kecil, agar kami bisa menyiapkan rekomendasi yang tepat.
+        </p>
+        <a
+          href="#/lainnya"
+          className="inline-block mt-4 rounded-full bg-sky-600 px-8 py-3 text-white font-semibold min-h-[48px] leading-[24px] active:scale-95 transition shadow-md shadow-sky-600/20"
+        >
+          Buat profil anak →
+        </a>
+      </div>
+    </div>
+  )
+}
+
+export function EmptyState({ title, text, mood = 'happy' }: { title: string; text: string; mood?: 'happy' | 'sleepy' | 'oops' }) {
+  return (
+    <div className="py-10 text-center px-6">
+      <Mascot className="w-28 mx-auto" mood={mood} />
+      <h3 className="font-[family-name:var(--font-display)] font-bold text-lg mt-2">{title}</h3>
+      <p className="text-sm opacity-65 mt-1 max-w-xs mx-auto">{text}</p>
+    </div>
+  )
+}
+
+export function SkeletonCards({ n }: { n: number }) {
+  return (
+    <div className="flex gap-3 overflow-hidden -mx-5 px-5" aria-hidden>
+      {Array.from({ length: n }).map((_, i) => (
+        <div key={i} className="shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 overflow-hidden animate-pulse">
+          <div className="h-28 bg-sky-100 dark:bg-navy-700" />
+          <div className="p-3 space-y-2">
+            <div className="h-3.5 w-4/5 rounded bg-sky-100 dark:bg-navy-700" />
+            <div className="h-2.5 w-2/5 rounded bg-sky-50 dark:bg-navy-700/60" />
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
+import type { Activity, GlobalBundle, AgeBandBundle, AgeBandId } from './schema'
+import { AGE_BANDS, AREAS } from './meta'
+import Fuse from 'fuse.js'
+
+// Lazy-load semua bundle per AgeBand (ditandatangani Vite sebagai chunk terpisah)
+const bundleModules = import.meta.glob('../../content/bundles/*.json')
+const globalModules = import.meta.glob('../../content/*.json')
+
+let globalCache: GlobalBundle | null = null
+const bundleCache = new Map<AgeBandId, AgeBandBundle>()
+
+export async function loadGlobal(): Promise<GlobalBundle> {
+  if (globalCache) return globalCache
+  const key = Object.keys(globalModules).find((k) => k.endsWith('/global.json'))
+  if (!key) return emptyGlobal()
+  const mod = (await globalModules[key]()) as { default: GlobalBundle }
+  globalCache = mod.default ?? (mod as unknown as GlobalBundle)
+  return globalCache
+}
+
+export async function loadBundle(band: AgeBandId): Promise<AgeBandBundle> {
+  const cached = bundleCache.get(band)
+  if (cached) return cached
+  const key = Object.keys(bundleModules).find((k) => k.endsWith(`/${band}.json`))
+  const empty: AgeBandBundle = { ageBand: band, activities: [], milestones: [] }
+  if (!key) return empty
+  const mod = (await bundleModules[key]()) as { default: AgeBandBundle }
+  const bundle = mod.default ?? (mod as unknown as AgeBandBundle)
+  bundleCache.set(band, bundle)
+  return bundle
+}
+
+export async function loadActivitiesFor(bands: AgeBandId[]): Promise<Activity[]> {
+  const bundles = await Promise.all(bands.map(loadBundle))
+  return bundles.flatMap((b) => b.activities)
+}
+
+export async function loadAllActivities(): Promise<Activity[]> {
+  const all = await Promise.all(AGE_BANDS.map((a) => loadBundle(a.id)))
+  return all.flatMap((b) => b.activities)
+}
+
+// Rekomendasi "Hari Ini": 3 aktivitas sesuai usia + rotasi harian deterministik
+export async function pickToday(band: AgeBandId, interests: string[] = [], seedDay = new Date().getDate()): Promise<Activity[]> {
+  const pool = await loadActivitiesFor([band])
+  if (pool.length === 0) return []
+  const scored = pool.map((a, i) => {
+    const interestBoost = interests.some((it) => a.areas.includes(it as never)) ? 100 : 0
+    const rot = (i * 7 + seedDay * 3) % 50
+    return { a, score: interestBoost + rot }
+  })
+  scored.sort((x, y) => y.score - x.score)
+  return scored.slice(0, 3).map((s) => s.a)
+}
+
+function emptyGlobal(): GlobalBundle {
+  return {
+    ageBands: AGE_BANDS,
+    areas: AREAS,
+    skills: [],
+    materials: [],
+    diyGuides: [],
+    roomSetups: [],
+    parentGuides: [],
+    glossary: [],
+    checklists: [],
+  }
+}
+
+// Pencarian offline penuh (Fuse.js) — indeks dibangun sekali, di-cache
+let fusePromise: Promise<Fuse<Activity>> | null = null
+export async function searchActivities(q: string): Promise<Activity[]> {
+  if (!q.trim()) return []
+  if (!fusePromise) {
+    fusePromise = loadAllActivities().then(
+      (acts) =>
+        new Fuse(acts, {
+          keys: ['title', 'summary', 'skills', 'materials.name'],
+          threshold: 0.35,
+          ignoreLocation: true,
+        }),
+    )
+  }
+  const fuse = await fusePromise
+  return fuse.search(q).map((r) => r.item)
+}
+import type { AgeBandMeta, AreaMeta } from './schema'
+
+export const AGE_BANDS: AgeBandMeta[] = [
+  { id: '0-3m', label: '0–3 bulan', rangeMonths: [0, 3], color: 'sky', mascot: '🐥' },
+  { id: '3-6m', label: '3–6 bulan', rangeMonths: [3, 6], color: 'tosca', mascot: '🐣' },
+  { id: '6-9m', label: '6–9 bulan', rangeMonths: [6, 9], color: 'leaf', mascot: '🌿' },
+  { id: '9-12m', label: '9–12 bulan', rangeMonths: [9, 12], color: 'sunny', mascot: '☀️' },
+  { id: '12-18m', label: '1–1,5 tahun', rangeMonths: [12, 18], color: 'mango', mascot: '🎈' },
+  { id: '18-24m', label: '1,5–2 tahun', rangeMonths: [18, 24], color: 'candy', mascot: '🧸' },
+  { id: '2-3y', label: '2–3 tahun', rangeMonths: [24, 36], color: 'apple', mascot: '🚂' },
+  { id: '3-4y', label: '3–4 tahun', rangeMonths: [36, 48], color: 'grape', mascot: '🎨' },
+  { id: '4-5y', label: '4–5 tahun', rangeMonths: [48, 60], color: 'sky', mascot: '🚀' },
+]
+
+export const AREAS: AreaMeta[] = [
+  {
+    id: 'practical-life', label: 'Kehidupan Praktis', labelEn: 'Practical Life', color: 'apple', icon: '🫗',
+    description: 'Keterampilan hidup sehari-hari: menuang, menyendok, merapikan, merawat diri dan lingkungan.',
+  },
+  {
+    id: 'sensorial', label: 'Sensorial', labelEn: 'Sensorial', color: 'grape', icon: '🔺',
+    description: 'Mengasah indera: bentuk, warna, tekstur, suara, berat — mempertajam cara anak mengamati dunia.',
+  },
+  {
+    id: 'language', label: 'Bahasa', labelEn: 'Language', color: 'sky', icon: '💬',
+    description: 'Dari berceloteh awal ke kosakata, cerita, dan pramenulis — bahasa tumbuh dari percakapan nyata.',
+  },
+  {
+    id: 'math', label: 'Matematika', labelEn: 'Math', color: 'leaf', icon: '🔢',
+    description: 'Angka, jumlah, dan pola lewat bahan konkret yang bisa digenggam sebelum simbol abstrak.',
+  },
+  {
+    id: 'culture', label: 'Budaya & Alam', labelEn: 'Culture', color: 'tosca', icon: '🌍',
+    description: 'Benua, peta, alam, musik, dan seni — membuka jendela dunia untuk anak.',
+  },
+  {
+    id: 'movement', label: 'Gerak', labelEn: 'Movement', color: 'mango', icon: '🤸',
+    description: 'Motorik kasar dan halus: merangkak, memanjat, melempar, memindah — gerak bebas setiap hari.',
+  },
+  {
+    id: 'grace-courtesy', label: 'Sopan Santun', labelEn: 'Grace & Courtesy', color: 'candy', icon: '🤝',
+    description: 'Salam, menunggu giliran, minta tolong — keterampilan sosial yang dilatih lewat teladan.',
+  },
+  {
+    id: 'self-care', label: 'Merawat Diri', labelEn: 'Self Care', color: 'sunny', icon: '🪥',
+    description: 'Berpakaian, mencuci tangan, grooming, toilet learning — kemandirian dimulai dari diri sendiri.',
+  },
+  {
+    id: 'art-music', label: 'Seni & Musik', labelEn: 'Art & Music', color: 'grape', icon: '🎵',
+    description: 'Menggambar, melukis, menempel, bernyanyi — proses lebih penting daripada hasil.',
+  },
+  {
+    id: 'outdoor', label: 'Outdoor', labelEn: 'Outdoor', color: 'leaf', icon: '🌳',
+    description: 'Alam terbuka: berjalan sendiri, berkebun, mengamati serangga — alam adalah kelas terbesar.',
+  },
+]
+
+export const ageBandById = (id: string) => AGE_BANDS.find((a) => a.id === id)
+export const areaById = (id: string) => AREAS.find((a) => a.id === id)
+import Dexie, { type Table } from 'dexie'
+
+export type JournalEntry = {
+  id?: number
+  childId: string
+  createdAt: number
+  note: string
+  photoBlob?: Blob
+  activityId?: string
+  skillTags: string[]
+  mood?: 'senang' | 'fokus' | 'frustrasi' | 'tenang'
+}
+
+export type MasteryRecord = {
+  childId: string
+  targetId: string // activity/skill/milestone id
+  kind: 'activity' | 'skill' | 'milestone'
+  level: 'belum' | 'mulai' | 'mahir'
+  updatedAt: number
+}
+
+export type Bookmark = {
+  childId: string
+  targetId: string
+  createdAt: number
+}
+
+export type ChecklistState = {
+  childId: string
+  checklistId: string
+  itemId: number
+  done: boolean
+}
+
+export type Profile = {
+  key: string // 'onboarding-v1'
+  reminders: boolean
+  reminderHour: number
+  exportedAt?: string
+}
+
+class PlaybookDB extends Dexie {
+  journal!: Table<JournalEntry, number>
+  mastery!: Table<MasteryRecord, [string, string]>
+  bookmarks!: Table<Bookmark, [string, string]>
+  checklists!: Table<ChecklistState, [string, string, number]>
+  profiles!: Table<Profile, string>
+
+  constructor() {
+    super('montessori-playbook')
+    this.version(1).stores({
+      journal: '++id, childId, createdAt, activityId',
+      mastery: '[childId+targetId], childId, level',
+      bookmarks: '[childId+targetId], childId',
+      checklists: '[childId+checklistId+itemId], childId',
+      profiles: 'key',
+    })
+  }
+}
+
+export const db = new PlaybookDB()
+
+export async function exportAllData(): Promise<string> {
+  const [journal, mastery, bookmarks, checklists] = await Promise.all([
+    db.journal.toArray(),
+    db.mastery.toArray(),
+    db.bookmarks.toArray(),
+    db.checklists.toArray(),
+  ])
+  // foto blob -> base64
+  const journalSer = await Promise.all(
+    journal.map(async (j) => ({
+      ...j,
+      photoBlob: j.photoBlob ? await blobToBase64(j.photoBlob) : undefined,
+    })),
+  )
+  return JSON.stringify({ v: 1, exportedAt: new Date().toISOString(), journal: journalSer, mastery, bookmarks, checklists }, null, 2)
+}
+
+export async function importAllData(json: string): Promise<void> {
+  const data = JSON.parse(json)
+  if (data.v !== 1) throw new Error('Format file tidak dikenal')
+  await db.transaction('rw', db.journal, db.mastery, db.bookmarks, db.checklists, async () => {
+    for (const j of data.journal ?? []) {
+      const { photoBlob, ...rest } = j
+      await db.journal.add({ ...rest, photoBlob: photoBlob ? await base64ToBlob(photoBlob) : undefined })
+    }
+    if (data.mastery) await db.mastery.bulkPut(data.mastery)
+    if (data.bookmarks) await db.bookmarks.bulkPut(data.bookmarks)
+    if (data.checklists) await db.checklists.bulkPut(data.checklists)
+  })
+}
+
+function blobToBase64(blob: Blob): Promise<string> {
+  return new Promise((res) => {
+    const r = new FileReader()
+    r.onload = () => res(String(r.result))
+    r.readAsDataURL(blob)
+  })
+}
+
+function base64ToBlob(dataUrl: string): Promise<Blob> {
+  return fetch(dataUrl).then((r) => r.blob())
+}
+import { useEffect, useState, createContext, useContext } from 'react'
+import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
+import { TodayPage } from './pages/TodayPage'
+import { PlaybookPage } from './pages/PlaybookPage'
+import { JournalPage } from './pages/JournalPage'
+import { ProgressPage } from './pages/ProgressPage'
+import { MorePage } from './pages/MorePage'
+import { ActivityDetailPage } from './pages/ActivityDetailPage'
+import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
+import { UpdateToast } from './components/UpdateToast'
+import { swUpdate } from './pwa'
+import { useChildStore } from './stores/children'
+
+type TabScroll = Record<string, number>
+const ScrollCtx = createContext<{ save: (tab: string, y: number) => void; get: (tab: string) => number }>({
+  save: () => {},
+  get: () => 0,
+})
+export const useTabScroll = () => useContext(ScrollCtx)
+
+const TABS = [
+  { to: '/', label: 'Hari Ini', icon: '☀️' },
+  { to: '/playbook', label: 'Playbook', icon: '📖' },
+  { to: '/jurnal', label: 'Jurnal', icon: '📝' },
+  { to: '/progres', label: 'Progres', icon: '🌱' },
+  { to: '/lainnya', label: 'Lainnya', icon: '⋯' },
+]
+
+export default function App() {
+  const location = useLocation()
+  const [scrollMem, setScrollMem] = useState<TabScroll>({})
+  const [isDark, setIsDark] = useState(
+    () => localStorage.getItem('mp-theme') === 'dark' ||
+      (localStorage.getItem('mp-theme') === null && window.matchMedia('(prefers-color-scheme: dark)').matches),
+  )
+  const activeChild = useChildStore((s) => s.children[0])
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark)
+    localStorage.setItem('mp-theme', isDark ? 'dark' : 'light')
+  }, [isDark])
+
+  // Simpan scroll per tab & restore saat kembali
+  useEffect(() => {
+    const tab = TABS.find((t) => t.to === location.pathname)?.to ?? location.pathname
+    const saved = scrollMem[tab]
+    if (saved !== undefined) requestAnimationFrame(() => window.scrollTo(0, saved))
+    const onScroll = () => {
+      setScrollMem((m) => (m[tab] === window.scrollY ? m : { ...m, [tab]: window.scrollY }))
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [location.pathname])
+
+  return (
+    <ScrollCtx.Provider value={{ save: () => {}, get: (t) => scrollMem[t] ?? 0 }}>
+      <div className="min-h-dvh bg-sky-50 dark:bg-navy-900 text-sky-900 dark:text-sky-100 transition-colors">
+        {/* Header collapsing large title */}
+        <Header title={titleFor(location.pathname)} />
+
+        <main className="px-safe pb-28 pt-2">
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={location.pathname}
+              initial={{ opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -24 }}
+              transition={{ duration: 0.22, ease: [0.32, 0.72, 0, 1] }}
+            >
+              <Routes location={location}>
+                <Route path="/" element={<TodayPage />} />
+                <Route path="/playbook" element={<PlaybookPage />} />
+                <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
+                <Route path="/cari" element={<SearchGlossaryPage />} />
+                <Route path="/jurnal" element={<JournalPage />} />
+                <Route path="/progres" element={<ProgressPage />} />
+                <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
+              </Routes>
+            </motion.div>
+          </AnimatePresence>
+        </main>
+
+        <TabBar tabs={TABS} />
+        <UpdateToast swUpdate={swUpdate} />
+        {/* a11y: nama anak di judul dinamis */}
+        <span className="sr-only" aria-live="polite">{activeChild ? `Profil aktif: ${activeChild.nickname}` : ''}</span>
+      </div>
+    </ScrollCtx.Provider>
+  )
+}
+
+function titleFor(path: string): string {
+  if (path === '/') return 'Hari Ini'
+  if (path.startsWith('/cari')) return 'Cari'
+  if (path.startsWith('/playbook')) return 'Playbook'
+  if (path.startsWith('/jurnal')) return 'Jurnal'
+  if (path.startsWith('/progres')) return 'Progres'
+  return 'Lainnya'
+}
+
+function Header({ title }: { title: string }) {
+  const [compact, setCompact] = useState(false)
+  useEffect(() => {
+    const onScroll = () => setCompact(window.scrollY > 36)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+  return (
+    <header className="sticky top-0 z-40 bg-sky-50/85 dark:bg-navy-900/85 backdrop-blur-md pt-safe">
+      <div className="px-5 pb-2 transition-all" style={{ height: compact ? 48 : 84 }}>
+        <h1
+          className={`font-[family-name:var(--font-display)] font-bold text-sky-700 dark:text-sky-300 transition-all ${compact ? 'text-xl leading-[48px]' : 'text-3xl leading-[84px]'}`}
+        >
+          {title}
+        </h1>
+      </div>
+    </header>
+  )
+}
+
+function TabBar({ tabs }: { tabs: typeof TABS }) {
+  return (
+    <nav
+      aria-label="Navigasi utama"
+      className="fixed bottom-0 inset-x-0 z-50 bg-white/90 dark:bg-navy-800/90 backdrop-blur-md border-t border-sky-100 dark:border-navy-700 pb-safe"
+    >
+      <div className="grid grid-cols-5 px-safe">
+        {tabs.map((t) => (
+          <NavLink
+            key={t.to}
+            to={t.to}
+            end={t.to === '/'}
+            className={({ isActive }) =>
+              `flex flex-col items-center gap-0.5 py-2 min-h-[48px] justify-center text-[11px] font-medium transition-colors ${
+                isActive ? 'text-sky-600 dark:text-sky-400' : 'text-sky-900/45 dark:text-sky-100/45'
+              }`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <span aria-hidden className="text-xl leading-none">{t.icon}</span>
+                <span>{t.label}</span>
+                {isActive && (
+                  <motion.span layoutId="tabdot" className="absolute top-0 h-0.5 w-8 rounded-full bg-sky-500" />
+                )}
+              </>
+            )}
+          </NavLink>
+        ))}
+      </div>
+    </nav>
+  )
+}
+import { useRef, useState } from 'react'
+import { useChildStore } from '../stores/children'
+import { exportAllData, importAllData } from '../db'
+
+export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDark: () => void }) {
+  const { children, activeId, setActive, addChild, removeChild } = useChildStore()
+  const fileRef = useRef<HTMLInputElement>(null)
+
+  async function onExport() {
+    const json = await exportAllData()
+    const blob = new Blob([json], { type: 'application/json' })
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(blob)
+    a.download = `montessori-playbook-backup-${new Date().toISOString().slice(0, 10)}.json`
+    a.click()
+    URL.revokeObjectURL(a.href)
+  }
+
+  async function onImportFile(f: File) {
+    const text = await f.text()
+    try {
+      await importAllData(text)
+      alert('Data berhasil diimpor.')
+    } catch {
+      alert('File tidak dikenali. Gunakan file hasil ekspor app ini.')
+    }
+  }
+
+  return (
+    <div className="px-5 space-y-4">
+      {/* Profil anak */}
+      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
+        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Profil anak</h2>
+        {children.length === 0 ? (
+          <p className="text-sm opacity-70 mt-1">Belum ada profil.</p>
+        ) : (
+          <ul className="mt-2 space-y-2">
+            {children.map((c) => (
+              <li key={c.id} className="flex items-center gap-2">
+                <button
+                  onClick={() => setActive(c.id)}
+                  aria-pressed={activeId === c.id}
+                  className={`flex-1 text-left rounded-2xl px-4 min-h-[48px] border transition ${
+                    activeId === c.id ? 'bg-sky-600 text-white border-sky-600' : 'border-sky-200 dark:border-navy-700'
+                  }`}
+                >
+                  <span className="font-semibold">{c.nickname}</span>
+                  <span className="block text-xs opacity-70">Lahir {c.birthDate}</span>
+                </button>
+                <button
+                  onClick={() => { if (confirm(`Hapus profil ${c.nickname}? Data jurnalnya tetap tersimpan.`)) removeChild(c.id) }}
+                  aria-label={`Hapus profil ${c.nickname}`}
+                  className="rounded-full border border-apple-400 text-apple-600 min-w-[48px] min-h-[48px]"
+                >
+                  ✕
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+        <AddChildForm onAdd={addChild} />
+      </section>
+
+      {/* Tampilan */}
+      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+        <div>
+          <h2 className="font-semibold">Mode gelap</h2>
+          <p className="text-xs opacity-65">Sky navy, nyaman untuk sesi malam.</p>
+        </div>
+        <button
+          role="switch"
+          aria-checked={isDark}
+          onClick={onToggleDark}
+          className={`w-14 h-8 rounded-full transition relative ${isDark ? 'bg-sky-600' : 'bg-sky-200'}`}
+        >
+          <span className={`absolute top-1 h-6 w-6 rounded-full bg-white shadow transition-all ${isDark ? 'left-7' : 'left-1'}`} />
+        </button>
+      </section>
+
+      {/* Data */}
+      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm space-y-2">
+        <h2 className="font-semibold">Data kamu</h2>
+        <p className="text-xs opacity-65">Semua data tersimpan di perangkat ini saja. Tidak ada server, tidak ada tracking.</p>
+        <div className="flex gap-2 pt-1">
+          <button onClick={onExport} className="flex-1 rounded-full border border-sky-300 dark:border-navy-600 min-h-[44px] font-medium active:scale-[0.98] transition">
+            Ekspor JSON
+          </button>
+          <button onClick={() => fileRef.current?.click()} className="flex-1 rounded-full border border-sky-300 dark:border-navy-600 min-h-[44px] font-medium active:scale-[0.98] transition">
+            Impor JSON
+          </button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json"
+            className="hidden"
+            onChange={(e) => e.target.files?.[0] && onImportFile(e.target.files[0])}
+          />
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="rounded-blob bg-sunny-100 dark:bg-navy-800 p-4 text-sm">
+        <h2 className="font-bold">⚠️ Disclaimer</h2>
+        <p className="mt-1 opacity-80">
+          Montessori Playbook adalah panduan edukatif untuk orang tua, bukan pengganti nasihat dokter, terapis,
+          atau tenaga kesehatan. Setiap anak berkembang dengan temponya sendiri. Jika ada kekhawatiran tentang
+          tumbuh kembang anak, konsultasikan ke dokter atau ahli terapi. Dalam keadaan darurat, hubungi layanan
+          gawat darurat setempat.
+        </p>
+      </section>
+
+      <p className="text-center text-xs opacity-50 pb-2">Montessori Playbook v0.1 · dibuat dengan ☁️ untuk orang tua Indonesia</p>
+    </div>
+  )
+}
+
+function AddChildForm({ onAdd }: { onAdd: (nickname: string, birthDate: string) => void }) {
+  const [open, setOpen] = useState(false)
+  const [nickname, setNickname] = useState('')
+  const [birth, setBirth] = useState('')
+
+  if (!open)
+    return (
+      <button
+        onClick={() => setOpen(true)}
+        className="mt-3 w-full rounded-full border-2 border-dashed border-sky-300 dark:border-navy-600 text-sky-700 dark:text-sky-300 min-h-[48px] font-medium active:scale-[0.98] transition"
+      >
+        + Tambah anak
+      </button>
+    )
+
+  return (
+    <form
+      className="mt-3 space-y-2"
+      onSubmit={(e) => {
+        e.preventDefault()
+        if (!nickname.trim() || !birth) return
+        onAdd(nickname.trim(), birth)
+        setNickname(''); setBirth(''); setOpen(false)
+      }}
+    >
+      <input
+        value={nickname}
+        onChange={(e) => setNickname(e.target.value)}
+        placeholder="Nama panggilan"
+        aria-label="Nama panggilan anak"
+        className="w-full rounded-2xl border border-sky-200 dark:border-navy-700 bg-sky-50/50 dark:bg-navy-700/40 px-4 min-h-[48px]"
+        required
+      />
+      <input
+        type="date"
+        value={birth}
+        onChange={(e) => setBirth(e.target.value)}
+        aria-label="Tanggal lahir anak"
+        className="w-full rounded-2xl border border-sky-200 dark:border-navy-700 bg-sky-50/50 dark:bg-navy-700/40 px-4 min-h-[48px]"
+        required
+      />
+      <div className="flex gap-2">
+        <button type="button" onClick={() => setOpen(false)} className="flex-1 rounded-full border border-sky-200 dark:border-navy-700 min-h-[44px]">
+          Batal
+        </button>
+        <button type="submit" className="flex-1 rounded-full bg-sky-600 text-white font-semibold min-h-[44px]">
+          Simpan
+        </button>
+      </div>
+    </form>
+  )
+}
+src/app/App.tsx:8:import { MorePage } from './pages/MorePage'
+src/app/App.tsx:13:import { useChildStore } from './stores/children'
+src/app/App.tsx:37:  const activeChild = useChildStore((s) => s.children[0])
+src/app/App.tsx:78:                <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
+src/app/db.ts:46:  checklists!: Table<ChecklistState, [string, string, number]>
+src/app/db.ts:55:      checklists: '[childId+checklistId+itemId], childId',
+src/app/db.ts:64:  const [journal, mastery, bookmarks, checklists] = await Promise.all([
+src/app/db.ts:68:    db.checklists.toArray(),
+src/app/db.ts:77:  return JSON.stringify({ v: 1, exportedAt: new Date().toISOString(), journal: journalSer, mastery, bookmarks, checklists }, null, 2)
+src/app/db.ts:83:  await db.transaction('rw', db.journal, db.mastery, db.bookmarks, db.checklists, async () => {
+src/app/db.ts:90:    if (data.checklists) await db.checklists.bulkPut(data.checklists)
+src/app/stores/children.ts:34:export const useChildStore = create<ChildStore>()(
+src/app/stores/children.ts:60:  const st = useChildStore.getState()
+src/app/pages/JournalPage.tsx:3:import { useChildStore } from '../stores/children'
+src/app/pages/JournalPage.tsx:8:  const activeId = useChildStore((s) => s.activeId)
+src/app/pages/MorePage.tsx:2:import { useChildStore } from '../stores/children'
+src/app/pages/MorePage.tsx:5:export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDark: () => void }) {
+src/app/pages/MorePage.tsx:6:  const { children, activeId, setActive, addChild, removeChild } = useChildStore()
+src/app/pages/TodayPage.tsx:3:import { activeAgeBand, useChildStore, ageBandFromBirth } from '../stores/children'
+src/app/pages/TodayPage.tsx:28:  const { children, activeId, setActive } = useChildStore()
+src/content/store.ts:63:    roomSetups: [],
+src/content/store.ts:66:    checklists: [],
+src/app/pages/ActivityDetailPage.tsx:9:import { useChildStore } from '../stores/children'
+src/app/pages/ActivityDetailPage.tsx:22:  const activeId = useChildStore((s) => s.activeId)
+src/content/schema.ts:202:  roomSetups: z.array(RoomSetup),
+src/content/schema.ts:205:  checklists: z.array(Checklist),
+src/app/pages/ProgressPage.tsx:3:import { useChildStore } from '../stores/children'
+src/app/pages/ProgressPage.tsx:10:  const activeId = useChildStore((s) => s.activeId)
+src/app/pages/ProgressPage.tsx:14:    const st = useChildStore.getState()
+
+exec
+/bin/bash -lc "sed -n '1,260p' src/content/schema.ts; sed -n '1,260p' src/app/components/icons.tsx; sed -n '1,100p' src/app/stores/children.ts; rg -n 'roomSetups|\"room\"|budgetRendah' src/content/global.json" in /home/temamumtaza/Documents/dev/montessori-playbook
+ exited 2 in 0ms:
+import { z } from 'zod'
+
+// ===== Enum inti =====
+export const AgeBandId = z.enum([
+  '0-3m', '3-6m', '6-9m', '9-12m',
+  '12-18m', '18-24m', '2-3y', '3-4y', '4-5y',
+])
+export type AgeBandId = z.infer<typeof AgeBandId>
+
+export const AreaId = z.enum([
+  'practical-life', 'sensorial', 'language', 'math', 'culture',
+  'movement', 'grace-courtesy', 'self-care', 'art-music', 'outdoor',
+])
+export type AreaId = z.infer<typeof AreaId>
+
+export const MasteryLevel = z.enum(['belum', 'mulai', 'mahir'])
+export type MasteryLevel = z.infer<typeof MasteryLevel>
+
+// ===== Referensi sumber (WAJIB di tiap entri konten) =====
+export const Source = z.object({
+  title: z.string().min(3),
+  url: z.string().url(),
+  note: z.string().optional(),
+})
+export type Source = z.infer<typeof Source>
+
+// ===== Activity (entitas inti) =====
+export const Activity = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, 'id: kebab-case'),
+  title: z.string().min(5),
+  summary: z.string().min(20, 'ringkasan minimal 20 karakter'),
+  ageBands: z.array(AgeBandId).min(1),
+  areas: z.array(AreaId).min(1),
+  skills: z.array(z.string()).default([]),
+  objectives: z.array(z.string()).min(1, 'minimal 1 tujuan'),
+  materials: z.array(z.object({
+    name: z.string().min(2),
+    fromHome: z.boolean().default(true),
+    optional: z.boolean().default(false),
+  })).min(1),
+  prepMinutes: z.number().int().min(0).max(120),
+  durationMinutes: z.number().int().min(1).max(180),
+  prepLevel: z.enum(['rendah', 'sedang', 'tinggi']),
+  presentation: z.array(z.object({
+    step: z.number().int().min(1),
+    text: z.string().min(10),
+  })).min(2, 'minimal 2 langkah presentasi'),
+  controlOfError: z.string().min(10).optional(),
+  variations: z.array(z.string()).default([]),
+  readySigns: z.array(z.string()).min(1, 'minimal 1 tanda siap'),
+  struggleSigns: z.array(z.string()).default([]),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1, 'WAJIB minimal 1 rujukan'),
+  diyGuideId: z.string().optional(),
+  materialIds: z.array(z.string()).default([]),
+})
+export type Activity = z.infer<typeof Activity>
+
+// ===== Material =====
+export const Material = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(3),
+  purpose: z.string().min(20),
+  ageBands: z.array(AgeBandId).min(1),
+  budget: z.enum(['rendah', 'sedang', 'tinggi']),
+  buyHint: z.string().optional(),
+  diy: z.boolean().default(false),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Material = z.infer<typeof Material>
+
+// ===== DIYGuide =====
+export const DIYGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  makes: z.string().min(3),
+  timeMinutes: z.number().int().min(5).max(600),
+  cost: z.enum(['gratis', 'rendah', 'sedang']),
+  materialsNeeded: z.array(z.string()).min(1),
+  steps: z.array(z.string()).min(2),
+  ageBands: z.array(AgeBandId).min(1),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type DIYGuide = z.infer<typeof DIYGuide>
+
+// ===== RoomSetup =====
+export const RoomSetup = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  room: z.enum(['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']),
+  title: z.string().min(5),
+  principles: z.array(z.string()).min(2),
+  items: z.array(z.object({
+    name: z.string().min(2),
+    essential: z.boolean().default(true),
+    budgetRendah: z.string(),
+    budgetSedang: z.string().optional(),
+    diy: z.boolean().default(false),
+  })).min(3),
+  layoutTips: z.array(z.string()).min(1),
+  ageBands: z.array(AgeBandId).min(1),
+  references: z.array(Source).min(1),
+})
+export type RoomSetup = z.infer<typeof RoomSetup>
+
+// ===== Milestone =====
+export const Milestone = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  ageBand: AgeBandId,
+  domain: z.enum(['motorik-kasar', 'motorik-halus', 'bahasa', 'kognitif', 'sosial-emosional', 'self-help']),
+  description: z.string().min(20),
+  typicalFromMonths: z.number().min(0).max(72),
+  typicalToMonths: z.number().min(0).max(72),
+  redFlags: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Milestone = z.infer<typeof Milestone>
+
+// ===== ParentGuide =====
+export const ParentGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  category: z.enum(['filosofi', 'komunikasi', 'disiplin', 'rutinitas', 'screen-time', 'sibling', 'toilet', 'tantrum', 'observasi', 'self-care']),
+  ageBands: z.array(AgeBandId).default([]),
+  body: z.string().min(200, 'panduan minimal 200 karakter'),
+  keyTakeaways: z.array(z.string()).min(2),
+  references: z.array(Source).min(1),
+})
+export type ParentGuide = z.infer<typeof ParentGuide>
+
+// ===== Glossary =====
+export const GlossaryEntry = z.object({
+  term: z.string().min(2),
+  termEn: z.string().optional(),
+  definition: z.string().min(30),
+  relatedTerms: z.array(z.string()).default([]),
+})
+export type GlossaryEntry = z.infer<typeof GlossaryEntry>
+
+// ===== Checklist =====
+export const Checklist = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  kind: z.enum(['environment', 'rutinitas', 'persiapan-aktivitas', 'keselamatan']),
+  scope: z.string(),
+  items: z.array(z.object({
+    text: z.string().min(5),
+    hint: z.string().optional(),
+  })).min(3),
+  references: z.array(Source).min(1),
+})
+export type Checklist = z.infer<typeof Checklist>
+
+// ===== Skill =====
+export const Skill = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(3),
+  area: AreaId,
+  description: z.string().min(20),
+  ageBands: z.array(AgeBandId).min(1),
+})
+export type Skill = z.infer<typeof Skill>
+
+// ===== AgeBand metadata (warna & label) =====
+export const AgeBandMeta = z.object({
+  id: AgeBandId,
+  label: z.string().min(3),
+  rangeMonths: z.tuple([z.number(), z.number()]),
+  color: z.enum(['sky', 'apple', 'mango', 'sunny', 'leaf', 'grape', 'candy', 'tosca']),
+  mascot: z.string().min(1),
+})
+export type AgeBandMeta = z.infer<typeof AgeBandMeta>
+
+// ===== Area metadata =====
+export const AreaMeta = z.object({
+  id: AreaId,
+  label: z.string().min(3),
+  labelEn: z.string(),
+  color: z.enum(['sky', 'apple', 'mango', 'sunny', 'leaf', 'grape', 'candy', 'tosca']),
+  icon: z.string().min(1),
+  description: z.string().min(30),
+})
+export type AreaMeta = z.infer<typeof AreaMeta>
+
+// ===== Bundle per AgeBand (lazy-load unit) =====
+export const AgeBandBundle = z.object({
+  ageBand: AgeBandId,
+  activities: z.array(Activity),
+  milestones: z.array(Milestone).default([]),
+})
+export type AgeBandBundle = z.infer<typeof AgeBandBundle>
+
+// ===== File bundle global =====
+export const GlobalBundle = z.object({
+  ageBands: z.array(AgeBandMeta),
+  areas: z.array(AreaMeta),
+  skills: z.array(Skill).default([]),
+  materials: z.array(Material),
+  diyGuides: z.array(DIYGuide),
+  roomSetups: z.array(RoomSetup),
+  parentGuides: z.array(ParentGuide),
+  glossary: z.array(GlossaryEntry),
+  checklists: z.array(Checklist),
+})
+export type GlobalBundle = z.infer<typeof GlobalBundle>
+// Ikon area flat-cute (putih, dipakai di tile warna) + dekorasi langit
+type P = { className?: string }
+
+export function AreaIcon({ area, className }: { area: string; className?: string }) {
+  const cls = className ?? 'w-8 h-8'
+  switch (area) {
+    case 'practical-life':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <path d="M14 20c0-2 2-4 4-4h12c2 0 4 2 4 4v2c0 2-2 4-4 4H18c-2 0-4-2-4-4v-2z" fill="#fff" opacity=".95"/>
+          <path d="M17 26h14v3c0 6-3 10-7 10s-7-4-7-10v-3z" fill="#fff" opacity=".8"/>
+          <path d="M31 12c3 1 6 4 6 8" stroke="#fff" strokeWidth="2.6" strokeLinecap="round"/>
+          <circle cx="31" cy="11" r="2.4" fill="#fff"/>
+        </svg>
+      )
+    case 'sensorial':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <rect x="8" y="26" width="32" height="7" rx="3.5" fill="#fff" opacity=".85"/>
+          <rect x="13" y="17" width="22" height="7" rx="3.5" fill="#fff" opacity=".92"/>
+          <rect x="18" y="8" width="12" height="7" rx="3.5" fill="#fff"/>
+        </svg>
+      )
+    case 'language':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <path d="M8 12c0-2 2-4 4-4h20c2 0 4 2 4 4v14c0 2-2 4-4 4H20l-8 8v-8h-.5C9 30 8 28 8 26V12z" fill="#fff" opacity=".95"/>
+          <circle cx="18" cy="19" r="2.2" fill="currentColor" opacity=".55"/>
+          <circle cx="25" cy="19" r="2.2" fill="currentColor" opacity=".55"/>
+          <circle cx="32" cy="19" r="2.2" fill="currentColor" opacity=".55"/>
+        </svg>
+      )
+    case 'math':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <rect x="7" y="18" width="14" height="22" rx="3" fill="#fff" opacity=".9"/>
+          <rect x="17" y="10" width="14" height="30" rx="3" fill="#fff" opacity=".95"/>
+          <rect x="27" y="14" width="14" height="26" rx="3" fill="#fff" opacity=".85"/>
+          <circle cx="24" cy="6" r="3" fill="#fff"/>
+        </svg>
+      )
+    case 'culture':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <circle cx="24" cy="24" r="17" fill="#fff" opacity=".95"/>
+          <path d="M14 18c4-2 7 1 6 5s3 6 7 4 8 1 6 5c-2 5-9 8-14 6-6-2-10-9-8-15 .7-2 1.6-4 3-5z" fill="currentColor" opacity=".45"/>
+          <path d="M30 12c3 2 5 5 5 8 0 2-3 2-5 1s-4-3-3-6c.6-1.7 2-2.7 3-3z" fill="currentColor" opacity=".3"/>
+        </svg>
+      )
+    case 'movement':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <circle cx="20" cy="9" r="5" fill="#fff"/>
+          <path d="M20 15c-4 1-7 4-8 8l-2 7c-.5 2 1 3.5 3 3.5 1.5 0 2.7-1 3.2-2.5l1.3-4" stroke="#fff" strokeWidth="3.4" strokeLinecap="round"/>
+          <path d="M20 20c4 0 7 2 9 5l4 6M17 33l-4 8M28 31l5 9" stroke="#fff" strokeWidth="3.4" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'grace-courtesy':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <circle cx="15" cy="12" r="5" fill="#fff"/>
+          <path d="M15 18c-4 2-7 6-7 11v6h13v-6M25 20l8-8M25 12l8 8" stroke="#fff" strokeWidth="3.2" strokeLinecap="round"/>
+          <path d="M36 26c2 3 2 7-1 10-2 2-5 3-8 2" stroke="#fff" strokeWidth="3.2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'self-care':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <rect x="10" y="20" width="20" height="18" rx="4" fill="#fff" opacity=".95"/>
+          <path d="M14 20v-4c0-3 3-6 7-6 2 0 4 1 5 2.5M34 14c3 0 5 2 5 5s-2 5-5 5h-4" stroke="#fff" strokeWidth="3.2" strokeLinecap="round"/>
+          <path d="M16 28h8" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" opacity=".5"/>
+        </svg>
+      )
+    case 'art-music':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <path d="M18 36V14l16-4v20" stroke="#fff" strokeWidth="3.2" strokeLinecap="round"/>
+          <ellipse cx="14" cy="36" rx="5" ry="4" fill="#fff"/>
+          <ellipse cx="30" cy="30" rx="5" ry="4" fill="#fff"/>
+          <path d="M14 12c2 4 2 8-1 12" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" opacity=".7"/>
+        </svg>
+      )
+    case 'outdoor':
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <circle cx="33" cy="13" r="6" fill="#fff" opacity=".9"/>
+          <path d="M24 12c3 0 6 3 6 6M16 40V26M16 26c-5 0-9-4-9-9 5 0 9 4 9 9zM16 30c0-6 5-11 11-11 0 6-5 11-11 11z" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M9 40h30" stroke="#fff" strokeWidth="3" strokeLinecap="round"/>
+        </svg>
+      )
+    default:
+      return (
+        <svg viewBox="0 0 48 48" className={cls} fill="none" aria-hidden>
+          <circle cx="24" cy="24" r="14" fill="#fff"/>
+        </svg>
+      )
+  }
+}
+
+export function CloudDeco({ className }: P) {
+  return (
+    <svg viewBox="0 0 120 60" className={className} fill="currentColor" aria-hidden>
+      <ellipse cx="35" cy="42" rx="26" ry="14" />
+      <ellipse cx="62" cy="30" rx="24" ry="18" />
+      <ellipse cx="88" cy="42" rx="24" ry="13" />
+    </svg>
+  )
+}
+
+export function StarDeco({ className }: P) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden>
+      <path d="M12 2l2.4 6.2L21 9.3l-5 4.4 1.5 6.5L12 16.8 6.5 20.2 8 13.7 3 9.3l6.6-1.1L12 2z" />
+    </svg>
+  )
+}
+
+export function RainbowDeco({ className }: P) {
+  return (
+    <svg viewBox="0 0 64 32" className={className} fill="none" aria-hidden>
+      <path d="M4 32a28 28 0 0 1 56 0" stroke="#f87171" strokeWidth="5" strokeLinecap="round"/>
+      <path d="M12 32a20 20 0 0 1 40 0" stroke="#facc15" strokeWidth="5" strokeLinecap="round"/>
+      <path d="M20 32a12 12 0 0 1 24 0" stroke="#4ade80" strokeWidth="5" strokeLinecap="round"/>
+      <path d="M28 32a4 4 0 0 1 8 0" stroke="#38bdf8" strokeWidth="5" strokeLinecap="round"/>
+    </svg>
+  )
+}
+
+// Maskot: awan ceria dengan pipi + bintang (empty/loading/error states)
+export function Mascot({ className, mood = 'happy' }: { className?: string; mood?: 'happy' | 'sleepy' | 'oops' }) {
+  return (
+    <svg viewBox="0 0 120 90" className={className} fill="none" aria-hidden>
+      <ellipse cx="46" cy="62" rx="30" ry="16" fill="#e0f2fe"/>
+      <ellipse cx="60" cy="46" rx="28" ry="21" fill="#ffffff"/>
+      <ellipse cx="38" cy="56" rx="20" ry="14" fill="#ffffff"/>
+      <ellipse cx="84" cy="56" rx="20" ry="14" fill="#ffffff"/>
+      {mood === 'sleepy' ? (
+        <>
+          <path d="M48 46c2 2 5 2 7 0M68 46c2 2 5 2 7 0" stroke="#0369a1" strokeWidth="2.6" strokeLinecap="round"/>
+          <path d="M78 22c3-4 9-4 12 0" stroke="#facc15" strokeWidth="3" strokeLinecap="round"/>
+        </>
+      ) : mood === 'oops' ? (
+        <>
+          <circle cx="51" cy="45" r="3" fill="#0369a1"/>
+          <circle cx="73" cy="45" r="3" fill="#0369a1"/>
+          <ellipse cx="62" cy="56" rx="4" ry="5" fill="#0369a1"/>
+        </>
+      ) : (
+        <>
+          <path d="M47 44c1.5-2.5 5.5-2.5 7 0M69 44c1.5-2.5 5.5-2.5 7 0" stroke="#0369a1" strokeWidth="3" strokeLinecap="round"/>
+          <path d="M56 52c2 3 8 3 10 0" stroke="#0369a1" strokeWidth="2.6" strokeLinecap="round"/>
+        </>
+      )}
+      <circle cx="42" cy="52" r="4.5" fill="#fda4af" opacity=".8"/>
+      <circle cx="82" cy="52" r="4.5" fill="#fda4af" opacity=".8"/>
+      <path d="M97 18l1.8 4.6 4.6 1.8-4.6 1.8L97 30.8l-1.8-4.6-4.6-1.8 4.6-1.8L97 18z" fill="#facc15"/>
+      <path d="M20 28l1.2 3 3 1.2-3 1.2-1.2 3-1.2-3-3-1.2 3-1.2 1.2-3z" fill="#facc15"/>
+    </svg>
+  )
+}
+
+export function ConfettiBurst({ className }: P) {
+  return (
+    <svg viewBox="0 0 80 40" className={className} fill="none" aria-hidden>
+      <path d="M8 30L12 18 16 30 20 18 24 30" stroke="#f87171" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M40 28l2.4 5 5 2.4-5 2.4-2.4 5-2.4-5-5-2.4 5-2.4 2.4-5z" fill="#facc15"/>
+      <path d="M58 30a12 12 0 0 1 20 0" stroke="#4ade80" strokeWidth="4" strokeLinecap="round"/>
+      <circle cx="34" cy="12" r="3" fill="#38bdf8"/>
+      <circle cx="70" cy="10" r="2.5" fill="#c084fc"/>
+    </svg>
+  )
+}
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
+import type { AgeBandId } from '../../content/schema'
+
+export type Child = {
+  id: string
+  nickname: string
+  birthDate: string // ISO date
+}
+
+export function ageBandFromBirth(birthDate: string, now = new Date()): AgeBandId {
+  const b = new Date(birthDate)
+  const months = (now.getFullYear() - b.getFullYear()) * 12 + (now.getMonth() - b.getMonth())
+  if (months < 3) return '0-3m'
+  if (months < 6) return '3-6m'
+  if (months < 9) return '6-9m'
+  if (months < 12) return '9-12m'
+  if (months < 18) return '12-18m'
+  if (months < 24) return '18-24m'
+  if (months < 36) return '2-3y'
+  if (months < 48) return '3-4y'
+  return '4-5y'
+}
+
+type ChildStore = {
+  children: Child[]
+  activeId: string | null
+  onboarded: boolean
+  addChild: (nickname: string, birthDate: string) => void
+  setActive: (id: string) => void
+  removeChild: (id: string) => void
+}
+
+export const useChildStore = create<ChildStore>()(
+  persist(
+    (set) => ({
+      children: [],
+      activeId: null,
+      onboarded: false,
+      addChild: (nickname, birthDate) => {
+        const id = crypto.randomUUID()
+        set((s) => ({
+          children: [...s.children, { id, nickname, birthDate }],
+          activeId: s.activeId ?? id,
+          onboarded: true,
+        }))
+      },
+      setActive: (id) => set({ activeId: id }),
+      removeChild: (id) =>
+        set((s) => {
+          const children = s.children.filter((c) => c.id !== id)
+          return { children, activeId: children[0]?.id ?? null, onboarded: children.length > 0 }
+        }),
+    }),
+    { name: 'mp-children' },
+  ),
+)
+
+export function getActiveChild(): Child | null {
+  const st = useChildStore.getState()
+  return st.children.find((c) => c.id === st.activeId) ?? null
+}
+
+export function activeAgeBand(): AgeBandId | null {
+  const c = getActiveChild()
+  return c ? ageBandFromBirth(c.birthDate) : null
+}
+rg: src/content/global.json: IO error for operation on src/content/global.json: No such file or directory (os error 2)
+
+exec
+/bin/bash -lc "rg --files | rg 'global\\.json"'$|package.json$'"'; rg -n 'roomSetups|budgetRendah' . --glob '*.json' --glob '"'!node_modules/**'"' | head -30" in /home/temamumtaza/Documents/dev/montessori-playbook
+ succeeded in 5ms:
+package.json
+./content/parts/rooms-1.json:17:        "budgetRendah": "Matras lipat atau kasur busa tipis dibungkus sarung tahan air, diletakan langsung di atas lantai bersih",
+./content/parts/rooms-1.json:24:        "budgetRendah": "Rak plastik murah atau dus kardus kuat yang dilapisi kertas warna dan dijitak agar tidak roboh",
+./content/parts/rooms-1.json:31:        "budgetRendah": "Keranjang plastik ringan atau tas belanja kain yang diatur per jenis mainan",
+./content/parts/rooms-1.json:38:        "budgetRendah": "Keset kecil plus tiga sampai empat buku dipajang dengan sampul agak ke luar",
+./content/parts/rooms-1.json:45:        "budgetRendah": "Paku tiing atau hook kuat dipasang di ketinggian anak plus gantung baju berangka ringan",
+./content/parts/rooms-1.json:52:        "budgetRendah": "Cermin akrilik bulat 30-40 cm dipaku lalu diadali lagi dengan lem rangka",
+./content/parts/rooms-1.json:59:        "budgetRendah": "Lampu tidur colok murah berwarna hangat",
+./content/parts/rooms-1.json:116:        "budgetRendah": "Kardus tebal dijenihkan atau bangku plastik rendah dengan alas karet",
+./content/parts/rooms-1.json:123:        "budgetRendah": "Pompa sabun bekas dicuci bersih lalu diisi sabun cair",
+./content/parts/rooms-1.json:130:        "budgetRendah": "Sikat gigi anak biasa dipasang di gelas miring",
+./content/parts/rooms-1.json:137:        "budgetRendah": "Kail self-adhesive diplester bagus di dinding rendah plus handuk kecil",
+./content/parts/rooms-1.json:144:        "budgetRendah": "Tikar karet anti slip murah yang dibawa masuk hanya saat mandi",
+./content/parts/rooms-1.json:151:        "budgetRendah": "Gayung plastik ringan dan ember kecil ukuran 2-3 liter",
+./content/parts/rooms-1.json:158:        "budgetRendah": "Gambar sederhana 4 langkah mandi dibuat sendiri dilaminasi dengan plastik",
+./content/parts/rooms-1.json:165:        "budgetRendah": "Keranjang plastik bekas dengan lubang-lubang kecil disekat ampela",
+./content/parts/rooms-1.json:222:        "budgetRendah": "Kursi kecil stabil dan meja rendah sebagai area kerja bayi dipantau orang dewasa",
+./content/parts/rooms-1.json:229:        "budgetRendah": "Pis plastik atau pis kertas untuk mentega dipakai untuk memotong pisang dan stroberry yang lembak",
+./content/parts/rooms-1.json:236:        "budgetRendah": "Gelas plastik tebal dan sendok pendek untuk latihan awal menuang",
+./content/parts/rooms-1.json:243:        "budgetRendah": "Nampan plastik sederhana atau baki kayu bekas",
+./content/parts/rooms-1.json:250:        "budgetRendah": "Kain lap dipotong jadi ukuran kecil dan sikat bekas yang masih bersih",
+./content/parts/rooms-1.json:257:        "budgetRendah": "Mangkuk buah biasa di rak bawah dapur",
+./content/parts/rooms-1.json:264:        "budgetRendah": "Pitcher plastik setengah penuh di meja rendah",
+./content/parts/rooms-1.json:271:        "budgetRendah": "Apron dewasa diikat lebih longgar atau celemek kain bekas dipotong ukuran anak",
+./content/parts/rooms-1.json:326:        "budgetRendah": "Tikar piknik polos atau sutera walagala yang mudah dibersihkan",
+./content/parts/rooms-1.json:333:        "budgetRendah": "Dus kardus kuat yang dibungkus kain dan diikat kuat ke dinding",
+./content/parts/rooms-1.json:340:        "budgetRendah": "Kardus bertutup atau tas besar di lemari untuk menyimpan mainan yang dirotasi",
+./content/parts/rooms-1.json:347:        "budgetRendah": "Rak jumlah berdiri dipasang mur sampai anak bisa mengambil bukunya sendiri",
+./content/parts/rooms-1.json:354:        "budgetRendah": "Meja kardus tebal atau bekas meja dipotong kaki setinggi lutut anak",
+./content/parts/rooms-1.json:361:        "budgetRendah": "Toples krayon plus stack kertas bekas yang siap dipakai anak dalam kotak datar",
+./content/parts/rooms-1.json:368:        "budgetRendah": "Bola plastik besar dan gerobak kardus yang bisa ditarik",
+
+codex
+Pola datanya cocok dengan schema yang ada: `roomSetups` punya enam enum ruangan dan checklist memakai compound key `[childId+checklistId+itemId]`. Saya akan membuat halaman dengan loading/empty state, memuat status checklist per anak dari Dexie, serta menambahkan route dan tautan navigasi tanpa menyentuh file lain di luar tiga target tersebut.
+exec
+/bin/bash -lc "sed -n '1,45p' content/parts/rooms-1.json; sed -n '1,80p' src/main.tsx 2>/dev/null || true; cat package.json" in /home/temamumtaza/Documents/dev/montessori-playbook
+ succeeded in 39ms:
+[
+  {
+    "id": "room-setup-kamar-anak",
+    "room": "kamar-anak",
+    "title": "Menata Kamar Anak: Ruang Tidur dan Bermain yang matching dengan Ukuran Si Kecil",
+    "principles": [
+      "Kecilkan dunianya: rak, gantungan baju, dan keranjang diletakkan rendah supaya anak bisa mengambil dan Membereskan sendiri tanpa dipapah.",
+      "Sedikit namun bermakna: hanya sebagian mainan yang ditata di rak, sisanya disimpan lalu dirotasi setiap beberapa minggu agar anak fokus dan mudah Membereskan.",
+      "Semua benda punya rumah: mainan, buku, dan pakaian punya tempat tetap yang mudah dikenali, sehingga merapikan menjadi bagian alami dari bermain.",
+      "Musim dingin visual yang tenang: dinding polos dengan satu-dua karya seni setinggi mata anak membantu konsentrasi lebih baik daripada dekor ramai.",
+      "Bebas bergerak: kasur rendah dan lantai bersih memberi kebebasan bergerak dan latihanmandiri sejak bayi."
+    ],
+    "items": [
+      {
+        "name": "Kasur lantai atau ranjang rendah berparkiran",
+        "essential": true,
+        "budgetRendah": "Matras lipat atau kasur busa tipis dibungkus sarung tahan air, diletakan langsung di atas lantai bersih",
+        "budgetSedang": "Ranjang kayu rendah dengan pengaman sisi dan kasur tebal khusus anak",
+        "diy": false
+      },
+      {
+        "name": "Rak mainan rendah 2-3 susun",
+        "essential": true,
+        "budgetRendah": "Rak plastik murah atau dus kardus kuat yang dilapisi kertas warna dan dijitak agar tidak roboh",
+        "budgetSedang": "Rak kayu putih koyo 40-50 cm dengan lebar masak dan mudah dijangkau",
+        "diy": true
+      },
+      {
+        "name": "Keranjang mainan terbuka tanpa tutup",
+        "essential": true,
+        "budgetRendah": "Keranjang plastik ringan atau tas belanja kain yang diatur per jenis mainan",
+        "budgetSedang": "Keranjang rotan dengan label bergambar supaya anak tahu di mana memasukkan",
+        "diy": true
+      },
+      {
+        "name": "Sudut buku kecil dengan mukaan bertengger",
+        "essential": true,
+        "budgetRendah": "Keset kecil plus tiga sampai empat buku dipajang dengan sampul agak ke luar",
+        "budgetSedang": "Rak display buku pendek berhadapan dinding plus lampu tidur hangat",
+        "diy": true
+      },
+      {
+        "name": "Gantungan pakaian rendah untuk latihan mandiri",
+        "essential": true,
+        "budgetRendah": "Paku tiing atau hook kuat dipasang di ketinggian anak plus gantung baju berangka ringan",
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
+import App from './app/App'
+import './index.css'
+import { registerSW } from './app/pwa'
+
+// Sembunyikan splash boot segera setelah React mount
+function hideSplash() {
+  document.getElementById('boot-splash')?.classList.add('hide')
+  setTimeout(() => document.getElementById('boot-splash')?.remove(), 300)
+}
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>,
+)
+
+hideSplash()
+registerSW()
+{
+  "name": "montessori-playbook",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "typecheck": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "dexie": "^4.0.8",
+    "dexie-react-hooks": "^1.1.7",
+    "fuse.js": "^7.0.0",
+    "framer-motion": "^11.11.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "zod": "^3.23.8",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vite-plugin-pwa": "^0.21.0",
+    "vitest": "^2.1.4",
+    "@playwright/test": "^1.48.0",
+    "vitest-axe": "^0.1.0"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}
+
+apply patch
+patch: completed
+/home/temamumtaza/Documents/dev/montessori-playbook/src/app/App.tsx
+/home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/EnvironmentPage.tsx
+/home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/MorePage.tsx
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+codex
+Implementasi halaman, route `/lingkungan`, dan section “Persiapan rumah” sudah ditambahkan. Saya sedang menjalankan build TypeScript/Vite sekarang; bila ada error strict typing atau utility class yang perlu disesuaikan, saya akan perbaiki di file target saja.
+exec
+/bin/bash -lc 'npm run build' in /home/temamumtaza/Documents/dev/montessori-playbook
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+codex
+Build berhasil lulus (`✓ built in 9.04s`); hanya warning chunk dynamic/static import yang sudah ada kaitannya dengan store. Saya cek terakhir bahwa perubahan hanya berada pada `EnvironmentPage.tsx`, `App.tsx`, dan `MorePage.tsx`.
+exec
+/bin/bash -lc 'git status --short && git diff --stat' in /home/temamumtaza/Documents/dev/montessori-playbook
+ succeeded in 277ms:
+ M .workers/instr-act-0-3m.txt
+ M .workers/instr-act-12-18m.txt
+ M .workers/instr-act-18-24m.txt
+ M .workers/instr-act-2-3y.txt
+ M .workers/instr-act-3-4y.txt
+ M .workers/instr-act-3-6m.txt
+ M .workers/instr-act-4-5y.txt
+ M .workers/instr-act-6-9m.txt
+ M .workers/instr-act-9-12m.txt
+ M .workers/instr-checklists-1.txt
+ M .workers/instr-diy-1.txt
+ M .workers/instr-diy-2.txt
+ M .workers/instr-glossary-2.txt
+ M .workers/instr-materials-1.txt
+ M .workers/instr-materials-2.txt
+ M .workers/instr-mile-0-3m.txt
+ M .workers/instr-mile-12-18m.txt
+ M .workers/instr-mile-18-24m.txt
+ M .workers/instr-mile-2-3y.txt
+ M .workers/instr-mile-3-4y.txt
+ M .workers/instr-mile-3-6m.txt
+ M .workers/instr-mile-4-5y.txt
+ M .workers/instr-mile-6-9m.txt
+ M .workers/instr-mile-9-12m.txt
+ M .workers/instr-parents-1.txt
+ M .workers/instr-parents-2.txt
+ M .workers/instr-rooms-1.txt
+ M .workers/logs/act-0-3m.log
+ M .workers/logs/act-12-18m.log
+ M .workers/logs/act-18-24m.log
+ M .workers/logs/act-2-3y.log
+ M .workers/logs/act-3-4y.log
+ M .workers/logs/act-3-6m.log
+ M .workers/logs/act-4-5y.log
+ M .workers/logs/act-6-9m.log
+ M .workers/logs/act-9-12m.log
+ M .workers/logs/glossary-2.log
+ M .workers/logs/materials-1.log
+ M .workers/logs/mile-0-3m.log
+ M .workers/logs/mile-12-18m.log
+ M .workers/logs/mile-18-24m.log
+ M .workers/logs/mile-2-3y.log
+ M .workers/logs/mile-3-4y.log
+ M .workers/logs/mile-3-6m.log
+ M .workers/logs/mile-4-5y.log
+ M .workers/logs/mile-6-9m.log
+ M .workers/logs/mile-9-12m.log
+ M docs/research/03-usia-0-12bulan.md
+ M src/app/App.tsx
+ M src/app/pages/MorePage.tsx
+ M src/app/pages/PlaybookPage.tsx
+ M src/app/pages/TodayPage.tsx
+ M tsconfig.tsbuildinfo
+?? .workers/attempts-diy-1
+?? .workers/attempts-diy-2
+?? .workers/attempts-materials-2
+?? .workers/attempts-mile-0-3m
+?? .workers/attempts-mile-12-18m
+?? .workers/attempts-mile-18-24m
+?? .workers/attempts-mile-3-6m
+?? .workers/attempts-mile-6-9m
+?? .workers/attempts-mile-9-12m
+?? .workers/attempts-parents-1
+?? .workers/attempts-rooms-1
+?? .workers/codex-act.sh
+?? .workers/codex-ui.sh
+?? .workers/logs/diy-1.log
+?? .workers/logs/diy-2.log
+?? .workers/logs/materials-2.log
+?? .workers/logs/parents-1.log
+?? .workers/logs/rooms-1.log
+?? .workers/logs/ui-1.log
+?? .workers/logs/ui-2.log
+?? .workers/queue.sh
+?? .workers/specs-nonact.tsv
+?? content/parts/_gen_materials-1.py
+?? content/parts/act-0-3m.json
+?? content/parts/act-12-18m.json
+?? content/parts/act-18-24m.json
+?? content/parts/act-2-3y.json
+?? content/parts/act-3-4y.json
+?? content/parts/act-3-6m.json
+?? content/parts/act-4-5y.json
+?? content/parts/act-6-9m.json
+?? content/parts/act-9-12m.json
+?? content/parts/diy-1.json
+?? content/parts/diy-2.json
+?? content/parts/glossary-2.json
+?? content/parts/materials-1.json
+?? content/parts/materials-2.json
+?? content/parts/mile-0-3m.json
+?? content/parts/mile-12-18m.json
+?? content/parts/mile-18-24m.json
+?? content/parts/mile-2-3y.json
+?? content/parts/mile-3-4y.json
+?? content/parts/mile-3-6m.json
+?? content/parts/mile-4-5y.json
+?? content/parts/mile-6-9m.json
+?? content/parts/mile-9-12m.json
+?? content/parts/parents-1.json
+?? content/parts/rooms-1.json
+?? docs/research/02-pemetaan-kurikulum.md
+?? docs/research/04-usia-1-3tahun.md
+?? docs/research/05-usia-3-5tahun.md
+?? docs/research/08-keamanan-kesehatan.md
+?? scripts/assemble.py
+?? src/app/pages/ActivityDetailPage.tsx
+?? src/app/pages/EnvironmentPage.tsx
+?? src/app/pages/SearchGlossaryPage.tsx
+ .workers/instr-act-0-3m.txt        |     7 +-
+ .workers/instr-act-12-18m.txt      |     7 +-
+ .workers/instr-act-18-24m.txt      |     7 +-
+ .workers/instr-act-2-3y.txt        |     7 +-
+ .workers/instr-act-3-4y.txt        |     7 +-
+ .workers/instr-act-3-6m.txt        |     7 +-
+ .workers/instr-act-4-5y.txt        |     7 +-
+ .workers/instr-act-6-9m.txt        |     7 +-
+ .workers/instr-act-9-12m.txt       |     7 +-
+ .workers/instr-checklists-1.txt    |     3 +
+ .workers/instr-diy-1.txt           |     3 +
+ .workers/instr-diy-2.txt           |     3 +
+ .workers/instr-glossary-2.txt      |     3 +
+ .workers/instr-materials-1.txt     |     3 +
+ .workers/instr-materials-2.txt     |     3 +
+ .workers/instr-mile-0-3m.txt       |     3 +
+ .workers/instr-mile-12-18m.txt     |     3 +
+ .workers/instr-mile-18-24m.txt     |     3 +
+ .workers/instr-mile-2-3y.txt       |     3 +
+ .workers/instr-mile-3-4y.txt       |     3 +
+ .workers/instr-mile-3-6m.txt       |     3 +
+ .workers/instr-mile-4-5y.txt       |     3 +
+ .workers/instr-mile-6-9m.txt       |     3 +
+ .workers/instr-mile-9-12m.txt      |     3 +
+ .workers/instr-parents-1.txt       |     3 +
+ .workers/instr-parents-2.txt       |     3 +
+ .workers/instr-rooms-1.txt         |     3 +
+ .workers/logs/act-0-3m.log         |   491 +-
+ .workers/logs/act-12-18m.log       | 16880 ++++++++++++++++++++++++++++++++++-
+ .workers/logs/act-18-24m.log       |   648 +-
+ .workers/logs/act-2-3y.log         |   969 +-
+ .workers/logs/act-3-4y.log         |   548 +-
+ .workers/logs/act-3-6m.log         |   872 +-
+ .workers/logs/act-4-5y.log         |   692 +-
+ .workers/logs/act-6-9m.log         |   619 +-
+ .workers/logs/act-9-12m.log        |   633 +-
+ .workers/logs/glossary-2.log       |   493 +-
+ .workers/logs/materials-1.log      |   171 +
+ .workers/logs/mile-0-3m.log        |   150 +
+ .workers/logs/mile-12-18m.log      |   237 +
+ .workers/logs/mile-18-24m.log      |    36 +
+ .workers/logs/mile-2-3y.log        |   419 +-
+ .workers/logs/mile-3-4y.log        |   167 +-
+ .workers/logs/mile-3-6m.log        |   345 +
+ .workers/logs/mile-4-5y.log        |   392 +-
+ .workers/logs/mile-6-9m.log        |   204 +
+ .workers/logs/mile-9-12m.log       |   200 +
+ docs/research/03-usia-0-12bulan.md |    54 +-
+ src/app/App.tsx                    |     8 +
+ src/app/pages/MorePage.tsx         |     9 +
+ src/app/pages/PlaybookPage.tsx     |     4 +-
+ src/app/pages/TodayPage.tsx        |     7 +-
+ tsconfig.tsbuildinfo               |     2 +-
+ 53 files changed, 25283 insertions(+), 84 deletions(-)
+
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+ succeeded in 29085ms:
+
+> montessori-playbook@0.1.0 build
+> tsc -b && vite build
+
+vite v5.4.21 building for production...
+transforming...
+✓ 416 modules transformed.
+rendering chunks...
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) /home/temamumtaza/Documents/dev/montessori-playbook/src/app/stores/children.ts is dynamically imported by /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/ProgressPage.tsx but also statically imported by /home/temamumtaza/Documents/dev/montessori-playbook/src/app/App.tsx, /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/ActivityDetailPage.tsx, /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/EnvironmentPage.tsx, /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/JournalPage.tsx, /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/MorePage.tsx, /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/ProgressPage.tsx, /home/temamumtaza/Documents/dev/montessori-playbook/src/app/pages/TodayPage.tsx, dynamic import will not move module into another chunk.
+
+computing gzip size...
+dist/registerSW.js                0.13 kB
+dist/manifest.webmanifest         0.91 kB
+dist/index.html                   2.31 kB │ gzip:  1.03 kB
+dist/assets/index-AWYmTMfe.css   40.93 kB │ gzip:  7.22 kB
+dist/assets/motion-c7DfQGZw.js  115.10 kB │ gzip: 38.20 kB
+dist/assets/react-Crok0-uX.js   163.81 kB │ gzip: 53.49 kB
+dist/assets/index-B25BUDFc.js   189.07 kB │ gzip: 60.93 kB
+✓ built in 9.04s
+
+PWA v0.21.2
+mode      generateSW
+precache  12 entries (499.60 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-2ff6bd68.js
+
+codex
+DONE UI
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3149680e2c144093608736380e2719eaed8f5af7..0d2b24e52569af2036dc2a547099ccf05439fc09
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -8,6 +8,7 @@
+ import { MorePage } from './pages/MorePage'
+ import { ActivityDetailPage } from './pages/ActivityDetailPage'
+ import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
++import { EnvironmentPage } from './pages/EnvironmentPage'
+ import { UpdateToast } from './components/UpdateToast'
+ import { swUpdate } from './pwa'
+ import { useChildStore } from './stores/children'
+@@ -76,6 +77,7 @@
+                 <Route path="/jurnal" element={<JournalPage />} />
+                 <Route path="/progres" element={<ProgressPage />} />
+                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
++                <Route path="/lingkungan" element={<EnvironmentPage />} />
+               </Routes>
+             </motion.div>
+           </AnimatePresence>
+@@ -96,6 +98,7 @@
+   if (path.startsWith('/playbook')) return 'Playbook'
+   if (path.startsWith('/jurnal')) return 'Jurnal'
+   if (path.startsWith('/progres')) return 'Progres'
++  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+   return 'Lainnya'
+ }
+ 
+diff --git a/src/app/pages/EnvironmentPage.tsx b/src/app/pages/EnvironmentPage.tsx
+new file mode 100644
+index 0000000000000000000000000000000000000000..1432f730106196a2931638e9611b262179f73459
+--- /dev/null
++++ b/src/app/pages/EnvironmentPage.tsx
+@@ -0,0 +1,145 @@
++import { useEffect, useMemo, useState } from 'react'
++import { loadGlobal } from '../../content/store'
++import type { RoomSetup } from '../../content/schema'
++import { db } from '../db'
++import { useChildStore } from '../stores/children'
++import { Mascot, RainbowDeco } from '../components/icons'
++
++const ROOM_META: Record<RoomSetup['room'], { label: string; icon: string }> = {
++  'kamar-anak': { label: 'Kamar anak', icon: '🛏️' },
++  'kamar-mandi': { label: 'Kamar mandi', icon: '🛁' },
++  dapur: { label: 'Dapur', icon: '🍳' },
++  'ruang-keluarga': { label: 'Ruang keluarga', icon: '🛋️' },
++  'area-makan': { label: 'Area makan', icon: '🍽️' },
++  outdoor: { label: 'Outdoor', icon: '🌿' },
++}
++
++const ROOM_ORDER: RoomSetup['room'][] = ['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']
++
++export function EnvironmentPage() {
++  const activeId = useChildStore((s) => s.activeId)
++  const [rooms, setRooms] = useState<RoomSetup[]>([])
++  const [selectedRoom, setSelectedRoom] = useState<RoomSetup['room']>('kamar-anak')
++  const [done, setDone] = useState<Set<number>>(new Set())
++  const [loading, setLoading] = useState(true)
++
++  useEffect(() => {
++    loadGlobal().then((global) => {
++      setRooms(global.roomSetups)
++      if (global.roomSetups.length > 0) setSelectedRoom(global.roomSetups[0].room)
++      setLoading(false)
++    })
++  }, [])
++
++  const room = useMemo(() => rooms.find((r) => r.room === selectedRoom), [rooms, selectedRoom])
++
++  useEffect(() => {
++    let cancelled = false
++    if (!activeId || !room) {
++      setDone(new Set())
++      return
++    }
++    db.checklists.where('childId').equals(activeId).toArray().then((records) => {
++      if (!cancelled) setDone(new Set(records.filter((r) => r.checklistId === room.id && r.done).map((r) => r.itemId)))
++    })
++    return () => { cancelled = true }
++  }, [activeId, room])
++
++  async function toggleItem(itemId: number) {
++    if (!activeId || !room) return
++    const nextDone = !done.has(itemId)
++    setDone((current) => {
++      const next = new Set(current)
++      if (nextDone) next.add(itemId)
++      else next.delete(itemId)
++      return next
++    })
++    await db.checklists.put({ childId: activeId, checklistId: room.id, itemId, done: nextDone })
++  }
++
++  if (loading) return <div className="px-5 py-12 text-center text-sm opacity-65">Menyiapkan panduan ruangan…</div>
++
++  return (
++    <div className="px-5 space-y-5">
++      <section className="relative overflow-hidden rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++        <RainbowDeco className="absolute -right-1 -top-1 w-20 opacity-70" />
++        <h2 className="relative font-[family-name:var(--font-display)] text-2xl font-bold">Persiapan rumah</h2>
++        <p className="relative mt-1 max-w-sm text-sm opacity-70">Buat lingkungan yang mengundang anak untuk bergerak, memilih, dan mandiri.</p>
++      </section>
++
++      <section aria-label="Pilih ruangan">
++        <div className="flex gap-2 overflow-x-auto hide-scrollbar -mx-1 px-1 pb-1">
++          {ROOM_ORDER.map((roomId) => {
++            const meta = ROOM_META[roomId]
++            const available = rooms.some((r) => r.room === roomId)
++            return (
++              <button
++                key={roomId}
++                onClick={() => setSelectedRoom(roomId)}
++                disabled={!available}
++                aria-pressed={selectedRoom === roomId}
++                className={`shrink-0 rounded-2xl px-3 min-h-[64px] border-2 transition active:scale-[0.97] ${
++                  selectedRoom === roomId ? 'bg-sky-600 border-sky-600 text-white shadow-md' : 'bg-white dark:bg-navy-800 border-sky-100 dark:border-navy-700'
++                } ${!available ? 'opacity-40' : ''}`}
++              >
++                <span className="block text-xl" aria-hidden>{meta.icon}</span>
++                <span className="block text-[11px] font-semibold mt-0.5">{meta.label}</span>
++              </button>
++            )
++          })}
++        </div>
++      </section>
++
++      {!room ? (
++        <div className="rounded-3xl bg-white dark:bg-navy-800 p-6 text-center shadow-sm">
++          <Mascot className="w-28 mx-auto" mood="sleepy" />
++          <p className="mt-2 text-sm opacity-70">Panduan ruangan belum tersedia.</p>
++        </div>
++      ) : (
++        <>
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h2 className="font-[family-name:var(--font-display)] text-xl font-bold">{room.title}</h2>
++            <div className="mt-4 flex items-center justify-between text-sm font-medium">
++              <span>Progres persiapan</span>
++              <span className="text-sky-600 dark:text-sky-400">{done.size}/{room.items.length}</span>
++            </div>
++            <div className="mt-2 h-2.5 overflow-hidden rounded-full bg-sky-100 dark:bg-navy-700" aria-label={`${done.size} dari ${room.items.length} item selesai`} role="progressbar" aria-valuemin={0} aria-valuemax={room.items.length} aria-valuenow={done.size}>
++              <div className="h-full rounded-full bg-sky-600 transition-all" style={{ width: `${room.items.length ? (done.size / room.items.length) * 100 : 0}%` }} />
++            </div>
++            {!activeId && <p className="mt-3 text-xs text-apple-600">Pilih atau buat profil anak di menu Lainnya agar progres tersimpan.</p>}
++          </section>
++
++          <section className="rounded-3xl bg-white dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Prinsip penataan</h3>
++            <ul className="mt-3 space-y-3 text-sm">
++              {room.principles.map((principle) => <li key={principle} className="flex gap-2"><span className="text-sky-500" aria-hidden>✦</span><span>{principle}</span></li>)}
++            </ul>
++          </section>
++
++          <section>
++            <h3 className="mb-2.5 font-[family-name:var(--font-display)] text-lg font-bold">Checklist perlengkapan</h3>
++            <div className="space-y-3">
++              {room.items.map((item, index) => (
++                <label key={item.name} className={`block rounded-3xl bg-white dark:bg-navy-800 p-4 shadow-sm transition ${done.has(index) ? 'ring-2 ring-leaf-300' : ''}`}>
++                  <span className="flex items-start gap-3">
++                    <input type="checkbox" checked={done.has(index)} onChange={() => toggleItem(index)} disabled={!activeId} className="mt-1 h-5 w-5 accent-sky-600" />
++                    <span className="min-w-0 flex-1">
++                      <span className={`block font-semibold ${done.has(index) ? 'line-through opacity-55' : ''}`}>{item.name}</span>
++                      <span className="mt-2 grid gap-1 text-xs opacity-75"><span><b className="text-leaf-700 dark:text-leaf-300">Rendah:</b> {item.budgetRendah}</span>{item.budgetSedang && <span><b className="text-mango-700 dark:text-mango-300">Sedang:</b> {item.budgetSedang}</span>}</span>
++                      <span className="mt-2 flex flex-wrap gap-1.5">{item.essential && <span className="rounded-full bg-sky-100 dark:bg-navy-700 px-2 py-0.5 text-[10px] font-semibold text-sky-700 dark:text-sky-300">Esensial</span>}{item.diy && <span className="rounded-full bg-sunny-100 px-2 py-0.5 text-[10px] font-semibold text-sunny-700">DIY</span>}</span>
++                    </span>
++                  </span>
++                </label>
++              ))}
++            </div>
++          </section>
++
++          <section className="rounded-3xl bg-tosca-50 dark:bg-navy-800 p-5 shadow-sm">
++            <h3 className="font-[family-name:var(--font-display)] text-lg font-bold">Tips tata letak</h3>
++            <ul className="mt-3 space-y-2 text-sm">{room.layoutTips.map((tip) => <li key={tip} className="flex gap-2"><span aria-hidden>💡</span><span>{tip}</span></li>)}</ul>
++          </section>
++        </>
++      )}
++    </div>
++  )
++}
+diff --git a/src/app/pages/MorePage.tsx b/src/app/pages/MorePage.tsx
+index de197361bf7b0608fa01b3a3e19cab8d0ddc5dbb..fe49fd82bb2a4ff43891e84c95a37f77e0644b56
+--- a/src/app/pages/MorePage.tsx
++++ b/src/app/pages/MorePage.tsx
+@@ -62,6 +62,15 @@
+       </section>
+ 
+       {/* Tampilan */}
++      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
++        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
++        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
++        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
++          Lihat planner per ruangan <span aria-hidden>→</span>
++        </a>
++      </section>
++
++      {/* Tampilan */}
+       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
+         <div>
+           <h2 className="font-semibold">Mode gelap</h2>
+
+tokens used
+37,100
+DONE UI

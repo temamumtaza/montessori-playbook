@@ -1,0 +1,832 @@
+[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m$ [0mls content/parts/ 2>/dev/null; ls content 2>/dev/null
+act-0-3m.json
+act-12-18m.json
+act-18-24m.json
+act-2-3y.json
+act-3-4y.json
+act-3-6m.json
+act-4-5y.json
+act-6-9m.json
+act-9-12m.json
+glossary-1.json
+glossary-2.json
+mile-0-3m.json
+mile-12-18m.json
+mile-18-24m.json
+mile-2-3y.json
+mile-3-4y.json
+mile-3-6m.json
+mile-4-5y.json
+mile-6-9m.json
+mile-9-12m.json
+bundles
+parts
+[0m
+[0m✱ [0mGrep "materials"[90m 5 matches[0m
+[0m
+[0m$ [0msed -n '1,140p' src/content/schema.ts
+import { z } from 'zod'
+
+// ===== Enum inti =====
+export const AgeBandId = z.enum([
+  '0-3m', '3-6m', '6-9m', '9-12m',
+  '12-18m', '18-24m', '2-3y', '3-4y', '4-5y',
+])
+export type AgeBandId = z.infer<typeof AgeBandId>
+
+export const AreaId = z.enum([
+  'practical-life', 'sensorial', 'language', 'math', 'culture',
+  'movement', 'grace-courtesy', 'self-care', 'art-music', 'outdoor',
+])
+export type AreaId = z.infer<typeof AreaId>
+
+export const MasteryLevel = z.enum(['belum', 'mulai', 'mahir'])
+export type MasteryLevel = z.infer<typeof MasteryLevel>
+
+// ===== Referensi sumber (WAJIB di tiap entri konten) =====
+export const Source = z.object({
+  title: z.string().min(3),
+  url: z.string().url(),
+  note: z.string().optional(),
+})
+export type Source = z.infer<typeof Source>
+
+// ===== Activity (entitas inti) =====
+export const Activity = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, 'id: kebab-case'),
+  title: z.string().min(5),
+  summary: z.string().min(20, 'ringkasan minimal 20 karakter'),
+  ageBands: z.array(AgeBandId).min(1),
+  areas: z.array(AreaId).min(1),
+  skills: z.array(z.string()).default([]),
+  objectives: z.array(z.string()).min(1, 'minimal 1 tujuan'),
+  materials: z.array(z.object({
+    name: z.string().min(2),
+    fromHome: z.boolean().default(true),
+    optional: z.boolean().default(false),
+  })).min(1),
+  prepMinutes: z.number().int().min(0).max(120),
+  durationMinutes: z.number().int().min(1).max(180),
+  prepLevel: z.enum(['rendah', 'sedang', 'tinggi']),
+  presentation: z.array(z.object({
+    step: z.number().int().min(1),
+    text: z.string().min(10),
+  })).min(2, 'minimal 2 langkah presentasi'),
+  controlOfError: z.string().min(10).optional(),
+  variations: z.array(z.string()).default([]),
+  readySigns: z.array(z.string()).min(1, 'minimal 1 tanda siap'),
+  struggleSigns: z.array(z.string()).default([]),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1, 'WAJIB minimal 1 rujukan'),
+  diyGuideId: z.string().optional(),
+  materialIds: z.array(z.string()).default([]),
+})
+export type Activity = z.infer<typeof Activity>
+
+// ===== Material =====
+export const Material = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(3),
+  purpose: z.string().min(20),
+  ageBands: z.array(AgeBandId).min(1),
+  budget: z.enum(['rendah', 'sedang', 'tinggi']),
+  buyHint: z.string().optional(),
+  diy: z.boolean().default(false),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Material = z.infer<typeof Material>
+
+// ===== DIYGuide =====
+export const DIYGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  makes: z.string().min(3),
+  timeMinutes: z.number().int().min(5).max(600),
+  cost: z.enum(['gratis', 'rendah', 'sedang']),
+  materialsNeeded: z.array(z.string()).min(1),
+  steps: z.array(z.string()).min(2),
+  ageBands: z.array(AgeBandId).min(1),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type DIYGuide = z.infer<typeof DIYGuide>
+
+// ===== RoomSetup =====
+export const RoomSetup = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  room: z.enum(['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']),
+  title: z.string().min(5),
+  principles: z.array(z.string()).min(2),
+  items: z.array(z.object({
+    name: z.string().min(2),
+    essential: z.boolean().default(true),
+    budgetRendah: z.string(),
+    budgetSedang: z.string().optional(),
+    diy: z.boolean().default(false),
+  })).min(3),
+  layoutTips: z.array(z.string()).min(1),
+  ageBands: z.array(AgeBandId).min(1),
+  references: z.array(Source).min(1),
+})
+export type RoomSetup = z.infer<typeof RoomSetup>
+
+// ===== Milestone =====
+export const Milestone = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  ageBand: AgeBandId,
+  domain: z.enum(['motorik-kasar', 'motorik-halus', 'bahasa', 'kognitif', 'sosial-emosional', 'self-help']),
+  description: z.string().min(20),
+  typicalFromMonths: z.number().min(0).max(72),
+  typicalToMonths: z.number().min(0).max(72),
+  redFlags: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Milestone = z.infer<typeof Milestone>
+
+// ===== ParentGuide =====
+export const ParentGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  category: z.enum(['filosofi', 'komunikasi', 'disiplin', 'rutinitas', 'screen-time', 'sibling', 'toilet', 'tantrum', 'observasi', 'self-care']),
+  ageBands: z.array(AgeBandId).default([]),
+  body: z.string().min(200, 'panduan minimal 200 karakter'),
+  keyTakeaways: z.array(z.string()).min(2),
+  references: z.array(Source).min(1),
+})
+export type ParentGuide = z.infer<typeof ParentGuide>
+
+// ===== Glossary =====
+export const GlossaryEntry = z.object({
+  term: z.string().min(2),
+  termEn: z.string().optional(),
+  definition: z.string().min(30),
+  relatedTerms: z.array(z.string()).default([]),
+})
+export type GlossaryEntry = z.infer<typeof GlossaryEntry>
+[0m
+[0m$ [0mls content/parts | grep -i material; ls content
+bundles
+parts
+[0m
+[0m$ [0mpwd; find content -maxdepth 2 -type f | head -60; ls -la content/parts | head
+/home/temamumtaza/Documents/dev/montessori-playbook
+content/parts/glossary-1.json
+content/parts/mile-4-5y.json
+content/parts/mile-18-24m.json
+content/parts/mile-3-6m.json
+content/parts/glossary-2.json
+content/parts/mile-2-3y.json
+content/parts/act-4-5y.json
+content/parts/mile-9-12m.json
+content/parts/mile-3-4y.json
+content/parts/act-3-6m.json
+content/parts/act-3-4y.json
+content/parts/mile-0-3m.json
+content/parts/act-18-24m.json
+content/parts/act-12-18m.json
+content/parts/mile-6-9m.json
+content/parts/act-6-9m.json
+content/parts/act-0-3m.json
+content/parts/act-9-12m.json
+content/parts/act-2-3y.json
+content/parts/mile-12-18m.json
+total 556
+drwxrwxr-x 2 temamumtaza temamumtaza  4096 Oct 19 20:15 .
+drwxrwxr-x 4 temamumtaza temamumtaza  4096 Oct 19 18:34 ..
+-rw-rw-r-- 1 temamumtaza temamumtaza 34333 Oct 19 20:00 act-0-3m.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 52086 Oct 19 20:01 act-12-18m.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 36980 Oct 19 20:02 act-18-24m.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 40820 Oct 19 20:03 act-2-3y.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 43417 Oct 19 20:03 act-3-4y.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 67502 Oct 19 19:45 act-3-6m.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 44290 Oct 19 20:04 act-4-5y.json
+[0m
+[0m$ [0mmkdir -p content/parts && python3 - <<'PY'
+import json
+
+def src(title, url):
+    return {"title": title, "url": url}
+
+HCS_BABY = "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+HCS_TODDLER = "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+HCS_SAFETY = "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+CDC_INFANTS = "https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/infants.html"
+CDC_TODDLERS = "https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/toddlers.html"
+CDC_SAFE = "https://www.cdc.gov/safechild/"
+WHO_CHILD = "https://www.who.int/teams/maternal-newborn-child-adolescent-health-and-ageing/child-health"
+NHS_BABY = "https://www.nhs.uk/baby/"
+NHS_SLEEP = "https://www.nhs.uk/baby/sleep/"
+ZTT = "https://www.zerotothree.org/resources/"
+ZTT_PLAY = "https://www.zerotothree.org/topics/play/"
+AMI = "https://amiusa.org/"
+AMI_MONT = "https://amiusa.org/montessori/"
+KEMDIKBUD = "https://www.kemdikbud.go.id/"
+PAUDPEDIA = "https://paudpedia.kemdikbud.go.id/"
+TMN = "https://themontessorinotebook.com/"
+TMN_ART = "https://themontessorinotebook.com/articles/"
+MG = "https://montessoriglobal.com/"
+MG_BLOG = "https://montessoriglobal.com/blog/"
+
+data = [
+  {
+    "id": "cermin-bayi-aman",
+    "name": "Cermin bayi dengan bingkai lembut",
+    "purpose": "Memberi bayi kesempatan melihat wajah dan gerakan tubuhnya, mendukung rasa ingin tahu dan kesadaran diri sejak awal.",
+    "ageBands": ["0-3m", "3-6m"],
+    "budget": "rendah",
+    "buyHint": "Pilih cermin akrilik atau cermin dengan bingkai kain yang tidak mudah pecah.",
+    "diy": False,
+    "safetyNotes": [
+      "Gunakan cermin akrilik atau cermin yang terpasang kuat; hindari kaca tipis yang mudah pecah.",
+      "Letakkan di luar jangkauan tendangan bayi dan awasi saat bayi bermain telentang.",
+      "Pastikan bingkai tidak memiliki bagian tajam atau cat yang mengelupas."
+    ],
+    "references": [src("HealthyChildren.org - Ages & Stages: Baby", HCS_BABY), src("Zero to Three - Resources", ZTT)]
+  },
+  {
+    "id": "kartu-kontras-tinggi",
+    "name": "Kartu kontras tinggi hitam-putih",
+    "purpose": "Membantu bayi berlatih fokus dan mengikuti pola sederhana melalui gambar kontras yang mudah dilihat.",
+    "ageBands": ["0-3m", "3-6m"],
+    "budget": "rendah",
+    "buyHint": "Bisa dibuat sendiri dari karton putih dan pola hitam tebal.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan kartu berbahan tebal tanpa laminasi tajam dan jangan letakkan di dalam tempat tidur bayi.",
+      "Tunjukkan dari jarak sekitar 20-30 cm sambil diawasi; hentikan bila bayi tampak rewel.",
+      "Pastikan tinta tidak berbau menyengat dan tidak mudah terkelupas."
+    ],
+    "references": [src("CDC - Positive Parenting: Infants", CDC_INFANTS), src("HealthyChildren.org - Safety at Home", HCS_SAFETY)]
+  },
+  {
+    "id": "keranjang-sensori-kain",
+    "name": "Keranjang sensori kain dan benda aman",
+    "purpose": "Mengenalkan berbagai tekstur, bunyi, dan bentuk lewat benda sehari-hari yang aman untuk dipegang dan dijelajahi.",
+    "ageBands": ["3-6m", "6-9m"],
+    "budget": "rendah",
+    "buyHint": "Cukup gunakan keranjang rendah dan benda rumah yang sudah aman.",
+    "diy": True,
+    "safetyNotes": [
+      "Pilih benda yang lebih besar dari tabung gulungan tisu toilet agar tidak bisa tertelan.",
+      "Hindari benda dengan tali, karet gelang, baterai kecil, atau bagian yang mudah lepas.",
+      "Awasi bayi sepanjang waktu dan periksa keranjang sebelum dimainkan."
+    ],
+    "references": [src("HealthyChildren.org - Safety at Home", HCS_SAFETY), src("Zero to Three - Play", ZTT_PLAY)]
+  },
+  {
+    "id": "bola-gulir-bertekstur",
+    "name": "Bola gulir bertekstur",
+    "purpose": "Mendorong bayi meraih, mengikuti gerakan, dan merasakan tekstur berbeda saat bola menggelinding.",
+    "ageBands": ["3-6m", "6-9m"],
+    "budget": "rendah",
+    "diy": False,
+    "safetyNotes": [
+      "Pastikan bola cukup besar untuk digenggam dan tidak muat di mulut bayi.",
+      "Mainkan di area beralas empuk agar bola tidak memantul keras ke wajah bayi.",
+      "Awasi saat bayi mendorong bola agar tidak terjatuh saat berusaha mengejarnya."
+    ],
+    "references": [src("CDC - Positive Parenting: Infants", CDC_INFANTS), src("HealthyChildren.org - Ages & Stages: Baby", HCS_BABY)]
+  },
+  {
+    "id": "object-permanence-box",
+    "name": "Kotak permanensi objek",
+    "purpose": "Melatih pemahaman bahwa benda tetap ada meski tidak terlihat, melalui permainan memasukkan bola ke lubang dan menemukannya kembali.",
+    "ageBands": ["6-9m", "9-12m"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kotak kayu dengan lubang dan bola besar yang aman.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan bola kayu berukuran lebih besar dari mulut bayi dan periksa apakah catnya aman.",
+      "Pastikan lubang kotak tidak menjepit jari dan tutupnya tidak bisa terlepas menjadi bagian kecil.",
+      "Dudukkan bayi di lantai beralas dan awasi selama bermain."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("Zero to Three - Resources", ZTT)]
+  },
+  {
+    "id": "cincin-stacking",
+    "name": "Cincin susun bertingkat",
+    "purpose": "Melatih koordinasi tangan, kontrol gerakan, dan pemahaman urutan ukuran saat anak menyusun cincin.",
+    "ageBands": ["9-12m", "12-18m"],
+    "budget": "rendah",
+    "diy": False,
+    "safetyNotes": [
+      "Pilih cincin kayu atau plastik tebal tanpa bagian kecil yang bisa lepas.",
+      "Pastikan tiang penyangga tidak tajam dan tidak terlalu tinggi untuk anak yang baru berdiri.",
+      "Awasi anak agar tidak mengayunkan mainan ke wajahnya."
+    ],
+    "references": [src("HealthyChildren.org - Ages & Stages: Baby", HCS_BABY), src("AMI USA - Montessori", AMI_MONT)]
+  },
+  {
+    "id": "gelas-nesting",
+    "name": "Gelas bertingkat untuk disusun",
+    "purpose": "Mengajak anak membandingkan ukuran, memasukkan, dan mengeluarkan gelas untuk melatih koordinasi serta pemahaman ruang.",
+    "ageBands": ["12-18m"],
+    "budget": "rendah",
+    "diy": False,
+    "safetyNotes": [
+      "Gunakan gelas plastik atau kayu tanpa retak dan tanpa tepi tajam.",
+      "Periksa apakah gelas bisa tersangkut di mulut anak; pilih ukuran yang tidak muat ditelan.",
+      "Mainkan di lantai dan awasi agar anak tidak memukulkan gelas ke kepala."
+    ],
+    "references": [src("Zero to Three - Resources", ZTT), src("HealthyChildren.org - Ages & Stages: Toddler", HCS_TODDLER)]
+  },
+  {
+    "id": "kotak-posting-bentuk",
+    "name": "Kotak posting bentuk sederhana",
+    "purpose": "Melatih pencocokan bentuk dan koordinasi mata-tangan lewat kegiatan memasukkan keping ke lubang yang sesuai.",
+    "ageBands": ["12-18m"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kotak kardus tebal dengan keping kayu besar.",
+    "diy": True,
+    "safetyNotes": [
+      "Pilih keping yang lebih besar dari mulut anak dan tidak bisa terlepas dari kotak.",
+      "Pastikan tepi lubang halus dan tidak menjepit jari.",
+      "Awasi anak, terutama bila kotak memiliki tutup yang bisa terbuka."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("AMI USA", AMI)]
+  },
+  {
+    "id": "kotak-koin",
+    "name": "Kotak koin dengan slot",
+    "purpose": "Melatih ketepatan gerak jari dan kesabaran saat anak memasukkan koin ke celah sempit, lalu membukanya kembali.",
+    "ageBands": ["12-18m", "18-24m"],
+    "budget": "rendah",
+    "buyHint": "Gunakan koin kayu besar dan kotak dengan tutup yang mudah dibuka orang dewasa.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan koin kayu atau plastik besar yang tidak muat di mulut; jangan gunakan uang logam asli.",
+      "Pastikan tutup kotak mudah dibuka orang dewasa tetapi tidak mudah lepas sendiri.",
+      "Awasi terus dan hitung koin sebelum serta sesudah bermain."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("HealthyChildren.org - Safety at Home", HCS_SAFETY)]
+  },
+  {
+    "id": "silinder-bertombol",
+    "name": "Silinder bertombol",
+    "purpose": "Membantu anak mengenali perbedaan ukuran dan melatih jari telunjuk serta ibu jari saat memasukkan silinder ke lubangnya.",
+    "ageBands": ["12-18m"],
+    "budget": "tinggi",
+    "buyHint": "Cari set kayu dengan tombol besar, cat aman, dan lubang yang tidak tajam.",
+    "diy": False,
+    "safetyNotes": [
+      "Gunakan set dengan tombol yang terpasang kuat dan tidak bisa dilepas menjadi bagian kecil.",
+      "Periksa permukaan kayu dari serpihan atau retak sebelum dipakai.",
+      "Awasi anak dan simpan set di tempat yang tidak terjangkau saat tidak digunakan."
+    ],
+    "references": [src("AMI USA - Montessori", AMI_MONT), src("Montessori Global", MG)]
+  },
+  {
+    "id": "set-menuang",
+    "name": "Set menuang air sederhana",
+    "purpose": "Melatih koordinasi tangan dan konsentrasi saat anak menuang air dari satu wadah kecil ke wadah lain.",
+    "ageBands": ["12-18m", "18-24m"],
+    "budget": "rendah",
+    "buyHint": "Gunakan pitcher kecil dan gelas plastik atau logam ringan.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan wadah plastik atau logam ringan, bukan kaca, untuk anak usia ini.",
+      "Batasi jumlah air agar tidak terlalu berat dan mudah tumpah.",
+      "Letakkan nampan penampung dan awasi anak agar tidak minum air bermain."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("Zero to Three - Resources", ZTT)]
+  },
+  {
+    "id": "set-menyendok",
+    "name": "Set menyendok benda kecil",
+    "purpose": "Melatih pegangan sendok, kontrol pergelangan tangan, dan pemindahan benda dari satu mangkuk ke mangkuk lain.",
+    "ageBands": ["12-18m", "18-24m"],
+    "budget": "rendah",
+    "buyHint": "Siapkan dua mangkuk ringan, sendok tumpul, dan benda besar yang aman.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan benda yang lebih besar dari tabung gulungan tisu toilet dan tidak mudah tertelan.",
+      "Pilih sendok dengan tepi tumpul dan mangkuk yang tidak mudah pecah.",
+      "Awasi anak agar tidak memasukkan benda mainan ke mulut."
+    ],
+    "references": [src("HealthyChildren.org - Safety at Home", HCS_SAFETY), src("The Montessori Notebook", TMN)]
+  },
+  {
+    "id": "wadah-buka-tutup",
+    "name": "Kumpulan wadah buka-tutup",
+    "purpose": "Melatih kekuatan jari dan pemecahan masalah saat anak membuka serta menutup berbagai jenis wadah.",
+    "ageBands": ["12-18m", "18-24m"],
+    "budget": "rendah",
+    "buyHint": "Gunakan wadah makanan bekas yang bersih dengan tutup berbeda jenis.",
+    "diy": True,
+    "safetyNotes": [
+      "Hindari wadah dari kaca, kaleng tajam, atau tutup kecil yang bisa tertelan.",
+      "Pastikan tutup tidak menutup rapat sampai menyulitkan anak bernapas; pilih wadah yang aman.",
+      "Awasi anak dan buang wadah yang retak atau berbau."
+    ],
+    "references": [src("Zero to Three - Resources", ZTT), src("HealthyChildren.org - Ages & Stages: Toddler", HCS_TODDLER)]
+  },
+  {
+    "id": "dressing-frame-kancing",
+    "name": "Bingkai latihan mengancing",
+    "purpose": "Memberi anak kesempatan berlatih membuka dan mengancingkan kancing besar sebagai persiapan berpakaian mandiri.",
+    "ageBands": ["18-24m", "2-3y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kain tebal dan kancing besar yang dijahit kuat.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan kancing besar yang dijahit kuat dan tidak mudah lepas.",
+      "Pastikan kain tidak memiliki benang panjang yang bisa melilit jari atau leher.",
+      "Awasi anak agar kancing tidak dimasukkan ke mulut."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("AMI USA", AMI)]
+  },
+  {
+    "id": "set-menjepit",
+    "name": "Set menjepit dengan penjepit",
+    "purpose": "Melatih kekuatan jari dan koordinasi saat anak memindahkan benda menggunakan penjepit besar.",
+    "ageBands": ["18-24m", "2-3y"],
+    "budget": "rendah",
+    "buyHint": "Cukup gunakan penjepit plastik besar dan pom-pom atau bola kain.",
+    "diy": True,
+    "safetyNotes": [
+      "Pilih penjepit plastik atau kayu dengan pegas ringan agar tidak menjepit kulit.",
+      "Gunakan benda besar dan ringan yang tidak mudah pecah.",
+      "Awasi anak dan simpan penjepit di luar jangkauan saat selesai."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("HealthyChildren.org - Safety at Home", HCS_SAFETY)]
+  },
+  {
+    "id": "meronce-manik",
+    "name": "Meronce manik besar",
+    "purpose": "Melatih koordinasi mata-tangan dan kesabaran saat anak memasukkan manik ke tali satu per satu.",
+    "ageBands": ["2-3y"],
+    "budget": "rendah",
+    "diy": False,
+    "safetyNotes": [
+      "Gunakan manik yang lebih besar dari tabung gulungan tisu toilet dan tali pendek agar tidak melilit leher.",
+      "Awasi anak sepanjang kegiatan; jangan tinggalkan manik kecil di lantai.",
+      "Simpan tali dan manik di wadah tertutup setelah bermain."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("CDC - Safe Child", CDC_SAFE)]
+  },
+  {
+    "id": "dressing-frame-resleting",
+    "name": "Bingkai latihan resleting",
+    "purpose": "Melatih jari menarik dan menutup resleting besar, keterampilan yang sering dibutuhkan saat berpakaian.",
+    "ageBands": ["2-3y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari jaket bekas dengan resleting besar.",
+    "diy": True,
+    "safetyNotes": [
+      "Pilih resleting besar dengan tarikan yang mudah dipegang dan tidak tajam.",
+      "Periksa ujung resleting agar tidak melukai jari atau wajah.",
+      "Awasi anak dan hindari kain dengan tali panjang."
+    ],
+    "references": [src("AMI USA - Montessori", AMI_MONT), src("The Montessori Notebook", TMN)]
+  },
+  {
+    "id": "papan-kunci",
+    "name": "Papan kunci dan kait",
+    "purpose": "Mengajak anak mencoba berbagai cara membuka dan menutup kunci sederhana untuk melatih keterampilan tangan.",
+    "ageBands": ["2-3y"],
+    "budget": "sedang",
+    "buyHint": "Pilih papan kayu dengan kunci, kait, dan slot yang halus serta tanpa bagian berkarat.",
+    "diy": False,
+    "safetyNotes": [
+      "Pastikan papan tidak memiliki bagian tajam, kunci berkarat, atau sekrup longgar.",
+      "Hindari kait yang bisa menjepit jari; periksa gerakannya sebelum diberikan.",
+      "Awasi anak karena beberapa kunci mungkin berat saat dilepas."
+    ],
+    "references": [src("Montessori Global", MG), src("AMI USA", AMI)]
+  },
+  {
+    "id": "kartu-menjahit",
+    "name": "Kartu menjahit sederhana",
+    "purpose": "Melatih kontrol tangan dan urutan gerak saat anak memasukkan tali melalui lubang pada kartu.",
+    "ageBands": ["2-3y"],
+    "budget": "rendah",
+    "buyHint": "Buat sendiri dari karton tebal, tali sepatu pendek, dan lubang besar.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan tali pendek dan tebal agar tidak melilit leher; hindari jarum logam tajam.",
+      "Buat lubang cukup besar dan halus agar tali mudah lewat tanpa menjepit jari.",
+      "Awasi anak dan simpan tali di tempat aman setelah bermain."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("Zero to Three - Resources", ZTT)]
+  },
+  {
+    "id": "adonan-main",
+    "name": "Adonan main buatan rumah",
+    "purpose": "Menguatkan otot tangan dan mendorong kreativitas lewat kegiatan meremas, membentuk, dan memotong adonan.",
+    "ageBands": ["2-3y", "3-4y"],
+    "budget": "rendah",
+    "buyHint": "Cukup tepung, air, garam, dan minyak sayur untuk membuat sendiri.",
+    "diy": True,
+    "safetyNotes": [
+      "Awasi anak karena adonan bukan makanan dan bisa tersedak bila dimakan.",
+      "Hindari menambahkan parfum atau pewarna yang tidak food-grade; cuci tangan sebelum dan sesudah bermain.",
+      "Buat adonan dalam jumlah kecil dan simpan di wadah tertutup."
+    ],
+    "references": [src("HealthyChildren.org - Safety at Home", HCS_SAFETY), src("Zero to Three - Play", ZTT_PLAY)]
+  },
+  {
+    "id": "silinder-tanpa-tombol",
+    "name": "Silinder tanpa tombol",
+    "purpose": "Melatih pengamatan ukuran dan koordinasi saat anak memasukkan silinder tanpa pegangan ke lubang yang tepat.",
+    "ageBands": ["2-3y", "3-4y"],
+    "budget": "tinggi",
+    "buyHint": "Cari set kayu dengan empat blok warna berbeda dan permukaan halus.",
+    "diy": False,
+    "safetyNotes": [
+      "Periksa apakah silinder muat di mulut anak; pilih ukuran yang aman dan awasi penggunaan.",
+      "Pastikan kayu tidak retak atau berujung tajam.",
+      "Jangan biarkan anak melempar silinder ke arah orang lain."
+    ],
+    "references": [src("AMI USA - Montessori", AMI_MONT), src("Montessori Global", MG)]
+  },
+  {
+    "id": "tablet-warna",
+    "name": "Tablet warna",
+    "purpose": "Mengenalkan perbedaan warna dan gradasi lewat kegiatan mencocokkan serta menyusun tablet warna.",
+    "ageBands": ["3-4y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari karton tebal atau papan kayu yang dicat warna berbeda.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan tablet kayu dengan cat aman dan tepi halus.",
+      "Simpan di kotak tertutup agar tidak hilang atau dimasukkan ke mulut anak yang lebih kecil.",
+      "Awasi agar anak tidak memukulkan tablet ke meja atau wajah."
+    ],
+    "references": [src("AMI USA", AMI), src("The Montessori Notebook", TMN)]
+  },
+  {
+    "id": "bangun-geometri",
+    "name": "Bangun geometri tiga dimensi",
+    "purpose": "Membantu anak mengenali bentuk tiga dimensi melalui sentuhan, pengamatan, dan permainan mencocokkan.",
+    "ageBands": ["3-4y"],
+    "budget": "sedang",
+    "diy": False,
+    "safetyNotes": [
+      "Pilih bangun kayu atau plastik tebal tanpa sudut tajam.",
+      "Awasi anak yang lebih kecil di sekitar bola kecil atau kerucut yang bisa digulingkan.",
+      "Simpan bangun di rak rendah yang stabil agar tidak jatuh."
+    ],
+    "references": [src("Montessori Global", MG), src("AMI USA - Montessori", AMI_MONT)]
+  },
+  {
+    "id": "huruf-amplas",
+    "name": "Huruf amplas",
+    "purpose": "Mengenalkan bentuk huruf melalui penglihatan dan sentuhan, sebagai langkah awal mengenal bunyi dan tulisan.",
+    "ageBands": ["3-4y", "4-5y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari papan kayu dan amplas halus yang dipotong sesuai bentuk huruf.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan papan huruf dengan permukaan amplas halus dan tidak berdebu berlebih.",
+      "Pastikan papan tidak memiliki paku atau tepi kayu yang tajam.",
+      "Awasi anak agar tidak menggosok amplas ke wajah atau mata."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("AMI USA", AMI)]
+  },
+  {
+    "id": "batang-angka",
+    "name": "Batang angka",
+    "purpose": "Memperkenalkan konsep jumlah dan urutan angka melalui batang berwarna yang dapat dihitung dan disusun.",
+    "ageBands": ["3-4y", "4-5y"],
+    "budget": "tinggi",
+    "diy": False,
+    "safetyNotes": [
+      "Pilih batang kayu ringan dengan cat aman dan ujung tumpul.",
+      "Awasi anak saat menyusun batang panjang agar tidak jatuh menimpa kaki.",
+      "Simpan di rak stabil dan jauhkan dari anak yang lebih kecil."
+    ],
+    "references": [src("AMI USA - Montessori", AMI_MONT), src("Montessori Global", MG)]
+  },
+  {
+    "id": "silinder-bunyi",
+    "name": "Silinder bunyi",
+    "purpose": "Melatih pendengaran dan konsentrasi saat anak mencocokkan silinder berdasarkan bunyi yang mirip.",
+    "ageBands": ["3-4y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kaleng kecil atau tabung kayu yang diisi biji-bijian dengan aman.",
+    "diy": True,
+    "safetyNotes": [
+      "Pastikan silinder tertutup rapat dan tidak bisa dibuka menjadi bagian kecil.",
+      "Hindari mengisi dengan benda tajam atau bahan berbahaya; gunakan isi yang aman.",
+      "Awasi anak dan jangan biarkan mengguncang silinder dekat telinga orang lain."
+    ],
+    "references": [src("AMI USA", AMI), src("The Montessori Notebook", TMN)]
+  },
+  {
+    "id": "gunting-kertas",
+    "name": "Gunting kertas berpola",
+    "purpose": "Melatih otot tangan dan koordinasi saat anak menggunting garis sederhana dengan gunting anak.",
+    "ageBands": ["3-4y"],
+    "budget": "rendah",
+    "diy": False,
+    "safetyNotes": [
+      "Gunakan gunting anak dengan ujung tumpul dan awasi penuh selama kegiatan.",
+      "Ajarkan cara membawa gunting dengan mata gunting menghadap ke bawah saat berjalan.",
+      "Simpan gunting di tempat terkunci setelah selesai."
+    ],
+    "references": [src("HealthyChildren.org - Safety at Home", HCS_SAFETY), src("CDC - Safe Child", CDC_SAFE)]
+  },
+  {
+    "id": "dressing-frame-tali-sepatu",
+    "name": "Bingkai latihan tali sepatu",
+    "purpose": "Memberi kesempatan berlatih mengikat, membuka, dan memasukkan tali sebagai persiapan merawat diri.",
+    "ageBands": ["3-4y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari papan berlubang dan tali sepatu pendek berwarna cerah.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan tali pendek atau lipat tali agar tidak melilit leher saat bermain.",
+      "Pastikan lubang tali halus dan tidak menjepit jari.",
+      "Awasi anak dan simpan bingkai di luar jangkauan anak yang lebih kecil."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("AMI USA", AMI)]
+  },
+  {
+    "id": "alfabet-bergerak",
+    "name": "Alfabet bergerak",
+    "purpose": "Membantu anak menyusun kata sederhana dengan huruf lepas, menghubungkan bunyi dengan simbol tulisan.",
+    "ageBands": ["4-5y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari karton tebal atau tutup botol yang diberi huruf.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan huruf berukuran besar yang tidak muat di mulut anak yang lebih kecil.",
+      "Simpan huruf dalam kotak bersekat agar tidak berserakan di lantai.",
+      "Awasi agar anak tidak melempar atau menelan huruf kecil."
+    ],
+    "references": [src("AMI USA - Montessori", AMI_MONT), src("The Montessori Notebook", TMN)]
+  },
+  {
+    "id": "kotak-gelendong",
+    "name": "Kotak gelendong angka",
+    "purpose": "Memperkuat pemahaman jumlah nol sampai sembilan melalui kegiatan menempatkan gelendong ke kotak berlabel.",
+    "ageBands": ["4-5y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kotak berkamar dan gelendong kayu atau benang yang besar.",
+    "diy": True,
+    "safetyNotes": [
+      "Gunakan gelendong besar dan ringan yang tidak muat di mulut anak lebih kecil.",
+      "Pastikan kotak tidak memiliki paku atau sekrup yang menonjol.",
+      "Awasi anak saat memindahkan gelendong agar tidak terjatuh."
+    ],
+    "references": [src("AMI USA", AMI), src("Montessori Global", MG)]
+  },
+  {
+    "id": "angka-amplas",
+    "name": "Angka amplas",
+    "purpose": "Mengenalkan bentuk angka melalui sentuhan dan penglihatan sebelum anak berlatih menulisnya.",
+    "ageBands": ["4-5y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari papan kayu dan amplas halus berbentuk angka.",
+    "diy": True,
+    "safetyNotes": [
+      "Pilih papan angka dengan amplas halus dan tepi kayu yang tidak tajam.",
+      "Pastikan papan tidak berdebu atau berjamur; bersihkan sebelum digunakan.",
+      "Awasi anak agar tidak menggosok permukaan amplas ke kulit sensitif."
+    ],
+    "references": [src("The Montessori Notebook", TMN), src("AMI USA", AMI)]
+  },
+  {
+    "id": "imbangan-sederhana",
+    "name": "Imbangan sederhana",
+    "purpose": "Mengajak anak membandingkan berat benda secara langsung dan mengamati keseimbangan dengan cara yang menyenangkan.",
+    "ageBands": ["4-5y"],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari coat hanger, tali, dan dua wadah plastik yang sama besar.",
+    "diy": True,
+    "safetyNotes": [
+      "Pastikan imbangan stabil dan tidak mudah jatuh saat anak menaruh benda.",
+      "Gunakan benda ringan dan tidak mudah pecah; hindari benda tajam atau berisi cairan panas.",
+      "Awasi anak agar tidak mengayunkan lengan imbangan ke wajah."
+    ],
+    "references": [src("Montessori Global", MG), src("The Montessori Notebook", TMN)]
+  }
+]
+
+with open("content/parts/materials-2.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+
+print("wrote", len(data))
+PY
+python3 -c "import json;d=json.load(open('content/parts/materials-2.json'));print('OK',len(d))"
+wrote 32
+OK 32
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json,re
+d=json.load(open('content/parts/materials-2.json'))
+ages={'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y','3-4y','4-5y'}
+ids=set()
+for x in d:
+    assert re.fullmatch(r'[a-z0-9-]+',x['id']),x['id']
+    assert x['id'] not in ids,x['id']; ids.add(x['id'])
+    assert len(x['name'])>=3
+    assert len(x['purpose'])>=20
+    assert x['ageBands'] and all(a in ages for a in x['ageBands']),x['id']
+    assert x['budget'] in {'rendah','sedang','tinggi'}
+    assert isinstance(x['diy'],bool)
+    assert isinstance(x['safetyNotes'],list)
+    assert len(x['references'])>=1
+    for r in x['references']:
+        assert len(r['title'])>=3 and r['url'].startswith('https://'),x['id']
+print('schema-like OK',len(d))
+PY
+find content -type f | sort | sed -n '1,40p'; grep -rl "object-permanence-box\|materials-2" content src 2>/dev/null | head
+schema-like OK 32
+content/parts/act-0-3m.json
+content/parts/act-12-18m.json
+content/parts/act-18-24m.json
+content/parts/act-2-3y.json
+content/parts/act-3-4y.json
+content/parts/act-3-6m.json
+content/parts/act-4-5y.json
+content/parts/act-6-9m.json
+content/parts/act-9-12m.json
+content/parts/glossary-1.json
+content/parts/glossary-2.json
+content/parts/materials-2.json
+content/parts/mile-0-3m.json
+content/parts/mile-12-18m.json
+content/parts/mile-18-24m.json
+content/parts/mile-2-3y.json
+content/parts/mile-3-4y.json
+content/parts/mile-3-6m.json
+content/parts/mile-4-5y.json
+content/parts/mile-6-9m.json
+content/parts/mile-9-12m.json
+content/parts/materials-2.json
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json
+d=json.load(open('content/parts/materials-2.json'))
+urls=sorted({r['url'] for x in d for r in x['references']})
+print('\n'.join(urls))
+PY
+https://amiusa.org/
+https://amiusa.org/montessori/
+https://montessoriglobal.com/
+https://themontessorinotebook.com/
+https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/infants.html
+https://www.cdc.gov/safechild/
+https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx
+https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx
+https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx
+https://www.zerotothree.org/resources/
+https://www.zerotothree.org/topics/play/
+[0m
+[0m$ [0mwhile read -r u; do code=$(curl -L -s -o /dev/null --max-time 12 -w '%{http_code}' "$u"); echo "$code $u"; done <<'EOF'
+https://amiusa.org/
+https://amiusa.org/montessori/
+https://montessoriglobal.com/
+https://themontessorinotebook.com/
+https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/infants.html
+https://www.cdc.gov/safechild/
+https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx
+https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx
+https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx
+https://www.zerotothree.org/resources/
+https://www.zerotothree.org/topics/play/
+EOF
+200 https://amiusa.org/
+404 https://amiusa.org/montessori/
+200 https://montessoriglobal.com/
+200 https://themontessorinotebook.com/
+200 https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/infants.html
+404 https://www.cdc.gov/safechild/
+200 https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx
+200 https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx
+200 https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx
+403 https://www.zerotothree.org/resources/
+403 https://www.zerotothree.org/topics/play/
+[0m
+[0m$ [0mfor u in "https://www.cdc.gov/child-development/" "https://www.cdc.gov/parents/" "https://www.cdc.gov/child-development/about/index.html" "https://amiusa.org/what-is-montessori/" "https://amiusa.org/about-montessori/" "https://amiusa.org/"; do code=$(curl -L -s -o /dev/null --max-time 12 -w '%{http_code}' "$u"); echo "$code $u"; done
+200 https://www.cdc.gov/child-development/
+200 https://www.cdc.gov/parents/
+200 https://www.cdc.gov/child-development/about/index.html
+404 https://amiusa.org/what-is-montessori/
+200 https://amiusa.org/about-montessori/
+200 https://amiusa.org/
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json
+p='content/parts/materials-2.json'
+d=json.load(open(p))
+for x in d:
+    for r in x['references']:
+        if r['url']=='https://amiusa.org/montessori/':
+            r['url']='https://amiusa.org/about-montessori/'
+        if r['url']=='https://www.cdc.gov/safechild/':
+            r['url']='https://www.cdc.gov/child-development/'
+with open(p,'w',encoding='utf-8') as f:
+    json.dump(d,f,ensure_ascii=False,indent=2); f.write('\n')
+PY
+python3 -c "import json;d=json.load(open('content/parts/materials-2.json'));print('OK',len(d))"
+OK 32
+[0m
+DONE materials-2

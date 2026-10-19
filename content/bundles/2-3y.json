@@ -1,0 +1,2661 @@
+{
+ "ageBand": "2-3y",
+ "activities": [
+  {
+   "id": "2-3y-menuang-air",
+   "title": "Menuang Air dengan Gelas",
+   "summary": "Anak berlatih menuang air dengan tenang dan hati-hati.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "koordinasi tangan-mata",
+    "konsentrasi",
+    "menuang"
+   ],
+   "objectives": [
+    "Mengontrol gerakan saat menuang",
+    "Mengenali banyak dan sedikit"
+   ],
+   "materials": [
+    {
+     "name": "dua gelas kecil dan nampan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kendi kecil berisi sedikit air",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "lap kecil",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan dua gelas dan kendi di atas nampan."
+    },
+    {
+     "step": 2,
+     "text": "Pegang kendi dengan dua tangan lalu tuang perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Tunjukkan cara mengelap tetesan air."
+    }
+   ],
+   "controlOfError": "Air yang tumpah terlihat di nampan.",
+   "variations": [
+    "Gunakan kacang besar kering setelah anak siap."
+   ],
+   "readySigns": [
+    "Anak mampu membawa nampan dengan dua tangan."
+   ],
+   "struggleSigns": [
+    "Anak menuang terlalu cepat atau terus mengisi gelas."
+   ],
+   "safetyNotes": [
+    "Gunakan sedikit air dan dampingi agar anak tidak terpeleset."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-memindahkan-kacang",
+   "title": "Memindahkan Kacang dengan Sendok",
+   "summary": "Anak memindahkan benda besar untuk melatih gerak yang terarah.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "sensorial"
+   ],
+   "skills": [
+    "motorik halus",
+    "ketelitian",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Memindahkan benda tanpa banyak tercecer",
+    "Menguatkan genggaman sendok"
+   ],
+   "materials": [
+    {
+     "name": "dua mangkuk rendah",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "sendok makan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kacang besar atau pompom besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Isi satu mangkuk dengan benda berukuran besar."
+    },
+    {
+     "step": 2,
+     "text": "Ambil satu benda dan jatuhkan ke mangkuk kosong."
+    },
+    {
+     "step": 3,
+     "text": "Persilakan anak memindahkan semuanya."
+    }
+   ],
+   "controlOfError": "Benda yang tersisa menunjukkan pekerjaan belum selesai.",
+   "variations": [
+    "Pindahkan bola kapas besar dengan penjepit."
+   ],
+   "readySigns": [
+    "Anak dapat mengikuti satu contoh gerakan."
+   ],
+   "struggleSigns": [
+    "Anak memasukkan benda ke mulut atau kesulitan menggenggam."
+   ],
+   "safetyNotes": [
+    "Pilih benda yang terlalu besar untuk tertelan dan awasi terus."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mencuci-buah",
+   "title": "Mencuci Buah Sederhana",
+   "summary": "Anak membantu mencuci buah sambil belajar urutan pekerjaan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "urutan kerja",
+    "kemandirian",
+    "kebersihan"
+   ],
+   "objectives": [
+    "Mengikuti langkah mencuci sederhana",
+    "Berpartisipasi dalam menyiapkan makanan"
+   ],
+   "materials": [
+    {
+     "name": "buah berkulit tebal",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "baskom kecil berisi air",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "sikat lembut",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan buah dan baskom di meja yang stabil."
+    },
+    {
+     "step": 2,
+     "text": "Tunjukkan menggosok buah dengan lembut."
+    },
+    {
+     "step": 3,
+     "text": "Bilas, letakkan di piring, lalu keringkan."
+    }
+   ],
+   "controlOfError": "Buah yang masih kotor tampak oleh anak.",
+   "variations": [
+    "Cuci sayur berukuran besar bersama orang dewasa."
+   ],
+   "readySigns": [
+    "Anak mau mengikuti urutan dua sampai tiga langkah."
+   ],
+   "struggleSigns": [
+    "Anak menyiram air terlalu banyak atau menekan buah keras."
+   ],
+   "safetyNotes": [
+    "Orang dewasa tetap menangani pisau dan memeriksa buah sebelum dimakan."
+   ],
+   "references": [
+    {
+     "title": "NHS",
+     "url": "https://www.nhs.uk/start4life/toddler/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mengupas-pisang",
+   "title": "Mengupas Pisang Sendiri",
+   "summary": "Anak belajar membuka kulit pisang dan menyiapkan camilan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "kemandirian",
+    "motorik halus",
+    "urutan"
+   ],
+   "objectives": [
+    "Membuka kulit dengan jari",
+    "Menyiapkan makanan sederhana"
+   ],
+   "materials": [
+    {
+     "name": "pisang matang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "piring kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "lap tangan",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan pisang dan piring di depan anak."
+    },
+    {
+     "step": 2,
+     "text": "Tekan ujung pisang lalu tarik kulit ke bawah."
+    },
+    {
+     "step": 3,
+     "text": "Letakkan kulit di tempat sampah dan pisang di piring."
+    }
+   ],
+   "controlOfError": "Kulit yang belum terbuka memberi petunjuk langkah berikutnya.",
+   "variations": [
+    "Gunakan jeruk mandarin yang mudah dikupas."
+   ],
+   "readySigns": [
+    "Anak mencoba memakai kedua tangan untuk membuka kulit."
+   ],
+   "struggleSigns": [
+    "Anak frustrasi karena kulit licin atau menarik terlalu kuat."
+   ],
+   "safetyNotes": [
+    "Pastikan anak duduk saat makan dan selalu awasi saat mengunyah."
+   ],
+   "references": [
+    {
+     "title": "WHO",
+     "url": "https://www.who.int/health-topics/food-safety"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mengelap-meja",
+   "title": "Mengelap Meja Setelah Makan",
+   "summary": "Anak belajar merawat ruang dengan gerakan mengelap terarah.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "kemandirian",
+    "tanggung jawab",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Menyelesaikan pekerjaan sederhana",
+    "Mengenali area yang sudah bersih"
+   ],
+   "materials": [
+    {
+     "name": "kain lap kecil lembap",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "meja rendah",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan cara membuka kain di atas meja."
+    },
+    {
+     "step": 2,
+     "text": "Usap dari satu sisi ke sisi lain perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Lipat kain dan taruh di tempatnya."
+    }
+   ],
+   "controlOfError": "Remah atau noda yang terlihat menunjukkan area yang perlu diusap.",
+   "variations": [
+    "Mengelap tumpahan kecil dengan spons."
+   ],
+   "readySigns": [
+    "Anak mau membereskan setelah aktivitas."
+   ],
+   "struggleSigns": [
+    "Anak mengibaskan kain atau mengusap tanpa arah."
+   ],
+   "safetyNotes": [
+    "Gunakan cairan pembersih aman anak atau cukup air."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-membuka-menutup-kancing",
+   "title": "Membuka dan Menutup Kancing",
+   "summary": "Anak berlatih kancing besar melalui pekerjaan berpakaian sehari-hari.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "self-care",
+    "practical-life"
+   ],
+   "skills": [
+    "motorik halus",
+    "berpakaian",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Mendorong kancing melalui lubang",
+    "Meningkatkan kemandirian berpakaian"
+   ],
+   "materials": [
+    {
+     "name": "baju atau papan kain berkancing besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 12,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan baju terbuka dengan kancing menghadap anak."
+    },
+    {
+     "step": 2,
+     "text": "Pegang kancing dan masukkan ke lubang perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Tarik kain untuk menutup dan ulangi."
+    }
+   ],
+   "controlOfError": "Kancing yang miring menunjukkan perlu diperbaiki.",
+   "variations": [
+    "Mulai dari satu kancing besar pada jaket."
+   ],
+   "readySigns": [
+    "Anak memperhatikan arah lubang dan kancing."
+   ],
+   "struggleSigns": [
+    "Anak menarik kain keras atau cepat menyerah."
+   ],
+   "safetyNotes": [
+    "Pilih kancing yang terpasang kuat dan jangan gunakan bagian kecil lepas."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-memasangkan-kaus-kaki",
+   "title": "Memasangkan Kaus Kaki",
+   "summary": "Anak mencocokkan dan merapikan kaus kaki miliknya.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "self-care",
+    "sensorial"
+   ],
+   "skills": [
+    "mencocokkan",
+    "urutan",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Menemukan pasangan yang sama",
+    "Melipat atau menggulung sederhana"
+   ],
+   "materials": [
+    {
+     "name": "tiga pasang kaus kaki bersih",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang kecil",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Sebarkan kaus kaki di atas alas."
+    },
+    {
+     "step": 2,
+     "text": "Cari dua warna atau pola yang sama."
+    },
+    {
+     "step": 3,
+     "text": "Satukan tiap pasangan dan masukkan ke keranjang."
+    }
+   ],
+   "controlOfError": "Kaus kaki tersisa atau berbeda menandai pasangan belum tepat.",
+   "variations": [
+    "Cocokkan sarung tangan atau sepatu rumah."
+   ],
+   "readySigns": [
+    "Anak dapat mengenali warna atau pola yang sama."
+   ],
+   "struggleSigns": [
+    "Anak mencampur semua kaus kaki tanpa melihat."
+   ],
+   "safetyNotes": [
+    "Gunakan kaus kaki bersih dan jauhkan kantong plastik dari anak."
+   ],
+   "references": [
+    {
+     "title": "NHS",
+     "url": "https://www.nhs.uk/start4life/toddler/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menuang-biji",
+   "title": "Menuang Biji ke Wadah",
+   "summary": "Anak mempraktikkan menuang bahan kering dengan kontrol gerak.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "math"
+   ],
+   "skills": [
+    "menuang",
+    "kontrol gerak",
+    "banyak-sedikit"
+   ],
+   "objectives": [
+    "Menuang bahan ke sasaran",
+    "Menyadari jumlah yang berubah"
+   ],
+   "materials": [
+    {
+     "name": "dua wadah lebar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "sendok takar besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasta besar atau beras",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 4,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Isi satu wadah dengan bahan kering."
+    },
+    {
+     "step": 2,
+     "text": "Angkat wadah dekat wadah tujuan."
+    },
+    {
+     "step": 3,
+     "text": "Tuang perlahan lalu kumpulkan yang tercecer."
+    }
+   ],
+   "controlOfError": "Bahan tercecer terlihat di alas kerja.",
+   "variations": [
+    "Gunakan corong lebar pada wadah tujuan."
+   ],
+   "readySigns": [
+    "Anak menahan wadah dengan stabil."
+   ],
+   "struggleSigns": [
+    "Anak mengguncang wadah atau memasukkan bahan ke mulut."
+   ],
+   "safetyNotes": [
+    "Gunakan bahan berukuran besar dan awasi agar tidak tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mencocokkan-benda-rumah",
+   "title": "Mencocokkan Benda Sehari-hari",
+   "summary": "Anak mencari pasangan benda yang sama dari lingkungan rumah.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "mencocokkan",
+    "mengamati",
+    "kosakata"
+   ],
+   "objectives": [
+    "Mengenali benda yang sama",
+    "Menyebut nama benda sederhana"
+   ],
+   "materials": [
+    {
+     "name": "pasangan benda aman seperti sendok dan tutup",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan tiga pasangan benda di nampan."
+    },
+    {
+     "step": 2,
+     "text": "Ambil satu benda dan cari pasangannya."
+    },
+    {
+     "step": 3,
+     "text": "Sebut nama benda lalu ajak anak mencoba."
+    }
+   ],
+   "controlOfError": "Benda yang belum berpasangan tetap terlihat.",
+   "variations": [
+    "Cocokkan gambar benda dengan benda aslinya."
+   ],
+   "readySigns": [
+    "Anak membandingkan bentuk sebelum memilih."
+   ],
+   "struggleSigns": [
+    "Anak memilih berdasarkan warna saja dan mudah terdistraksi."
+   ],
+   "safetyNotes": [
+    "Hindari benda kecil, tajam, mudah pecah, atau berujung runcing."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mengelompokkan-warna",
+   "title": "Mengelompokkan Warna Dasar",
+   "summary": "Anak mengelompokkan benda berdasarkan warna dengan cara bermain.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "klasifikasi",
+    "warna",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Mengelompokkan benda yang warnanya sama",
+    "Mendengar dan mencoba menyebut nama warna"
+   ],
+   "materials": [
+    {
+     "name": "tiga mangkuk berwarna",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda besar merah kuning biru",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 12,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan satu benda di dekat mangkuk warnanya."
+    },
+    {
+     "step": 2,
+     "text": "Ulangi dengan dua warna lain secara perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan anak menyortir sisa benda."
+    }
+   ],
+   "controlOfError": "Benda yang warnanya berbeda tampak di dalam mangkuk.",
+   "variations": [
+    "Kelompokkan kaus kaki berdasarkan warna."
+   ],
+   "readySigns": [
+    "Anak membandingkan benda sebelum menaruhnya."
+   ],
+   "struggleSigns": [
+    "Anak belum membedakan warna dan tampak frustrasi."
+   ],
+   "safetyNotes": [
+    "Gunakan benda besar yang tidak mudah tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mencari-pasangan-suara",
+   "title": "Mencari Pasangan Suara",
+   "summary": "Anak mendengarkan dan menemukan wadah yang menghasilkan suara sama.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "pendengaran",
+    "mencocokkan",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Membedakan suara sederhana",
+    "Mencocokkan dua suara yang sama"
+   ],
+   "materials": [
+    {
+     "name": "enam wadah tertutup berisi bahan berpasangan",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 10,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Goyangkan satu wadah dekat telinga anak."
+    },
+    {
+     "step": 2,
+     "text": "Goyangkan wadah lain dan bandingkan suaranya."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak mencari pasangan suara."
+    }
+   ],
+   "controlOfError": "Pasangan yang benar menghasilkan suara serupa.",
+   "variations": [
+    "Gunakan botol berisi pasta besar, tanpa bagian yang bisa terbuka."
+   ],
+   "readySigns": [
+    "Anak mau mendengarkan sebelum memilih."
+   ],
+   "struggleSigns": [
+    "Anak mengguncang terlalu keras atau kehilangan minat."
+   ],
+   "safetyNotes": [
+    "Rekatkan tutup sangat kuat dan periksa wadah sebelum digunakan."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menara-balok",
+   "title": "Membangun Menara Balok",
+   "summary": "Anak menyusun balok dan mengamati keseimbangan bangunannya.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "sensorial",
+    "movement"
+   ],
+   "skills": [
+    "keseimbangan",
+    "koordinasi",
+    "pemecahan masalah"
+   ],
+   "objectives": [
+    "Menyusun balok dari bawah ke atas",
+    "Mengamati sebab bangunan roboh"
+   ],
+   "materials": [
+    {
+     "name": "balok kayu besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas datar",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan balok terbesar sebagai dasar."
+    },
+    {
+     "step": 2,
+     "text": "Susun balok berikutnya dengan dua tangan."
+    },
+    {
+     "step": 3,
+     "text": "Amati menara lalu bongkar dengan aman."
+    }
+   ],
+   "controlOfError": "Menara yang miring atau roboh memberi umpan balik langsung.",
+   "variations": [
+    "Bangun jembatan pendek untuk mobil besar."
+   ],
+   "readySigns": [
+    "Anak mencoba menaruh balok di tengah."
+   ],
+   "struggleSigns": [
+    "Anak melempar balok atau menumpuk tanpa melihat kestabilan."
+   ],
+   "safetyNotes": [
+    "Pilih balok besar, ringan, dan tidak memiliki serpihan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-tebak-benda-dalam-kantong",
+   "title": "Menebak Benda dalam Kantong",
+   "summary": "Anak meraba benda aman lalu mencari benda yang sama.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "perabaan",
+    "kosakata",
+    "mengingat"
+   ],
+   "objectives": [
+    "Menggunakan tangan untuk mengamati bentuk",
+    "Menyebut atau menunjuk benda"
+   ],
+   "materials": [
+    {
+     "name": "kantong kain terbuka",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tiga benda besar bertekstur berbeda",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan semua benda sebelum dimasukkan."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan satu benda dan biarkan anak meraba."
+    },
+    {
+     "step": 3,
+     "text": "Keluarkan benda lalu cocokkan dengan penglihatan."
+    }
+   ],
+   "controlOfError": "Benda yang keluar menunjukkan apakah tebakan sesuai.",
+   "variations": [
+    "Gunakan benda dengan bentuk sederhana seperti bola dan balok."
+   ],
+   "readySigns": [
+    "Anak mau meraba tanpa langsung melihat."
+   ],
+   "struggleSigns": [
+    "Anak tidak nyaman menyentuh atau menarik kantong."
+   ],
+   "safetyNotes": [
+    "Gunakan kantong terbuka dan benda besar tanpa ujung tajam."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-membaca-buku-gambar",
+   "title": "Membaca Buku Gambar",
+   "summary": "Anak menikmati buku dan berbicara tentang gambar bersama orang dewasa.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "kosakata",
+    "menyimak",
+    "berkomunikasi"
+   ],
+   "objectives": [
+    "Mendengarkan cerita singkat",
+    "Menunjuk dan menamai gambar"
+   ],
+   "materials": [
+    {
+     "name": "buku bergambar dengan halaman tebal",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk berdampingan dan tunjukkan sampul."
+    },
+    {
+     "step": 2,
+     "text": "Baca singkat sambil menunjuk gambar."
+    },
+    {
+     "step": 3,
+     "text": "Ajukan pertanyaan sederhana tentang halaman."
+    }
+   ],
+   "controlOfError": "Anak dapat melihat gambar untuk menghubungkan kata dan makna.",
+   "variations": [
+    "Biarkan anak memilih buku dan menceritakan gambar."
+   ],
+   "readySigns": [
+    "Anak membalik halaman satu per satu."
+   ],
+   "struggleSigns": [
+    "Anak sering menutup buku atau sulit duduk lama."
+   ],
+   "safetyNotes": [
+    "Pilih buku tanpa bagian kecil yang mudah lepas."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mencari-benda-awalan",
+   "title": "Mencari Benda dengan Bunyi Awal",
+   "summary": "Anak bermain mencari benda yang namanya diawali bunyi tertentu.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "bunyi bahasa",
+    "kosakata",
+    "mendengarkan"
+   ],
+   "objectives": [
+    "Mendengar bunyi awal secara sederhana",
+    "Memperluas kosakata benda"
+   ],
+   "materials": [
+    {
+     "name": "dua atau tiga benda rumah yang akrab",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih satu benda dan sebut namanya perlahan."
+    },
+    {
+     "step": 2,
+     "text": "Tekankan bunyi awal tanpa meminta menghafal."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak mencari benda lain yang serupa bunyinya."
+    }
+   ],
+   "controlOfError": "Nama benda yang diucapkan bersama menjadi petunjuk alami.",
+   "variations": [
+    "Cari benda berdasarkan kategori seperti semua benda untuk makan."
+   ],
+   "readySigns": [
+    "Anak menirukan sebagian bunyi atau kata."
+   ],
+   "struggleSigns": [
+    "Anak tampak bingung ketika diminta menyamakan bunyi."
+   ],
+   "safetyNotes": [
+    "Jadikan kegiatan bermain tanpa memaksa anak mengulang kata."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mengurutkan-besar-kecil",
+   "title": "Mengurutkan Besar dan Kecil",
+   "summary": "Anak membandingkan ukuran benda lalu menyusunnya berurutan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "math",
+    "sensorial"
+   ],
+   "skills": [
+    "perbandingan",
+    "urutan",
+    "pengamatan"
+   ],
+   "objectives": [
+    "Membedakan besar dan kecil",
+    "Menyusun tiga benda berdasarkan ukuran"
+   ],
+   "materials": [
+    {
+     "name": "tiga sampai lima kotak atau gelas bertingkat",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 4,
+   "durationMinutes": 12,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan benda acak di atas alas."
+    },
+    {
+     "step": 2,
+     "text": "Pilih yang paling besar lalu letakkan di kiri."
+    },
+    {
+     "step": 3,
+     "text": "Susun benda berikutnya hingga yang paling kecil."
+    }
+   ],
+   "controlOfError": "Urutan ukuran terlihat ketika benda dibandingkan berdampingan.",
+   "variations": [
+    "Urutkan sendok dari pendek ke panjang."
+   ],
+   "readySigns": [
+    "Anak membandingkan dua benda sebelum menyusun."
+   ],
+   "struggleSigns": [
+    "Anak mengandalkan warna dan tidak memperhatikan ukuran."
+   ],
+   "safetyNotes": [
+    "Pastikan wadah tidak mudah pecah dan tidak memiliki tepi tajam."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menghitung-benda-harian",
+   "title": "Menghitung Benda Harian",
+   "summary": "Anak menghitung beberapa benda nyata dalam suasana santai.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "math",
+    "language"
+   ],
+   "skills": [
+    "membilang",
+    "satu-ke-satu",
+    "kosakata angka"
+   ],
+   "objectives": [
+    "Menyebut urutan angka sederhana",
+    "Memasangkan satu kata angka dengan satu benda"
+   ],
+   "materials": [
+    {
+     "name": "lima benda besar seperti balok",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kecil",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Susun tiga benda agar tidak bertumpuk."
+    },
+    {
+     "step": 2,
+     "text": "Sentuh satu benda sambil menyebut satu angka."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak menghitung dengan caranya."
+    }
+   ],
+   "controlOfError": "Benda yang belum disentuh terlihat jelas.",
+   "variations": [
+    "Hitung langkah menuju pintu atau apel di piring."
+   ],
+   "readySigns": [
+    "Anak menunjuk benda satu per satu."
+   ],
+   "struggleSigns": [
+    "Anak melompati benda atau mengulang angka tanpa menunjuk."
+   ],
+   "safetyNotes": [
+    "Gunakan benda besar dan hentikan bila anak memasukkan benda ke mulut."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-memasangkan-angka-jumlah",
+   "title": "Memasangkan Angka dan Jumlah",
+   "summary": "Anak mencocokkan kartu angka sederhana dengan kelompok benda.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "mencocokkan jumlah",
+    "simbol angka",
+    "membilang"
+   ],
+   "objectives": [
+    "Menghubungkan jumlah kecil dengan simbol",
+    "Mengulang penghitungan satu sampai tiga"
+   ],
+   "materials": [
+    {
+     "name": "kartu angka 1 sampai 3",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tiga kelompok benda besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 10,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kartu angka satu sampai tiga."
+    },
+    {
+     "step": 2,
+     "text": "Hitung benda pada satu kelompok perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Letakkan kartu yang sesuai di dekatnya."
+    }
+   ],
+   "controlOfError": "Jumlah benda dapat dihitung ulang untuk memeriksa pasangan.",
+   "variations": [
+    "Gunakan titik pada kartu sebelum mengenalkan angka tertulis."
+   ],
+   "readySigns": [
+    "Anak dapat menghitung kelompok kecil dengan bantuan."
+   ],
+   "struggleSigns": [
+    "Anak menebak kartu tanpa menghitung benda."
+   ],
+   "safetyNotes": [
+    "Gunakan kartu besar dan benda yang tidak mudah tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menyusun-pola-sederhana",
+   "title": "Menyusun Pola Dua Warna",
+   "summary": "Anak membuat pola bergantian dengan benda berukuran aman.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "math",
+    "sensorial"
+   ],
+   "skills": [
+    "pola",
+    "konsentrasi",
+    "pengamatan"
+   ],
+   "objectives": [
+    "Mengikuti pola AB sederhana",
+    "Melanjutkan urutan dengan bantuan"
+   ],
+   "materials": [
+    {
+     "name": "balok besar dua warna",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 12,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan balok merah lalu biru."
+    },
+    {
+     "step": 2,
+     "text": "Ulangi merah lalu biru dengan jeda."
+    },
+    {
+     "step": 3,
+     "text": "Berikan balok berikutnya dan tunggu pilihan anak."
+    }
+   ],
+   "controlOfError": "Urutan warna yang tampak memberi petunjuk pola.",
+   "variations": [
+    "Buat pola besar-kecil dengan benda aman."
+   ],
+   "readySigns": [
+    "Anak memperhatikan urutan sebelum memilih."
+   ],
+   "struggleSigns": [
+    "Anak menumpuk semua benda atau belum tertarik pada pola."
+   ],
+   "safetyNotes": [
+    "Gunakan benda besar tanpa magnet atau bagian lepas."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menendang-bola-ke-sasaran",
+   "title": "Menendang Bola ke Sasaran",
+   "summary": "Anak menendang bola besar menuju sasaran yang terlihat.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "movement",
+    "outdoor"
+   ],
+   "skills": [
+    "keseimbangan",
+    "koordinasi kaki",
+    "arah"
+   ],
+   "objectives": [
+    "Menendang dengan satu kaki",
+    "Mengarah ke sasaran dekat"
+   ],
+   "materials": [
+    {
+     "name": "bola besar ringan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang atau garis sasaran",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan bola dekat kaki anak."
+    },
+    {
+     "step": 2,
+     "text": "Tunjukkan satu langkah dan tendangan pelan."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak menendang ke arah sasaran."
+    }
+   ],
+   "controlOfError": "Bola yang keluar sasaran terlihat langsung.",
+   "variations": [
+    "Perlebar sasaran atau dekatkan jaraknya."
+   ],
+   "readySigns": [
+    "Anak berdiri stabil dan menunggu giliran."
+   ],
+   "struggleSigns": [
+    "Anak kehilangan keseimbangan atau menendang terlalu keras."
+   ],
+   "safetyNotes": [
+    "Gunakan area luas tanpa tangga, jalan, atau benda tajam."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-berjalan-di-garis",
+   "title": "Berjalan Mengikuti Garis",
+   "summary": "Anak berjalan pelan mengikuti garis di lantai untuk melatih keseimbangan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "movement"
+   ],
+   "skills": [
+    "keseimbangan",
+    "kontrol tubuh",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Mengikuti jalur sederhana",
+    "Mengatur langkah dan kecepatan"
+   ],
+   "materials": [
+    {
+     "name": "selotip kertas untuk garis lantai",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buat garis lurus pendek di lantai."
+    },
+    {
+     "step": 2,
+     "text": "Berjalan pelan dengan kaki dekat garis."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak mengikuti tanpa perlu terburu-buru."
+    }
+   ],
+   "controlOfError": "Kaki yang keluar garis terlihat sebagai petunjuk alami.",
+   "variations": [
+    "Buat garis melengkung pendek setelah anak siap."
+   ],
+   "readySigns": [
+    "Anak mampu berjalan tanpa berlari di jalur."
+   ],
+   "struggleSigns": [
+    "Anak berlari, sering jatuh, atau tidak nyaman mengikuti garis."
+   ],
+   "safetyNotes": [
+    "Pastikan selotip tidak licin dan area bebas penghalang."
+   ],
+   "references": [
+    {
+     "title": "NHS",
+     "url": "https://www.nhs.uk/start4life/toddler/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-melompat-di-tempat",
+   "title": "Melompat di Tempat",
+   "summary": "Anak mencoba melompat kecil dengan kedua kaki di ruang aman.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "movement"
+   ],
+   "skills": [
+    "kekuatan kaki",
+    "keseimbangan",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Menekuk lutut dan mendorong tubuh",
+    "Mendarat dengan kedua kaki"
+   ],
+   "materials": [
+    {
+     "name": "alas karet atau karpet tipis",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Berdiri di atas alas dengan kaki terpisah."
+    },
+    {
+     "step": 2,
+     "text": "Tekuk lutut dan lakukan lompatan kecil."
+    },
+    {
+     "step": 3,
+     "text": "Mendarat dengan lutut sedikit menekuk."
+    }
+   ],
+   "controlOfError": "Anak merasakan apakah kedua kaki mendarat pada alas.",
+   "variations": [
+    "Lompat melewati garis kertas rendah."
+   ],
+   "readySigns": [
+    "Anak meniru tekukan lutut dan mencoba mendorong."
+   ],
+   "struggleSigns": [
+    "Anak mendarat kaku atau kehilangan keseimbangan."
+   ],
+   "safetyNotes": [
+    "Jaga jarak dari furnitur dan jangan mengangkat atau melempar anak."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-membawa-benda-dengan-nampan",
+   "title": "Membawa Nampan Ringan",
+   "summary": "Anak membawa beberapa benda ringan dari satu tempat ke tempat lain.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "movement",
+    "practical-life"
+   ],
+   "skills": [
+    "keseimbangan",
+    "koordinasi",
+    "tanggung jawab"
+   ],
+   "objectives": [
+    "Berjalan sambil menjaga benda tetap stabil",
+    "Mengembalikan bahan ke tempatnya"
+   ],
+   "materials": [
+    {
+     "name": "nampan kecil ringan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua benda besar dan ringan",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan dua benda di tengah nampan."
+    },
+    {
+     "step": 2,
+     "text": "Angkat nampan dengan dua tangan dan berjalan pelan."
+    },
+    {
+     "step": 3,
+     "text": "Letakkan nampan di meja tujuan."
+    }
+   ],
+   "controlOfError": "Benda yang bergeser memberi petunjuk agar berjalan lebih pelan.",
+   "variations": [
+    "Membawa serbet ke meja makan."
+   ],
+   "readySigns": [
+    "Anak berhenti sebelum berbelok dan menjaga pandangan."
+   ],
+   "struggleSigns": [
+    "Anak mengangkat nampan dengan satu tangan atau berlari."
+   ],
+   "safetyNotes": [
+    "Gunakan bahan ringan dan jalur bebas hambatan."
+   ],
+   "references": [
+    {
+     "title": "NHS",
+     "url": "https://www.nhs.uk/start4life/toddler/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menyiram-tanaman",
+   "title": "Menyiram Tanaman Kecil",
+   "summary": "Anak merawat tanaman dengan memberi air secukupnya.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "practical-life",
+    "outdoor"
+   ],
+   "skills": [
+    "merawat lingkungan",
+    "menuang",
+    "tanggung jawab"
+   ],
+   "objectives": [
+    "Mengikuti kebutuhan tanaman",
+    "Mengontrol jumlah air"
+   ],
+   "materials": [
+    {
+     "name": "tanaman dalam pot stabil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "penyiram kecil berisi sedikit air",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan tanah yang perlu diberi air."
+    },
+    {
+     "step": 2,
+     "text": "Tuang sedikit air dekat pangkal tanaman."
+    },
+    {
+     "step": 3,
+     "text": "Kembalikan penyiram dan periksa tetesan."
+    }
+   ],
+   "controlOfError": "Tanah yang basah dan air yang tumpah memberi umpan balik.",
+   "variations": [
+    "Mengelap daun besar dengan kain lembap."
+   ],
+   "readySigns": [
+    "Anak bergerak pelan saat membawa air."
+   ],
+   "struggleSigns": [
+    "Anak menuang sampai pot penuh atau merusak daun."
+   ],
+   "safetyNotes": [
+    "Gunakan tanaman tidak beracun dan bersihkan lantai yang basah."
+   ],
+   "references": [
+    {
+     "title": "NHS",
+     "url": "https://www.nhs.uk/start4life/toddler/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mengenal-bagian-tubuh",
+   "title": "Menunjuk Bagian Tubuh",
+   "summary": "Anak bermain menunjuk bagian tubuh melalui lagu dan percakapan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "language",
+    "self-care"
+   ],
+   "skills": [
+    "kosakata tubuh",
+    "menyimak",
+    "kesadaran diri"
+   ],
+   "objectives": [
+    "Mengenali bagian tubuh umum",
+    "Mengikuti instruksi sederhana"
+   ],
+   "materials": [
+    {
+     "name": "boneka kain atau cermin aman",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Sebut dan tunjuk hidung, tangan, atau kaki."
+    },
+    {
+     "step": 2,
+     "text": "Ajak anak menunjuk bagian yang sama."
+    },
+    {
+     "step": 3,
+     "text": "Nyanyikan lagu pendek sambil bergerak."
+    }
+   ],
+   "controlOfError": "Anak dapat membandingkan dengan tubuhnya sendiri atau boneka.",
+   "variations": [
+    "Gunakan saat mencuci tangan dan menyebut bagian tubuh."
+   ],
+   "readySigns": [
+    "Anak menunjuk beberapa bagian tubuh saat ditanya."
+   ],
+   "struggleSigns": [
+    "Anak belum tertarik atau tampak tidak nyaman dengan cermin."
+   ],
+   "safetyNotes": [
+    "Gunakan bahasa tubuh yang netral dan hormati bila anak tidak ingin disentuh."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-cuci-tangan-berurutan",
+   "title": "Cuci Tangan Berurutan",
+   "summary": "Anak berlatih mencuci tangan melalui langkah yang mudah diikuti.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "self-care",
+    "practical-life"
+   ],
+   "skills": [
+    "kebersihan diri",
+    "urutan",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Mengikuti urutan mencuci tangan",
+    "Mengeringkan tangan setelah mencuci"
+   ],
+   "materials": [
+    {
+     "name": "wastafel atau baskom stabil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "sabun cair lembut",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "handuk kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 5,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Basahi tangan dan ambil sedikit sabun."
+    },
+    {
+     "step": 2,
+     "text": "Gosok telapak, punggung, dan sela jari."
+    },
+    {
+     "step": 3,
+     "text": "Bilas lalu keringkan dengan handuk."
+    }
+   ],
+   "controlOfError": "Tangan terasa bersih dan tidak lagi berbusa setelah dibilas.",
+   "variations": [
+    "Gunakan gambar urutan dekat wastafel."
+   ],
+   "readySigns": [
+    "Anak meminta mencuci tangan pada waktu rutin."
+   ],
+   "struggleSigns": [
+    "Anak bermain air atau melewatkan pengeringan."
+   ],
+   "safetyNotes": [
+    "Pastikan lantai tidak licin dan anak selalu diawasi dekat air."
+   ],
+   "references": [
+    {
+     "title": "WHO",
+     "url": "https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-hygiene/hand-hygiene"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menggosok-gigi-bersama",
+   "title": "Latihan Menggosok Gigi",
+   "summary": "Anak mengenal rutinitas menyikat gigi bersama orang dewasa.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "kebiasaan diri",
+    "koordinasi",
+    "meniru"
+   ],
+   "objectives": [
+    "Meniru gerakan menyikat sederhana",
+    "Mengikuti rutinitas pagi atau malam"
+   ],
+   "materials": [
+    {
+     "name": "sikat gigi anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasta gigi sesuai arahan dokter gigi",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gelas kumur",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan sikat dan beri pasta secukupnya."
+    },
+    {
+     "step": 2,
+     "text": "Sikat perlahan bagian depan dan belakang gigi."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan anak mencoba lalu orang dewasa menyelesaikan."
+    }
+   ],
+   "controlOfError": "Orang dewasa memeriksa semua bagian gigi yang sudah disikat.",
+   "variations": [
+    "Bernyanyi singkat selama menyikat."
+   ],
+   "readySigns": [
+    "Anak mau memegang sikat dan meniru gerakan."
+   ],
+   "struggleSigns": [
+    "Anak menggigit sikat atau menolak rutinitas."
+   ],
+   "safetyNotes": [
+    "Dampingi terus, gunakan pasta sesuai petunjuk setempat, dan jangan berbagi sikat."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/healthy-living/oral-health/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mengucapkan-terima-kasih",
+   "title": "Latihan Mengucapkan Terima Kasih",
+   "summary": "Anak berlatih kata sopan melalui permainan peran singkat.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "grace-courtesy",
+    "language"
+   ],
+   "skills": [
+    "sopan santun",
+    "berkomunikasi",
+    "menunggu"
+   ],
+   "objectives": [
+    "Mengenali kapan mengucapkan terima kasih",
+    "Meniru ungkapan sopan sederhana"
+   ],
+   "materials": [
+    {
+     "name": "dua benda permainan untuk saling memberi",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Berikan benda kepada anak sambil tersenyum."
+    },
+    {
+     "step": 2,
+     "text": "Ucapkan terima kasih saat anak memberi kembali."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak mencoba tanpa memaksa mengulang."
+    }
+   ],
+   "controlOfError": "Respons orang dewasa memberi contoh makna ungkapan.",
+   "variations": [
+    "Latih meminta dengan kata tolong saat bermain."
+   ],
+   "readySigns": [
+    "Anak mulai menggunakan kata atau gestur terima kasih."
+   ],
+   "struggleSigns": [
+    "Anak merebut benda atau belum siap bergiliran."
+   ],
+   "safetyNotes": [
+    "Jangan memaksa kontak fisik, kontak mata, atau ucapan tertentu."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menunggu-giliran",
+   "title": "Menunggu Giliran Bermain",
+   "summary": "Anak belajar bergiliran dengan permainan singkat dan jelas.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "grace-courtesy",
+    "movement"
+   ],
+   "skills": [
+    "menunggu",
+    "berbagi ruang",
+    "komunikasi"
+   ],
+   "objectives": [
+    "Mengenali giliran diri dan orang lain",
+    "Menunggu dalam waktu singkat"
+   ],
+   "materials": [
+    {
+     "name": "bola besar atau alat dorong",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan kartu atau kata giliran saya."
+    },
+    {
+     "step": 2,
+     "text": "Ambil satu giliran singkat lalu serahkan benda."
+    },
+    {
+     "step": 3,
+     "text": "Sebut giliran anak dan tunggu responsnya."
+    }
+   ],
+   "controlOfError": "Urutan giliran terlihat dari siapa yang memegang benda.",
+   "variations": [
+    "Gunakan timer visual yang sangat singkat."
+   ],
+   "readySigns": [
+    "Anak dapat menunggu beberapa detik dengan bantuan."
+   ],
+   "struggleSigns": [
+    "Anak menangis atau merebut benda saat menunggu."
+   ],
+   "safetyNotes": [
+    "Pilih benda aman dan dampingi agar tidak ada dorongan antar-anak."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-menuang-pasir",
+   "title": "Menuang Pasir dengan Corong",
+   "summary": "Anak bereksperimen menuang pasir kering melalui corong besar.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "sensorial",
+    "outdoor",
+    "practical-life"
+   ],
+   "skills": [
+    "menuang",
+    "sebab-akibat",
+    "motorik halus"
+   ],
+   "objectives": [
+    "Mengontrol aliran bahan",
+    "Mengamati pasir berpindah wadah"
+   ],
+   "materials": [
+    {
+     "name": "bak pasir atau nampan dalam",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "corong besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gelas plastik besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan corong di atas gelas yang stabil."
+    },
+    {
+     "step": 2,
+     "text": "Tuang pasir sedikit demi sedikit melalui corong."
+    },
+    {
+     "step": 3,
+     "text": "Angkat corong dan ratakan pasir yang tumpah."
+    }
+   ],
+   "controlOfError": "Pasir yang tumpah terlihat di dalam bak.",
+   "variations": [
+    "Gunakan air di luar ruangan bila cuaca sesuai."
+   ],
+   "readySigns": [
+    "Anak menuang dari jarak dekat dan memperhatikan aliran."
+   ],
+   "struggleSigns": [
+    "Anak melempar pasir atau memasukkannya ke mulut."
+   ],
+   "safetyNotes": [
+    "Gunakan pasir bersih, awasi terus, dan cuci tangan setelah bermain."
+   ],
+   "references": [
+    {
+     "title": "NHS",
+     "url": "https://www.nhs.uk/start4life/toddler/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-melukis-dengan-spons",
+   "title": "Melukis dengan Spons",
+   "summary": "Anak membuat cap warna dengan spons untuk bereksplorasi kreatif.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "art-music",
+    "sensorial"
+   ],
+   "skills": [
+    "ekspresi seni",
+    "tekanan tangan",
+    "warna"
+   ],
+   "objectives": [
+    "Mencoba menekan dan mengangkat spons",
+    "Mengeksplorasi jejak warna"
+   ],
+   "materials": [
+    {
+     "name": "kertas besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "spons besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "cat air tidak beracun",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 20,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kertas dan sedikit cat di meja."
+    },
+    {
+     "step": 2,
+     "text": "Celupkan spons lalu tekan ke kertas."
+    },
+    {
+     "step": 3,
+     "text": "Angkat spons dan amati cap yang terbentuk."
+    }
+   ],
+   "controlOfError": "Jejak pada kertas menunjukkan hasil gerakan anak.",
+   "variations": [
+    "Gunakan spons dengan bentuk berbeda."
+   ],
+   "readySigns": [
+    "Anak mencoba warna atau tekanan berbeda."
+   ],
+   "struggleSigns": [
+    "Anak mengoles cat ke kulit atau meja terus-menerus."
+   ],
+   "safetyNotes": [
+    "Gunakan cat tidak beracun, lindungi pakaian, dan awasi agar cat tidak tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-meronce-bentuk-besar",
+   "title": "Meronce Bentuk Besar",
+   "summary": "Anak memasukkan bentuk besar ke tali untuk melatih koordinasi.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "art-music",
+    "sensorial"
+   ],
+   "skills": [
+    "koordinasi mata-tangan",
+    "motorik halus",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Memasukkan tali ke lubang besar",
+    "Menyelesaikan rangkaian sederhana"
+   ],
+   "materials": [
+    {
+     "name": "tali pendek dengan ujung direkatkan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "bentuk besar berlubang",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 15,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pegang ujung tali dan satu bentuk dengan tenang."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan tali ke lubang lalu tarik sampai ujung."
+    },
+    {
+     "step": 3,
+     "text": "Ulangi dengan bentuk berikutnya."
+    }
+   ],
+   "controlOfError": "Bentuk yang belum masuk tetap terlihat di depan anak.",
+   "variations": [
+    "Gunakan gulungan karton besar dengan tali tebal."
+   ],
+   "readySigns": [
+    "Anak mampu memegang tali dan bentuk bersamaan."
+   ],
+   "struggleSigns": [
+    "Anak menarik tali ke leher atau frustrasi dengan lubang."
+   ],
+   "safetyNotes": [
+    "Selalu dampingi, gunakan tali pendek, dan jangan biarkan melilit leher atau jari."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mendengar-irama",
+   "title": "Menirukan Irama Tepuk",
+   "summary": "Anak mendengar pola tepuk pendek lalu mencoba menirukannya.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "art-music",
+    "movement"
+   ],
+   "skills": [
+    "irama",
+    "menyimak",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Mendengar pola dua ketukan",
+    "Menirukan gerakan sederhana"
+   ],
+   "materials": [
+    {
+     "name": "ruang kosong atau alas duduk",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk berhadapan dengan anak."
+    },
+    {
+     "step": 2,
+     "text": "Tepuk dua kali dengan tempo pelan."
+    },
+    {
+     "step": 3,
+     "text": "Berhenti dan beri kesempatan anak mencoba."
+    }
+   ],
+   "controlOfError": "Perbedaan bunyi dan jeda terdengar langsung.",
+   "variations": [
+    "Gunakan ketukan pada wadah plastik besar."
+   ],
+   "readySigns": [
+    "Anak menunggu lalu mencoba membuat ketukan."
+   ],
+   "struggleSigns": [
+    "Anak terganggu suara keras atau belum tertarik meniru."
+   ],
+   "safetyNotes": [
+    "Jaga volume lembut dan hentikan bila anak tampak tidak nyaman."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "2-3y-mencari-tekstur-alam",
+   "title": "Berburu Tekstur di Alam",
+   "summary": "Anak mengamati tekstur benda alam saat berjalan bersama orang dewasa.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "outdoor",
+    "sensorial"
+   ],
+   "skills": [
+    "mengamati",
+    "kosakata tekstur",
+    "berjalan"
+   ],
+   "objectives": [
+    "Membedakan kasar dan halus secara sederhana",
+    "Mengamati lingkungan dengan aman"
+   ],
+   "materials": [
+    {
+     "name": "keranjang kecil",
+     "fromHome": true,
+     "optional": true
+    },
+    {
+     "name": "kartu gambar kasar dan halus",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 25,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan benda aman seperti daun jatuh."
+    },
+    {
+     "step": 2,
+     "text": "Raba bersama dan gunakan kata kasar atau halus."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak menemukan satu benda lain."
+    }
+   ],
+   "controlOfError": "Tekstur dapat dirasakan dan dibandingkan langsung.",
+   "variations": [
+    "Cari benda yang dingin, hangat, keras, atau lunak."
+   ],
+   "readySigns": [
+    "Anak berhenti untuk melihat dan meraba dengan lembut."
+   ],
+   "struggleSigns": [
+    "Anak memetik tanaman atau mengambil benda tanpa memeriksa."
+   ],
+   "safetyNotes": [
+    "Tetap bersama anak, jangan menyentuh tanaman atau benda yang tidak dikenal."
+   ],
+   "references": [
+    {
+     "title": "WHO",
+     "url": "https://www.who.int/health-topics/child-health"
+    }
+   ],
+   "materialIds": []
+  }
+ ],
+ "milestones": [
+  {
+   "id": "mile-23y-lari-melompat",
+   "title": "Berlari dan melompat dengan dua kaki",
+   "ageBand": "2-3y",
+   "domain": "motorik-kasar",
+   "description": "Banyak anak di usia ini makin lancar berlari, berhenti mendadak, dan mencoba melompat dengan kedua kaki sekaligus meski belum selalu mendarat mulus.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 36,
+   "safetyNotes": [
+    "Awasi anak saat berlari dan melompat, jauhkan dari lantai licin, tangga tanpa pagar, dan permukaan keras",
+    "Sediakan ruang kosong yang cukup agar anak tidak menabrak perabot atau benda tajam"
+   ],
+   "redFlags": [
+    "Bila anak sering jatuh berat, tampak kaku pada satu sisi tubuh, atau belum bisa berlari sama sekali mendekati 3 tahun, konsultasikan ke dokter",
+    "Bila anak mengeluh nyeri atau menolak menumpukan berat badan pada satu kaki, sebaiknya diperiksa dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 2 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+    },
+    {
+     "title": "CDC Milestones 30 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-menendang-bola",
+   "title": "Menendang bola tanpa kehilangan keseimbangan",
+   "ageBand": "2-3y",
+   "domain": "motorik-kasar",
+   "description": "Koordinasi kaki dan keseimbangan berkembang, sehingga anak umumnya bisa menendang bola ke depan sambil tetap berdiri atau hanya sesekali berpegangan.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 30,
+   "safetyNotes": [
+    "Gunakan bola ringan yang tidak terlalu keras dan awasi anak saat bermain di dekat jalan, kolam, atau area parkir",
+    "Pastikan permainan dilakukan di area datar dan tidak ada benda pecah belah di sekitar anak"
+   ],
+   "redFlags": [
+    "Bila gerakan kaki sangat tidak seimbang atau anak menghindari seluruh aktivitas fisik karena nyeri, tanyakan pada dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 2 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+    },
+    {
+     "title": "HealthyChildren - Toddler Development",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-naik-tangga-bergantian",
+   "title": "Naik dan turun tangga dengan kaki bergantian",
+   "ageBand": "2-3y",
+   "domain": "motorik-kasar",
+   "description": "Anak mulai belajar menaiki tangga dengan satu kaki per anak tangga sambil berpegangan, lalu perlahan mencoba turun dengan cara yang sama.",
+   "typicalFromMonths": 26,
+   "typicalToMonths": 36,
+   "safetyNotes": [
+    "Tetap dampingi anak di tangga, pasang pagar pengaman, dan jangan biarkan anak naik turun tangga sendirian",
+    "Pastikan pegangan tangan kokoh dan anak memakai alas kaki yang tidak licin"
+   ],
+   "redFlags": [
+    "Bila anak tampak sangat takut berlebihan, kaku, atau selalu menyeret satu kaki saat naik tangga, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 30 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    },
+    {
+     "title": "CDC Milestones 3 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-3yr.html"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-menggambar-garis",
+   "title": "Menggambar garis dan lingkaran sederhana",
+   "ageBand": "2-3y",
+   "domain": "motorik-halus",
+   "description": "Pegangan krayon makin stabil, sehingga anak umumnya bisa membuat garis lurus, garis melingkar, atau meniru bentuk sederhana saat diajak menggambar.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 33,
+   "safetyNotes": [
+    "Pilih krayon atau spidol besar yang tidak mudah patah dan tidak beracun, lalu awasi anak agar tidak memasukkannya ke mulut",
+    "Jauhkan alat tulis dari jangkauan saat tidak digunakan dan hindari pena kecil yang bisa tertelan"
+   ],
+   "redFlags": [
+    "Bila tangan anak tampak selalu mengepal erat, sulit membuka jari, atau satu tangan hampir tidak pernah dipakai untuk menggambar, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 2 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+    },
+    {
+     "title": "Zero to Three - Early Development",
+     "url": "https://www.zerotothree.org/resources/"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-menara-balok",
+   "title": "Menyusun menara dari beberapa balok",
+   "ageBand": "2-3y",
+   "domain": "motorik-halus",
+   "description": "Kontrol tangan dan kesabaran anak bertambah, sehingga ia umumnya bisa menumpuk empat sampai enam balok sebelum menaranya roboh.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 30,
+   "safetyNotes": [
+    "Gunakan balok berukuran lebih besar dari tabung gulungan toilet agar tidak tertelan, dan awasi anak selama bermain",
+    "Periksa balok dari pecahan atau sudut tajam, serta hindari balok magnet kecil yang bisa terlepas"
+   ],
+   "redFlags": [
+    "Bila anak belum menunjukkan minat menyusun atau memindahkan benda kecil mendekati 3 tahun, diskusikan dengan dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 30 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    },
+    {
+     "title": "HealthyChildren - Toddler Development",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-kalimat-dua-tiga-kata",
+   "title": "Mengucapkan kalimat dua sampai tiga kata",
+   "ageBand": "2-3y",
+   "domain": "bahasa",
+   "description": "Kosakata anak berkembang cepat, dan banyak anak mulai merangkai dua atau tiga kata menjadi kalimat sederhana untuk menyampaikan keinginannya.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 33,
+   "safetyNotes": [
+    "Ciptakan lingkungan bicara yang aman dan bebas layar berlebihan, serta dampingi anak saat menonton konten digital",
+    "Jangan memaksa anak bicara di depan orang asing dan tetap awasi interaksinya dengan orang yang belum dikenal"
+   ],
+   "redFlags": [
+    "Bila anak belum mengucapkan kata tunggal yang jelas mendekati 2 tahun, atau belum merangkai dua kata mendekati 3 tahun, konsultasikan ke dokter",
+    "Bila anak tampak tidak merespons suara atau namanya dipanggil, sebaiknya lakukan pemeriksaan pendengaran"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 2 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+    },
+    {
+     "title": "NHS - Help Your Child Learn to Talk",
+     "url": "https://www.nhs.uk/conditions/baby/"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-instruksi-dua-langkah",
+   "title": "Mengikuti instruksi dua langkah",
+   "ageBand": "2-3y",
+   "domain": "kognitif",
+   "description": "Anak mulai mampu menyimpan dua perintah singkat di ingatannya, misalnya mengambil sepatu lalu meletakkannya di dekat pintu.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 36,
+   "safetyNotes": [
+    "Berikan instruksi yang aman dan sesuai kemampuan, serta hindari perintah yang melibatkan benda berbahaya atau area tanpa pengawasan",
+    "Tetap dampingi anak saat ia diminta berpindah ruangan atau mengambil benda di tempat tinggi"
+   ],
+   "redFlags": [
+    "Bila anak tampak tidak memahami kata sederhana, sering tidak merespons panggilan, atau kehilangan kemampuan yang sudah dikuasai, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 30 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    },
+    {
+     "title": "Zero to Three - Early Development",
+     "url": "https://www.zerotothree.org/resources/"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-mengenali-gambar",
+   "title": "Menunjuk dan menamai gambar yang dikenal",
+   "ageBand": "2-3y",
+   "domain": "kognitif",
+   "description": "Daya ingat dan pengenalan anak menguat, sehingga ia umumnya bisa menunjuk gambar hewan, buah, atau anggota tubuh dan menyebut namanya saat ditanya.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 33,
+   "safetyNotes": [
+    "Pilih buku bergambar dengan bahan tebal, tidak mudah sobek, dan tinta yang aman untuk anak",
+    "Awasi anak saat membuka buku agar tidak tergores sudut kertas atau memasukkan sobekan kertas ke mulut"
+   ],
+   "redFlags": [
+    "Bila anak tidak menunjukkan minat pada gambar atau tidak mengenali benda yang biasa dilihat sehari-hari mendekati 3 tahun, diskusikan dengan dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 2 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+    },
+    {
+     "title": "HealthyChildren - Toddler Development",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-bermain-pura-pura",
+   "title": "Bermain pura-pura secara sederhana",
+   "ageBand": "2-3y",
+   "domain": "sosial-emosional",
+   "description": "Imajinasi anak mulai terlihat saat ia berpura-pura memberi makan boneka, menelepon dengan tangan, atau meniru kegiatan orang dewasa di sekitarnya.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 36,
+   "safetyNotes": [
+    "Awasi permainan peran agar anak tidak menggunakan benda kecil, plastik tipis, atau benda tajam sebagai properti mainan",
+    "Hindari mainan dengan tali panjang atau kabel yang bisa melilit leher anak"
+   ],
+   "redFlags": [
+    "Bila anak tidak menunjukkan ketertarikan pada orang lain, tidak meniru gerakan sederhana, atau sulit diajak berinteraksi, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 30 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+    },
+    {
+     "title": "Zero to Three - Play and Learning",
+     "url": "https://www.zerotothree.org/resources/"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-makan-sendiri",
+   "title": "Makan sendiri dengan sendok",
+   "ageBand": "2-3y",
+   "domain": "self-help",
+   "description": "Keterampilan tangan dan kemandirian anak berkembang, sehingga ia umumnya bisa menyuap makanan dengan sendok meski masih banyak yang berjatuhan.",
+   "typicalFromMonths": 24,
+   "typicalToMonths": 33,
+   "safetyNotes": [
+    "Potong makanan menjadi ukuran kecil yang mudah dikunyah dan awasi anak selama makan untuk mencegah tersedak",
+    "Hindari makanan bulat keras seperti anggur utuh, kacang, atau permen, serta pastikan anak makan dalam posisi duduk"
+   ],
+   "redFlags": [
+    "Bila anak sering tersedak, menolak hampir semua tekstur, atau berat badannya tidak naik sesuai pemantauan rutin, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 2 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+    },
+    {
+     "title": "HealthyChildren - Choking Prevention",
+     "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-23y-melepas-pakaian",
+   "title": "Melepas pakaian dan sepatu sederhana",
+   "ageBand": "2-3y",
+   "domain": "self-help",
+   "description": "Anak mulai ingin melakukan sendiri, sehingga banyak anak bisa melepas celana, kaus kaki, atau sepatu berperekat tanpa banyak bantuan.",
+   "typicalFromMonths": 26,
+   "typicalToMonths": 36,
+   "safetyNotes": [
+    "Awasi anak saat melepas pakaian agar tidak tersangkut di leher, dan hindari pakaian dengan tali panjang atau resleting tajam",
+    "Pastikan anak tidak melepas sepatu di lantai licin atau saat berada di dekat tangga"
+   ],
+   "redFlags": [
+    "Bila anak tampak kesulitan menggerakkan satu tangan atau lengan secara konsisten, atau kehilangan kemampuan yang sebelumnya dikuasai, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 3 Tahun",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-3yr.html"
+    },
+    {
+     "title": "Zero to Three - Early Development",
+     "url": "https://www.zerotothree.org/resources/"
+    }
+   ]
+  }
+ ]
+}

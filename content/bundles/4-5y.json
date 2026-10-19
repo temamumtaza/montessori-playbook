@@ -1,0 +1,2812 @@
+{
+ "ageBand": "4-5y",
+ "activities": [
+  {
+   "id": "4-5y-menuang-air",
+   "title": "Menuang Air Tepat Sasaran",
+   "summary": "Anak berlatih menuang air dengan tenang dari satu wadah ke wadah lain.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "koordinasi tangan",
+    "konsentrasi",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Mengontrol gerakan menuang",
+    "Menjaga meja tetap rapi"
+   ],
+   "materials": [
+    {
+     "name": "teko kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua gelas dan nampan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kain lap",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan dua gelas dan teko di atas nampan."
+    },
+    {
+     "step": 2,
+     "text": "Pegang gagang teko dengan dua tangan."
+    },
+    {
+     "step": 3,
+     "text": "Tuang perlahan sampai batas yang ditentukan."
+    },
+    {
+     "step": 4,
+     "text": "Kembalikan teko dan lap tetesan air."
+    }
+   ],
+   "controlOfError": "Air yang tumpah terlihat di nampan.",
+   "variations": [
+    "Gunakan corong atau gelas berukuran berbeda."
+   ],
+   "readySigns": [
+    "Mampu membawa nampan dengan hati-hati."
+   ],
+   "struggleSigns": [
+    "Menuang terlalu cepat atau menggenggam wadah terlalu kuat."
+   ],
+   "safetyNotes": [
+    "Gunakan air suhu ruang dan wadah yang tidak mudah pecah."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menjepit-pom-pom",
+   "title": "Memindahkan Pom-Pom dengan Jepit",
+   "summary": "Anak memindahkan benda kecil memakai jepit untuk melatih ketelitian dan kendali tangan.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "kekuatan jari",
+    "koordinasi mata-tangan",
+    "ketelitian"
+   ],
+   "objectives": [
+    "Menguatkan gerak menjepit",
+    "Memindahkan benda tanpa menjatuhkannya"
+   ],
+   "materials": [
+    {
+     "name": "jepit dapur kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pom-pom besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua mangkuk",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Isi satu mangkuk dengan pom-pom besar."
+    },
+    {
+     "step": 2,
+     "text": "Tekan jepit dengan ibu jari dan jari."
+    },
+    {
+     "step": 3,
+     "text": "Angkat satu pom-pom lalu pindahkan."
+    }
+   ],
+   "controlOfError": "Pom-pom yang jatuh mudah terlihat.",
+   "variations": [
+    "Pindahkan berdasarkan warna atau hitung jumlahnya."
+   ],
+   "readySigns": [
+    "Membuka dan menutup jepit dengan terarah."
+   ],
+   "struggleSigns": [
+    "Jari cepat lelah atau benda sering terlepas."
+   ],
+   "safetyNotes": [
+    "Selalu dampingi dan pilih pom-pom yang cukup besar agar tidak mudah tertelan."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-melipat-serbet",
+   "title": "Melipat Serbet Menjadi Bentuk",
+   "summary": "Anak mengikuti garis lipatan sederhana sambil merawat serbet untuk digunakan bersama.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "urutan langkah",
+    "koordinasi tangan",
+    "merawat lingkungan"
+   ],
+   "objectives": [
+    "Mengikuti garis dan sudut",
+    "Menyiapkan serbet dengan rapi"
+   ],
+   "materials": [
+    {
+     "name": "serbet kain",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Bentangkan serbet di atas meja."
+    },
+    {
+     "step": 2,
+     "text": "Satukan dua sudut yang berhadapan."
+    },
+    {
+     "step": 3,
+     "text": "Ratakan lipatan dengan telapak tangan."
+    },
+    {
+     "step": 4,
+     "text": "Simpan serbet di keranjang."
+    }
+   ],
+   "controlOfError": "Sudut tidak bertemu atau lipatan tampak miring.",
+   "variations": [
+    "Coba lipatan segitiga lalu lipatan persegi."
+   ],
+   "readySigns": [
+    "Dapat mengikuti contoh tanpa terburu-buru."
+   ],
+   "struggleSigns": [
+    "Kesulitan menyelaraskan sudut serbet."
+   ],
+   "safetyNotes": [
+    "Gunakan meja datar dan serbet bersih tanpa aksesori kecil."
+   ],
+   "references": [
+    {
+     "title": "NHS Child Development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-and-learning/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengancing-boneka",
+   "title": "Membuka dan Mengancing Baju Boneka",
+   "summary": "Anak melatih kemandirian berpakaian melalui kegiatan mengancing dengan tempo yang nyaman.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "self-care",
+    "practical-life"
+   ],
+   "skills": [
+    "kemandirian berpakaian",
+    "koordinasi jari",
+    "ketekunan"
+   ],
+   "objectives": [
+    "Memasukkan kancing ke lubang",
+    "Mengenali urutan membuka dan menutup"
+   ],
+   "materials": [
+    {
+     "name": "boneka berbaju kancing besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan boneka menghadap anak."
+    },
+    {
+     "step": 2,
+     "text": "Pegang kancing dengan dua jari."
+    },
+    {
+     "step": 3,
+     "text": "Masukkan kancing melalui lubang perlahan."
+    },
+    {
+     "step": 4,
+     "text": "Tarik kain hingga kancing rata."
+    }
+   ],
+   "controlOfError": "Kancing tetap terbuka jika belum masuk sempurna.",
+   "variations": [
+    "Mulai dengan satu kancing lalu tambah jumlahnya."
+   ],
+   "readySigns": [
+    "Mencoba lagi setelah kancing terlepas."
+   ],
+   "struggleSigns": [
+    "Menarik kain terlalu keras atau meminta bantuan segera."
+   ],
+   "safetyNotes": [
+    "Pilih kancing besar yang terpasang kuat dan selalu awasi."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengurutkan-panjang",
+   "title": "Mengurutkan Pita dari Pendek ke Panjang",
+   "summary": "Anak membandingkan panjang beberapa pita dan menyusunnya dari yang terpendek.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "sensorial",
+    "math"
+   ],
+   "skills": [
+    "perbandingan panjang",
+    "pengamatan",
+    "urutan"
+   ],
+   "objectives": [
+    "Membedakan panjang benda",
+    "Menyusun urutan dari pendek ke panjang"
+   ],
+   "materials": [
+    {
+     "name": "lima pita dengan panjang berbeda",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan semua pita secara acak."
+    },
+    {
+     "step": 2,
+     "text": "Cari pita yang paling pendek."
+    },
+    {
+     "step": 3,
+     "text": "Susun pita berikutnya di sampingnya."
+    },
+    {
+     "step": 4,
+     "text": "Periksa urutan sampai pita terpanjang."
+    }
+   ],
+   "controlOfError": "Ujung pita dapat disejajarkan untuk memeriksa urutan.",
+   "variations": [
+    "Urutkan dari terpanjang ke terpendek."
+   ],
+   "readySigns": [
+    "Mengecek pita dengan menyamakan salah satu ujung."
+   ],
+   "struggleSigns": [
+    "Membandingkan hanya dari warna atau mengganti urutan tanpa memeriksa."
+   ],
+   "safetyNotes": [
+    "Gunakan pita pendek dan simpan gunting jauh dari jangkauan saat kegiatan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mencari-benda-berat",
+   "title": "Membandingkan Berat Benda",
+   "summary": "Anak merasakan perbedaan berat benda sehari-hari lalu mengelompokkannya secara sederhana.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "sensorial",
+    "math"
+   ],
+   "skills": [
+    "berat-ringan",
+    "pengamatan",
+    "bahasa perbandingan"
+   ],
+   "objectives": [
+    "Membandingkan berat dengan tangan",
+    "Menggunakan kata lebih berat dan lebih ringan"
+   ],
+   "materials": [
+    {
+     "name": "enam benda aman berukuran serupa",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua keranjang",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 12,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih dua benda yang aman diangkat."
+    },
+    {
+     "step": 2,
+     "text": "Angkat bergantian dengan dua tangan."
+    },
+    {
+     "step": 3,
+     "text": "Ucapkan benda lebih berat atau ringan."
+    },
+    {
+     "step": 4,
+     "text": "Kelompokkan benda berdasarkan hasilnya."
+    }
+   ],
+   "controlOfError": "Timbangan sederhana dapat dipakai untuk mengecek.",
+   "variations": [
+    "Gunakan neraca gantung untuk membandingkan dua benda."
+   ],
+   "readySigns": [
+    "Mengangkat benda dengan kedua tangan dan mengamati perbedaannya."
+   ],
+   "struggleSigns": [
+    "Mengira benda lebih besar selalu lebih berat."
+   ],
+   "safetyNotes": [
+    "Hindari benda tajam, panas, berat, atau mudah pecah."
+   ],
+   "references": [
+    {
+     "title": "NHS Child Development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-and-learning/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mencocokkan-suara",
+   "title": "Mencocokkan Pasangan Suara",
+   "summary": "Anak mendengarkan bunyi dari wadah tertutup dan mencari dua wadah yang bersuara sama.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "sensorial",
+    "art-music"
+   ],
+   "skills": [
+    "pendengaran",
+    "ingatan kerja",
+    "pencocokan"
+   ],
+   "objectives": [
+    "Membedakan intensitas bunyi",
+    "Mencari pasangan berdasarkan suara"
+   ],
+   "materials": [
+    {
+     "name": "enam wadah tertutup berpasangan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "isi beras, pasta, dan kancing besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan wadah tertutup dalam satu baris."
+    },
+    {
+     "step": 2,
+     "text": "Kocok satu wadah dekat telinga."
+    },
+    {
+     "step": 3,
+     "text": "Cari wadah lain dengan bunyi serupa."
+    },
+    {
+     "step": 4,
+     "text": "Ulangi sampai semua berpasangan."
+    }
+   ],
+   "controlOfError": "Pasangan diberi tanda kecil di bagian bawah.",
+   "variations": [
+    "Gunakan tiga tingkat bunyi dari pelan ke keras."
+   ],
+   "readySigns": [
+    "Mendengarkan sebelum memilih pasangan."
+   ],
+   "struggleSigns": [
+    "Mengandalkan warna atau menebak tanpa menggoyang."
+   ],
+   "safetyNotes": [
+    "Rekatkan tutup kuat-kuat dan gunakan isi yang tidak mudah tertelan."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-meronce-pola",
+   "title": "Meronce Manik dengan Pola",
+   "summary": "Anak meronce manik besar mengikuti pola warna sambil melatih fokus dan koordinasi.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "sensorial",
+    "art-music",
+    "math"
+   ],
+   "skills": [
+    "pola",
+    "koordinasi mata-tangan",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Meniru pola berulang",
+    "Menguatkan koordinasi kedua tangan"
+   ],
+   "materials": [
+    {
+     "name": "manik-manik besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tali ujung kaku",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buat contoh pola dua warna."
+    },
+    {
+     "step": 2,
+     "text": "Pilih manik sesuai urutan pola."
+    },
+    {
+     "step": 3,
+     "text": "Masukkan manik satu per satu."
+    },
+    {
+     "step": 4,
+     "text": "Sebutkan pola setelah selesai."
+    }
+   ],
+   "controlOfError": "Pola contoh menjadi pembanding visual.",
+   "variations": [
+    "Buat pola AAB atau ABC dengan tiga warna."
+   ],
+   "readySigns": [
+    "Dapat mengulang pola tanpa terus melihat contoh."
+   ],
+   "struggleSigns": [
+    "Melewati urutan atau memasukkan manik terlalu cepat."
+   ],
+   "safetyNotes": [
+    "Gunakan manik besar dan dampingi agar tidak dimasukkan ke mulut."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menggambar-bentuk",
+   "title": "Menjiplak dan Menggambar Bentuk",
+   "summary": "Anak mengamati bentuk dasar lalu menjiplak dan menggambarnya dengan garis sendiri.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "sensorial",
+    "art-music"
+   ],
+   "skills": [
+    "bentuk geometri",
+    "kontrol pensil",
+    "pengamatan"
+   ],
+   "objectives": [
+    "Mengenali lingkaran, persegi, dan segitiga",
+    "Menggambar mengikuti batas sederhana"
+   ],
+   "materials": [
+    {
+     "name": "kartu bentuk",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kertas dan krayon",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih satu kartu bentuk untuk diamati."
+    },
+    {
+     "step": 2,
+     "text": "Telusuri tepinya dengan jari."
+    },
+    {
+     "step": 3,
+     "text": "Jiplak bentuk memakai krayon."
+    },
+    {
+     "step": 4,
+     "text": "Gambar bentuk tanpa kartu."
+    }
+   ],
+   "controlOfError": "Bentuk contoh membantu anak membandingkan gambar.",
+   "variations": [
+    "Gabungkan bentuk menjadi rumah atau kendaraan."
+   ],
+   "readySigns": [
+    "Memegang krayon dengan cukup stabil."
+   ],
+   "struggleSigns": [
+    "Menekan terlalu kuat atau cepat kehilangan minat."
+   ],
+   "safetyNotes": [
+    "Gunakan krayon tidak beracun dan area yang mudah dibersihkan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengurutkan-kartu-cerita",
+   "title": "Mengurutkan Kartu Cerita",
+   "summary": "Anak menyusun gambar kejadian dari awal sampai akhir lalu menceritakan urutannya.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "language",
+    "culture"
+   ],
+   "skills": [
+    "urutan cerita",
+    "kosakata",
+    "bercerita"
+   ],
+   "objectives": [
+    "Memahami awal-tengah-akhir",
+    "Menceritakan hubungan antarperistiwa"
+   ],
+   "materials": [
+    {
+     "name": "empat kartu gambar berurutan",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kartu secara acak."
+    },
+    {
+     "step": 2,
+     "text": "Cari gambar yang terjadi pertama."
+    },
+    {
+     "step": 3,
+     "text": "Susun kartu hingga kejadian terakhir."
+    },
+    {
+     "step": 4,
+     "text": "Ceritakan urutan dengan kalimat sendiri."
+    }
+   ],
+   "controlOfError": "Alur gambar memberikan petunjuk urutan.",
+   "variations": [
+    "Minta anak menggambar satu kartu akhir baru."
+   ],
+   "readySigns": [
+    "Menggunakan kata lalu, setelah itu, dan akhirnya."
+   ],
+   "struggleSigns": [
+    "Menyebut gambar tanpa menghubungkan peristiwa."
+   ],
+   "safetyNotes": [
+    "Pastikan kartu tidak memiliki sudut tajam atau bagian kecil yang mudah lepas."
+   ],
+   "references": [
+    {
+     "title": "NHS Child Development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-and-learning/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menghubungkan-huruf-bunyi",
+   "title": "Mencari Benda Awal Bunyi",
+   "summary": "Anak mendengar bunyi awal sebuah kata lalu memasangkan benda dengan kartu hurufnya.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "kesadaran bunyi",
+    "kosakata",
+    "pencocokan huruf"
+   ],
+   "objectives": [
+    "Mengenali bunyi awal kata",
+    "Menghubungkan bunyi dengan simbol huruf"
+   ],
+   "materials": [
+    {
+     "name": "benda mini atau gambar sederhana",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu huruf",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih benda dan ucapkan namanya perlahan."
+    },
+    {
+     "step": 2,
+     "text": "Tekankan bunyi awal kata tersebut."
+    },
+    {
+     "step": 3,
+     "text": "Cari kartu huruf yang sesuai."
+    },
+    {
+     "step": 4,
+     "text": "Ulangi dengan dua benda lain."
+    }
+   ],
+   "controlOfError": "Kartu gambar dan bunyi awal menjadi petunjuk.",
+   "variations": [
+    "Mulai dengan dua bunyi yang sangat berbeda."
+   ],
+   "readySigns": [
+    "Mampu mengulang bunyi awal tanpa menyebut seluruh kata."
+   ],
+   "struggleSigns": [
+    "Mengandalkan nama huruf saja tanpa mendengar bunyi."
+   ],
+   "safetyNotes": [
+    "Pilih benda berukuran cukup besar dan hindari benda kecil yang mudah tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menulis-nama",
+   "title": "Menulis Nama dengan Kartu Panduan",
+   "summary": "Anak mengenali huruf dalam namanya dan mencoba menuliskannya dengan dukungan kartu.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "language",
+    "self-care"
+   ],
+   "skills": [
+    "pengenalan huruf",
+    "menulis awal",
+    "kepercayaan diri"
+   ],
+   "objectives": [
+    "Mengenali urutan huruf nama",
+    "Menyalin nama secara bertahap"
+   ],
+   "materials": [
+    {
+     "name": "kartu nama anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "papan tulis kecil dan spidol",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kartu nama di dekat papan."
+    },
+    {
+     "step": 2,
+     "text": "Telusuri satu huruf dari atas ke bawah."
+    },
+    {
+     "step": 3,
+     "text": "Salin huruf berikutnya dengan perlahan."
+    },
+    {
+     "step": 4,
+     "text": "Baca nama bersama-sama."
+    }
+   ],
+   "controlOfError": "Kartu nama menjadi contoh visual yang dapat dicek.",
+   "variations": [
+    "Tulis nama dengan huruf magnet atau pasir."
+   ],
+   "readySigns": [
+    "Mencari huruf yang sama pada kartu dan tulisannya."
+   ],
+   "struggleSigns": [
+    "Menghapus berulang kali karena mengejar bentuk sempurna."
+   ],
+   "safetyNotes": [
+    "Gunakan spidol tidak beracun dan sediakan permukaan yang mudah dibersihkan."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengelompokkan-benda",
+   "title": "Mengelompokkan Benda Menurut Sifat",
+   "summary": "Anak mengelompokkan benda berdasarkan warna, bentuk, atau bahan lalu menjelaskan pilihannya.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math",
+    "sensorial"
+   ],
+   "skills": [
+    "klasifikasi",
+    "pengamatan",
+    "penalaran"
+   ],
+   "objectives": [
+    "Menemukan persamaan dan perbedaan",
+    "Menjelaskan alasan pengelompokan"
+   ],
+   "materials": [
+    {
+     "name": "koleksi benda aman beragam",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tiga alas kelompok",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan benda dalam satu kumpulan."
+    },
+    {
+     "step": 2,
+     "text": "Pilih satu sifat untuk dibandingkan."
+    },
+    {
+     "step": 3,
+     "text": "Susun benda ke alas yang sesuai."
+    },
+    {
+     "step": 4,
+     "text": "Ceritakan alasan setiap kelompok."
+    }
+   ],
+   "controlOfError": "Anak dapat memeriksa apakah aturan kelompoknya konsisten.",
+   "variations": [
+    "Kelompokkan berdasarkan fungsi, misalnya benda untuk makan."
+   ],
+   "readySigns": [
+    "Mampu menyebut aturan kelompok dengan jelas."
+   ],
+   "struggleSigns": [
+    "Mengubah aturan di tengah kegiatan tanpa menyadarinya."
+   ],
+   "safetyNotes": [
+    "Singkirkan benda tajam, beracun, mudah pecah, atau terlalu kecil."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menghitung-benda",
+   "title": "Menghitung Benda Satu per Satu",
+   "summary": "Anak menghitung kumpulan benda sambil menyentuh setiap benda agar satu benda mendapat satu angka.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "korespondensi satu-satu",
+    "jumlah",
+    "urutan angka"
+   ],
+   "objectives": [
+    "Menghitung benda tanpa terlewat",
+    "Menghubungkan jumlah dengan angka terakhir"
+   ],
+   "materials": [
+    {
+     "name": "dua puluh benda penghitung besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu angka 1-10",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buat satu baris benda penghitung."
+    },
+    {
+     "step": 2,
+     "text": "Sentuh benda pertama sambil berkata satu."
+    },
+    {
+     "step": 3,
+     "text": "Lanjutkan satu angka untuk satu benda."
+    },
+    {
+     "step": 4,
+     "text": "Sebut jumlah setelah benda terakhir."
+    }
+   ],
+   "controlOfError": "Benda yang tersisa menunjukkan jika ada yang terlewat.",
+   "variations": [
+    "Cocokkan kumpulan dengan kartu angka."
+   ],
+   "readySigns": [
+    "Menjaga urutan angka dan sentuhan tetap selaras."
+   ],
+   "struggleSigns": [
+    "Menghitung terlalu cepat atau menyebut angka ganda."
+   ],
+   "safetyNotes": [
+    "Gunakan benda besar dan awasi agar tidak dimasukkan ke mulut."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-membuat-menara-angka",
+   "title": "Membangun Menara Sesuai Angka",
+   "summary": "Anak mencocokkan kartu angka dengan jumlah balok untuk membangun menara bertahap.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math",
+    "movement"
+   ],
+   "skills": [
+    "jumlah",
+    "pencocokan simbol",
+    "keseimbangan"
+   ],
+   "objectives": [
+    "Menghubungkan angka dengan kuantitas",
+    "Menghitung balok dengan tepat"
+   ],
+   "materials": [
+    {
+     "name": "balok susun besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu angka 1-10",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih satu kartu angka."
+    },
+    {
+     "step": 2,
+     "text": "Ambil balok sesuai angka pada kartu."
+    },
+    {
+     "step": 3,
+     "text": "Susun balok menjadi menara."
+    },
+    {
+     "step": 4,
+     "text": "Hitung ulang sebelum membandingkan."
+    }
+   ],
+   "controlOfError": "Jumlah balok dapat dihitung ulang dan menara terlihat.",
+   "variations": [
+    "Susun dua menara lalu bandingkan lebih tinggi atau rendah."
+   ],
+   "readySigns": [
+    "Mengambil jumlah balok tanpa menebak."
+   ],
+   "struggleSigns": [
+    "Menara roboh karena balok ditumpuk tidak rata."
+   ],
+   "safetyNotes": [
+    "Gunakan balok besar yang ringan dan jauhkan dari area berjalan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-operasi-tambah-benda",
+   "title": "Bermain Tambah dengan Benda",
+   "summary": "Anak memahami penjumlahan awal dengan menggabungkan dua kelompok benda dan menghitung hasilnya.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "penjumlahan awal",
+    "menghitung",
+    "pemecahan masalah"
+   ],
+   "objectives": [
+    "Menggabungkan dua kelompok",
+    "Menjelaskan jumlah keseluruhan"
+   ],
+   "materials": [
+    {
+     "name": "kancing besar atau batu halus",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua alas kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan dua benda pada alas pertama."
+    },
+    {
+     "step": 2,
+     "text": "Letakkan satu benda pada alas kedua."
+    },
+    {
+     "step": 3,
+     "text": "Gabungkan kedua kelompok."
+    },
+    {
+     "step": 4,
+     "text": "Hitung jumlah semuanya bersama."
+    }
+   ],
+   "controlOfError": "Benda yang digabung dapat dihitung ulang.",
+   "variations": [
+    "Gunakan cerita sederhana tentang buah atau mainan."
+   ],
+   "readySigns": [
+    "Memahami bahwa kelompok bergabung menjadi jumlah baru."
+   ],
+   "struggleSigns": [
+    "Menghitung benda yang sama dua kali."
+   ],
+   "safetyNotes": [
+    "Gunakan benda besar dan jangan gunakan makanan kecil sebagai alat hitung."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-membandingkan-jumlah",
+   "title": "Membandingkan Dua Kelompok",
+   "summary": "Anak memasangkan benda dari dua kelompok untuk melihat mana yang lebih banyak atau sama.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math",
+    "sensorial"
+   ],
+   "skills": [
+    "lebih banyak",
+    "lebih sedikit",
+    "sama banyak"
+   ],
+   "objectives": [
+    "Membandingkan jumlah secara visual",
+    "Menggunakan bahasa kuantitas"
+   ],
+   "materials": [
+    {
+     "name": "dua jenis benda penghitung besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua alas",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buat dua baris benda."
+    },
+    {
+     "step": 2,
+     "text": "Pasangkan benda dari kiri ke kanan."
+    },
+    {
+     "step": 3,
+     "text": "Amati baris yang tersisa."
+    },
+    {
+     "step": 4,
+     "text": "Ucapkan mana lebih banyak atau sama."
+    }
+   ],
+   "controlOfError": "Benda yang tidak memiliki pasangan terlihat jelas.",
+   "variations": [
+    "Minta anak membuat dua kelompok yang sama banyak."
+   ],
+   "readySigns": [
+    "Menggunakan pasangan, bukan hanya ukuran barisan."
+   ],
+   "struggleSigns": [
+    "Mengira baris lebih panjang selalu lebih banyak."
+   ],
+   "safetyNotes": [
+    "Pilih benda cukup besar dan pastikan lantai bebas dari benda yang dapat membuat tersandung."
+   ],
+   "references": [
+    {
+     "title": "NHS Child Development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-and-learning/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengukur-dengan-balok",
+   "title": "Mengukur Meja dengan Balok",
+   "summary": "Anak mengukur panjang benda memakai balok yang disusun rapat dan menyebut hasil pengukurannya.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math",
+    "movement"
+   ],
+   "skills": [
+    "pengukuran nonstandar",
+    "urutan",
+    "ketelitian"
+   ],
+   "objectives": [
+    "Meletakkan satuan tanpa celah",
+    "Membandingkan hasil pengukuran"
+   ],
+   "materials": [
+    {
+     "name": "balok berukuran sama",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda panjang yang aman",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu catatan",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan balok di ujung benda."
+    },
+    {
+     "step": 2,
+     "text": "Susun balok rapat tanpa celah."
+    },
+    {
+     "step": 3,
+     "text": "Hitung balok sampai ujung lainnya."
+    },
+    {
+     "step": 4,
+     "text": "Sebutkan panjang dalam balok."
+    }
+   ],
+   "controlOfError": "Celah atau balok yang tumpang tindih mudah terlihat.",
+   "variations": [
+    "Ukur dua benda lalu bandingkan hasilnya."
+   ],
+   "readySigns": [
+    "Menyusun balok dari titik awal yang sama."
+   ],
+   "struggleSigns": [
+    "Meninggalkan celah atau memakai balok tidak seragam."
+   ],
+   "safetyNotes": [
+    "Gunakan balok ringan dan ukur di lantai atau meja yang stabil."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mencocokkan-uang-mainan",
+   "title": "Bermain Toko dengan Uang Mainan",
+   "summary": "Anak bermain peran membeli barang sambil mencocokkan angka harga dan jumlah uang mainan.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "math",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "angka",
+    "bermain peran",
+    "percakapan"
+   ],
+   "objectives": [
+    "Mengenali angka pada harga",
+    "Berlatih giliran sebagai penjual dan pembeli"
+   ],
+   "materials": [
+    {
+     "name": "uang mainan besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda rumah tangga sebagai barang toko",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "label harga 1-10",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 25,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Susun barang dan label harga."
+    },
+    {
+     "step": 2,
+     "text": "Pilih satu barang untuk dibeli."
+    },
+    {
+     "step": 3,
+     "text": "Cari uang sesuai label harga."
+    },
+    {
+     "step": 4,
+     "text": "Ucapkan terima kasih dan bertukar peran."
+    }
+   ],
+   "controlOfError": "Label harga menjadi petunjuk jumlah uang.",
+   "variations": [
+    "Gunakan keranjang dan daftar belanja bergambar."
+   ],
+   "readySigns": [
+    "Dapat menunggu giliran dan mengikuti aturan peran."
+   ],
+   "struggleSigns": [
+    "Mengambil semua barang atau sulit berpindah peran."
+   ],
+   "safetyNotes": [
+    "Gunakan uang mainan besar tanpa bagian kecil yang mudah lepas."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menanam-biji",
+   "title": "Menanam Biji dalam Pot",
+   "summary": "Anak menyiapkan tanah, menanam biji, dan merawatnya dengan pengamatan singkat setiap hari.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "culture",
+    "outdoor",
+    "practical-life"
+   ],
+   "skills": [
+    "merawat tanaman",
+    "urutan kerja",
+    "pengamatan"
+   ],
+   "objectives": [
+    "Mengikuti langkah menanam",
+    "Mengamati perubahan makhluk hidup"
+   ],
+   "materials": [
+    {
+     "name": "pot kecil berlubang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tanah dan biji kacang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "sendok dan air",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 30,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Isi pot dengan tanah secukupnya."
+    },
+    {
+     "step": 2,
+     "text": "Buat lubang kecil dengan jari."
+    },
+    {
+     "step": 3,
+     "text": "Masukkan biji dan tutup tipis."
+    },
+    {
+     "step": 4,
+     "text": "Siram sedikit lalu letakkan di tempat terang."
+    }
+   ],
+   "controlOfError": "Tanah terlalu kering atau terlalu basah tampak saat diamati.",
+   "variations": [
+    "Buat jurnal gambar pertumbuhan tanaman."
+   ],
+   "readySigns": [
+    "Mengingat menyiram dengan jumlah sedikit."
+   ],
+   "struggleSigns": [
+    "Menggali biji terus-menerus atau menyiram terlalu banyak."
+   ],
+   "safetyNotes": [
+    "Cuci tangan setelah menyentuh tanah dan jangan gunakan biji beracun."
+   ],
+   "references": [
+    {
+     "title": "WHO Five Keys to Safer Food",
+     "url": "https://www.who.int/teams/nutrition-and-food-safety/food-safety-and-zoonoses/five-keys-to-safer-food"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengamati-daun",
+   "title": "Mengamati dan Mengelompokkan Daun",
+   "summary": "Anak mengumpulkan daun yang jatuh, mengamati cirinya, lalu mengelompokkannya tanpa merusak tanaman.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "culture",
+    "outdoor",
+    "sensorial"
+   ],
+   "skills": [
+    "pengamatan alam",
+    "klasifikasi",
+    "kosakata"
+   ],
+   "objectives": [
+    "Membandingkan bentuk dan tekstur daun",
+    "Menunjukkan sikap merawat alam"
+   ],
+   "materials": [
+    {
+     "name": "daun yang sudah jatuh",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "nampan atau alas",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kaca pembesar",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Ambil hanya daun yang sudah jatuh."
+    },
+    {
+     "step": 2,
+     "text": "Amati warna, bentuk, dan permukaannya."
+    },
+    {
+     "step": 3,
+     "text": "Kelompokkan daun berdasarkan satu ciri."
+    },
+    {
+     "step": 4,
+     "text": "Kembalikan daun ke tanah setelah selesai."
+    }
+   ],
+   "controlOfError": "Ciri yang dipilih menjadi aturan kelompok.",
+   "variations": [
+    "Buat gosokan tekstur daun dengan krayon."
+   ],
+   "readySigns": [
+    "Mengamati tanpa memetik daun dari tanaman."
+   ],
+   "struggleSigns": [
+    "Mencampur aturan kelompok atau meremas daun."
+   ],
+   "safetyNotes": [
+    "Hindari daun yang tidak dikenal, bergetah, atau berjamur; cuci tangan setelah kegiatan."
+   ],
+   "references": [
+    {
+     "title": "NHS Child Development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-and-learning/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-jejak-bentuk-alam",
+   "title": "Mencari Jejak Bentuk di Luar",
+   "summary": "Anak berburu bentuk lingkaran, segitiga, dan persegi di lingkungan sekitar dengan panduan sederhana.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "outdoor",
+    "sensorial",
+    "movement"
+   ],
+   "skills": [
+    "mengenali bentuk",
+    "orientasi ruang",
+    "berjalan aman"
+   ],
+   "objectives": [
+    "Menemukan bentuk pada benda nyata",
+    "Mengikuti batas area berjalan"
+   ],
+   "materials": [
+    {
+     "name": "kartu pencarian bentuk",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "papan alas dan krayon",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan tiga bentuk pada kartu."
+    },
+    {
+     "step": 2,
+     "text": "Tentukan area pencarian yang aman."
+    },
+    {
+     "step": 3,
+     "text": "Cari benda dengan bentuk serupa."
+    },
+    {
+     "step": 4,
+     "text": "Centang temuan pada kartu."
+    }
+   ],
+   "controlOfError": "Kartu bentuk menjadi pembanding visual.",
+   "variations": [
+    "Cari warna atau pola yang berulang di sekitar."
+   ],
+   "readySigns": [
+    "Berjalan sambil memperhatikan batas area."
+   ],
+   "struggleSigns": [
+    "Bergerak terlalu jauh atau hanya mencari benda yang disukai."
+   ],
+   "safetyNotes": [
+    "Dampingi dekat, hindari jalan kendaraan, dan jangan menyentuh benda berbahaya."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-memindahkan-bola-sendok",
+   "title": "Membawa Bola dengan Sendok",
+   "summary": "Anak berjalan pelan sambil menjaga bola tetap di atas sendok untuk melatih keseimbangan tubuh.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "movement",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "keseimbangan",
+    "kontrol gerak",
+    "ketekunan"
+   ],
+   "objectives": [
+    "Mengatur kecepatan berjalan",
+    "Menjaga benda tetap stabil"
+   ],
+   "materials": [
+    {
+     "name": "sendok besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "bola kain atau pom-pom besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "dua penanda lantai",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan bola di atas sendok."
+    },
+    {
+     "step": 2,
+     "text": "Pegang sendok dengan satu tangan."
+    },
+    {
+     "step": 3,
+     "text": "Berjalan pelan menuju penanda."
+    },
+    {
+     "step": 4,
+     "text": "Berbalik dan kembali tanpa berlari."
+    }
+   ],
+   "controlOfError": "Bola jatuh jika gerakan terlalu cepat atau tidak seimbang.",
+   "variations": [
+    "Buat jalur berbelok atau gunakan dua tangan untuk pemula."
+   ],
+   "readySigns": [
+    "Memperlambat langkah saat bola bergoyang."
+   ],
+   "struggleSigns": [
+    "Berlari atau sering melihat kaki sehingga menabrak."
+   ],
+   "safetyNotes": [
+    "Gunakan bola ringan dan lakukan di lantai bebas hambatan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-lompat-pola",
+   "title": "Melompat Mengikuti Pola",
+   "summary": "Anak mengikuti pola lompatan di lantai sambil mengingat arah dan giliran geraknya.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "movement"
+   ],
+   "skills": [
+    "keseimbangan",
+    "memori gerak",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Mengikuti urutan gerakan",
+    "Mendarat dengan kontrol"
+   ],
+   "materials": [
+    {
+     "name": "pita kertas untuk pola lantai",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 12,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buat pola kotak atau garis di lantai."
+    },
+    {
+     "step": 2,
+     "text": "Tunjukkan lompatan satu kaki dan dua kaki."
+    },
+    {
+     "step": 3,
+     "text": "Ikuti pola dari awal sampai akhir."
+    },
+    {
+     "step": 4,
+     "text": "Berhenti setelah melewati garis akhir."
+    }
+   ],
+   "controlOfError": "Garis lantai menunjukkan urutan dan tempat mendarat.",
+   "variations": [
+    "Tambahkan tepuk tangan pada kotak tertentu."
+   ],
+   "readySigns": [
+    "Mendarat dengan lutut rileks dan tetap seimbang."
+   ],
+   "struggleSigns": [
+    "Mendarat terlalu keras atau melompati urutan."
+   ],
+   "safetyNotes": [
+    "Gunakan permukaan tidak licin dan beri ruang bebas di sekitarnya."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-berjalan-garis",
+   "title": "Berjalan di Atas Garis",
+   "summary": "Anak berjalan perlahan mengikuti garis lurus, melatih keseimbangan dan kesadaran ruang.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "movement",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "keseimbangan",
+    "kontrol tubuh",
+    "kesadaran ruang"
+   ],
+   "objectives": [
+    "Menjaga langkah pada jalur",
+    "Berhenti dan mulai dengan tenang"
+   ],
+   "materials": [
+    {
+     "name": "pita lantai atau kapur",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda kecil sebagai titik berhenti",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buat garis lurus yang cukup panjang."
+    },
+    {
+     "step": 2,
+     "text": "Letakkan satu kaki di depan kaki lain."
+    },
+    {
+     "step": 3,
+     "text": "Berjalan mengikuti garis perlahan."
+    },
+    {
+     "step": 4,
+     "text": "Berhenti di titik akhir dengan tenang."
+    }
+   ],
+   "controlOfError": "Kaki yang keluar garis mudah terlihat.",
+   "variations": [
+    "Bawa bendera kecil atau berjalan mengikuti garis melengkung."
+   ],
+   "readySigns": [
+    "Melihat ke depan sambil menjaga langkah."
+   ],
+   "struggleSigns": [
+    "Berjalan terlalu cepat atau keluar jalur berulang kali."
+   ],
+   "safetyNotes": [
+    "Pastikan pita tidak membuat lantai licin dan singkirkan penghalang."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menuju-target-bola",
+   "title": "Melempar Bola ke Target",
+   "summary": "Anak melempar bola kain ke keranjang dari jarak dekat lalu menyesuaikan arah lemparan.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "movement",
+    "outdoor"
+   ],
+   "skills": [
+    "koordinasi mata-tangan",
+    "arah",
+    "kekuatan gerak"
+   ],
+   "objectives": [
+    "Mengarahkan lemparan ke sasaran",
+    "Mengambil bola dengan tertib"
+   ],
+   "materials": [
+    {
+     "name": "bola kain",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan keranjang pada jarak dekat."
+    },
+    {
+     "step": 2,
+     "text": "Pegang bola dengan dua tangan."
+    },
+    {
+     "step": 3,
+     "text": "Arahkan badan ke keranjang lalu lempar."
+    },
+    {
+     "step": 4,
+     "text": "Ambil bola setelah area aman."
+    }
+   ],
+   "controlOfError": "Bola yang masuk menunjukkan arah lemparan tepat.",
+   "variations": [
+    "Tambah jarak sedikit atau gunakan target lingkaran."
+   ],
+   "readySigns": [
+    "Menunggu aba-aba sebelum mengambil bola."
+   ],
+   "struggleSigns": [
+    "Melempar ke arah orang atau terlalu dekat dengan target."
+   ],
+   "safetyNotes": [
+    "Gunakan bola lunak dan pastikan tidak ada orang di depan target."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengikuti-ritme",
+   "title": "Meniru Pola Tepuk",
+   "summary": "Anak mendengarkan pola tepuk sederhana lalu menirukannya untuk melatih ritme dan perhatian.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "art-music",
+    "movement"
+   ],
+   "skills": [
+    "ritme",
+    "pendengaran",
+    "ingatan"
+   ],
+   "objectives": [
+    "Mendengar pola bunyi",
+    "Meniru urutan dengan jeda"
+   ],
+   "materials": [
+    {
+     "name": "ruang tenang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "drum atau wadah terbalik",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Minta anak duduk nyaman dan mendengar."
+    },
+    {
+     "step": 2,
+     "text": "Tepuk pola dua atau tiga bunyi."
+    },
+    {
+     "step": 3,
+     "text": "Beri jeda untuk anak menirukan."
+    },
+    {
+     "step": 4,
+     "text": "Tambah satu bunyi jika sudah siap."
+    }
+   ],
+   "controlOfError": "Perbedaan pola dapat didengar bersama.",
+   "variations": [
+    "Gunakan tepuk-paha-tepuk atau alat musik sederhana."
+   ],
+   "readySigns": [
+    "Menunggu pola selesai sebelum menirukan."
+   ],
+   "struggleSigns": [
+    "Tepuk terus tanpa mendengarkan atau kehilangan urutan."
+   ],
+   "safetyNotes": [
+    "Jaga volume tetap nyaman dan hindari alat musik yang terlalu keras."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-membuat-kolase-alam",
+   "title": "Membuat Kolase Bahan Alam",
+   "summary": "Anak membuat gambar dari daun kering dan ranting kecil dengan memilih, menyusun, lalu menempel.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "art-music",
+    "culture"
+   ],
+   "skills": [
+    "kreativitas",
+    "motorik halus",
+    "perencanaan"
+   ],
+   "objectives": [
+    "Menyusun komposisi sederhana",
+    "Menggunakan lem dengan terkontrol"
+   ],
+   "materials": [
+    {
+     "name": "daun kering bersih",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kertas tebal dan lem tidak beracun",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "krayon",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 30,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih bahan alam yang kering dan bersih."
+    },
+    {
+     "step": 2,
+     "text": "Susun bahan di atas kertas tanpa lem."
+    },
+    {
+     "step": 3,
+     "text": "Oleskan lem secukupnya di bagian belakang."
+    },
+    {
+     "step": 4,
+     "text": "Tekan bahan lalu biarkan mengering."
+    }
+   ],
+   "controlOfError": "Bahan yang belum melekat terlihat saat kertas diangkat.",
+   "variations": [
+    "Tambahkan gambar latar dengan krayon."
+   ],
+   "readySigns": [
+    "Mencoba beberapa susunan sebelum menempel."
+   ],
+   "struggleSigns": [
+    "Menggunakan terlalu banyak lem atau kesulitan menekan bahan."
+   ],
+   "safetyNotes": [
+    "Gunakan bahan yang aman, cuci tangan setelahnya, dan awasi penggunaan lem."
+   ],
+   "references": [
+    {
+     "title": "NHS Child Development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-and-learning/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mencetak-sayur",
+   "title": "Mencetak Pola dengan Sayur",
+   "summary": "Anak mencelup potongan sayur ke cat lalu membuat pola berulang di atas kertas.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "art-music",
+    "sensorial"
+   ],
+   "skills": [
+    "pola visual",
+    "kontrol tangan",
+    "eksplorasi tekstur"
+   ],
+   "objectives": [
+    "Membuat cap dengan tekanan terukur",
+    "Mengulang pola sederhana"
+   ],
+   "materials": [
+    {
+     "name": "potongan okra atau kentang besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "cat air tidak beracun",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kertas dan alas meja",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 20,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tuang sedikit cat pada wadah datar."
+    },
+    {
+     "step": 2,
+     "text": "Celupkan permukaan sayur tipis-tipis."
+    },
+    {
+     "step": 3,
+     "text": "Tekan tegak di atas kertas."
+    },
+    {
+     "step": 4,
+     "text": "Ulangi cap untuk membuat pola."
+    }
+   ],
+   "controlOfError": "Cap yang terlalu basah atau kering terlihat pada kertas.",
+   "variations": [
+    "Gunakan dua warna untuk pola AB."
+   ],
+   "readySigns": [
+    "Mengangkat cap lurus tanpa menyeretnya."
+   ],
+   "struggleSigns": [
+    "Menekan terlalu keras atau mencampur semua warna."
+   ],
+   "safetyNotes": [
+    "Gunakan cat tidak beracun dan jangan gunakan sayur yang sudah terkena cat untuk dimakan."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-membuat-boneka-kertas",
+   "title": "Membuat Boneka Kertas Sederhana",
+   "summary": "Anak menggambar wajah, menghias, dan menggerakkan boneka kertas untuk bercerita singkat.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "art-music",
+    "language"
+   ],
+   "skills": [
+    "imajinasi",
+    "motorik halus",
+    "bercerita"
+   ],
+   "objectives": [
+    "Mengikuti urutan membuat karya",
+    "Menggunakan karya untuk menyampaikan cerita"
+   ],
+   "materials": [
+    {
+     "name": "kantong kertas atau karton",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "krayon dan lem",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "potongan kertas besar",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 30,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih tokoh untuk boneka kertas."
+    },
+    {
+     "step": 2,
+     "text": "Gambar mata, mulut, dan rambut."
+    },
+    {
+     "step": 3,
+     "text": "Tempel hiasan dengan lem secukupnya."
+    },
+    {
+     "step": 4,
+     "text": "Gerakkan boneka sambil bercerita."
+    }
+   ],
+   "controlOfError": "Bagian karya dapat diperiksa sebelum lem mengering.",
+   "variations": [
+    "Buat dua tokoh lalu lakukan percakapan."
+   ],
+   "readySigns": [
+    "Mampu menjelaskan tokoh yang dibuat."
+   ],
+   "struggleSigns": [
+    "Menempel tanpa rencana atau sulit memulai cerita."
+   ],
+   "safetyNotes": [
+    "Orang dewasa membantu memotong bahan; gunakan lem dan spidol tidak beracun."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-mengupas-telur-rebus",
+   "title": "Mengupas Telur Rebus",
+   "summary": "Anak mengupas telur rebus dengan perlahan lalu membersihkan kulitnya untuk melatih kemandirian makan.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "kemandirian makan",
+    "koordinasi jari",
+    "kebersihan"
+   ],
+   "objectives": [
+    "Mengupas dengan gerakan terarah",
+    "Membuang sisa pada tempatnya"
+   ],
+   "materials": [
+    {
+     "name": "telur rebus yang sudah dingin",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "mangkuk dan alas",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Cuci tangan sebelum mulai bekerja."
+    },
+    {
+     "step": 2,
+     "text": "Ketukkan telur perlahan hingga retak."
+    },
+    {
+     "step": 3,
+     "text": "Kelupas kulit sedikit demi sedikit."
+    },
+    {
+     "step": 4,
+     "text": "Letakkan kulit pada mangkuk sisa."
+    }
+   ],
+   "controlOfError": "Kulit yang tersisa terlihat pada permukaan telur.",
+   "variations": [
+    "Potong telur dengan alat yang aman bersama orang dewasa."
+   ],
+   "readySigns": [
+    "Bekerja perlahan tanpa meremas telur."
+   ],
+   "struggleSigns": [
+    "Mengupas terlalu kuat atau mencampur kulit dengan makanan."
+   ],
+   "safetyNotes": [
+    "Gunakan telur yang disimpan dengan aman dan pastikan anak duduk saat makan."
+   ],
+   "references": [
+    {
+     "title": "WHO Five Keys to Safer Food",
+     "url": "https://www.who.int/teams/nutrition-and-food-safety/food-safety-and-zoonoses/five-keys-to-safer-food"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-menyiapkan-camilan",
+   "title": "Menyiapkan Camilan Buah",
+   "summary": "Anak mencuci buah, menyusun potongan yang sudah disiapkan, lalu membereskan area makan.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "kebersihan diri",
+    "urutan kerja",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Mengikuti langkah menyiapkan makanan",
+    "Menata dan membereskan tempat makan"
+   ],
+   "materials": [
+    {
+     "name": "buah yang sudah dipotong orang dewasa",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "piring dan penjepit makanan besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "serbet",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Cuci tangan dan siapkan piring."
+    },
+    {
+     "step": 2,
+     "text": "Ambil potongan buah dengan penjepit."
+    },
+    {
+     "step": 3,
+     "text": "Susun buah di piring dengan rapi."
+    },
+    {
+     "step": 4,
+     "text": "Bawa piring dan lap meja setelah makan."
+    }
+   ],
+   "controlOfError": "Buah yang jatuh atau meja basah terlihat dan dapat dibereskan.",
+   "variations": [
+    "Buat pola warna sederhana di piring."
+   ],
+   "readySigns": [
+    "Mengingat cuci tangan sebelum dan sesudah kegiatan."
+   ],
+   "struggleSigns": [
+    "Mengambil terlalu banyak atau membawa piring sambil berlari."
+   ],
+   "safetyNotes": [
+    "Orang dewasa mencuci dan memotong buah; hindari potongan bulat keras yang mudah tersedak."
+   ],
+   "references": [
+    {
+     "title": "WHO Five Keys to Safer Food",
+     "url": "https://www.who.int/teams/nutrition-and-food-safety/food-safety-and-zoonoses/five-keys-to-safer-food"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-memilah-sampah",
+   "title": "Memilah Sampah Rumah Tangga",
+   "summary": "Anak memilah contoh sampah bersih ke tempat kertas, plastik, dan sisa makanan dengan bimbingan.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "culture",
+    "practical-life"
+   ],
+   "skills": [
+    "kepedulian lingkungan",
+    "klasifikasi",
+    "tanggung jawab"
+   ],
+   "objectives": [
+    "Mengenali beberapa jenis sampah",
+    "Membuang benda pada tempat yang sesuai"
+   ],
+   "materials": [
+    {
+     "name": "tiga wadah berlabel gambar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "contoh sampah bersih dan aman",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan label pada setiap wadah."
+    },
+    {
+     "step": 2,
+     "text": "Ambil satu contoh sampah bersih."
+    },
+    {
+     "step": 3,
+     "text": "Pilih wadah berdasarkan bahannya."
+    },
+    {
+     "step": 4,
+     "text": "Cuci tangan setelah semua selesai."
+    }
+   ],
+   "controlOfError": "Label gambar membantu anak mengecek pilihannya.",
+   "variations": [
+    "Tambahkan kegiatan memakai ulang kardus untuk karya."
+   ],
+   "readySigns": [
+    "Menyebut alasan memilih wadah tertentu."
+   ],
+   "struggleSigns": [
+    "Memasukkan benda tanpa melihat label atau menyentuh sampah kotor."
+   ],
+   "safetyNotes": [
+    "Hanya gunakan sampah bersih; hindari kaca, logam tajam, baterai, dan bahan kimia."
+   ],
+   "references": [
+    {
+     "title": "WHO Five Keys to Safer Food",
+     "url": "https://www.who.int/teams/nutrition-and-food-safety/food-safety-and-zoonoses/five-keys-to-safer-food"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "4-5y-latihan-menyapa",
+   "title": "Latihan Menyapa dan Meminta Tolong",
+   "summary": "Anak bermain peran menyapa, meminta bantuan, dan mengucapkan terima kasih dalam situasi sehari-hari.",
+   "ageBands": [
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy",
+    "language"
+   ],
+   "skills": [
+    "sopan santun",
+    "komunikasi",
+    "bergiliran"
+   ],
+   "objectives": [
+    "Menggunakan kalimat sopan",
+    "Mendengarkan dan merespons lawan bicara"
+   ],
+   "materials": [
+    {
+     "name": "dua kursi",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda peran seperti tas atau buku",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan cara menatap dan menyapa."
+    },
+    {
+     "step": 2,
+     "text": "Peragakan meminta bantuan dengan kalimat jelas."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu jawaban tanpa memotong."
+    },
+    {
+     "step": 4,
+     "text": "Ucapkan terima kasih lalu bertukar peran."
+    }
+   ],
+   "controlOfError": "Lawan bicara dapat mengulang jika pesan belum jelas.",
+   "variations": [
+    "Latih meminta izin meminjam benda atau bergabung bermain."
+   ],
+   "readySigns": [
+    "Mau mencoba kalimat sopan tanpa dipaksa."
+   ],
+   "struggleSigns": [
+    "Menirukan kata tanpa memahami giliran percakapan."
+   ],
+   "safetyNotes": [
+    "Jelaskan bahwa anak boleh berkata tidak dan mencari orang dewasa jika merasa tidak aman."
+   ],
+   "references": [
+    {
+     "title": "healthychildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  }
+ ],
+ "milestones": [
+  {
+   "id": "mile-45y-lompat-satu-kaki",
+   "title": "Melompat dan berjinjit dengan satu kaki",
+   "ageBand": "4-5y",
+   "domain": "motorik-kasar",
+   "description": "Banyak anak berusia 4-5 tahun dapat melompat dengan satu kaki beberapa kali, berjinjit, dan mendarat dengan lebih seimbang saat bermain.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Belum bisa melompat dengan dua kaki atau sering jatuh berat tanpa berusaha menyeimbangkan diri mendekati usia 5 tahun",
+    "Kaki tampak kaku, terasa nyeri, atau anak terus-menerus menghindari aktivitas bergerak"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+    },
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-berlari-ubah-arah",
+   "title": "Berlari sambil berbelok dan berhenti",
+   "ageBand": "4-5y",
+   "domain": "motorik-kasar",
+   "description": "Keseimbangan dan koordinasi makin berkembang, sehingga banyak anak bisa berlari sambil berbelok, memperlambat langkah, lalu berhenti tanpa sering terjatuh.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Sering jatuh berat dibandingkan anak seusianya, atau satu sisi tubuh tampak lebih lemah saat bergerak",
+    "Berjalan atau berlari dengan pola yang sangat kaku dan membuat anak tampak kesakitan"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    },
+    {
+     "title": "WHO - Early Child Development",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-menggambar-sosok",
+   "title": "Menggambar bentuk dan sosok sederhana",
+   "ageBand": "4-5y",
+   "domain": "motorik-halus",
+   "description": "Anak mulai membuat gambar yang bisa dikenali, seperti lingkaran untuk kepala dan garis untuk kaki, serta mencoba meniru bentuk silang atau kotak.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Tangan tampak sangat kaku atau anak enggan memegang alat tulis hingga mendekati usia 5 tahun",
+    "Belum mampu membuat coretan yang disengaja atau meniru garis sederhana sama sekali"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+    },
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-memegang-gunting",
+   "title": "Memegang gunting anak dengan lebih terampil",
+   "ageBand": "4-5y",
+   "domain": "motorik-halus",
+   "description": "Dengan pengawasan, banyak anak dapat memegang gunting anak dan memotong kertas lurus atau mengikuti pola sederhana, meski hasilnya masih belum rapi.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Belum bisa menggunakan kedua tangan bersama-sama untuk memegang kertas dan alat hingga mendekati usia 5 tahun",
+    "Tangan sering tampak bergetar atau anak sangat kesulitan menggenggam benda sehari-hari"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    },
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-bercerita-runtut",
+   "title": "Bercerita dengan kalimat yang runtut",
+   "ageBand": "4-5y",
+   "domain": "bahasa",
+   "description": "Banyak anak dapat menceritakan pengalaman atau cerita pendek dengan beberapa kalimat yang saling berhubungan dan mudah dipahami orang lain.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Bicara sangat tidak jelas sehingga orang di luar keluarga sulit memahaminya pada usia 5 tahun",
+    "Hampir tidak menggunakan kalimat untuk menyampaikan keinginan atau bercerita"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+    },
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-mengenal-huruf",
+   "title": "Mengenal huruf dan bunyi awal",
+   "ageBand": "4-5y",
+   "domain": "bahasa",
+   "description": "Anak mulai tertarik pada huruf, mengenali namanya sendiri, menulis beberapa huruf, dan menikmati sajak atau bunyi awal kata yang mirip.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Tidak menunjukkan minat sama sekali pada buku, cerita, atau permainan bunyi hingga mendekati usia 5 tahun",
+    "Sulit memahami pertanyaan sederhana dan sering tidak merespons ketika dipanggil"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    },
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-menghitung-angka-kecil",
+   "title": "Menghitung dan mengenal angka kecil",
+   "ageBand": "4-5y",
+   "domain": "kognitif",
+   "description": "Banyak anak dapat menghitung sampai sepuluh, menyebut beberapa angka, dan mulai memahami konsep sederhana seperti sedikit, banyak, atau lebih.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Belum bisa mengikuti dua instruksi sederhana secara berurutan mendekati usia 5 tahun",
+    "Sulit memahami konsep sehari-hari seperti satu, banyak, atau besar dan kecil meski sudah sering diajak bermain"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    },
+    {
+     "title": "WHO - Early Child Development",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-puzzle-dan-mengelompokkan",
+   "title": "Menyusun puzzle dan mengelompokkan benda",
+   "ageBand": "4-5y",
+   "domain": "kognitif",
+   "description": "Anak makin mahir menyusun puzzle beberapa keping, mencocokkan bentuk, serta mengelompokkan benda berdasarkan warna, ukuran, atau jenisnya.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Sulit mencocokkan bentuk atau warna sama sekali meski sudah diberi contoh berulang",
+    "Kehilangan kemampuan menyelesaikan permainan yang sebelumnya sudah dikuasai"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+    },
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-bermain-bergiliran",
+   "title": "Bermain bergiliran dengan teman",
+   "ageBand": "4-5y",
+   "domain": "sosial-emosional",
+   "description": "Banyak anak mulai bermain bersama teman, berbagi peran dalam permainan pura-pura, dan belajar menunggu giliran meski kadang masih perlu diingatkan.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Hampir tidak menunjukkan minat berinteraksi dengan anak lain dan selalu menghindari kontak sosial",
+    "Perilaku agresif yang sering melukai diri sendiri atau orang lain sehingga sulit ditenangkan"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+    },
+    {
+     "title": "WHO - Early Child Development",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-menamai-emosi",
+   "title": "Mengenali dan menamai emosi",
+   "ageBand": "4-5y",
+   "domain": "sosial-emosional",
+   "description": "Anak mulai bisa mengatakan sedang senang, sedih, marah, atau takut, serta menunjukkan kepedulian sederhana ketika melihat orang lain kesulitan.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Menunjukkan ketakutan atau kesedihan yang sangat kuat dan menetap hingga mengganggu aktivitas sehari-hari",
+    "Sering meledak marah dengan intensitas tinggi dan sulit ditenangkan meski sudah dibantu"
+   ],
+   "references": [
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    },
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-45y-merawat-diri",
+   "title": "Merawat diri dengan lebih mandiri",
+   "ageBand": "4-5y",
+   "domain": "self-help",
+   "description": "Banyak anak sudah bisa ke toilet sendiri, makan dengan alat makan, dan mengenakan sebagian pakaian, meski tetap perlu bantuan untuk mengancingkan atau membersihkan diri.",
+   "typicalFromMonths": 48,
+   "typicalToMonths": 60,
+   "redFlags": [
+    "Kehilangan keterampilan toileting yang sebelumnya sudah dikuasai, terutama bila disertai nyeri atau perubahan pola buang air",
+    "Menolak makan atau minum secara terus-menerus hingga perlu diperiksa tumbuh kembangnya"
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org - Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    },
+    {
+     "title": "CDC - Milestones by Age",
+     "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+    }
+   ]
+  }
+ ]
+}

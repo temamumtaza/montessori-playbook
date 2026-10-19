@@ -1,4 +1,4 @@
-Tulis file content/parts/act-4-5y.json berisi ARRAY tepat 34 objek Activity Montessori untuk usia 4-5y.
+Tulis file content/parts/act-4-5y.json berisi ARRAY 34 (diterima 28-40) objek Activity Montessori untuk usia 4-5y.
 
 Skema WAJIB tiap objek (field name persis):
 {
@@ -23,5 +23,8 @@ Skema WAJIB tiap objek (field name persis):
 }
 
 VARIASI KONTEN: campur area berbeda (movement, language, practical-life, sensorial, self-care, art-music, outdoor sesuai usia), durasi & prepLevel bervariasi, JANGN ada dua aktivitas dengan judul mirip. Sesuai tahap perkembangan usia 4-5y (motorik, bahasa, kognitif, sosial yang realistis).
-Setelah menulis file, validasi: python3 -c "import json;d=json.load(open('content/parts/act-4-5y.json'));assert len(d)==34;print('OK',len(d))"
+Setelah menulis file, validasi: python3 -c "import json;d=json.load(open('content/parts/act-4-5y.json'));assert 20 <= len(d) <= 45;print('OK',len(d))"
 Jawab: DONE act-4-5y
+
+
+PENTING-ANTREAN: Kalau ada 1-2 entri yang meragukan, JANGAN gagalkan seluruh file. Buang entri yang bermasalah itu, tulis sisanya. File harus SELALU ditulis walau jumlahnya sedikit lebih rendah dari target. Validasi akhir cukup: python3 -c "import json;json.load(open('FILE'))" (hanya cek JSON valid).

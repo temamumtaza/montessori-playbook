@@ -1,0 +1,2185 @@
+{
+ "ageBand": "9-12m",
+ "activities": [
+  {
+   "id": "9-12m-pindah-benda-ke-wadah",
+   "title": "Pindah Benda ke Wadah",
+   "summary": "Bayi berlatih memindahkan benda besar dengan kedua tangan secara perlahan.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "koordinasi tangan-mata",
+    "menggenggam",
+    "melepas"
+   ],
+   "objectives": [
+    "Melatih koordinasi tangan dan mata.",
+    "Mengenali tindakan memasukkan dan mengeluarkan."
+   ],
+   "materials": [
+    {
+     "name": "mangkuk plastik dan balok kain besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan mangkuk dan balok di depan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan satu balok perlahan ke mangkuk."
+    },
+    {
+     "step": 3,
+     "text": "Tawarkan balok dan beri waktu bayi mencoba."
+    }
+   ],
+   "controlOfError": "Balok yang terlalu besar tidak mudah dimasukkan.",
+   "variations": [
+    "Gunakan dua mangkuk dengan warna berbeda."
+   ],
+   "readySigns": [
+    "Bayi dapat meraih benda dengan mantap."
+   ],
+   "struggleSigns": [
+    "Bayi terus memukul wadah dan tampak frustrasi."
+   ],
+   "safetyNotes": [
+    "Gunakan benda berukuran lebih besar dari mulut dan awasi setiap saat."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-menarik-syal-dari-kotak",
+   "title": "Menarik Syal dari Kotak",
+   "summary": "Bayi menarik kain berwarna dari kotak terbuka sambil mengamati gerakannya.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "sensorial"
+   ],
+   "skills": [
+    "menarik",
+    "ketekunan",
+    "eksplorasi tekstur"
+   ],
+   "objectives": [
+    "Melatih kekuatan jari dan lengan.",
+    "Mengamati hubungan sebab dan akibat."
+   ],
+   "materials": [
+    {
+     "name": "kotak tisu kosong dan kain katun besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Masukkan sebagian kain ke dalam kotak."
+    },
+    {
+     "step": 2,
+     "text": "Tarik ujung kain perlahan hingga terlihat."
+    },
+    {
+     "step": 3,
+     "text": "Ajak bayi menarik ujung kain sendiri."
+    }
+   ],
+   "controlOfError": "Kain berhenti ketika seluruhnya sudah keluar.",
+   "variations": [
+    "Tambahkan kain dengan tekstur berbeda."
+   ],
+   "readySigns": [
+    "Bayi mengikuti kain dengan pandangan."
+   ],
+   "struggleSigns": [
+    "Bayi menggigit kain atau sulit menariknya."
+   ],
+   "safetyNotes": [
+    "Pilih kain tanpa tali panjang dan tetap dampingi agar tidak menutup wajah."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-menara-cangkir",
+   "title": "Menumpuk Cangkir",
+   "summary": "Bayi mencoba menumpuk dan merobohkan cangkir plastik ringan dengan aman.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "sensorial",
+    "movement"
+   ],
+   "skills": [
+    "koordinasi",
+    "ukuran",
+    "sebab-akibat"
+   ],
+   "objectives": [
+    "Membandingkan ukuran sederhana.",
+    "Melatih ketepatan meletakkan benda."
+   ],
+   "materials": [
+    {
+     "name": "tiga cangkir plastik ringan",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Susun dua cangkir di depan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Letakkan cangkir ketiga di atasnya."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi membongkar dan mencoba."
+    }
+   ],
+   "controlOfError": "Cangkir yang tidak seimbang akan jatuh.",
+   "variations": [
+    "Sediakan cangkir berukuran bertingkat."
+   ],
+   "readySigns": [
+    "Bayi mampu menggenggam cangkir dengan dua tangan."
+   ],
+   "struggleSigns": [
+    "Bayi kehilangan minat setelah satu percobaan."
+   ],
+   "safetyNotes": [
+    "Pastikan cangkir tidak retak, tajam, atau mudah pecah."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/learning-to-talk/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-memasukkan-bola-ke-lubang",
+   "title": "Bola Masuk Lubang",
+   "summary": "Bayi mengamati bola besar masuk ke lubang dan mencarinya kembali.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "sensorial",
+    "math"
+   ],
+   "skills": [
+    "permanensi benda",
+    "koordinasi",
+    "pengamatan"
+   ],
+   "objectives": [
+    "Memahami benda dapat menghilang lalu muncul.",
+    "Melatih ketepatan memasukkan benda."
+   ],
+   "materials": [
+    {
+     "name": "kotak dengan lubang besar dan bola kain",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan bola dan lubang pada kotak."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan bola sampai terlihat menghilang."
+    },
+    {
+     "step": 3,
+     "text": "Bantu bayi membuka kotak dan mengambilnya."
+    }
+   ],
+   "controlOfError": "Lubang hanya menerima bola yang sesuai ukurannya.",
+   "variations": [
+    "Gunakan bola berwarna kontras."
+   ],
+   "readySigns": [
+    "Bayi mencari bola setelah bola masuk."
+   ],
+   "struggleSigns": [
+    "Bayi memasukkan tangan ke lubang dan tersangkut."
+   ],
+   "safetyNotes": [
+    "Lubang harus cukup besar agar tangan bayi tidak terjepit dan bola tidak bisa tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-buka-tutup-wadah",
+   "title": "Membuka Tutup Wadah",
+   "summary": "Bayi mengeksplorasi tutup longgar dan belajar membuka wadah sederhana.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "memutar",
+    "menarik",
+    "pemecahan masalah"
+   ],
+   "objectives": [
+    "Melatih gerakan jari dan pergelangan.",
+    "Mendorong usaha mencoba berulang."
+   ],
+   "materials": [
+    {
+     "name": "wadah plastik bertutup longgar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 6,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan wadah tertutup di depan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Buka tutup sedikit sambil memperagakan."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi menarik atau mengangkat tutup."
+    }
+   ],
+   "controlOfError": "Tutup longgar dapat dibuka tanpa tenaga besar.",
+   "variations": [
+    "Sembunyikan kain kecil di dalam wadah."
+   ],
+   "readySigns": [
+    "Bayi memegang tepi tutup dan mencoba mengangkat."
+   ],
+   "struggleSigns": [
+    "Bayi menangis karena tutup terlalu rapat."
+   ],
+   "safetyNotes": [
+    "Jangan gunakan wadah kaca, tutup ulir kecil, atau bagian yang bisa terlepas."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mencari-suara-bel",
+   "title": "Mencari Suara Bel",
+   "summary": "Bayi mengikuti bunyi bel lembut lalu mencari sumber suara di dekatnya.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "pendengaran",
+    "orientasi suara",
+    "perhatian"
+   ],
+   "objectives": [
+    "Menguatkan perhatian pada bunyi.",
+    "Menghubungkan suara dengan sumbernya."
+   ],
+   "materials": [
+    {
+     "name": "bel tangan dengan suara lembut",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Bunyikan bel di samping bayi."
+    },
+    {
+     "step": 2,
+     "text": "Tunggu bayi menoleh ke arah suara."
+    },
+    {
+     "step": 3,
+     "text": "Tunjukkan bel dan sebutkan namanya."
+    }
+   ],
+   "controlOfError": "Arah suara membantu bayi menemukan bel.",
+   "variations": [
+    "Bunyikan dari sisi kanan dan kiri secara bergantian."
+   ],
+   "readySigns": [
+    "Bayi menoleh atau berhenti bergerak saat mendengar bel."
+   ],
+   "struggleSigns": [
+    "Bayi tampak kaget atau menutup telinga."
+   ],
+   "safetyNotes": [
+    "Pilih bunyi lembut, jauhkan dari telinga, dan jangan gunakan bagian kecil yang lepas."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/learning-to-talk/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-meniru-tepuk-tangan",
+   "title": "Meniru Tepuk Tangan",
+   "summary": "Bayi meniru tepukan sederhana sambil menikmati ritme dan interaksi hangat.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "art-music",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "imitasi",
+    "ritme",
+    "interaksi sosial"
+   ],
+   "objectives": [
+    "Mendorong peniruan gerak.",
+    "Membangun perhatian bersama dengan orang tua."
+   ],
+   "materials": [
+    {
+     "name": "tangan orang dewasa",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk berhadapan dengan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Tepuk tangan perlahan dua kali."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu dan sambut usaha bayi meniru."
+    }
+   ],
+   "controlOfError": "Ritme terlihat jelas dari gerakan tangan.",
+   "variations": [
+    "Tepuk mengikuti lagu pendek tanpa suara keras."
+   ],
+   "readySigns": [
+    "Bayi memperhatikan tangan dan mencoba menggerakkan tangan."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau tampak lelah."
+   ],
+   "safetyNotes": [
+    "Tepuk dengan lembut dan hentikan bila bayi tampak tidak nyaman."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-buku-gambar-hewan",
+   "title": "Buku Gambar Hewan",
+   "summary": "Orang tua dan bayi melihat gambar hewan sambil mendengar kata sederhana.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "culture"
+   ],
+   "skills": [
+    "kosakata",
+    "perhatian bersama",
+    "membalik halaman"
+   ],
+   "objectives": [
+    "Memperkaya pengalaman mendengar kata.",
+    "Melatih bayi mengikuti gambar dan suara."
+   ],
+   "materials": [
+    {
+     "name": "buku karton bergambar hewan",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pangku bayi dan buka satu halaman."
+    },
+    {
+     "step": 2,
+     "text": "Tunjuk gambar lalu sebutkan namanya."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu bayi menyentuh atau menunjuk gambar."
+    }
+   ],
+   "controlOfError": "Gambar yang jelas membantu menghubungkan kata dan benda.",
+   "variations": [
+    "Gunakan buku tentang benda yang sering dilihat bayi."
+   ],
+   "readySigns": [
+    "Bayi melihat halaman dan mendekatkan tangan ke gambar."
+   ],
+   "struggleSigns": [
+    "Bayi terus berusaha merobek halaman."
+   ],
+   "safetyNotes": [
+    "Gunakan buku kokoh tanpa sudut tajam atau bagian kecil yang mudah terlepas."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-basket-benda-sehari-hari",
+   "title": "Basket Benda Sehari-hari",
+   "summary": "Bayi memilih dan mengeksplorasi beberapa benda rumah tangga yang aman.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "sensorial",
+    "practical-life"
+   ],
+   "skills": [
+    "eksplorasi",
+    "klasifikasi awal",
+    "genggaman"
+   ],
+   "objectives": [
+    "Memperluas pengalaman tekstur dan bentuk.",
+    "Mendorong pilihan mandiri yang aman."
+   ],
+   "materials": [
+    {
+     "name": "keranjang dan tiga benda rumah tangga besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Susun benda di dalam keranjang rendah."
+    },
+    {
+     "step": 2,
+     "text": "Ambil satu benda dan amati dengan tenang."
+    },
+    {
+     "step": 3,
+     "text": "Kembalikan benda lalu beri ruang bayi memilih."
+    }
+   ],
+   "controlOfError": "Benda yang aman dapat dieksplorasi melalui indera.",
+   "variations": [
+    "Ganti isi keranjang setiap beberapa hari."
+   ],
+   "readySigns": [
+    "Bayi meraih dan memeriksa benda dengan fokus."
+   ],
+   "struggleSigns": [
+    "Bayi memasukkan semua benda ke mulut terus-menerus."
+   ],
+   "safetyNotes": [
+    "Periksa ukuran, kebersihan, dan keutuhan setiap benda sebelum diberikan."
+   ],
+   "references": [
+    {
+     "title": "WHO Complementary Feeding",
+     "url": "https://www.who.int/health-topics/complementary-feeding"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-menuang-air-dengan-cangkir",
+   "title": "Menuang Air dengan Cangkir",
+   "summary": "Bayi mengamati orang dewasa menuang sedikit air dan mencoba memegang cangkir.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "memegang cangkir",
+    "konsentrasi",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Mengenalkan penggunaan cangkir.",
+    "Melatih koordinasi kedua tangan."
+   ],
+   "materials": [
+    {
+     "name": "dua cangkir kecil dan sedikit air",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 8,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan cangkir di atas alas tahan air."
+    },
+    {
+     "step": 2,
+     "text": "Tuang sedikit air dari satu cangkir."
+    },
+    {
+     "step": 3,
+     "text": "Tawarkan cangkir kosong untuk dipegang bayi."
+    }
+   ],
+   "controlOfError": "Air yang tumpah terlihat dan mudah dibersihkan.",
+   "variations": [
+    "Gunakan cangkir dengan dua pegangan."
+   ],
+   "readySigns": [
+    "Bayi dapat duduk stabil dan membawa benda ke mulut."
+   ],
+   "struggleSigns": [
+    "Bayi belum mampu duduk dengan stabil."
+   ],
+   "safetyNotes": [
+    "Berikan hanya sedikit air, duduk dekat bayi, dan jangan pernah meninggalkannya saat minum."
+   ],
+   "references": [
+    {
+     "title": "WHO Complementary Feeding",
+     "url": "https://www.who.int/health-topics/complementary-feeding"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-memegang-sendok-kosong",
+   "title": "Memegang Sendok Kosong",
+   "summary": "Bayi berlatih menggenggam sendok dan membawanya ke mulut saat makan.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "self-care",
+    "practical-life"
+   ],
+   "skills": [
+    "genggaman",
+    "makan mandiri",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Mendukung partisipasi saat makan.",
+    "Melatih arah gerak tangan ke mulut."
+   ],
+   "materials": [
+    {
+     "name": "sendok bayi berujung bulat",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Berikan sendok kosong dengan gagang mudah digenggam."
+    },
+    {
+     "step": 2,
+     "text": "Peragakan membawa sendok perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi mencoba tanpa dipaksa."
+    }
+   ],
+   "controlOfError": "Sendok kosong lebih ringan dan aman untuk latihan gerak.",
+   "variations": [
+    "Gunakan sendok pendek dengan pegangan tebal."
+   ],
+   "readySigns": [
+    "Bayi duduk tegak dan tertarik meraih sendok."
+   ],
+   "struggleSigns": [
+    "Bayi tersedak, batuk, atau menggigit gagang terlalu dalam."
+   ],
+   "safetyNotes": [
+    "Selalu awasi saat makan, gunakan sendok khusus bayi, dan hentikan bila bayi tidak nyaman."
+   ],
+   "references": [
+    {
+     "title": "WHO Complementary Feeding",
+     "url": "https://www.who.int/health-topics/complementary-feeding"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-merangkak-menuju-mainan",
+   "title": "Merangkak Menuju Mainan",
+   "summary": "Bayi bergerak menuju mainan yang diletakkan sedikit di luar jangkauan.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "movement",
+    "outdoor"
+   ],
+   "skills": [
+    "merangkak",
+    "keseimbangan",
+    "motivasi gerak"
+   ],
+   "objectives": [
+    "Mendorong perpindahan tubuh secara alami.",
+    "Melatih perencanaan gerak sederhana."
+   ],
+   "materials": [
+    {
+     "name": "matras dan mainan favorit berukuran besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan bayi di atas matras yang rata."
+    },
+    {
+     "step": 2,
+     "text": "Tempatkan mainan sedikit di depannya."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu dan beri dukungan verbal singkat."
+    }
+   ],
+   "controlOfError": "Jarak dapat disesuaikan dengan kemampuan bayi.",
+   "variations": [
+    "Lakukan di area teduh luar ruang yang bersih."
+   ],
+   "readySigns": [
+    "Bayi mampu berguling atau merayap menuju benda."
+   ],
+   "struggleSigns": [
+    "Bayi tampak lelah atau terus menangis."
+   ],
+   "safetyNotes": [
+    "Jauhkan tangga, kabel, benda kecil, dan permukaan panas dari area gerak."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-berdiri-dengan-pegangan",
+   "title": "Berdiri dengan Pegangan",
+   "summary": "Bayi menarik tubuh untuk berdiri pada perabot kokoh dengan pendampingan dekat.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "movement",
+    "self-care"
+   ],
+   "skills": [
+    "menarik tubuh",
+    "keseimbangan",
+    "kekuatan kaki"
+   ],
+   "objectives": [
+    "Memberi kesempatan menguatkan otot tubuh.",
+    "Mengenalkan perubahan posisi dengan aman."
+   ],
+   "materials": [
+    {
+     "name": "perabot rendah yang kokoh dan matras",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 6,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan perabot tidak dapat bergeser."
+    },
+    {
+     "step": 2,
+     "text": "Letakkan mainan di atas permukaan rendah."
+    },
+    {
+     "step": 3,
+     "text": "Dampingi bayi saat menarik tubuhnya."
+    }
+   ],
+   "controlOfError": "Perabot kokoh memberi pegangan stabil.",
+   "variations": [
+    "Letakkan benda menarik di dua sisi perabot."
+   ],
+   "readySigns": [
+    "Bayi dapat duduk dan berpindah posisi dengan kontrol."
+   ],
+   "struggleSigns": [
+    "Bayi jatuh berulang atau belum mampu menopang tubuh."
+   ],
+   "safetyNotes": [
+    "Gunakan matras, lindungi sudut tajam, dan jangan menarik tangan bayi untuk berdiri."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-berjalan-mendorong-kotak",
+   "title": "Mendorong Kotak Kosong",
+   "summary": "Bayi yang sudah berdiri mencoba mendorong kotak ringan beberapa langkah.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "movement",
+    "practical-life"
+   ],
+   "skills": [
+    "mendorong",
+    "keseimbangan",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Melatih perpindahan berat badan.",
+    "Memberi pengalaman bergerak dengan dukungan."
+   ],
+   "materials": [
+    {
+     "name": "kotak kardus rendah dan kosong",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kotak di depan bayi yang berdiri."
+    },
+    {
+     "step": 2,
+     "text": "Dorong kotak perlahan satu langkah."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi memegang dan mendorongnya."
+    }
+   ],
+   "controlOfError": "Kotak kosong bergerak perlahan dan ringan.",
+   "variations": [
+    "Tempelkan gambar sederhana pada sisi kotak."
+   ],
+   "readySigns": [
+    "Bayi berdiri dengan pegangan dan melangkah menyamping."
+   ],
+   "struggleSigns": [
+    "Kotak melaju terlalu cepat atau bayi kehilangan keseimbangan."
+   ],
+   "safetyNotes": [
+    "Pilih kotak yang tidak mudah roboh, kosong, dan lakukan di lantai tidak licin."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-memasukkan-cincin-besar",
+   "title": "Memasukkan Cincin Besar",
+   "summary": "Bayi memasukkan cincin besar ke tiang pendek dengan gerakan tangan terarah.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "sensorial",
+    "math"
+   ],
+   "skills": [
+    "koordinasi mata-tangan",
+    "ukuran",
+    "ketepatan"
+   ],
+   "objectives": [
+    "Melatih gerakan memasukkan benda.",
+    "Mengenali bentuk lingkaran dan posisi."
+   ],
+   "materials": [
+    {
+     "name": "tiang pendek dan cincin kayu besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 8,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan tiang dan satu cincin di depan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan cincin perlahan dari atas."
+    },
+    {
+     "step": 3,
+     "text": "Tawarkan cincin dan tunggu percobaan bayi."
+    }
+   ],
+   "controlOfError": "Cincin masuk bila lubang sejajar dengan tiang.",
+   "variations": [
+    "Gunakan satu cincin terlebih dahulu sebelum menambah jumlah."
+   ],
+   "readySigns": [
+    "Bayi dapat memegang cincin besar dengan dua tangan."
+   ],
+   "struggleSigns": [
+    "Bayi memukul tiang tanpa mencoba menyelaraskan."
+   ],
+   "safetyNotes": [
+    "Cincin harus terlalu besar untuk masuk ke mulut dan tiang harus tumpul serta stabil."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-meraba-kain-bertekstur",
+   "title": "Meraba Kain Bertekstur",
+   "summary": "Bayi membandingkan kain halus dan bertekstur melalui sentuhan yang bebas.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "sensorial"
+   ],
+   "skills": [
+    "peraba",
+    "membandingkan",
+    "eksplorasi"
+   ],
+   "objectives": [
+    "Memperluas pengalaman sentuhan.",
+    "Mendorong pengamatan melalui tangan."
+   ],
+   "materials": [
+    {
+     "name": "dua potong kain besar bertekstur berbeda",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kedua kain di atas alas."
+    },
+    {
+     "step": 2,
+     "text": "Usap satu kain perlahan dan sebutkan lembut."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi meremas dan memindahkan kain."
+    }
+   ],
+   "controlOfError": "Perbedaan tekstur dapat dirasakan langsung.",
+   "variations": [
+    "Tambahkan kain berbahan rajut yang tidak mudah berbulu."
+   ],
+   "readySigns": [
+    "Bayi menyentuh kain dan mengulang gerakan."
+   ],
+   "struggleSigns": [
+    "Bayi menarik serat kain atau memasukkannya terlalu jauh ke mulut."
+   ],
+   "safetyNotes": [
+    "Gunakan kain tanpa benang lepas, kancing, payet, atau tali."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mengambil-benda-dengan-capit",
+   "title": "Mengambil Benda dengan Capit",
+   "summary": "Bayi berlatih mengambil potongan makanan lunak berukuran aman dengan jari.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "self-care",
+    "practical-life"
+   ],
+   "skills": [
+    "jepit ibu jari-telunjuk",
+    "makan mandiri",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Mendukung perkembangan genggaman jepit.",
+    "Mendorong partisipasi saat makan."
+   ],
+   "materials": [
+    {
+     "name": "potongan makanan lunak sesuai kesiapan bayi",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan satu potongan lunak di alas makan."
+    },
+    {
+     "step": 2,
+     "text": "Peragakan mengambilnya dengan dua jari."
+    },
+    {
+     "step": 3,
+     "text": "Beri waktu bayi mengambil sendiri."
+    }
+   ],
+   "controlOfError": "Potongan lunak mudah diremas dengan jari.",
+   "variations": [
+    "Sajikan dua bentuk makanan lunak yang berbeda."
+   ],
+   "readySigns": [
+    "Bayi duduk tegak dan mampu membawa makanan ke mulut."
+   ],
+   "struggleSigns": [
+    "Bayi batuk, tersedak, atau belum stabil duduk."
+   ],
+   "safetyNotes": [
+    "Ikuti panduan makanan aman untuk usia bayi, potong sesuai kebutuhan, dan awasi terus selama makan."
+   ],
+   "references": [
+    {
+     "title": "WHO Complementary Feeding",
+     "url": "https://www.who.int/health-topics/complementary-feeding"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-menunjuk-benda-bernama",
+   "title": "Menunjuk Benda Bernama",
+   "summary": "Orang tua menyebut benda yang dikenal dan memberi waktu bayi menunjuk atau meraih.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "menunjuk",
+    "pemahaman bahasa",
+    "perhatian bersama"
+   ],
+   "objectives": [
+    "Menguatkan hubungan antara kata dan benda.",
+    "Mendorong komunikasi sebelum berbicara."
+   ],
+   "materials": [
+    {
+     "name": "dua benda familiar berukuran besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 6,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan dua benda di depan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Tanyakan lokasi satu benda dengan lembut."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu gerak menunjuk atau meraih lalu beri nama."
+    }
+   ],
+   "controlOfError": "Benda yang dipilih menunjukkan respons bayi.",
+   "variations": [
+    "Gunakan anggota tubuh seperti hidung dan tangan."
+   ],
+   "readySigns": [
+    "Bayi menoleh saat mendengar nama benda."
+   ],
+   "struggleSigns": [
+    "Bayi kehilangan perhatian setelah beberapa giliran."
+   ],
+   "safetyNotes": [
+    "Pilih benda aman tanpa bagian kecil dan jangan memaksa bayi menjawab."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/learning-to-talk/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-lagu-dengan-gerakan",
+   "title": "Lagu dengan Gerakan",
+   "summary": "Bayi mengikuti lagu pendek dengan gerakan tangan yang berulang dan menyenangkan.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "art-music",
+    "movement"
+   ],
+   "skills": [
+    "ritme",
+    "imitasi",
+    "mendengar"
+   ],
+   "objectives": [
+    "Membangun perhatian pada pola suara.",
+    "Mendorong peniruan gerak sederhana."
+   ],
+   "materials": [
+    {
+     "name": "suara dan tangan orang dewasa",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 6,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pangku bayi dengan posisi nyaman."
+    },
+    {
+     "step": 2,
+     "text": "Nyanyikan lagu pendek dengan gerak tangan."
+    },
+    {
+     "step": 3,
+     "text": "Ulangi sekali dan tunggu respons bayi."
+    }
+   ],
+   "controlOfError": "Pola lagu dan gerakan berulang mudah diikuti.",
+   "variations": [
+    "Gunakan nama bayi dalam lirik sederhana."
+   ],
+   "readySigns": [
+    "Bayi menatap, tersenyum, atau menggerakkan tubuh mengikuti ritme."
+   ],
+   "struggleSigns": [
+    "Bayi menutup telinga atau tampak terlalu lelah."
+   ],
+   "safetyNotes": [
+    "Jaga volume suara lembut dan hentikan saat bayi memberi tanda tidak nyaman."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/learning-to-talk/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-meniru-suara-hewan",
+   "title": "Meniru Suara Hewan",
+   "summary": "Bayi mendengar suara hewan sederhana dan berkesempatan meniru bunyinya.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "culture"
+   ],
+   "skills": [
+    "babbling",
+    "imitasi suara",
+    "kosakata"
+   ],
+   "objectives": [
+    "Mendorong permainan bunyi dua arah.",
+    "Memperkaya pengalaman mendengar suara."
+   ],
+   "materials": [
+    {
+     "name": "kartu gambar hewan besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan satu gambar hewan."
+    },
+    {
+     "step": 2,
+     "text": "Sebutkan nama dan buat suara pendek."
+    },
+    {
+     "step": 3,
+     "text": "Diam sejenak untuk memberi giliran bayi."
+    }
+   ],
+   "controlOfError": "Gambar memberi petunjuk visual tentang suara.",
+   "variations": [
+    "Gunakan hewan yang pernah bayi lihat."
+   ],
+   "readySigns": [
+    "Bayi mengeluarkan suara setelah mendengar contoh."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau hanya ingin meremas kartu."
+   ],
+   "safetyNotes": [
+    "Gunakan kartu tebal tanpa lapisan yang mudah terkelupas atau tertelan."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-menggelindingkan-bola",
+   "title": "Menggelindingkan Bola",
+   "summary": "Bayi mengamati bola menggelinding dan mencoba mendorongnya kembali.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "movement",
+    "math"
+   ],
+   "skills": [
+    "mendorong",
+    "pelacakan visual",
+    "bergiliran"
+   ],
+   "objectives": [
+    "Mengamati arah dan gerak benda.",
+    "Mengenalkan interaksi bergiliran."
+   ],
+   "materials": [
+    {
+     "name": "bola kain besar dan lantai rata",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk berhadapan dengan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Gelindingkan bola perlahan ke arahnya."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu bayi menyentuh atau mendorong bola."
+    }
+   ],
+   "controlOfError": "Bola bergerak menjauh ketika didorong.",
+   "variations": [
+    "Gunakan jalur pendek di antara dua bantal."
+   ],
+   "readySigns": [
+    "Bayi mengikuti bola dengan mata dan tangan."
+   ],
+   "struggleSigns": [
+    "Bola terlalu cepat atau bayi belum tertarik."
+   ],
+   "safetyNotes": [
+    "Gunakan bola besar yang tidak bisa masuk ke mulut dan area bebas benda keras."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-memasukkan-kain-ke-keranjang",
+   "title": "Memasukkan Kain ke Keranjang",
+   "summary": "Bayi memasukkan kain besar ke keranjang lalu mengeluarkannya kembali.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "melepas",
+    "memasukkan",
+    "koordinasi"
+   ],
+   "objectives": [
+    "Melatih membuka telapak dan melepas benda.",
+    "Mengenalkan urutan tindakan sederhana."
+   ],
+   "materials": [
+    {
+     "name": "keranjang rendah dan dua kain besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 9,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kain di samping keranjang."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan kain perlahan ke dalamnya."
+    },
+    {
+     "step": 3,
+     "text": "Ajak bayi mengambil dan mengulanginya."
+    }
+   ],
+   "controlOfError": "Kain terlihat jelas saat masuk dan keluar.",
+   "variations": [
+    "Gunakan keranjang dengan lubang besar agar isi terlihat."
+   ],
+   "readySigns": [
+    "Bayi dapat melepas benda dari genggaman."
+   ],
+   "struggleSigns": [
+    "Bayi belum mampu membuka jari setelah menggenggam."
+   ],
+   "safetyNotes": [
+    "Pastikan kain besar, bersih, tidak berserat lepas, dan tidak dapat menutup wajah."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-bermain-cermin-aman",
+   "title": "Bermain dengan Cermin Aman",
+   "summary": "Bayi mengamati wajah sendiri dan wajah orang tua melalui cermin yang kokoh.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "self-care"
+   ],
+   "skills": [
+    "kesadaran diri",
+    "kontak mata",
+    "kosakata tubuh"
+   ],
+   "objectives": [
+    "Mendorong pengamatan wajah dan gerak.",
+    "Mengenalkan kata sederhana tentang anggota tubuh."
+   ],
+   "materials": [
+    {
+     "name": "cermin bayi akrilik yang tidak pecah",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan cermin pada posisi stabil."
+    },
+    {
+     "step": 2,
+     "text": "Tunjuk wajah bayi dan sebutkan namanya."
+    },
+    {
+     "step": 3,
+     "text": "Ajak bayi melihat mata, hidung, dan mulut."
+    }
+   ],
+   "controlOfError": "Pantulan menunjukkan gerakan secara langsung.",
+   "variations": [
+    "Gunakan cermin saat bayi tengkurap dengan pengawasan."
+   ],
+   "readySigns": [
+    "Bayi menatap pantulan dan menyentuh cermin."
+   ],
+   "struggleSigns": [
+    "Bayi berusaha menggigit atau memukul cermin."
+   ],
+   "safetyNotes": [
+    "Gunakan hanya cermin akrilik yang tidak pecah dan jauhkan dari tepi tajam."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mengusap-meja",
+   "title": "Mengusap Meja",
+   "summary": "Bayi meniru gerakan mengusap permukaan dengan kain lembap dan aman.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "meniru",
+    "gerak tangan",
+    "partisipasi"
+   ],
+   "objectives": [
+    "Mengajak bayi ikut dalam kegiatan rumah sederhana.",
+    "Melatih gerakan mengusap terarah."
+   ],
+   "materials": [
+    {
+     "name": "kain lembap kecil dan meja rendah",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 6,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kain lembap di atas meja."
+    },
+    {
+     "step": 2,
+     "text": "Usap permukaan perlahan dari kiri ke kanan."
+    },
+    {
+     "step": 3,
+     "text": "Berikan kain dan biarkan bayi meniru."
+    }
+   ],
+   "controlOfError": "Bekas air menunjukkan area yang sudah diusap.",
+   "variations": [
+    "Gunakan kain kering untuk permukaan lain."
+   ],
+   "readySigns": [
+    "Bayi meniru gerakan maju-mundur dengan tangannya."
+   ],
+   "struggleSigns": [
+    "Bayi meremas kain dan memasukkannya ke mulut."
+   ],
+   "safetyNotes": [
+    "Gunakan air saja tanpa pembersih, peras kain, dan jaga meja tetap stabil."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mengenal-besar-kecil",
+   "title": "Mengenal Besar dan Kecil",
+   "summary": "Bayi membandingkan dua benda dengan ukuran berbeda melalui pengamatan dan sentuhan.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "math",
+    "sensorial"
+   ],
+   "skills": [
+    "ukuran",
+    "membandingkan",
+    "kosakata"
+   ],
+   "objectives": [
+    "Mengenalkan perbedaan ukuran secara konkret.",
+    "Menghubungkan kata dengan benda."
+   ],
+   "materials": [
+    {
+     "name": "dua bola kain dengan ukuran berbeda",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan bola besar dan kecil berdampingan."
+    },
+    {
+     "step": 2,
+     "text": "Tunjuk satu per satu dan sebutkan ukurannya."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi memegang keduanya."
+    }
+   ],
+   "controlOfError": "Perbedaan ukuran terlihat dan terasa.",
+   "variations": [
+    "Bandingkan dua cangkir yang berbeda ukuran."
+   ],
+   "readySigns": [
+    "Bayi dapat meraih salah satu benda."
+   ],
+   "struggleSigns": [
+    "Bayi cepat kehilangan minat pada benda yang sama."
+   ],
+   "safetyNotes": [
+    "Kedua benda harus lebih besar dari mulut dan tidak memiliki bagian kecil."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mengamati-daun-di-luar",
+   "title": "Mengamati Daun di Luar",
+   "summary": "Bayi melihat, menyentuh, dan mendengar cerita singkat tentang daun di tempat aman.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "outdoor",
+    "culture",
+    "sensorial"
+   ],
+   "skills": [
+    "pengamatan alam",
+    "tekstur",
+    "perhatian"
+   ],
+   "objectives": [
+    "Mengenalkan unsur alam secara langsung.",
+    "Memperkaya kosakata melalui pengalaman nyata."
+   ],
+   "materials": [
+    {
+     "name": "selimut dan daun besar yang bersih",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Bentangkan selimut di area teduh yang bersih."
+    },
+    {
+     "step": 2,
+     "text": "Tunjukkan daun dan sebutkan warnanya."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi menyentuh daun sambil didampingi."
+    }
+   ],
+   "controlOfError": "Daun memberi bentuk dan tekstur nyata untuk diamati.",
+   "variations": [
+    "Amati rumput atau bunga yang tidak berduri."
+   ],
+   "readySigns": [
+    "Bayi tertarik melihat dan meraih objek alam."
+   ],
+   "struggleSigns": [
+    "Bayi terlalu lelah atau terganggu oleh lingkungan."
+   ],
+   "safetyNotes": [
+    "Pastikan area bebas tanaman beracun, serangga, kotoran, dan jangan biarkan bayi memasukkan daun ke mulut."
+   ],
+   "references": [
+    {
+     "title": "WHO Child Development",
+     "url": "https://www.who.int/health-topics/child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-membuka-laci-aman",
+   "title": "Membuka Laci Aman",
+   "summary": "Bayi mengeksplorasi laci rendah yang dikosongkan dari benda berbahaya.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "practical-life",
+    "movement"
+   ],
+   "skills": [
+    "menarik",
+    "pemecahan masalah",
+    "kemandirian"
+   ],
+   "objectives": [
+    "Memberi pengalaman membuka ruang sederhana.",
+    "Melatih gerakan menarik dengan kontrol."
+   ],
+   "materials": [
+    {
+     "name": "laci rendah kosong dengan pembatas pengaman",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 15,
+   "durationMinutes": 8,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan laci kosong dan tidak dapat menutup keras."
+    },
+    {
+     "step": 2,
+     "text": "Buka laci sedikit dan tunjukkan gerak menarik."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi mencoba dari posisi duduk."
+    }
+   ],
+   "controlOfError": "Laci bergerak ketika pegangan ditarik.",
+   "variations": [
+    "Letakkan kain besar di dalam laci untuk diambil."
+   ],
+   "readySigns": [
+    "Bayi tertarik pada pegangan dan duduk stabil."
+   ],
+   "struggleSigns": [
+    "Jari bayi terjepit atau laci terlalu berat."
+   ],
+   "safetyNotes": [
+    "Gunakan pengaman anti-jepit dan jangkar perabot; jauhkan semua benda kecil, obat, dan bahan pembersih."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mengembalikan-benda-ke-keranjang",
+   "title": "Mengembalikan Benda",
+   "summary": "Bayi diajak memasukkan kembali benda besar ke keranjang setelah bermain.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "grace-courtesy",
+    "practical-life"
+   ],
+   "skills": [
+    "mengikuti rutinitas",
+    "melepas",
+    "kemandirian awal"
+   ],
+   "objectives": [
+    "Mengenalkan urutan selesai bermain.",
+    "Melatih tindakan memasukkan dan melepas."
+   ],
+   "materials": [
+    {
+     "name": "keranjang rendah dan tiga mainan besar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan satu mainan dan keranjang."
+    },
+    {
+     "step": 2,
+     "text": "Masukkan mainan sambil mengatakan selesai."
+    },
+    {
+     "step": 3,
+     "text": "Tawarkan mainan lain untuk bayi masukkan."
+    }
+   ],
+   "controlOfError": "Keranjang menjadi tempat yang terlihat untuk menyimpan mainan.",
+   "variations": [
+    "Gunakan lagu pendek sebagai tanda beres."
+   ],
+   "readySigns": [
+    "Bayi dapat melepas benda saat diberi contoh."
+   ],
+   "struggleSigns": [
+    "Bayi mulai lelah atau melempar benda jauh."
+   ],
+   "safetyNotes": [
+    "Gunakan keranjang ringan yang tidak mudah terbalik dan semua mainan harus berukuran aman."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-bermain-cilukba",
+   "title": "Cilukba dengan Kain",
+   "summary": "Bayi mengikuti wajah yang muncul dan hilang di balik kain tipis secara perlahan.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "permanensi benda",
+    "menunggu",
+    "interaksi"
+   ],
+   "objectives": [
+    "Membangun perhatian pada urutan muncul dan hilang.",
+    "Mendorong interaksi sosial dua arah."
+   ],
+   "materials": [
+    {
+     "name": "kain tipis besar dan wajah orang tua",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tutup sebagian wajah dengan kain."
+    },
+    {
+     "step": 2,
+     "text": "Buka kain sambil berkata cilukba."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu bayi menarik kain atau menunggu kemunculan."
+    }
+   ],
+   "controlOfError": "Wajah kembali terlihat saat kain dibuka.",
+   "variations": [
+    "Sembunyikan mainan besar di balik kain."
+   ],
+   "readySigns": [
+    "Bayi menatap kain dan menunggu wajah muncul."
+   ],
+   "struggleSigns": [
+    "Bayi takut atau kain menutup wajah terlalu lama."
+   ],
+   "safetyNotes": [
+    "Jangan menutup wajah bayi, gunakan kain tipis hanya sebentar, dan tetap berada sangat dekat."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "9-12m-mendengar-suara-hujan",
+   "title": "Mendengar Suara Hujan",
+   "summary": "Bayi mendengarkan suara hujan dari tempat terlindung sambil melihat lingkungan sekitar.",
+   "ageBands": [
+    "9-12m"
+   ],
+   "areas": [
+    "outdoor",
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "mendengar",
+    "pengamatan alam",
+    "kosakata"
+   ],
+   "objectives": [
+    "Mengarahkan perhatian pada suara lingkungan.",
+    "Mengenalkan kata hujan dan basah."
+   ],
+   "materials": [
+    {
+     "name": "tempat duduk aman di area terlindung",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk bersama bayi di tempat yang kering."
+    },
+    {
+     "step": 2,
+     "text": "Diam sejenak dan dengarkan suara hujan."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan hujan, air, dan suara secara sederhana."
+    }
+   ],
+   "controlOfError": "Suara hujan nyata menjadi fokus pendengaran.",
+   "variations": [
+    "Dengarkan suara angin atau burung pada hari cerah."
+   ],
+   "readySigns": [
+    "Bayi berhenti dan memperhatikan suara sekitar."
+   ],
+   "struggleSigns": [
+    "Bayi kedinginan, takut, atau terganggu suara keras."
+   ],
+   "safetyNotes": [
+    "Tetap di tempat kering, hindari petir dan genangan, serta jaga bayi tetap hangat dan dalam pelukan bila perlu."
+   ],
+   "references": [
+    {
+     "title": "WHO Child Development",
+     "url": "https://www.who.int/health-topics/child-development"
+    }
+   ],
+   "materialIds": []
+  }
+ ],
+ "milestones": [
+  {
+   "id": "mile-912m-berdiri-berpegangan",
+   "title": "Berdiri sambil berpegangan",
+   "ageBand": "9-12m",
+   "domain": "motorik-kasar",
+   "description": "Banyak anak mulai menarik dirinya untuk berdiri dengan bantuan meja atau sofa, lalu menahan diri berdiri beberapa saat tanpa bantuan orang dewasa.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [
+    "Bila mendekati 12 bulan si kecil sama sekali belum bisa menopang berat badannya dengan kaki saat ditopang berdiri, tanyakan pada dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones 12 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "HealthyChildren - Developmental Milestones",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-rangkak-jalan-dibantu",
+   "title": "Merangkak dan berjalan dibantu",
+   "ageBand": "9-12m",
+   "domain": "motorik-kasar",
+   "description": "Umumnya bayi mengembangkan caranya sendiri untuk berpindah tempat, misalnya merangkak, merangkak gaya kodok, atau berjalan sambil dipegang tangan oleh orang tua.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [
+    "Bila si kecil hanya menggunakan satu sisi badan atau tampak kaku saat bergerak, sebaiknya konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "NHS - Baby development 9-12 months",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/9-12-months/"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-pincer-grasp",
+   "title": "Menggenggam dengan ujung jari",
+   "ageBand": "9-12m",
+   "domain": "motorik-halus",
+   "description": "Kemampuan mengambil benda kecil dengan ujung ibu jari dan telunjuk makin matang, sehingga si kecil bisa memungut remah atau kue kecil secara mandiri.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [
+    "Bila usia 12 bulan si kecil masih selalu menyerap benda dengan seluruh telapak tangan dan tidak pernah memungut dengan dua jari, bahas dengan dokter saat kunjungan berikutnya"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "Zero to Three - Baby Development",
+     "url": "https://www.zerotothree.org/resource/learning-to-play-and-playing-to-learn-getting-ready-for-school/"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-kata-pertama",
+   "title": "Mengucap kata pertama",
+   "ageBand": "9-12m",
+   "domain": "bahasa",
+   "description": "Sekitar akhir tahun pertama, banyak anak mulai mengucapkan kata sederhana seperti nama orang tua atau nama makanan dengan makna yang jelas.",
+   "typicalFromMonths": 10,
+   "typicalToMonths": 12,
+   "redFlags": [
+    "Bila sebelum 12 bulan si kecil tidak pernah bersuara, menggumam, atau memberi reaksi pada suara, konsultasikan ke dokter",
+    "Bila si kecil tidak merespons saat namanya dipanggil, bicarakan dengan dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones - 12 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "HealthyChildren - Language Development",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-paham-instruksi-sederhana",
+   "title": "Mengerti perintah sederhana",
+   "ageBand": "9-12m",
+   "domain": "bahasa",
+   "description": "Si kecil mulai memahami kata-kata percakapan sehari-hari dan bisa merespons permintaan ringkas, misalnya berhenti saat dipanggil 'jangan' atau mengulurkan tangan saat diminta.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "Zero to Three - Language",
+     "url": "https://www.zerotothree.org/resource/learning-to-play-and-playing-to-learn-getting-ready-for-school/"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-menunjuk-benda",
+   "title": "Menunjuk dengan jari",
+   "ageBand": "9-12m",
+   "domain": "kognitif",
+   "description": "Menunjuk adalah cara awal si kecil berkomunikasi: ia mencoba menarik perhatianmu pada benda yang dilihat, didengar, atau diinginkannya.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [
+    "Bila pada usia 12 bulan si kecil tidak pernah menunjuk, mengejar benda yang jatuh, atau tidak tertarik pada permainan bergantian, konsultasikan ke dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones - 12 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-objek-tersembunyi",
+   "title": "Mencari benda yang disembunyikan",
+   "ageBand": "9-12m",
+   "domain": "kognitif",
+   "description": "Sekitar bulan-bulan ini si kecil makin paham bahwa benda yang tahu tidak ia lihat tetap ada, jadi ia senang mencari mainan yang kamu sembunyikan di bawah selimut.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 11,
+   "redFlags": [],
+   "references": [
+    {
+     "title": "HealthyChildren - Cognitive Development",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"
+    },
+    {
+     "title": "NHS - Baby development",
+     "url": "https://www.nhs.uk/conditions/baby/babys-development/9-12-months/"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-menirukan-orang",
+   "title": "Menirukan gerakan dan suara",
+   "ageBand": "9-12m",
+   "domain": "kognitif",
+   "description": "Si kecil gemar meniru yang ia lihat dan dengar, misalnya tepuk tangan, lambaian tangan, atau bunyi sederhana yang kamu buat berulang-ulang.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "Montessori Notebook - Montessori Ideas for 9-12 months",
+     "url": "https://www.themontessorinotebook.com/montessori-baby-mobiles/"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-kecemasan-orang-asing",
+   "title": "Nangis saat melihat orang asing",
+   "ageBand": "9-12m",
+   "domain": "sosial-emosional",
+   "description": "Cemas saat berpisah dari orang tua atau ragu pada orang asing adalah respons yang sangat umum di usia ini dan justru menandakan ikatan yang kuat.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [],
+   "references": [
+    {
+     "title": "HealthyChildren - Emotional Development",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"
+    },
+    {
+     "title": "Zero to Three - Social Emotional",
+     "url": "https://www.zerotothree.org/resource/learning-to-play-and-playing-to-learn-getting-ready-for-school/"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-main-interaktif",
+   "title": "Bermain lempar-terima sederhana",
+   "ageBand": "9-12m",
+   "domain": "sosial-emosional",
+   "description": "Si kecil mulai menikmati permainan yang melibatkan giliran, seperti melempar bola atau menyerahkan mainan, karena ia memahami bahwa interaksi ini menyenangkan.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [],
+   "references": [
+    {
+     "title": "CDC Milestones - 12 Bulan",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ]
+  },
+  {
+   "id": "mile-912m-makan-mandiri",
+   "title": "Mencoba makan dan minum sendiri",
+   "ageBand": "9-12m",
+   "domain": "self-help",
+   "description": "Umumnya di rentang usia ini si kecil senang menggenggam sendok atau makanan lembut dengan tangannya sendiri, meski hasilnya pasti berantakan dan itu bagian dari belajar.",
+   "typicalFromMonths": 9,
+   "typicalToMonths": 12,
+   "redFlags": [
+    "Bila si kecil menolak keras semua makanan bertekstur atau tidak bisa sama sekali masukan makanan ke mulutnya di akhir usia ini, tanyakan pada dokter"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "HealthyChildren - Feeding",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/pages/default.aspx"
+    }
+   ]
+  }
+ ]
+}

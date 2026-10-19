@@ -1,0 +1,887 @@
+[
+  {
+    "term": "ritme harian",
+    "termEn": "Daily Rhythm",
+    "definition": "Pola urutan kegiatan yang berulang setiap hari, misalnya bangun, makan, bermain, tidur siang, dan tidur malam. Ritme yang cukup konsisten membantu anak kecil merasa aman karena ia bisa menebak apa yang akan terjadi berikutnya, tanpa harus selalu sama persis menit demi menit.",
+    "relatedTerms": [
+      "bedtime routine",
+      "mealtime routine",
+      "transition"
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "merawat diri",
+    "termEn": "Self-Care",
+    "definition": "Keterampilan anak mengurus kebutuhan dasarnya sendiri, seperti makan, minum, mencuci tangan, berpakaian, dan ke toilet. Orang tua bisa mendukung dengan menyiapkan alat yang mudah dijangkau dan memberi waktu anak mencoba, bukan langsung mengerjakan semuanya untuknya.",
+    "relatedTerms": [
+      "independence",
+      "toilet learning",
+      "dressing frame"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "belajar toilet",
+    "termEn": "Toilet Learning",
+    "definition": "Proses anak memahami sinyal tubuhnya dan belajar menggunakan toilet dengan bantuan yang makin lama makin sedikit. Setiap anak punya waktu siap yang berbeda; tanda siap umumnya muncul ketika anak bisa duduk stabil, tertarik pada toilet, dan mulai tidak nyaman memakai popok basah.",
+    "relatedTerms": [
+      "self-care",
+      "independence",
+      "daily rhythm"
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      },
+      {
+        "title": "NHS - Baby and toddler health",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "term": "rutinitas makan",
+    "termEn": "Mealtime Routine",
+    "definition": "Kebiasaan yang mengelilingi waktu makan, seperti duduk bersama, menyiapkan alat makan, mencoba makanan baru, dan merapikan meja. Rutinitas yang tenang dan tidak terburu-buru biasanya membantu anak lebih menikmati makan dan mengenali rasa lapar serta kenyang.",
+    "relatedTerms": [
+      "daily rhythm",
+      "self-care",
+      "transition"
+    ],
+    "references": [
+      {
+        "title": "WHO - Child health",
+        "url": "https://www.who.int/health-topics/child-health"
+      },
+      {
+        "title": "NHS - Baby and toddler health",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "term": "rutinitas tidur",
+    "termEn": "Bedtime Routine",
+    "definition": "Rangkaian kegiatan singkat dan berulang sebelum tidur, misalnya mandi, memakai piyama, membaca buku, lalu meredupkan lampu. Urutan yang sama setiap malam memberi isyarat kepada anak bahwa waktu tidur akan tiba.",
+    "relatedTerms": [
+      "daily rhythm",
+      "floor bed",
+      "transition"
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      },
+      {
+        "title": "NHS - Baby and toddler health",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "term": "peralihan",
+    "termEn": "Transition",
+    "definition": "Momen berpindah dari satu kegiatan ke kegiatan lain, seperti dari bermain ke mandi atau dari rumah ke tempat bermain. Peralihan sering terasa sulit bagi anak kecil, sehingga memberi pemberitahuan lebih dulu dan menyediakan pilihan sederhana biasanya membantu.",
+    "relatedTerms": [
+      "daily rhythm",
+      "uninterrupted play",
+      "temperament"
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "kasur lantai",
+    "termEn": "Floor Bed",
+    "definition": "Kasur rendah yang diletakkan langsung di lantai agar anak bisa naik dan turun sendiri dengan aman saat hendak tidur atau bangun. Pendekatan ini memberi anak kebebasan bergerak, tetapi tetap memerlukan ruangan yang aman dan pengawasan orang dewasa.",
+    "relatedTerms": [
+      "free movement",
+      "bedtime routine",
+      "yes space"
+    ],
+    "safetyNotes": [
+      "Pastikan kasur tidak berada dekat stopkontak, kabel, atau perabot yang bisa jatuh.",
+      "Periksa celah antara kasur dan dinding agar tubuh anak tidak terselip.",
+      "Gunakan kasur yang padat dan pas, serta tetap dampingi bayi di bawah 12 bulan."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "waktu tengkurap",
+    "termEn": "Tummy Time",
+    "definition": "Waktu singkat ketika bayi dibaringkan tengkurap saat ia bangun dan dalam pengawasan, untuk melatih otot leher, bahu, dan punggung. Mulailah dengan beberapa menit beberapa kali sehari, lalu tambah perlahan sesuai kenyamanan bayi.",
+    "relatedTerms": [
+      "free movement",
+      "gross motor",
+      "crawling"
+    ],
+    "safetyNotes": [
+      "Lakukan hanya saat bayi bangun dan ada orang dewasa yang mengawasi.",
+      "Selalu letakkan bayi tidur telentang, bukan tengkurap.",
+      "Hentikan jika bayi tampak kesulitan bernapas atau sangat rewel."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      },
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      }
+    ]
+  },
+  {
+    "term": "gerak bebas",
+    "termEn": "Free Movement",
+    "definition": "Kesempatan anak bergerak sesuai keinginannya di ruang yang aman, tanpa terlalu banyak dibatasi atau dipindahkan posisinya oleh orang dewasa. Anak diberi waktu untuk berguling, merangkak, duduk, dan berdiri dengan usahanya sendiri.",
+    "relatedTerms": [
+      "yes space",
+      "gross motor",
+      "independence"
+    ],
+    "safetyNotes": [
+      "Siapkan lantai yang bersih dan tidak licin, serta jauhkan benda tajam dan kecil.",
+      "Awasi anak terus-menerus, terutama saat ia mulai berguling atau merangkak.",
+      "Hindari membiarkan bayi bermain di permukaan tinggi seperti kasur dewasa tanpa pengaman."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "ruang aman",
+    "termEn": "Yes Space",
+    "definition": "Area bermain yang sudah diperiksa dan disiapkan sehingga hampir semua benda di dalamnya boleh disentuh dan dijelajahi anak. Dengan begitu, orang tua tidak perlu terus berkata 'jangan', dan anak bisa bergerak lebih leluasa.",
+    "relatedTerms": [
+      "free movement",
+      "prepared environment",
+      "independence"
+    ],
+    "safetyNotes": [
+      "Tutup stopkontak dan singkirkan kabel dari jangkauan anak.",
+      "Pasang pengaman pada lemari, laci, dan pintu yang bisa dibuka anak.",
+      "Jauhkan benda kecil, tali, dan gantungan yang berisiko tersedak atau melilit leher."
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "mengikuti anak",
+    "termEn": "Follow the Child",
+    "definition": "Sikap mengamati minat, tempo, dan kesiapan anak, lalu menyesuaikan dukungan orang dewasa dengan hal tersebut. Ini bukan berarti anak bebas tanpa batas, melainkan orang tua lebih peka terhadap apa yang sedang anak butuhkan dan coba kuasai.",
+    "relatedTerms": [
+      "observation",
+      "child-led learning",
+      "sensitive period"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "term": "persiapan tidak langsung",
+    "termEn": "Indirect Preparation",
+    "definition": "Kegiatan yang tampaknya sederhana, tetapi diam-diam melatih keterampilan yang dibutuhkan untuk tugas yang lebih besar nanti. Misalnya, memindahkan bola dengan sendok melatih koordinasi tangan yang kelak berguna untuk menulis.",
+    "relatedTerms": [
+      "direct aim",
+      "transfer activity",
+      "concrete to abstract"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "tujuan langsung",
+    "termEn": "Direct Aim",
+    "definition": "Keterampilan utama yang ingin dilatih oleh sebuah kegiatan, misalnya memasukkan koin ke celah untuk melatih koordinasi mata dan tangan. Tujuan langsung membantu orang dewasa memilih kegiatan yang sesuai dengan kemampuan anak saat ini.",
+    "relatedTerms": [
+      "indirect preparation",
+      "posting box",
+      "isolation of difficulty"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "presentasi",
+    "termEn": "Presentation",
+    "definition": "Cara orang dewasa memperkenalkan kegiatan kepada anak dengan gerakan lambat, jelas, dan sedikit bicara. Anak diminta mengamati lebih dulu, lalu diberi kesempatan mencoba sendiri tanpa banyak campur tangan.",
+    "relatedTerms": [
+      "three-period lesson",
+      "observation",
+      "montessori guide"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "term": "undangan bermain",
+    "termEn": "Invitation to Play",
+    "definition": "Cara menata bahan atau kegiatan agar anak tertarik mencoba tanpa dipaksa, misalnya menaruh keranjang berisi bola dan wadah di rak rendah. Undangan yang sederhana biasanya lebih menarik daripada tumpukan mainan yang terlalu banyak.",
+    "relatedTerms": [
+      "prepared environment",
+      "uninterrupted play",
+      "accessible shelf"
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "term": "bermain tanpa interupsi",
+    "termEn": "Uninterrupted Play",
+    "definition": "Waktu bermain ketika anak dibiarkan menyelesaikan eksplorasinya sendiri tanpa sering dipotong pertanyaan, pujian, atau arahan. Jeda yang cukup panjang membantu anak masuk ke dalam konsentrasi dan menemukan solusinya sendiri.",
+    "relatedTerms": [
+      "concentration",
+      "work cycle",
+      "child-led learning"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "pembelajaran dipimpin anak",
+    "termEn": "Child-Led Learning",
+    "definition": "Pendekatan ketika anak menjadi pemimpin dalam memilih dan mendalami kegiatan, sementara orang dewasa menyiapkan lingkungan dan batas yang aman. Peran orang tua lebih sebagai pengamat dan pendamping daripada pengatur semua langkah.",
+    "relatedTerms": [
+      "follow the child",
+      "independence",
+      "uninterrupted play"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "term": "bantu aku melakukannya sendiri",
+    "termEn": "Help Me to Do It Myself",
+    "definition": "Prinsip memberi bantuan secukupnya agar anak bisa menyelesaikan tugas dengan kemampuannya sendiri. Alih-alih mengambil alih, orang tua bisa memecah langkah, menunjukkan cara, lalu mundur sedikit demi sedikit.",
+    "relatedTerms": [
+      "independence",
+      "scaffolding",
+      "self-care"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "panduan Montessori",
+    "termEn": "Montessori Guide",
+    "definition": "Sebutan untuk pendidik yang menyiapkan lingkungan, mengamati anak, dan menghadirkan kegiatan secara bertahap. Perannya bukan mengajar di depan kelas, melainkan mendampingi anak belajar melalui pengalaman langsung.",
+    "relatedTerms": [
+      "prepared environment",
+      "observation",
+      "presentation"
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "term": "sudut tenang",
+    "termEn": "Peace Corner",
+    "definition": "Pojok kecil di rumah atau kelas dengan bantal, buku, atau benda menenangkan yang bisa dipakai anak saat butuh jeda. Tempat ini bukan untuk menghukum, melainkan untuk membantu anak mengenali dan mengelola emosinya.",
+    "relatedTerms": [
+      "self-regulation",
+      "temperament",
+      "yes space"
+    ],
+    "safetyNotes": [
+      "Letakkan sudut tenang di area yang tetap terlihat orang dewasa.",
+      "Hindari benda berat, tajam, atau tali panjang di dalamnya.",
+      "Jangan mengunci atau menghalangi anak keluar dari tempat ini."
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "term": "genggaman telapak",
+    "termEn": "Palmar Grasp",
+    "definition": "Cara bayi memegang benda dengan seluruh telapak tangan dan jari-jari yang menggenggam. Genggaman ini umumnya muncul lebih dulu sebelum jari telunjuk dan ibu jari bekerja sama untuk menggenggam benda kecil.",
+    "relatedTerms": [
+      "pincer grasp",
+      "fine motor",
+      "grasping toy"
+    ],
+    "references": [
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "merangkak",
+    "termEn": "Crawling",
+    "definition": "Cara bayi berpindah tempat dengan menggerakkan tangan dan lutut, atau dengan gaya lain seperti merayap. Tidak semua bayi melewati tahap ini dengan cara yang sama, dan variasinya cukup umum selama anak terus menunjukkan kemajuan bergerak.",
+    "relatedTerms": [
+      "gross motor",
+      "cruising",
+      "tummy time"
+    ],
+    "safetyNotes": [
+      "Awasi bayi di tangga dan permukaan tinggi, serta pasang pagar pengaman bila perlu.",
+      "Jauhkan benda kecil dan tajam dari jangkauan bayi yang mulai merangkak.",
+      "Tutup stopkontak dan lindungi sudut perabot yang tajam."
+    ],
+    "references": [
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "berpegangan saat berjalan",
+    "termEn": "Cruising",
+    "definition": "Tahap ketika anak berjalan sambil memegang perabot atau dinding untuk menjaga keseimbangan, sebelum berani melangkah sendiri. Tahap ini biasanya muncul di sekitar akhir tahun pertama, tetapi waktunya bisa berbeda pada setiap anak.",
+    "relatedTerms": [
+      "gross motor",
+      "crawling",
+      "free movement"
+    ],
+    "safetyNotes": [
+      "Pastikan perabot yang dipegangi anak kokoh dan tidak mudah terguling.",
+      "Lindungi sudut meja dan perapian, serta jauhkan kabel yang bisa tersangkut.",
+      "Dampingi anak saat berlatih di lantai yang tidak licin."
+    ],
+    "references": [
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      },
+      {
+        "title": "NHS - Baby and toddler health",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "term": "celoteh",
+    "termEn": "Babbling",
+    "definition": "Suara berulang seperti 'ba-ba' atau 'da-da' yang muncul sebelum kata pertama. Celoteh adalah latihan penting untuk otot bicara dan menjadi cara bayi ikut serta dalam percakapan sejak dini.",
+    "relatedTerms": [
+      "receptive language",
+      "expressive language",
+      "word spurt"
+    ],
+    "references": [
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "ledakan kata",
+    "termEn": "Word Spurt",
+    "definition": "Masa ketika jumlah kata yang dipahami dan diucapkan anak bertambah dengan cepat, sering kali menjelang usia dua tahun. Setiap anak punya tempo berbeda; yang penting adalah adanya kemajuan dan kesempatan bicara bersama setiap hari.",
+    "relatedTerms": [
+      "expressive language",
+      "receptive language",
+      "babbling"
+    ],
+    "references": [
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      },
+      {
+        "title": "NHS - Baby and toddler health",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "term": "kecemasan pada orang asing",
+    "termEn": "Stranger Anxiety",
+    "definition": "Rasa tidak nyaman atau takut yang umumnya muncul pada bayi menjelang akhir tahun pertama saat berhadapan dengan orang yang tidak dikenalnya. Ini adalah bagian dari perkembangan kelekatan, dan biasanya mereda seiring anak merasa aman.",
+    "relatedTerms": [
+      "separation anxiety",
+      "attachment",
+      "temperament"
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "bermain kooperatif",
+    "termEn": "Cooperative Play",
+    "definition": "Tahap bermain ketika anak-anak mulai bermain bersama dengan tujuan atau aturan yang disepakati, bukan hanya bermain di dekat satu sama lain. Kemampuan ini umumnya berkembang setelah usia tiga tahun dan membutuhkan latihan bergiliran serta bernegosiasi.",
+    "relatedTerms": [
+      "parallel play",
+      "social skills",
+      "grace and courtesy"
+    ],
+    "references": [
+      {
+        "title": "CDC - Child Development",
+        "url": "https://www.cdc.gov/child-development/index.html"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "kelekatan",
+    "termEn": "Attachment",
+    "definition": "Ikatan emosional yang terbentuk antara anak dan pengasuh utamanya melalui interaksi yang hangat dan konsisten. Kelekatan yang aman memberi anak rasa percaya untuk menjelajah, karena ia tahu ada tempat kembali yang aman.",
+    "relatedTerms": [
+      "responsive caregiving",
+      "separation anxiety",
+      "serve and return"
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "WHO - Child health",
+        "url": "https://www.who.int/health-topics/child-health"
+      }
+    ]
+  },
+  {
+    "term": "pengasuhan responsif",
+    "termEn": "Responsive Caregiving",
+    "definition": "Cara menanggapi isyarat anak dengan cepat dan sesuai kebutuhannya, misalnya mengangkat bayi saat ia menangis atau membalas senyumnya. Tanggapan yang konsisten membantu anak merasa dipahami dan membangun rasa aman.",
+    "relatedTerms": [
+      "attachment",
+      "serve and return",
+      "observation"
+    ],
+    "references": [
+      {
+        "title": "WHO - Child health",
+        "url": "https://www.who.int/health-topics/child-health"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "skema bermain",
+    "termEn": "Play Schema",
+    "definition": "Pola perilaku bermain yang berulang, seperti memasukkan, menjatuhkan, membungkus, atau memutar benda. Mengenali skema membantu orang tua menyediakan bahan yang sesuai tanpa menganggap pengulangan itu sebagai tingkah yang aneh.",
+    "relatedTerms": [
+      "child-led learning",
+      "symbolic play",
+      "sensitive period"
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "term": "mainan genggam",
+    "termEn": "Grasping Toy",
+    "definition": "Mainan ringan berukuran pas untuk tangan bayi, sering berbentuk bola berongga atau silinder dengan pegangan. Mainan seperti ini mengundang bayi meraih, menggenggam, dan memindahkan benda dari satu tangan ke tangan lain.",
+    "relatedTerms": [
+      "palmar grasp",
+      "fine motor",
+      "rattles"
+    ],
+    "safetyNotes": [
+      "Pilih mainan yang lebih besar dari tabung gulungan toilet agar tidak tersedak.",
+      "Pastikan tidak ada bagian kecil, cat mengelupas, atau tali panjang.",
+      "Awasi bayi selama bermain dan periksa mainan secara berkala."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "mobile Montessori",
+    "termEn": "Montessori Mobile",
+    "definition": "Rangkaian gantungan visual sederhana yang diperkenalkan bertahap kepada bayi, mulai dari bentuk kontras hingga bentuk geometris. Tujuannya memberi sesuatu yang menarik untuk dilihat dan diikuti mata, bukan untuk menstimulasi berlebihan.",
+    "relatedTerms": [
+      "visual tracking",
+      "grasping toy",
+      "sensitive period"
+    ],
+    "safetyNotes": [
+      "Gantungkan mobile jauh di luar jangkauan bayi dan tidak di atas wajahnya.",
+      "Pastikan tali gantungan pendek dan terikat kuat agar tidak melilit leher.",
+      "Lepaskan mobile begitu bayi mulai bisa meraih atau berdiri."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "term": "keranjang harta",
+    "termEn": "Treasure Basket",
+    "definition": "Keranjang berisi aneka benda rumah tangga dengan tekstur, berat, dan bentuk berbeda untuk dijelajahi bayi yang sudah bisa duduk. Benda-benda nyata memberi pengalaman sensoris yang kaya tanpa perlu mainan elektronik.",
+    "relatedTerms": [
+      "sensory integration",
+      "grasping toy",
+      "exploration"
+    ],
+    "safetyNotes": [
+      "Gunakan benda yang lebih besar dari tabung gulungan toilet dan tidak bisa masuk mulut.",
+      "Hindari benda tajam, pecah belah, magnet kecil, baterai, dan tali panjang.",
+      "Dampingi bayi sepanjang waktu dan periksa keranjang sebelum dimainkan."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "term": "kotak memasukkan",
+    "termEn": "Posting Box",
+    "definition": "Kotak dengan lubang dan benda padat yang bisa dimasukkan ke dalamnya, seperti koin kayu atau bola. Kegiatan ini melatih koordinasi mata dan tangan serta pemahaman bahwa benda tetap ada meski tidak terlihat.",
+    "relatedTerms": [
+      "object permanence",
+      "fine motor",
+      "direct aim"
+    ],
+    "safetyNotes": [
+      "Pilih benda yang cukup besar sehingga tidak bisa tertelan atau tersangkut di tenggorokan.",
+      "Periksa apakah tutup kotak bisa terbuka dan melukai jari anak.",
+      "Awasi anak selama bermain, terutama jika ada adik bayi di sekitar."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "gelang susun",
+    "termEn": "Stacking Rings",
+    "definition": "Mainan berupa tiang dengan beberapa gelang berukuran berbeda untuk disusun atau dilepas. Selain melatih koordinasi, mainan ini memberi pengalaman awal tentang urutan ukuran dan konsep besar-kecil.",
+    "relatedTerms": [
+      "fine motor",
+      "hand-eye coordination",
+      "sequencing"
+    ],
+    "safetyNotes": [
+      "Pastikan gelang tidak cukup kecil untuk masuk mulut anak.",
+      "Periksa tiang penyangga agar tidak tajam dan tidak mudah lepas.",
+      "Dampingi anak saat bermain, terutama sebelum usia 18 bulan."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "term": "meronce",
+    "termEn": "Threading",
+    "definition": "Kegiatan memasukkan tali atau benang ke dalam lubang manik, cincin, atau potongan bahan. Mulai dari benda besar dan tali kaku, lalu perlahan beralih ke benda lebih kecil saat keterampilan anak meningkat.",
+    "relatedTerms": [
+      "fine motor",
+      "hand-eye coordination",
+      "indirect preparation"
+    ],
+    "safetyNotes": [
+      "Gunakan manik yang lebih besar dari tabung gulungan toilet dan tali pendek.",
+      "Awasi anak terus-menerus karena tali berisiko melilit leher.",
+      "Hentikan kegiatan jika anak memasukkan manik atau tali ke mulut."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "aktivitas memindahkan",
+    "termEn": "Transfer Activity",
+    "definition": "Kegiatan memindahkan benda dari satu wadah ke wadah lain dengan tangan, sendok, atau penjepit. Mulai dari benda besar, lalu bertahap ke benda kecil untuk melatih ketelitian dan kemandirian.",
+    "relatedTerms": [
+      "indirect preparation",
+      "spooning activity",
+      "fine motor"
+    ],
+    "safetyNotes": [
+      "Pilih benda yang tidak bisa tertelan dan tidak tajam.",
+      "Gunakan wadah yang stabil agar tidak mudah tumpah atau pecah.",
+      "Awasi anak selama kegiatan dan simpan bahan setelah selesai."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "menuang",
+    "termEn": "Pouring Activity",
+    "definition": "Kegiatan memindahkan air, pasir, atau biji-bijian dari satu wadah ke wadah lain, sering dimulai dari menuang air ke gelas. Kegiatan ini melatih koordinasi, konsentrasi, dan kemandirian saat makan atau minum.",
+    "relatedTerms": [
+      "transfer activity",
+      "direct aim",
+      "practical life"
+    ],
+    "safetyNotes": [
+      "Gunakan air yang tidak panas dan wadah yang tidak mudah pecah.",
+      "Letakkan nampan untuk menampung tumpahan agar lantai tidak licin.",
+      "Awasi anak dan segera bersihkan tumpahan air di lantai."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "term": "bingkai berpakaian",
+    "termEn": "Dressing Frame",
+    "definition": "Rangka kayu berisi kain dengan berbagai pengunci, seperti kancing, ritsleting, atau tali, untuk berlatih membuka dan menutup pakaian. Alat ini memisahkan keterampilan berpakaian dari pakaian sungguhan agar anak bisa berlatih dengan tenang.",
+    "relatedTerms": [
+      "self-care",
+      "independence",
+      "fine motor"
+    ],
+    "safetyNotes": [
+      "Periksa kancing dan ritsleting agar tidak lepas dan tertelan.",
+      "Hindari bingkai dengan tali panjang yang bisa melilit leher.",
+      "Dampingi anak dan simpan alat di tempat yang aman setelah digunakan."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "term": "menara pink",
+    "termEn": "Pink Tower",
+    "definition": "Sepuluh kubus kayu berwarna pink dengan ukuran yang berkurang berurutan untuk disusun menjadi menara. Alat ini melatih pengenalan perbedaan ukuran, koordinasi motorik, dan konsentrasi melalui pengalaman langsung.",
+    "relatedTerms": [
+      "sensorial",
+      "isolation of difficulty",
+      "sequencing"
+    ],
+    "safetyNotes": [
+      "Gunakan di lantai atau meja yang rata agar menara tidak mudah jatuh.",
+      "Awasi anak karena kubus besar bisa membentur kaki atau jari.",
+      "Pastikan permukaan kayu halus dan tidak ada bagian yang pecah."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  }
+]

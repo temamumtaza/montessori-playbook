@@ -1,3 +1,153 @@
 [0m
 > build · deepseek-v4.1-flash-free
 [0m
+[0m$ [0mls -la content/parts/ 2>/dev/null | head -30; echo "---"; ls content 2>/dev/null
+total 92
+drwxrwxr-x 2 temamumtaza temamumtaza  4096 Oct 19 19:45 .
+drwxrwxr-x 4 temamumtaza temamumtaza  4096 Oct 19 18:34 ..
+-rw-rw-r-- 1 temamumtaza temamumtaza 67502 Oct 19 19:45 act-3-6m.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 13706 Oct 19 18:35 glossary-1.json
+---
+bundles
+parts
+[0m
+[0m$ [0mmkdir -p content/parts && python3 - <<'PY'
+import json
+
+cdc = {"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}
+nhs = {"title":"NHS - Baby development","url":"https://www.nhs.uk/pregnancy/related-conditions/developmental-check/"}
+hc = {"title":"HealthyChildren.org - Developmental Milestones","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}
+ztt = {"title":"Zero to Three - Development","url":"https://www.zerotothree.org/resources/series/development"}
+who = {"title":"WHO - Child growth standards","url":"https://www.who.int/tools/child-growth-standards"}
+
+data = [
+ {
+  "id":"mile-03m-angkat-kepala-tengkurap",
+  "title":"Mulai mengangkat kepala saat tengkurap",
+  "ageBand":"0-3m",
+  "domain":"motorik-kasar",
+  "description":"Bayi perlahan bisa mengangkat dan menolehkan kepala saat diletakkan tengkurap, melatih otot leher dan punggung.",
+  "typicalFromMonths":1,
+  "typicalToMonths":3,
+  "redFlags":["Kepala tidak bisa terangkat sama sekali pada usia 3 bulan","Leher terasa sangat kaku atau selalu miring ke satu sisi"],
+  "references":[cdc, hc]
+ },
+ {
+  "id":"mile-03m-gerak-lengan-kaki",
+  "title":"Menggerakkan lengan dan kaki dengan aktif",
+  "ageBand":"0-3m",
+  "domain":"motorik-kasar",
+  "description":"Gerakan bayi berubah dari refleks menjadi lebih luwes, dengan tangan dan kaki yang menendang serta mengayun.",
+  "typicalFromMonths":0,
+  "typicalToMonths":3,
+  "redFlags":["Gerakan terasa sangat kaku atau hanya satu sisi tubuh yang bergerak","Tubuh terlalu lemas hingga sulit diangkat"],
+  "references":[cdc, who]
+ },
+ {
+  "id":"mile-03m-menggenggam-jari",
+  "title":"Menggenggam jari atau benda kecil",
+  "ageBand":"0-3m",
+  "domain":"motorik-halus",
+  "description":"Saat telapak tangan disentuh, bayi menggenggam jari orang dewasa atau benda ringan sebagai awal kontrol tangan.",
+  "typicalFromMonths":0,
+  "typicalToMonths":3,
+  "redFlags":["Tangan selalu menggenggam kencang dan sulit dibuka sepanjang waktu","Satu tangan tidak pernah digunakan bergerak"],
+  "references":[cdc, ztt]
+ },
+ {
+  "id":"mile-03m-membuka-menutup-tangan",
+  "title":"Membuka dan menutup tangan",
+  "ageBand":"0-3m",
+  "domain":"motorik-halus",
+  "description":"Genggaman bayi mulai lebih longgar sehingga jari-jari bisa terbuka, melihat, dan menyentuh sekitarnya.",
+  "typicalFromMonths":1,
+  "typicalToMonths":3,
+  "redFlags":["Jari tangan tidak pernah terbuka hingga usia 3 bulan"],
+  "references":[cdc, hc]
+ },
+ {
+  "id":"mile-03m-suara-kooing",
+  "title":"Mengeluarkan suara lembut seperti cooing",
+  "ageBand":"0-3m",
+  "domain":"bahasa",
+  "description":"Selain menangis, bayi mulai mengeluarkan bunyi vokal pendek seperti aaa atau ooo saat merasa nyaman.",
+  "typicalFromMonths":1,
+  "typicalToMonths":3,
+  "redFlags":["Tidak ada suara selain tangisan pada usia 3 bulan","Bayi tidak bereaksi terhadap suara keras"],
+  "references":[cdc, ztt]
+ },
+ {
+  "id":"mile-03m-menangis-komunikasi",
+  "title":"Menangis dengan pola berbeda untuk kebutuhan berbeda",
+  "ageBand":"0-3m",
+  "domain":"bahasa",
+  "description":"Orang tua biasanya mulai mengenali perbedaan tangisan lapar, lelah, atau tidak nyaman sebagai bentuk komunikasi awal.",
+  "typicalFromMonths":0,
+  "typicalToMonths":2,
+  "redFlags":["Tangisan sangat lemah atau tidak ada sama sekali","Tangisan terus-menerus tanpa bisa ditenangkan dan disertai demam"],
+  "references":[nhs, ztt]
+ },
+ {
+  "id":"mile-03m-mengikuti-objek-mata",
+  "title":"Mengikuti benda dengan mata",
+  "ageBand":"0-3m",
+  "domain":"kognitif",
+  "description":"Pandangan bayi mulai mengikuti wajah atau benda yang bergerak perlahan di depannya, tanda perhatian dan penglihatan berkembang.",
+  "typicalFromMonths":1,
+  "typicalToMonths":3,
+  "redFlags":["Mata tidak mengikuti objek sama sekali pada usia 3 bulan","Mata sering tampak menyilang atau tidak fokus setelah beberapa bulan"],
+  "references":[cdc, hc]
+ },
+ {
+  "id":"mile-03m-memperhatikan-wajah",
+  "title":"Memperhatikan wajah orang terdekat",
+  "ageBand":"0-3m",
+  "domain":"kognitif",
+  "description":"Bayi menatap dan mengamati wajah pengasuh, mulai mengenali suara dan raut yang sering dilihatnya.",
+  "typicalFromMonths":0,
+  "typicalToMonths":3,
+  "redFlags":["Tidak pernah menatap wajah atau mata orang dewasa","Tidak menunjukkan reaksi saat diajak bicara"],
+  "references":[cdc, ztt]
+ },
+ {
+  "id":"mile-03m-senyum-sosial",
+  "title":"Tersenyum sebagai respons sosial",
+  "ageBand":"0-3m",
+  "domain":"sosial-emosional",
+  "description":"Sekitar usia 6-8 minggu, banyak bayi mulai tersenyum saat melihat wajah atau mendengar suara hangat, bukan hanya saat tidur.",
+  "typicalFromMonths":2,
+  "typicalToMonths":3,
+  "redFlags":["Tidak pernah tersenyum sebagai respons pada usia 3 bulan","Sangat sulit ditenangkan atau tampak tidak nyaman hampir sepanjang waktu"],
+  "references":[cdc, nhs]
+ },
+ {
+  "id":"mile-03m-tenang-saat-digendong",
+  "title":"Tenang saat digendong dan diajak bicara",
+  "ageBand":"0-3m",
+  "domain":"sosial-emosional",
+  "description":"Sentuhan, gendongan, dan suara tenang umumnya membantu bayi merasa aman dan mengurangi rewel.",
+  "typicalFromMonths":0,
+  "typicalToMonths":3,
+  "redFlags":["Tidak tenang sama sekali dengan sentuhan atau gendongan","Menangis histeris berkepanjangan yang sulit dihentikan"],
+  "references":[ztt, nhs]
+ },
+ {
+  "id":"mile-03m-refleks-menghisap",
+  "title":"Menghisap dengan refleks saat menyusu",
+  "ageBand":"0-3m",
+  "domain":"self-help",
+  "description":"Bayi menghisap puting atau jari secara refleks untuk makan dan menenangkan diri, lalu mulai mengatur ritme menyusu.",
+  "typicalFromMonths":0,
+  "typicalToMonths":3,
+  "redFlags":["Sulit menempel dan menyusu secara konsisten","Berat badan tidak naik sesuai anjuran dokter"],
+  "references":[who, nhs]
+ }
+]
+
+with open("content/parts/mile-0-3m.json","w",encoding="utf-8") as f:
+    json.dump(data,f,ensure_ascii=False,indent=2)
+PY
+python3 -c "import json;d=json.load(open('content/parts/mile-0-3m.json'));print('OK',len(d))"
+OK 11
+[0m
+DONE mile-0-3m

@@ -1,0 +1,843 @@
+[
+  {
+    "id": "cermin-bayi-aman",
+    "name": "Cermin bayi dengan bingkai lembut",
+    "purpose": "Memberi bayi kesempatan melihat wajah dan gerakan tubuhnya, mendukung rasa ingin tahu dan kesadaran diri sejak awal.",
+    "ageBands": [
+      "0-3m",
+      "3-6m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Pilih cermin akrilik atau cermin dengan bingkai kain yang tidak mudah pecah.",
+    "diy": false,
+    "safetyNotes": [
+      "Gunakan cermin akrilik atau cermin yang terpasang kuat; hindari kaca tipis yang mudah pecah.",
+      "Letakkan di luar jangkauan tendangan bayi dan awasi saat bayi bermain telentang.",
+      "Pastikan bingkai tidak memiliki bagian tajam atau cat yang mengelupas."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Ages & Stages: Baby",
+        "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "kartu-kontras-tinggi",
+    "name": "Kartu kontras tinggi hitam-putih",
+    "purpose": "Membantu bayi berlatih fokus dan mengikuti pola sederhana melalui gambar kontras yang mudah dilihat.",
+    "ageBands": [
+      "0-3m",
+      "3-6m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Bisa dibuat sendiri dari karton putih dan pola hitam tebal.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan kartu berbahan tebal tanpa laminasi tajam dan jangan letakkan di dalam tempat tidur bayi.",
+      "Tunjukkan dari jarak sekitar 20-30 cm sambil diawasi; hentikan bila bayi tampak rewel.",
+      "Pastikan tinta tidak berbau menyengat dan tidak mudah terkelupas."
+    ],
+    "references": [
+      {
+        "title": "CDC - Positive Parenting: Infants",
+        "url": "https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/infants.html"
+      },
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "keranjang-sensori-kain",
+    "name": "Keranjang sensori kain dan benda aman",
+    "purpose": "Mengenalkan berbagai tekstur, bunyi, dan bentuk lewat benda sehari-hari yang aman untuk dipegang dan dijelajahi.",
+    "ageBands": [
+      "3-6m",
+      "6-9m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Cukup gunakan keranjang rendah dan benda rumah yang sudah aman.",
+    "diy": true,
+    "safetyNotes": [
+      "Pilih benda yang lebih besar dari tabung gulungan tisu toilet agar tidak bisa tertelan.",
+      "Hindari benda dengan tali, karet gelang, baterai kecil, atau bagian yang mudah lepas.",
+      "Awasi bayi sepanjang waktu dan periksa keranjang sebelum dimainkan."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "Zero to Three - Play",
+        "url": "https://www.zerotothree.org/topics/play/"
+      }
+    ]
+  },
+  {
+    "id": "bola-gulir-bertekstur",
+    "name": "Bola gulir bertekstur",
+    "purpose": "Mendorong bayi meraih, mengikuti gerakan, dan merasakan tekstur berbeda saat bola menggelinding.",
+    "ageBands": [
+      "3-6m",
+      "6-9m"
+    ],
+    "budget": "rendah",
+    "diy": false,
+    "safetyNotes": [
+      "Pastikan bola cukup besar untuk digenggam dan tidak muat di mulut bayi.",
+      "Mainkan di area beralas empuk agar bola tidak memantul keras ke wajah bayi.",
+      "Awasi saat bayi mendorong bola agar tidak terjatuh saat berusaha mengejarnya."
+    ],
+    "references": [
+      {
+        "title": "CDC - Positive Parenting: Infants",
+        "url": "https://www.cdc.gov/ncbddd/childdevelopment/positiveparenting/infants.html"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages: Baby",
+        "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "object-permanence-box",
+    "name": "Kotak permanensi objek",
+    "purpose": "Melatih pemahaman bahwa benda tetap ada meski tidak terlihat, melalui permainan memasukkan bola ke lubang dan menemukannya kembali.",
+    "ageBands": [
+      "6-9m",
+      "9-12m"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kotak kayu dengan lubang dan bola besar yang aman.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan bola kayu berukuran lebih besar dari mulut bayi dan periksa apakah catnya aman.",
+      "Pastikan lubang kotak tidak menjepit jari dan tutupnya tidak bisa terlepas menjadi bagian kecil.",
+      "Dudukkan bayi di lantai beralas dan awasi selama bermain."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "cincin-stacking",
+    "name": "Cincin susun bertingkat",
+    "purpose": "Melatih koordinasi tangan, kontrol gerakan, dan pemahaman urutan ukuran saat anak menyusun cincin.",
+    "ageBands": [
+      "9-12m",
+      "12-18m"
+    ],
+    "budget": "rendah",
+    "diy": false,
+    "safetyNotes": [
+      "Pilih cincin kayu atau plastik tebal tanpa bagian kecil yang bisa lepas.",
+      "Pastikan tiang penyangga tidak tajam dan tidak terlalu tinggi untuk anak yang baru berdiri.",
+      "Awasi anak agar tidak mengayunkan mainan ke wajahnya."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Ages & Stages: Baby",
+        "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+      },
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      }
+    ]
+  },
+  {
+    "id": "gelas-nesting",
+    "name": "Gelas bertingkat untuk disusun",
+    "purpose": "Mengajak anak membandingkan ukuran, memasukkan, dan mengeluarkan gelas untuk melatih koordinasi serta pemahaman ruang.",
+    "ageBands": [
+      "12-18m"
+    ],
+    "budget": "rendah",
+    "diy": false,
+    "safetyNotes": [
+      "Gunakan gelas plastik atau kayu tanpa retak dan tanpa tepi tajam.",
+      "Periksa apakah gelas bisa tersangkut di mulut anak; pilih ukuran yang tidak muat ditelan.",
+      "Mainkan di lantai dan awasi agar anak tidak memukulkan gelas ke kepala."
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages: Toddler",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "kotak-posting-bentuk",
+    "name": "Kotak posting bentuk sederhana",
+    "purpose": "Melatih pencocokan bentuk dan koordinasi mata-tangan lewat kegiatan memasukkan keping ke lubang yang sesuai.",
+    "ageBands": [
+      "12-18m"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kotak kardus tebal dengan keping kayu besar.",
+    "diy": true,
+    "safetyNotes": [
+      "Pilih keping yang lebih besar dari mulut anak dan tidak bisa terlepas dari kotak.",
+      "Pastikan tepi lubang halus dan tidak menjepit jari.",
+      "Awasi anak, terutama bila kotak memiliki tutup yang bisa terbuka."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "id": "kotak-koin",
+    "name": "Kotak koin dengan slot",
+    "purpose": "Melatih ketepatan gerak jari dan kesabaran saat anak memasukkan koin ke celah sempit, lalu membukanya kembali.",
+    "ageBands": [
+      "12-18m",
+      "18-24m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Gunakan koin kayu besar dan kotak dengan tutup yang mudah dibuka orang dewasa.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan koin kayu atau plastik besar yang tidak muat di mulut; jangan gunakan uang logam asli.",
+      "Pastikan tutup kotak mudah dibuka orang dewasa tetapi tidak mudah lepas sendiri.",
+      "Awasi terus dan hitung koin sebelum serta sesudah bermain."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "silinder-bertombol",
+    "name": "Silinder bertombol",
+    "purpose": "Membantu anak mengenali perbedaan ukuran dan melatih jari telunjuk serta ibu jari saat memasukkan silinder ke lubangnya.",
+    "ageBands": [
+      "12-18m"
+    ],
+    "budget": "tinggi",
+    "buyHint": "Cari set kayu dengan tombol besar, cat aman, dan lubang yang tidak tajam.",
+    "diy": false,
+    "safetyNotes": [
+      "Gunakan set dengan tombol yang terpasang kuat dan tidak bisa dilepas menjadi bagian kecil.",
+      "Periksa permukaan kayu dari serpihan atau retak sebelum dipakai.",
+      "Awasi anak dan simpan set di tempat yang tidak terjangkau saat tidak digunakan."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "id": "set-menuang",
+    "name": "Set menuang air sederhana",
+    "purpose": "Melatih koordinasi tangan dan konsentrasi saat anak menuang air dari satu wadah kecil ke wadah lain.",
+    "ageBands": [
+      "12-18m",
+      "18-24m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Gunakan pitcher kecil dan gelas plastik atau logam ringan.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan wadah plastik atau logam ringan, bukan kaca, untuk anak usia ini.",
+      "Batasi jumlah air agar tidak terlalu berat dan mudah tumpah.",
+      "Letakkan nampan penampung dan awasi anak agar tidak minum air bermain."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "set-menyendok",
+    "name": "Set menyendok benda kecil",
+    "purpose": "Melatih pegangan sendok, kontrol pergelangan tangan, dan pemindahan benda dari satu mangkuk ke mangkuk lain.",
+    "ageBands": [
+      "12-18m",
+      "18-24m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Siapkan dua mangkuk ringan, sendok tumpul, dan benda besar yang aman.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan benda yang lebih besar dari tabung gulungan tisu toilet dan tidak mudah tertelan.",
+      "Pilih sendok dengan tepi tumpul dan mangkuk yang tidak mudah pecah.",
+      "Awasi anak agar tidak memasukkan benda mainan ke mulut."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "id": "wadah-buka-tutup",
+    "name": "Kumpulan wadah buka-tutup",
+    "purpose": "Melatih kekuatan jari dan pemecahan masalah saat anak membuka serta menutup berbagai jenis wadah.",
+    "ageBands": [
+      "12-18m",
+      "18-24m"
+    ],
+    "budget": "rendah",
+    "buyHint": "Gunakan wadah makanan bekas yang bersih dengan tutup berbeda jenis.",
+    "diy": true,
+    "safetyNotes": [
+      "Hindari wadah dari kaca, kaleng tajam, atau tutup kecil yang bisa tertelan.",
+      "Pastikan tutup tidak menutup rapat sampai menyulitkan anak bernapas; pilih wadah yang aman.",
+      "Awasi anak dan buang wadah yang retak atau berbau."
+    ],
+    "references": [
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      },
+      {
+        "title": "HealthyChildren.org - Ages & Stages: Toddler",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "dressing-frame-kancing",
+    "name": "Bingkai latihan mengancing",
+    "purpose": "Memberi anak kesempatan berlatih membuka dan mengancingkan kancing besar sebagai persiapan berpakaian mandiri.",
+    "ageBands": [
+      "18-24m",
+      "2-3y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kain tebal dan kancing besar yang dijahit kuat.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan kancing besar yang dijahit kuat dan tidak mudah lepas.",
+      "Pastikan kain tidak memiliki benang panjang yang bisa melilit jari atau leher.",
+      "Awasi anak agar kancing tidak dimasukkan ke mulut."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "id": "set-menjepit",
+    "name": "Set menjepit dengan penjepit",
+    "purpose": "Melatih kekuatan jari dan koordinasi saat anak memindahkan benda menggunakan penjepit besar.",
+    "ageBands": [
+      "18-24m",
+      "2-3y"
+    ],
+    "budget": "rendah",
+    "buyHint": "Cukup gunakan penjepit plastik besar dan pom-pom atau bola kain.",
+    "diy": true,
+    "safetyNotes": [
+      "Pilih penjepit plastik atau kayu dengan pegas ringan agar tidak menjepit kulit.",
+      "Gunakan benda besar dan ringan yang tidak mudah pecah.",
+      "Awasi anak dan simpan penjepit di luar jangkauan saat selesai."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "meronce-manik",
+    "name": "Meronce manik besar",
+    "purpose": "Melatih koordinasi mata-tangan dan kesabaran saat anak memasukkan manik ke tali satu per satu.",
+    "ageBands": [
+      "2-3y"
+    ],
+    "budget": "rendah",
+    "diy": false,
+    "safetyNotes": [
+      "Gunakan manik yang lebih besar dari tabung gulungan tisu toilet dan tali pendek agar tidak melilit leher.",
+      "Awasi anak sepanjang kegiatan; jangan tinggalkan manik kecil di lantai.",
+      "Simpan tali dan manik di wadah tertutup setelah bermain."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "CDC - Safe Child",
+        "url": "https://www.cdc.gov/child-development/"
+      }
+    ]
+  },
+  {
+    "id": "dressing-frame-resleting",
+    "name": "Bingkai latihan resleting",
+    "purpose": "Melatih jari menarik dan menutup resleting besar, keterampilan yang sering dibutuhkan saat berpakaian.",
+    "ageBands": [
+      "2-3y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari jaket bekas dengan resleting besar.",
+    "diy": true,
+    "safetyNotes": [
+      "Pilih resleting besar dengan tarikan yang mudah dipegang dan tidak tajam.",
+      "Periksa ujung resleting agar tidak melukai jari atau wajah.",
+      "Awasi anak dan hindari kain dengan tali panjang."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "id": "papan-kunci",
+    "name": "Papan kunci dan kait",
+    "purpose": "Mengajak anak mencoba berbagai cara membuka dan menutup kunci sederhana untuk melatih keterampilan tangan.",
+    "ageBands": [
+      "2-3y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Pilih papan kayu dengan kunci, kait, dan slot yang halus serta tanpa bagian berkarat.",
+    "diy": false,
+    "safetyNotes": [
+      "Pastikan papan tidak memiliki bagian tajam, kunci berkarat, atau sekrup longgar.",
+      "Hindari kait yang bisa menjepit jari; periksa gerakannya sebelum diberikan.",
+      "Awasi anak karena beberapa kunci mungkin berat saat dilepas."
+    ],
+    "references": [
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      },
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "id": "kartu-menjahit",
+    "name": "Kartu menjahit sederhana",
+    "purpose": "Melatih kontrol tangan dan urutan gerak saat anak memasukkan tali melalui lubang pada kartu.",
+    "ageBands": [
+      "2-3y"
+    ],
+    "budget": "rendah",
+    "buyHint": "Buat sendiri dari karton tebal, tali sepatu pendek, dan lubang besar.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan tali pendek dan tebal agar tidak melilit leher; hindari jarum logam tajam.",
+      "Buat lubang cukup besar dan halus agar tali mudah lewat tanpa menjepit jari.",
+      "Awasi anak dan simpan tali di tempat aman setelah bermain."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "Zero to Three - Resources",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "adonan-main",
+    "name": "Adonan main buatan rumah",
+    "purpose": "Menguatkan otot tangan dan mendorong kreativitas lewat kegiatan meremas, membentuk, dan memotong adonan.",
+    "ageBands": [
+      "2-3y",
+      "3-4y"
+    ],
+    "budget": "rendah",
+    "buyHint": "Cukup tepung, air, garam, dan minyak sayur untuk membuat sendiri.",
+    "diy": true,
+    "safetyNotes": [
+      "Awasi anak karena adonan bukan makanan dan bisa tersedak bila dimakan.",
+      "Hindari menambahkan parfum atau pewarna yang tidak food-grade; cuci tangan sebelum dan sesudah bermain.",
+      "Buat adonan dalam jumlah kecil dan simpan di wadah tertutup."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "Zero to Three - Play",
+        "url": "https://www.zerotothree.org/topics/play/"
+      }
+    ]
+  },
+  {
+    "id": "silinder-tanpa-tombol",
+    "name": "Silinder tanpa tombol",
+    "purpose": "Melatih pengamatan ukuran dan koordinasi saat anak memasukkan silinder tanpa pegangan ke lubang yang tepat.",
+    "ageBands": [
+      "2-3y",
+      "3-4y"
+    ],
+    "budget": "tinggi",
+    "buyHint": "Cari set kayu dengan empat blok warna berbeda dan permukaan halus.",
+    "diy": false,
+    "safetyNotes": [
+      "Periksa apakah silinder muat di mulut anak; pilih ukuran yang aman dan awasi penggunaan.",
+      "Pastikan kayu tidak retak atau berujung tajam.",
+      "Jangan biarkan anak melempar silinder ke arah orang lain."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "id": "tablet-warna",
+    "name": "Tablet warna",
+    "purpose": "Mengenalkan perbedaan warna dan gradasi lewat kegiatan mencocokkan serta menyusun tablet warna.",
+    "ageBands": [
+      "3-4y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari karton tebal atau papan kayu yang dicat warna berbeda.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan tablet kayu dengan cat aman dan tepi halus.",
+      "Simpan di kotak tertutup agar tidak hilang atau dimasukkan ke mulut anak yang lebih kecil.",
+      "Awasi agar anak tidak memukulkan tablet ke meja atau wajah."
+    ],
+    "references": [
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "id": "bangun-geometri",
+    "name": "Bangun geometri tiga dimensi",
+    "purpose": "Membantu anak mengenali bentuk tiga dimensi melalui sentuhan, pengamatan, dan permainan mencocokkan.",
+    "ageBands": [
+      "3-4y"
+    ],
+    "budget": "sedang",
+    "diy": false,
+    "safetyNotes": [
+      "Pilih bangun kayu atau plastik tebal tanpa sudut tajam.",
+      "Awasi anak yang lebih kecil di sekitar bola kecil atau kerucut yang bisa digulingkan.",
+      "Simpan bangun di rak rendah yang stabil agar tidak jatuh."
+    ],
+    "references": [
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      },
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      }
+    ]
+  },
+  {
+    "id": "huruf-amplas",
+    "name": "Huruf amplas",
+    "purpose": "Mengenalkan bentuk huruf melalui penglihatan dan sentuhan, sebagai langkah awal mengenal bunyi dan tulisan.",
+    "ageBands": [
+      "3-4y",
+      "4-5y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari papan kayu dan amplas halus yang dipotong sesuai bentuk huruf.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan papan huruf dengan permukaan amplas halus dan tidak berdebu berlebih.",
+      "Pastikan papan tidak memiliki paku atau tepi kayu yang tajam.",
+      "Awasi anak agar tidak menggosok amplas ke wajah atau mata."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "id": "batang-angka",
+    "name": "Batang angka",
+    "purpose": "Memperkenalkan konsep jumlah dan urutan angka melalui batang berwarna yang dapat dihitung dan disusun.",
+    "ageBands": [
+      "3-4y",
+      "4-5y"
+    ],
+    "budget": "tinggi",
+    "diy": false,
+    "safetyNotes": [
+      "Pilih batang kayu ringan dengan cat aman dan ujung tumpul.",
+      "Awasi anak saat menyusun batang panjang agar tidak jatuh menimpa kaki.",
+      "Simpan di rak stabil dan jauhkan dari anak yang lebih kecil."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "id": "silinder-bunyi",
+    "name": "Silinder bunyi",
+    "purpose": "Melatih pendengaran dan konsentrasi saat anak mencocokkan silinder berdasarkan bunyi yang mirip.",
+    "ageBands": [
+      "3-4y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kaleng kecil atau tabung kayu yang diisi biji-bijian dengan aman.",
+    "diy": true,
+    "safetyNotes": [
+      "Pastikan silinder tertutup rapat dan tidak bisa dibuka menjadi bagian kecil.",
+      "Hindari mengisi dengan benda tajam atau bahan berbahaya; gunakan isi yang aman.",
+      "Awasi anak dan jangan biarkan mengguncang silinder dekat telinga orang lain."
+    ],
+    "references": [
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "id": "gunting-kertas",
+    "name": "Gunting kertas berpola",
+    "purpose": "Melatih otot tangan dan koordinasi saat anak menggunting garis sederhana dengan gunting anak.",
+    "ageBands": [
+      "3-4y"
+    ],
+    "budget": "rendah",
+    "diy": false,
+    "safetyNotes": [
+      "Gunakan gunting anak dengan ujung tumpul dan awasi penuh selama kegiatan.",
+      "Ajarkan cara membawa gunting dengan mata gunting menghadap ke bawah saat berjalan.",
+      "Simpan gunting di tempat terkunci setelah selesai."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "CDC - Safe Child",
+        "url": "https://www.cdc.gov/child-development/"
+      }
+    ]
+  },
+  {
+    "id": "dressing-frame-tali-sepatu",
+    "name": "Bingkai latihan tali sepatu",
+    "purpose": "Memberi kesempatan berlatih mengikat, membuka, dan memasukkan tali sebagai persiapan merawat diri.",
+    "ageBands": [
+      "3-4y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari papan berlubang dan tali sepatu pendek berwarna cerah.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan tali pendek atau lipat tali agar tidak melilit leher saat bermain.",
+      "Pastikan lubang tali halus dan tidak menjepit jari.",
+      "Awasi anak dan simpan bingkai di luar jangkauan anak yang lebih kecil."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "id": "alfabet-bergerak",
+    "name": "Alfabet bergerak",
+    "purpose": "Membantu anak menyusun kata sederhana dengan huruf lepas, menghubungkan bunyi dengan simbol tulisan.",
+    "ageBands": [
+      "4-5y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari karton tebal atau tutup botol yang diberi huruf.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan huruf berukuran besar yang tidak muat di mulut anak yang lebih kecil.",
+      "Simpan huruf dalam kotak bersekat agar tidak berserakan di lantai.",
+      "Awasi agar anak tidak melempar atau menelan huruf kecil."
+    ],
+    "references": [
+      {
+        "title": "AMI USA - Montessori",
+        "url": "https://amiusa.org/about-montessori/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  },
+  {
+    "id": "kotak-gelendong",
+    "name": "Kotak gelendong angka",
+    "purpose": "Memperkuat pemahaman jumlah nol sampai sembilan melalui kegiatan menempatkan gelendong ke kotak berlabel.",
+    "ageBands": [
+      "4-5y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari kotak berkamar dan gelendong kayu atau benang yang besar.",
+    "diy": true,
+    "safetyNotes": [
+      "Gunakan gelendong besar dan ringan yang tidak muat di mulut anak lebih kecil.",
+      "Pastikan kotak tidak memiliki paku atau sekrup yang menonjol.",
+      "Awasi anak saat memindahkan gelendong agar tidak terjatuh."
+    ],
+    "references": [
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      }
+    ]
+  },
+  {
+    "id": "angka-amplas",
+    "name": "Angka amplas",
+    "purpose": "Mengenalkan bentuk angka melalui sentuhan dan penglihatan sebelum anak berlatih menulisnya.",
+    "ageBands": [
+      "4-5y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari papan kayu dan amplas halus berbentuk angka.",
+    "diy": true,
+    "safetyNotes": [
+      "Pilih papan angka dengan amplas halus dan tepi kayu yang tidak tajam.",
+      "Pastikan papan tidak berdebu atau berjamur; bersihkan sebelum digunakan.",
+      "Awasi anak agar tidak menggosok permukaan amplas ke kulit sensitif."
+    ],
+    "references": [
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      },
+      {
+        "title": "AMI USA",
+        "url": "https://amiusa.org/"
+      }
+    ]
+  },
+  {
+    "id": "imbangan-sederhana",
+    "name": "Imbangan sederhana",
+    "purpose": "Mengajak anak membandingkan berat benda secara langsung dan mengamati keseimbangan dengan cara yang menyenangkan.",
+    "ageBands": [
+      "4-5y"
+    ],
+    "budget": "sedang",
+    "buyHint": "Bisa dibuat dari coat hanger, tali, dan dua wadah plastik yang sama besar.",
+    "diy": true,
+    "safetyNotes": [
+      "Pastikan imbangan stabil dan tidak mudah jatuh saat anak menaruh benda.",
+      "Gunakan benda ringan dan tidak mudah pecah; hindari benda tajam atau berisi cairan panas.",
+      "Awasi anak agar tidak mengayunkan lengan imbangan ke wajah."
+    ],
+    "references": [
+      {
+        "title": "Montessori Global",
+        "url": "https://montessoriglobal.com/"
+      },
+      {
+        "title": "The Montessori Notebook",
+        "url": "https://themontessorinotebook.com/"
+      }
+    ]
+  }
+]

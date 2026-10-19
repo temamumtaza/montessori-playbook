@@ -6,6 +6,10 @@ import { PlaybookPage } from './pages/PlaybookPage'
 import { JournalPage } from './pages/JournalPage'
 import { ProgressPage } from './pages/ProgressPage'
 import { MorePage } from './pages/MorePage'
+import { ActivityDetailPage } from './pages/ActivityDetailPage'
+import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
+import { EnvironmentPage } from './pages/EnvironmentPage'
+import { LearnPage } from './pages/LearnPage'
 import { UpdateToast } from './components/UpdateToast'
 import { swUpdate } from './pwa'
 import { useChildStore } from './stores/children'
@@ -69,9 +73,13 @@ export default function App() {
               <Routes location={location}>
                 <Route path="/" element={<TodayPage />} />
                 <Route path="/playbook" element={<PlaybookPage />} />
+                <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
+                <Route path="/cari" element={<SearchGlossaryPage />} />
                 <Route path="/jurnal" element={<JournalPage />} />
                 <Route path="/progres" element={<ProgressPage />} />
                 <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
+                <Route path="/lingkungan" element={<EnvironmentPage />} />
+                <Route path="/belajar" element={<LearnPage />} />
               </Routes>
             </motion.div>
           </AnimatePresence>
@@ -88,9 +96,12 @@ export default function App() {
 
 function titleFor(path: string): string {
   if (path === '/') return 'Hari Ini'
+  if (path.startsWith('/cari')) return 'Cari'
   if (path.startsWith('/playbook')) return 'Playbook'
   if (path.startsWith('/jurnal')) return 'Jurnal'
   if (path.startsWith('/progres')) return 'Progres'
+  if (path.startsWith('/lingkungan')) return 'Persiapan rumah'
+  if (path.startsWith('/belajar')) return 'Panduan & Pemantauan'
   return 'Lainnya'
 }
 

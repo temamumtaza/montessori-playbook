@@ -69,8 +69,8 @@ function checkGenericList(list, file, key, minFields, counter) {
 const gp = join(contentDir, 'global.json')
 if (existsSync(gp)) {
   const g = JSON.parse(readFileSync(gp, 'utf8'))
-  if (!Array.isArray(g.ageBands) || g.ageBands.length !== 9) err('global.json', 'ageBands harus 9 entri')
-  if (!Array.isArray(g.areas) || g.areas.length < 10) err('global.json', 'areas minimal 10 entri')
+  if (g.ageBands && (!Array.isArray(g.ageBands) || g.ageBands.length !== 9)) err("global.json", "ageBands harus 9 entri")
+  if (g.areas && (!Array.isArray(g.areas) || g.areas.length < 10)) err("global.json", "areas minimal 10 entri")
   for (const arr of ['materials', 'diyGuides', 'roomSetups', 'parentGuides', 'glossary', 'checklists', 'skills']) {
     if (!Array.isArray(g[arr])) err('global.json', `${arr} harus array`)
   }

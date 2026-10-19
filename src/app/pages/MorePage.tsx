@@ -62,6 +62,23 @@ export function MorePage({ isDark, onToggleDark }: { isDark: boolean; onToggleDa
       </section>
 
       {/* Tampilan */}
+      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
+        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Persiapan rumah</h2>
+        <p className="text-sm opacity-70 mt-1">Atur ruangan agar si kecil lebih mudah bergerak dan mandiri.</p>
+        <a href="#/lingkungan" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
+          Lihat planner per ruangan <span aria-hidden>→</span>
+        </a>
+      </section>
+
+      <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm">
+        <h2 className="font-[family-name:var(--font-display)] font-bold text-lg">Panduan orang tua</h2>
+        <p className="text-sm opacity-70 mt-1">Baca panduan dan pantau tanda perkembangan sesuai usia anak.</p>
+        <a href="#/belajar" className="mt-3 flex items-center justify-between rounded-2xl bg-sky-50 dark:bg-navy-700 px-4 min-h-[48px] font-semibold text-sky-700 dark:text-sky-300">
+          Buka Panduan & Pemantauan <span aria-hidden>→</span>
+        </a>
+      </section>
+
+      {/* Tampilan */}
       <section className="rounded-blob bg-white dark:bg-navy-800 p-4 shadow-sm flex items-center justify-between">
         <div>
           <h2 className="font-semibold">Mode gelap</h2>

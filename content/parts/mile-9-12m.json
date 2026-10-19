@@ -1,0 +1,167 @@
+[
+  {
+    "id": "mile-912m-berdiri-berpegangan",
+    "title": "Berdiri sambil berpegangan",
+    "ageBand": "9-12m",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak mulai menarik dirinya untuk berdiri dengan bantuan meja atau sofa, lalu menahan diri berdiri beberapa saat tanpa bantuan orang dewasa.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila mendekati 12 bulan si kecil sama sekali belum bisa menopang berat badannya dengan kaki saat ditopang berdiri, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 12 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "HealthyChildren - Developmental Milestones", "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"}
+    ]
+  },
+  {
+    "id": "mile-912m-rangkak-jalan-dibantu",
+    "title": "Merangkak dan berjalan dibantu",
+    "ageBand": "9-12m",
+    "domain": "motorik-kasar",
+    "description": "Umumnya bayi mengembangkan caranya sendiri untuk berpindah tempat, misalnya merangkak, merangkak gaya kodok, atau berjalan sambil dipegang tangan oleh orang tua.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila si kecil hanya menggunakan satu sisi badan atau tampak kaku saat bergerak, sebaiknya konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "NHS - Baby development 9-12 months", "url": "https://www.nhs.uk/conditions/baby/babys-development/9-12-months/"}
+    ]
+  },
+  {
+    "id": "mile-912m-pincer-grasp",
+    "title": "Menggenggam dengan ujung jari",
+    "ageBand": "9-12m",
+    "domain": "motorik-halus",
+    "description": "Kemampuan mengambil benda kecil dengan ujung ibu jari dan telunjuk makin matang, sehingga si kecil bisa memungut remah atau kue kecil secara mandiri.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila usia 12 bulan si kecil masih selalu menyerap benda dengan seluruh telapak tangan dan tidak pernah memungut dengan dua jari, bahas dengan dokter saat kunjungan berikutnya"
+    ],
+    "references": [
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "Zero to Three - Baby Development", "url": "https://www.zerotothree.org/resource/learning-to-play-and-playing-to-learn-getting-ready-for-school/"}
+    ]
+  },
+  {
+    "id": "mile-912m-kata-pertama",
+    "title": "Mengucap kata pertama",
+    "ageBand": "9-12m",
+    "domain": "bahasa",
+    "description": "Sekitar akhir tahun pertama, banyak anak mulai mengucapkan kata sederhana seperti nama orang tua atau nama makanan dengan makna yang jelas.",
+    "typicalFromMonths": 10,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila sebelum 12 bulan si kecil tidak pernah bersuara, menggumam, atau memberi reaksi pada suara, konsultasikan ke dokter",
+      "Bila si kecil tidak merespons saat namanya dipanggil, bicarakan dengan dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones - 12 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "HealthyChildren - Language Development", "url": "https://www.healthychildren.org/English/ages-stages/toddler/pages/default.aspx"}
+    ]
+  },
+  {
+    "id": "mile-912m-paham-instruksi-sederhana",
+    "title": "Mengerti perintah sederhana",
+    "ageBand": "9-12m",
+    "domain": "bahasa",
+    "description": "Si kecil mulai memahami kata-kata percakapan sehari-hari dan bisa merespons permintaan ringkas, misalnya berhenti saat dipanggil 'jangan' atau mengulurkan tangan saat diminta.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [],
+    "references": [
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "Zero to Three - Language", "url": "https://www.zerotothree.org/resource/learning-to-play-and-playing-to-learn-getting-ready-for-school/"}
+    ]
+  },
+  {
+    "id": "mile-912m-menunjuk-benda",
+    "title": "Menunjuk dengan jari",
+    "ageBand": "9-12m",
+    "domain": "kognitif",
+    "description": "Menunjuk adalah cara awal si kecil berkomunikasi: ia mencoba menarik perhatianmu pada benda yang dilihat, didengar, atau diinginkannya.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila pada usia 12 bulan si kecil tidak pernah menunjuk, mengejar benda yang jatuh, atau tidak tertarik pada permainan bergantian, konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones - 12 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}
+    ]
+  },
+  {
+    "id": "mile-912m-objek-tersembunyi",
+    "title": "Mencari benda yang disembunyikan",
+    "ageBand": "9-12m",
+    "domain": "kognitif",
+    "description": "Sekitar bulan-bulan ini si kecil makin paham bahwa benda yang tahu tidak ia lihat tetap ada, jadi ia senang mencari mainan yang kamu sembunyikan di bawah selimut.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 11,
+    "redFlags": [],
+    "references": [
+      {"title": "HealthyChildren - Cognitive Development", "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"},
+      {"title": "NHS - Baby development", "url": "https://www.nhs.uk/conditions/baby/babys-development/9-12-months/"}
+    ]
+  },
+  {
+    "id": "mile-912m-menirukan-orang",
+    "title": "Menirukan gerakan dan suara",
+    "ageBand": "9-12m",
+    "domain": "kognitif",
+    "description": "Si kecil gemar meniru yang ia lihat dan dengar, misalnya tepuk tangan, lambaian tangan, atau bunyi sederhana yang kamu buat berulang-ulang.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [],
+    "references": [
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "Montessori Notebook - Montessori Ideas for 9-12 months", "url": "https://www.themontessorinotebook.com/montessori-baby-mobiles/"}
+    ]
+  },
+  {
+    "id": "mile-912m-kecemasan-orang-asing",
+    "title": "Nangis saat melihat orang asing",
+    "ageBand": "9-12m",
+    "domain": "sosial-emosional",
+    "description": "Cemas saat berpisah dari orang tua atau ragu pada orang asing adalah respons yang sangat umum di usia ini dan justru menandakan ikatan yang kuat.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [],
+    "references": [
+      {"title": "HealthyChildren - Emotional Development", "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"},
+      {"title": "Zero to Three - Social Emotional", "url": "https://www.zerotothree.org/resource/learning-to-play-and-playing-to-learn-getting-ready-for-school/"}
+    ]
+  },
+  {
+    "id": "mile-912m-main-interaktif",
+    "title": "Bermain lempar-terima sederhana",
+    "ageBand": "9-12m",
+    "domain": "sosial-emosional",
+    "description": "Si kecil mulai menikmati permainan yang melibatkan giliran, seperti melempar bola atau menyerahkan mainan, karena ia memahami bahwa interaksi ini menyenangkan.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [],
+    "references": [
+      {"title": "CDC Milestones - 12 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}
+    ]
+  },
+  {
+    "id": "mile-912m-makan-mandiri",
+    "title": "Mencoba makan dan minum sendiri",
+    "ageBand": "9-12m",
+    "domain": "self-help",
+    "description": "Umumnya di rentang usia ini si kecil senang menggenggam sendok atau makanan lembut dengan tangannya sendiri, meski hasilnya pasti berantakan dan itu bagian dari belajar.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila si kecil menolak keras semua makanan bertekstur atau tidak bisa sama sekali masukan makanan ke mulutnya di akhir usia ini, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "HealthyChildren - Feeding", "url": "https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/pages/default.aspx"}
+    ]
+  }
+]

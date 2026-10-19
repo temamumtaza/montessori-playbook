@@ -1,0 +1,758 @@
+[0m
+> build · deepseek-v4.1-flash-free
+[0m
+I'll first check the existing schema and related files.
+[0m$ [0mfind . -path ./node_modules -prune -o -name "*.json" -print 2>/dev/null | grep -i diy | head -20
+./content/parts/diy-1.json
+[0m
+[0m$ [0mls content/parts/ 2>/dev/null | head -50; echo "---"; ls content/ 2>/dev/null
+_gen_materials-1.py
+act-0-3m.json
+act-12-18m.json
+act-18-24m.json
+act-2-3y.json
+act-3-4y.json
+act-3-6m.json
+act-4-5y.json
+act-6-9m.json
+act-9-12m.json
+diy-1.json
+glossary-1.json
+glossary-2.json
+materials-1.json
+materials-2.json
+mile-0-3m.json
+mile-12-18m.json
+mile-18-24m.json
+mile-2-3y.json
+mile-3-4y.json
+mile-3-6m.json
+mile-4-5y.json
+mile-6-9m.json
+mile-9-12m.json
+---
+bundles
+parts
+[0m
+[0m$ [0mpython3 -c "
+import json
+for f in ['act-6-9m.json','materials-1.json']:
+    d=json.load(open('content/parts/'+f))
+    print(f, type(d), len(d))
+    print(json.dumps(d[0], indent=2, ensure_ascii=False)[:1500])
+    print('===')
+"
+act-6-9m.json <class 'list'> 30
+{
+  "id": "6-9m-cermin-wajah",
+  "title": "Mengamati Wajah di Cermin",
+  "summary": "Bayi mengamati wajah dan ekspresinya melalui cermin yang aman.",
+  "ageBands": [
+    "6-9m"
+  ],
+  "areas": [
+    "sensorial",
+    "self-care"
+  ],
+  "skills": [
+    "fokus visual",
+    "kesadaran diri"
+  ],
+  "objectives": [
+    "Mengikuti pantulan dengan mata",
+    "Mengenali perubahan ekspresi"
+  ],
+  "materials": [
+    {
+      "name": "cermin akrilik bayi",
+      "fromHome": true,
+      "optional": false
+    }
+  ],
+  "prepMinutes": 3,
+  "durationMinutes": 8,
+  "prepLevel": "rendah",
+  "presentation": [
+    {
+      "step": 1,
+      "text": "Letakkan cermin kokoh di depan bayi."
+    },
+    {
+      "step": 2,
+      "text": "Tunjukkan wajah dan beri waktu mengamati."
+    },
+    {
+      "step": 3,
+      "text": "Tersenyum atau melambaikan tangan perlahan."
+    }
+  ],
+  "controlOfError": "Pantulan terlihat jelas tanpa bantuan orang dewasa.",
+  "variations": [
+    "Letakkan cermin saat tummy time."
+  ],
+  "readySigns": [
+    "Bayi menatap pantulan beberapa detik."
+  ],
+  "struggleSigns": [
+    "Bayi cepat memalingkan wajah."
+  ],
+  "safetyNotes": [
+    "Gunakan cermin akrilik tanpa sudut tajam dan selalu dampingi."
+  ],
+  "references": [
+    {
+      "title": "CDC Milestones",
+      "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+  ]
+}
+===
+materials-1.json <class 'list'> 33
+{
+  "id": "munari-mobile",
+  "name": "Munari Mobile (mobile hitam-putih)",
+  "purpose": "Mobile hitam-putih dengan lingkaran dan bentuk geometris sederhana yang boleh diletakkan di atas area pandang bayi saat terjaga. Bayi muda umumnya lebih menarik melihat kontras tinggi, dan mobile ini melatih mata untuk memusatkan pandangan serta mengikuti objek yang bergoyang pelan.",
+  "ageBands": [
+    "0-3m",
+    "3-6m"
+  ],
+  "budget": "sedang",
+  "diy": true,
+  "safetyNotes": [
+    "Jangan pernah menggantung mobile di atas kasur tempat bayi tidur; pilih permukaan yang tegas seperti strip kayu atau pengait langit-langit yang kokoh. Jarak idealnya sekitar 25-30 cm dari wajah bayi dan bayi selalu dalam kawalan orang dewasa."
+  ],
+  "references": [
+    {
+      "title": "How to buy safe toys (HealthyChildren.org)",
+      "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/How-to-Buy-Safe-Toys.aspx"
+    }
+  ],
+  "buyHint": "Dapat dibeli dari penjual mobile handmade lokal atau dibuat sendiri dari kertas karton hitam dan putih dengan kerangka benang kaku."
+}
+===
+[0m
+[0m$ [0mpython3 -c "
+import json
+d=json.load(open('content/parts/diy-1.json'))
+print(type(d), len(d))
+print(json.dumps(d[0], indent=2, ensure_ascii=False))
+print('---KEYS---')
+print(sorted(d[0].keys()))
+"
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    d=json.load(open('content/parts/diy-1.json'))
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Invalid control character at: line 270 column 26 (char 12674)
+[0m
+[0m$ [0mpython3 -c "
+import json
+d=json.loads(open('content/parts/diy-1.json').read(), strict=False)
+print(type(d), len(d))
+print(sorted(d[0].keys()))
+print(json.dumps(d[0], indent=2, ensure_ascii=False))
+"
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+    d=json.loads(open('content/parts/diy-1.json').read(), strict=False)
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 365, in loads
+    return cls(**kw).decode(s)
+           ~~~~~~~~~~~~~~~~^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 272 column 6 (char 12687)
+[0m
+[0m$ [0mgrep -rn "DIYGuide\|diy-1\|DIY" --include="*.ts" --include="*.tsx" --include="*.js" . 2>/dev/null | grep -v node_modules | head -30
+./src/content/schema.ts:73:// ===== DIYGuide =====
+./src/content/schema.ts:74:export const DIYGuide = z.object({
+./src/content/schema.ts:86:export type DIYGuide = z.infer<typeof DIYGuide>
+./src/content/schema.ts:201:  diyGuides: z.array(DIYGuide),
+[0m
+[0m$ [0msed -n '1,130p' src/content/schema.ts
+import { z } from 'zod'
+
+// ===== Enum inti =====
+export const AgeBandId = z.enum([
+  '0-3m', '3-6m', '6-9m', '9-12m',
+  '12-18m', '18-24m', '2-3y', '3-4y', '4-5y',
+])
+export type AgeBandId = z.infer<typeof AgeBandId>
+
+export const AreaId = z.enum([
+  'practical-life', 'sensorial', 'language', 'math', 'culture',
+  'movement', 'grace-courtesy', 'self-care', 'art-music', 'outdoor',
+])
+export type AreaId = z.infer<typeof AreaId>
+
+export const MasteryLevel = z.enum(['belum', 'mulai', 'mahir'])
+export type MasteryLevel = z.infer<typeof MasteryLevel>
+
+// ===== Referensi sumber (WAJIB di tiap entri konten) =====
+export const Source = z.object({
+  title: z.string().min(3),
+  url: z.string().url(),
+  note: z.string().optional(),
+})
+export type Source = z.infer<typeof Source>
+
+// ===== Activity (entitas inti) =====
+export const Activity = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, 'id: kebab-case'),
+  title: z.string().min(5),
+  summary: z.string().min(20, 'ringkasan minimal 20 karakter'),
+  ageBands: z.array(AgeBandId).min(1),
+  areas: z.array(AreaId).min(1),
+  skills: z.array(z.string()).default([]),
+  objectives: z.array(z.string()).min(1, 'minimal 1 tujuan'),
+  materials: z.array(z.object({
+    name: z.string().min(2),
+    fromHome: z.boolean().default(true),
+    optional: z.boolean().default(false),
+  })).min(1),
+  prepMinutes: z.number().int().min(0).max(120),
+  durationMinutes: z.number().int().min(1).max(180),
+  prepLevel: z.enum(['rendah', 'sedang', 'tinggi']),
+  presentation: z.array(z.object({
+    step: z.number().int().min(1),
+    text: z.string().min(10),
+  })).min(2, 'minimal 2 langkah presentasi'),
+  controlOfError: z.string().min(10).optional(),
+  variations: z.array(z.string()).default([]),
+  readySigns: z.array(z.string()).min(1, 'minimal 1 tanda siap'),
+  struggleSigns: z.array(z.string()).default([]),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1, 'WAJIB minimal 1 rujukan'),
+  diyGuideId: z.string().optional(),
+  materialIds: z.array(z.string()).default([]),
+})
+export type Activity = z.infer<typeof Activity>
+
+// ===== Material =====
+export const Material = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(3),
+  purpose: z.string().min(20),
+  ageBands: z.array(AgeBandId).min(1),
+  budget: z.enum(['rendah', 'sedang', 'tinggi']),
+  buyHint: z.string().optional(),
+  diy: z.boolean().default(false),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Material = z.infer<typeof Material>
+
+// ===== DIYGuide =====
+export const DIYGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  makes: z.string().min(3),
+  timeMinutes: z.number().int().min(5).max(600),
+  cost: z.enum(['gratis', 'rendah', 'sedang']),
+  materialsNeeded: z.array(z.string()).min(1),
+  steps: z.array(z.string()).min(2),
+  ageBands: z.array(AgeBandId).min(1),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type DIYGuide = z.infer<typeof DIYGuide>
+
+// ===== RoomSetup =====
+export const RoomSetup = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  room: z.enum(['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']),
+  title: z.string().min(5),
+  principles: z.array(z.string()).min(2),
+  items: z.array(z.object({
+    name: z.string().min(2),
+    essential: z.boolean().default(true),
+    budgetRendah: z.string(),
+    budgetSedang: z.string().optional(),
+    diy: z.boolean().default(false),
+  })).min(3),
+  layoutTips: z.array(z.string()).min(1),
+  ageBands: z.array(AgeBandId).min(1),
+  references: z.array(Source).min(1),
+})
+export type RoomSetup = z.infer<typeof RoomSetup>
+
+// ===== Milestone =====
+export const Milestone = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  ageBand: AgeBandId,
+  domain: z.enum(['motorik-kasar', 'motorik-halus', 'bahasa', 'kognitif', 'sosial-emosional', 'self-help']),
+  description: z.string().min(20),
+  typicalFromMonths: z.number().min(0).max(72),
+  typicalToMonths: z.number().min(0).max(72),
+  redFlags: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Milestone = z.infer<typeof Milestone>
+
+// ===== ParentGuide =====
+export const ParentGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  category: z.enum(['filosofi', 'komunikasi', 'disiplin', 'rutinitas', 'screen-time', 'sibling', 'toilet', 'tantrum', 'observasi', 'self-care']),
+  ageBands: z.array(AgeBandId).default([]),
+  body: z.string().min(200, 'panduan minimal 200 karakter'),
+  keyTakeaways: z.array(z.string()).min(2),
+  references: z.array(Source).min(1),
+})
+[0m
+[0m$ [0msed -n '250,300p' content/parts/diy-1.json
+"title": "Healthy Children - Baby Ages and Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "diy-09-rattle-botol-aman",
+    "title": "Rattle Botol Kacang Berlapis Lem",
+    "makes": "2-3 ratllr kecil",
+    "timeMinutes": 15,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Botol mandi? tampak? gunakan botol obat plastik? yang benar-benar bersih, atau gulungan? tabung kertas lebih tinggi",
+      "Kac? gunakan bubuk? segel? gunakan beras atau butir kering yang dimasak? tetap tertutup",
+      "Liem kuat dan selotip; uruso satu pasang lima? sone"
+    ],
+    "steps": [
+      "Masukkan secukupnya butiran ke dalam botol agar bunyi setengah tumpuan.",
+      "Tutup rapat dan tembokkan lingkar tutup dengan lem kemudian lilit selotip tebal.",
+      "Gempa? uji rebut tangan dewasa: goyang kuat, lempar? tidak perlu lempar; pastikan tutup tak terbuka.",
+      "Saj? tawarkan di>'
+    ],
+    "ageBands": ["3-6m", "6-9m", "9-12m"],
+    "safetyNotes": [
+      "Botong tertutup penuh perlu? selalu dicek sebelum dan sesudah dipakai; segera pocet daun? simpan bila tutup remblues.",
+      "Ukuran botol cukup besar agar tidak bisa menyerap? mulut"
+    ],
+    "references": [
+      {
+        "title": "Healthy Children - Toy Safety",
+        "url": "https://www.healthychildren.org/English/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "diy-10-buku-kain-foto",
+    "title": "Buku Kain Foto Keluarga",
+    "makes": "1 buku kain 4-6 halaman",
+    "timeMinutes": 50,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kain flanel atau kain katun bekas bersih",
+      "Foto keluarga cetak warna atau gambar potong dari majalah periklanan? gunakan ampla beku"
+    ],
+    "steps": [
+      "Pilis? pilih foto berukuran 8x8 senti, lalu cetak menarik? gambar: pencegahan during memuji",
+      "Gunting kain jadi halaman besar persegi 18-20 sentimeter."
+      "Jahit potongan? beri? masukkan foto ke plastik transparan, lalu jahit? tempel ke lembar kain"
+    ],
+    "ageBands": ["6-9m", "9-12m", "12-18m", "18-24m"],
+    "safetyNotes": [
+[0m
+[0m$ [0mgrep -o '"id": "diy-[^"]*"' content/parts/diy-1.json | head -50
+"id": "diy-01-sensory-bottles"
+"id": "diy-02-treasure-basket"
+"id": "diy-03-posting-box"
+"id": "diy-04-playdough-rumahan"
+"id": "diy-05-mobile-hitam-putih"
+"id": "diy-06-drum-kaleng-aman"
+"id": "diy-07-papan-tekstur"
+"id": "diy-08-kartu-kontras"
+"id": "diy-09-rattle-botol-aman"
+"id": "diy-10-buku-kain-foto"
+"id": "diy-11-sortir-warna"
+"id": "diy-12-puzzle-stik-es-krim"
+"id": "diy-13-rel-bola-kardus"
+"id": "diy-14-stasiun-plester"
+"id": "diy-15-papan-velcro"
+"id": "diy-16-baskom-sensori-air"
+"id": "diy-17-kotak-buka-tutup"
+"id": "diy-18-caddy-alat-gambar"
+"id": "diy-19-panggung-wayang-kardus"
+"id": "diy-20-balok-kardus-raksasa"
+"id": "diy-21-kantong-sensori-aman"
+"id": "diy-22-kotak-dorong-kardus"
+"id": "diy-23-kotak-tarik-pita"
+"id": "diy-24-kaleng-suara-pasangan"
+"id": "diy-25-tas-misteri"
+"id": "diy-26-moonsand-taste-safe"
+"id": "diy-27-kalung-makaroni"
+"id": "diy-28-es-petasahan"
+"id": "diy-29-wayang-kaos-kaki"
+"id": "diy-30-bantaltummy"
+[0m
+[0m$ [0mfor u in \
+"https://www.healthychildren.org/English/safety-prevention/at-home/Pages/How-to-Buy-Safe-Toys.aspx" \
+"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx" \
+"https://www.cdc.gov/ncbddd/actearly/milestones/index.html" \
+"https://www.nhs.uk/baby/safety/" \
+"https://www.zerotothree.org/resources/" \
+"https://www.amiusa.org/" \
+"https://www.who.int/health-topics/child-health" \
+"https://themontessorinotebook.com/" \
+"https://montessoriglobal.com/" \
+"https://www.kemdikbud.go.id/" \
+"https://www.cdc.gov/child-development/about/index.html" \
+"https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx" \
+"https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx" \
+"https://www.nhs.uk/conditions/pregnancy-and-baby/" ; do
+code=$(curl -s -o /dev/null -L --max-time 12 -w "%{http_code}" "$u"); echo "$code $u"; done
+200 https://www.healthychildren.org/English/safety-prevention/at-home/Pages/How-to-Buy-Safe-Toys.aspx
+200 https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx
+404 https://www.cdc.gov/ncbddd/actearly/milestones/index.html
+404 https://www.nhs.uk/baby/safety/
+403 https://www.zerotothree.org/resources/
+200 https://www.amiusa.org/
+200 https://www.who.int/health-topics/child-health
+200 https://themontessorinotebook.com/
+200 https://montessoriglobal.com/
+000 https://www.kemdikbud.go.id/
+200 https://www.cdc.gov/child-development/about/index.html
+200 https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx
+200 https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx
+200 https://www.nhs.uk/conditions/pregnancy-and-baby/
+[0m
+[0m$ [0mfor u in \
+"https://www.cdc.gov/act-early/milestones/index.html" \
+"https://www.cdc.gov/act-early/index.html" \
+"https://www.nhs.uk/baby/" \
+"https://www.nhs.uk/conditions/baby/safety/" \
+"https://www.nhs.uk/conditions/baby/caring-for-a-newborn/" \
+"https://www.healthychildren.org/English/ages-stages/baby/Pages/Tummy-Time-What-You-Need-to-Know.aspx" \
+"https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Toy-Safety.aspx" \
+"https://www.healthychildren.org/English/ages-stages/baby/Pages/Safe-Sleep-for-Babies.aspx" \
+"https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx" \
+"https://www.who.int/news-room/fact-sheets/detail/child-mortality" \
+"https://www.who.int/news-room/fact-sheets/detail/breastfeeding" \
+"https://themontessorinotebook.com/montessori-at-home/" \
+"https://montessoriglobal.com/montessori/" \
+"https://www.amiusa.org/blog" ; do
+code=$(curl -s -o /dev/null -L --max-time 12 -w "%{http_code}" "$u"); echo "$code $u"; done
+200 https://www.cdc.gov/act-early/milestones/index.html
+200 https://www.cdc.gov/act-early/index.html
+200 https://www.nhs.uk/baby/
+404 https://www.nhs.uk/conditions/baby/safety/
+200 https://www.nhs.uk/conditions/baby/caring-for-a-newborn/
+404 https://www.healthychildren.org/English/ages-stages/baby/Pages/Tummy-Time-What-You-Need-to-Know.aspx
+404 https://www.healthychildren.org/English/safety-prevention/at-play/Pages/Toy-Safety.aspx
+404 https://www.healthychildren.org/English/ages-stages/baby/Pages/Safe-Sleep-for-Babies.aspx
+200 https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx
+200 https://www.who.int/news-room/fact-sheets/detail/child-mortality
+200 https://www.who.int/news-room/fact-sheets/detail/breastfeeding
+200 https://themontessorinotebook.com/montessori-at-home/
+404 https://montessoriglobal.com/montessori/
+200 https://www.amiusa.org/blog
+[0m
+Schema identified. Now I'll write 30 varied DIY guides.
+[0m$ [0mmkdir -p content/parts && python3 - <<'PY'
+import json
+
+H = "https://www.healthychildren.org"
+CDC = {"title": "CDC Act Early - Milestones", "url": "https://www.cdc.gov/act-early/milestones/index.html"}
+TOY = {"title": "HealthyChildren.org - How to Buy Safe Toys", "url": H + "/English/safety-prevention/at-home/Pages/How-to-Buy-Safe-Toys.aspx"}
+BABY = {"title": "HealthyChildren.org - Baby Ages and Stages", "url": H + "/English/ages-stages/baby/Pages/default.aspx"}
+TODD = {"title": "HealthyChildren.org - Toddler Ages and Stages", "url": H + "/English/ages-stages/toddler/Pages/default.aspx"}
+PRE = {"title": "HealthyChildren.org - Preschool Ages and Stages", "url": H + "/English/ages-stages/preschool/Pages/default.aspx"}
+CHOKE = {"title": "HealthyChildren.org - Choking Prevention", "url": H + "/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"}
+NHS = {"title": "NHS - Baby and toddler health", "url": "https://www.nhs.uk/baby/"}
+WHO = {"title": "WHO - Child health", "url": "https://www.who.int/health-topics/child-health"}
+MON = {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+AMI = {"title": "AMI USA - Blog", "url": "https://www.amiusa.org/blog"}
+MG = {"title": "Montessori Global", "url": "https://montessoriglobal.com/"}
+
+def g(id, title, makes, timeMinutes, cost, mats, steps, ages, safety, refs):
+    return {
+        "id": id, "title": title, "makes": makes,
+        "timeMinutes": timeMinutes, "cost": cost,
+        "materialsNeeded": mats, "steps": steps,
+        "ageBands": ages, "safetyNotes": safety, "references": refs,
+    }
+
+data = [
+g("diy-31-kamishibai-kardus","Kamishibai Kardus untuk Bercerita","1 panggung cerita kardus",45,"gratis",
+ ["Kardus bekas ukuran sedang, misalnya kardus sepatu","Cutter atau pisau kardus khusus dewasa","Lakban kain atau kertas perekat lebar","Kertas gambar atau karton untuk lembar cerita","Spidol dan krayon"],
+ ["Buka salah satu sisi kardus, lalu buat bingkai jendela di bagian depan dengan bantuan orang dewasa.","Rekatkan sisa kardus menjadi sandaran miring agar lembar cerita mudah ditarik.","Haluskan semua tepi potongan dengan lakban kain supaya tidak melukai tangan.","Buat beberapa lembar gambar cerita sederhana dan ajak anak bergantian menariknya saat bercerita."],
+ ["3-4y","4-5y"],
+ ["Pemotongan kardus hanya dilakukan orang dewasa; jauhkan cutter dari jangkauan anak.","Tutup seluruh tepi kardus yang tajam dengan lakban sebelum dipakai.","Dampingi anak saat bermain dan simpan panggung di tempat kering agar tidak berjamur."],
+ [MON, PRE]),
+
+g("diy-32-papan-tekstur-gantung","Papan Tekstur Gantung Dinding","1 papan tekstur gantung",35,"gratis",
+ ["Bidang kardus tebal atau papan kayu ringan","Potongan kain dengan tekstur berbeda: katun, wol, satin, handuk, goni","Lem tembak khusus dewasa atau lem kayu","Tali atau pita lebar untuk menggantung","Gunting"],
+ ["Potong kardus atau papan menjadi persegi panjang berukuran sekitar 30 x 40 cm.","Tempelkan potongan kain satu per satu dengan jarak rapi, biarkan anak meraba sambil menunggu.","Rekatkan tali di kedua sudut atas dan pastikan simpulnya kuat.","Gantung setinggi mata anak saat duduk atau merangkak, lalu ajak ia menyentuh setiap tekstur."],
+ ["6-9m","9-12m","12-18m"],
+ ["Gantung papan dengan pengait kokoh dan pastikan tidak bisa jatuh menimpa anak.","Jangan memakai tali panjang yang menjuntai karena berisiko melilit leher.","Periksa potongan kain yang lepas dan jahitan yang terbuka setiap kali dipakai.","Selalu dampingi anak, terutama saat ia masih suka memasukkan benda ke mulut."],
+ [BABY, TOY]),
+
+g("diy-33-rak-mini-kardus","Rak Mini Kardus Setinggi Anak","1 rak mainan rendah",50,"gratis",
+ ["Dua atau tiga kardus tebal berukuran sama","Lakban kain atau lem tembak","Kertas pembungkus atau cat akrilik tidak berbau","Gunting dan penggaris","Papan tipis untuk alas"],
+ ["Satukan kardus menjadi susunan dua tingkat dengan mulut menghadap ke depan.","Rekatkan sambungan dari dalam dan luar, lalu lapisi dengan lakban kain agar kokoh.","Bungkus bagian luar dengan kertas atau cat, biarkan mengering.","Letakkan rak menempel dinding dan isi dengan beberapa mainan yang sedang disukai anak."],
+ ["12-18m","18-24m","2-3y"],
+ ["Rak harus menempel atau diikat ke dinding agar tidak roboh saat anak berpegangan.","Gunakan kardus yang bersih dan tidak berjamur, jangan kardus bekas bahan kimia.","Pastikan tidak ada paku atau staples yang menonjol setelah dilapisi."],
+ [MON, TODD]),
+
+g("diy-34-apron-kaos-lama","Apron Anak dari Kaos Lama","1 apron anak",25,"gratis",
+ ["Kaos katun bekas milik orang dewasa","Gunting kain","Jarum dan benang atau lem kain","Pita lebar atau sisa kain untuk tali","Kapur jahit"],
+ ["Potong bagian depan kaos mengikuti bentuk apron, sisakan bagian leher tetap utuh.","Buat lubang lengan dengan potongan melengkung yang nyaman.","Jahit atau rekatkan tali pinggang dari pita, lalu pasangkan pada kedua sisi.","Coba kenakan pada anak dan sesuaikan panjangnya agar tidak menyentuh lantai."],
+ ["18-24m","2-3y","3-4y"],
+ ["Gunakan gunting hanya oleh orang dewasa saat memotong kain.","Pastikan tali pinggang tidak terlalu panjang dan tidak bisa melilit leher.","Hindari hiasan kancing atau manik yang mudah lepas dan tertelan."],
+ [TODD, PRE]),
+
+g("diy-35-counting-jar","Counting Jar untuk Menghitung Benda","1 toples hitung",20,"gratis",
+ ["Toples plastik bening bertutup","Benda hitung besar: tutup botol, bola kayu besar, atau kacang merah kering","Kartu angka dari kertas","Spidol","Stiker label"],
+ ["Bersihkan toples dan pastikan tutupnya tidak mudah dibuka anak.","Buat kartu angka 1 sampai 5 atau 1 sampai 10 sesuai usia anak.","Masukkan beberapa benda ke dalam toples, lalu ajak anak menghitung bersama sambil menunjuk.","Ganti jumlah benda dan minta anak menebak isinya sebelum menghitung."],
+ ["2-3y","3-4y"],
+ ["Pilih benda yang lebih besar dari tabung gulungan toilet agar tidak tertelan.","Tutup toples ketika tidak dipakai dan simpan di luar jangkauan anak.","Dampingi anak, terutama bila ada anak yang lebih kecil di rumah."],
+ [CDC, PRE]),
+
+g("diy-36-papan-kancing","Papan Kancing untuk Melatih Jari","1 papan kancing",30,"gratis",
+ ["Kain flanel tebal atau kardus dilapisi kain","Beberapa kancing besar","Benang dan jarum","Gunting","Tali atau pita"],
+ ["Potong kain menjadi persegi sekitar 25 x 25 cm.","Jahit tiga sampai lima kancing besar dengan jarak cukup lebar.","Sediakan tali atau pita yang ujungnya dilapisi simpul agar tidak berjumbai.","Tunjukkan cara memasukkan tali ke lubang kancing, lalu biarkan anak mencoba sendiri."],
+ ["2-3y","3-4y"],
+ ["Kancing harus dijahit sangat kuat dan berukuran besar agar tidak lepas.","Awasi anak karena kancing dan tali berisiko tertelan atau melilit.","Periksa jahitan setiap kali selesai digunakan."],
+ [TOY, MON]),
+
+g("diy-37-kartu-jahit","Kartu Jahit dari Kardus","4 kartu jahit",30,"gratis",
+ ["Kardus tebal","Pita atau tali sepatu bekas","Pelubang kertas atau paku dan palu","Gunting","Spidol"],
+ ["Potong kardus menjadi kartu berukuran sekitar 12 x 15 cm.","Buat lubang di sekeliling tepi kartu dengan jarak sekitar 2 cm.","Gambar bentuk sederhana di tengah kartu, misalnya rumah atau bunga.","Tunjukkan cara menjahit naik turun melalui lubang, lalu biarkan anak mengikuti garis."],
+ ["3-4y","4-5y"],
+ ["Lubang dibuat oleh orang dewasa; jangan biarkan anak memakai paku atau pelubang tanpa pengawasan.","Gunakan pita yang ujungnya disimpul agar tidak mudah terurai.","Dampingi anak dan simpan pita panjang di luar jangkauan saat tidak dipakai."],
+ [PRE, MON]),
+
+g("diy-38-tenun-kardus","Tenun Sederhana dari Kardus","1 bingkai tenun anak",40,"gratis",
+ ["Kardus tebal bekas","Benang wol atau tali katun","Pita warna-warni atau potongan kain","Gunting","Spidol"],
+ ["Potong kardus menjadi bingkai persegi dengan bagian tengah berlubang.","Buat sayatan kecil di sisi atas dan bawah, lalu rentangkan benang bolak-balik sebagai lungsin.","Ikat ujung benang di belakang bingkai agar tidak lepas.","Tunjukkan cara menyelipkan pita atau kain secara bergantian di atas dan di bawah benang."],
+ ["3-4y","4-5y"],
+ ["Sayatan kardus dibuat orang dewasa dan tepinya dilapisi lakban.","Gunakan benang pendek agar tidak melilit leher atau jari.","Dampingi anak dan hentikan permainan bila benang mulai kusut berlebihan."],
+ [PRE, AMI]),
+
+g("diy-39-neraca-gantungan","Neraca Timbangan dari Gantungan","1 neraca mainan",35,"rendah",
+ ["Gantungan baju plastik atau kayu","Dua gelas plastik atau mangkuk kecil","Tali katun","Benda kecil untuk ditimbang: tutup botol, balok, buah","Gunting"],
+ ["Ikat dua gelas pada kedua ujung gantungan dengan panjang tali yang sama.","Gantung gantungan pada pengait yang kokoh dan biarkan posisinya seimbang.","Masukkan benda berbeda ke kedua gelas dan ajak anak mengamati mana yang lebih berat.","Minta anak menebak lalu mencoba menyeimbangkan kedua sisi."],
+ ["4-5y"],
+ ["Gunakan pengait kokoh dan letakkan neraca jauh dari meja agar tidak jatuh.","Tali harus pendek dan terikat kuat, jauhkan dari leher anak.","Pilih benda yang tidak mudah pecah dan dampingi selama bermain."],
+ [CDC, PRE]),
+
+g("diy-40-dapur-kardus","Dapur Main dari Kardus","1 dapur main anak",90,"rendah",
+ ["Kardus besar bekas","Lakban kain","Piring kertas atau tutup wadah sebagai kompor","Gagang kayu atau tutup botol untuk tombol","Cat akrilik tidak berbau"],
+ ["Bentuk kardus menjadi lemari dan meja dengan melipat serta merekatkan sisinya.","Buat lingkaran kompor dari piring kertas atau tutup wadah, rekatkan di atas meja.","Tambahkan tombol dari tutup botol dan rak kecil di dalam lemari.","Isi dengan peralatan masak anak yang aman dan ajak anak bermain peran."],
+ ["2-3y","3-4y"],
+ ["Pastikan dapur kardus tidak mudah roboh dan tidak dipakai untuk memanjat.","Gunakan cat yang tidak berbau menyengat dan biarkan kering sempurna sebelum dipakai.","Hindari peralatan logam tajam atau wadah kaca di area bermain."],
+ [TODD, MON]),
+
+g("diy-41-kartu-tiga-bagian","Kartu Tiga Bagian Sederhana","1 set kartu tiga bagian",40,"rendah",
+ ["Kertas karton tebal","Gambar benda sehari-hari yang dicetak atau digambar","Spidol","Gunting","Plastik laminating atau lakban bening"],
+ ["Pilih lima sampai delapan benda yang dikenal anak, misalnya apel, bola, dan sendok.","Buat tiga kartu untuk setiap benda: gambar saja, gambar dengan label, dan label saja.","Potong kartu dengan ukuran seragam lalu lapisi agar tahan lama.","Tunjukkan cara mencocokkan kartu gambar dengan label sambil menyebut namanya."],
+ ["2-3y","3-4y"],
+ ["Gunakan gambar yang jelas dan hindari kartu berukuran sangat kecil.","Laminating atau lakban bening harus rapi agar tidak ada sudut tajam.","Dampingi anak dan simpan kartu di kotak agar tidak berserakan."],
+ [MON, CDC]),
+
+g("diy-42-huruf-ampelas","Huruf Ampeles dari Kertas Pasir","1 set huruf ampelas",45,"rendah",
+ ["Kertas pasir halus","Kardus tebal sebagai alas","Gunting","Lem","Pola huruf dari kertas"],
+ ["Buat pola huruf dari kertas, lalu jiplak di atas kertas pasir.","Potong huruf dengan gunting dan tempelkan pada kardus yang dipotong seukuran sama.","Buat satu set huruf kecil yang biasa muncul dalam nama anak.","Tunjukkan cara meraba bentuk huruf sambil menyebut bunyinya."],
+ ["3-4y","4-5y"],
+ ["Pemotongan dilakukan orang dewasa dan tepi kertas pasir dirapikan.","Dampingi anak agar tidak menggosok kertas pasir ke mata atau kulit sensitif.","Simpan huruf di wadah datar agar tidak melengkung atau berdebu."],
+ [MON, PRE]),
+
+g("diy-43-tongkat-angka","Tongkat Angka dari Kardus","1 set tongkat angka",50,"rendah",
+ ["Kardus tebal atau stik kayu besar","Kertas warna","Lem","Spidol","Gunting"],
+ ["Potong kardus menjadi sepuluh batang dengan panjang bertingkat.","Beri warna berbeda pada setiap batang dan tulis angka 1 sampai 10.","Susun batang dari yang terpendek ke terpanjang sambil menyebut angkanya.","Ajak anak menghitung ruas warna pada setiap batang."],
+ ["3-4y","4-5y"],
+ ["Gunakan batang yang tumpul dan tidak memiliki serpihan tajam.","Jangan memakai stik yang terlalu panjang dan runcing.","Dampingi anak saat menyusun agar tidak memukul atau melempar batang."],
+ [CDC, MON]),
+
+g("diy-44-toples-bau","Toples Bau untuk Latihan Penciuman","6 toples bau",25,"rendah",
+ ["Enam wadah plastik kecil bertutup","Bahan beraroma aman: daun pandan, kulit jeruk, kayu manis, cengkeh","Kain kasa atau kertas berlubang untuk penutup","Label dan spidol","Karet gelang"],
+ ["Isi setiap wadah dengan satu bahan beraroma, jangan terlalu banyak.","Tutup mulut wadah dengan kain kasa lalu ikat karet gelang.","Beri label gambar atau warna pada bagian luar tanpa menyebut isinya.","Ajak anak mencium satu per satu dan menebak aromanya."],
+ ["3-4y","4-5y"],
+ ["Gunakan bahan makanan atau rempah yang aman, bukan minyak esensial pekat.","Pastikan penutup kasa terikat kuat dan tidak bisa dibuka anak.","Hentikan bila anak bersin, batuk, atau tampak tidak nyaman; konsultasikan ke dokter bila muncul reaksi kulit atau napas."],
+ [PRE, WHO]),
+
+g("diy-45-silinder-suara","Silinder Suara Berpasangan","6 pasang silinder",35,"rendah",
+ ["Enam sampai delapan wadah plastik kecil identik","Isi berbeda: beras, kacang hijau, pasir, kancing besar","Lakban kuat","Kain untuk melapisi","Spidol"],
+ ["Isi setiap pasang wadah dengan bahan yang sama, dengan jumlah berbeda.","Tutup rapat dan lilit lakban beberapa kali agar tidak terbuka.","Bungkus bagian luar dengan kain agar isi tidak terlihat.","Ajak anak menggoyangkan dan mencocokkan wadah yang bunyinya sama."],
+ ["3-4y","4-5y"],
+ ["Tutup harus benar-benar kuat; periksa sebelum dan sesudah dipakai.","Isi wadah tidak boleh keluar, terutama kacang atau kancing kecil.","Awasi anak dan simpan di tempat aman bila ada bayi di rumah."],
+ [TOY, MON]),
+
+g("diy-46-tablet-warna","Tablet Warna dari Kartu Cat","1 set tablet warna",20,"gratis",
+ ["Kartu warna cat dari toko bangunan","Kardus tebal","Lem","Gunting","Kotak penyimpanan"],
+ ["Ambil beberapa kartu cat dengan gradasi warna yang jelas.","Potong menjadi kotak seragam, lalu tempelkan pada kardus dengan ukuran sama.","Buat dua set untuk kegiatan mencocokkan warna.","Tunjukkan cara memasangkan warna yang sama, mulai dari yang paling berbeda."],
+ ["18-24m","2-3y","3-4y"],
+ ["Gunakan kartu yang dilapisi dengan rapi agar tidak ada lapisan tipis yang terkelupas.","Jangan memakai potongan kecil yang bisa tertelan.","Dampingi anak dan simpan di kotak setelah bermain."],
+ [TODD, MON]),
+
+g("diy-47-papan-cuaca","Papan Cuaca Sederhana","1 papan cuaca",40,"rendah",
+ ["Kardus tebal","Kertas warna","Stiker atau gambar matahari, awan, hujan","Lem","Penjepit atau pita perekat"],
+ ["Potong kardus menjadi persegi panjang dan lapisi dengan kertas warna.","Buat kolom untuk setiap jenis cuaca dengan gambar yang mudah dikenali.","Sediakan penjepit atau kartu kecil untuk menandai cuaca hari ini.","Setiap pagi ajak anak melihat ke luar jendela lalu menandai cuaca."],
+ ["2-3y","3-4y"],
+ ["Gantung atau letakkan papan di tempat yang tidak bisa jatuh menimpa anak.","Hindari penjepit kecil yang mudah lepas; pilih ukuran besar.","Dampingi anak saat memasang penjepit."],
+ [CDC, PRE]),
+
+g("diy-48-kolam-beras","Kolam Sensori Beras","1 kolam sensori",20,"rendah",
+ ["Baskom plastik lebar","Beras atau biji-bijian besar","Sendok, gelas, dan wadah kecil","Kain alas atau terpal","Saringan kecil"],
+ ["Letakkan terpal di lantai, kemudian taruh baskom di tengahnya.","Isi baskom dengan beras setinggi sekitar 5 cm.","Sediakan sendok dan wadah untuk menuang serta memindahkan.","Ajak anak menyaring, menuang, dan merapikan sendiri setelah bermain."],
+ ["18-24m","2-3y"],
+ ["Selalu dampingi anak karena beras dan biji-bijian berisiko tertelan atau masuk hidung.","Gunakan alas agar mudah dibersihkan dan tidak membuat lantai licin.","Hindari memakai kacang-kacangan kecil untuk anak di bawah tiga tahun."],
+ [CHOKE, TODD]),
+
+g("diy-49-tenda-baca","Tenda Baca dari Kain","1 tenda baca",30,"gratis",
+ ["Dua kursi atau meja rendah","Kain besar bekas","Penjepit besar","Bantal kecil","Buku anak"],
+ ["Susun dua kursi saling berhadapan dengan jarak sekitar satu meter.","Bentangkan kain di atasnya hingga menutupi bagian atas dan belakang.","Jepit kain pada kursi dengan penjepit besar agar tidak jatuh.","Letakkan bantal dan beberapa buku di dalam, lalu ajak anak membaca bersama."],
+ ["18-24m","2-3y","3-4y"],
+ ["Pastikan kursi stabil dan tidak mudah roboh saat anak masuk.","Jangan menutup seluruh sisi hingga anak sulit terlihat; sisakan satu sisi terbuka.","Dampingi anak dan hindari menjepit kain pada bagian yang bisa melukai."],
+ [MON, TODD]),
+
+g("diy-50-jemuran-jepitan","Jemuran dan Jepitan Anak","1 set jemuran mini",20,"gratis",
+ ["Tali katun atau tambang kecil","Jepitan baju ukuran sedang","Kain perca atau kaus kaki bayi","Keranjang kecil","Dua pengait"],
+ ["Ikat tali di antara dua pengait dengan ketinggian sesuai jangkauan anak.","Letakkan keranjang berisi kain perca di bawah tali.","Tunjukkan cara menjepit kain satu per satu sambil menghitung.","Ajak anak melepas dan melipat kain setelah selesai."],
+ ["18-24m","2-3y"],
+ ["Tali dipasang pendek dan tidak menjuntai agar tidak melilit leher.","Gunakan jepitan tanpa pegas yang sangat kuat agar jari anak tidak terjepit.","Dampingi anak dan jauhkan dari area tidur."],
+ [MON, TODD]),
+
+g("diy-51-alat-pel-mini","Alat Pel Mini untuk Anak","1 set alat pel",20,"rendah",
+ ["Gagang pel lama atau stik kayu","Kain microfiber bekas","Karet gelang atau pengikat","Gunting","Wadah semprot kecil berisi air"],
+ ["Potong kain menjadi persegi yang cukup besar untuk menutupi ujung gagang.","Lipat kain beberapa lapis lalu ikatkan pada gagang dengan karet gelang.","Tunjukkan cara mengepel dengan gerakan memutar dari atas ke bawah.","Ajak anak mengepel area kecil setelah ia menumpahkan air."],
+ ["18-24m","2-3y"],
+ ["Gagang harus tumpul dan tidak lebih tinggi dari bahu anak.","Gunakan wadah semprot kecil dan isi hanya dengan air, bukan cairan pembersih.","Dampingi anak agar tidak berlari di lantai yang basah."],
+ [MON, TODD]),
+
+g("diy-52-penyiram-botol","Penyiram Tanaman dari Botol Bekas","1 penyiram anak",15,"gratis",
+ ["Botol plastik bekas bertutup","Paku dan palu atau jarum tebal","Air","Stiker hias","Gunting"],
+ ["Bersihkan botol dan buat beberapa lubang kecil di tutupnya dengan paku, dilakukan orang dewasa.","Isi botol dengan air dan tutup rapat.","Tunjukkan cara memiringkan botol agar air keluar perlahan.","Ajak anak menyiram tanaman kecil di pot atau kebun."],
+ ["2-3y","3-4y"],
+ ["Lubang tutup dibuat oleh orang dewasa, jauhkan paku dan palu dari anak.","Gunakan botol plastik yang tidak retak agar tidak pecah.","Dampingi anak dan jangan biarkan ia meminum air dari botol tersebut."],
+ [MON, WHO]),
+
+g("diy-53-stasiun-cuci-boneka","Stasiun Cuci Boneka","1 stasiun cuci",25,"rendah",
+ ["Baskom plastik","Air hangat secukupnya","Sabun cair bayi","Sikat kecil lembut","Boneka atau kain kotor","Handuk kecil"],
+ ["Isi baskom dengan air hangat dan sedikit sabun bayi.","Letakkan handuk di lantai sekitar baskom agar area tetap kering.","Tunjukkan cara membasahi, menyikat lembut, lalu membilas boneka.","Ajak anak memeras dan menjemur boneka di tempat teduh."],
+ ["2-3y","3-4y"],
+ ["Air harus hangat, bukan panas; uji dengan pergelangan tangan orang dewasa.","Gunakan sabun yang lembut dan hindari cairan pembersih keras.","Dampingi anak agar tidak berdiri di genangan air dan tidak minum air sabun."],
+ [TODD, WHO]),
+
+g("diy-54-kotak-sortir-bentuk","Kotak Sortir Bentuk dari Kardus","1 kotak sortir",40,"gratis",
+ ["Kardus tebal bertutup","Kertas warna","Gunting dan cutter dewasa","Lakban","Benda berbentuk bola, kubus, dan silinder"],
+ ["Buat lubang di tutup kardus sesuai bentuk benda yang akan dimasukkan.","Lapisi tepi lubang dengan lakban agar tidak tajam.","Tandai setiap lubang dengan warna atau gambar bentuk.","Tunjukkan cara memasukkan benda ke lubang yang sesuai, lalu biarkan anak mencoba."],
+ ["12-18m","18-24m"],
+ ["Lubang dan tepi kardus harus halus serta dilapisi lakban.","Pilih benda berukuran besar yang tidak bisa tertelan.","Buka tutup kardus untuk mengeluarkan benda, jangan biarkan anak memasukkan tangan terlalu dalam."],
+ [CDC, TOY]),
+
+g("diy-55-puzzle-knop","Puzzle Knop dari Kardus","1 puzzle knop",45,"rendah",
+ ["Kardus tebal","Gambar besar dari majalah atau cetakan","Lem","Gunting dan cutter dewasa","Knop atau tutup botol besar"],
+ ["Tempelkan gambar pada kardus tebal sebagai alas puzzle.","Potong gambar menjadi tiga sampai lima bagian besar.","Rekatkan knop atau tutup botol di tengah setiap potongan sebagai pegangan.","Tunjukkan cara mengangkat potongan dengan knop dan menyusunnya kembali."],
+ ["12-18m","18-24m"],
+ ["Knop harus terpasang kuat dan berukuran besar agar tidak lepas.","Potongan puzzle harus lebih besar dari mulut anak.","Periksa keausan kardus dan ganti bila lapisan mulai terkelupas."],
+ [TOY, MON]),
+
+g("diy-56-gulungan-kain-tarik","Gulungan Kain Tarik","1 gulungan kain",15,"gratis",
+ ["Kotak tisu bekas atau wadah plastik","Kain perca lembut berwarna","Gunting","Lakban","Pita lebar"],
+ ["Potong kain menjadi beberapa lembar panjang dengan lebar sekitar 5 cm.","Satukan ujung kain dengan simpul kuat sehingga membentuk rangkaian panjang.","Masukkan rangkaian ke dalam kotak tisu melalui lubang kecil.","Tunjukkan cara menarik kain perlahan, lalu biarkan bayi mengeksplorasi."],
+ ["6-9m","9-12m"],
+ ["Gunakan kain yang tidak berbulu dan tidak mudah terurai menjadi serat kecil.","Periksa simpul setiap kali dipakai agar tidak lepas.","Jangan menggunakan tali panjang; selalu dampingi bayi saat bermain."],
+ [BABY, TOY]),
+
+g("diy-57-cermin-tummy-time","Cermin Tummy Time","1 cermin tummy time",30,"rendah",
+ ["Cermin akrilik tanpa sudut tajam","Kardus tebal","Lakban kain","Kain flanel","Lem kuat"],
+ ["Tempelkan cermin akrilik pada kardus dengan lem kuat dan biarkan mengering.","Lapisi seluruh tepi cermin dengan lakban kain agar aman.","Buat penyangga miring dari kardus di bagian belakang.","Letakkan cermin di depan bayi saat tummy time dan ajak ia melihat pantulan."],
+ ["3-6m","6-9m"],
+ ["Gunakan cermin akrilik, bukan kaca, dan tutup seluruh tepinya.","Selalu dampingi bayi selama tummy time dan hentikan bila ia tampak lelah.","Letakkan cermin di permukaan stabil dan jauh dari tepi kasur."],
+ [BABY, CDC]),
+
+g("diy-58-bola-kain-sensorik","Bola Kain Sensorik","1 bola kain",30,"gratis",
+ ["Kain perca dengan tekstur berbeda","Kapas atau kain bekas sebagai isi","Jarum dan benang atau lem kain","Gunting","Pita kecil opsional"],
+ ["Potong kain menjadi beberapa potongan berbentuk irisan yang bila disatukan membentuk bola.","Jahit potongan dari dalam, sisakan lubang kecil untuk mengisi.","Isi dengan kapas hingga cukup padat, lalu jahit lubang hingga tertutup.","Beri tekstur berbeda pada setiap sisi dan ajak bayi meraba serta menggenggam."],
+ ["3-6m","6-9m"],
+ ["Jahit semua sisi dengan kuat agar isi tidak keluar.","Hindari menambahkan pita panjang atau manik yang mudah lepas.","Periksa jahitan setiap kali dipakai, terutama saat bayi suka menggigit."],
+ [BABY, TOY]),
+
+g("diy-59-buku-kain-perca","Buku Kain Perca Tekstur","1 buku kain",45,"gratis",
+ ["Kain flanel atau katun tebal","Kain perca berbagai tekstur","Jarum dan benang","Gunting","Kain untuk isian"],
+ ["Potong kain menjadi beberapa halaman berukuran sekitar 15 x 15 cm.","Susun dua halaman per lembar dan rekatkan dengan jahitan tepi.","Tempelkan kain tekstur berbeda pada setiap halaman dengan jahitan kuat.","Jahit seluruh halaman menjadi satu di bagian punggung buku."],
+ ["6-9m","9-12m"],
+ ["Pastikan semua hiasan dijahit kuat dan tidak bisa dicabut.","Gunakan bahan kain yang bersih dan tidak berjamur.","Dampingi bayi dan cuci buku kain secara berkala sesuai bahan."],
+ [BABY, MON]),
+
+g("diy-60-kartu-wajah-keluarga","Kartu Wajah Keluarga Kontras Tinggi","6 kartu wajah",30,"gratis",
+ ["Kertas putih tebal","Foto wajah keluarga ukuran besar","Lem","Gunting","Lakban bening atau laminating"],
+ ["Cetak foto wajah anggota keluarga dengan ukuran besar dan latar sederhana.","Tempelkan foto pada kertas tebal, lalu potong menjadi kartu seragam.","Lapisi kartu dengan lakban bening atau plastik agar tahan air liur.","Tunjukkan kartu satu per satu saat bayi terjaga sambil menyebut nama dengan lembut."],
+ ["0-3m","3-6m"],
+ ["Jangan meletakkan kartu di dalam tempat tidur bayi atau menempelkannya di sisi kasur.","Selalu dampingi bayi dan jauhkan kartu dari wajahnya saat ia tidur.","Pastikan laminating rapi tanpa sudut tajam dan tidak ada bagian yang terkelupas."],
+ [BABY, CDC]),
+]
+
+with open("content/parts/diy-2.json","w",encoding="utf-8") as f:
+    json.dump(data,f,ensure_ascii=False,indent=2)
+print("wrote",len(data))
+PY
+wrote 30
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json,re
+d=json.load(open('content/parts/diy-2.json'))
+ages={'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y','3-4y','4-5y'}
+costs={'gratis','rendah','sedang'}
+errs=[]
+ids=set()
+for i,x in enumerate(d):
+    k=set(x)
+    need={'id','title','makes','timeMinutes','cost','materialsNeeded','steps','ageBands','safetyNotes','references'}
+    if k!=need: errs.append((i,'keys',k^need))
+    if not re.fullmatch(r'[a-z0-9-]+',x['id']): errs.append((i,'id',x['id']))
+    if x['id'] in ids: errs.append((i,'dup',x['id']))
+    ids.add(x['id'])
+    if len(x['title'])<5: errs.append((i,'title',x['title']))
+    if len(x['makes'])<3: errs.append((i,'makes',x['makes']))
+    if not (5<=x['timeMinutes']<=600): errs.append((i,'time',x['timeMinutes']))
+    if x['cost'] not in costs: errs.append((i,'cost',x['cost']))
+    if len(x['materialsNeeded'])<1 or len(x['steps'])<2: errs.append((i,'arr',x['id']))
+    if not x['ageBands'] or any(a not in ages for a in x['ageBands']): errs.append((i,'age',x['ageBands']))
+    if any(a in {'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y'} for a in x['ageBands']) and len(x['safetyNotes'])<1:
+        errs.append((i,'safety',x['id']))
+    if len(x['references'])<1: errs.append((i,'refs',x['id']))
+    for r in x['references']:
+        if not r.get('title') or not r.get('url','').startswith('http'): errs.append((i,'ref',r))
+print('count',len(d),'errors',len(errs))
+for e in errs: print(e)
+print('ages coverage')
+from collections import Counter
+c=Counter(a for x in d for a in x['ageBands'])
+print(dict(c))
+PY
+count 30 errors 0
+ages coverage
+{'3-4y': 17, '4-5y': 8, '6-9m': 5, '9-12m': 3, '12-18m': 4, '18-24m': 9, '2-3y': 14, '3-6m': 3, '0-3m': 1}
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json
+p='content/parts/diy-2.json'
+d=json.load(open(p))
+for x in d:
+    if x['id']=='diy-42-huruf-ampelas':
+        x['title']='Huruf Ampelas dari Kertas Pasir'
+json.dump(d,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=2)
+PY
+python3 -c "import json;d=json.load(open('content/parts/diy-2.json'));print('OK',len(d))"
+OK 30
+[0m
+DONE diy-2

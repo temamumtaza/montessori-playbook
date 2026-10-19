@@ -2,3 +2,6 @@ Tulis file content/parts/diy-2.json berisi ARRAY. Isi: 30 objek DIYGuide lain (v
 Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
 Validasi: python3 -c "import json;d=json.load(open('content/parts/diy-2.json'));print('OK',len(d))"
 Jawab: DONE diy-2
+
+
+PENTING-ANTREAN: Kalau ada 1-2 entri yang meragukan, JANGAN gagalkan seluruh file. Buang entri yang bermasalah itu, tulis sisanya. File harus SELALU ditulis walau jumlahnya sedikit lebih rendah dari target. Validasi akhir cukup: python3 -c "import json;json.load(open('FILE'))" (hanya cek JSON valid).

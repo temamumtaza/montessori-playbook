@@ -4,6 +4,7 @@ import { AGE_BANDS, AREAS, areaById } from '../../content/meta'
 import type { Activity, AgeBandId } from '../../content/schema'
 import { EmptyState, SkeletonCards, AREA_GRADIENTS } from './TodayPage'
 import { AreaIcon } from '../components/icons'
+import { useNavigate } from 'react-router-dom'
 
 type Filters = { band: AgeBandId | 'semua'; area: string | 'semua'; durasi: 'semua' | 'pendek' | 'sedang'; fromHome: boolean }
 
@@ -14,6 +15,7 @@ const CHIP_ACTIVE: Record<string, string> = {
 }
 
 export function PlaybookPage() {
+  const navigate = useNavigate()
   const [acts, setActs] = useState<Activity[] | null>(null)
   const [f, setF] = useState<Filters>({ band: 'semua', area: 'semua', durasi: 'semua', fromHome: false })
 
@@ -101,7 +103,7 @@ export function PlaybookPage() {
               const grad = AREA_GRADIENTS[a.areas[0]] ?? 'from-sky-400 to-sky-600'
               return (
                 <li key={a.id}>
-                  <article className="rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition">
+                  <article onClick={() => navigate(`/aktivitas/${a.id}`)} className="rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.98] transition cursor-pointer">
                     <div className={`relative h-24 bg-gradient-to-br ${grad} grid place-items-center`}>
                       <AreaIcon area={a.areas[0]} className="w-11 h-11 text-white/95 drop-shadow" />
                       <span className="absolute top-2 left-2 text-[10px] font-semibold bg-white/90 text-sky-800 rounded-full px-2 py-0.5">

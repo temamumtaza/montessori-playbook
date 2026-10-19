@@ -1,0 +1,631 @@
+[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m$ [0mls -la && ls content/parts 2>/dev/null | head -20
+total 368
+drwxrwxr-x  14 temamumtaza temamumtaza   4096 Oct 19 20:04 .
+drwxrwxr-x   5 temamumtaza temamumtaza   4096 Oct 19 18:06 ..
+-rw-rw-r--   1 temamumtaza temamumtaza   1372 Oct 19 18:32 .env.local
+drwxrwxr-x   7 temamumtaza temamumtaza   4096 Oct 19 19:25 .git
+drwxrwxr-x   3 temamumtaza temamumtaza   4096 Oct 19 18:27 .github
+-rw-rw-r--   1 temamumtaza temamumtaza     59 Oct 19 18:32 .gitignore
+drwxrwxr-x   2 temamumtaza temamumtaza   4096 Oct 19 18:32 .vercel
+drwxrwxr-x   3 temamumtaza temamumtaza   4096 Oct 19 20:37 .workers
+-rw-rw-r--   1 temamumtaza temamumtaza   1541 Oct 19 18:29 CONTRIBUTING.md
+-rw-rw-r--   1 temamumtaza temamumtaza   1503 Oct 19 18:29 LICENSE
+-rw-rw-r--   1 temamumtaza temamumtaza   2645 Oct 19 18:29 README.md
+drwxrwxr-x   2 temamumtaza temamumtaza   4096 Oct 19 18:06 app
+drwxrwxr-x   4 temamumtaza temamumtaza   4096 Oct 19 18:34 content
+drwxrwxr-x   5 temamumtaza temamumtaza   4096 Oct 19 19:42 dist
+drwxrwxr-x   4 temamumtaza temamumtaza   4096 Oct 19 19:19 docs
+-rw-rw-r--   1 temamumtaza temamumtaza   1939 Oct 19 18:31 index.html
+drwxrwxr-x 292 temamumtaza temamumtaza  12288 Oct 19 18:15 node_modules
+-rw-rw-r--   1 temamumtaza temamumtaza 263583 Oct 19 18:15 package-lock.json
+-rw-rw-r--   1 temamumtaza temamumtaza    983 Oct 19 18:15 package.json
+drwxrwxr-x   4 temamumtaza temamumtaza   4096 Oct 19 18:29 public
+drwxrwxr-x   2 temamumtaza temamumtaza   4096 Oct 19 18:28 scripts
+drwxrwxr-x   4 temamumtaza temamumtaza   4096 Oct 19 18:17 src
+-rw-rw-r--   1 temamumtaza temamumtaza    538 Oct 19 18:11 tsconfig.json
+-rw-rw-r--   1 temamumtaza temamumtaza    488 Oct 19 19:42 tsconfig.tsbuildinfo
+-rw-rw-r--   1 temamumtaza temamumtaza   1068 Oct 19 18:33 vercel.json
+-rw-rw-r--   1 temamumtaza temamumtaza   2307 Oct 19 18:10 vite.config.ts
+_gen_materials-1.py
+act-0-3m.json
+act-12-18m.json
+act-18-24m.json
+act-2-3y.json
+act-3-4y.json
+act-3-6m.json
+act-4-5y.json
+act-6-9m.json
+act-9-12m.json
+diy-1.json
+diy-2.json
+glossary-1.json
+glossary-2.json
+materials-1.json
+materials-2.json
+mile-0-3m.json
+mile-12-18m.json
+mile-18-24m.json
+mile-2-3y.json
+[0m
+[0m$ [0mfind . -maxdepth 3 -name "*.json" | head -20
+./vercel.json
+./.vercel/project.json
+./content/parts/glossary-1.json
+./content/parts/materials-2.json
+./content/parts/mile-4-5y.json
+./content/parts/mile-18-24m.json
+./content/parts/mile-3-6m.json
+./content/parts/glossary-2.json
+./content/parts/diy-2.json
+./content/parts/mile-2-3y.json
+./content/parts/act-4-5y.json
+./content/parts/mile-9-12m.json
+./content/parts/mile-3-4y.json
+./content/parts/act-3-6m.json
+./content/parts/materials-1.json
+./content/parts/diy-1.json
+./content/parts/act-3-4y.json
+./content/parts/mile-0-3m.json
+./content/parts/rooms-1.json
+./content/parts/act-18-24m.json
+[0m
+[0m$ [0mhead -c 2500 content/parts/glossary-1.json
+[
+  {
+    "term": "absorbent mind",
+    "termEn": "Absorbent Mind",
+    "definition": "Cara anak kecil menyerap pengalaman, bahasa, dan kebiasaan dari sekitarnya secara alami, seperti spons menyerap air, tanpa perlu diajari secara formal.",
+    "relatedTerms": [
+      "sensitive period",
+      "prepared environment",
+      "observation"
+    ]
+  },
+  {
+    "term": "sensitive period",
+    "termEn": "Sensitive Period",
+    "definition": "Masa tertentu dalam perkembangan anak ketika ia sangat tertarik dan mudah mempelajari keterampilan tertentu, misalnya bahasa atau keteraturan, sebelum minat itu mereda.",
+    "relatedTerms": [
+      "absorbent mind",
+      "observation",
+      "observation"
+    ]
+  },
+  {
+    "term": "prepared environment",
+    "termEn": "Prepared Environment",
+    "definition": "Ruang belajar yang sengaja ditata agar aman, rapi, mudah dijangkau anak, dan mendorong kemandirian serta pilihan kegiatan yang sesuai usianya.",
+    "relatedTerms": [
+      "freedom within limits",
+      "independence",
+      "didactic material"
+    ]
+  },
+  {
+    "term": "freedom within limits",
+    "termEn": "Freedom Within Limits",
+    "definition": "Kebebasan anak untuk memilih kegiatan dan bergerak, tetap dibatasi oleh aturan keselamatan, rasa hormat, dan tanggung jawab bersama.",
+    "relatedTerms": [
+      "prepared environment",
+      "self-regulation",
+      "grace and courtesy"
+    ]
+  },
+  {
+    "term": "normalization",
+    "termEn": "Normalization",
+    "definition": "Kondisi ketika anak menunjukkan konsentrasi, ketenangan, dan disiplin diri secara wajar setelah kebutuhan perkembangannya terpenuhi dengan baik.",
+    "relatedTerms": [
+      "concentration",
+      "work cycle",
+      "self-regulation"
+    ]
+  },
+  {
+    "term": "practical life",
+    "termEn": "Practical Life",
+    "definition": "Kegiatan sehari-hari seperti menuang, menyapu, atau berpakaian yang melatih kemandirian, koordinasi gerak, dan rasa tanggung jawab anak.",
+    "relatedTerms": [
+      "independence",
+      "fine motor",
+      "control of error"
+    ]
+  },
+  {
+    "term": "sensorial",
+    "termEn": "Sensorial",
+    "definition": "Pendekatan belajar yang melatih pengamatan anak melalui indra, seperti membedakan ukuran, warna, tekstur, bunyi, atau bau dengan bahan yang konkret.",
+    "relatedTerms": [
+      "didactic material",
+      "concrete to abstract",
+      "sensory integration"
+    ]
+  },
+  {
+    "term": "control of error",
+    "termEn": "Control of Error",
+    "definition": "Ci
+[0m
+[0m$ [0mls content/parts/ && find content -name "*parent*" -o -name "*guide*" | head
+_gen_materials-1.py
+act-0-3m.json
+act-12-18m.json
+act-18-24m.json
+act-2-3y.json
+act-3-4y.json
+act-3-6m.json
+act-4-5y.json
+act-6-9m.json
+act-9-12m.json
+diy-1.json
+diy-2.json
+glossary-1.json
+glossary-2.json
+materials-1.json
+materials-2.json
+mile-0-3m.json
+mile-12-18m.json
+mile-18-24m.json
+mile-2-3y.json
+mile-3-4y.json
+mile-3-6m.json
+mile-4-5y.json
+mile-6-9m.json
+mile-9-12m.json
+rooms-1.json
+[0m
+[0m$ [0mls src && grep -rn "ParentGuide\|parents" src content --include="*.ts" --include="*.tsx" --include="*.json" | head -20
+app
+content
+index.css
+main.tsx
+src/content/schema.ts:121:// ===== ParentGuide =====
+src/content/schema.ts:122:export const ParentGuide = z.object({
+src/content/schema.ts:131:export type ParentGuide = z.infer<typeof ParentGuide>
+src/content/schema.ts:203:  parentGuides: z.array(ParentGuide),
+[0m
+[0m$ [0msed -n '1,220p' src/content/schema.ts
+import { z } from 'zod'
+
+// ===== Enum inti =====
+export const AgeBandId = z.enum([
+  '0-3m', '3-6m', '6-9m', '9-12m',
+  '12-18m', '18-24m', '2-3y', '3-4y', '4-5y',
+])
+export type AgeBandId = z.infer<typeof AgeBandId>
+
+export const AreaId = z.enum([
+  'practical-life', 'sensorial', 'language', 'math', 'culture',
+  'movement', 'grace-courtesy', 'self-care', 'art-music', 'outdoor',
+])
+export type AreaId = z.infer<typeof AreaId>
+
+export const MasteryLevel = z.enum(['belum', 'mulai', 'mahir'])
+export type MasteryLevel = z.infer<typeof MasteryLevel>
+
+// ===== Referensi sumber (WAJIB di tiap entri konten) =====
+export const Source = z.object({
+  title: z.string().min(3),
+  url: z.string().url(),
+  note: z.string().optional(),
+})
+export type Source = z.infer<typeof Source>
+
+// ===== Activity (entitas inti) =====
+export const Activity = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/, 'id: kebab-case'),
+  title: z.string().min(5),
+  summary: z.string().min(20, 'ringkasan minimal 20 karakter'),
+  ageBands: z.array(AgeBandId).min(1),
+  areas: z.array(AreaId).min(1),
+  skills: z.array(z.string()).default([]),
+  objectives: z.array(z.string()).min(1, 'minimal 1 tujuan'),
+  materials: z.array(z.object({
+    name: z.string().min(2),
+    fromHome: z.boolean().default(true),
+    optional: z.boolean().default(false),
+  })).min(1),
+  prepMinutes: z.number().int().min(0).max(120),
+  durationMinutes: z.number().int().min(1).max(180),
+  prepLevel: z.enum(['rendah', 'sedang', 'tinggi']),
+  presentation: z.array(z.object({
+    step: z.number().int().min(1),
+    text: z.string().min(10),
+  })).min(2, 'minimal 2 langkah presentasi'),
+  controlOfError: z.string().min(10).optional(),
+  variations: z.array(z.string()).default([]),
+  readySigns: z.array(z.string()).min(1, 'minimal 1 tanda siap'),
+  struggleSigns: z.array(z.string()).default([]),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1, 'WAJIB minimal 1 rujukan'),
+  diyGuideId: z.string().optional(),
+  materialIds: z.array(z.string()).default([]),
+})
+export type Activity = z.infer<typeof Activity>
+
+// ===== Material =====
+export const Material = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(3),
+  purpose: z.string().min(20),
+  ageBands: z.array(AgeBandId).min(1),
+  budget: z.enum(['rendah', 'sedang', 'tinggi']),
+  buyHint: z.string().optional(),
+  diy: z.boolean().default(false),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Material = z.infer<typeof Material>
+
+// ===== DIYGuide =====
+export const DIYGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  makes: z.string().min(3),
+  timeMinutes: z.number().int().min(5).max(600),
+  cost: z.enum(['gratis', 'rendah', 'sedang']),
+  materialsNeeded: z.array(z.string()).min(1),
+  steps: z.array(z.string()).min(2),
+  ageBands: z.array(AgeBandId).min(1),
+  safetyNotes: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type DIYGuide = z.infer<typeof DIYGuide>
+
+// ===== RoomSetup =====
+export const RoomSetup = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  room: z.enum(['kamar-anak', 'kamar-mandi', 'dapur', 'ruang-keluarga', 'area-makan', 'outdoor']),
+  title: z.string().min(5),
+  principles: z.array(z.string()).min(2),
+  items: z.array(z.object({
+    name: z.string().min(2),
+    essential: z.boolean().default(true),
+    budgetRendah: z.string(),
+    budgetSedang: z.string().optional(),
+    diy: z.boolean().default(false),
+  })).min(3),
+  layoutTips: z.array(z.string()).min(1),
+  ageBands: z.array(AgeBandId).min(1),
+  references: z.array(Source).min(1),
+})
+export type RoomSetup = z.infer<typeof RoomSetup>
+
+// ===== Milestone =====
+export const Milestone = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  ageBand: AgeBandId,
+  domain: z.enum(['motorik-kasar', 'motorik-halus', 'bahasa', 'kognitif', 'sosial-emosional', 'self-help']),
+  description: z.string().min(20),
+  typicalFromMonths: z.number().min(0).max(72),
+  typicalToMonths: z.number().min(0).max(72),
+  redFlags: z.array(z.string()).default([]),
+  references: z.array(Source).min(1),
+})
+export type Milestone = z.infer<typeof Milestone>
+
+// ===== ParentGuide =====
+export const ParentGuide = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  category: z.enum(['filosofi', 'komunikasi', 'disiplin', 'rutinitas', 'screen-time', 'sibling', 'toilet', 'tantrum', 'observasi', 'self-care']),
+  ageBands: z.array(AgeBandId).default([]),
+  body: z.string().min(200, 'panduan minimal 200 karakter'),
+  keyTakeaways: z.array(z.string()).min(2),
+  references: z.array(Source).min(1),
+})
+export type ParentGuide = z.infer<typeof ParentGuide>
+
+// ===== Glossary =====
+export const GlossaryEntry = z.object({
+  term: z.string().min(2),
+  termEn: z.string().optional(),
+  definition: z.string().min(30),
+  relatedTerms: z.array(z.string()).default([]),
+})
+export type GlossaryEntry = z.infer<typeof GlossaryEntry>
+
+// ===== Checklist =====
+export const Checklist = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  title: z.string().min(5),
+  kind: z.enum(['environment', 'rutinitas', 'persiapan-aktivitas', 'keselamatan']),
+  scope: z.string(),
+  items: z.array(z.object({
+    text: z.string().min(5),
+    hint: z.string().optional(),
+  })).min(3),
+  references: z.array(Source).min(1),
+})
+export type Checklist = z.infer<typeof Checklist>
+
+// ===== Skill =====
+export const Skill = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(3),
+  area: AreaId,
+  description: z.string().min(20),
+  ageBands: z.array(AgeBandId).min(1),
+})
+export type Skill = z.infer<typeof Skill>
+
+// ===== AgeBand metadata (warna & label) =====
+export const AgeBandMeta = z.object({
+  id: AgeBandId,
+  label: z.string().min(3),
+  rangeMonths: z.tuple([z.number(), z.number()]),
+  color: z.enum(['sky', 'apple', 'mango', 'sunny', 'leaf', 'grape', 'candy', 'tosca']),
+  mascot: z.string().min(1),
+})
+export type AgeBandMeta = z.infer<typeof AgeBandMeta>
+
+// ===== Area metadata =====
+export const AreaMeta = z.object({
+  id: AreaId,
+  label: z.string().min(3),
+  labelEn: z.string(),
+  color: z.enum(['sky', 'apple', 'mango', 'sunny', 'leaf', 'grape', 'candy', 'tosca']),
+  icon: z.string().min(1),
+  description: z.string().min(30),
+})
+export type AreaMeta = z.infer<typeof AreaMeta>
+
+// ===== Bundle per AgeBand (lazy-load unit) =====
+export const AgeBandBundle = z.object({
+  ageBand: AgeBandId,
+  activities: z.array(Activity),
+  milestones: z.array(Milestone).default([]),
+})
+export type AgeBandBundle = z.infer<typeof AgeBandBundle>
+
+// ===== File bundle global =====
+export const GlobalBundle = z.object({
+  ageBands: z.array(AgeBandMeta),
+  areas: z.array(AreaMeta),
+  skills: z.array(Skill).default([]),
+  materials: z.array(Material),
+  diyGuides: z.array(DIYGuide),
+  roomSetups: z.array(RoomSetup),
+  parentGuides: z.array(ParentGuide),
+  glossary: z.array(GlossaryEntry),
+  checklists: z.array(Checklist),
+})
+export type GlobalBundle = z.infer<typeof GlobalBundle>
+[0m
+[0m$ [0mls content && cat content/parts/_gen_materials-1.py | head -40
+bundles
+parts
+import json
+
+R_HCH_TOYS = {"title": "How to buy safe toys (HealthyChildren.org)", "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/How-to-Buy-Safe-Toys.aspx"}
+R_HCH_CHOKE = {"title": "Choking prevention (HealthyChildren.org)", "url": "https://www.healthychildren.org/English/health-issues/conditions/choking/Pages/Choking-Prevention.aspx"}
+R_CDC_KID = {"title": "Child development basics (CDC)", "url": "https://www.cdc.gov/ncbddd/childdevelopment/facts.html"}
+R_NHS_PLAY = {"title": "Play ideas with your baby (NHS)", "url": "https://www.nhs.uk/conditions/baby/babys-development/play-ideas/"}
+R_NHS_TEETH = {"title": "Teething tips and tooth care (NHS)", "url": "https://www.nhs.uk/conditions/baby/babys-teeth/teething-and-tooth-care/"}
+R_ZTT_BRAIN = {"title": "Brain-building through play (ZERO TO THREE)", "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"}
+R_WHO_PLAY = {"title": "Improving early childhood development (WHO)", "url": "https://www.who.int/news-room/fact-sheets/detail/improving-early-childhood-development-who-guideline"}
+R_AMI = {"title": "Montessori materials overview (AMI USA)", "url": "https://amiusa.org/montessori-classroom-materials/"}
+R_MONTE_NOTEBOOK = {"title": "Montessori Notebook activities page", "url": "https://www.themontessorinotebook.com/montessori-activities/"}
+R_CPS = {"title": "Toy safety tips (Canada Safety / general toy guidance)", "url": "https://www.cps.ca/en/documents/position/toys"}
+
+materials = []
+
+
+def add(mid, name, purpose, age, budget, diy, notes, refs, hint=None):
+    m = {
+        "id": mid,
+        "name": name,
+        "purpose": purpose,
+        "ageBands": age,
+        "budget": budget,
+        "diy": diy,
+        "safetyNotes": notes,
+        "references": refs,
+    }
+    if hint:
+        m["buyHint"] = hint
+    materials.append(m)
+
+
+add(
+    "munari-mobile", "Munari Mobile (mobile hitam-putih)",
+    "Mobile hitam-putih dengan lingkaran dan bentuk geometris sederhana yang boleh diletakkan di atas area pandang bayi saat terjaga. Bayi muda umumnya lebih menarik melihat kontras tinggi, dan mobile ini melatih mata untuk memusatkan pandangan serta mengikuti objek yang bergoyang pelan.",
+    ["0-3m", "3-6m"], "sedang", True,
+    ["Jangan pernah menggantung mobile di atas kasur tempat bayi tidur; pilih permukaan yang tegas seperti strip kayu atau pengait langit-langit yang kokoh. Jarak idealnya sekitar 25-30 cm dari wajah bayi dan bayi selalu dalam kawalan orang dewasa."],
+    [R_HCH_TOYS],
+    "Dapat dibeli dari penjual mobile handmade lokal atau dibuat sendiri dari kertas karton hitam dan putih dengan kerangka benang kaku.",
+)
+[0m
+[0m$ [0mls scripts && sed -n '1,200p' scripts/*.mjs 2>/dev/null | head -120
+validate-content.mjs
+#!/usr/bin/env node
+// Validator konten: jalankan `node scripts/validate-content.mjs`
+// Memvalidasi SEMUA file content/*.json & content/bundles/*.json terhadap skema.
+// Skema sumber: src/content/schema.ts (Zod) — di-mirror sebagai pemeriksaan struktural di sini
+// agar validator bisa jalan tanpa build step (CI-friendly).
+
+import { readFileSync, readdirSync, existsSync } from 'node:fs'
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..')
+const contentDir = join(root, 'content')
+const bundlesDir = join(contentDir, 'bundles')
+
+const AGE_BANDS = new Set(['0-3m', '3-6m', '6-9m', '9-12m', '12-18m', '18-24m', '2-3y', '3-4y', '4-5y'])
+const AREAS = new Set(['practical-life', 'sensorial', 'language', 'math', 'culture', 'movement', 'grace-courtesy', 'self-care', 'art-music', 'outdoor'])
+const kebab = (s) => /^[a-z0-9-]+$/.test(s)
+const isUrl = (s) => {
+  try { new URL(s); return true } catch { return false }
+}
+
+const errors = []
+const stats = { activities: 0, materials: 0, diy: 0, milestones: 0, parentGuides: 0, glossary: 0, roomSetups: 0, checklists: 0 }
+
+function err(file, msg) { errors.push(`${file}: ${msg}`) }
+
+function checkSource(refs, file, ctx) {
+  if (!Array.isArray(refs) || refs.length === 0) { err(file, `${ctx}: WAJIB minimal 1 rujukan`); return }
+  refs.forEach((r, i) => {
+    if (!r.title || String(r.title).length < 3) err(file, `${ctx}.references[${i}].title tidak valid`)
+    if (!r.url || !isUrl(r.url)) err(file, `${ctx}.references[${i}].url bukan URL valid`)
+  })
+}
+
+function checkActivity(a, file, i) {
+  const ctx = `activities[${i}] "${a.id ?? a.title ?? '?'}"`
+  if (!a.id || !kebab(a.id)) err(file, `${ctx}.id harus kebab-case`)
+  if (!a.title || a.title.length < 5) err(file, `${ctx}.title terlalu pendek`)
+  if (!a.summary || a.summary.length < 20) err(file, `${ctx}.summary minimal 20 karakter`)
+  if (!Array.isArray(a.ageBands) || a.ageBands.length === 0 || a.ageBands.some((b) => !AGE_BANDS.has(b))) err(file, `${ctx}.ageBands tidak valid`)
+  if (!Array.isArray(a.areas) || a.areas.length === 0 || a.areas.some((x) => !AREAS.has(x))) err(file, `${ctx}.areas tidak valid`)
+  if (!Array.isArray(a.objectives) || a.objectives.length < 1) err(file, `${ctx}.objectives minimal 1`)
+  if (!Array.isArray(a.materials) || a.materials.length < 1) err(file, `${ctx}.materials minimal 1`)
+  if (!Array.isArray(a.presentation) || a.presentation.length < 2) err(file, `${ctx}.presentation minimal 2 langkah`)
+  if (!Array.isArray(a.readySigns) || a.readySigns.length < 1) err(file, `${ctx}.readySigns minimal 1`)
+  if (!Number.isInteger(a.prepMinutes) || a.prepMinutes < 0) err(file, `${ctx}.prepMinutes tidak valid`)
+  if (!Number.isInteger(a.durationMinutes) || a.durationMinutes < 1) err(file, `${ctx}.durationMinutes tidak valid`)
+  if (!['rendah', 'sedang', 'tinggi'].includes(a.prepLevel)) err(file, `${ctx}.prepLevel harus rendah/sedang/tinggi`)
+  // Safety Gate: aktivitas bayi/balita WAJIB catatan keselamatan
+  const babyish = a.ageBands.some((b) => ['0-3m', '3-6m', '6-9m', '9-12m', '12-18m', '18-24m', '2-3y'].includes(b))
+  if (babyish && (!Array.isArray(a.safetyNotes) || a.safetyNotes.length === 0)) {
+    err(file, `${ctx}: aktivitas usia bayi/balita WAJIB punya safetyNotes`)
+  }
+  checkSource(a.references, file, ctx)
+  stats.activities++
+}
+
+function checkGenericList(list, file, key, minFields, counter) {
+  if (!Array.isArray(list)) { err(file, `${key} harus array`); return }
+  list.forEach((item, i) => {
+    if (!item.id || !kebab(item.id)) err(file, `${key}[${i}].id harus kebab-case`)
+    for (const f of minFields) if (item[f] === undefined) err(file, `${key}[${i}].${f} wajib ada`)
+    checkSource(item.references ?? [{ title: 'internal', url: 'https://example.com' }], file, `${key}[${i}]`)
+    counter()
+  })
+}
+
+// ===== global.json =====
+const gp = join(contentDir, 'global.json')
+if (existsSync(gp)) {
+  const g = JSON.parse(readFileSync(gp, 'utf8'))
+  if (!Array.isArray(g.ageBands) || g.ageBands.length !== 9) err('global.json', 'ageBands harus 9 entri')
+  if (!Array.isArray(g.areas) || g.areas.length < 10) err('global.json', 'areas minimal 10 entri')
+  for (const arr of ['materials', 'diyGuides', 'roomSetups', 'parentGuides', 'glossary', 'checklists', 'skills']) {
+    if (!Array.isArray(g[arr])) err('global.json', `${arr} harus array`)
+  }
+  ;(g.materials ?? []).forEach((m, i) => { checkSource(m.references, 'global.json', `materials[${i}]`); stats.materials++ })
+  ;(g.diyGuides ?? []).forEach((d, i) => { checkSource(d.references, 'global.json', `diyGuides[${i}]`); stats.diy++ })
+  ;(g.roomSetups ?? []).forEach((r, i) => { checkSource(r.references, 'global.json', `roomSetups[${i}]`); stats.roomSetups++ })
+  ;(g.parentGuides ?? []).forEach((p, i) => {
+    if (!p.body || p.body.length < 200) err('global.json', `parentGuides[${i}].body minimal 200 karakter`)
+    checkSource(p.references, 'global.json', `parentGuides[${i}]`)
+    stats.parentGuides++
+  })
+  ;(g.glossary ?? []).forEach((e, i) => {
+    if (!e.term || !e.definition || e.definition.length < 30) err('global.json', `glossary[${i}] tidak lengkap`)
+    stats.glossary++
+  })
+  ;(g.checklists ?? []).forEach((c, i) => {
+    if (!Array.isArray(c.items) || c.items.length < 3) err('global.json', `checklists[${i}].items minimal 3`)
+    checkSource(c.references, 'global.json', `checklists[${i}]`)
+    stats.checklists++
+  })
+} else {
+  console.log('ℹ️  content/global.json belum ada — dilewati (akan divalidasi saat produksi konten)')
+}
+
+// ===== bundles/*.json =====
+if (existsSync(bundlesDir)) {
+  for (const f of readdirSync(bundlesDir).filter((x) => x.endsWith('.json'))) {
+    const b = JSON.parse(readFileSync(join(bundlesDir, f), 'utf8'))
+    if (!AGE_BANDS.has(b.ageBand)) err(f, `ageBand "${b.ageBand}" tidak valid`)
+    if (!Array.isArray(b.activities)) err(f, 'activities harus array')
+    ;(b.activities ?? []).forEach((a, i) => checkActivity(a, f, i))
+    ;(b.milestones ?? []).forEach((m, i) => {
+      const ctx = `milestones[${i}]`
+      if (!m.id || !kebab(m.id)) err(f, `${ctx}.id kebab-case`)
+      if (!m.title || m.title.length < 5) err(f, `${ctx}.title pendek`)
+      if (!m.description || m.description.length < 20) err(f, `${ctx}.description pendek`)
+      if (!AGE_BANDS.has(m.ageBand)) err(f, `${ctx}.ageBand tidak valid`)
+      checkSource(m.references, f, ctx)
+      stats.milestones++
+    })
+  }
+} else {
+  console.log('ℹ️  content/bundles/ belum ada — dilewati')
+}
+
+// ===== Laporan =====
+console.log('=== Validasi Konten Montessori Playbook ===')
+[0m
+[0m$ [0mls content/bundles | head && grep -rn "parts" scripts package.json | head -20
+(no output)
+[0m
+[0m← [0mWrite /home/temamumtaza/.hermes/cache/scratch/opencode/_gen_parents1.py
+Wrote file successfully.
+[0m
+[0m$ [0mpython3 /home/temamumtaza/.hermes/cache/scratch/opencode/_gen_parents1.py
+wrote 22 guides to /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/parents-1.json
+montessori-di-rumah-apa-artinya 2376
+anak-belajar-melalui-aktivitas-harian 2329
+kebebasan-dengan-batas-jelas 2276
+bicara-dengan-suara-tenang 2126
+memvalidasi-perasaan-anak 2223
+memberi-instruksi-satu-langkah 1967
+disiplin-tanpa-hukuman 2262
+batasan-yang-konsisten 2072
+konsekuensi-alami-dan-logis 2127
+rutinitas-tidur-yang-tenang 2201
+pagi-tanpa-terburu-buru 2145
+transisi-antar-kegiatan 2019
+layar-untuk-bayi-di-bawah-dua-tahun 2181
+kebiasaan-layar-untuk-anak-prasekolah 2045
+menyiapkan-kakak-saat-adik-lahir 2063
+saat-saudara-bertengkar 2073
+tanda-siap-latihan-toilet 2142
+menghadapi-kecelakaan-toilet 2019
+memahami-tantrum-balita 2191
+tantrum-di-tempat-umum 2058
+observasi-harian-tanpa-menilai 2254
+waktu-untuk-diri-orang-tua 2193
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json
+p='content/parts/parents-1.json'
+d=json.load(open(p))
+print('OK',len(d))
+cats={}
+for g in d:
+    cats[g['category']]=cats.get(g['category'],0)+1
+    assert len(g['title'])>=5, g['id']
+    assert len(g['keyTakeaways'])>=3, g['id']
+    assert len(g['references'])>=1, g['id']
+    for r in g['references']:
+        assert r['title'] and r['url'].startswith('http'), g['id']
+    assert len(g['body'])>=1200, (g['id'],len(g['body']))
+    for a in g['ageBands']:
+        assert a in {'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y','3-4y','4-5y'},(g['id'],a)
+    young=set(g['ageBands']) & {'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y'}
+    if young and not g.get('safetyNotes'):
+        print('MISSING SAFETY',g['id'])
+print(cats)
+print('all 10 categories:', len(cats)==10)
+print('total safety:',sum(1 for g in d if g.get('safetyNotes')))
+PY
+OK 22
+{'filosofi': 3, 'komunikasi': 3, 'disiplin': 3, 'rutinitas': 3, 'screen-time': 2, 'sibling': 2, 'toilet': 2, 'tantrum': 2, 'observasi': 1, 'self-care': 1}
+all 10 categories: True
+total safety: 22
+[0m
+[0m$ [0mnode -e "const d=require('./content/parts/parents-1.json'); console.log(d.length, d.map(x=>x.id).join(','))"
+22 montessori-di-rumah-apa-artinya,anak-belajar-melalui-aktivitas-harian,kebebasan-dengan-batas-jelas,bicara-dengan-suara-tenang,memvalidasi-perasaan-anak,memberi-instruksi-satu-langkah,disiplin-tanpa-hukuman,batasan-yang-konsisten,konsekuensi-alami-dan-logis,rutinitas-tidur-yang-tenang,pagi-tanpa-terburu-buru,transisi-antar-kegiatan,layar-untuk-bayi-di-bawah-dua-tahun,kebiasaan-layar-untuk-anak-prasekolah,menyiapkan-kakak-saat-adik-lahir,saat-saudara-bertengkar,tanda-siap-latihan-toilet,menghadapi-kecelakaan-toilet,memahami-tantrum-balita,tantrum-di-tempat-umum,observasi-harian-tanpa-menilai,waktu-untuk-diri-orang-tua
+[0m
+[0m$ [0mpython3 -c "import json;d=json.load(open('content/parts/parents-1.json'));print('OK',len(d))"
+OK 22
+[0m
+DONE parents-1

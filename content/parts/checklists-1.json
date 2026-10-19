@@ -1,0 +1,338 @@
+[
+  {
+    "id": "checklist-keamanan-rumah-bayi-dan-tangga",
+    "title": "Keamanan rumah untuk bayi dan tangga",
+    "kind": "keselamatan",
+    "scope": "Dipakai sebelum bayi mulai berguling, merangkak, atau naik-turun tangga.",
+    "items": [
+      {
+        "text": "Pasang pagar pengaman di bagian atas dan bawah tangga.",
+        "hint": "Pilih model yang terpasang kuat dan tidak mudah dibuka bayi."
+      },
+      {
+        "text": "Jauhkan kursi, meja kecil, dan benda panjat dari jendela.",
+        "hint": "Periksa juga balkon dan pintu menuju area berisiko."
+      },
+      {
+        "text": "Tutup semua stopkontak yang tidak sedang digunakan.",
+        "hint": "Rapikan kabel agar tidak dapat ditarik atau dililitkan."
+      },
+      {
+        "text": "Kunci laci dan lemari yang berisi obat atau bahan pembersih.",
+        "hint": "Simpan bahan berbahaya tetap dalam wadah aslinya."
+      },
+      {
+        "text": "Pasang pengaman pada kompor dan jauhkan gagang panci dari tepi.",
+        "hint": "Biasakan memasak di tungku bagian belakang."
+      },
+      {
+        "text": "Ikat furnitur tinggi ke dinding agar tidak mudah roboh.",
+        "hint": "Termasuk rak buku, lemari, dan televisi."
+      },
+      {
+        "text": "Singkirkan benda kecil, baterai kancing, dan kantong plastik.",
+        "hint": "Gunakan aturan: benda yang muat di gulungan tisu bukan mainan bayi."
+      }
+    ],
+    "references": [
+      {
+        "title": "NHS",
+        "url": "https://www.nhs.uk"
+      }
+    ]
+  },
+  {
+    "id": "checklist-kamar-montessori",
+    "title": "Kamar Montessori yang siap dipakai",
+    "kind": "environment",
+    "scope": "Dipakai saat menata ruang tidur dan aktivitas yang memberi bayi atau anak akses aman dan terbatas.",
+    "items": [
+      {
+        "text": "Pastikan kasur rendah berada di lantai yang rata dan bebas celah.",
+        "hint": "Jauhkan dari kabel, tirai, dan furnitur yang bisa dipanjat."
+      },
+      {
+        "text": "Sediakan hanya beberapa benda yang sesuai usia di rak rendah.",
+        "hint": "Rotasikan ketika anak mulai kehilangan minat."
+      },
+      {
+        "text": "Sediakan cermin yang terpasang kuat dan tidak mudah pecah.",
+        "hint": "Letakkan pada ketinggian yang sesuai dengan posisi anak."
+      },
+      {
+        "text": "Gunakan karpet yang tidak licin untuk area bergerak.",
+        "hint": "Pastikan ujung karpet tidak terlipat."
+      },
+      {
+        "text": "Atur pencahayaan lembut tanpa lampu yang mudah ditarik.",
+        "hint": "Gunakan penutup kabel dan letakkan sakelar di luar jangkauan."
+      },
+      {
+        "text": "Sediakan keranjang pakaian dan tempat buku yang mudah dijangkau.",
+        "hint": "Pilih wadah ringan tanpa sudut tajam."
+      },
+      {
+        "text": "Cek keamanan kamar setiap minggu setelah anak bertambah tinggi.",
+        "hint": "Tinjau ulang jendela, stopkontak, dan benda yang dapat dipanjat."
+      }
+    ],
+    "references": [
+      {
+        "title": "American Montessori Society",
+        "url": "https://amshq.org"
+      }
+    ]
+  },
+  {
+    "id": "checklist-tas-ke-luar-rumah",
+    "title": "Tas siap untuk ke luar rumah",
+    "kind": "persiapan-aktivitas",
+    "scope": "Dipakai sebelum pergi bersama bayi atau anak untuk perjalanan singkat maupun seharian.",
+    "items": [
+      {
+        "text": "Bawa popok atau pakaian dalam cadangan sesuai durasi pergi.",
+        "hint": "Tambahkan satu cadangan ekstra untuk kejadian tak terduga."
+      },
+      {
+        "text": "Masukkan tisu, kain lap, dan kantong untuk pakaian kotor.",
+        "hint": "Pilih kantong tertutup agar barang lain tetap bersih."
+      },
+      {
+        "text": "Siapkan pakaian ganti yang sesuai cuaca.",
+        "hint": "Gunakan satu set lengkap dalam kantong terpisah."
+      },
+      {
+        "text": "Bawa air minum dan makanan sesuai tahap makan anak.",
+        "hint": "Gunakan wadah bersih dan cek suhunya sebelum diberikan."
+      },
+      {
+        "text": "Masukkan topi, pelindung matahari, atau jaket ringan.",
+        "hint": "Sesuaikan dengan tujuan dan prakiraan cuaca."
+      },
+      {
+        "text": "Simpan obat rutin dan catatan kontak darurat bila diperlukan.",
+        "hint": "Bawa obat dalam kemasan berlabel, bukan wadah tanpa nama."
+      },
+      {
+        "text": "Periksa isi tas setelah pulang dan isi ulang segera.",
+        "hint": "Jangan menyimpan makanan atau botol kotor semalaman."
+      }
+    ],
+    "references": [
+      {
+        "title": "NHS",
+        "url": "https://www.nhs.uk"
+      }
+    ]
+  },
+  {
+    "id": "checklist-rutinitas-pagi",
+    "title": "Rutinitas pagi yang sederhana",
+    "kind": "rutinitas",
+    "scope": "Dipakai setiap pagi agar anak menjalani urutan kegiatan yang konsisten dengan bantuan seperlunya.",
+    "items": [
+      {
+        "text": "Bangunkan anak dengan suara lembut dan beri waktu beradaptasi.",
+        "hint": "Hindari langsung memberi banyak instruksi."
+      },
+      {
+        "text": "Ajak anak ke toilet atau mengganti popok.",
+        "hint": "Gunakan urutan yang sama setiap hari."
+      },
+      {
+        "text": "Tawarkan pilihan pakaian yang sudah disiapkan.",
+        "hint": "Batasi dua pilihan agar anak mudah memutuskan."
+      },
+      {
+        "text": "Letakkan sikat gigi dan perlengkapan mandi di tempat terjangkau.",
+        "hint": "Orang dewasa tetap mendampingi dan memeriksa hasilnya."
+      },
+      {
+        "text": "Sajikan sarapan sederhana di tempat makan yang tetap.",
+        "hint": "Berikan porsi kecil dan kesempatan makan mandiri."
+      },
+      {
+        "text": "Ajak anak mengembalikan piring dan merapikan area makan.",
+        "hint": "Berikan tugas kecil yang benar-benar bisa dilakukan."
+      },
+      {
+        "text": "Cek tas, sepatu, dan kebutuhan sebelum keluar rumah.",
+        "hint": "Gunakan gambar urutan jika anak belum bisa membaca."
+      }
+    ],
+    "references": [
+      {
+        "title": "UNICEF Parenting",
+        "url": "https://www.unicef.org/parenting"
+      }
+    ]
+  },
+  {
+    "id": "checklist-rutinitas-malam",
+    "title": "Rutinitas malam sebelum tidur",
+    "kind": "rutinitas",
+    "scope": "Dipakai setiap malam untuk membantu anak berpindah dari aktivitas siang ke tidur dengan tenang.",
+    "items": [
+      {
+        "text": "Selesaikan makan malam dan minum pada waktu yang cukup awal.",
+        "hint": "Hindari minuman manis menjelang tidur."
+      },
+      {
+        "text": "Matikan layar dan turunkan intensitas cahaya kamar.",
+        "hint": "Pertahankan aturan yang sama setiap malam."
+      },
+      {
+        "text": "Ajak anak merapikan mainan bersama.",
+        "hint": "Gunakan keranjang yang mudah dibawa anak."
+      },
+      {
+        "text": "Mandikan atau bersihkan tubuh sesuai kebutuhan.",
+        "hint": "Pastikan air hangat, bukan panas, dan selalu dampingi anak."
+      },
+      {
+        "text": "Sikat gigi, gunakan toilet, lalu kenakan pakaian tidur.",
+        "hint": "Tampilkan urutan dengan gambar di dinding."
+      },
+      {
+        "text": "Bacakan satu atau dua buku dengan suasana tenang.",
+        "hint": "Pilih buku yang sudah dikenal jika anak mudah terstimulasi."
+      },
+      {
+        "text": "Ucapkan salam tidur dan tinggalkan kamar dengan konsisten.",
+        "hint": "Respons singkat dan tenang bila anak memanggil."
+      }
+    ],
+    "references": [
+      {
+        "title": "NHS",
+        "url": "https://www.nhs.uk"
+      }
+    ]
+  },
+  {
+    "id": "checklist-persiapan-mpasi",
+    "title": "Persiapan MPASI pertama",
+    "kind": "persiapan-aktivitas",
+    "scope": "Dipakai sebelum memperkenalkan makanan pendamping ASI ketika anak siap secara perkembangan dan sesuai anjuran tenaga kesehatan.",
+    "items": [
+      {
+        "text": "Pastikan anak dapat duduk tegak dengan dukungan yang baik.",
+        "hint": "Jangan memberi makan saat anak berbaring atau berjalan."
+      },
+      {
+        "text": "Siapkan kursi makan yang stabil dengan sabuk pengaman.",
+        "hint": "Selalu dampingi anak selama makan."
+      },
+      {
+        "text": "Cuci tangan, alat makan, dan permukaan sebelum menyiapkan makanan.",
+        "hint": "Gunakan alat bersih khusus bila memungkinkan."
+      },
+      {
+        "text": "Mulai dengan porsi kecil dan tekstur sesuai kemampuan anak.",
+        "hint": "Naikkan tekstur bertahap, bukan hanya makanan yang sangat halus."
+      },
+      {
+        "text": "Perkenalkan satu bahan baru dalam jumlah sedikit.",
+        "hint": "Catat bahan dan reaksi anak untuk memudahkan pengamatan."
+      },
+      {
+        "text": "Hindari madu, makanan keras, dan bentuk yang berisiko tersedak.",
+        "hint": "Potong makanan sesuai usia dan kemampuan mengunyah."
+      },
+      {
+        "text": "Siapkan air minum dan lap untuk membersihkan setelah makan.",
+        "hint": "Biarkan anak menyentuh makanan dengan aman dan tidak terburu-buru."
+      }
+    ],
+    "references": [
+      {
+        "title": "NHS: Your baby's first solid foods",
+        "url": "https://www.nhs.uk/start-for-life/baby/weaning/"
+      }
+    ]
+  },
+  {
+    "id": "checklist-persiapan-toilet-learning",
+    "title": "Persiapan toilet learning",
+    "kind": "persiapan-aktivitas",
+    "scope": "Dipakai saat anak mulai menunjukkan kesiapan untuk belajar menggunakan toilet tanpa tekanan atau hukuman.",
+    "items": [
+      {
+        "text": "Sediakan pispot atau dudukan toilet yang stabil dan sesuai ukuran.",
+        "hint": "Pastikan telapak kaki anak dapat bertumpu."
+      },
+      {
+        "text": "Siapkan celana longgar yang mudah diturunkan anak.",
+        "hint": "Hindari kancing atau tali yang sulit dibuka."
+      },
+      {
+        "text": "Letakkan tisu, sabun, dan handuk pada jangkauan anak.",
+        "hint": "Awasi penggunaan sabun dan ajarkan cuci tangan."
+      },
+      {
+        "text": "Kenalkan kata sederhana untuk pipis, pup, dan bagian tubuh.",
+        "hint": "Gunakan istilah yang konsisten di rumah dan pengasuhan."
+      },
+      {
+        "text": "Ajak anak mencoba pada waktu yang mudah diprediksi.",
+        "hint": "Misalnya setelah bangun, sebelum mandi, atau sebelum tidur."
+      },
+      {
+        "text": "Berikan pujian pada usaha, bukan hanya hasil yang berhasil.",
+        "hint": "Jangan mempermalukan atau menghukum kecelakaan."
+      },
+      {
+        "text": "Siapkan pakaian dan alas cadangan untuk kecelakaan kecil.",
+        "hint": "Tetap tenang, bersihkan bersama, lalu coba lagi nanti."
+      }
+    ],
+    "references": [
+      {
+        "title": "NHS: Potty training",
+        "url": "https://www.nhs.uk/conditions/baby/babys-development/potty-training-and-bedwetting/"
+      }
+    ]
+  },
+  {
+    "id": "checklist-kotak-rotasi-mainan",
+    "title": "Kotak rotasi mainan",
+    "kind": "environment",
+    "scope": "Dipakai saat memilih, menyimpan, dan mengganti mainan agar ruang tetap sederhana serta anak dapat bermain lebih fokus.",
+    "items": [
+      {
+        "text": "Kumpulkan semua mainan dan periksa kelengkapan serta keamanannya.",
+        "hint": "Singkirkan mainan retak, tajam, atau bagian kecil yang lepas."
+      },
+      {
+        "text": "Pilih beberapa mainan yang sesuai usia dan minat anak saat ini.",
+        "hint": "Utamakan variasi gerak, bahasa, sensorik, dan pemecahan masalah."
+      },
+      {
+        "text": "Simpan mainan pilihan di rak terbuka yang mudah dilihat.",
+        "hint": "Letakkan satu mainan per wadah agar anak mudah memilih."
+      },
+      {
+        "text": "Simpan mainan lain dalam kotak tertutup dengan label sederhana.",
+        "hint": "Gunakan label gambar bila anak belum membaca."
+      },
+      {
+        "text": "Catat tanggal rotasi dan mainan yang paling sering dipilih.",
+        "hint": "Catatan singkat membantu menentukan rotasi berikutnya."
+      },
+      {
+        "text": "Rotasikan satu atau dua mainan ketika minat mulai menurun.",
+        "hint": "Tidak perlu mengganti seluruh rak sekaligus."
+      },
+      {
+        "text": "Bersihkan mainan yang akan masuk kembali sebelum disimpan.",
+        "hint": "Ikuti petunjuk perawatan bahan kayu, kain, atau plastik."
+      }
+    ],
+    "references": [
+      {
+        "title": "American Montessori Society",
+        "url": "https://amshq.org"
+      }
+    ]
+  }
+]

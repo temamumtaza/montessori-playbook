@@ -5,6 +5,7 @@ import { ageBandById, areaById } from '../../content/meta'
 import type { Activity } from '../../content/schema'
 import { AreaIcon, Mascot, StarDeco, CloudDeco } from '../components/icons'
 import { db } from '../db'
+import { useNavigate } from 'react-router-dom'
 
 export const AREA_GRADIENTS: Record<string, string> = {
   'practical-life': 'from-apple-400 to-apple-600',
@@ -20,6 +21,7 @@ export const AREA_GRADIENTS: Record<string, string> = {
 }
 
 export function TodayPage() {
+  const navigate = useNavigate()
   const [acts, setActs] = useState<Activity[]>([])
   const [loading, setLoading] = useState(true)
   const band = activeAgeBand()
@@ -96,7 +98,7 @@ export function TodayPage() {
 
       {/* Search bar */}
       <a
-        href="#/playbook"
+        href="#/cari"
         className="flex items-center gap-3 rounded-full bg-white dark:bg-navy-800 shadow-sm px-5 min-h-[48px] text-sm text-sky-900/50 dark:text-sky-100/50 active:scale-[0.98] transition"
       >
         <span aria-hidden>🔍</span>
@@ -124,7 +126,8 @@ export function TodayPage() {
               return (
                 <article
                   key={a.id}
-                  className="snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.97] transition"
+                  onClick={() => navigate(`/aktivitas/${a.id}`)}
+                  className="snap-start shrink-0 w-44 rounded-3xl bg-white dark:bg-navy-800 shadow-sm overflow-hidden active:scale-[0.97] transition cursor-pointer"
                 >
                   <div className={`relative h-28 bg-gradient-to-br ${grad} grid place-items-center`}>
                     <AreaIcon area={a.areas[0]} className="w-14 h-14 text-white/95 drop-shadow" />

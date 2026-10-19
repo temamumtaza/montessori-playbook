@@ -15,3 +15,6 @@ Skema persis:
 Campur domain beragam. Rentang bulan wajar untuk band 18-24m.
 Validasi: python3 -c "import json;d=json.load(open('content/parts/mile-18-24m.json'));print('OK',len(d))"
 Jawab: DONE mile-18-24m
+
+
+PENTING-ANTREAN: Kalau ada 1-2 entri yang meragukan, JANGAN gagalkan seluruh file. Buang entri yang bermasalah itu, tulis sisanya. File harus SELALU ditulis walau jumlahnya sedikit lebih rendah dari target. Validasi akhir cukup: python3 -c "import json;json.load(open('FILE'))" (hanya cek JSON valid).

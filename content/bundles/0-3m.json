@@ -1,0 +1,2207 @@
+{
+ "ageBand": "0-3m",
+ "activities": [
+  {
+   "id": "0-3m-wajah-pengasuh",
+   "title": "Mengamati Wajah Pengasuh",
+   "summary": "Bayi menatap wajah dekat sambil mendengar suara tenang.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "kontak mata",
+    "mendengar suara"
+   ],
+   "objectives": [
+    "Mendorong bayi mengamati wajah",
+    "Membangun interaksi hangat"
+   ],
+   "materials": [
+    {
+     "name": "wajah pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Dekatkan wajah sekitar satu lengan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Tersenyum dan tunggu tatapannya."
+    },
+    {
+     "step": 3,
+     "text": "Bicara perlahan dengan suara hangat."
+    }
+   ],
+   "controlOfError": "Bayi memalingkan wajah saat perlu jeda.",
+   "variations": [
+    "Gunakan ekspresi wajah sederhana.",
+    "Lakukan saat bayi tenang setelah bangun."
+   ],
+   "readySigns": [
+    "Bayi terjaga dan menatap sebentar."
+   ],
+   "struggleSigns": [
+    "Bayi sering memalingkan wajah atau rewel."
+   ],
+   "safetyNotes": [
+    "Selalu dampingi dan jaga wajah bayi tetap bebas tertutup."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-suara-nama-bayi",
+   "title": "Menyapa dengan Nama",
+   "summary": "Pengasuh menyapa bayi dengan nama dan memberi waktu untuk merespons.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "mendengar",
+    "respons sosial"
+   ],
+   "objectives": [
+    "Mengenalkan pola sapaan",
+    "Memberi ruang untuk merespons"
+   ],
+   "materials": [
+    {
+     "name": "suara pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 4,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan bayi dalam posisi nyaman."
+    },
+    {
+     "step": 2,
+     "text": "Sebut namanya dengan suara lembut."
+    },
+    {
+     "step": 3,
+     "text": "Diam sejenak dan amati responsnya."
+    }
+   ],
+   "controlOfError": "Jeda membantu pengasuh membaca sinyal bayi.",
+   "variations": [
+    "Sapa dengan panggilan keluarga yang biasa.",
+    "Ulangi saat mengganti popok."
+   ],
+   "readySigns": [
+    "Bayi tenang dan memperhatikan suara."
+   ],
+   "struggleSigns": [
+    "Bayi tampak lelah atau menegang."
+   ],
+   "safetyNotes": [
+    "Jangan berteriak atau mendekatkan suara keras ke telinga bayi."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-kartu-kontras",
+   "title": "Kartu Pola Kontras",
+   "summary": "Bayi mengamati pola hitam putih sederhana dalam waktu singkat.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial"
+   ],
+   "skills": [
+    "mengamati pola",
+    "memusatkan pandangan"
+   ],
+   "objectives": [
+    "Mengajak bayi memperhatikan bentuk",
+    "Mengenalkan perbedaan terang dan gelap"
+   ],
+   "materials": [
+    {
+     "name": "kartu pola hitam putih",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 5,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan bayi telentang dengan nyaman."
+    },
+    {
+     "step": 2,
+     "text": "Pegang kartu sekitar 20 sentimeter."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu tatapan tanpa menggerakkan cepat."
+    }
+   ],
+   "controlOfError": "Tatapan bayi menunjukkan apakah kartu terlalu jauh.",
+   "variations": [
+    "Pakai pola garis tebal.",
+    "Ganti satu kartu setiap sesi."
+   ],
+   "readySigns": [
+    "Bayi mengikuti kartu dengan pandangan singkat."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau menguap."
+   ],
+   "safetyNotes": [
+    "Jangan letakkan kartu di wajah atau di dalam tempat tidur bayi."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/learning-to-talk/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-giringan-suara",
+   "title": "Mengikuti Suara Lembut",
+   "summary": "Suara lembut berpindah perlahan agar bayi mendengarkan dan mencari sumbernya.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "lokalisasi suara",
+    "perhatian auditori"
+   ],
+   "objectives": [
+    "Mengajak bayi mendengar arah suara",
+    "Membangun percakapan bergantian"
+   ],
+   "materials": [
+    {
+     "name": "suara pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 3,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk di sisi bayi yang tenang."
+    },
+    {
+     "step": 2,
+     "text": "Bunyikan suara lembut dari satu sisi."
+    },
+    {
+     "step": 3,
+     "text": "Pindah perlahan ke sisi lain."
+    }
+   ],
+   "controlOfError": "Respons bayi menunjukkan saat suara terlalu jauh.",
+   "variations": [
+    "Gunakan nyanyian satu nada.",
+    "Berhenti saat bayi tampak kewalahan."
+   ],
+   "readySigns": [
+    "Bayi diam dan memperhatikan suara."
+   ],
+   "struggleSigns": [
+    "Bayi terkejut, menangis, atau memalingkan wajah."
+   ],
+   "safetyNotes": [
+    "Hindari alat bunyi keras dan jangan mendekatkannya ke telinga bayi."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-raba-kain-lembut",
+   "title": "Meraba Kain Lembut",
+   "summary": "Bayi merasakan kain lembut pada telapak tangan dengan bantuan pengasuh.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "self-care"
+   ],
+   "skills": [
+    "eksplorasi sentuhan",
+    "kesadaran tangan"
+   ],
+   "objectives": [
+    "Mengenalkan tekstur lembut",
+    "Mengajak bayi memperhatikan tangannya"
+   ],
+   "materials": [
+    {
+     "name": "kain katun bersih",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 4,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Cuci tangan dan pilih kain bersih."
+    },
+    {
+     "step": 2,
+     "text": "Sentuhkan kain pada telapak tangan bayi."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan jari menggenggam bila siap."
+    }
+   ],
+   "controlOfError": "Bayi melepas tangan bila tidak nyaman.",
+   "variations": [
+    "Gunakan kain dengan tenunan berbeda.",
+    "Sentuhkan sebentar pada punggung tangan."
+   ],
+   "readySigns": [
+    "Telapak tangan terbuka dan tubuh rileks."
+   ],
+   "struggleSigns": [
+    "Bayi menarik tangan atau menangis."
+   ],
+   "safetyNotes": [
+    "Jangan tinggalkan kain dekat wajah atau tangan bayi tanpa pegangan orang dewasa."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-pijak-kaki-pengasuh",
+   "title": "Menekan Telapak Kaki",
+   "summary": "Bayi merasakan telapak kakinya menekan telapak tangan pengasuh.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "movement",
+    "self-care"
+   ],
+   "skills": [
+    "gerak kaki",
+    "kesadaran tubuh"
+   ],
+   "objectives": [
+    "Mengajak bayi merasakan dorongan kaki",
+    "Mendukung gerak bebas yang nyaman"
+   ],
+   "materials": [
+    {
+     "name": "telapak tangan pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 3,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Baringkan bayi telentang di alas datar."
+    },
+    {
+     "step": 2,
+     "text": "Letakkan telapak tangan di telapak kakinya."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi mendorong tanpa memaksa."
+    }
+   ],
+   "controlOfError": "Bayi mengatur kuat dan lama dorongannya.",
+   "variations": [
+    "Tawarkan satu kaki lalu kaki lain.",
+    "Bernyanyi pelan selama gerakan."
+   ],
+   "readySigns": [
+    "Bayi menekuk kaki dan tampak rileks."
+   ],
+   "struggleSigns": [
+    "Bayi kaku, menangis, atau menarik kaki."
+   ],
+   "safetyNotes": [
+    "Jangan menekan atau meluruskan kaki bayi secara paksa."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-waktu-tengkurap-singkat",
+   "title": "Tengkurap Singkat",
+   "summary": "Bayi berlatih mengangkat kepala sebentar saat tengkurap dengan pengawasan penuh.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "movement"
+   ],
+   "skills": [
+    "kontrol kepala",
+    "kekuatan tubuh"
+   ],
+   "objectives": [
+    "Memberi kesempatan mengangkat kepala",
+    "Membangun toleransi posisi tengkurap"
+   ],
+   "materials": [
+    {
+     "name": "alas datar dan kokoh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 3,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan bayi tengkurap di alas kokoh."
+    },
+    {
+     "step": 2,
+     "text": "Duduk dekat dan sejajar wajahnya."
+    },
+    {
+     "step": 3,
+     "text": "Ajak dengan suara lembut, lalu angkat bila lelah."
+    }
+   ],
+   "controlOfError": "Bayi memberi sinyal kapan perlu berhenti.",
+   "variations": [
+    "Letakkan bayi di dada pengasuh saat terjaga.",
+    "Mulai hanya beberapa napas."
+   ],
+   "readySigns": [
+    "Bayi terjaga dan mencoba mengangkat kepala."
+   ],
+   "struggleSigns": [
+    "Wajah menempel alas, lelah, atau menangis."
+   ],
+   "safetyNotes": [
+    "Selalu awasi; untuk tidur, letakkan bayi telentang di tempat tidur yang aman."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-gambar-di-dinding",
+   "title": "Mengamati Gambar Dinding",
+   "summary": "Bayi memandang satu gambar sederhana yang ditempatkan aman di dekat area bermain.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "culture"
+   ],
+   "skills": [
+    "pengamatan visual",
+    "orientasi ruang"
+   ],
+   "objectives": [
+    "Menyediakan fokus visual sederhana",
+    "Mengenalkan gambar dari lingkungan"
+   ],
+   "materials": [
+    {
+     "name": "gambar besar sederhana",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 8,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pasang gambar kokoh di luar jangkauan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Posisikan bayi terjaga di dekatnya."
+    },
+    {
+     "step": 3,
+     "text": "Amati tanpa mengalihkan perhatian."
+    }
+   ],
+   "controlOfError": "Jarak dan respons bayi menunjukkan posisi yang sesuai.",
+   "variations": [
+    "Gunakan gambar wajah atau bentuk alam.",
+    "Ganti gambar secara berkala."
+   ],
+   "readySigns": [
+    "Bayi menatap gambar beberapa saat."
+   ],
+   "struggleSigns": [
+    "Bayi tidak tertarik atau cepat rewel."
+   ],
+   "safetyNotes": [
+    "Pastikan gambar dan perekat tidak dapat jatuh atau dijangkau bayi."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-nyanyian-pendek",
+   "title": "Menyanyikan Lagu Pendek",
+   "summary": "Pengasuh menyanyikan lagu pendek dengan tempo tenang sambil menunggu respons bayi.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "art-music",
+    "language"
+   ],
+   "skills": [
+    "ritme",
+    "mendengar bahasa"
+   ],
+   "objectives": [
+    "Mengenalkan pola bunyi berulang",
+    "Menciptakan interaksi menyenangkan"
+   ],
+   "materials": [
+    {
+     "name": "suara pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 6,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih lagu pendek yang dikenal."
+    },
+    {
+     "step": 2,
+     "text": "Nyanyikan perlahan dengan volume nyaman."
+    },
+    {
+     "step": 3,
+     "text": "Berhenti dan amati ekspresi bayi."
+    }
+   ],
+   "controlOfError": "Bayi menunjukkan minat atau perlu jeda.",
+   "variations": [
+    "Ulangi satu bait dengan lembut.",
+    "Tambahkan tepukan pelan pada lutut pengasuh."
+   ],
+   "readySigns": [
+    "Bayi tenang, menatap, atau menggerakkan tubuh."
+   ],
+   "struggleSigns": [
+    "Bayi menegang, menguap, atau menangis."
+   ],
+   "safetyNotes": [
+    "Jaga volume suara tetap lembut dan berhenti bila bayi kewalahan."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-cermin-aman",
+   "title": "Bercermin Bersama",
+   "summary": "Bayi melihat pantulan wajahnya bersama pengasuh melalui cermin yang aman dan kokoh.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "pengamatan wajah",
+    "perhatian visual"
+   ],
+   "objectives": [
+    "Mengajak bayi mengamati pantulan",
+    "Mendukung percakapan tatap muka"
+   ],
+   "materials": [
+    {
+     "name": "cermin bayi yang tidak mudah pecah",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 5,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan cermin kokoh di luar jangkauan."
+    },
+    {
+     "step": 2,
+     "text": "Pegang bayi dengan posisi nyaman."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan bagian wajah secara perlahan."
+    }
+   ],
+   "controlOfError": "Bayi dapat memalingkan wajah saat perlu jeda.",
+   "variations": [
+    "Tunjukkan wajah pengasuh dan bayi bergantian.",
+    "Gunakan saat bayi sedang segar."
+   ],
+   "readySigns": [
+    "Bayi menatap pantulan atau wajah pengasuh."
+   ],
+   "struggleSigns": [
+    "Bayi tampak tegang atau menghindari pantulan."
+   ],
+   "safetyNotes": [
+    "Gunakan cermin khusus bayi yang aman, bukan kaca longgar atau tajam."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-pijat-tangan-lembut",
+   "title": "Usapan Tangan Lembut",
+   "summary": "Pengasuh mengusap tangan bayi perlahan sambil menyebut bagian tubuhnya.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "self-care",
+    "language"
+   ],
+   "skills": [
+    "kesadaran tubuh",
+    "kosakata tubuh"
+   ],
+   "objectives": [
+    "Mengenalkan nama bagian tubuh",
+    "Membangun sentuhan responsif"
+   ],
+   "materials": [
+    {
+     "name": "selimut tipis",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 4,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan tangan pengasuh bersih dan hangat."
+    },
+    {
+     "step": 2,
+     "text": "Usap punggung tangan dengan perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan tangan dan jari dengan lembut."
+    }
+   ],
+   "controlOfError": "Bayi memberi tanda bila sentuhan perlu berhenti.",
+   "variations": [
+    "Usap satu tangan pada satu waktu.",
+    "Lakukan setelah bayi tenang."
+   ],
+   "readySigns": [
+    "Tangan bayi terbuka dan tubuh santai."
+   ],
+   "struggleSigns": [
+    "Bayi menarik tangan atau menunjukkan ketidaknyamanan."
+   ],
+   "safetyNotes": [
+    "Jangan memijat area yang kemerahan dan hentikan bila bayi tidak nyaman."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-buku-kain-kontras",
+   "title": "Membaca Buku Kain",
+   "summary": "Pengasuh membuka buku kain kontras dan berbicara tentang satu gambar sederhana.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "sensorial"
+   ],
+   "skills": [
+    "mendengar cerita",
+    "mengamati gambar"
+   ],
+   "objectives": [
+    "Mengenalkan rutinitas membaca",
+    "Menghubungkan kata dengan gambar"
+   ],
+   "materials": [
+    {
+     "name": "buku kain bergambar kontras",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 7,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Dudukkan bayi dalam posisi yang ditopang."
+    },
+    {
+     "step": 2,
+     "text": "Buka satu halaman bergambar jelas."
+    },
+    {
+     "step": 3,
+     "text": "Ceritakan gambar dengan kalimat pendek."
+    }
+   ],
+   "controlOfError": "Bayi memalingkan wajah saat cukup.",
+   "variations": [
+    "Gunakan buku tanpa suara tambahan.",
+    "Ulangi kata yang sama pada halaman itu."
+   ],
+   "readySigns": [
+    "Bayi menatap halaman atau suara pengasuh."
+   ],
+   "struggleSigns": [
+    "Bayi menguap, gelisah, atau menangis."
+   ],
+   "safetyNotes": [
+    "Pastikan buku bersih dan tidak memiliki bagian kecil yang lepas."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-bel-pita-tangan",
+   "title": "Mengikuti Pita Bergerak",
+   "summary": "Pita kain lebar bergerak perlahan untuk mengajak bayi mengikuti gerak dengan pandangan.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "movement",
+    "sensorial"
+   ],
+   "skills": [
+    "mengikuti objek",
+    "koordinasi pandangan"
+   ],
+   "objectives": [
+    "Mengajak bayi mengikuti gerak perlahan",
+    "Mendorong perhatian visual"
+   ],
+   "materials": [
+    {
+     "name": "pita kain lebar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 4,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pegang pita jauh dari jangkauan tangan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Gerakkan perlahan dari tengah ke samping."
+    },
+    {
+     "step": 3,
+     "text": "Berhenti ketika bayi kehilangan perhatian."
+    }
+   ],
+   "controlOfError": "Pita terlalu cepat jika tatapan bayi tertinggal.",
+   "variations": [
+    "Gunakan kain warna tunggal.",
+    "Gerakkan hanya beberapa sentimeter."
+   ],
+   "readySigns": [
+    "Mata bayi mengikuti pita sesaat."
+   ],
+   "struggleSigns": [
+    "Bayi terkejut atau memalingkan wajah."
+   ],
+   "safetyNotes": [
+    "Jangan mengikat pita pada bayi atau meninggalkannya sebagai benda lepas."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-bunyi-kertas-jauh",
+   "title": "Mendengar Kertas Berdesir",
+   "summary": "Bayi mendengar bunyi kertas yang dibuat jauh dan singkat oleh pengasuh.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "art-music"
+   ],
+   "skills": [
+    "membedakan bunyi",
+    "perhatian"
+   ],
+   "objectives": [
+    "Mengenalkan bunyi baru secara aman",
+    "Mengamati perubahan perhatian bayi"
+   ],
+   "materials": [
+    {
+     "name": "kertas tebal bersih",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 3,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pegang kertas setidaknya sejauh lengan."
+    },
+    {
+     "step": 2,
+     "text": "Remas perlahan satu kali."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu respons sebelum mengulang."
+    }
+   ],
+   "controlOfError": "Respons bayi menunjukkan bunyi perlu dikecilkan.",
+   "variations": [
+    "Gunakan satu lembar tanpa tinta lepas.",
+    "Bandingkan dengan suara tepukan lembut."
+   ],
+   "readySigns": [
+    "Bayi diam dan mencari sumber bunyi."
+   ],
+   "struggleSigns": [
+    "Bayi terkejut, menangis, atau menegang."
+   ],
+   "safetyNotes": [
+    "Jauhkan kertas dari mulut dan jangan gunakan plastik atau kertas kecil."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-narasi-ganti-popok",
+   "title": "Bercerita Saat Ganti Popok",
+   "summary": "Pengasuh menjelaskan langkah perawatan dengan kalimat singkat dan nada tenang.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "self-care"
+   ],
+   "skills": [
+    "mendengar bahasa",
+    "rutinitas perawatan"
+   ],
+   "objectives": [
+    "Membuat rutinitas dapat diprediksi",
+    "Menghormati tubuh bayi melalui pemberitahuan"
+   ],
+   "materials": [
+    {
+     "name": "area ganti yang aman",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Beri tahu bayi sebelum menyentuh tubuhnya."
+    },
+    {
+     "step": 2,
+     "text": "Sebutkan langkah dengan suara tenang."
+    },
+    {
+     "step": 3,
+     "text": "Berhenti sejenak untuk membaca sinyalnya."
+    }
+   ],
+   "controlOfError": "Sinyal bayi membantu mengatur tempo perawatan.",
+   "variations": [
+    "Gunakan kalimat yang sama setiap kali.",
+    "Sebutkan nama pakaian atau bagian tubuh."
+   ],
+   "readySigns": [
+    "Bayi tetap tenang selama rutinitas."
+   ],
+   "struggleSigns": [
+    "Bayi menangis terus atau tubuh menegang."
+   ],
+   "safetyNotes": [
+    "Satu tangan harus selalu menjaga bayi di permukaan ganti."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-jeda-percakapan",
+   "title": "Jeda dalam Percakapan",
+   "summary": "Pengasuh berbicara singkat lalu menunggu suara atau gerak bayi sebelum menjawab.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "bergiliran",
+    "komunikasi awal"
+   ],
+   "objectives": [
+    "Mengenalkan pola bergiliran",
+    "Menghargai respons kecil bayi"
+   ],
+   "materials": [
+    {
+     "name": "suara pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih saat bayi terjaga dan tenang."
+    },
+    {
+     "step": 2,
+     "text": "Ucapkan satu kalimat pendek."
+    },
+    {
+     "step": 3,
+     "text": "Tunggu beberapa detik lalu jawab."
+    }
+   ],
+   "controlOfError": "Tidak ada respons juga merupakan sinyal untuk berhenti.",
+   "variations": [
+    "Tiru bunyi kecil bayi.",
+    "Gunakan percakapan saat menyusui atau menggendong."
+   ],
+   "readySigns": [
+    "Bayi menatap, menggerakkan mulut, atau mengeluarkan bunyi."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau mulai rewel."
+   ],
+   "safetyNotes": [
+    "Jaga suara lembut dan jangan memaksa bayi merespons."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-genggam-jari",
+   "title": "Menggenggam Jari Pengasuh",
+   "summary": "Bayi diberi kesempatan menggenggam satu jari pengasuh tanpa ditarik atau dipaksa.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "movement",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "refleks menggenggam",
+    "sentuhan sosial"
+   ],
+   "objectives": [
+    "Memberi pengalaman menggenggam",
+    "Membangun interaksi tatap muka"
+   ],
+   "materials": [
+    {
+     "name": "jari pengasuh yang bersih",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 3,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Cuci tangan sebelum memulai."
+    },
+    {
+     "step": 2,
+     "text": "Sentuhkan jari pada telapak bayi."
+    },
+    {
+     "step": 3,
+     "text": "Biarkan bayi menentukan genggamannya."
+    }
+   ],
+   "controlOfError": "Bayi dapat melepas jari kapan saja.",
+   "variations": [
+    "Tawarkan jari kanan dan kiri bergantian.",
+    "Bicarakan gerak tangan dengan lembut."
+   ],
+   "readySigns": [
+    "Bayi menutup jari di sekitar jari pengasuh."
+   ],
+   "struggleSigns": [
+    "Bayi menarik tangan atau tampak tidak nyaman."
+   ],
+   "safetyNotes": [
+    "Jangan menarik tangan bayi atau memakai benda kecil sebagai pengganti jari."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-amati-cahaya-jendela",
+   "title": "Mengamati Cahaya Jendela",
+   "summary": "Bayi mengamati cahaya alami dari jendela sambil berada di ruang yang nyaman.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "outdoor"
+   ],
+   "skills": [
+    "perhatian visual",
+    "orientasi lingkungan"
+   ],
+   "objectives": [
+    "Mengenalkan perubahan cahaya alami",
+    "Mengajak bayi mengamati lingkungan"
+   ],
+   "materials": [
+    {
+     "name": "jendela dengan tirai",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 6,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pegang bayi jauh dari kaca jendela."
+    },
+    {
+     "step": 2,
+     "text": "Buka tirai sebagian dan amati bersama."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan terang dan bayangan dengan lembut."
+    }
+   ],
+   "controlOfError": "Bayi dapat memalingkan wajah dari cahaya.",
+   "variations": [
+    "Amati bayangan daun dari dalam ruangan.",
+    "Pilih waktu dengan cahaya tidak menyilaukan."
+   ],
+   "readySigns": [
+    "Bayi menatap area terang dengan tenang."
+   ],
+   "struggleSigns": [
+    "Bayi menyipitkan mata atau memalingkan wajah."
+   ],
+   "safetyNotes": [
+    "Hindari cahaya langsung yang menyilaukan dan jangan menempatkan bayi dekat jendela terbuka."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-jalan-dengar-lingkungan",
+   "title": "Jalan Singkat Mendengar Lingkungan",
+   "summary": "Bayi diajak mendengar suara lingkungan dari gendongan yang aman dan tenang.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "outdoor",
+    "sensorial"
+   ],
+   "skills": [
+    "mendengar lingkungan",
+    "orientasi ruang"
+   ],
+   "objectives": [
+    "Mengenalkan bunyi alami sehari-hari",
+    "Menyediakan pengalaman luar ruang singkat"
+   ],
+   "materials": [
+    {
+     "name": "gendongan atau kereta bayi sesuai petunjuk",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 15,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Periksa pengaman sebelum keluar."
+    },
+    {
+     "step": 2,
+     "text": "Berjalan pelan di tempat teduh dan tenang."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan bunyi yang terdengar."
+    }
+   ],
+   "controlOfError": "Pengasuh kembali bila bayi menunjukkan tidak nyaman.",
+   "variations": [
+    "Duduk di teras sambil mendengar angin.",
+    "Pilih waktu dengan lalu lintas rendah."
+   ],
+   "readySigns": [
+    "Bayi terjaga dan tubuhnya rileks."
+   ],
+   "struggleSigns": [
+    "Bayi kepanasan, kedinginan, atau rewel."
+   ],
+   "safetyNotes": [
+    "Gunakan pengaman sesuai petunjuk, hindari panas berlebih, dan jangan tinggalkan bayi sendirian."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-pelangi-kain",
+   "title": "Kain Warna di Samping",
+   "summary": "Kain warna lembut ditempatkan di samping bayi untuk diamati tanpa dijangkau.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "art-music"
+   ],
+   "skills": [
+    "membedakan warna",
+    "fokus pandangan"
+   ],
+   "objectives": [
+    "Menyediakan satu fokus visual",
+    "Mengajak bayi mengamati warna"
+   ],
+   "materials": [
+    {
+     "name": "kain warna solid",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Bentangkan kain di luar jangkauan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Tempatkan di sisi pandangan bayi."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan warnanya tanpa menggerakkan cepat."
+    }
+   ],
+   "controlOfError": "Tatapan bayi menunjukkan posisi kain yang tepat.",
+   "variations": [
+    "Gunakan satu warna pada satu sesi.",
+    "Bandingkan dua warna pada waktu berbeda."
+   ],
+   "readySigns": [
+    "Bayi menatap kain beberapa saat."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau tampak lelah."
+   ],
+   "safetyNotes": [
+    "Jangan menutup wajah, tempat tidur, atau area napas bayi dengan kain."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-suara-air-pelan",
+   "title": "Mendengar Suara Air",
+   "summary": "Bayi mendengar aliran air pelan dari jarak aman sambil digendong pengasuh.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "culture"
+   ],
+   "skills": [
+    "mendengar bunyi",
+    "perhatian"
+   ],
+   "objectives": [
+    "Mengenalkan bunyi rumah yang lembut",
+    "Mengamati respons auditori bayi"
+   ],
+   "materials": [
+    {
+     "name": "wastafel dan air mengalir",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 1,
+   "durationMinutes": 3,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Gendong bayi dengan posisi aman."
+    },
+    {
+     "step": 2,
+     "text": "Alirkan air pelan dan singkat."
+    },
+    {
+     "step": 3,
+     "text": "Beri nama bunyi lalu matikan air."
+    }
+   ],
+   "controlOfError": "Pengasuh menghentikan air saat bayi menunjukkan cukup.",
+   "variations": [
+    "Gunakan suara air dalam wadah tertutup.",
+    "Dengarkan hujan dari dalam ruangan."
+   ],
+   "readySigns": [
+    "Bayi tenang dan memperhatikan suara."
+   ],
+   "struggleSigns": [
+    "Bayi terkejut atau tidak nyaman."
+   ],
+   "safetyNotes": [
+    "Jauhkan bayi dari air panas, keran, dan permukaan licin."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-bayangan-tangan",
+   "title": "Bayangan Tangan di Dinding",
+   "summary": "Pengasuh membuat bayangan tangan sederhana di dinding sambil berbicara pelan.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "mengikuti bentuk",
+    "perhatian visual"
+   ],
+   "objectives": [
+    "Menyediakan pengalaman visual sederhana",
+    "Menghubungkan kata dengan gerak"
+   ],
+   "materials": [
+    {
+     "name": "dinding dan cahaya ruangan",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan bayi berada di posisi aman."
+    },
+    {
+     "step": 2,
+     "text": "Buat bayangan tangan jauh dari wajahnya."
+    },
+    {
+     "step": 3,
+     "text": "Gerakkan lambat dan beri nama bentuk."
+    }
+   ],
+   "controlOfError": "Gerak lambat membantu bayi mengikuti bayangan.",
+   "variations": [
+    "Gunakan satu bentuk tangan sederhana.",
+    "Lakukan pada cahaya ruangan yang lembut."
+   ],
+   "readySigns": [
+    "Bayi menatap area bayangan."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau gelisah."
+   ],
+   "safetyNotes": [
+    "Jangan gunakan lampu panas, lampu berkedip, atau cahaya langsung ke mata bayi."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-sentuhan-bahan-berbeda",
+   "title": "Mengenal Dua Tekstur",
+   "summary": "Pengasuh memperkenalkan dua kain berbeda secara singkat pada tangan bayi.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "self-care"
+   ],
+   "skills": [
+    "membedakan tekstur",
+    "eksplorasi tangan"
+   ],
+   "objectives": [
+    "Mengenalkan perbedaan sentuhan",
+    "Mengamati pilihan dan respons bayi"
+   ],
+   "materials": [
+    {
+     "name": "dua kain bersih berbeda tekstur",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 5,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Siapkan kain yang lembut dan aman."
+    },
+    {
+     "step": 2,
+     "text": "Sentuhkan kain pertama sebentar."
+    },
+    {
+     "step": 3,
+     "text": "Tawarkan kain kedua setelah jeda."
+    }
+   ],
+   "controlOfError": "Bayi melepas atau membuka tangan sebagai sinyal.",
+   "variations": [
+    "Bandingkan katun dan handuk halus.",
+    "Gunakan punggung tangan bila telapak mengepal."
+   ],
+   "readySigns": [
+    "Bayi tenang saat tekstur dikenalkan."
+   ],
+   "struggleSigns": [
+    "Bayi menarik tangan atau menangis."
+   ],
+   "safetyNotes": [
+    "Jangan gunakan kain berbulu lepas, berumbai, atau beraroma kuat."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-ritme-tepuk-lutut",
+   "title": "Ritme Tepuk Pelan",
+   "summary": "Pengasuh mengetuk lutut sendiri dengan ritme pelan sambil menggendong bayi aman.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "art-music",
+    "movement"
+   ],
+   "skills": [
+    "mendengar ritme",
+    "regulasi interaksi"
+   ],
+   "objectives": [
+    "Mengenalkan pola ritme sederhana",
+    "Mengamati kenyamanan bayi pada gerak"
+   ],
+   "materials": [
+    {
+     "name": "lutut pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 4,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Gendong bayi dengan kepala tersangga."
+    },
+    {
+     "step": 2,
+     "text": "Tepuk lutut sendiri secara perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Berhenti dan amati respons bayi."
+    }
+   ],
+   "controlOfError": "Jeda dan volume membantu mengikuti sinyal bayi.",
+   "variations": [
+    "Gunakan pola dua ketukan.",
+    "Padukan dengan senandung pelan."
+   ],
+   "readySigns": [
+    "Bayi tetap rileks dan memperhatikan."
+   ],
+   "struggleSigns": [
+    "Bayi menegang atau tampak kewalahan."
+   ],
+   "safetyNotes": [
+    "Jangan mengguncang tubuh bayi dan hentikan bila bayi tidak nyaman."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-turun-naik-suara",
+   "title": "Suara Naik dan Turun",
+   "summary": "Pengasuh mengucapkan satu bunyi dengan nada naik turun secara lembut dan singkat.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "art-music"
+   ],
+   "skills": [
+    "intonasi",
+    "perhatian auditori"
+   ],
+   "objectives": [
+    "Mengenalkan variasi nada bicara",
+    "Mengajak bayi mendengar pola suara"
+   ],
+   "materials": [
+    {
+     "name": "suara pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 4,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Dekatkan diri pada jarak nyaman."
+    },
+    {
+     "step": 2,
+     "text": "Ucapkan satu bunyi dengan nada melengkung."
+    },
+    {
+     "step": 3,
+     "text": "Jeda dan tunggu perhatian bayi."
+    }
+   ],
+   "controlOfError": "Bayi memalingkan wajah bila suara terlalu banyak.",
+   "variations": [
+    "Gunakan namanya dengan intonasi hangat.",
+    "Tiru bunyi yang dibuat bayi."
+   ],
+   "readySigns": [
+    "Bayi menatap atau berhenti bergerak sejenak."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau menangis."
+   ],
+   "safetyNotes": [
+    "Gunakan volume percakapan biasa dan jangan membuat suara mendadak."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-amati-benda-bulat",
+   "title": "Mengamati Benda Bulat",
+   "summary": "Bayi mengamati benda bulat besar berwarna jelas yang dipegang pengasuh dari jarak aman.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "math"
+   ],
+   "skills": [
+    "bentuk",
+    "fokus visual"
+   ],
+   "objectives": [
+    "Mengenalkan bentuk bulat",
+    "Mendorong perhatian pada satu objek"
+   ],
+   "materials": [
+    {
+     "name": "bola kain besar tanpa bagian lepas",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 2,
+   "durationMinutes": 5,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pegang bola jauh dari jangkauan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Tunjukkan bola tanpa menggerakkan cepat."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan bulat dan warnanya."
+    }
+   ],
+   "controlOfError": "Tatapan bayi menunjukkan jarak dan tempo yang sesuai.",
+   "variations": [
+    "Gunakan benda bulat lain yang besar.",
+    "Bandingkan dengan bentuk datar pada sesi berbeda."
+   ],
+   "readySigns": [
+    "Bayi menatap benda dan tetap rileks."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau tampak lelah."
+   ],
+   "safetyNotes": [
+    "Gunakan benda lebih besar dari mulut bayi dan jangan letakkan di tempat tidur."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-bau-lingkungan-netral",
+   "title": "Mengenal Aroma Rumah",
+   "summary": "Bayi berada dekat aroma rumah yang ringan dan alami tanpa bahan pewangi tambahan.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "sensorial",
+    "culture"
+   ],
+   "skills": [
+    "pengalaman sensorik",
+    "orientasi lingkungan"
+   ],
+   "objectives": [
+    "Mengajak bayi mengalami aroma sehari-hari",
+    "Mengamati kenyamanan terhadap lingkungan"
+   ],
+   "materials": [
+    {
+     "name": "ruang berventilasi baik",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 5,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan ruangan bebas asap dan pewangi kuat."
+    },
+    {
+     "step": 2,
+     "text": "Gendong bayi di ruang berventilasi."
+    },
+    {
+     "step": 3,
+     "text": "Amati napas dan ekspresinya tanpa memaksa."
+    }
+   ],
+   "controlOfError": "Respons bayi menjadi petunjuk untuk berpindah ruang.",
+   "variations": [
+    "Lakukan di dekat tanaman tanpa menyentuhnya.",
+    "Buka jendela sedikit bila aman."
+   ],
+   "readySigns": [
+    "Bayi tenang di ruangan tersebut."
+   ],
+   "struggleSigns": [
+    "Bayi bersin, rewel, atau memalingkan wajah."
+   ],
+   "safetyNotes": [
+    "Jangan gunakan minyak esensial, parfum, asap, atau bahan beraroma langsung di dekat bayi."
+   ],
+   "references": [
+    {
+     "title": "WHO Nurturing Care",
+     "url": "https://www.who.int/health-topics/early-child-development"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-obrolan-cermin-pengasuh",
+   "title": "Berbicara di Depan Cermin",
+   "summary": "Pengasuh berbicara sambil menunjukkan wajah di cermin yang terpasang aman dan tidak terjangkau.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "language",
+    "sensorial"
+   ],
+   "skills": [
+    "mengamati wajah",
+    "mendengar percakapan"
+   ],
+   "objectives": [
+    "Mengajak bayi melihat wajah dan pantulan",
+    "Memperkaya percakapan sederhana"
+   ],
+   "materials": [
+    {
+     "name": "cermin bayi yang kokoh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 6,
+   "prepLevel": "tinggi",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pastikan cermin terpasang kokoh."
+    },
+    {
+     "step": 2,
+     "text": "Pegang bayi dengan kepala tersangga."
+    },
+    {
+     "step": 3,
+     "text": "Sebutkan wajah pengasuh dan bayi."
+    }
+   ],
+   "controlOfError": "Bayi mengalihkan pandangan saat perlu istirahat.",
+   "variations": [
+    "Tersenyum lalu beri jeda.",
+    "Gunakan satu kata pada satu waktu."
+   ],
+   "readySigns": [
+    "Bayi melihat wajah atau pantulan dengan tenang."
+   ],
+   "struggleSigns": [
+    "Bayi terlihat kewalahan atau menangis."
+   ],
+   "safetyNotes": [
+    "Jangan gunakan cermin kaca longgar dan selalu pegang bayi dengan aman."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-permainan-jari-bernyanyi",
+   "title": "Lagu Jari Sederhana",
+   "summary": "Pengasuh menyanyikan lagu pendek sambil membuka dan menutup jarinya di depan bayi.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "art-music",
+    "movement"
+   ],
+   "skills": [
+    "mengamati gerak",
+    "ritme bahasa"
+   ],
+   "objectives": [
+    "Menghubungkan gerak dengan lagu",
+    "Mendorong perhatian visual singkat"
+   ],
+   "materials": [
+    {
+     "name": "tangan pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 4,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Posisikan tangan di luar jangkauan bayi."
+    },
+    {
+     "step": 2,
+     "text": "Buka dan tutup jari perlahan."
+    },
+    {
+     "step": 3,
+     "text": "Nyanyikan lagu pendek lalu berhenti."
+    }
+   ],
+   "controlOfError": "Tempo mengikuti kemampuan bayi memperhatikan.",
+   "variations": [
+    "Gerakkan satu tangan saja.",
+    "Gunakan lagu keluarga yang berulang."
+   ],
+   "readySigns": [
+    "Bayi menatap tangan atau mendengar lagu."
+   ],
+   "struggleSigns": [
+    "Bayi memalingkan wajah atau menguap."
+   ],
+   "safetyNotes": [
+    "Jangan menyentuh mata atau wajah bayi dengan jari."
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "0-3m-pelukan-responsif",
+   "title": "Pelukan dengan Jeda",
+   "summary": "Pengasuh memeluk bayi dengan tenang sambil memberi jeda untuk membaca tanda nyaman atau cukup.",
+   "ageBands": [
+    "0-3m"
+   ],
+   "areas": [
+    "grace-courtesy",
+    "self-care"
+   ],
+   "skills": [
+    "membaca sinyal",
+    "ikatan sosial"
+   ],
+   "objectives": [
+    "Membangun interaksi responsif",
+    "Menghormati kebutuhan jeda bayi"
+   ],
+   "materials": [
+    {
+     "name": "lengan pengasuh",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 0,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Sangga kepala dan leher bayi."
+    },
+    {
+     "step": 2,
+     "text": "Peluk dengan tekanan nyaman dan stabil."
+    },
+    {
+     "step": 3,
+     "text": "Berhenti sejenak untuk membaca sinyal."
+    }
+   ],
+   "controlOfError": "Gerak tubuh dan ekspresi bayi memandu pelukan.",
+   "variations": [
+    "Peluk sambil bersenandung pelan.",
+    "Duduk nyaman agar posisi tetap stabil."
+   ],
+   "readySigns": [
+    "Bayi rileks dan napasnya tenang."
+   ],
+   "struggleSigns": [
+    "Bayi mendorong, menegang, atau menangis."
+   ],
+   "safetyNotes": [
+    "Pastikan jalan napas bayi bebas dan jangan tertidur sambil menggendong di sofa atau kursi."
+   ],
+   "references": [
+    {
+     "title": "NHS Baby Development",
+     "url": "https://www.nhs.uk/start-for-life/baby/"
+    }
+   ],
+   "materialIds": []
+  }
+ ],
+ "milestones": [
+  {
+   "id": "mile-03m-angkat-kepala-tengkurap",
+   "title": "Mulai mengangkat kepala saat tengkurap",
+   "ageBand": "0-3m",
+   "domain": "motorik-kasar",
+   "description": "Bayi perlahan bisa mengangkat dan menolehkan kepala saat diletakkan tengkurap, melatih otot leher dan punggung.",
+   "typicalFromMonths": 1,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Kepala tidak bisa terangkat sama sekali pada usia 3 bulan",
+    "Leher terasa sangat kaku atau selalu miring ke satu sisi"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "HealthyChildren.org - Developmental Milestones",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-gerak-lengan-kaki",
+   "title": "Menggerakkan lengan dan kaki dengan aktif",
+   "ageBand": "0-3m",
+   "domain": "motorik-kasar",
+   "description": "Gerakan bayi berubah dari refleks menjadi lebih luwes, dengan tangan dan kaki yang menendang serta mengayun.",
+   "typicalFromMonths": 0,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Gerakan terasa sangat kaku atau hanya satu sisi tubuh yang bergerak",
+    "Tubuh terlalu lemas hingga sulit diangkat"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "WHO - Child growth standards",
+     "url": "https://www.who.int/tools/child-growth-standards"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-menggenggam-jari",
+   "title": "Menggenggam jari atau benda kecil",
+   "ageBand": "0-3m",
+   "domain": "motorik-halus",
+   "description": "Saat telapak tangan disentuh, bayi menggenggam jari orang dewasa atau benda ringan sebagai awal kontrol tangan.",
+   "typicalFromMonths": 0,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Tangan selalu menggenggam kencang dan sulit dibuka sepanjang waktu",
+    "Satu tangan tidak pernah digunakan bergerak"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "Zero to Three - Development",
+     "url": "https://www.zerotothree.org/resources/series/development"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-membuka-menutup-tangan",
+   "title": "Membuka dan menutup tangan",
+   "ageBand": "0-3m",
+   "domain": "motorik-halus",
+   "description": "Genggaman bayi mulai lebih longgar sehingga jari-jari bisa terbuka, melihat, dan menyentuh sekitarnya.",
+   "typicalFromMonths": 1,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Jari tangan tidak pernah terbuka hingga usia 3 bulan"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "HealthyChildren.org - Developmental Milestones",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-suara-kooing",
+   "title": "Mengeluarkan suara lembut seperti cooing",
+   "ageBand": "0-3m",
+   "domain": "bahasa",
+   "description": "Selain menangis, bayi mulai mengeluarkan bunyi vokal pendek seperti aaa atau ooo saat merasa nyaman.",
+   "typicalFromMonths": 1,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Tidak ada suara selain tangisan pada usia 3 bulan",
+    "Bayi tidak bereaksi terhadap suara keras"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "Zero to Three - Development",
+     "url": "https://www.zerotothree.org/resources/series/development"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-menangis-komunikasi",
+   "title": "Menangis dengan pola berbeda untuk kebutuhan berbeda",
+   "ageBand": "0-3m",
+   "domain": "bahasa",
+   "description": "Orang tua biasanya mulai mengenali perbedaan tangisan lapar, lelah, atau tidak nyaman sebagai bentuk komunikasi awal.",
+   "typicalFromMonths": 0,
+   "typicalToMonths": 2,
+   "redFlags": [
+    "Tangisan sangat lemah atau tidak ada sama sekali",
+    "Tangisan terus-menerus tanpa bisa ditenangkan dan disertai demam"
+   ],
+   "references": [
+    {
+     "title": "NHS - Baby development",
+     "url": "https://www.nhs.uk/pregnancy/related-conditions/developmental-check/"
+    },
+    {
+     "title": "Zero to Three - Development",
+     "url": "https://www.zerotothree.org/resources/series/development"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-mengikuti-objek-mata",
+   "title": "Mengikuti benda dengan mata",
+   "ageBand": "0-3m",
+   "domain": "kognitif",
+   "description": "Pandangan bayi mulai mengikuti wajah atau benda yang bergerak perlahan di depannya, tanda perhatian dan penglihatan berkembang.",
+   "typicalFromMonths": 1,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Mata tidak mengikuti objek sama sekali pada usia 3 bulan",
+    "Mata sering tampak menyilang atau tidak fokus setelah beberapa bulan"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "HealthyChildren.org - Developmental Milestones",
+     "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-memperhatikan-wajah",
+   "title": "Memperhatikan wajah orang terdekat",
+   "ageBand": "0-3m",
+   "domain": "kognitif",
+   "description": "Bayi menatap dan mengamati wajah pengasuh, mulai mengenali suara dan raut yang sering dilihatnya.",
+   "typicalFromMonths": 0,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Tidak pernah menatap wajah atau mata orang dewasa",
+    "Tidak menunjukkan reaksi saat diajak bicara"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "Zero to Three - Development",
+     "url": "https://www.zerotothree.org/resources/series/development"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-senyum-sosial",
+   "title": "Tersenyum sebagai respons sosial",
+   "ageBand": "0-3m",
+   "domain": "sosial-emosional",
+   "description": "Sekitar usia 6-8 minggu, banyak bayi mulai tersenyum saat melihat wajah atau mendengar suara hangat, bukan hanya saat tidur.",
+   "typicalFromMonths": 2,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Tidak pernah tersenyum sebagai respons pada usia 3 bulan",
+    "Sangat sulit ditenangkan atau tampak tidak nyaman hampir sepanjang waktu"
+   ],
+   "references": [
+    {
+     "title": "CDC Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "NHS - Baby development",
+     "url": "https://www.nhs.uk/pregnancy/related-conditions/developmental-check/"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-tenang-saat-digendong",
+   "title": "Tenang saat digendong dan diajak bicara",
+   "ageBand": "0-3m",
+   "domain": "sosial-emosional",
+   "description": "Sentuhan, gendongan, dan suara tenang umumnya membantu bayi merasa aman dan mengurangi rewel.",
+   "typicalFromMonths": 0,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Tidak tenang sama sekali dengan sentuhan atau gendongan",
+    "Menangis histeris berkepanjangan yang sulit dihentikan"
+   ],
+   "references": [
+    {
+     "title": "Zero to Three - Development",
+     "url": "https://www.zerotothree.org/resources/series/development"
+    },
+    {
+     "title": "NHS - Baby development",
+     "url": "https://www.nhs.uk/pregnancy/related-conditions/developmental-check/"
+    }
+   ]
+  },
+  {
+   "id": "mile-03m-refleks-menghisap",
+   "title": "Menghisap dengan refleks saat menyusu",
+   "ageBand": "0-3m",
+   "domain": "self-help",
+   "description": "Bayi menghisap puting atau jari secara refleks untuk makan dan menenangkan diri, lalu mulai mengatur ritme menyusu.",
+   "typicalFromMonths": 0,
+   "typicalToMonths": 3,
+   "redFlags": [
+    "Sulit menempel dan menyusu secara konsisten",
+    "Berat badan tidak naik sesuai anjuran dokter"
+   ],
+   "references": [
+    {
+     "title": "WHO - Child growth standards",
+     "url": "https://www.who.int/tools/child-growth-standards"
+    },
+    {
+     "title": "NHS - Baby development",
+     "url": "https://www.nhs.uk/pregnancy/related-conditions/developmental-check/"
+    }
+   ]
+  }
+ ]
+}

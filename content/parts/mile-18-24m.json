@@ -1,0 +1,129 @@
+[
+  {
+    "id": "mile-1824m-jalan-lari",
+    "title": "Mulai berjalan mantap dan mencoba berlari",
+    "ageBand": "18-24m",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak di usia ini berjalan dengan langkah yang semakin stabil, mulai menyukai berjalan sambil menarik atau mendorong benda, dan mencoba langkah lari kecil-kecilan walau sering masih kaku.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": ["Jatuh sangat sering atau berjalan masih terlalu condong ke depan di usia 2 tahun", "Tampak berat atau nyeri saat melangkah"],
+    "references": [
+      {"title": "CDC Milestones 2 Years", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"},
+      {"title": "WHO Motor Development", "url": "https://www.who.int/news-room/questions-and-answers/item/child-development"}
+    ]
+  },
+  {
+    "id": "mile-1824m-naik-tangga",
+    "title": "Naik tangga dengan bantuan",
+    "ageBand": "18-24m",
+    "domain": "motorik-kasar",
+    "description": "Umumnya anak mulai bisa memanjat naik tangga dengan pegangan atau tangan orang dewasa, meski menurun biasanya masih memerlukan bantuan atau cara bermain sambil duduk.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": ["Tidak berani atau sangat kesulitan memanjat permukaan rendah padahal sudah lancar berjalan"],
+    "references": [{"title": "HealthyChildren Motor Milestones", "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"}]
+  },
+  {
+    "id": "mile-1824m-menendang-bola",
+    "title": "Menendang bola kecil",
+    "ageBand": "18-24m",
+    "domain": "motorik-kasar",
+    "description": "Anak di rentang ini sering mulai mencoba menendang bola kecil, kadang masih dengan kaki terayang tanpa arah yang mantap, dan itu bagian dari belajar koordinasi tubuh.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": [],
+    "references": [{"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+  },
+  {
+    "id": "mile-1824m-menggenggam-kapur",
+    "title": "Menggambar coretan dengan pensil atau krayon",
+    "ageBand": "18-24m",
+    "domain": "motorik-halus",
+    "description": "Banyak anak mulai mampu menggenggam krayon atau pensil tebal dan menghasilkan coretan acak di kertas, tanda awal kesiapan menulis jauh di kemudian hari.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": ["Tidak memegang atau menggenggam benda kecil sesuai genggamannya di usia mendekati 2 tahun"],
+    "references": [{"title": "HealthyChildren Toddler Milestones", "url": "https://www.healthychildren.org/English/ages-stages/toddler/fitness/Pages/Caught-Hand-And-Finger-Skills.aspx"}]
+  },
+  {
+    "id": "mile-1824m-mangkuk-sendok",
+    "title": "Menggunakan sendok sendiri dengan tumpahan",
+    "ageBand": "18-24m",
+    "domain": "motorik-halus",
+    "description": "Umumnya anak mencoba memakai sendok ke mulutnya sendiri walau makanan masih sering berceceran, dan kemampuan ini tumbuh seiring latihan harian yang sabar tanpa penilaian.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": [],
+    "references": [{"title": "NHS Toddler Development", "url": "https://www.nhs.uk/conditions/baby/babys-development/"}]
+  },
+  {
+    "id": "mile-1824m-vokabuler-ledakan",
+    "title": "Perbendaharaan kata bertambah cepat",
+    "ageBand": "18-24m",
+    "domain": "bahasa",
+    "description": "Banyak anak di tahap ini mengalami lonjakan kata baru, mulai menyebut nama benda yang sering dilihat, dan mengikuti arahan sederhana satu langkah seperti ambil dan taruh.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": ["Tidak mengucapkan kata tunggal apa pun di usia 2 tahun", "Tidak menunjuk benda yang disebut orang lain", "Tidak memahami perintah sederhana"],
+    "references": [
+      {"title": "CDC ~ Speech and Language", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"},
+      {"title": "NHS Language Development", "url": "https://www.nhs.uk/conditions/baby/babys-development/activities-for-babies/talking-and-listening/"}
+    ]
+  },
+  {
+    "id": "mile-1824m-dua-kata",
+    "title": "Menggabungkan dua kata",
+    "ageBand": "18-24m",
+    "domain": "bahasa",
+    "description": "Kadang di akhir usia 18-24 bulan, anak mulai menggabung dua kata sederhana seperti mau susu atau mama pergi, tanda kalimat pertama sedang bertumbuh.",
+    "typicalFromMonths": 21,
+    "typicalToMonths": 24,
+    "redFlags": ["Belum ada gabungan dua kata di usia 2 tahun, konsultasikan ke dokter atau terapis wicara bila bertanda tanya"],
+    "references": [{"title": "Zero to Three Language Development", "url": "https://www.zerotothree.org/resource/learning-to-talk/"}]
+  },
+  {
+    "id": "mile-1824m-bermain-pretensi",
+    "title": "Bermain pura-pura sederhana",
+    "ageBand": "18-24m",
+    "domain": "kognitif",
+    "description": "Anak umumnya mulai bermain pura-pura sangat sederhana, misalnya menyorongkan sendok kepada boneka seolah memberinya makan, bukti imajinasi dan daya ingat berkembang.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": ["Tidak menunjukkan minat pada permainan imitasi atau pura-pura sama sekali di dekat usia 2 tahun"],
+    "references": [{"title": "Zero to Three Play", "url": "https://www.zerotothree.org/resource/play-activities-12-24-months/"}]
+  },
+  {
+    "id": "mile-1824m-garis-kotak",
+    "title": "Memahami benda yang disembunyikan",
+    "ageBand": "18-24m",
+    "domain": "kognitif",
+    "description": "Banyak anak mulai bisa mencari mainan yang disembunyikan di bawah beberapa lapisan penutup dan menikmati permainan menghilangkan benda sambil tertawa.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": [],
+    "references": [{"title": "WHO Child Development Q&A", "url": "https://www.who.int/news-room/questions-and-answers/item/child-development"}]
+  },
+  {
+    "id": "mile-1824m-pergi-orang-asing",
+    "title": "Rasa cemas pada orang asing dan ketergantungan pengasuh",
+    "ageBand": "18-24m",
+    "domain": "sosial-emosional",
+    "description": "Umumnya anak di usia ini masih melekat kuat pada orang tua atau pengasuh utamanya, bisa cemas saat dipisahkan dan tersenyum atau menunjukkan kegembiraan saat dipeluk teman akrabnya.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": ["Tidak mengenal atau tidak bereaksi terhadap orang yang dikenal dekatnya"],
+    "references": [{"title": "HealthyChildren Emotional Development", "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"}]
+  },
+  {
+    "id": "mile-1824m-lepas-baju",
+    "title": "Mencoba melepas sendiri pakaian atau sepatu",
+    "ageBand": "18-24m",
+    "domain": "self-help",
+    "description": "Banyak anak mulai tertarik membuka sepatu, melepas topi, atau menarik kemeja ke lengan bawahnya sendiri, awal kemandirian berpakaian yang bisa dilatih rendah badan kesabaran.",
+    "typicalFromMonths": 18,
+    "typicalToMonths": 24,
+    "redFlags": [],
+    "references": [{"title": "NHS Toddler Self Care", "url": "https://www.nhs.uk/conditions/baby/babys-development/"}]
+  }
+]

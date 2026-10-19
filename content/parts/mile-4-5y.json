@@ -1,0 +1,255 @@
+[
+  {
+    "id": "mile-45y-lompat-satu-kaki",
+    "title": "Melompat dan berjinjit dengan satu kaki",
+    "ageBand": "4-5y",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak berusia 4-5 tahun dapat melompat dengan satu kaki beberapa kali, berjinjit, dan mendarat dengan lebih seimbang saat bermain.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Belum bisa melompat dengan dua kaki atau sering jatuh berat tanpa berusaha menyeimbangkan diri mendekati usia 5 tahun",
+      "Kaki tampak kaku, terasa nyeri, atau anak terus-menerus menghindari aktivitas bergerak"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+      },
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-berlari-ubah-arah",
+    "title": "Berlari sambil berbelok dan berhenti",
+    "ageBand": "4-5y",
+    "domain": "motorik-kasar",
+    "description": "Keseimbangan dan koordinasi makin berkembang, sehingga banyak anak bisa berlari sambil berbelok, memperlambat langkah, lalu berhenti tanpa sering terjatuh.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Sering jatuh berat dibandingkan anak seusianya, atau satu sisi tubuh tampak lebih lemah saat bergerak",
+      "Berjalan atau berlari dengan pola yang sangat kaku dan membuat anak tampak kesakitan"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      },
+      {
+        "title": "WHO - Early Child Development",
+        "url": "https://www.who.int/health-topics/early-child-development"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-menggambar-sosok",
+    "title": "Menggambar bentuk dan sosok sederhana",
+    "ageBand": "4-5y",
+    "domain": "motorik-halus",
+    "description": "Anak mulai membuat gambar yang bisa dikenali, seperti lingkaran untuk kepala dan garis untuk kaki, serta mencoba meniru bentuk silang atau kotak.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Tangan tampak sangat kaku atau anak enggan memegang alat tulis hingga mendekati usia 5 tahun",
+      "Belum mampu membuat coretan yang disengaja atau meniru garis sederhana sama sekali"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+      },
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-memegang-gunting",
+    "title": "Memegang gunting anak dengan lebih terampil",
+    "ageBand": "4-5y",
+    "domain": "motorik-halus",
+    "description": "Dengan pengawasan, banyak anak dapat memegang gunting anak dan memotong kertas lurus atau mengikuti pola sederhana, meski hasilnya masih belum rapi.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Belum bisa menggunakan kedua tangan bersama-sama untuk memegang kertas dan alat hingga mendekati usia 5 tahun",
+      "Tangan sering tampak bergetar atau anak sangat kesulitan menggenggam benda sehari-hari"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      },
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-bercerita-runtut",
+    "title": "Bercerita dengan kalimat yang runtut",
+    "ageBand": "4-5y",
+    "domain": "bahasa",
+    "description": "Banyak anak dapat menceritakan pengalaman atau cerita pendek dengan beberapa kalimat yang saling berhubungan dan mudah dipahami orang lain.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Bicara sangat tidak jelas sehingga orang di luar keluarga sulit memahaminya pada usia 5 tahun",
+      "Hampir tidak menggunakan kalimat untuk menyampaikan keinginan atau bercerita"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+      },
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-mengenal-huruf",
+    "title": "Mengenal huruf dan bunyi awal",
+    "ageBand": "4-5y",
+    "domain": "bahasa",
+    "description": "Anak mulai tertarik pada huruf, mengenali namanya sendiri, menulis beberapa huruf, dan menikmati sajak atau bunyi awal kata yang mirip.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Tidak menunjukkan minat sama sekali pada buku, cerita, atau permainan bunyi hingga mendekati usia 5 tahun",
+      "Sulit memahami pertanyaan sederhana dan sering tidak merespons ketika dipanggil"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      },
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-menghitung-angka-kecil",
+    "title": "Menghitung dan mengenal angka kecil",
+    "ageBand": "4-5y",
+    "domain": "kognitif",
+    "description": "Banyak anak dapat menghitung sampai sepuluh, menyebut beberapa angka, dan mulai memahami konsep sederhana seperti sedikit, banyak, atau lebih.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Belum bisa mengikuti dua instruksi sederhana secara berurutan mendekati usia 5 tahun",
+      "Sulit memahami konsep sehari-hari seperti satu, banyak, atau besar dan kecil meski sudah sering diajak bermain"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      },
+      {
+        "title": "WHO - Early Child Development",
+        "url": "https://www.who.int/health-topics/early-child-development"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-puzzle-dan-mengelompokkan",
+    "title": "Menyusun puzzle dan mengelompokkan benda",
+    "ageBand": "4-5y",
+    "domain": "kognitif",
+    "description": "Anak makin mahir menyusun puzzle beberapa keping, mencocokkan bentuk, serta mengelompokkan benda berdasarkan warna, ukuran, atau jenisnya.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Sulit mencocokkan bentuk atau warna sama sekali meski sudah diberi contoh berulang",
+      "Kehilangan kemampuan menyelesaikan permainan yang sebelumnya sudah dikuasai"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+      },
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-bermain-bergiliran",
+    "title": "Bermain bergiliran dengan teman",
+    "ageBand": "4-5y",
+    "domain": "sosial-emosional",
+    "description": "Banyak anak mulai bermain bersama teman, berbagi peran dalam permainan pura-pura, dan belajar menunggu giliran meski kadang masih perlu diingatkan.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Hampir tidak menunjukkan minat berinteraksi dengan anak lain dan selalu menghindari kontak sosial",
+      "Perilaku agresif yang sering melukai diri sendiri atau orang lain sehingga sulit ditenangkan"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/4-years.html"
+      },
+      {
+        "title": "WHO - Early Child Development",
+        "url": "https://www.who.int/health-topics/early-child-development"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-menamai-emosi",
+    "title": "Mengenali dan menamai emosi",
+    "ageBand": "4-5y",
+    "domain": "sosial-emosional",
+    "description": "Anak mulai bisa mengatakan sedang senang, sedih, marah, atau takut, serta menunjukkan kepedulian sederhana ketika melihat orang lain kesulitan.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Menunjukkan ketakutan atau kesedihan yang sangat kuat dan menetap hingga mengganggu aktivitas sehari-hari",
+      "Sering meledak marah dengan intensitas tinggi dan sulit ditenangkan meski sudah dibantu"
+    ],
+    "references": [
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      },
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-45y-merawat-diri",
+    "title": "Merawat diri dengan lebih mandiri",
+    "ageBand": "4-5y",
+    "domain": "self-help",
+    "description": "Banyak anak sudah bisa ke toilet sendiri, makan dengan alat makan, dan mengenakan sebagian pakaian, meski tetap perlu bantuan untuk mengancingkan atau membersihkan diri.",
+    "typicalFromMonths": 48,
+    "typicalToMonths": 60,
+    "redFlags": [
+      "Kehilangan keterampilan toileting yang sebelumnya sudah dikuasai, terutama bila disertai nyeri atau perubahan pola buang air",
+      "Menolak makan atau minum secara terus-menerus hingga perlu diperiksa tumbuh kembangnya"
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren.org - Preschool",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      },
+      {
+        "title": "CDC - Milestones by Age",
+        "url": "https://www.cdc.gov/act-early/milestones/5-years.html"
+      }
+    ]
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "mile-23y-lari-melompat",
+    "title": "Berlari dan melompat dengan dua kaki",
+    "ageBand": "2-3y",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak di usia ini makin lancar berlari, berhenti mendadak, dan mencoba melompat dengan kedua kaki sekaligus meski belum selalu mendarat mulus.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 36,
+    "safetyNotes": [
+      "Awasi anak saat berlari dan melompat, jauhkan dari lantai licin, tangga tanpa pagar, dan permukaan keras",
+      "Sediakan ruang kosong yang cukup agar anak tidak menabrak perabot atau benda tajam"
+    ],
+    "redFlags": [
+      "Bila anak sering jatuh berat, tampak kaku pada satu sisi tubuh, atau belum bisa berlari sama sekali mendekati 3 tahun, konsultasikan ke dokter",
+      "Bila anak mengeluh nyeri atau menolak menumpukan berat badan pada satu kaki, sebaiknya diperiksa dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 2 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+      },
+      {
+        "title": "CDC Milestones 30 Bulan",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-menendang-bola",
+    "title": "Menendang bola tanpa kehilangan keseimbangan",
+    "ageBand": "2-3y",
+    "domain": "motorik-kasar",
+    "description": "Koordinasi kaki dan keseimbangan berkembang, sehingga anak umumnya bisa menendang bola ke depan sambil tetap berdiri atau hanya sesekali berpegangan.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 30,
+    "safetyNotes": [
+      "Gunakan bola ringan yang tidak terlalu keras dan awasi anak saat bermain di dekat jalan, kolam, atau area parkir",
+      "Pastikan permainan dilakukan di area datar dan tidak ada benda pecah belah di sekitar anak"
+    ],
+    "redFlags": [
+      "Bila gerakan kaki sangat tidak seimbang atau anak menghindari seluruh aktivitas fisik karena nyeri, tanyakan pada dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 2 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+      },
+      {
+        "title": "HealthyChildren - Toddler Development",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-naik-tangga-bergantian",
+    "title": "Naik dan turun tangga dengan kaki bergantian",
+    "ageBand": "2-3y",
+    "domain": "motorik-kasar",
+    "description": "Anak mulai belajar menaiki tangga dengan satu kaki per anak tangga sambil berpegangan, lalu perlahan mencoba turun dengan cara yang sama.",
+    "typicalFromMonths": 26,
+    "typicalToMonths": 36,
+    "safetyNotes": [
+      "Tetap dampingi anak di tangga, pasang pagar pengaman, dan jangan biarkan anak naik turun tangga sendirian",
+      "Pastikan pegangan tangan kokoh dan anak memakai alas kaki yang tidak licin"
+    ],
+    "redFlags": [
+      "Bila anak tampak sangat takut berlebihan, kaku, atau selalu menyeret satu kaki saat naik tangga, konsultasikan ke dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 30 Bulan",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+      },
+      {
+        "title": "CDC Milestones 3 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-3yr.html"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-menggambar-garis",
+    "title": "Menggambar garis dan lingkaran sederhana",
+    "ageBand": "2-3y",
+    "domain": "motorik-halus",
+    "description": "Pegangan krayon makin stabil, sehingga anak umumnya bisa membuat garis lurus, garis melingkar, atau meniru bentuk sederhana saat diajak menggambar.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 33,
+    "safetyNotes": [
+      "Pilih krayon atau spidol besar yang tidak mudah patah dan tidak beracun, lalu awasi anak agar tidak memasukkannya ke mulut",
+      "Jauhkan alat tulis dari jangkauan saat tidak digunakan dan hindari pena kecil yang bisa tertelan"
+    ],
+    "redFlags": [
+      "Bila tangan anak tampak selalu mengepal erat, sulit membuka jari, atau satu tangan hampir tidak pernah dipakai untuk menggambar, konsultasikan ke dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 2 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+      },
+      {
+        "title": "Zero to Three - Early Development",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-menara-balok",
+    "title": "Menyusun menara dari beberapa balok",
+    "ageBand": "2-3y",
+    "domain": "motorik-halus",
+    "description": "Kontrol tangan dan kesabaran anak bertambah, sehingga ia umumnya bisa menumpuk empat sampai enam balok sebelum menaranya roboh.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 30,
+    "safetyNotes": [
+      "Gunakan balok berukuran lebih besar dari tabung gulungan toilet agar tidak tertelan, dan awasi anak selama bermain",
+      "Periksa balok dari pecahan atau sudut tajam, serta hindari balok magnet kecil yang bisa terlepas"
+    ],
+    "redFlags": [
+      "Bila anak belum menunjukkan minat menyusun atau memindahkan benda kecil mendekati 3 tahun, diskusikan dengan dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 30 Bulan",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+      },
+      {
+        "title": "HealthyChildren - Toddler Development",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-kalimat-dua-tiga-kata",
+    "title": "Mengucapkan kalimat dua sampai tiga kata",
+    "ageBand": "2-3y",
+    "domain": "bahasa",
+    "description": "Kosakata anak berkembang cepat, dan banyak anak mulai merangkai dua atau tiga kata menjadi kalimat sederhana untuk menyampaikan keinginannya.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 33,
+    "safetyNotes": [
+      "Ciptakan lingkungan bicara yang aman dan bebas layar berlebihan, serta dampingi anak saat menonton konten digital",
+      "Jangan memaksa anak bicara di depan orang asing dan tetap awasi interaksinya dengan orang yang belum dikenal"
+    ],
+    "redFlags": [
+      "Bila anak belum mengucapkan kata tunggal yang jelas mendekati 2 tahun, atau belum merangkai dua kata mendekati 3 tahun, konsultasikan ke dokter",
+      "Bila anak tampak tidak merespons suara atau namanya dipanggil, sebaiknya lakukan pemeriksaan pendengaran"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 2 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+      },
+      {
+        "title": "NHS - Help Your Child Learn to Talk",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-instruksi-dua-langkah",
+    "title": "Mengikuti instruksi dua langkah",
+    "ageBand": "2-3y",
+    "domain": "kognitif",
+    "description": "Anak mulai mampu menyimpan dua perintah singkat di ingatannya, misalnya mengambil sepatu lalu meletakkannya di dekat pintu.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 36,
+    "safetyNotes": [
+      "Berikan instruksi yang aman dan sesuai kemampuan, serta hindari perintah yang melibatkan benda berbahaya atau area tanpa pengawasan",
+      "Tetap dampingi anak saat ia diminta berpindah ruangan atau mengambil benda di tempat tinggi"
+    ],
+    "redFlags": [
+      "Bila anak tampak tidak memahami kata sederhana, sering tidak merespons panggilan, atau kehilangan kemampuan yang sudah dikuasai, konsultasikan ke dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 30 Bulan",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+      },
+      {
+        "title": "Zero to Three - Early Development",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-mengenali-gambar",
+    "title": "Menunjuk dan menamai gambar yang dikenal",
+    "ageBand": "2-3y",
+    "domain": "kognitif",
+    "description": "Daya ingat dan pengenalan anak menguat, sehingga ia umumnya bisa menunjuk gambar hewan, buah, atau anggota tubuh dan menyebut namanya saat ditanya.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 33,
+    "safetyNotes": [
+      "Pilih buku bergambar dengan bahan tebal, tidak mudah sobek, dan tinta yang aman untuk anak",
+      "Awasi anak saat membuka buku agar tidak tergores sudut kertas atau memasukkan sobekan kertas ke mulut"
+    ],
+    "redFlags": [
+      "Bila anak tidak menunjukkan minat pada gambar atau tidak mengenali benda yang biasa dilihat sehari-hari mendekati 3 tahun, diskusikan dengan dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 2 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+      },
+      {
+        "title": "HealthyChildren - Toddler Development",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-bermain-pura-pura",
+    "title": "Bermain pura-pura secara sederhana",
+    "ageBand": "2-3y",
+    "domain": "sosial-emosional",
+    "description": "Imajinasi anak mulai terlihat saat ia berpura-pura memberi makan boneka, menelepon dengan tangan, atau meniru kegiatan orang dewasa di sekitarnya.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 36,
+    "safetyNotes": [
+      "Awasi permainan peran agar anak tidak menggunakan benda kecil, plastik tipis, atau benda tajam sebagai properti mainan",
+      "Hindari mainan dengan tali panjang atau kabel yang bisa melilit leher anak"
+    ],
+    "redFlags": [
+      "Bila anak tidak menunjukkan ketertarikan pada orang lain, tidak meniru gerakan sederhana, atau sulit diajak berinteraksi, konsultasikan ke dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 30 Bulan",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-30mo.html"
+      },
+      {
+        "title": "Zero to Three - Play and Learning",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-makan-sendiri",
+    "title": "Makan sendiri dengan sendok",
+    "ageBand": "2-3y",
+    "domain": "self-help",
+    "description": "Keterampilan tangan dan kemandirian anak berkembang, sehingga ia umumnya bisa menyuap makanan dengan sendok meski masih banyak yang berjatuhan.",
+    "typicalFromMonths": 24,
+    "typicalToMonths": 33,
+    "safetyNotes": [
+      "Potong makanan menjadi ukuran kecil yang mudah dikunyah dan awasi anak selama makan untuk mencegah tersedak",
+      "Hindari makanan bulat keras seperti anggur utuh, kacang, atau permen, serta pastikan anak makan dalam posisi duduk"
+    ],
+    "redFlags": [
+      "Bila anak sering tersedak, menolak hampir semua tekstur, atau berat badannya tidak naik sesuai pemantauan rutin, konsultasikan ke dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 2 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-2yr.html"
+      },
+      {
+        "title": "HealthyChildren - Choking Prevention",
+        "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-23y-melepas-pakaian",
+    "title": "Melepas pakaian dan sepatu sederhana",
+    "ageBand": "2-3y",
+    "domain": "self-help",
+    "description": "Anak mulai ingin melakukan sendiri, sehingga banyak anak bisa melepas celana, kaus kaki, atau sepatu berperekat tanpa banyak bantuan.",
+    "typicalFromMonths": 26,
+    "typicalToMonths": 36,
+    "safetyNotes": [
+      "Awasi anak saat melepas pakaian agar tidak tersangkut di leher, dan hindari pakaian dengan tali panjang atau resleting tajam",
+      "Pastikan anak tidak melepas sepatu di lantai licin atau saat berada di dekat tangga"
+    ],
+    "redFlags": [
+      "Bila anak tampak kesulitan menggerakkan satu tangan atau lengan secara konsisten, atau kehilangan kemampuan yang sebelumnya dikuasai, konsultasikan ke dokter"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones 3 Tahun",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-3yr.html"
+      },
+      {
+        "title": "Zero to Three - Early Development",
+        "url": "https://www.zerotothree.org/resources/"
+      }
+    ]
+  }
+]

@@ -1,3 +1,207 @@
 [0m
 > build · deepseek-v4.1-flash-free
 [0m
+[0m$ [0mls content/parts 2>/dev/null | head -20; ls content 2>/dev/null
+act-0-3m.json
+act-12-18m.json
+act-3-6m.json
+act-6-9m.json
+act-9-12m.json
+glossary-1.json
+mile-0-3m.json
+mile-3-6m.json
+bundles
+parts
+[0m
+[0m→ [0mRead content/parts/mile-3-6m.json[90m [limit=60][0m
+[0m
+[0m$ [0mmkdir -p content/parts && python3 - <<'PY'
+import json
+
+cdc = {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}
+who = {"title": "WHO Child Growth Standards", "url": "https://www.who.int/tools/child-growth-standards"}
+aap = {"title": "HealthyChildren.org - Baby Milestones", "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}
+ztt = {"title": "Zero to Three - Development", "url": "https://www.zerotothree.org/early-development/"}
+nhs = {"title": "NHS - Baby Development", "url": "https://www.nhs.uk/baby/development/"}
+ami = {"title": "AMS - Montessori at Home", "url": "https://amiusa.org/"}
+
+data = [
+ {
+  "id": "mile-69m-duduk-mandiri",
+  "title": "Duduk sendiri dengan stabil",
+  "ageBand": "6-9m",
+  "domain": "motorik-kasar",
+  "description": "Umumnya banyak bayi mulai bisa duduk sendiri tanpa ditopang di rentang usia ini, meski ada juga yang butuh bantuan sesekali untuk menyeimbangkan tubuhnya.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Letakkan bayi di lantai beralas karpet atau matras yang datar, bukan di sofa atau tempat tinggi, dan tetap awasi karena keseimbangannya masih mudah goyah."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan tubuh bayi masih terkulai penuh dan belum bisa menahan kepala serta punggung saat didudukkan, konsultasikan ke dokter."
+  ],
+  "references": [cdc, aap]
+ },
+ {
+  "id": "mile-69m-merangkak-merayap",
+  "title": "Mulai merayap dan merangkak",
+  "ageBand": "6-9m",
+  "domain": "motorik-kasar",
+  "description": "Banyak bayi di usia ini mulai berpindah tempat dengan cara merayap, menyeret perut, atau mengangkat badan di atas kedua tangan dan lutut menuju mainan yang diinginkan.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Aman-kan lantai dengan menutup stopkontak, menjauhkan kabel dan benda kecil, memasang pagar tangga, serta mengunci lemari rendah sebelum bayi mulai bergerak bebas."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan belum ada cara apa pun untuk memindahkan tubuh ke arah yang dituju, konsultasikan ke dokter untuk pemeriksaan perkembangan."
+  ],
+  "references": [cdc, nhs]
+ },
+ {
+  "id": "mile-69m-tarik-berdiri",
+  "title": "Menarik badan ke posisi berdiri",
+  "ageBand": "6-9m",
+  "domain": "motorik-kasar",
+  "description": "Menjelang akhir rentang ini banyak bayi mencoba menarik badannya sendiri dengan berpegangan pada perabot atau tangan orang dewasa untuk berdiri sebentar.",
+  "typicalFromMonths": 7,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Pastikan perabot yang dijadikan pegangan tidak mudah terguling dan tidak beroda; jangan tinggalkan bayi sendirian di dekat meja kaca atau rak yang bisa jatuh menimpa."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan kedua tungkai terasa sangat lemas atau tidak mampu menahan berat badan sama sekali saat dipegangi berdiri, konsultasikan ke dokter."
+  ],
+  "references": [cdc, aap]
+ },
+ {
+  "id": "mile-69m-pindah-benda-antar-tangan",
+  "title": "Memindahkan benda dari satu tangan ke tangan lain",
+  "ageBand": "6-9m",
+  "domain": "motorik-halus",
+  "description": "Umumnya bayi mulai bisa memegang benda dengan satu tangan lalu memindahkannya ke tangan satunya, tanda koordinasi kedua tangan makin rapi.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Pilih benda yang lebih besar dari lubang gulungan tisu toilet dan tidak punya bagian kecil lepas, lalu awasi karena bayi cenderung memasukkan semuanya ke mulut."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan tangan bayi hampir selalu menggenggam erat tanpa pernah berusaha memindahkan benda ke tangan lain, konsultasikan ke dokter."
+  ],
+  "references": [cdc, ztt]
+ },
+ {
+  "id": "mile-69m-menjumput-jari",
+  "title": "Menjumput dengan ibu jari dan telunjuk",
+  "ageBand": "6-9m",
+  "domain": "motorik-halus",
+  "description": "Banyak bayi mulai mengambil benda kecil memakai ujung ibu jari dan telunjuknya, gerakan yang biasanya muncul di sekitar usia 8-9 bulan.",
+  "typicalFromMonths": 8,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Karena kemampuan menjumput ini membuka peluang menelan benda kecil, segera sisihkan kacang, koin, baterai kecil, dan mainan berukuran mini dari jangkauan bayi."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan tangan bayi selalu mengepal dan tidak pernah berusaha meraih benda dengan ujung jari, konsultasikan ke dokter."
+  ],
+  "references": [cdc, nhs]
+ },
+ {
+  "id": "mile-69m-babbling-berulang",
+  "title": "Mengoceh dengan suku kata berulang",
+  "ageBand": "6-9m",
+  "domain": "bahasa",
+  "description": "Banyak bayi di rentang ini mulai merangkai bunyi menjadi suku kata berulang seperti ba-ba atau da-da, kadang sambil menatap wajah lawan bicaranya.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Sisihkan waktu tanpa layar dan tanpa suara latar agar bayi bisa mendengar dan meniru suara manusia secara langsung."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan tidak mengeluarkan bunyi vokal atau ocehan sama sekali, konsultasikan ke dokter."
+  ],
+  "references": [cdc, who]
+ },
+ {
+  "id": "mile-69m-merespons-nama",
+  "title": "Menoleh saat namanya dipanggil",
+  "ageBand": "6-9m",
+  "domain": "bahasa",
+  "description": "Umumnya bayi mulai memahami bahwa namanya adalah dirinya, sehingga ia menoleh atau bereaksi ketika seseorang memanggil namanya dari jarak dekat.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Saat memanggil, pastikan tidak ada suara lain yang terlalu ramai dan tatap matanya agar bayi lebih mudah mengaitkan nama dengan dirinya."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan bayi tidak menoleh atau bereaksi sama sekali ketika namanya dipanggil berulang kali dalam kondisi tenang, konsultasikan ke dokter."
+  ],
+  "references": [cdc, aap]
+ },
+ {
+  "id": "mile-69m-mencari-benda-jatuh",
+  "title": "Mencari benda yang jatuh",
+  "ageBand": "6-9m",
+  "domain": "kognitif",
+  "description": "Banyak bayi mulai menoleh dan mencari ke lantai ketika benda yang dipegangnya jatuh, tanda ia mulai memahami bahwa benda itu masih ada meski tak terlihat.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Gunakan benda ringan dan tidak mudah pecah untuk permainan menjatuhkan ini, lalu segera ambil kembali dan awasi agar tidak ada pecahan di lantai."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan bayi tampak tidak pernah memperhatikan benda yang hilang dari pandangan atau jatuh di dekatnya, konsultasikan ke dokter."
+  ],
+  "references": [cdc, ztt]
+ },
+ {
+  "id": "mile-69m-bermain-cilukba",
+  "title": "Tertawa saat bermain cilukba",
+  "ageBand": "6-9m",
+  "domain": "sosial-emosional",
+  "description": "Umumnya bayi di usia ini mulai menikmati permainan cilukba dan mengantisipasi kemunculan wajah orang tua, kadang tertawa atau bersuara riang.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Jangan menutup wajah atau kepala bayi dengan kain selama bermain; cukup tutup wajah orang dewasa dan pastikan bayi tetap bisa bernapas lega."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan bayi tidak menunjukkan minat pada wajah manusia dan jarang tersenyum atau bersuara saat diajak berinteraksi, konsultasikan ke dokter."
+  ],
+  "references": [cdc, ztt]
+ },
+ {
+  "id": "mile-69m-makan-finger-food",
+  "title": "Memegang makanan sendiri",
+  "ageBand": "6-9m",
+  "domain": "self-help",
+  "description": "Banyak bayi mulai menggenggam potongan makanan lunak dan mengarahkannya ke mulut, awal dari keterampilan makan mandiri yang perlu didampingi.",
+  "typicalFromMonths": 6,
+  "typicalToMonths": 9,
+  "safetyNotes": [
+   "Sajikan makanan bertekstur lunak dengan bentuk memanjang sebesar jari orang dewasa, dudukkan bayi tegak, dan awasi sepanjang waktu karena tersedak bisa terjadi tanpa suara."
+  ],
+  "redFlags": [
+   "Di usia 9 bulan bayi selalu menolak semua tekstur selain cair atau tampak kesulitan menelan, konsultasikan ke dokter."
+  ],
+  "references": [who, aap]
+ }
+]
+
+json.dump(data, open('content/parts/mile-6-9m.json','w'), ensure_ascii=False, indent=1)
+PY
+python3 -c "import json;d=json.load(open('content/parts/mile-6-9m.json'));print('OK',len(d))"
+OK 10
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json
+p='content/parts/mile-6-9m.json'
+d=json.load(open(p))
+for e in d:
+    e['safetyNotes']=[s.replace('Aman-kan','Amankan') for s in e.get('safetyNotes',[])]
+json.dump(d,open(p,'w'),ensure_ascii=False,indent=1)
+PY
+python3 -c "import json;json.load(open('content/parts/mile-6-9m.json'));print('valid')"
+valid
+[0m
+DONE mile-6-9m

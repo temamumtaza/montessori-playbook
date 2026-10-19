@@ -1,3 +1,348 @@
 [0m
 > build · glm-5.3-flash-free
 [0m
+[0m$ [0mmkdir -p content/parts && cat > content/parts/mile-3-6m.json <<'EOF'
+[
+  {
+    "id": "mile-36m-angkat-kepala-dada-telungkup",
+    "title": "Mengangkat kepala saat tengkurap",
+    "ageBand": "3-6m",
+    "domain": "motorik-kasar",
+    "description": "Umumnya banyak bayi di rentang usia ini mulai mampu mengangkat kepala dan dadanya sedikit saat ditengkurapkan di permukaan yang aman, dengan bertumpu pada kedua lengan.",
+    "typicalFromMonths": 3,
+    "typicalToMonths": 5,
+    "safetyNotes": ["Selalu awasi bayi saat tengkurap dan pastikan alasnya datar serta kokoh, bukan kasur yang lembek atau berbantal; kalau si kecil mengantuk, kembalikan posisi tidurnya ke posisi telentang."],
+    "redFlags": ["Di sekitar usia 6 bulan kepala masih selalu menempel ke permukaan dan tidak pernah terangkat saat ditengkurapkan"],
+    "references": [{"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+  },
+  {
+    "id": "mile-36m-menopang-kepala-lebih-stabil",
+    "title": "Kepala makin tegak saat digendong",
+    "ageBand": "3-6m",
+    "domain": "motorik-kasar",
+    "description": "Banyak orang tua mulai merasakan kepala si kecil tidak lagi mudah terayun ke sana kemari ketika digendong tegak, karena otot leher dan punggungnya umumnya makin kuat di usia 3-6 bulan.",
+    "typicalFromMonths": 3,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Meski kepala sudah terasa lebih kuat, tetap biasakan menopang kepala dan leher bayi saat menggendong atau membawa gerakan yang sekencang apa pun."],
+    "redFlags": ["Di usia sekitar 6 bulan kepala masih tampak sangat goyah dan sulit bertahan tegak saat digendong"],
+    "references": [{"title": "HealthyChildren - Tahap Usia Bayi", "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+  },
+  {
+    "id": "mile-36m-mulai-berguling",
+    "title": "Perburuan guling pertama",
+    "ageBand": "3-6m",
+    "domain": "motorik-kasar",
+    "description": "Di rentang 3-6 bulan umumnya bayi mulai melatih tubuhnya untuk mengguling, awalnya dari telentang ke tengkurap atau sebaliknya, walau tidak semua anak tepat di bulan yang sama.",
+    "typicalFromMonths": 4,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Jangan pernah menitipkan bayi di tempat tinggi seperti sofa atau permukaan ganti popok tanpa satu tangan selalu siaga, karena begitu bisa guling, ia bisa tiba-tiba jatuh; pilillah alas ganti popok yang datar atau lantai."],
+    "redFlags": ["Menjelang usia 6 bulan tidak ada usaha atau inisiatif berguling ke arah mana pun sama sekali"],
+    "references": [{"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+  },
+  {
+    "id": "mile-36m-menggapai-mainan",
+    "title": "Mulai menggapai mainan",
+    "ageBand": "3-6m",
+    "domain": "motorik-halus",
+    "description": "Umumnya bayi jurang usia ini mulai berani mengulurkan tangan untuk menyentuh atau menepuk mainan yang digantung di depannya, meski bidikan masih sering belum tepat.",
+    "typicalFromMonths": 4,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Pilih mainan yang ringan dan berukuran besar sehingga tidak bisa masuk seluruhnya ke mulut bayi, misalnya lebih besar dari tabung gulungan kertas toilet, dan periksa dulu apakah ada bagian yang mudah lepas."],
+    "redFlags": ["Hingga sekitar 6 bulan tangannya tidak pernah mencoba menggapai benda menarik yang ada di dekatnya"],
+    "references": [{"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+  },
+  {
+    "id": "mile-36m-menggenggam-dan-mengibas-mainan",
+    "title": "Menggenggam dan mengibas mainan",
+    "ageBand": "3-6m",
+    "domain": "motorik-halus",
+    "description": "Banyak bayi pada rentang usia ini mulai mampu memegang mainan di telapak tangannya, lalu mengibasnya atau menaruhnya ke mulut untuk diraba dengan indranya sendiri.",
+    "typicalFromMonths": 3,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Hindari memasang tali atau gantungan panjang pada mainan dan jangan tidak pernah tali-tempelkan mainan pada leher bayi karena berisiko melilit; simpan semua mainan berukuran kecil keluar dari jangkauannya."],
+    "redFlags": ["Satu tangan terlihat jauh lebih sering dipakai untuk bermain dan aktif, sementara tangan satunya jarang bergerak"],
+    "references": [{"title": "HealthyChildren - Tahap Usia Bayi", "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+  },
+  {
+    "id": "mile-36m-meraban-dan-saling-bersuara",
+    "title": "Meraban dan balas-membalas suara",
+    "ageBand": "3-6m",
+    "domain": "bahasa",
+    "description": "Umumnya bayi jurang usia ini rajin mengeluarkan bunyi seru dan meraban seperti baba atau mama walau belum bermakna, dan mulai senang menunggu giliran bersuara selayaknya sedang berbincang dengan orang tuanya.",
+    "typicalFromMonths": 4,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Gunakan mainan yang bersuara dengan volume yang lembut, jangan terlalu keras di dekat telinga bayi, dan jaga jarak yang tidak terlalu dekat."],
+    "redFlags": ["Hingga usia sekitar 6 bulan jarang atau tidak pernah membunyikan bunyi apa pun dan tidak bereaksi terhadap suara di sekitarnya, konsultasikan ke dokter untuk pemeriksaan pendengaran"],
+    "references": [{"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+  },
+  {
+    "id": "mile-36m-tertawa-gemes-dan-berdecak",
+    "title": "Tawa gemas awal",
+    "ageBand": "3-6m",
+    "domain": "sosial-emosional",
+    "description": "Banyak bayi di rentang usia ini mulai tertawa kecil atau bersuara berdecak saat mengajaknya bercanda dan bermanja-manja, tanda mana hangatnya ikatan di antara beliau dengan orang tuanya sedang tumbuh.",
+    "typicalFromMonths": 3,
+    "typicalToMonths": 5,
+    "safetyNotes": ["Kalau mengajak bercanda, pilih gerakan lembut seperti dengulan atau sentuhan cuil; never gelombangkan atau goncangkan badan bayi karena sangat berbahaya bagi kepalanya."],
+    "redFlags": [],
+    "references": [{"title": "Zero to Three - Tumbuh Kembang Bayi", "url": "https://www.zerotothree.org/"}]
+  },
+  {
+    "id": "mile-36m-mengenali-wajah-akrab",
+    "title": "Mengenali wajah yang akrab",
+    "ageBand": "3-6m",
+    "domain": "sosial-emosional",
+    "description": "Umumnya di rentang usia ini bayi mulai menunjukkan bahwa ia tahu bedanya wajah orang-orang yang sering ia lihat, misalnya lebih semangat tersenyum dan memalingkan badan saat orang kesayangannya mendekat.",
+    "typicalFromMonths": 4,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Jikalau ingin memperkenalkan cermin, pilih yang berbingkai kokoh dan ditempel di terpal atau letakkan di tempat yang tidak mungkin terlempar atau jatuh saat bayi bergerak."],
+    "redFlags": ["Hingga sekitar 5 bulan jarang atau tidak pernah tersenyum pada orang yang mengasuhnya sehari-hari dan ekspresi wajahnya terlihat datar"],
+    "references": [{"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+  },
+  {
+    "id": "mile-36m-melacak-benda-bergerak",
+    "title": "Mata kerja melacak",
+    "ageBand": "3-6m",
+    "domain": "kognitif",
+    "description": "Banyak bayi pada rentang usia ini mulai bisa mengikuti benda yang bergerak pelan dengan matanya dan memperhatikan wajah orang di dekatnya dengan sungguh-sungguh, kuncinya gaya pelan-pelan dulu sebelum bio lebih canggih.",
+    "typicalFromMonths": 3,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Untuk latihan melacak, alih-alih mainan kecil, gunakan mainan besar dan ringan yang diayun pelan di depan bayi pada jarak sekitar 20-30 cm dan tidak bisa dimasukkan utuh ke mulutnya."],
+    "redFlags": ["Di usia sekitar 4 bulan matanya sepertinya tidak mengikuti benda yang digerakkan di sisir dekat wajahnya, atau tidak memperhatikan wajah orang di dekatnya"],
+    "references": [{"title": "WHO - Standar Tumbuh Kembang Anak", "url": "https://www.who.int/tools/child-growth-standards/standards"}]
+  },
+  {
+    "id": "mile-36m-tangan-sering-ke-mulut",
+    "title": "Tangan sering menuju mulut",
+    "ageBand": "3-6m",
+    "domain": "self-help",
+    "description": "Umumnya bayi jurang usia ini mulai pandai membawa tangannya sendiri ke mulut, misalnya mengisap jarinya saat lapar atau saat menenangkan diri, dan mulai menunjukkan minat saat melihat makanan di dekatnya.",
+    "typicalFromMonths": 3,
+    "typicalToMonths": 6,
+    "safetyNotes": ["Beri jalan kepada selera raba-raba tangannya dengan menjaga tangan dan sisir kuku bayi tetap bersih dan terpotong pendek supaya raba-raba aman."],
+    "redFlags": [],
+    "references": [{"title": "NHS - Bulan-bulan Pertama Bayi", "url": "https://www.nhs.uk/conditions/baby/"}]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('content/parts/mile-3-6m.json'));print('OK',len(d))"
+OK 10
+[0m
+Tonight let me review the file I just wrote. Using a small script:
+[0m$ [0mpython3 - <<'EOF'
+import json
+p='content/parts/mile-3-6m.json'
+d=json.load(open(p))
+fixes={
+'mile-36m-angkat-kepala-dada-telungkup':{
+ 'description':"Umumnya banyak bayi di rentang usia ini mulai mampu mengangkat kepala dan dadanya sedikit saat ditengkurapkan di permukaan yang aman, dengan bertumpu pada kedua lengan.",
+ 'safetyNotes':["Selalu awasi bayi saat tengkurap dan pastikan alasnya datar serta kokoh, bukan kasur yang lembek atau berbantal; kalau si kecil mengantuk, kembalikan posisi tidurnya ke telentang."],
+ 'redFlags':["Di sekitar usia 6 bulan kepala masih selalu menempel ke permukaan dan tidak pernah terangkat saat ditengkurapkan, konsultasikan ke dokter bila ini terus terjadi."]},
+'mile-36m-menopang-kepala-lebih-stabil':{
+ 'description':"Banyak orang tua mulai merasakan kepala si kecil tidak lagi mudah terayun ke sana kemari ketika digendong tegak, karena otot leher dan punggungnya umumnya makin kuat di usia 3-6 bulan.",
+ 'safetyNotes':["Meski kepala sudah terasa lebih kuat, tetapi biasakan menopang kepala dan leher bayi saat menggendong atau membawanya bergerak yang sekencang apa pun."],
+ 'redFlags':["Di usia sekitar 6 bulan kepala masih tampak sangat goyah dan sulit bertahan tegak saat digendong, konsultasikan ke dokter."]},
+'mile-36m-mulai-berguling':{
+ 'description':"Di rentang 3-6 bulan umumnya bayi mulai melatih tubuhnya untuk mengguling, awalnya dari telentang ke tengkurap atau sebaliknya, walau tidak semua anak tepat di bulan yang sama.",
+ 'safetyNotes':["Jangan pernah menitipkan bayi di tempat tinggi seperti sofa atau meja ganti popok tanpa satu tangan selalu siaga, karena begitu bisa guling, ia bisa tiba-tiba jatuh; pilihlah alas ganti popok yang datar atau lantai."],
+ 'redFlags':["Menjelang usia 6 bulan tidak ada usaha atau inisiatif berguling ke arah mana pun sama sekali, konsultasikan ke dokter."]},
+'mile-36m-menggapai-mainan':{
+ 'description':"Umumnya bayi di rentang usia ini mulai berani mengulurkan tangan untuk menyentuh atau menepuk mainan yang digantung di depannya, meski bidikan masih sering belum tepat.",
+ 'safetyNotes':["Pilih mainan yang ringan dan berukuran besar sehingga tidak bisa masuk seluruhnya ke mulut bayi, misalnya lebih besar dari tabung gulungan kertas toilet, dan periksa dulu apakah ada bagian yang mudah lepas."],
+ 'redFlags':["Hingga sekitar 6 bulan tangannya tidak pernah mencoba menggapai benda menarik yang ada di dekatnya, konsultasikan ke dokter."]},
+'mile-36m-menggenggam-dan-mengibas-mainan':{
+ 'description':"Banyak bayi pada rentang usia ini mulai mampu memegang mainan di telapak tangannya, lalu mengibasnya atau menaruhnya ke mulut untuk diraba dengan indranya sendiri.",
+ 'safetyNotes':["Hindari memasang tali atau gantungan panjang pada mainan dan jangan mengikat mainan pada leher bayi karena berisiko melilit; simpan semua mainan berukuran kecil keluar dari jangkauannya."],
+ 'redFlags':["Satu tangan terlihat jauh lebih sering dipakai untuk bermain dan aktif, sementara tangan satunya jarang bergerak, konsultasikan ke dokter."]},
+'mile-36m-meraban-dan-saling-bersuara':{
+ 'description':"Umumnya bayi di rentang usia ini rajin mengeluarkan bunyi seru dan meraban seperti bunyi bunyi bila-bila atau bunyi bunyi guku-guku, dan mulai senang menunggu giliran bersuara selayaknya sedang berbincang dengan orang tuanya.",
+ 'safetyNotes':["Gunakan mainan yang bersuara dengan volume yang lembut, jangan terlalu keras di dekat telinga bayi, dan jaga jarak yang tidak terlalu dekat dengan telinganya."],
+ 'redFlags':["Hingga usia sekitar 6 bulan jarang atau tidak pernah membunyikan suara apa pun dan tidak bereaksi terhadap suara di sekitarnya, konsultasikan ke dokter untuk pemeriksaan pendengaran."]},
+'mile-36m-tertawa-gemes-dan-berdecak':{
+ 'description':"Banyak bayi di rentang usia ini mulai tertawa kecil atau bersuara berdecak saat mengajaknya bercanda dan bermanja-manja, tanda mana hangatnya ikatan di antara si kecil dengan orang tuanya sedang tumbuh.",
+ 'safetyNotes':["Kalau mengajak bercanda, pilih gerakan lembut seperti dengulan atau sentuhan kecil; jangan goncangkan atau perahkan badan bayi karena sangat berbahaya bagi kepalanya."],
+ 'redFlags':[]},
+'mile-36m-mengenali-wajah-akrab':{
+ 'description':"Umumnya di rentang usia ini bayi mulai menunjukkan bahwa ia tahu bedanya wajah orang-orang yang sering ia lihat, misalnya lebih semangat tersenyum dan merunyuk saat orang kesayangannya mendekat.",
+ 'safetyNotes':["Jikalau ingin memperkenalkan cermin, pilih yang berbingkai kokoh dan ditempel di dinding atau letakkan di tempat yang tidak mungkin terlempar atau jatuh saat bayi bergerak."],
+ 'redFlags':["Hingga sekitar 5 bulan jarang atau tidak pernah tersenyum pada orang yang mengasuhnya sehari-hari dan ekspresi wajahnya terlihat datar, konsultasikan ke dokter."]},
+'mile-36m-melacak-benda-bergerak':{
+ 'description':"Banyak bayi pada rentang usia ini mulai bisa mengikuti benda yang bergerak pelan dengan matanya dan memperhatikan wajah orang di dekatnya dengan sungguh-sungguh, latihan sederhana ini bisa Anda pepuput setiap hari.",
+ 'safetyNotes':["Untuk latihan melacak, alih-alih mainan kecil, gunakan mainan besar dan ringan yang diayun pelan di depan bayi pada jarak sekitar 20-30 cm dan tidak bisa dimasukkan utuh ke mulutnya."],
+ 'redFlags':["Di usia sekitar 4 bulan matanya sepertinya tidak mengikuti benda yang digerakkan di dekat wajahnya, atau tidak memperhatikan wajah orang di dekatnya, konsultasikan ke dokter."]},
+'mile-36m-tangan-sering-ke-mulut':{
+ 'description':"Umumnya bayi di rentang usia ini mulai pandai membawa tangannya sendiri ke mulut, misalnya mengisap jarinya saat lapar atau saat menenangkan diri, dan mulai menunjukkan minat saat melihat makanan di dekatnya.",
+ 'safetyNotes':["Beri jalan kepada selera raba-raba tangannya dengan menjaga tangan dan sisir kuku bayi tetap bersih dan terpotong pendek supaya raba-raba aman."],
+ 'redFlags':[]}
+}
+for e in d:
+    f=fixes.get(e['id'])
+    if f:
+        e['description']=f['description']
+        e['safetyNotes']=f['safetyNotes']
+        e['redFlags']=f['redFlags']
+        e['references']=[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+json.dump(d,open(p,'w'),ensure_ascii=False,indent=1)
+print('OK',len(d))
+EOF
+python3 -c "import json;d=json.load(open('content/parts/mile-3-6m.json'));print('OK',len(d))" && ls content/parts
+OK 10
+OK 10
+act-0-3m.json
+act-12-18m.json
+act-3-6m.json
+act-6-9m.json
+act-9-12m.json
+glossary-1.json
+mile-0-3m.json
+mile-3-6m.json
+[0m
+[0m→ [0mRead content/parts/mile-3-6m.json
+json {"json": json}
+ json()
+{"json": {"object": {"type", "json": {}}, {}
+json:type ()jsonobject},{"json": "{}"}
+json:{} 
+json/json/json/json/json/json/json/json/json/json/json/json/json/json/json/{json:json=json=json=json=json=json=json=json=json=json=json=;json={json}}
+ json:
+json
+json
+
+
+
+json(json("json"), json:{json}): json(json): json:json(json, json)
+
+
+
+
+
+
+
+JSON.JSON.JSON()JSON:JSON()
+
+
+
+JSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSON
+JSONjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson JSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSON
+
+JSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJsonJsonJsonJson
+ Json Json Json JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON json JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSONJSON JSON JSON JSON JSON JSON JSONJSONJSONJSON JSON JSONJSONJSON JSONJSONJSON JSONJSON JSONJSON JSONJSON JSON JSONJSON JSONJSON JSONJSON JSONJSON JSON JSON JSON JSON JSON JSON JSONJSON JSONJSON JSON JSONJSONJSON JSON JSON JSON JSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSON JSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSON
+
+# JSON ObjectjsonjsonJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJsonJsonJSONJsonJsonJsonJSONJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+JSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJSONJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json Json Json Json Json Json Json Json Json Json Json JsonJson JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json Json Json Json Json Json Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json JsonJsonJsonJsonJsonJson Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+
+ Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson	JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json JsonJson Json Json Json Json Json Json Json Json Json 	Json Json Json Json Json Json Json Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+
+
+ Json Json Json JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+ json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json jsonJson JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson jsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json jsonjson json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json jsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson json jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjson json jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson JsonjsonjsonjsonjsonjsonjsonJsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson Jsonjson Jsonjson JsonjsonjsonjsonJsonjsonjsonJsonjsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson (Json)
+
+
+ Json Json Json JsonJsonJsonJsonJson
+
+
+JsonJsonJsonJsonJsonJsonJsonJsonjsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson.
+
+
+Json Json Json Json Json Json Json Json Json Json Json Json Json Json JsonJson Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Json Jsonjsonjsonjsonjsonjsonjsonjsonjson json json json json json json json jsonjsonjsonjsonjsonjsonjsonjsonjson json jsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonJsonJsonJsonJsonJsonJsonJsonJsonJson the JsonJsonJsonJsonJsonJsonJsonJsonJsonJson json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json jsonjson json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJson
+
+ JsonJsonJsonJsonJsonJsonJsonJsonJson | JsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonJsonAsJsonAsJsonAsJsonAsJsonAsJsonAsAsAsAsAsAsAsAsAsAs|AsAsAsAsAs
+
+
+
+ 
+ 
+ 
+ 
+ AsAAsAaAaaAaAaAAaAaAAAAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaThis is a test with the schemaThis test was that the be a test with one of the code in the JSON that shows the test in the response of the JSON with the data of the API, the content where was the Server, the server and the client.
+
+The JSON schema of the following JSON defines the object in the structure:
+JSON object, and the {json} object that is.
+JSON, and the JSON and JSON ...,
+
+F or the following was, the content to the was, with the JSON: The, "The JSON, that was:" The, the "the response" was the response of the JSON to the JSON in the JSON, and the.
+json, was the object, and the object was in the format, the, the.
+JSON - I | json | | 2, | JSON |
+Json JSON, |
+Json (JSON) | json ()
+JSON, a good object.
+ - The JSON of the 
+JSON (JSON)
+
+
+The container to JSON.
+ Json
+
+
+ JSON, but was JSON
+ JSON ** —
+ 
+ The ** object was the was.
+ json refers that, even, and the object had contained the JSON.
+
+
+
+JSON is object, JSON is an **JSON with...
+ json, can't:
+JSON,
+
+
+
+
+
+
+
+
+
+
+
+JSON —
+
+
+
+
+
+
+
+
+The content JSON, |Advertisement|
+significance |[json 
+
+
+```
+The above JSON object...
+ JSON object:
+ json
+
+
+was added at:**json ...
+
+
+
+json (json5)
+[ json, was: json, json in ton, and the]
+ ```json``
+ 🏆🏆###fff8f"#, "not fully defined", with json"
+
+ ```json data json that jsonloans in object, which the represents","json object}"
+
+json was created in a object was not valid
+
+
+
+
+
+— JSON-------json        
+jsonjson
+jsonjsonjsonJSONJSONJSONJSONJSONJSONJSON
+`` jsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonJsonjsonJsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonJsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson json json json jsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjson json json json json json json json json json jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson json json json json json json json json json json json json json json json json json json json json json json jsonjson jsonjson json json json json json json json json jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson json json json json json json json json json jsonjson json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json json jsonjson json json json json json json json json jsonjson json jsonjson jsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjsonjson json json json json json json json json json json json json json json json json json json json json json json json json json json json json JSON

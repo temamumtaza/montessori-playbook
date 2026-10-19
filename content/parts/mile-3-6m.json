@@ -1,0 +1,208 @@
+[
+ {
+  "id": "mile-36m-angkat-kepala-dada-telungkup",
+  "title": "Mengangkat kepala saat tengkurap",
+  "ageBand": "3-6m",
+  "domain": "motorik-kasar",
+  "description": "Umumnya banyak bayi di rentang usia ini mulai mampu mengangkat kepala dan dadanya sedikit saat ditengkurapkan di permukaan yang aman, dengan bertumpu pada kedua lengan.",
+  "typicalFromMonths": 3,
+  "typicalToMonths": 5,
+  "safetyNotes": [
+   "Selalu awasi bayi saat tengkurap dan pastikan alasnya datar serta kokoh, bukan kasur yang lembek atau berbantal; kalau si kecil mengantuk, kembalikan posisi tidurnya ke telentang."
+  ],
+  "redFlags": [
+   "Di sekitar usia 6 bulan kepala masih selalu menempel ke permukaan dan tidak pernah terangkat saat ditengkurapkan, konsultasikan ke dokter bila ini terus terjadi."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-menopang-kepala-lebih-stabil",
+  "title": "Kepala makin tegak saat digendong",
+  "ageBand": "3-6m",
+  "domain": "motorik-kasar",
+  "description": "Banyak orang tua mulai merasakan kepala si kecil tidak lagi mudah terayun ke sana kemari ketika digendong tegak, karena otot leher dan punggungnya umumnya makin kuat di usia 3-6 bulan.",
+  "typicalFromMonths": 3,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Meski kepala sudah terasa lebih kuat, tetapi biasakan menopang kepala dan leher bayi saat menggendong atau membawanya bergerak yang sekencang apa pun."
+  ],
+  "redFlags": [
+   "Di usia sekitar 6 bulan kepala masih tampak sangat goyah dan sulit bertahan tegak saat digendong, konsultasikan ke dokter."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-mulai-berguling",
+  "title": "Perburuan guling pertama",
+  "ageBand": "3-6m",
+  "domain": "motorik-kasar",
+  "description": "Di rentang 3-6 bulan umumnya bayi mulai melatih tubuhnya untuk mengguling, awalnya dari telentang ke tengkurap atau sebaliknya, walau tidak semua anak tepat di bulan yang sama.",
+  "typicalFromMonths": 4,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Jangan pernah menitipkan bayi di tempat tinggi seperti sofa atau meja ganti popok tanpa satu tangan selalu siaga, karena begitu bisa guling, ia bisa tiba-tiba jatuh; pilihlah alas ganti popok yang datar atau lantai."
+  ],
+  "redFlags": [
+   "Menjelang usia 6 bulan tidak ada usaha atau inisiatif berguling ke arah mana pun sama sekali, konsultasikan ke dokter."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-menggapai-mainan",
+  "title": "Mulai menggapai mainan",
+  "ageBand": "3-6m",
+  "domain": "motorik-halus",
+  "description": "Umumnya bayi di rentang usia ini mulai berani mengulurkan tangan untuk menyentuh atau menepuk mainan yang digantung di depannya, meski bidikan masih sering belum tepat.",
+  "typicalFromMonths": 4,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Pilih mainan yang ringan dan berukuran besar sehingga tidak bisa masuk seluruhnya ke mulut bayi, misalnya lebih besar dari tabung gulungan kertas toilet, dan periksa dulu apakah ada bagian yang mudah lepas."
+  ],
+  "redFlags": [
+   "Hingga sekitar 6 bulan tangannya tidak pernah mencoba menggapai benda menarik yang ada di dekatnya, konsultasikan ke dokter."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-menggenggam-dan-mengibas-mainan",
+  "title": "Menggenggam dan mengibas mainan",
+  "ageBand": "3-6m",
+  "domain": "motorik-halus",
+  "description": "Banyak bayi pada rentang usia ini mulai mampu memegang mainan di telapak tangannya, lalu mengibasnya atau menaruhnya ke mulut untuk diraba dengan indranya sendiri.",
+  "typicalFromMonths": 3,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Hindari memasang tali atau gantungan panjang pada mainan dan jangan mengikat mainan pada leher bayi karena berisiko melilit; simpan semua mainan berukuran kecil keluar dari jangkauannya."
+  ],
+  "redFlags": [
+   "Satu tangan terlihat jauh lebih sering dipakai untuk bermain dan aktif, sementara tangan satunya jarang bergerak, konsultasikan ke dokter."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-meraban-dan-saling-bersuara",
+  "title": "Meraban dan balas-membalas suara",
+  "ageBand": "3-6m",
+  "domain": "bahasa",
+  "description": "Umumnya bayi di rentang usia ini rajin mengeluarkan bunyi seru dan meraban seperti bunyi bunyi bila-bila atau bunyi bunyi guku-guku, dan mulai senang menunggu giliran bersuara selayaknya sedang berbincang dengan orang tuanya.",
+  "typicalFromMonths": 4,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Gunakan mainan yang bersuara dengan volume yang lembut, jangan terlalu keras di dekat telinga bayi, dan jaga jarak yang tidak terlalu dekat dengan telinganya."
+  ],
+  "redFlags": [
+   "Hingga usia sekitar 6 bulan jarang atau tidak pernah membunyikan suara apa pun dan tidak bereaksi terhadap suara di sekitarnya, konsultasikan ke dokter untuk pemeriksaan pendengaran."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-tertawa-gemes-dan-berdecak",
+  "title": "Tawa gemas awal",
+  "ageBand": "3-6m",
+  "domain": "sosial-emosional",
+  "description": "Banyak bayi di rentang usia ini mulai tertawa kecil atau bersuara berdecak saat mengajaknya bercanda dan bermanja-manja, tanda mana hangatnya ikatan di antara si kecil dengan orang tuanya sedang tumbuh.",
+  "typicalFromMonths": 3,
+  "typicalToMonths": 5,
+  "safetyNotes": [
+   "Kalau mengajak bercanda, pilih gerakan lembut seperti dengulan atau sentuhan kecil; jangan goncangkan atau perahkan badan bayi karena sangat berbahaya bagi kepalanya."
+  ],
+  "redFlags": [],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-mengenali-wajah-akrab",
+  "title": "Mengenali wajah yang akrab",
+  "ageBand": "3-6m",
+  "domain": "sosial-emosional",
+  "description": "Umumnya di rentang usia ini bayi mulai menunjukkan bahwa ia tahu bedanya wajah orang-orang yang sering ia lihat, misalnya lebih semangat tersenyum dan merunyuk saat orang kesayangannya mendekat.",
+  "typicalFromMonths": 4,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Jikalau ingin memperkenalkan cermin, pilih yang berbingkai kokoh dan ditempel di dinding atau letakkan di tempat yang tidak mungkin terlempar atau jatuh saat bayi bergerak."
+  ],
+  "redFlags": [
+   "Hingga sekitar 5 bulan jarang atau tidak pernah tersenyum pada orang yang mengasuhnya sehari-hari dan ekspresi wajahnya terlihat datar, konsultasikan ke dokter."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-melacak-benda-bergerak",
+  "title": "Mata kerja melacak",
+  "ageBand": "3-6m",
+  "domain": "kognitif",
+  "description": "Banyak bayi pada rentang usia ini mulai bisa mengikuti benda yang bergerak pelan dengan matanya dan memperhatikan wajah orang di dekatnya dengan sungguh-sungguh, latihan sederhana ini bisa Anda pepuput setiap hari.",
+  "typicalFromMonths": 3,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Untuk latihan melacak, alih-alih mainan kecil, gunakan mainan besar dan ringan yang diayun pelan di depan bayi pada jarak sekitar 20-30 cm dan tidak bisa dimasukkan utuh ke mulutnya."
+  ],
+  "redFlags": [
+   "Di usia sekitar 4 bulan matanya sepertinya tidak mengikuti benda yang digerakkan di dekat wajahnya, atau tidak memperhatikan wajah orang di dekatnya, konsultasikan ke dokter."
+  ],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ },
+ {
+  "id": "mile-36m-tangan-sering-ke-mulut",
+  "title": "Tangan sering menuju mulut",
+  "ageBand": "3-6m",
+  "domain": "self-help",
+  "description": "Umumnya bayi di rentang usia ini mulai pandai membawa tangannya sendiri ke mulut, misalnya mengisap jarinya saat lapar atau saat menenangkan diri, dan mulai menunjukkan minat saat melihat makanan di dekatnya.",
+  "typicalFromMonths": 3,
+  "typicalToMonths": 6,
+  "safetyNotes": [
+   "Beri jalan kepada selera raba-raba tangannya dengan menjaga tangan dan sisir kuku bayi tetap bersih dan terpotong pendek supaya raba-raba aman."
+  ],
+  "redFlags": [],
+  "references": [
+   {
+    "title": "CDC Milestones",
+    "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+   }
+  ]
+ }
+]

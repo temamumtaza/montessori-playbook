@@ -1,0 +1,614 @@
+[
+  {
+    "id": "room-setup-kamar-anak",
+    "room": "kamar-anak",
+    "title": "Menata Kamar Anak: Ruang Tidur dan Bermain yang matching dengan Ukuran Si Kecil",
+    "principles": [
+      "Kecilkan dunianya: rak, gantungan baju, dan keranjang diletakkan rendah supaya anak bisa mengambil dan Membereskan sendiri tanpa dipapah.",
+      "Sedikit namun bermakna: hanya sebagian mainan yang ditata di rak, sisanya disimpan lalu dirotasi setiap beberapa minggu agar anak fokus dan mudah Membereskan.",
+      "Semua benda punya rumah: mainan, buku, dan pakaian punya tempat tetap yang mudah dikenali, sehingga merapikan menjadi bagian alami dari bermain.",
+      "Musim dingin visual yang tenang: dinding polos dengan satu-dua karya seni setinggi mata anak membantu konsentrasi lebih baik daripada dekor ramai.",
+      "Bebas bergerak: kasur rendah dan lantai bersih memberi kebebasan bergerak dan latihanmandiri sejak bayi."
+    ],
+    "items": [
+      {
+        "name": "Kasur lantai atau ranjang rendah berparkiran",
+        "essential": true,
+        "budgetRendah": "Matras lipat atau kasur busa tipis dibungkus sarung tahan air, diletakan langsung di atas lantai bersih",
+        "budgetSedang": "Ranjang kayu rendah dengan pengaman sisi dan kasur tebal khusus anak",
+        "diy": false
+      },
+      {
+        "name": "Rak mainan rendah 2-3 susun",
+        "essential": true,
+        "budgetRendah": "Rak plastik murah atau dus kardus kuat yang dilapisi kertas warna dan dijitak agar tidak roboh",
+        "budgetSedang": "Rak kayu putih koyo 40-50 cm dengan lebar masak dan mudah dijangkau",
+        "diy": true
+      },
+      {
+        "name": "Keranjang mainan terbuka tanpa tutup",
+        "essential": true,
+        "budgetRendah": "Keranjang plastik ringan atau tas belanja kain yang diatur per jenis mainan",
+        "budgetSedang": "Keranjang rotan dengan label bergambar supaya anak tahu di mana memasukkan",
+        "diy": true
+      },
+      {
+        "name": "Sudut buku kecil dengan mukaan bertengger",
+        "essential": true,
+        "budgetRendah": "Keset kecil plus tiga sampai empat buku dipajang dengan sampul agak ke luar",
+        "budgetSedang": "Rak display buku pendek berhadapan dinding plus lampu tidur hangat",
+        "diy": true
+      },
+      {
+        "name": "Gantungan pakaian rendah untuk latihan mandiri",
+        "essential": true,
+        "budgetRendah": "Paku tiing atau hook kuat dipasang di ketinggian anak plus gantung baju berangka ringan",
+        "budgetSedang": "Lackeri terbuka kecil dengan batang gantung dan beberapa sekotpik sepatu",
+        "diy": true
+      },
+      {
+        "name": "Cermin akhir andalan yang dipasang kuat di dinding",
+        "essential": false,
+        "budgetRendah": "Cermin akrilik bulat 30-40 cm dipaku lalu diadali lagi dengan lem rangka",
+        "budgetSedang": "Bidak hask cermin dinding khusus anak bergabungan rangka kayu",
+        "diy": false
+      },
+      {
+        "name": "Lampu tidur tankai dengan cahaya kuning hangat",
+        "essential": false,
+        "budgetRendah": "Lampu tidur colok murah berwarna hangat",
+        "budgetSedang": "Lampu tidur dengan sirkel pengatur terang dan timer",
+        "diy": false
+      }
+    ],
+    "layoutTips": [
+      "Buang karpet tebal berambut panjang dan ganti dengan keset polos anti slip supaya bayi yang mulai merangkak lebih mudah letak konsep pandu.",
+      "Letakkan tempat tidur agak jauh dari colokan listrik dan jendela, lalu tutup semua colokan dengan pengaman colokan.",
+      "Sisakan jalur bebas minimal 80-100 cm di tengah ruangan supaya anak bisa merangkak, berjalan, dan membawa mainan tanpa tersangkut.",
+      "Hanya pasang dekor atau karya seni di ketinggian mata anak, bukan mata orang dewasa."
+    ],
+    "ageBands": [
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m",
+      "12-18m",
+      "18-24m",
+      "2-3y",
+      "3-4y",
+      "4-5y"
+    ],
+    "safetyNotes": [
+      "Semua lemari, rak, dan TV di ruang sekitar kamar harus diikat atau dipaku ke dinding agar tidak tumbang saat anak memanjat.",
+      "Untuk bayi di bawah 1 tahun, tidurkan dalam posisi telentang di kasur yang datar tanpa bantal, guling, atau mainan lunak di sekitarnya, dan konsultasikan aturan tidur aman ke dokter atau posyandu.",
+      "Singkirkan tali panjang, tali gorden, kabel, dan tali gantungan dari jangkauan anak karena bisa berbahaya bila melilit leher.",
+      "Ganti benda kecil yang bisa masuk mulut: patokan sederhananya, benda yang lebih besar dari tabung gulungan toilet umumnya aman untuk anak di atas 1 tahun."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren - Childproofing Your Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Childproofing-Your-Home.aspx"
+      },
+      {
+        "title": "The Montessori Notebook - Free downloads and tips for Montessori at home",
+        "url": "https://www.themontessorinotebook.com/montessori-at-home/"
+      },
+      {
+        "title": "NHS - Looking after your baby",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "id": "room-setup-kamar-mandi",
+    "room": "kamar-mandi",
+    "title": "Kamar Mandi Ramah Anak: Kecil, Aman, dan Bisa Dijangkau",
+    "principles": [
+      "Semua yang anak perlukan diletakkan di ketinggian tangan mereka: sikat gigi, sabun, handuk, dan gayung masing-masing punya tempat tetap.",
+      "Latih urutan yang sama setiap hari: mandi, keringkan, pakai baju, sikat gigi sehingga anak hafal langkahnya dan makin mandiri.",
+      "Buat keamanan sebagai fondasi: lantai licin, air panas, dan ember berisi air adalah hal yang harus dikelola sebelum anak masuk.",
+      "Sediakan waktu tanpa tergesa: mandi bisa jadi saat bermain air yang menenangkan, bukan rutinitas yang buru-buru."
+    ],
+    "items": [
+      {
+        "name": "Tangga kecil (step stool) yang kokoh dan anti slip",
+        "essential": true,
+        "budgetRendah": "Kardus tebal dijenihkan atau bangku plastik rendah dengan alas karet",
+        "budgetSedang": "Bangku kayu dua tingkat dengan alas karet dan tepi mengangkat",
+        "diy": false
+      },
+      {
+        "name": "Pompa sabun cair ukuran kecil isi 2-3 jempol orang dewasa",
+        "essential": true,
+        "budgetRendah": "Pompa sabun bekas dicuci bersih lalu diisi sabun cair",
+        "budgetSedang": "Dispenser sabun saku bergambar dengan lubang dorongan yang mudah",
+        "diy": false
+      },
+      {
+        "name": "Sikat gigi berkepala kecil dengan pegangan pendek",
+        "essential": true,
+        "budgetRendah": "Sikat gigi anak biasa dipasang di gelas miring",
+        "budgetSedang": "Sikat gigi dengan tutup pelindung kepala dan holder dinding menempel",
+        "diy": false
+      },
+      {
+        "name": "Handuk berhutup kokoh bersabit dan kail di tinggi anak",
+        "essential": true,
+        "budgetRendah": "Kail self-adhesive diplester bagus di dinding rendah plus handuk kecil",
+        "budgetSedang": "Kail kayu dipasang kuat plus handuk berkap untuk anak sus",
+        "diy": false
+      },
+      {
+        "name": "Tikar anti slip untuk lantai dan dasar bak",
+        "essential": true,
+        "budgetRendah": "Tikar karet anti slip murah yang dibawa masuk hanya saat mandi",
+        "budgetSedang": "Tikar anti slip khusus kamar mandi dengan tekstur tahan lama",
+        "diy": false
+      },
+      {
+        "name": "Gayung dan ember kecil yang dimiliki anak sendiri",
+        "essential": true,
+        "budgetRendah": "Gayung plastik ringan dan ember kecil ukuran 2-3 liter",
+        "budgetSedang": "Set gayung-ember dengan model yang mudah dipegang tangan kecil",
+        "diy": false
+      },
+      {
+        "name": "Papan langkah mandi bergambar di dinding",
+        "essential": false,
+        "budgetRendah": "Gambar sederhana 4 langkah mandi dibuat sendiri dilaminasi dengan plastik",
+        "budgetSedang": "Chart kayu atau ilustrasi laminasi yang bisa diubah urutannya",
+        "diy": true
+      },
+      {
+        "name": "Keranjang mainan mandi berlubang agar cepat kering",
+        "essential": false,
+        "budgetRendah": "Keranjang plastik bekas dengan lubang-lubang kecil disekat ampela",
+        "budgetSedang": "Keranjang jaring berkarung gantung di dinding batteering",
+        "diy": true
+      }
+    ],
+    "layoutTips": [
+      "Letakkan semua perlengkapan anak dalam satu keranjang di dekat bak atau shower supaya pembawaannya praktis dan dipakai tidak hilang.",
+      "Pasang kail handuk dan tempat sikat gigi sekitar ketinggian pinggang anak, bukan mata dewasa.",
+      "Tempatkan step stool hanya di depan wastafel atau bak yang benar-benar aman, dan selalu periksa kakinya stabil sebelum dipakai.",
+      "Pisahkan area basah dan kering dengan keset supaya lantai tidak licin saat anak keluar mandi."
+    ],
+    "ageBands": [
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m",
+      "12-18m",
+      "18-24m",
+      "2-3y",
+      "3-4y",
+      "4-5y"
+    ],
+    "safetyNotes": [
+      "Jangan pernah meninggalkan anak 0-3 tahun sendirian di kamar mandi, bahkan dengan air sedikit, karena bayi dan anak kecil tenggelam dalam air sangat sedikit.",
+      "Kembalikan suhu air pemanas maksimum sekitar 49 derajat Celsius dan selalu cek air mandi dengan siku atau termometer sebelum anak masuk; umumnya air hangat cukup sekitar 37-38 derajat.",
+      "Tiriskan ember dan gayung segera setelah selesai serta simpan terbalik agar tidak jadi genangan atau bahaya tenggelam untuk bayi.",
+      "Simpan obat, pisau cukur, gunting, dan benda tajam jauh dari jangkauan atau di kotak terkunci."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren - Childproofing Your Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Childproofing-Your-Home.aspx"
+      },
+      {
+        "title": "HealthyChildren - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "NHS - Baby care and safety",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      }
+    ]
+  },
+  {
+    "id": "room-setup-dapur",
+    "room": "dapur",
+    "title": "Dapur Jadi Ruang Seru: Ia Dapet Babtur Barangtuh Dengan Orang Tua",
+    "principles": [
+      "Anak belajar paling banyak di dapur aru tuker makanan, menumbuhkan sikap: mencuci, menuang, mengupas, dan Mengocok adalah latihan kemandirian nyata.",
+      "Sediakan alat ukuran anak: gelas kecil, pis aman, dan mangkuk ringan membuat anak mampu menegakkan mandiri untuk mencoba sendiri.",
+      "Buat satu station tetap: meja kecil atau dudukan belajar di sepanjang meja kerja, dengan peralatannya di satu keranjang yang sama setiap hari.",
+      "Beri pekerjaan nyata, bukan main-main: anak bisa membawa sayur, membasuh buah, menaburkan topping, dan Membereskan meja setelah makan."
+    ],
+    "items": [
+      {
+        "name": "Dudukan belajar dapur (learning tower atau kitchen helper)",
+        "essential": true,
+        "budgetRendah": "Kursi kecil stabil dan meja rendah sebagai area kerja bayi dipantau orang dewasa",
+        "budgetSedang": "Learning tower kayu dengan pengaman sisi dan anak tangga kokoh",
+        "diy": false
+      },
+      {
+        "name": "Pis aman untuk anak (pis mentega atau pis gerigi), dengan papan cetak kecil",
+        "essential": true,
+        "budgetRendah": "Pis plastik atau pis kertas untuk mentega dipakai untuk memotong pisang dan stroberry yang lembak",
+        "budgetSedang": "Set pis kayu atau baja aman dengan papan cetak mini untuk anak",
+        "diy": false
+      },
+      {
+        "name": "Gelas kecil dan tebal, mangkuk ringan, dan sendok sesuai genggaman anak",
+        "essential": true,
+        "budgetRendah": "Gelas plastik tebal dan sendok pendek untuk latihan awal menuang",
+        "budgetSedang": "Gelas kaca kecil dan peralatan stainless khusus anak yang mudah digenggam",
+        "diy": false
+      },
+      {
+        "name": "Tray kerja atau nampan datar untuk membawa bahan",
+        "essential": true,
+        "budgetRendah": "Nampan plastik sederhana atau baki kayu bekas",
+        "budgetSedang": "Nampan kayu dengan tepi tinggi sehingga bahan tidak mudah tumpah",
+        "diy": true
+      },
+      {
+        "name": "Lap kain kecil, sikat serbi, dan alat penyedot untuk membereskan sendiri",
+        "essential": true,
+        "budgetRendah": "Kain lap dipotong jadi ukuran kecil dan sikat bekas yang masih bersih",
+        "budgetSedang": "Set perkakas bersih ukuran anak dengan lap organik dan penyedot mini",
+        "diy": true
+      },
+      {
+        "name": "Keranjang buah sekop di rak rendah dalam jangkauan anak",
+        "essential": false,
+        "budgetRendah": "Mangkuk buah biasa di rak bawah dapur",
+        "budgetSedang": "Rak buah bertangga yang mudah diambil anak untuk memilih sendiri",
+        "diy": true
+      },
+      {
+        "name": "Anderson air mini dispenser rendah untuk minum sendiri",
+        "essential": false,
+        "budgetRendah": "Pitcher plastik setengah penuh di meja rendah",
+        "budgetSedang": "Dispenser air mini stabil untuk anak isi ulang gelas sendiri",
+        "diy": false
+      },
+      {
+        "name": "Apron kecil dengan kail pendek yang bisa dipakai lepas sendiri",
+        "essential": false,
+        "budgetRendah": "Apron dewasa diikat lebih longgar atau celemek kain bekas dipotong ukuran anak",
+        "budgetSedang": "Apron anak dengan kail depan jingga mudah langsung dibuka",
+        "diy": true
+      }
+    ],
+    "layoutTips": [
+      "Khususkan satu lemari atau laci bawah yang aman dan bebas dari benda berbahaya sebagai lemari anak; keranjang di dalamnya boleh dibongkar-pasang dengan bebas.",
+      "Letakkan dudukan belajar atau meja kerja anak jauh dari kompor, ketel panas, dan area lalu lalang membawa benda panas.",
+      "Simpan bahan pembersih, pis tajam, dan panci panas jauh di rak atas atau di lemari terkunci pengaman.",
+      "Tempatkan keranjang alat dapur anak di laci paling mudah dijangkau supaya anak bisa mengambil sendiri saat mau membantu."
+    ],
+    "ageBands": [
+      "6-9m",
+      "9-12m",
+      "12-18m",
+      "18-24m",
+      "2-3y",
+      "3-4y",
+      "4-5y"
+    ],
+    "safetyNotes": [
+      "Jauhkan anak dari kompor, oven, ketel air panas, dan panci berteteh dengan pembatas dapur atau letak pegangan kompor menghadap ke dalam.",
+      "Pis aman untuk anak tetap membutuhkan pengawasan dewasa dan only dipakai bahan yang sudah lembut, seperti pisang atau strobery yang sudah dikupas.",
+      "Dudukan belajar dapur harus dipasang stabil dan selalu didampingi orang dewasa saat anak berdiri di dalamnya.",
+      "Semua cairan panas, gula panas, dan minyak goreng disimpan jauh dari meja kerja anak; kabel listrik apron diatur rapi agar tidak ditarik."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren - Toddler Ages and Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      },
+      {
+        "title": "HealthyChildren - Safety at Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "The Montessori Notebook - Montessori at home",
+        "url": "https://www.themontessorinotebook.com/montessori-at-home/"
+      }
+    ]
+  },
+  {
+    "id": "room-setup-ruang-keluarga",
+    "room": "ruang-keluarga",
+    "title": "Ruang Keluarga: Sudut Bermain di Tengah Keluarga",
+    "principles": [
+      "Anak tidak perlu kamar mainan luas; satu sudut tenang di ruang keluarga biasanya cukup supaya anak bermain dekat dengan orang tua.",
+      "Hanya boleh sampai delapan mainan untuk anak remon, dan sisanya disimpan lalu diganti berkala dengan prinsip rotasi agar mainan tidak menjadi kekacauan.",
+      "Buku ditampilkan dengan sampulnya menghadap keluar, sebagaimana rak toko buku, sehingga anak mudah memilih sendiri.",
+      "Bergerak banyak adalah kebutuhan: pastikan ada lintasan kosong untuk merangkak, berjalan, memanjat kecil, dan menari."
+    ],
+    "items": [
+      {
+        "name": "Keset atau tikar area bermain di lantai",
+        "essential": true,
+        "budgetRendah": "Tikar piknik polos atau sutera walagala yang mudah dibersihkan",
+        "budgetSedang": "Tikar busa EVA tebal atau karpet tipis berbulu pendek mudah disedot",
+        "diy": false
+      },
+      {
+        "name": "Rak mainan rendah terbuka 2 tingkat",
+        "essential": true,
+        "budgetRendah": "Dus kardus kuat yang dibungkus kain dan diikat kuat ke dinding",
+        "budgetSedang": "Rak kayu rendah 40-50 cm tanpa pintu agar anak melihat semua pilihannya",
+        "diy": true
+      },
+      {
+        "name": "Keranjang rotasi mainan untuk mainan cadangan",
+        "essential": true,
+        "budgetRendah": "Kardus bertutup atau tas besar di lemari untuk menyimpan mainan yang dirotasi",
+        "budgetSedang": "Kotak penyimpanan berlabel bergambar supaya rotasi mudah dikendalikan",
+        "diy": true
+      },
+      {
+        "name": "Rak display buku dengan sampul menghadap ke luar",
+        "essential": true,
+        "budgetRendah": "Rak jumlah berdiri dipasang mur sampai anak bisa mengambil bukunya sendiri",
+        "budgetSedang": "Rak buku franchise berdiri kecil khusus anak dengan pilihan buku terbatas",
+        "diy": false
+      },
+      {
+        "name": "Meja kecil dan satu dua kursi anak untuk menggambar atau melipat",
+        "essential": false,
+        "budgetRendah": "Meja kardus tebal atau bekas meja dipotong kaki setinggi lutut anak",
+        "budgetSedang": "Set meja kursi anak kayu ringan yang bisa dipindah anak sendiri",
+        "diy": false
+      },
+      {
+        "name": "Keranjang bahan kerja seni sederhana (kertas, krayon pendek, lem batang)",
+        "essential": false,
+        "budgetRendah": "Toples krayon plus stack kertas bekas yang siap dipakai anak dalam kotak datar",
+        "budgetSedang": "Kotak seni bersekat supaya setiap alat punya tempat dan mudah dibawa",
+        "diy": true
+      },
+      {
+        "name": "Alat bergerak aman di dalam rumah: bola besar, mainan dorong",
+        "essential": false,
+        "budgetRendah": "Bola plastik besar dan gerobak kardus yang bisa ditarik",
+        "budgetSedang": "Mainan dorong kayu dan bola yang beratnya sesuai usia",
+        "diy": false
+      }
+    ],
+    "layoutTips": [
+      "Letakkan area main di sudut yang masih terlihat dari tempat duduk orang tua, bukan di balik sofa, supaya supervisi terjadi alami sambil beraktivitas.",
+      "Ikat rak buku dan meja TV ke dinding serta singkat kabel antena dan colokan supaya tidak tertarik atau terselip di bawah mainan.",
+      "Rotasi mainan setiap dua sampai empat minggu: simpan yang jarang dipakai, ganti dengan mainan yang telah lama disimpan, dan lihat minat anak hidup kembali.",
+      "Sediakan papan kotak atau rak kecil untuk barang milik anak di sekitar sofa supaya mainan bisa dipulangkan ke rumahnya setiap malam."
+    ],
+    "ageBands": [
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m",
+      "12-18m",
+      "18-24m",
+      "2-3y",
+      "3-4y",
+      "4-5y"
+    ],
+    "safetyNotes": [
+      "Ikat semua perabot tinggi seperti rak TV, lemari, dan cermin ke dinding karena kalau tumbang bisa melukai anak berat.",
+      "Untuk anak di bawah 1 tahun, pastikan mainan dan sisa makanan kecil (selain digosong terbaca seperti kelereng, koin, dan potongan plastik) bebas dari lantai, terutama saat anak suka memasukkan mulut.",
+      "Benda cemara seperti ujung meja runcing dan sudut rak dilindungi dengan bantalan sudut, terutama ketika anak mulai belajar berjalan.",
+      "TV, perangkat elektronik, dan kabel listrik diletakkan di tempat yang tak bisa dicapai anak atau ditutup pelindung colokan."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren - Childproofing Your Home",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/Childproofing-Your-Home.aspx"
+      },
+      {
+        "title": "AMI USA - Montessori resources",
+        "url": "https://amiusa.org/"
+      },
+      {
+        "title": "The Montessori Notebook - Montessori at home",
+        "url": "https://www.themontessorinotebook.com/montessori-at-home/"
+      }
+    ]
+  },
+  {
+    "id": "room-setup-area-makan",
+    "room": "area-makan",
+    "title": "Area Makan: Ditenangkan, Mengasyikkan, dan Latihan Mandiri",
+    "principles": [
+      "Kursi yang mendukung: kaki anak ditanji atau pijakan, punggung tegak, dan lutut sejajar dengan pinggang supaya duduk nyaman dan tangan bebas menikto.",
+      "Alat yang pas ukurannya: pelat kecil dengan bagian terpisah, sendok garpu bergenggam pendek, dan gelas terbuka kecil melatih koordinasi sejak dini.",
+      "Anak dilibatkan sebelum dan sesudah makan: membawa serbet, menyendok bahan, dan membawa pelat ke bak mencuci adalah pekerjaan yang menyenangkan mereka.",
+      "Fokuskan suasana: meja bersih dari mainan, layar dimatikan, dan orang tua makan bersama anak supaya makan jadi momen menyenangkan, bukan reklame."
+    ],
+    "items": [
+      {
+        "name": "Kursi makan dengan pijakan kaki dan meja makan kecil",
+        "essential": true,
+        "budgetRendah": "Kursi makan sederhana dengan sesuaidang sandaran dan kaki berstandar kokoh",
+        "budgetSedang": "Kursi makan kayu dengan pijakan yang bisa naik turun mengikuti anak tumbuh",
+        "diy": false
+      },
+      {
+        "name": "Pelat kecil dengan pembagian terpisah",
+        "essential": false,
+        "budgetRendah": "Pelat plastik berbagi bahan seperti baja yang mudah dicuci",
+        "budgetSedang": "Pelat stainless kecil dengan sekat lepas yang tahan jatuh",
+        "diy": false
+      },
+      {
+        "name": "Gelas terbuka kecil untuk melatih minum sendiri",
+        "essential": true,
+        "budgetRendah": "Gelas kacau plastik kecil berisi setengah saja",
+        "budgetSedang": "Gelas kaca kecil tertawan dan kokoh yang menggairahkan anak minum sendiri",
+        "diy": false
+      },
+      {
+        "name": "Sendok dan garpu ukuran anak dengan pegangan pendek",
+        "essential": true,
+        "budgetRendah": "Sendok plastik pendek atau sendok makan kecil biasa",
+        "budgetSedang": "Sendok garpu stainless pegangan kayu khusus bayi dan balita",
+        "diy": false
+      },
+      {
+        "name": "Placemat dengan gambar posisi pelat, gelas, dan sendok",
+        "essential": false,
+        "budgetRendah": "Gambar sederhana posisi alat makan dibuat sendiri lalu dicet laminasi",
+        "budgetSedang": "Placemat kain dengan bordir garis posisi alat makan yang tahan wash",
+        "diy": true
+      },
+      {
+        "name": "Meja anak dan kursi kecil untuk sarapan kupu-kupu",
+        "essential": false,
+        "budgetRendah": "Meja lipat kardus atau meja kecil bekas dengan kursi barstool rendah",
+        "budgetSedang": "Set meja kursi kayu anak untuk area makan kedua di dapur atau teras",
+        "diy": false
+      },
+      {
+        "name": "Wadah kecil atau keranjang buah di tinggi anak untuk snacking sendiri",
+        "essential": false,
+        "budgetRendah": "Toples plastik rendah berisi buah potong di rak bawah",
+        "budgetSedang": "Station snack di rak rendah dengan pilihan terbatas yang berisi terisi 2 dipilih",
+        "diy": true
+      }
+    ],
+    "layoutTips": [
+      "Tempatkan kursi makan anak di dekat orang tua yang makan supaya anak melihat contoh cara makan dan tahu bahwa setiap orang punya tempatnya.",
+      "Sediakan serbet kecil, lap meja, dan bak kecil di dekat area makan supaya anak bisa membantu membereskan sendiri tumpahan atau sisa makanan.",
+      "Sistem tumpah tidak masalah: lantai area makan dengan keset mudah cuci supaya orang tua lebih santai dan anak lebih berani mencoba sendiri.",
+      "Konsistensi tempat makan membantu anak tahu kapan dan di mana momen makan, sehingga kebiasaan dan makanan makin baik."
+    ],
+    "ageBands": [
+      "6-9m",
+      "9-12m",
+      "12-18m",
+      "18-24m",
+      "2-3y",
+      "3-4y",
+      "4-5y"
+    ],
+    "safetyNotes": [
+      "Dampingi anak setiap kali makan dan pastikan anak duduk tegak; berjalan atau bermain sambil mengunyah bisa meningkatkan risiko tersedak.",
+      "Untuk anak di bawah 4 tahun, potong makanan keras, bulat, dan licin seperti anggur, sosis, dan wortel mentah menjadi potongan memanjang kecil sesuai panduan pencegahan tersedak.",
+      "Simpan makanan keras kecil seperti kacang, permen, dan kelereng jauh dari jangkauan anak kecil karena mudah menyumbat saluran napas.",
+      "Kursi makan dipasang dengan tali pengaman dan dipastikan tidak bisa roboh saat anak menolak tetap duduk atau memanjat."
+    ],
+    "references": [
+      {
+        "title": "HealthyChildren - Baby Ages and Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+      },
+      {
+        "title": "NHS - Baby feeding and care",
+        "url": "https://www.nhs.uk/conditions/baby/"
+      },
+      {
+        "title": "HealthyChildren - Toddler Ages and Stages",
+        "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "room-setup-outdoor",
+    "room": "outdoor",
+    "title": "Outdoor: Gerak Bebas, Alam, dan Tanah yang Menyenangkan",
+    "principles": [
+      "Keluar ruangan setiap hari bila cuaca izin: cahaya matahari, tanah, dan angin memberi pengalaman yang tidak bisa diganti mainan di dalam rumah.",
+      "Gerak yang bervariasi: berjalan di permukaan berbeda, mendorong membawa, memanjat membawa, bermanik bebas buat latihan kekuatan dan keseimbangan.",
+      "Anak dilibatkan merawat: menyiram tanaman, menyapu teras, dan menanam biji jadi pekerjaan nyata yang mereka banggakan.",
+      "Amatilah kecil kecil: semut, daun kering, hujan berhenti, sampai awan bisa jadi percakapan dan eksplorasi yang tak terbatas."
+    ],
+    "items": [
+      {
+        "name": "Bak pasir atau bak plastik isi pasir plus alat gali",
+        "essential": true,
+        "budgetRendah": "Bak plastik murah isi pasir bersih dan sendok cangkul kecil mampu bermain",
+        "budgetSedang": "Bak pasir kayu dengan tutup dan bangku yang tahan hujan dan aman",
+        "diy": false
+      },
+      {
+        "name": "Gembor kecil dan pot tanaman atau bedengan kecil untuk menanam",
+        "essential": true,
+        "budgetRendah": "Gembor plastik kecil plus pot bekas dengan tanaman mudah seperti kenikir",
+        "budgetSedang": "Pot dan alat taman ukuran anak kayu yang mudah dibawa dan digunakan",
+        "diy": true
+      },
+      {
+        "name": "Bola dalam berbagai ukuran dan tekstur",
+        "essential": true,
+        "budgetRendah": "Bola plastik besar dan bola kecil bertekstur untuk digenggam dan ditekan",
+        "budgetSedang": "Bola beruas atau bola longjourn yang memancing lempar dan tendang",
+        "diy": false
+      },
+      {
+        "name": "Gerobak dorong atau kereta dorong ringan yang bisa dibawa anak",
+        "essential": false,
+        "budgetRendah": "Kereta dorong plastik murah dengan stabil yang mudah didorong di halaman",
+        "budgetSedang": "Gerobak kayu gandengan bekas beroda dengan tali yang mudah ditarik",
+        "diy": false
+      },
+      {
+        "name": "Alat kebun mini berbahan ringan: sprayer kecil, sapu lidi mini, trowel",
+        "essential": false,
+        "budgetRendah": "Sapu kecil dan ember kecil untuk membereskan daun di halaman",
+        "budgetSedang": "Set alat kebun anak yang lebih kuat namun ringan untuk menerban banyak kegiatan",
+        "diy": true
+      },
+      {
+        "name": "Matras atau tikar piknik untuk duduk bermain dan menyusu di luar",
+        "essential": false,
+        "budgetRendah": "Kain datar besar atau selerung plastik yang bisa dilipat di tas",
+        "budgetSedang": "Tikar piknik tahan air dan hangat dengan tas jinjing untuk berjalan jauh",
+        "diy": false
+      },
+      {
+        "name": "Keranjang belanja kecil atau bot besi untuk mengumpulkan temuan alam",
+        "essential": false,
+        "budgetRendah": "Keranjang plastik kecil untuk memetik daun, biji, dan batu unik",
+        "budgetSedang": "Keranjang rotan dengan tali panjang gantungan bahu yang mudah dibawa",
+        "diy": true
+      },
+      {
+        "name": "Kolam人类社会 reuse spi kecil atau ember rendah untuk bermain air saat cuaca panas",
+        "essential": false,
+        "budgetRendah": "Ember rendah besar isi air plus gelas dan mangkuk untuk menuang",
+        "budgetSedang": "Bak air tipis dari bahan kokoh dengan luas yang bisa diatur",
+        "diy": false
+      }
+    ],
+    "layoutTips": [
+      "Khususkan sudut luar ruangan yang selalu siap: rak kecil tahan cuaca berisi pasir, alat gali, bola, dan gembor supaya anak bisa mengajak keluar sendiri tanpa diberi izin panjang.",
+      "Beri jalur mandiri: halaman depan atau teras dengan pasir dan tanam kecil mendampingi anak menggali dan menyiram, sementara orang tua menemani di dekatnya.",
+      "Rotasi alat luar ruangan antara pasir, air, dan kebun supaya anak tidak bosan dan tiap minggu nuansanya berubah.",
+      "Perhatikan permukaan: tanah dan rumput lebih menyenangkan daripada beton licin meninggalkan posisi lebih aman untuk anak yang belajar berlari dan jatuh."
+    ],
+    "ageBands": [
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m",
+      "12-18m",
+      "18-24m",
+      "2-3y",
+      "3-4y",
+      "4-5y"
+    ],
+    "safetyNotes": [
+      "Selalu dampingi anak di dekat air, termasuk ember, bak pasir berbau air, dan kolam kecil, bahkan yang dangkal sekalipun.",
+      "Gunakan topi dan tabir surya saat bermain di luar, umumnya sebaiknya hindar matahari paling terik sekitar pukul 10 sampai 16.",
+      "Cek area bermain dari benda tajam, batu lancip, dan tumbuhan berduri, dan pastikan taman bermain punya lantai lunak serta aman usia anak.",
+      "Gunakan helm dan pelindung saat anak mulai naik sepeda atau mainan luncur, dan selalu ingatkan bahwa tali ayunan atau tali panjang bisa berbahaya bila melilit leher."
+    ],
+    "references": [
+      {
+        "title": "WHO - Child health",
+        "url": "https://www.who.int/health-topics/child-health"
+      },
+      {
+        "title": "HealthyChildren - Safety at Home and Beyond",
+        "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"
+      },
+      {
+        "title": "Montessori Global - Resources",
+        "url": "https://www.montessoriglobal.com/"
+      }
+    ]
+  }
+]

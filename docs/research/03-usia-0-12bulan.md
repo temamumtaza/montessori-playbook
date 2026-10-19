@@ -40,13 +40,13 @@ Bayi baru lahir melihat dunia buram; fokusnya paling jelas pada jarak 20–35 cm
 
 - **Tujuan:** Melatih fokus visual dan mengikuti objek dengan mata (tracking). Munari adalah mobile pertama rangkaian Montessori: bentuk hitam-putih kontras tinggi plus bola kaca bening pemantul cahaya [12][13].
 - **Usia:** ±2–4 minggu, saat bayi mulai terjaga lebih lama dan memandang mobile dengan tenang.
-- **Bahan (beli atau DIY):** Kertas cardstock hitam-putih (tidak terlalu mengkilap), benang nilon dipilin agar elemen berputar sendiri, tiang kayu tipis (dowel), bola kaca kecil 6–7 cm (DIY: manik kayu besar terikat kuat).
+- **Bahan:** beli atau DIY — kertas cardstock hitam-putih (tidak terlalu mengkilap), benang nilon dipilin agar elemen berputar sendiri, tiang kayu tipis (dowel), bola kaca kecil 6–7 cm (DIY: manik kayu besar terikat kuat).
 - **Langkah:**
   1. Buat/dapat figur geometris hitam-putih (lingkaran, trapesium, spiral) dan susun berlapis pada tiang dengan benang berbeda panjang.
   2. Gantung di depan-atas bayi — bukan tepat di atas kepala — sehingga garis pandang ke mobile membentuk sudut ±45 derajat [12]; jarak elemen terendah ±30–35 cm dari mata [12][13].
   3. Sajikan 5–10 menit saat bayi tenang; lamanya ia memusatkan pandangan adalah ukuran kesiapan, bukan durasi target.
   4. Rotasi ke mobile berikutnya saat minat menurun beberapa hari berturut-turut.
-- **Keselamatan:** Gantungan kokoh; tali pendek di luar jangkauan tangan (risiko terbelit). Jangan menggantung apa pun di atas tempat tidur saat bayi tidur; mobile hanya untuk waktu terjaga. Tanpa bagian kecil mudah lepas (risiko tersedak); selalu disupervisi.
+- **Keselamatan:** Gantungan kokoh; tali pendek di luar jangkauan tangan (risiko terbelit). Jangan menggantung apa pun di atas tempat tidur saat bayi tidur; mobile hanya untuk waktu terjaga. Tanpa bagian kecil mudah lepas (risiko tersedak); selalu disupervisi; bayi mengantuk tidur telentang (supine).
 - **Sumber:** Berkshire Montessori [12][13]; rangkaian visual mobile Montessori publik [13].
 
 ### 4. Mobile Octahedron (Generik dan DIY)
@@ -67,18 +67,18 @@ Bayi baru lahir melihat dunia buram; fokusnya paling jelas pada jarak 20–35 cm
 - **Tujuan:** Melatih mata membedakan gradasi satu warna dari terang ke gelap — latihan pertama melihat perbedaan halus, prasyarat mengenali detail.
 - **Usia:** ±7–10 minggu, setelah octahedron; dipakai hingga bayi mulai menjangkau [12][13].
 - **Bahan:** Lima bola (styrofoam/wol) sama besar dibungkus benang sulam satu warna, lima tingkat kepekatan dari terang ke gelap; benang nilon; tiang horizontal.
-- **Langkah DIY:**
+- **Langkah:**
   1. Bungkus tiap bola rapat dengan benang sulam sampai permukaan halus — pekerjaan rapi yang bisa dikerjakan bertahap saat menunggu bayi lahir.
   2. Gantung kelima bola pada tiang horizontal dengan panjang benang bertingkat membentuk garis diagonal ±45 derajat; bola tergelap paling rendah, terterang paling tinggi.
   3. Pasang di posisi standar mobile (depan-atas, jarak 30–35 cm) saat bayi tenang dan terjaga.
   4. Biarkan bayi "memindai" dari bola terang ke gelap tanpa gangguan.
-- **Keselamatan:** Pastikan tiap bola terikat sangat kuat (bola styrofoam mudah remuk — bagian kecilnya berisiko tersedak jika lepas dan dikunyah); benang pendek di luar jangkauan tangan untuk mencegah melilit; gunakan hanya saat terjaga dengan supervisi; tidur tetap telentang (supine) di tempat tidur yang aman.
+- **Keselamatan:** Pastikan tiap bola terikat sangat kuat (bola styrofoam mudah remuk — bagian kecilnya berisiko tersedak jika lepas dan dikunyah); tali/benang pendek di luar jangkauan tangan untuk mencegah melilit; gunakan hanya saat terjaga dengan supervisi; tidur tetap telentang (supine) di tempat tidur yang aman.
 - **Sumber:** Berkshire Montessori [12]; panduan mobile publik [13].
 
 ### 6. Floor Bed dan Tidur yang Aman
 
 - **Tujuan:** Ruang tidur yang tidak membatasi gerakan sekaligus menjaga standar keselamatan tidur tahun pertama; transisi bangun-bergerak-jelajah menjadi mulus, asal disiapkan hati-hati.
-- **Usia:** Bisa disiapkan sejak awal, tetapi catat: AAP hanya menyetujui permukaan tidur crib, bassinet, atau play yard bersertifikat — kasur lantai bukan permukaan tidur yang direkomendasikan untuk bayi di bawah 12 bulan. Banyak keluarga Montessori memakai kombinasi: crib/bassinet untuk tidur utama, kasur lantai untuk tidur singkat yang disupervisi. Diskusikan keputusannya dengan dokter anak.
+- **Usia:** Bisa disiapkan sejak awal, tetapi catat: AAP hanya menyetujui permukaan tidur crib, bassinet, atau play yard bersertifikat — kasur lantai bukan permukaan tidur yang direkomendasikan untuk bayi di bawah 12 bulan. Banyak keluarga Montessori memakai kombinasi: crib/bassinet untuk tidur utama, kasur lantai untuk tidur singkat yang disupervisi. Diskusikan dengan dokter anak.
 - **Bahan:** Kasur bayi keras (firm), fitted sheet saja, sleep sack untuk kehangatan, ruangan yang sudah babyproof.
 - **Langkah:**
   1. Kasur rapat ke dinding di satu sisi (tanpa celah) atau cukup berjarak agar tidak ada ruang terjepit.
@@ -180,7 +180,7 @@ CDC melaporkan bayi usia ini umumnya menoleh ke suara, mengoceh, menghantam bend
   1. Pasang cermin rendah di samping area lantai, sejajar pandangan bayi.
   2. Ajak bayi bermain menghadap cermin; tambahkan foto keluarga atau kartu gambar kontras di sekitarnya.
   3. Komentari: "Itu kamu! Itu tangan Ibu!" — sekaligus melatih bahasa; lambat laun ia mengenali itu dirinya.
-- **Keselamatan:** Wajib tahan pecah (akrilik atau berlapis film pengaman) dan terpasang permanen agar tak bisa ditarik jatuh; tepi tidak tajam. Jangan tinggalkan bayi sendirian dengan cermin; supervisi penuh. Bayi mengantuk → tidur telentang (supine) di tempat aman. Area sekitar bebas tali/kabel dan benda kecil.
+- **Keselamatan:** Wajib tahan pecah (akrilik atau berlapis film pengaman) dan terpasang permanen agar tak bisa ditarik jatuh; tepi tidak tajam. Jangan tinggalkan bayi sendirian dengan cermin; supervisi penuh. Bayi mengantuk → tidur telentang (supine) di tempat aman. Area sekitar bebas tali/kabel dan benda kecil tersedak.
 - **Sumber:** Prinsip area gerak Montessori [14]; panduan kamar bayi [13].
 
 ### 6. Percakapan Bergantian (Serve and Return) Secara Sengaja
@@ -194,7 +194,7 @@ CDC melaporkan bayi usia ini umumnya menoleh ke suara, mengoceh, menghantam bend
   3. Hubungkan dengan benda nyata yang sedang dilihatnya; tunjuk sambil menyebut nama.
   4. Masukkan ke rutinitas: mandi, ganti popok, persiapan tidur.
   5. Tahan dorongan menghibur dengan layar — layar tidak menggantikan giliran bicara [10][18].
-- **Keselamatan:** Aturan umum tahun pertama tetap berlaku: jauhkan dari tepi permukaan tinggi (risiko jatuh); saat mengantuk tidurkan telentang (supine); area bebas tali/kabel dan benda kecil; semua di bawah supervisi orang dewasa.
+- **Keselamatan:** Aturan umum tahun pertama tetap berlaku: jauhkan dari tepi permukaan tinggi (risiko jatuh); saat mengantuk tidurkan telentang (supine); area bebas tali/kabel dan benda kecil tersedak; semua di bawah supervisi orang dewasa.
 - **Sumber:** CDC milestones [1][2]; WHO [10]; AAP media [18].
 
 ## Usia 6–9 Bulan: Merangkak, Objek Permanen, dan Makanan Pertama
@@ -212,7 +212,7 @@ Rentang ini paling ramai: bayi duduk tanpa dukungan, memindahkan benda antar tan
   3. Biarkan bayi memutuskan kapan dan bagaimana bergerak; rayakan tanpa menyeret tubuhnya.
   4. Buat variasi: benda di atas boks rendah, tirai yang boleh ditarik pelan, cermin rendah.
   5. Luangkan beberapa sesi lantai panjang tiap hari — lebih banyak waktu lantai daripada alat duduk; WHO menganjurkan bayi tidak dibatasi (kursi, ayunan) lebih dari 1 jam sekali [10][11].
-- **Keselamatan:** Sebelum sesi lakukan "pemindaian merangkak" dari ketinggian bayi: benda kecil penyebab tersedak, tali/kabel, sudut tajam, colokan. Tangga wajib dipagari. Jangan tinggalkan bayi tanpa pengawasan; saat mengantuk ia kembali tidur telentang (supine) di tempat aman.
+- **Keselamatan:** Sebelum sesi lakukan "pemindaian merangkak" dari ketinggian bayi: benda kecil penyebab tersedak, tali/kabel, sudut tajam, colokan. Tangga wajib dipagari. Jangan tinggalkan bayi tanpa supervisi; saat mengantuk ia kembali tidur telentang (supine) di tempat aman.
 - **Sumber:** CDC milestones [1][2]; WHO [10][11]; prinsip area gerak [14].
 
 ### 2. Kotak Kain dan Bola Permanen (Objek Permanen untuk Bayi)
@@ -238,7 +238,7 @@ Rentang ini paling ramai: bayi duduk tanpa dukungan, memindahkan benda antar tan
   2. Biarkan ia mengambil sendiri benda apa pun; jangan arahkan.
   3. Komentari benda yang ia tunjukkan: "Itu sendok. Dingin, ya?" — bahasa mengikuti minat bayi.
   4. Setelah 15–20 menit atau saat minat turun, simpan keranjang agar tetap istimewa; rotasi benda tiap minggu.
-- **Keselamatan:** Tiap benda diperiksa tiga hal: terlalu besar untuk tersedak, tidak mudah pecah/melepas bagian kecil, dan bersih — mulut adalah alat eksplorasi utamanya. Supervisi penuh tanpa kecuali selama keranjang tersedia; benda rumah tangga bukan mainan yang didesain aman. Sesi di lantai, bukan permukaan tinggi; bayi mengantuk kembali tidur telentang (supine).
+- **Keselamatan:** Tiap benda diperiksa tiga hal: terlalu besar untuk tersedak, tidak mudah pecah/melepas bagian kecil, dan bersih — mulut adalah alat eksplorasi utamanya. Supervisi penuh tanpa kecuali selama keranjang tersedia; benda rumah tangga bukan mainan yang didesain aman. Sesi di lantai bebas tali/kabel, bukan permukaan tinggi; bayi mengantuk kembali tidur telentang (supine).
 - **Sumber:** Panduan treasure basket publik [16][17]; CDC milestones [2].
 
 ### 4. Mainan Sebab-Akibat Sederhana (Keranjang Bola dan Kotak, Palu Bola, Susun Cincin)
@@ -266,8 +266,8 @@ Rentang ini paling ramai: bayi duduk tanpa dukungan, memindahkan benda antar tan
   4. Biarkan bayi menyentuh, menggenggam, dan membawa makanan ke mulut sendiri; NHS menganjurkan membiarkan bayi mengeksplorasi makanan dengan tangan sebagai bagian dari belajar [7].
   5. Ikuti iramanya: berhenti saat ia menutup mulut, menoleh, atau membuang makanan [7].
   6. Tekankan makanan kaya zat besi sejak awal: daging, ikan, telur, kacang olah, sereal diperkaya besi [6].
-- **Keselamatan:** Ini blok paling kritis: (1) Selalu duduk tegak di kursi makan dengan pengawasan — tidak pernah sambil berbaring, berjalan, atau di kursi mobil; (2) tidak pernah meninggalkan bayi makan sendirian, karena tersedak bisa terjadi diam-diam [7]; (3) hindari makanan keras, kecil-bulat, dan lengket: anggur utuh, kacang utuh, popcorn, permen, jagung utuh, sayur/buah mentah keras, sosis besar, potongan daging besar [6][7]; (4) potong makanan bulat (anggur, tomat ceri) jadi empat bagian memanjang [7]; (5) tanpa madu sebelum 1 tahun [8]; (6) tanpa garam dan gula tambahan [8]; (7) jangan menaruh makanan ke botol susu — risiko tersedak [6]. Kenali beda gagging (refleks belajar: wajah merah, bersuara) dan choking (darurat: diam, tak bisa bersuara) [7]. Pelajari pertolongan pertama tersedak bayi dari sumber resmi sebelum mulai MPASI.
-- **Sumber:** NHS first solid foods [7]; NHS foods to avoid [8]; HealthyChildren (BLW aman) [6]; HealthyChildren starting solids [6]; CDC choking hazards [9].
+- **Keselamatan:** Ini blok paling kritis: (1) Selalu duduk tegak di kursi makan dengan supervisi — tidak pernah sambil berbaring, berjalan, atau di kursi mobil; (2) tidak pernah meninggalkan bayi makan sendirian, karena tersedak bisa terjadi diam-diam [7]; (3) hindari makanan keras, kecil-bulat, dan lengket: anggur utuh, kacang utuh, popcorn, permen, jagung utuh, sayur/buah mentah keras, sosis besar, potongan daging besar [6][7]; (4) potong makanan bulat (anggur, tomat ceri) jadi empat bagian memanjang [7]; (5) tanpa madu sebelum 1 tahun [8]; (6) tanpa garam dan gula tambahan [8]; (7) jangan menaruh makanan ke botol susu — risiko tersedak [6]. Area makan bebas tali; bayi mengantuk usai makan tidur telentang (supine). Kenali beda gagging (refleks belajar: wajah merah, bersuara) dan choking (darurat: diam, tak bisa bersuara) [7]. Pelajari pertolongan pertama tersedak bayi dari sumber resmi sebelum mulai MPASI.
+- **Sumber:** NHS first foods [7]; NHS foods to avoid [8]; HealthyChildren BLW [6]; CDC choking [9].
 
 ## Usia 9–12 Bulan: Berdiri, Jepitan Jari, dan Kata Pertama
 
@@ -296,12 +296,12 @@ Menjelang tahun pertama, CDC mencatat bayi umumnya menarik diri ke berdiri, berj
   2. Peragakan sekali memungut dengan ibu jari dan telunjuk.
   3. Tambahkan porsi sedikit demi sedikit — tumpukan besar memicu memasukkan sekaligus ke mulut.
   4. Perkenalkan sendok (isi, ia menyodorkan sendiri) dan gelas terbuka setengah penuh yang Anda pegang bersamanya [3].
-- **Keselamatan:** Aturan MPASI sebelumnya tetap berlaku penuh: supervisi tanpa kecuali, duduk tegak dengan tali pengaman, makanan lunak ukuran aman, hindari makanan bulat-keras-lengket [6][7][8][9]; anggur/tomat ceri dipotong empat bagian memanjang [7]; tanpa garam, gula, dan madu sebelum 1 tahun [8]; jangan memberi makan saat bayi berbaring atau berjalan; siapkan pertolongan pertama tersedak sejak sebelum MPASI.
+- **Keselamatan:** Aturan MPASI sebelumnya tetap berlaku penuh: supervisi tanpa kecuali, duduk tegak dengan tali pengaman, makanan lunak ukuran aman, hindari makanan bulat-keras-lengket [6][7][8][9]; anggur/tomat ceri dipotong empat bagian memanjang [7]; tanpa garam, gula, dan madu sebelum 1 tahun [8]; jangan memberi makan saat bayi berbaring atau berjalan; area makan bebas tali/kabel; bayi mengantuk pasca makan ditidurkan telentang (supine); siapkan pertolongan pertama tersedak sejak sebelum MPASI.
 - **Sumber:** CDC milestones [3]; HealthyChildren BLW [6]; NHS first foods [7]; NHS foods to avoid [8]; CDC choking [9].
 
 ### 3. Membaca Buku Papan dan Menunjuk Gambar
 
-- **Tujuan:** Menghubungkan kata dengan gambar dan benda nyata; membangun kosakata pasif jauh sebelum bayi bicara, sekaligus rutinitas tenang yang menguatkan ikatan.
+- **Tujuan:** Menghubungkan kata dengan gambar dan benda nyata; membangun kosakata pasif jauh sebelum bayi bicara, sekaligus rutinitas tenang penguat ikatan.
 - **Usia:** ±6–12 bulan, semakin sering semakin baik menjelang tahun pertama.
 - **Bahan:** Beberapa buku papan (board book) bergambar nyata: benda rumah, bagian tubuh, wajah; rak rendah berhadap depan agar mudah dijangkau.
 - **Langkah:**
@@ -310,7 +310,7 @@ Menjelang tahun pertama, CDC mencatat bayi umumnya menarik diri ke berdiri, berj
   3. Biarkan ia menepuk, menunjuk, atau membalik halaman — itu partisipasi.
   4. Ulangi buku yang sama berkali-kali; pengulangan memperkuat kosakata.
   5. Biarkan ia memilih buku dari raknya — latihan memilih paling sederhana.
-- **Keselamatan:** Pilih buku papan kokoh tanpa bagian kecil lepas (kancing, mata boneka) dan tanpa pita panjang; kertas biasa mudah robek dan potongannya berisiko masuk mulut. Supervisi penuh; area bebas tali/kabel; bayi mengantuk ditidurkan telentang (supine).
+- **Keselamatan:** Pilih buku papan kokoh tanpa bagian kecil lepas (kancing, mata boneka) dan tanpa pita panjang; kertas biasa mudah robek dan potongannya berisiko tersedak. Supervisi penuh; area bebas tali/kabel; bayi mengantuk ditidurkan telentang (supine).
 - **Sumber:** CDC milestones [2][3]; WHO [10]; AAP media [18].
 
 ### 4. Permainan Masuk-Keluar dan Mengejar Bola Menggelinding
@@ -323,7 +323,7 @@ Menjelang tahun pertama, CDC mencatat bayi umumnya menarik diri ke berdiri, berj
   2. Perlihatkan bola masuk lubang dan keluar dari laci; serahkan pengulangan padanya.
   3. Beri kata aksi: "jalan", "masuk", "keluar", "ada!" — kosakata menempel pada pengalaman.
   4. Tutup sesi dengan memasukkan bola ke keranjang; ritual beres-beres dimulai dari sekarang.
-- **Keselamatan:** Bola dan semua bagian lebih besar dari mulut; kotak DIY diamankan tepinya; supervisi penuh; lantai bebas tali/kabel dan benda kecil; bayi mengantuk kembali tidur telentang (supine).
+- **Keselamatan:** Bola dan semua bagian lebih besar dari mulut (tak bisa tersedak); kotak DIY diamankan tepinya; supervisi penuh; lantai bebas tali/kabel dan benda kecil; bayi mengantuk kembali tidur telentang (supine).
 - **Sumber:** CDC milestones [2][3]; Kavanaugh Report (cakram menggelinding) [15]; materi bayi Montessori [16].
 
 ## Ringkasan untuk app
@@ -332,29 +332,29 @@ Menjelang tahun pertama, CDC mencatat bayi umumnya menarik diri ke berdiri, berj
 - Target tummy time: dibangun bertahap sejak pulang dari RS hingga 15–30 menit/hari di usia ±7 minggu (AAP); total ≥30 menit/hari bagi bayi belum mobile (WHO).
 - Tidur: selalu telentang (supine), permukaan keras-datar, tanpa bantal/selimut lepas/boneka hingga 12 bulan; satu kamar dengan orang tua, bukan satu kasur (AAP).
 - Floor bed: hanya bila seluruh kamar aman; AAP tidak menyetujui kasur lantai sebagai permukaan tidur bayi <12 bulan — crib/bassinet untuk tidur utama lebih aman; diskusikan dengan dokter.
-- Urutan mobile: Munari (kontras, ±2–4 minggu) → Octahedron (warna primer, ±5–8 minggu) → Gobbi (gradasi warna, ±7–10 minggu) → tahap taktil saat bayi mulai menjangkau (±4–6 bulan).
-- Posisi mobile: di depan-atas bayi telentang (garis pandang ±45°), elemen terendah ±30–35 cm dari mata; hanya saat terjaga dan disupervisi.
+- Urutan mobile: Munari (kontras, ±2–4 minggu) → Octahedron (warna primer, ±5–8 minggu) → Gobbi (gradasi, ±7–10 minggu) → taktil saat mulai menjangkau (±4–6 bulan).
+- Posisi mobile: depan-atas bayi telentang (garis pandang ±45°), elemen terendah ±30–35 cm dari mata; hanya saat terjaga, disupervisi.
 - Aturan mobile DIY: gantungan kokoh, tali pendek di luar jangkauan, tanpa bagian kecil lepas (risiko tersedak/terbelit).
-- Material tangan berurutan: grasping beads (±3 bulan) → interlocking discs (±4–6 bulan, transfer antar tangan) → ring on ribbon/taktil → kotak objek permanen (±8–12 bulan).
-- Semua benda yang masuk mulut harus lolos uji ukuran tidak-tersedak, kuat, dan bersih; periksa tiap sesi.
+- Material tangan berurutan: grasping beads (±3 bulan) → interlocking discs (±4–6 bulan) → ring on ribbon/taktil → kotak objek permanen (±8–12 bulan).
+- Semua benda yang masuk mulut harus lolos uji ukuran anti-tersedak, kuat, bersih; periksa tiap sesi.
 - Treasure basket: benda rumah tangga nyata untuk bayi yang duduk; supervisi dewasa tanpa kecuali; simpan setelah sesi.
 - Bahasa: narasi kegiatan sepanjang hari + percakapan bergantian (beri jeda, balas); tanpa layar — WHO tidak merekomendasikan screen time untuk bayi, AAP menganjurkan membatasi.
 - Buku papan rutin + menunjuk gambar: kosakata pasif tumbuh sebelum kata pertama.
 - MPASI: mulai ±6 bulan saat tiga tanda kesiapan muncul bersamaan (duduk tegak-kepala stabil; koordinasi mata-tangan-mulut; menelan) — NHS/AAP.
-- Gaya Montessori di meja makan: bayi duduk di meja keluarga, memegang dan mencicipi sendiri (finger food bentuk batang), diikuti tanda lapar/kenyang; fokus pada makanan kaya zat besi.
-- Keselamatan MPASI: supervisi penuh, duduk tegak, tanpa makanan keras/bulat/lengket; anggur & tomat ceri dipotong 4 bagian memanjang; tanpa madu sebelum 1 tahun; tanpa garam/gula; jangan masukkan makanan ke botol susu; pelajari pertolongan pertama tersedak sebelum mulai.
+- Gaya Montessori di meja makan: bayi duduk di meja keluarga, mencicipi sendiri (finger food bentuk batang), mengikuti tanda lapar/kenyang; fokus makanan kaya zat besi.
+- Keselamatan MPASI: supervisi penuh, duduk tegak, tanpa makanan keras/bulat/lengket; anggur & tomat ceri dipotong 4 memanjang; tanpa madu sebelum 1 tahun; tanpa garam/gula; tanpa makanan di botol susu; pelajari pertolongan pertama tersedak.
 - Bedakan gagging (refleks belajar, wajah merah, bersuara) dari choking (darurat, diam, tak bisa bersuara).
 - Latihan pincer paling aman lewat makanan potongan kecil yang lunak, bukan benda kecil mainan.
 - Pull to stand & cruising: sediakan bar/furniture stabil + cermin rendah; jangan alat bantu jalan beroda.
 - Rotasi mainan mingguan, rak rendah, sedikit pilihan: lingkungan Montessori = berkualitas, terbatas, dijangkau bayi.
-- Tonggak CDC sebagai pemandu umum (bukan target): duduk tanpa dukungan & babble ±9 bulan; pull to stand, pincer, "mama/baba" ±12 bulan; konsultasikan dokter bila tonggak tertinggal.
-- Keamanan transversal untuk semua aktivitas bayi: supervisi dewasa, area bebas tali/kabel, lantai bukan permukaan tinggi, tidur telentang di tempat aman saat mengantuk.
+- Tonggak CDC pemandu umum (bukan target): duduk & babble ±9 bulan; pull to stand, pincer, "mama/baba" ±12 bulan; konsultasi dokter bila tertinggal.
+- Keamanan lintas aktivitas: supervisi dewasa, area bebas tali/kabel, main di lantai bukan permukaan tinggi, tidur telentang saat mengantuk.
 
 ## Referensi
 
 1. CDC — Developmental Milestones (index): https://www.cdc.gov/NCBDDD/actearly/milestones/index.html
 2. CDC — Milestones by 9 Months: https://www.cdc.gov/act-early/milestones/9-months.html
-3. CDC — Milestone Moments Booklet (2021, PDF): https://www.cdc.gov/ncbddd/actearly/pdf/parents_pdfs/MilestoneMomentsEng508.pdf
+3. CDC — Milestone Moments Booklet (2021): https://www.cdc.gov/ncbddd/actearly/pdf/parents_pdfs/MilestoneMomentsEng508.pdf
 4. AAP HealthyChildren — How to Keep Your Sleeping Baby Safe: https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/A-Parents-Guide-to-Safe-Sleep.aspx
 5. AAP HealthyChildren — Back to Sleep, Tummy to Play: https://www.healthychildren.org/English/ages-stages/baby/sleep/Pages/back-to-sleep-tummy-to-play.aspx
 6. AAP HealthyChildren — Baby-Led Weaning: Is It Safe?: https://www.healthychildren.org/English/ages-stages/baby/feeding-nutrition/Pages/baby-led-weaning-is-it-safe.aspx
@@ -362,11 +362,11 @@ Menjelang tahun pertama, CDC mencatat bayi umumnya menarik diri ke berdiri, berj
 8. NHS — Foods to avoid giving babies and young children: https://www.nhs.uk/baby/weaning-and-feeding/foods-to-avoid-giving-babies-and-young-children/
 9. CDC — Choking Hazards (Infant and Toddler Nutrition): https://www.cdc.gov/infant-toddler-nutrition/foods-and-drinks/choking-hazards.html
 10. WHO Europe — Physical activity (fact sheet): https://www.who.int/europe/news-room/fact-sheets/item/physical-activity
-11. WHO — Guidelines on physical activity, sedentary behaviour and sleep for children under 5 (PDF): https://iris.who.int/bitstream/handle/10665/325147/WHO-NMH-PND-2019.4-eng.pdf
+11. WHO — Guidelines on Physical Activity, Sedentary Behaviour and Sleep (under 5): https://iris.who.int/bitstream/handle/10665/325147/WHO-NMH-PND-2019.4-eng.pdf
 12. Berkshire Montessori — Materials Spotlight: Montessori Mobiles: https://www.berkshiremontessori.org/msb-blog/materials-spotlight-montessori-mobiles
 13. Berkshire Montessori — Montessori at Home: The Baby's Room: https://www.berkshiremontessori.org/msb-blog/montessori-at-home-the-babys-room
 14. Guidepost Montessori — Montessori for Babies: A Complete Beginner's Guide: https://guidepostmontessori.com/blog/montessori-for-babies-complete-beginners-guide/
 15. The Kavanaugh Report — Supporting Hand to Hand Transfers: https://www.thekavanaughreport.com/2020/02/hand-to-hand-transfers-montessori-baby.html
 16. Montessori for Today — Best Montessori Activities for Babies 3–6 Months: https://montessorifortoday.com/the-best-montessori-activities-for-babies-3-6-months/
-17. Playgroup NSW — Heuristic Treasure Baskets (PDF): https://www.playgroup.org.au/wp-content/uploads/2020/09/Heuristic-treasure-baskets-babyplaygroup.pdf
-18. AAP — Screen Time for Infants (Q&A portal): https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/qa-portal/qa-portal-library/qa-portal-library-questions/screen-time-for-infants/
+17. Playgroup NSW — Heuristic Treasure Baskets: https://www.playgroup.org.au/wp-content/uploads/2020/09/Heuristic-treasure-baskets-babyplaygroup.pdf
+18. AAP — Screen Time for Infants: https://www.aap.org/en/patient-care/media-and-children/center-of-excellence-on-social-media-and-youth-mental-health/qa-portal/qa-portal-library/qa-portal-library-questions/screen-time-for-infants/

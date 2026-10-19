@@ -1,0 +1,217 @@
+[
+  {
+    "id": "mile-34y-lompat-kaki-satu",
+    "title": "Mulai melompat dengan satu kaki",
+    "ageBand": "3-4y",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak di usia ini sudah mampu mendarat dua kaki saat melompat dan mulai mencoba berdiri atau melompat sebentar dengan satu kaki, umumnya sambil memegang tangan dewasa atau dinding.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Anak masih sangat sulit melompat kedua kaki hingga mendekati usia 4 tahun dan tampak tidak nyaman bergerak aktif"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      },
+      {
+        "title": "HealthyChildren Motor Play",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-tangga-mandiri",
+    "title": "Naik-turun tangga lebih percaya diri",
+    "ageBand": "3-4y",
+    "domain": "motorik-kasar",
+    "description": "Anak umumnya kini bisa naik dan turun tangga dengan pola kaki bergantian atau berpegangan, tanpa perlu diangkat orang dewasa setiap anak tangga.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Kaku atau tidak seimbang saat berjalan, mudah tersandung terus-menerus dibanding teman seusianya"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-lari-berbalik-arah",
+    "title": "Berlari dan mengubah arah",
+    "ageBand": "3-4y",
+    "domain": "motorik-kasar",
+    "description": "Lari dengan tubuh lebih stabil, mampu memperlambat, berbalik arah, dan berhenti tanpa jatuh, sehingga anak makin berani bermain kejar-kejaran.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 44,
+    "redFlags": [],
+    "references": [
+      {
+        "title": "WHO Child Development",
+        "url": "https://www.who.int/health-topics/early-child-development"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-menggambar-orang",
+    "title": "Menggambar bentuk dan orang sederhana",
+    "ageBand": "3-4y",
+    "domain": "motorik-halus",
+    "description": "Genggaman pensil makin matang sehingga anak bisa menyalin lingkaran, garis, dan mulai menebalkan gambar orang berkepala-badan dua sampai empat bagian.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Sama sekali tidak menarik minat pada krayon atau pensil dan sulit memegang alat makan atau gambar hingga usia 4 tahun"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      },
+      {
+        "title": "HealthyChildren Drawing",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-gunting-lem",
+    "title": "Peka gunting dengan bimbingan",
+    "ageBand": "3-4y",
+    "domain": "motorik-halus",
+    "description": "Diawasi orang dewasa, banyak anak mampu menggunakan gunting kecil berpegangan dua jari untuk menggunting garis lurus kertas tebal.",
+    "typicalFromMonths": 38,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Terlihat sangat lemas atau sulit mengontrol gerakan tangan kecil dibandingkan teman sebayanya"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-kalimat-panjang",
+    "title": "Berbicara kalimat 4-6 kata",
+    "ageBand": "3-4y",
+    "domain": "bahasa",
+    "description": "Anak menggabungkan kata menjadi kalimat yang lebih panjang untuk bercerita, bertanya, dan meminta hal spesifik, dengan ujaran yang makin jelas meski belum sempurna.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Masih berbicara satu atau dua kata saja pada usia 4 tahun",
+      "Orang luar rumah hampir tidak bisa memahami ujaran anak sama sekali"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      },
+      {
+        "title": "Zero to Three Language",
+        "url": "https://www.zerotothree.org/early-learning/language-and-literacy"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-cerita-kenapa",
+    "title": "Suka cerita dan bertanya kenapa",
+    "ageBand": "3-4y",
+    "domain": "bahasa",
+    "description": "Anak mampu mendengar dongeng pendek dengan baik, memahami urutan kejadian sederhana, dan sering menanyakan mengapa atau bagaimana tentang hal di sekitarnya.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Tidak menunjukkan minat pada cerita maupun bercakap-cakap bersama orang dewasa"
+    ],
+    "references": [
+      {
+        "title": "Zero to Three Language",
+        "url": "https://www.zerotothree.org/early-learning/language-and-literacy"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-bermain-pura-pura",
+    "title": "Bermain pura-pura makin beragam",
+    "ageBand": "3-4y",
+    "domain": "kognitif",
+    "description": "Anak membangun cerita imajinasi yang panjang, misalnya berdokter-dokteran atau memasak-masakan, kadang mengambil peran kepala keluarga, guru, atau superhero.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Hampir tidak pernah menunjukkan perilaku bermain pura-pura hingga usia 4 tahun"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-warna-berhitung",
+    "title": "Mengenal warna dan menghitung mulai benar",
+    "ageBand": "3-4y",
+    "domain": "kognitif",
+    "description": "Banyak anak mulai menunjuk warna saat ditanya, menghitung benda satu sampai tiga dengan tepat, dan memahami konsep banyak-sedikit atau besar-kecil.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Masih belum bisa menyebut satu warna apa pun saat mendekati usia 4 tahun"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      },
+      {
+        "title": "HealthyChildren Cognitive",
+        "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-bermain-bergantian",
+    "title": "Bermain bersama dan bergantian",
+    "ageBand": "3-4y",
+    "domain": "sosial-emosional",
+    "description": "Bermain antar anak kini benar-benar interaktif, termasuk menunggu giliran, menawarkan mainan ke teman, dan tampil di depan orang lain meski kadang masih malu-malu.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [
+      "Tidak tertarik berinteraksi dengan anak lain sama sekali dan tidak menanggapi nama dipanggil"
+    ],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      },
+      {
+        "title": "Zero to Three Social Emotional",
+        "url": "https://www.zerotothree.org/early-learning/social-emotional-development"
+      }
+    ]
+  },
+  {
+    "id": "mile-34y-pakaian-sendiri",
+    "title": "Membuka dan memasang pakaian sendiri",
+    "ageBand": "3-4y",
+    "domain": "self-help",
+    "description": "Anak makin mandiri membuka kancing besar, melepas celana atau baju, lalu mencoba memasangnya kembali dengan bantuan kecil dari orang dewasa.",
+    "typicalFromMonths": 36,
+    "typicalToMonths": 48,
+    "redFlags": [],
+    "references": [
+      {
+        "title": "CDC Milestones",
+        "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+      }
+    ]
+  }
+]

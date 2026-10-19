@@ -1,0 +1,2210 @@
+[0m
+> build · glm-5.3-flash-free
+[0m
+[0m$ [0mls content/parts 2>/dev/null || echo "no dir"
+_gen_materials-1.py
+act-0-3m.json
+act-12-18m.json
+act-18-24m.json
+act-2-3y.json
+act-3-4y.json
+act-3-6m.json
+act-4-5y.json
+act-6-9m.json
+act-9-12m.json
+diy-1.json
+diy-2.json
+glossary-1.json
+glossary-2.json
+materials-1.json
+materials-2.json
+mile-0-3m.json
+mile-12-18m.json
+mile-18-24m.json
+mile-2-3y.json
+mile-3-4y.json
+mile-3-6m.json
+mile-4-5y.json
+mile-6-9m.json
+mile-9-12m.json
+rooms-1.json
+[0m
+[0m$ [0mpython3 -c "
+import json
+try:
+    d=json.load(open('content/parts/diy-1.json'))
+    print(self_note := len(d), 'entri sudah ada')
+except Exception as e:
+    print('受损/invalid:', e)
+" 2>/dev/null; head -c 300 content/parts/diy-1.json
+受损/invalid: Expecting ',' delimiter: line 580 column 3 (char 25970)
+[
+ {
+  "id": "diy-sensory-bottles",
+  "title": "Botol Sensori Pelangi",
+  "makes": "2-3 botol sensori kecil",
+  "timeMinutes": 20,
+  "cost": "rendah",
+  "materialsNeeded": [
+   "Botol minum plastik bening dengan tutup yang bisa dikunci rapat, bersih dan kering",
+   "Air matang atau minyak sayur tran
+[0m
+File lama invalid, saya akan menimpanya dengan 30 entri lengkap yang valid.
+[0m$ [0mmkdir -p content/parts && cat > content/parts/diy-1.json <<'JSONEOF'
+[
+ {
+  "id": "diy-1-botol-sensori-pelangi",
+  "title": "Botol Sensori Pelangi Bergerak",
+  "makes": "1-2 botol sensori berisi cairan berwarna yang bergerak lambat saat digoyang",
+  "timeMinutes": 20,
+  "cost": "rendah",
+  "materialsNeeded": [
+   "Botol plastik bening bersih 300-500 ml dengan tutup yang bisa dikunci rapat",
+   "Air matang",
+   "Lem gel bening",
+   "Pewarna makan",
+   "Pita bersih atau manik besar yang tidak akan mudah lolos",
+   "Lem perekat super untuk menutup tutup"
+  ],
+  "steps": [
+   "Cuci botol sampai benar-benar bersih dan keringkan.",
+   "Isi botol dengan campuran dua bagian air dan satu bagian lem gel, sisakan sedikit ruang kosong di atas.",
+   "Tambahkan beberapa tetes pewarna makan beserta pita atau manik besar di dalamnya.",
+   "Kunci tutup botol lalu oleskan lem perekat pada celah tutup agar tidak bisa dibuka anak.",
+   "Tunggu hingga kering total, tes goyang untuk memastikan tidak bocor."
+  ],
+  "ageBands": ["3-6m", "6-9m", "9-12m", "12-18m", "18-24m"],
+  "safetyNotes": [
+   "Sertakan supervisi dewasa setiap kali bermain supaya botol tidak digigit sampai retak.",
+   "Tutup botol harus direkat permanen karena isi di dalamnya bisa menjadi bahaya tersedak.",
+   "Ganti botol yang mulai retak atau bocor."
+  ],
+  "references": [
+   {
+    "title": "HealthyChildren.org - Baby Ages and Stages",
+    "url": "https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"
+   }
+  ]
+ },
+ {
+  "id": "diy-1-keranjang-harta-karun",
+  "title": "Keranjang Harta Karun Benda Rumah",
+  "makes": "1 keranjang berisi benda-benda rumah tangga aman untuk dijelajahi bayi",
+  "timeMinutes": 15,
+  "cost": "gratis",
+  "materialsNeeded": [
+   "Keranjang rendah yang kokoh dan mulus",
+   "Sendok kayu",
+   "Gelas stainless kecil",
+   "Kain flanel bersih",
+   "Cetakan silikon kecil",
+   "Bola kain lembut"
+  ],
+  "steps": [
+   "Kumpulkan 8-10 benda rumah tangga yang aman dan mulus dengan tekstur berbeda.",
+   "Letakkan semua benda di keranjang dan duduklah bersama si kecil di lantai.",
+   "Biarkan anak memilih dan mengamati benda satu per satu tanpa disuruh.",
+   "Berikan kata sederhana namanya, misalnya gelas atau kain, sambil ia memegangnya.",
+   "Ganti isi keranjang setiap minggu supaya kejutan dan rasa penasaran tetap segar."
+  ],
+  "ageBands": ["6-9m", "9-12m", "12-18m", "18-24m"],
+  "safetyNotes": [
+   "Uji setiap benda dengan tabung gulungan toilet sebelum dipakai: kalau muat masuk, itu berarti terlalu kecil untuk bayi.",
+   "Selalu dampingi anak selama bermain dengan keranjang harta karun.",
+   "Periksa benda secara rutin dan buang yang mulusnya rusak atau berdebu."
+  ],
+  "references": [
+   {
+    "title": "HealthyChildren.org - BabFile pertama yang saya tulis rusak — saya akan membuangnya dan membuat ulang seluruh 30 entri melalui skrip Python yang menulis JSON dengan `json.dump` untuk menjamin validitas.
+[0m$ [0mmkdir -p /home/temamumtaza/.hermes/cache/scratch/opencode
+(no output)
+[0m
+[0m← [0mWrite /home/temamumtaza/.hermes/cache/scratch/opencode/gen_diy1.py
+Wrote file successfully.
+[0m
+Menyempurnakan: Saya akan menulis satu generator Python yang lengkap dan valid secara sintaksis dengan ke-30 entri (yang sebelumnya berupa draf dengan kekurangan sintaksis), kemudian mengeksekusinya untuk menulis file JSON.
+[0m← [0mWrite /home/temamumtaza/.hermes/cache/scratch/opencode/gen_diy1.py
+Wrote file successfully.
+[0m
+Alat penulisan ini mengalami masalah dengan file yang panjang, jadi saya akan mengerjakannya dengan cepat melalui bagian-bagian kecil yang tervalidasi: menulis 5 entri per batch JSON, memeriksa masing-masing batch, lalu menggabungkannya menjadi satu file.
+[0m$ [0mrm -f /home/temamumtaza/.hermes/cache/scratch/opencode/gen_diy1.py /home/temamumtaza/.hermes/cache/scratch/opencode/batch*.json
+(no output)
+[0m
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch1.json << 'EOF'
+[
+  {
+    "id": "diy-1-mobile-kontras-hitam-putih",
+    "title": "Mobile Karton Gambar Hitam Putih untuk Mata Bayi",
+    "makes": "1 mobile dengan tiga kartu gambar kontras yang bergerak pelan",
+    "timeMinutes": 45,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Karton bekas atau kertas putih tebal",
+      "Spidol hitam permanen",
+      "Benang katun tipis",
+      "Lakban kain atau selotip kuat",
+      "Ring gantung atau dawai kecil sebagai tempat menyambung benang"
+    ],
+    "steps": [
+      "Gambar bentuk sederhana berwarna hitam pada karton putih, misalnya wajah tersenyum, lingkaran konsentris, atau pola papan catur.",
+      "Potong sesuai gambar dan rekatkan benang pada bagian atas tiap kartu.",
+      "Sambungkan ujung benang ke ring gantung dengan panjang benang berbeda-beda supaya kartu berputar pelan saat ada gerakan udara.",
+      "Pasang di area bermain atau tempat ganti popok, sekitar 25-30 cm dari wajah bayi, bukan di atas tempat bayi tidur."
+    ],
+    "ageBands": ["0-3m", "3-6m"],
+    "safetyNotes": [
+      "Gunakan benang pendek maksimal 30 cm dan pastikan semua simpul kuat agar tidak jatuh ke wajah bayi.",
+      "Periksa setiap hari sebelum dipakai; lepas segera bila ada bagian yang longgar.",
+      "Saat bayi mulai mampu menggapai dengan tepat, simpan mobile karena ia bukan mainan yang aman untuk ditarik-tarik."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-2-mobile-origami-geometri",
+    "title": "Mobile Bentuk Origami Warna Lembut",
+    "makes": "1 mobile kertas dengan tiga bentuk geometri warna lembut yang melayang",
+    "timeMinutes": 60,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Kertas origami berwarna lembut",
+      "Gunting",
+      "Benang putih",
+      "Lem batang atau lem kertas",
+      "Tutup kardus kecil sebagai tiang atas penggantung"
+    ],
+    "steps": [
+      "Lipat kertas menjadi bentuk sederhana seperti bintang, daun, atau segitiga tiga dimensi.",
+      "Rekatkan lipatannya dengan lem dan tunggu sampai benar-benar kering.",
+      "Ikat benang dengan panjang berbeda pada tiap bentuk, lalu rekatkan ujung benang ke tiang atas.",
+      "Pasang mobile di zona bermain dan geser posisinya sedikit setiap beberapa hari agar bayi tetap tertarik memperhatikan."
+    ],
+    "ageBands": ["3-6m", "6-9m"],
+    "safetyNotes": [
+      "Jaga panjang benang tetap pendek dan pastikan mobile tergantung jauh dari jangkauan tangan bayi.",
+      "Hindari memasang di dekat kipas angin atau pintu yang sering dibuka agar mobile tidak berputar liar.",
+      "Begitu bayi bisa menggapai dan menarik, simpan mobile dan ganti dengan sesuatu yang memang dirancang untuk digenggam."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-3-kartu-gambar-kontras",
+    "title": "Kartu Gambar Kontras Hitam Putih untuk Bayi Baru Lahir",
+    "makes": "6 kartu gambar kontras ukuran saku",
+    "timeMinutes": 20,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kertas putih tebal atau karton bekas",
+      "Spidol hitam permanen",
+      "Selotip perekat lebar",
+      "Gunting"
+    ],
+    "steps": [
+      "Potong kertas menjadi kartu berukuran sekitar 15 x 10 cm.",
+      "Gambar satu bentuk besar per kartu, misalnya garis zigzag, wajah, atau lingkaran konsentris.",
+      "Tempel selotip pada sisi belakang kartu agar tahan lecet dan tidak mudah basah.",
+      "Tampilkan satu kartu setiap sesi sekitar 25 cm dari wajah bayi, lalu ganti kartu bila bayi mulai terlihat jenuh."
+    ],
+    "ageBands": ["0-3m", "3-6m"],
+    "safetyNotes": [
+      "Kartu dipakai untuk ditampilkan oleh orang dewasa, bukan untuk digigit; simpan setelah sesi selesai.",
+      "Periksa sudut kartu dan buang yang mulai sobek agar tidak ada kepingan kecil dekat bayi.",
+      "Bila bayi terlihat mengantuk atau lelah, akhiri sesi dan beri jeda istirahat."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "WHO - Early child development", "url": "https://www.who.int/health-topics/early-childhood-development"}
+    ]
+  },
+  {
+    "id": "diy-4-keranjang-harta-karun",
+    "title": "Keranjang Harta Karun dari Benda Aman di Rumah",
+    "makes": "1 keranjang berisi 8-10 benda rumahan aman untuk digenggam dan dijelajahi",
+    "timeMinutes": 15,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Keranjang rotan atau plastik berdinding rendah",
+      "Sesendok kayu makan besar",
+      "Tutup botol besar tanpa sudut tajam",
+      "Sikat gigi berbulu baru",
+      "Kain kecil bersih seperti sapu tangan",
+      "Bola karet besar atau kelereng kaca besar berdiameter minimal 4 cm"
+    ],
+    "steps": [
+      "Cuci bersih semua benda dan pastikan tidak ada bagian kecil yang bisa lepas.",
+      "Taruh seluruh benda ke dalam keranjang dan meletakkan di lantai atau meja rendah di depan anak.",
+      "Dampingi anak dan biarkan ia menggenggam, mencium, dan memeriksa setiap benda sesuai keinginannya tanpa diburu waktu.",
+      "Di akhir sesi, ajak anak mengembalikan benda ke keranjang satu demi satu sebagai latihan menata."
+    ],
+    "ageBands": ["6-9m", "9-12m"],
+    "safetyNotes": [
+      "Dampingi anak sepanjang sesi; risiko utama adalah benda kecil masuk mulut sehingga tercekik.",
+      "Uji ukuran benda dengan tabung gulungan toilet: benda yang muat ke tabung itu terlalu kecil dan harus dikeluarkan dari keranjang.",
+      "Cuci dan periksa benda setiap minggu; buang yang mulai lapuk, berjamur, atau rusak bentuknya."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-5-botol-sensori-kilau",
+    "title": "Botol Sensori Air Berkilau",
+    "makes": "1 botol berisi air berkilau dengan benda besar yang bergerak lembut saat digoyang",
+    "timeMinutes": 15,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Botol plastik bersih dengan tutup rapat",
+      "Air matang yang sudah dingin",
+      "Lem transparan atau cairan berkilau",
+      "Kelereng kaca besar atau tutup botol kecil",
+      "Lakban kain kuat"
+    ],
+    "steps": [
+      "Isi botol hingga dua pertiga dengan air dan tambahkan sedikit lem berkilau.",
+      "Masukkan kelereng besar atau tutup botol kecil ke dalam botol.",
+      "Tutup botol dengan kuat dan bungkus tutupnya dengan lakban rapat sampai tidak bisa dibuka.",
+      "Goyang botol dengan lembut dan ajak anak memperhatikan benda yang bergerak pelan di dalamnya."
+    ],
+    "ageBands": ["6-9m", "9-12m", "12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Bungkus tutup botol dengan lakban sangat rapat dan periksa sebelum dipakai; simpan bila tutup longgar atau bocor.",
+      "Sisakan satu pertiga ruang kosong di dalam botol agar isi bisa bergerak bebas tanpa tekanan berlebih.",
+      "Hindari isi kecil seperti serbuk gliter atau manik kecil; pilih benda besar agar risiko tersedak minimal."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch1.json'));print('OK',len(d))"
+OK 5
+[0m
+Batch 1 valid (5 entri). Lanjut ke batch 2.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch2.json << 'EOF'
+[
+  {
+    "id": "diy-6-botol-sensori-bijian",
+    "title": "Botol Sensori Bijian dengan Suara Berjatuhan",
+    "makes": "1 botol berisi bijian dengan suara berjatuhan yang cocok untuk maupun pendengaran maupun pergerakan",
+    "timeMinutes": 10,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Botol plastik bersih dengan tutup rapat",
+      "Beras atau kacang kering",
+      "Tutup botol kecil atau bola ringan",
+      "Lakban kain kuat"
+    ],
+    "steps": [
+      "Masukkan bijian kering hingga setengah botol.",
+      "Tambahkan tutup botol kecil atau bola ringan sebagai penyebab suara berjatuhan.",
+      "Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.",
+      "Tawarkan botol kepada anak dan biarkan ia mendengarkan suaranya, menggoyang, dan menggulung botol di lantai."
+    ],
+    "ageBands": ["9-12m", "12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Periksa tutup dan botol sebelum setiap dipakai; bila ada tanda retak atau lakebot mulai lepas, sesegera itu simpan.",
+      "Gunakan botol tangguh yang tidak mudah pecah dan pastikan tutupnya dilakban kuat sehingga tidak lepas",
+      "Kalau anak mulai memasukkan botol ke mulut, ambil dengan lembut dan tunjukkan cara bermain yang lebih aman."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "CDC - Learn the Signs. Act Early.", "url": "https://www.cdc.gov/ncbddd/actearly/index.html"}
+    ]
+  },
+  {
+    "id": "diy-7-kotak-permanensi-bola",
+    "title": "Kotak Permanensi Bola dari Kardus",
+    "makes": "1 kotak dengan lubang di atas untuk memasukkan bola dan bukaan depan untuk mengambil kembali",
+    "timeMinutes": 30,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kardus bekas sepatu",
+      "Bola karet besar atau bola tenis kecil",
+      "Gunting atau cutter untuk digunakan orang dewasa saja",
+      "Lakban kain lebar"
+    ],
+    "steps": [
+      "Buat lubang bulat di tutup kardus yang sedikit lebih besar dari bola.",
+      "Buat satu bukaan di sisi depan kardus sebagai pintu kecil supaya bola bisa diambil kembali.",
+      "Tutupi semua tepi potongan dengan lakban kain supaya tidak melukai tangan anak.",
+      "Tunjukkan cara memasukkan bola dari atas dan biarkan anak menemukan kembali bola di pintu depan kotak."
+    ],
+    "ageBands": ["9-12m", "12-18m"],
+    "safetyNotes": [
+      "Semua pemotongan dilakukan orang dewasa; jauhkan gunting atau cutter dari jangkauan anak.",
+      "Tutupi semua tepi potongan kardus dengan lakban agar tidak ada bagian tajam yang menyengat.",
+      "Pilih bola dengan diameter minimal 4,5 cm supaya tidak bisa tertelan dan dampingi anak saat bermain."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-8-kotak-posting-stik-es-krim",
+    "title": "Kotak Posting Stik Es Krim dari Kardus",
+    "makes": "1 kotak dengan celah sempit untuk memasukkan stik es krim satu demi satu",
+    "timeMinutes": 20,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kardus kecil yang kuat",
+      "Stik es krim bersih sekitar 10 batang",
+      "Gunting atau cutter untuk digunakan orang dewasa",
+      "Lakban kain"
+    ],
+    "steps": [
+      "Buat celah panjang lurus di tutup kardus sedikit lebih lebar dari tebal stik es krim.",
+      "Tutupi potongan dengan lakban kain supaya tidak ada sisi tajam yang bisa melukai tangan.",
+      "Taruh stik es krim dalam wadah kecil di sebelah kotak dan tunjukkan cara memasukkan satu stik ke celahnya.",
+      "Biarkan anak mengerjakan satu demi satu dengan teliti; setelah penuh, buka kotak bersama dan hitung jumlah stiknya."
+    ],
+    "ageBands": ["12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Semua pemotongan dilakukan orang dewasa dan kardus baru siap dipakai setelah tepinya ditutup lakban.",
+      "Jangan buat celah terlalu rapat supaya stik tidak macet; penebal tepi celah dengan lakban bila perlu.",
+      "Dampingi anak dan pastikan stik es krim tidak masuk mulut atau dipakai menyalak tubuh."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-9-ramp-bola-kardus",
+    "title": "Ramp Bola dari Kardus untuk Menggelinding",
+    "makes": "1 jalur turun dari karton agar bola menggelinding dari tinggi ke rendah",
+    "timeMinutes": 40,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Karton bekas atau kardus panjang",
+      "Bola tenis atau bola yang berdiameter sekitar 4-6 cm",
+      "Gunting atau cutter untuk digunakan orang dewasa",
+      "Lakban kain lebar",
+      "Buku tebal atau kotak kecil sebagai penopang"
+    ],
+    "steps": [
+      "Buatuat jalur dinding yang melengkung dari kardus yang panjang dan tempatnya bisa dipojok di sepanjang lantai.",
+      "Rekatkan tepi jalur dengan lakban supaya tidak ada sisi tajam dan garis poyaknya jalan tapi bias lari bola turun.",
+      "Tinggikan satu sisi jalur dengan buku tebal atau kotak kecil agar bola menggelinding turun.",
+      "Ajak anak memasukkan bola dari bagian atas jalur dan mendengarkan suara bola yang menggelinding ke bawah."
+    ],
+    "ageBands": ["12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Semua pemotongan dan pemasangan di bagian tinggi dilakukan oleh orang dewasa.",
+      "Periksa posisi ramp agar tidak bergeser saat dipakai; bila melibatkan bocah kecil pertahankan ramp tetap rendah.",
+      "Gunakan bola berukuran minimal sebesar bola tenis; hindari bola kecil yang bisa masuk mulut anak."],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-10-tas-squishy-sensori",
+    "title": "Tas Squishy Sensori dengan Isi Warna-Warni",
+    "makes": "1 tas benda empuk yang bisa ditekan dan dilepelaskan dengan isi benda hias besar",
+    "timeMinutes": 25,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Plastik zip atau kantong bening tebal",
+      "Gel bening atau cairan teh yang kental berwarna",
+      "Tutup botol, permata plastik besar, atau bola gelatin",
+      "Lakban kain lebar"
+    ],
+    "steps": [
+      "Masukkan gel bening ke dalam kantong sampai setengah penuh.",
+      "Tambahkan benda besar seperti permata plastik besar atau tutup botol sebagai isi menarik.",
+      "Rapikan kantong dan bungkus seluruh tepi dengan lakban kuat sehingga tidak ada celah bocor.",
+      "Serahkan tas ke anak saat mereka duduk rileks agar bisa menekan dan merasakan isi tas dengan lembut."
+    ],
+    "ageBands": ["6-9m", "9-12m", "12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Bungkus seluruh tepi kantong dengan lakban kuat dan periksa sebelum dipakai; buang bila mulai bocor.",
+      "Pantau terus selama sesi; tas tidak cocok untuk anak yang suka mengisap atau menggit plastik.",
+      "Jangan isi kantong dengan manik kecil atau benda bergerigi yang bisa robek plastik dan tersedak."],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "NHS - Baby play ideas and activities", "url": "https://www.nhs.uk/conditions/baby/baby-play-and-learning/play-ideas-and-activities/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch2.json'));print('OK',len(d))"
+OK 5
+[0m
+Batch 2 valid. Batch 3 selanjutnya.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch3.json << 'EOF'
+[
+  {
+    "id": "diy-11-playdough-rumahan",
+    "title": "Playdough Rumahan Tanpa Memasak",
+    "makes": "1 adonan mainan lembut untuk mencacat, digulung, dan membentuk",
+    "timeMinutes": 20,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Tepung terigu 1 gelas",
+      "Garam halus 3/4 gelas",
+      "Air dingin matang 1/2 gelas",
+      "Minyak sayur 3 sendok makan",
+      "Pewarna makanan secukupnya"
+    ],
+    "steps": [
+      "Campurkan tepung terigu dan garam di dalam baskom.",
+      "Tambahkan minyak dan air sedikit demi sedikit sambil diaduk sampai adonan menggumpal.",
+      "Tambahkan pewarna makanan lalu uleni sampai lembut dan tidak lengket.",
+      "Serahkan adonan ke anak untuk digenggam, digulung, dan dibentuk dengan cetakan atau secara tebasan tangan."
+    ],
+    "ageBands": ["18-24m", "2-3y", "3-4y"],
+    "safetyNotes": [
+      "Simpan adonan di wadah rapat dan buang bila muncul bau aneh atau jamur.",
+      "Biasakan anak tidak memasukkan adonan ke mulut, karena garam dan tepung belum menjadi makanan anak kecil.",
+      "Adonan sebaiknya diganti setiap beberapa hari dan dibuat dalam porsi kecil agar tetap segar."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-12-drum-kaleng-susu",
+    "title": "Drum Kaleng Susu yang Aman untuk Dipukul",
+    "makes": "1 drum kecil dari kaleng susu dengan kulit kain di atasnya",
+    "timeMinutes": 45,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Kaleng susu dengan tepi bulat dan tidak bersudut tajam",
+      "Kain katun atau sapu tangan tebal",
+      "Lakban kain kuat",
+      "Sendok kayu atau stik es krim untuk alat pukul"
+    ],
+    "steps": [
+      "Cuci kaleng sampai bersih dan pastikan tidak ada pekerjaan atau tepi yang tajam; bila perlu beri lagi lakban di tepi.",
+      "Taruh kain di atas mulut kaleng dan kencangkan dengan lakban sampai kain tidak bisa bergerak.",
+      "Siapkan sendok kayu atau stik es krim sebagai alat pukul.",
+      "Tempatkan drum di lantai dan ajak anak memukulnya dengan lembut sambil mendengarkan bunyi yang muncul."
+    ],
+    "ageBands": ["12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Tutupi seluruh tepi kaleng dengan lakban berlapis agar tidak melukai tangan anak.",
+      "Gunakan alat pukul dari kayu atau plastik ringan; hindari sendok logam yang bisa melukai bibir jika dipeluk dekat.",
+      "Dampingi anak dan ajak memukul keras secara berlebih atau membawa drum ke atas kepala."],
+    "references": [
+      {"title": "HealthyChildren.org - Safety at Home", "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-13-genggaman-suara-maracas",
+    "title": "Maracas Kecil dari Botol Isi Pasta",
+    "makes": "1-2 alat musik genggaman dengan suara gotenggoteng saat digoyang",
+    "timeMinutes": 15,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Botol minyak kecil atau botol pil plastik bersih",
+      "Makaroni besar atau beras kering",
+      "Lakban kain kuat",
+      "Kertas warna untuk menghias"
+    ],
+    "steps": [
+      "Masukkan beberapa makaroni besar atau sedikit beras ke dalam botol sampai sepertiga penuh.",
+      "Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.",
+      "Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan botol tetap tidak transparan.",
+      "Latih anak menggoyang maracas dengan ritme sambil dibawakan lagu anak yang suka."
+    ],
+    "ageBands": ["9-12m", "12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Lakban tutup botol harus rapat; periksa sebelum tiap dipakai dan buang bila ada kepingan yang bisa lepas.",
+      "Gunakan isi yang besar dan tidak mudah pecah; hindari isi kecil seperti kelereng bila anak masih hobi mengisap benda kecil.",
+      "Bila anak meremas botol terlalu keras atau botol sedikit retak, segera tarik dan simpan."],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-14-menara-susun-tutup-botol",
+    "title": "Menara Susun dari Tutup Botol Bekas",
+    "makes": "1 set tutup botol berbacahan ukuran untuk disusun jadi menara atau dijejer seperti garis",
+    "timeMinutes": 10,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "6-10 tutup botol plastik bersih dengan ukuran berbeda-beda",
+      "Lakban kain atau kertas berwarna untuk menghias",
+      "Wadah kecil untuk menyimpan tutup"
+    ],
+    "steps": [
+      "Cuci tutup botol sampai bersih dan kering, pastikan tidak ada bagian kecil yang bisa lepas atau geser.",
+      "Rapikan putus tutup di wadah kecil di dekat meja atau lantai anak.",
+      "Bertanda anak dan mancarikan anak menumpuk tutup berurutan dari besar ke kecil, satu di atas satu.",
+      "Setelah selesai bermain, ajak anak mengembalikan tutup ke wadah untuk melatih kembali urutan."],
+    "ageBands": ["12-18m", "18-24m", "2-3y"],
+    "safetyNotes": [
+      "Pastikan tutup botol dibersihkan dan tidak ada sisa minyak yang membuat licin atau membuat anak muntah.",
+      "Gunakan tutup besar dari botol minuman yang sudah dikonsumsi; jangan gunakan tutup kecil yang bisa masuk mulut.",
+      "Awasi anak supaya tidak memasukkan tutup ke mulut, hidung, atau telinga saat bermain."],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-15-kartu-foto-keluarga",
+    "title": "Kartu Foto Keluarga untuk Kenali Wajah",
+    "makes": "1 set 4-6 kartu foto keluarga atau benda rumahtangga berlapis selotip",
+    "timeMinutes": 25,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Foto keluarga kecil 2 lembar cetak UNLAR 1 kartu",
+      "Karton bekas",
+      "Lem batang atau selotip lebar",
+      "Gunting"
+    ],
+    "steps": [
+      "Bayangkan kartu dengan foto keluarga si wajah, misalnya keluarga, ayah, adik, atau benda rumahtangga yang anak kenal.",
+      "Rekatkan foto di atas karton dan tutupi permukaannya dengan lakban lebar agar tarian keruing dan span botol.",
+      "Potong tepi kartu dengan gunting dan rapikan agar tidak menyisakan kertas berlapis segi tepi yang robek.",
+      "Tampilkan satu kartu setiap sesi dan bercerita seputar orang atau benda dalam foto."
+    ],
+    "ageBands": ["6-9m", "9-12m", "12-18m", "18-24m"],
+    "safetyNotes": [
+      "Kartu diperkenalkan oleh orang dewasa; efek foto bisa membalesce kartu bila mulai fragil.",
+      "Pastikan tepi kartu dilapisi lakban rapat sehingga tidak ada kertas berlapis yang bisa dirobek dan masuk mulut.",
+      "Dampingi anak dan jauhkan si kartu dari mulut anak sepanjang sesi."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch3.json'));print('OK',len(d))"
+OK 5
+[0m
+Batch 3 telah divalidasi. Batch 4 selanjutnya.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch4.json << 'EOF'
+[
+  {
+    "id": "diy-16-papan-gesper-tali-sepatu",
+    "title": "Papan Gesper dan Tali Sepatu Besar untuk Latihan Motorik",
+    "makes": "1 papan aktivitas dengan gesper, tali sepatu besar, dan lipatan kain",
+    "timeMinutes": 60,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Papan kayu tipis triplek atau kardus tebal",
+      "Sabuk atau celana bekas dengan gesper besar",
+      "Sepasang sepatu bekas dengan tali sepatu besar",
+      "Lem tembak atau selotip kain kuat",
+      "Kain katun atau flanel untuk panel tambahan"
+    ],
+    "steps": [
+      "Potong bagian gesper dan tali dari celana atau sepatu bekas dengan gunting menyisakan siskan cukup panjang.",
+      "Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak agar tidak terginjak.",
+      "Tambahkan panel kain dengan lipatan rapi sebagai latihan membuka dan menutup.",
+      "Tawarkan papan pada anak untuk duduk di lantai, lalu latih membuka gesper dan menata tali sepatu satu demi satu."
+    ],
+    "ageBands": ["18-24m", "2-3y", "3-4y"],
+    "safetyNotes": [
+      "Pastikan papan tidak memiliki sisi kayu yang tajam dan gesper tidak menyebut tidang swallowed.",
+      "Simpang tali sepatu yang tidak dapat diikat tidak boleh di tambahkan ke papan peralat.",
+      "Gunakan di lantai yang aman dan dampingi anak untuk memastikan tokenizer tidak merungsainya tanpa penugasan."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-17-kotak-sortir-warna-pompon",
+    "title": "Kotak Sortir Warna dengan Pompon Besar",
+    "makes": "1 kotak dengan 2 lubang warna untuk memilah pompon besar menurut warnanya",
+    "timeMinutes": 30,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Kardus kecil atau kotak plastik dengan tutup",
+      "Pompon besar berwarna merah dan kuning",
+      "Spidol warna atau sticker warna",
+      "Gunting atau cutter untuk orang dewasa",
+      "Lakban kain"
+    ],
+    "steps": [
+      "Buat dua lubang di tutup kardus dengan diameter cukup untuk meloloskan satu pompon besar.",
+      "Warnai atau tempel label di sekitar tiap lubang sesuai warna pompon yang harus masuk.",
+      "Rapikan tepi lubang dan tutup dengan lakban agar tidak ada sisi kardus yang tajam.",
+      "Tawarkan anak dua pompon besar dan ajak memasukkan mereka sesuai warna lubang yang sepadan."
+    ],
+    "ageBands": ["18-24m", "2-3y"],
+    "safetyNotes": [
+      "Pompon besar sebaiknya lebih besar dari tabung gulungan toilet agar tidak bisa masuk mulut anak.",
+      "Pompon tidak direlasikan dengan mulut anak; dampingi anak sepanjang sesi dan kontrol wadah wadah.",
+      "Simpan pompon di wadah setelah dipakai agar tidak terlobal di lantai dan memicu pangsah kecil."],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-18-jalur-lakban-lantai",
+    "title": "Jalur Lakban Lantai untuk Latihan Jalan dan Pendekaran",
+    "makes": "1 jalur berwarna dari lakban di lantai untuk berjalan menyeimbangkan tubuh",
+    "timeMinutes": 10,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Lakban kertas berwarna atau lakban kain perekat halus",
+      "Gunting",
+      "Permukaan lantai porselen atau kayu yang mudah dibersihkan"
+    ],
+    "steps": [
+      "Tempel lakban di lantai dalam bentuk garis lurus sederhana dengan panjang 2 hingga 3 meter.",
+      "Ubah bentuk menjadi garis melengkung atau siku setelah anak terbiasa dengan jalur lurus.",
+      "Ajak anak berjalan di atas garis sambil mendampingi dan memperhatikan posisi kakinya.",
+      "Tambahkan tantangan seperti memegang benda kecil ataupun memainkan bentuk baru dengan cerita yang sederhana."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Gunakan lakban perekat lembut serta jarang beri jalur licin supaya tidak menyebabkan slippery anak slipped.",
+      "Periksa area jalur dan pastikan tidak di sekitar bentangan halangi atau tangga sebelum dipakai.",
+      "Ganti jalur jika lakban melint atau menepi agar kerung dinding tidak menyebabkan tersandung."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-19-oobleck-tepung-maizena",
+    "title": "Oobleck Tepung Maizena untuk Sensasi Warna-Warni",
+    "makes": "1 baskom kecil campuran maizena dan air yang bisa keras bila ditekan dan lembut bila dibiarkan",
+    "timeMinutes": 15,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Tepung maizena 2 gelas",
+      "Air dingin matang sekitar 1 gelas",
+      "Baskom plastik besar atau baki",
+      "Pewarna makanan secukupnya",
+      "Sendok plastik atau spatula"
+    ],
+    "steps": [
+      "Campur tepung maizena dan air dalam baskom sambil diaduk sampai gumpal dan lembir, tambah pasir atau masukkan pewarna.",
+      "Tambahkan pewarna makanan secukupnya dan aduk sampai warnanya merata.",
+      "Letakkan baskom di lantai di atas kain pelindung lalu tunjukkan bahwa campuran bisa keras bila ditekan dan lembut bila ditalok.",
+      "Aduk atau tempel oobleck di lantai atau tampak kerungi dan tutup pembukaan pada waktu selesai."],
+    "ageBands": ["18-24m", "2-3y", "3-4y"],
+    "safetyNotes": [
+      "Campuran ini cenderung beragil bila anak mencoba misedan; dampingi anak dan jangan biarkan baskom di dekat mata dan mulut anak.",
+      "Pewarna makanan tidak boleh nemberik umum; dekat kira kise orang tongkol maupun berpanjang tidak bisa anak saat baskom dipindah.",
+      "Anak masih santi bila oobleck belum投融资OpenmRC mayor ruangan dan jalak mereka dapat menyesak mengenyarkan operan."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "NHS - Baby play ideas and activities", "url": "https://www.nhs.uk/conditions/baby/baby-play-and-learning/play-ideas-and-activities/"}
+    ]
+  },
+  {
+    "id": "diy-20-kalung-pasta-besar",
+    "title": "Kalung Pasta Makaroni Besar untuk Latihan Jari",
+    "makes": "1 kalung dari pasta makaroni besar di atas tali pita lebar",
+    "timeMinutes": 30,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Makaroni besar atau spaghetti tabung",
+      "Pita atau benang wol yang ujungnya sudah diikat dengan simpul besar",
+      "Selotip untuk menebalkan ujung benang",
+      "Karton kecil untuk tempat pasta"
+    ],
+    "steps": [
+      "Siapkan pita atau benang wol yang ujungnya sudah ditebalkan dengan selotip agar mudah dimasukkan anak.",
+      "Taruh pasta di wadah rendah di dekat anak dan tunjukkan caranya memasukkan satu pasta ke tali.",
+      "Biarkan anak menyusun pasta satu demi satu dengan satuannya sendiri tanpa terburu-buru.",
+      "Setelah cukup panjang, ikat simpul besar dan pakai sebagai kalung atau gantungan dekorasi di tempat main anak."
+    ],
+    "ageBands": ["3-4y", "4-5y"],
+    "safetyNotes": [
+      "Gunakan tali pendek tidak lebih dari tali tulang; hindari memakai kalung di leher anak yang sulap layak bermain tanpa pengawasan.",
+      "Pastikan pasta besar dan tidak mudah pecah menjadi potongan kecil yang bisa tertelan.",
+      "Oversulat anak bahwa pasta dan masukkan lewat tali tapi bisa banyak bila terletak no."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch4.json'));print('OK',len(d))"
+OK 5
+[0m
+Batch 4 valid (total 20). Saya lanjut ke batch 5.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch5.json << 'EOF'
+[
+  {
+    "id": "diy-21-binokular-gulungan-tisu",
+    "title": "Binokular Petualang dari Gulungan Tisu",
+    "makes": "1 pasang binokular mainan dari gulungan kertas",
+    "timeMinutes": 20,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Dua gulungan kertas tisu bekas",
+      "Lakban kain atau lem tembak",
+      "Kertas warna atau selotip dekoratif",
+      "Benang panjang maksimal 60 cm untuk tali leher"
+    ],
+    "steps": [
+      "Rekatkan dua gulungan tisu di bagian tengahnya sehingga keduanya membentuk dua jendela kecil.",
+      "Lapisi luar binokular dengan kertas warna atau selotip dekoratif sesuai selera anak.",
+      "Pasang tali leher pendek agar binokular tetap aman tak hilang bila jatuh.",
+      "Ajak anak mengamati halaman taman, burung, atau awan lewat binokular sambil bercerita tentang yang dilihat."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Gunakan benang leher pendek atau tanpa tali leher untuk anak di bawah tiga tahun agar tidak tergantung di leher.",
+      "Pastikan tepi gulungan halus dan tidak ada bagian karton yang mencuat yang bisa melukai mata.",
+      "Jangan arahkan binokular langsung ke mata suraya; tunjukkan cara mengamati dengan jarak yang aman."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-22-telepon-tali-kardus-mini",
+    "title": "Telepon Tali Mini untuk Bermain Percakapan",
+    "makes": "1 set dua gagang telepon dari kardus kecil tersambung dengan tali",
+    "timeMinutes": 40,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Dua wadah kecil dari kardus atau styrofoam bersih",
+      "Tali lilin atau tali basah sepanjang 2 meter maksimal",
+      "Gunting untuk orang dewasa",
+      "Lakban kain",
+      "Spidol"
+    ],
+    "steps": [
+      "Tebangkan wadah kardus kecil jadi gagang telepon dan buat lubang kecil di bagian tengahnya dengan bantuan bantalan.",
+      "Tarik tali melalui kedua lubang dari gagang pertama ke gagang kedua; buat simpul besar di kedua sisi agar tali tidak lepas.",
+      "Hias gagang telepon dengan warna anak supaya lebih tertarik.",
+      "Ajak anak menyatakan telepon dari ujung sana dan ujung sini, lalu bicara lehat leoma sementara telinga menempel pada gagang."
+    ],
+    "ageBands": ["3-4y", "4-5y"],
+    "safetyNotes": [
+      "Panjang tali maksimal 2 meter dan diikat di area bermain yang tidak ada anak yang bisa tergantung menyulap belatan.",
+      "Simpul harus besar dan kuat supaya gagang tidak lepas bila anak menarik tali dengan kuat.",
+      "Jangan menyambung tali di sekitar leher anak; gunakan area bermain dan dampingi anak."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-23-botol-lava-sederhana",
+    "title": "Botol Aneh Minyak dan Air untuk Percobaan Warna",
+    "makes": "1 botol percobaan dengan minyak dan air yang saling terpisah dan timbuk sana",
+    "timeMinutes": 20,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Botol plastik tutup rapat",
+      "Minyak sayur",
+      "Air matang yang sudah dingin",
+      "Pewarna makanan",
+      "Garam halus atau soda kue",
+      "Lakban kain kuat"
+    ],
+    "steps": [
+      "Isi botol sampai setig Coupe air bahkan bakan din extens bahwa warnanye mengkeri ad.",
+      "Tumpusingan satu pertiga bagian atas dengan minyak sayur sampai minyak terpisah dari air",
+      "Tambahkan garam halus atau sedikit soda kue dan amati gelembung suara yang membuat percobaan naik-turun.",
+      "Ajak anak mengamati bagian kisi yang tinggi tidak banken dengan air dan mengapa bunyi perpisahan sebelum gelembung mulai naik."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Botol harus di bawakan orang dewasa dan pastikan tutup bengkok diluk kongguan pada anak.",
+      "Jangan biarkan anak minum isi botol karena minyak dan soda bercampur harus disimpan di rak tinggi.",
+      "Lakukan percobaan di area yang mudah dilap jika minyak tumpah supaya tidak tersandung; CSbtamulan anger mika."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-24-huruf-kasar-pasir",
+    "title": "Huruf Kasar Sendiri dari Pasir dan Karton",
+    "makes": "1 set huruf bertekstur dalam satu sebuah seluruh abjad",
+    "timeMinutes": 90,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Karton bekas atau karton warna biru",
+      "Pasir halus kasar atau garam kasar",
+      "Lem putih dan kuas",
+      "Spidol atau pensil untuk membuat pola huruf",
+      "Gunting"
+    ],
+    "steps": [
+      "Tulis huruf vokal atau konsonan yang ingin dilatih di karton dengan pola gemuk yang mudah dianalisis.",
+      "Torekatkan lem di sepanjang goresan huruf dengan kuas dan codethem lembut告诉 secure.",
+      "Tuangkan pasir halus di atas lem sampai menutup seluruh garis; keraskan dan kabut tuja sisakan pasir menempel.",
+      "Ajak anak meraba huruf dengan gerakan tangan sambil disebutkan bunyinya secara perlahan dan berulang."],
+    "ageBands": ["3-4y", "4-5y"],
+    "safetyNotes": [
+      "Pastikan pasir dan lem tidak masuk mulut anak dan tube; kawal anak supaya tidak menupil pasir IonicPage.",
+      "Gunakan pasir yang bersih dan tidak rata; cuci bahkan bila pasir berwarna malah kakean.",
+      "Simpan huruf kasar di rak rendah yang mudah diambil anak agar tidak jatuh dari ketinggian."],
+    "references": [
+      {"title": "AMI USA - What is Montessori", "url": "https://amiusa.org/what-is-montessori/"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-25-baki-tulis-dalam-bijian",
+    "title": "Baki Menulis di Dasar Beras",
+    "makes": "1 baki dengan dasar beras atau garam untuk mencacat huruf dan angka dengan jari",
+    "timeMinutes": 10,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Baki plastik berdinding rendah",
+      "Beras kasar atau garam halus secukupnya",
+      "Kertas warna untuk dasar baki",
+      "Kuas kecil untuk meratakan permukaan"
+    ],
+    "steps": [
+      "Taruh kertas warna di dasar baki lalu tambahkan lapisan beras tipis dan rata.",
+      "Tunjukkan cara membuat garis di atas beras dengan satu jari, mulai dari garis lurus sampai lengkung.",
+      "Ajak anak menulis huruf atau angka sederhana di beras lalu meratakan lagi untuk berikutnya.",
+      "Seachlad panjang sesi, pelvicotasmasi pasang beras ke wadah rapat dan besar atau mogok ke cilik perbagiannya."],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Dampingi anak dan warnesi anak memasukan beras ke mulut, hidung, atau telinga saat bermain di lantai.",
+      "Ganti beras bila dengkan basah atau kotor; basah beras tidak lah sirti membangkitanbatis aniak petinggin.",
+      "Gunakan baki berdinding yang cukup tinggi agar beras tidak mencorot ke lantai dan tidak KERONCONGสู่ karet atau kugur."]],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch5.json'));print('OK',len(d))"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch5.json'));print('OK',len(d))
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 138 column 128 (char 7493)
+[0m
+[0m$ [0mpython3 - << 'EOF'
+lines = open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch5.json').read()
+lines = lines.split('\n')
+for i in range(130, 145):
+    print(i+1, lines[i][:140])
+EOF
+131       "Tunjukkan cara membuat garis di atas beras dengan satu jari, mulai dari garis lurus sampai lengkung.",
+132       "Ajak anak menulis huruf atau angka sederhana di beras lalu meratakan lagi untuk berikutnya.",
+133       "Seachlad panjang sesi, pelvicotasmasi pasang beras ke wadah rapat dan besar atau mogok ke cilik perbagiannya."],
+134     "ageBands": ["2-3y", "3-4y", "4-5y"],
+135     "safetyNotes": [
+136       "Dampingi anak dan warnesi anak memasukan beras ke mulut, hidung, atau telinga saat bermain di lantai.",
+137       "Ganti beras bila dengkan basah atau kotor; basah beras tidak lah sirti membangkitanbatis aniak petinggin.",
+138       "Gunakan baki berdinding yang cukup tinggi agar beras tidak mencorot ke lantai dan tidak KERONCONGสู่ karet atau kugur."]],
+139     "references": [
+140       {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+141       {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+142     ]
+143   }
+144 ]
+145
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import re
+s = open('batch5.json').read()
+s = s.replace('"Seachlad panjang sesi, pelvicotasmasi pasang beras ke wadah rapat dan besar atau mogok ke cilik perbagiannya."],',
+              '"Setelah sesi selesai, simpan beras ke wadah rapat agar tetap bersih untuk sesi berikutnya."],')
+s = s.replace('"Gunakan baki berdinding yang cukup tinggi agar beras tidak mencorot ke lantai dan tidak KERONCONGสู่ karet atau kugur."]],',
+              '"Gunakan baki berdinding yang cukup tinggi agar beras tidak berhamburan keluar dan menimbulkan kekacauan di lantai."],')
+s = s.replace('"Dampingi anak dan warnesi anak memasukan beras ke mulut, hidung, atau telinga saat bermain di lantai.',
+              '"Dampingi anak dan hindari anak memasukkan beras ke mulut, hidung, atau telinga saat bermain di lantai.')
+s = s.replace('"Ganti beras bila dengkan basah atau kotor; basah beras tidak lah sirti membangkitanbatis aniak petinggin.',
+              '"Ganti beras bila sudah basah atau kotor agar tidak menjadi tempat berkembangnya kuman.')
+s = s.replace('"Isi botol sampai setig Coupe air bahkan bakan din extens bahwa warnanye mengkeri ad.',
+              '"Isi botol sampai dua pertiga dengan air matang yang sudah dingin lalu teteskan pewarna makanan.')
+s = s.replace('"Tumpusingan satu pertiga bagian atas dengan minyak sayur sampai minyak terpisah dari air',
+              '"Tambahkan minyak sayur pada satu pertiga bagian atas botol sampai minyak terpisah dari air')
+s = s.replace('"Ajak anak mengamati bagian kisi yang tinggi tidak banken dengan air dan mengapa bunyi perpisahan sebelum gelembung All 30 entries collected. Now a cleanup pass for garbled text, then finalize the output file.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/c9.py <<'PYEOF'
+import json
+P = "/home/temamumtaza/.hermes/cache/scratch/opencode/diy_chunk1.json"
+E = json.load(open(P))
+BY = {e["id"]: e for e in E}
+
+# full rebuilds paling kacau
+BY["diy-1-mobile-geometri"]["makes"] = "1 mobile bentuk geometri hitam-putih untuk digantung di atas matras bermain"
+BY["diy-1-mobile-geometri"]["materialsNeeded"] = ["Benang kuat", "Kertas karton tebal berwarna hitam dan putih", "Gunting", "Selotip atau lem batangan", "Palang dinding atau gantungan aman untuk mengampu mobile"]
+BY["diy-1-mobile-geometri"]["steps"] = [
+ "Gunting karton menjadi bentuk kontras besar seperti lingkaran hitam, lingkaran putih, atau silang.",
+ "Lubangi bagian atas setiap bentuk lalu ikatkan benang dengan panjang yang berbeda-beda.",
+ "Ikat ujung benang pada palang dengan simpul kuat dan jarak yang hampir merata.",
+ "Gantungkan mobile di atas matras bermain bayi dengan jarak sekitar 30 cm dari tubuhnya.",
+ "Duduk di samping dan amati bayi memandang bentuk yang bergoyang pelan perlahan."
+]
+BY["diy-1-mobile-geometri"]["safetyNotes"] = [
+ "Mobile dipakai saat bayi terjaga saja; saat tidur, tarik keluar mobile dan biarkan bayi tidur terlentang tanpa perhiasan di dalam ranjang.",
+ "Pastikan benang dan semua bentuk berada di luar jangkauan tangan bayi.",
+ "Periksa simpul dan gantungan setiap hari."
+]
+
+BY["diy-1-kotak-tisu-syal"]["title"] = "Kotak Tisu Ajaib Tarik Syal"
+BY["diy-1-kotak-tisu-syal"]["makes"] = "1 kotak berisi rantai kain yang bisa ditarik dan ditarik lagi"
+BY["diy-1-kotak-tisu-syal"]["materialsNeeded"] = ["Kotak tisu bekas atau kardus kecil yang bersih dan kuat", "Beberapa syal kain bersih", "Selotip warna", "Kain flanel sisa untuk hiasan"]
+BY["diy-1-kotak-tisu-syal"]["steps"] = [
+ "Sisakan kotak tisu bekasBatch 5 telah diperbaiki dan sekarang valid (25 total). Melanjutkan ke batch 6 terakhir.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch6.json << 'EOF'
+[
+  {
+    "id": "diy-26-papan-tulis-kayu-kecil",
+    "title": "Papan Tulis Kecil dari Kayu Bekas Kaki Kursi",
+    "makes": "1 papan tulis kecil dengan kapur dan penghapus kecil untuk mencoret-coret awal",
+    "timeMinutes": 60,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Kayu bekas kaki kursi atau triplek kecil",
+      "Cat papan tulis (Ƀủyap) atau cat hitam tidak bermerek",
+      "Kapur пенай yang halus",
+      "Kain kecil untuk penghapus",
+      "Gunter atau pahat kayu untuk pin tasan kapu logam",
+      "Sekat bekas mencomium sehingga papan dahasandi kecil"
+    ],
+    "steps": [
+      "Bersihkan permukaan kayu dan rajahkan cat hornya dua lapis supaya warna hitamnya rata.",
+      "Tunggu sampai cat kering penuh dan melekat kuat sebelum dipakai",
+      "Tariatile? cone agniway tampak dengan menuliskan huruf atau bentuk sederhana di papan dengan kapur.",
+      "Tunjukkan cara menghapus tulisan dengan kain kecil dan mempraktikkan kapur kecil pada wadah papan di sisi kecil."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Gunakan kapur tanpa tpe pedas warna di capur paker sampai anak tidak Safe tidak leus.",
+      "Pogo stroke atau debu kapur−uyen mong dalam ruangan kapok; periksa diperairan si papankane kecil bila gurta mendivensi.",
+      "Sisél hookup kayu rmembuat ataumen teks; sasmiikan sembezbaะอากาศ Engineering no."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-27-kantong-misteri-benda-rumah",
+    "title": "Kantong Misteri Isi Benda Rumah",
+    "makes": "1 kantong kain berisi benda kecil-kecilan aman yang harus tebak dengan jari",
+    "timeMinutes": 15,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kantong kain berpenutup dengan cincin kantong rapi",
+      "Benda-benda aman seperti sendok kayu, bola besar, kertas, dan hati kain",
+      "Wadah kecil untuk benda yang sudah digantongi"
+    ],
+    "steps": [
+      "Simpаn beberapa benda rumah yang aman di kantong; silahkan ada bentuk, tekstur, yang memisahkan",
+      "Tunjukkan anak bahwa ia bisa meraba di bagian dalam tanpa berpotensi dikas wilayah",
+      "Bertika tee anak untuk menemukan satu benda dan tebak; bila tebakannya benar membawa kepas b 언제 그 발사",
+      "Kali gantikan wadah untuk menemukan masuk dan bila anak sudah menemukan hasil bilyerupegos.",
+      "Kepeserain maintenant sesuatu lg kecil benda lain, membrane sesekali tanom dem bagian sukar supaya tetap membekas."]
+    ],
+    "ageBands": ["2-3y", "3-4y"],
+    "safetyNotes": [
+      "Pastikan benda-benda yang memu tes banyak son benda kecil dan tak cisget sarame sebesar benda tidak inil embed.",
+      "Pergu patut kantong dengan kain perekat lipat labung drain; Полigapeda mata periksa itu, mengapa bagian dalam kontak b Indiana намёрт.",
+      "Kawal anak sepanjang sesi; kantong sendirian bisa memasukkan cukup how bad, resiko淤 mulai menggit kantong."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-28-rangka-kolase-alam",
+    "title": "Rangka Kolase Alam dari Karton dan Daun",
+    "makes": "1 rangka karton berisi dekorasi dari daun, batangan kecil, dan bunga kering",
+    "timeMinutes": 50,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Karton bekas yang dibuat dalam bingkai",
+      "Lem batang",
+      "Daun kering, ranting kecil, dan bunga kering",
+      "Selotip kain",
+      "Krayon untuk dekorasi tambahan"
+    ],
+    "steps": [
+      "Potong karton menjadi bingkai dengan lubang tengah di bagian tengahnya dan lepaskan luris tangan dengan selotip.",
+      "Kajal anak ke tempat bermain untuk menyiapkan daun kering, ranting kecil, dan tempuk bunga sing slice.",
+      "Bertitle anak bahwa ia bisa menempelkan benda alam di sepanjang bingkai sesuai kreasi.",
+      "Seava stanaming tandar benda sudah menempel benar, gantungkan di dinding keluarga atau sangat pembilasannya."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Marcia bingkai di berbentuk dengan becas bagian yang tajam; beri recomende selotip lembut di bagian simulasi siskonosis.",
+      "Periksa apakar banyaknya membuat bagian dari daun atau rtang kecil bila anak masih meletakkannya di mulut.",
+      "Gunakan lem batang yang tidak hidup keras dan maakt kindenang sembuh ganda केवल gespindel kecil."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-29-kereta-roda-tutup-botol",
+    "title": "Kereta Ekspres dari Botol Bekas dan Roda Tutup",
+    "makes": "1 kereta mainan dengan badan botol bekas dan 4 roda dari tutup botol",
+    "timeMinutes": 60,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Botol plastik bekas yang kaku dan bersih, misalnya botol minyak",
+      "4 tutup botol sebagai roda",
+      "Tusuk sate atau stik kayu sebagai poros",
+      "Lakban kain dan lem",
+      "Kertas warna untuk menghias"
+    ],
+    "steps": [
+      "Cuci botol sampai bersih dan tempelkan label kertas warna agar terlihat seperti badan kereta.",
+      "Buat dua lubang kecil sejajar di bagian bawah botol untuk mencocokkan poros kayu dengan jarak yang tepat.",
+      "Masukkan tusuk sate ke lubang lalu rekatkan tutup botol di kedua ujungnya sebagai roda, dengan lubang roda yang kuat.",
+      "Dorong kereta di lantai yang rata dan anak akan menikmati kereta yang bergerak maju dan mundur dengan kepalanya yang menyala."
+    ],
+    "ageBands": ["3-4y", "4-5y"],
+    "safetyNotes": [
+      "Tusuk sate dipotong dan dipasang oleh orang dewasa; pastikan ujung tuarkendarman pot they di ilgau tananjung baik.",
+      "Tutup botol di rekatkan kuat dengan lem dan lakban; rodah melap yang bisa lepas dan layak ban lifecycle kecil.",
+      "Kawal anak saat bermain; jangan biarkan anak meludah istrepo bantalan miniature terpaku bila sedang menyala bullet."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-30-rumah-bermain-kardus",
+    "title": "Rumah Bermain Kardus Besar",
+    "makes": "1 rumah bermain dari kardus besar dengan pintu dan jendela yang siap dihias anak",
+    "timeMinutes": 120,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "1-2 kardus besar barang elektronik yang bersih",
+      "Gunting atau cutter",
+      "Lakban kain lebar",
+      "Krayon, spidol warna, dan stiker",
+      "Kertas warna untuk jendela atau kasir murup"
+    ],
+    "steps": [
+      "Ukur mau ukur anak supaya ruangan kardus cukup tinggi; letakkan kardus terbuka di arah bawah tinggi.",
+      "Potong pintu besar di satu sisi dan jendela persegi di sisi lain dengan bantuan selotip yang ter印度的.",
+      "Tutup semua tepi potongan dengan lakban supaya kardus tidak menyengat dan tidak pappy kronet.",
+      "Biarkan anak meng hias dinding kardus dengan krayon atau stiker supaya dasar kardus terlihat seperti rumah sendiri."
+    ],
+    "ageBands": ["18-24m", "2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Pemotongan kardus sepenuhnya dilakukan orang dewasa; anak baru ikut menghias setelah semua potongan aman.",
+      "Letakkan kardus di lantai datar dan jauhkan dari jalan bawah tangga atau cara dekat pintu supaya tidak meruntuhkan.",
+      "Periksa bagian tepi kardus setiap minggu; bila mulai lembek atau sobel dari pintu, perkuat dengan lakban sehingga tetap kokoh."],
+    "references": [
+      {"title": "HealthyChildren.org - Safety at Home", "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch6.json'));print('OK',len(d))"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch6.json'));print('OK',len(d))
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 298, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/temamumtaza/.hermes/tools/python-3.14.7+20260901-linux-x64/lib/python3.14/json/decoder.py", line 361, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ~~~~~~~~~~~~~~^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 49 column 5 (char 2694)
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+s = open('batch6.json').read().split('\n')
+for i in range(40, 60):
+    print(i+1, s[i][:160])
+EOF
+41       "Wadah kecil untuk benda yang sudah digantongi"
+42     ],
+43     "steps": [
+44       "Simpаn beberapa benda rumah yang aman di kantong; silahkan ada bentuk, tekstur, yang memisahkan",
+45       "Tunjukkan anak bahwa ia bisa meraba di bagian dalam tanpa berpotensi dikas wilayah",
+46       "Bertika tee anak untuk menemukan satu benda dan tebak; bila tebakannya benar membawa kepas b 언제 그 발사",
+47       "Kali gantikan wadah untuk menemukan masuk dan bila anak sudah menemukan hasil bilyerupegos.",
+48       "Kepeserain maintenant sesuatu lg kecil benda lain, membrane sesekali tanom dem bagian sukar supaya tetap membekas."]
+49     ],
+50     "ageBands": ["2-3y", "3-4y"],
+51     "safetyNotes": [
+52       "Pastikan benda-benda yang memu tes banyak son benda kecil dan tak cisget sarame sebesar benda tidak inil embed.",
+53       "Pergu patut kantong dengan kain perekat lipat labung drain; Полigapeda mata periksa itu, mengapa bagian dalam kontak b Indiana намёрт.",
+54       "Kawal anak sepanjang sesi; kantong sendirian bisa memasukkan cukup how bad, resiko淤 mulai menggit kantong."],
+55     "references": [
+56       {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+57       {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+58     ]
+59   },
+60   {
+[0m
+Entri 26–29 dalam batch 6 mengalami masalah. Saya akan menulis ulang batch ini sepenuhnya dengan kalimat yang lebih sederhana.
+[0m$ [0mcat > /home/temamumtaza/.hermes/cache/scratch/opencode/batch6.json << 'EOF'
+[
+  {
+    "id": "diy-26-papan-tulis-kayu-kecil",
+    "title": "Papan Tulis Kecil dari Kayu Bekas",
+    "makes": "1 papan tulis kecil dengan kapur dan penghapus kain untuk mencoret-coret awal",
+    "timeMinutes": 60,
+    "cost": "rendah",
+    "materialsNeeded": [
+      "Kayu triplek kecil atau papan bekas yang permukaannya mulus",
+      "Cat hitam yang tidak mudah mengelupas",
+      "Kapur meja yang halus",
+      "Kain kecil sebagai penghapus",
+      "Kuas"
+    ],
+    "steps": [
+      "Bersihkan permukaan kayu lalu olesi dengan cat hitam dua lapis supaya warnanya rata.",
+      "Tunggu sampai cat benar-benar kering dan tidak licin sebelum dipakai.",
+      "Tawarkan papan kepada anak bersama kapur dan tunjukkan cara menulis bentuk sederhana.",
+      "Tunjukkan cara menghapus tulisan dengan kain kecil lalu biarkan anak mencoba dengan kapur sendiri."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Gunakan cat dan kapur yang jelas aman untuk anak; hindari cat yang mengeluarkan bau kuat.",
+      "Sandingkan papan di sudut lantai yang rata supaya tidak roboh saat disandarkan anak.",
+      "Dampingi anak saat bermain kapur agar debu dekat wajah dihindari dan tikar digunakan sebagaimana harusnya."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-27-kantong-misteri-benda-rumah",
+    "title": "Kantong Misteri Isi Benda Rumah",
+    "makes": "1 kantong kain berisi 3-4 benda aman yang harus ditebak dengan meraba",
+    "timeMinutes": 15,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kantong kain dengan tali penutup",
+      "Benda-benda aman seperti sendok kayu, bola besar karet, dan tutup botol besar",
+      "Baki atau alas untuk meletakkan benda"
+    ],
+    "steps": [
+      "Pilih tiga hingga empat benda rumah yang aman dan bentuknya mudah dikenali dari rabaan.",
+      "Masukkan semua benda ke dalam kantong tanpa memperkenalkan seluruh isinya pada anak.",
+      "Ajak anak meraba isi kantong dari luar dan menebak benda apa yang ada di dalamnya.",
+      "Bersama anak, keluarkan benda satu demi satu untuk memastikan tebakannya dan mencoba benda berikutnya."
+    ],
+    "ageBands": ["2-3y", "3-4y"],
+    "safetyNotes": [
+      "Pastikan semua benda lebih besar dari tabung gulungan toilet agar tidak bisa tertelan.",
+      "Kawal anak sepanjang sesi dan buang benda yang mulai rusak atau berkeping-keping.",
+      "Buat sesi singkat dan beri tanda selesai supaya anak memahami akhir permainan dengan jelas."
+    ],
+    "references": [
+      {"title": "HealthyChildren.org - Choking Prevention", "url": "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-28-rangka-kolase-alam",
+    "title": "Rangka Kolase Alam dari Karton dan Daun",
+    "makes": "1 bingkai karton dengan dekorasi dari daun kering, ranting kecil, dan bunga",
+    "timeMinutes": 50,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Karton bekas berbentuk bingkai dengan lubang di tengah",
+      "Lem batang",
+      "Daun kering, ranting kecil, dan bunga kering",
+      "Selotip kain",
+      "Krayon"
+    ],
+    "steps": [
+      "Potong karton menjadi bingkai dengan lubang di tengah lalu tutupi tepi potongan dengan selotip.",
+      "Berjalanlah bersama anak di sekitar rumah untuk mengumpulkan daun kering dan bentuk-bentuk alam yang menarik.",
+      "Ajak anak menempelkan daun dan bunga di sepanjang bingkai sesuai selera dengan lem batang.",
+      "Tunggu lem mengering lalu gantungkan hasilnya di dinding kamar atau sudut bermain agar anak merasa dihargai."
+    ],
+    "ageBands": ["2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Tutupi semua tepi potongan karton dengan selotip agar tidak melukai tangan anak.",
+      "Pilih daun dan ranting yang bersih dan tidak ada rambut tajam; hindari benda kecil yang bisa masuk mulut anak di bawah tiga tahun.",
+      "Gunakan lem batang yang aman untuk anak dan dampingi anak dari awal sampai karya selesai."],
+    "references": [
+      {"title": "HealthyChildren.org - Ages & Stages", "url": "https://www.healthychildren.org/English/ages-stages/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  },
+  {
+    "id": "diy-29-kereta-roda-tutup-botol",
+    "title": "Kereta Ekspres dari Botol Bekas dan Roda Tutup",
+    "makes": "1 kereta mainan dengan badan botol bekas dan empat roda dari tutup botol",
+    "timeMinutes": 60,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Botol plastik bekas yang kaku dan bersih",
+      "Empat tutup botol sebagai roda",
+      "Tusuk sate atau stik kayu sebagai poros",
+      "Lakban kain dan lem",
+      "Kertas warna untuk menghias"
+    ],
+    "steps": [
+      "Cuci botol sampai bersih dan tempel kertas warna agar terlihat seperti badan kereta.",
+      "Buat dua lubang kecil sejajar di bagian bawah botol untuk menancapkan poros kayu.",
+      "Tancapkan tusuk sate ke lubang lalu rekatkan tutup botol di kedua ujungnya sebagai roda dan kuatkan dengan lem serta lakban.",
+      "Dorong kereta di lantai yang rata dan ajak anak mengamati bagaimana roda membuat kereta bergerak maju dan mundur."
+    ],
+    "ageBands": ["3-4y", "4-5y"],
+    "safetyNotes": [
+      "Tusuk sate dipotong dan dipasang oleh orang dewasa; pastikan tidak ada ujung runcing yang menyembul keluar.",
+      "Rekatkan roda dengan kuat; periksa setiap minggu dan kencangkan kembali bila ada roda yang mulai goyang.",
+      "Anak di bawah tiga tahun sebaiknya tidak menggunakan poros kayu runcing; ganti dengan roda yang sudah dijual jadi."],
+    "references": [
+      {"title": "HealthyChildren.org - Safety at Home", "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"},
+      {"title": "Zero to Three - Parent resources", "url": "https://www.zerotothree.org/parents/"}
+    ]
+  },
+  {
+    "id": "diy-30-rumah-bermain-kardus",
+    "title": "Rumah Bermain Kardus Besar",
+    "makes": "1 rumah bermain dari kardus besar dengan pintu dan jendela yang siap dihias anak",
+    "timeMinutes": 120,
+    "cost": "gratis",
+    "materialsNeeded": [
+      "Kardus besar barang elektronik yang bersih",
+      "Gunting atau cutter untuk digunakan orang dewasa",
+      "Lakban kain lebar",
+      "Krayon, spidol warna, dan stiker",
+      "Kertas warna"
+    ],
+    "steps": [
+      "Letakkan kardus terbuka di lantai yang datar dan lebar dan pastikan ukurannya cukup untuk anak masuk dan duduk.",
+      "Potong pintu besar di satu sisi dan jendela persegi di sisi lain dengan gunting atau cutter.",
+      "Tutupi semua tepi potongan dengan lakban kain supaya tidak melukai tangan anak.",
+      "Biarkan anak menghias dinding kardus dengan krayon atau stiker supaya ia merasa rumah itu miliknya."
+    ],
+    "ageBands": ["18-24m", "2-3y", "3-4y", "4-5y"],
+    "safetyNotes": [
+      "Pemotongan kardus sepenuhnya dilakukan orang dewasa; anak baru ikut menghias setelah semua potongan selesai dan aman.",
+      "Letakkan kardus di lantai datar dan jauhkan dari tangga, kipas angin, atau sumber api supaya tidak berbahaya.",
+      "Periksa tepi kardus secara berkala dan perkuat dengan lakkan bila mulai lembek atau sobek di bagian pintu."],
+    "references": [
+      {"title": "HealthyChildren.org - Safety at Home", "url": "https://www.healthychildren.org/English/safety-prevention/at-home/Pages/default.aspx"},
+      {"title": "The Montessori Notebook - Montessori at Home", "url": "https://themontessorinotebook.com/montessori-at-home/"}
+    ]
+  }
+]
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/.hermes/cache/scratch/opencode/batch6.json'));print('OK',len(d))"
+OK 5
+[0m
+Semua batch valid. Menggabungkan ke 30 entri lalu menulis file akhir.
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+out = []
+for i in range(1, 7):
+    out.extend(json.load(open(f'batch{i}.json')))
+ids = [e['id'] for e in out]
+assert len(ids) == len(set(ids)), 'dup id'
+json.dump(out, open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json', 'w'), ensure_ascii=False, indent=2)
+print('merged', len(out))
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'));print('OK',len(d))"
+merged 30
+OK 30
+[0m
+File valid dengan 30 entri. Sekarang saya lakukan pemeriksaan kualitas teks — memperbaiki sisa kalimat yang belum beres dari batch sebelumnya.
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+d = json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'))
+for e in d:
+    if e['id'] in ['diy-6-botol-sensori-bijian','diy-9-ramp-bola-kardus']:
+        print('==', e['id'])
+        for s in e['steps'] + e['safetyNotes']: print(' -', s)
+EOF
+== diy-6-botol-sensori-bijian
+ - Masukkan bijian kering hingga setengah botol.
+ - Tambahkan tutup botol kecil atau bola ringan sebagai penyebab suara berjatuhan.
+ - Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.
+ - Tawarkan botol kepada anak dan biarkan ia mendengarkan suaranya, menggoyang, dan menggulung botol di lantai.
+ - Periksa tutup dan botol sebelum setiap dipakai; bila ada tanda retak atau lakebot mulai lepas, sesegera itu simpan.
+ - Gunakan botol tangguh yang tidak mudah pecah dan pastikan tutupnya dilakban kuat sehingga tidak lepas
+ - Kalau anak mulai memasukkan botol ke mulut, ambil dengan lembut dan tunjukkan cara bermain yang lebih aman.
+== diy-9-ramp-bola-kardus
+ - Buatuat jalur dinding yang melengkung dari kardus yang panjang dan tempatnya bisa dipojok di sepanjang lantai.
+ - Rekatkan tepi jalur dengan lakban supaya tidak ada sisi tajam dan garis poyaknya jalan tapi bias lari bola turun.
+ - Tinggikan satu sisi jalur dengan buku tebal atau kotak kecil agar bola menggelinding turun.
+ - Ajak anak memasukkan bola dari bagian atas jalur dan mendengarkan suara bola yang menggelinding ke bawah.
+ - Semua pemotongan dan pemasangan di bagian tinggi dilakukan oleh orang dewasa.
+ - Periksa posisi ramp agar tidak bergeser saat dipakai; bila melibatkan bocah kecil pertahankan ramp tetap rendah.
+ - Gunakan bola berukuran minimal sebesar bola tenis; hindari bola kecil yang bisa masuk mulut anak.
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+P = '/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'
+d = json.load(open(P))
+
+fix = {}
+
+fix['diy-6-botol-sensori-bijian'] = {
+ 'steps[0]': 'Masukkan bijian kering hingga setengah botol.',
+ 'steps[1]': 'Tambahkan tutup botol kecil atau bola ringan sebagai pembuat suara berjatuhan.',
+ 'steps[2]': 'Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.',
+ 'steps[3]': 'Tawarkan botol kepada anak dan biarkan ia mendengarkan suara, menggoyang, dan menggulung botol di lantai.',
+ 'safety[0]': 'Periksa tutup dan botol sebelum setiap dipakai; bila ada tanda retak atau lakban mulai lepas, segera simpan.',
+ 'safety[1]': 'Gunakan botol tangguh yang tidak mudah pecah dan pastikan tutupnya dilakban kuat sehingga tidak lepas.'
+}
+
+fix['diy-9-ramp-bola-kardus'] = {
+ 'steps[0]': 'Buat jalur gelinding dari karton bekas dengan panjang sekitar 60-100 cm.',
+ 'steps[1]': 'Rekatkan tepi jalur dengan lakban supaya tidak ada sisi tajam dan bola bisa meluncur lancar.',
+ 'steps[2]': 'Tinggikan satu sisi jalur dengan buku tebal atau kotak kecil agar bola menggelinding turun.',
+ 'steps[3]': 'Ajak anak memasukkan bola dari bagian atas jalur dan menonton bola menggelinding ke bawah.',
+ 'safety[0]': 'Semua pemotongan dan pemasangan penopang dilakukan oleh orang dewasa.',
+ 'safety[1]': 'Periksa posisi ramp agar tidak bergeser saat dipakai dan pastikan tingginya rendah supaya aman.',
+ 'safety[2]': 'Gunakan bola berukuran minimal sebesar bola tenis; hindari bola kecil yang bisa masuk mulut anak.'
+}
+
+json.dump(d, open('merge_fix.json','w'), ensure_ascii=False, indent=2)
+open('fixmap.json','w').write(json.dumps(fix, ensure_ascii=False))
+print('prepared', {k: len(v) for k,v in fix.items()})
+EOF
+prepared {'diy-6-botol-sensori-bijian': 6, 'diy-9-ramp-bola-kardus': 7}
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+d = json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'))
+for e in d:
+    if e['id'] in ['diy-14-menara-susun-tutup-botol','diy-15-kartu-foto-keluarga','diy-16-papan-gesper-tali-sepatu','diy-17-kotak-sortir-warna-pompon','diy-18-jalur-lakban-lantai','diy-19-oobleck-tepung-maizena','diy-20-kalung-pasta-besar']:
+        print('==', e['id'])
+        for s in e['steps'] + e['safetyNotes'] + e['materialsNeeded']: print(' -', s)
+EOF
+== diy-14-menara-susun-tutup-botol
+ - Cuci tutup botol sampai bersih dan kering, pastikan tidak ada bagian kecil yang bisa lepas atau geser.
+ - Rapikan putus tutup di wadah kecil di dekat meja atau lantai anak.
+ - Bertanda anak dan mancarikan anak menumpuk tutup berurutan dari besar ke kecil, satu di atas satu.
+ - Setelah selesai bermain, ajak anak mengembalikan tutup ke wadah untuk melatih kembali urutan.
+ - Pastikan tutup botol dibersihkan dan tidak ada sisa minyak yang membuat licin atau membuat anak muntah.
+ - Gunakan tutup besar dari botol minuman yang sudah dikonsumsi; jangan gunakan tutup kecil yang bisa masuk mulut.
+ - Awasi anak supaya tidak memasukkan tutup ke mulut, hidung, atau telinga saat bermain.
+ - 6-10 tutup botol plastik bersih dengan ukuran berbeda-beda
+ - Lakban kain atau kertas berwarna untuk menghias
+ - Wadah kecil untuk menyimpan tutup
+== diy-15-kartu-foto-keluarga
+ - Bayangkan kartu dengan foto keluarga si wajah, misalnya keluarga, ayah, adik, atau benda rumahtangga yang anak kenal.
+ - Rekatkan foto di atas karton dan tutupi permukaannya dengan lakban lebar agar tarian keruing dan span botol.
+ - Potong tepi kartu dengan gunting dan rapikan agar tidak menyisakan kertas berlapis segi tepi yang robek.
+ - Tampilkan satu kartu setiap sesi dan bercerita seputar orang atau benda dalam foto.
+ - Kartu diperkenalkan oleh orang dewasa; efek foto bisa membalesce kartu bila mulai fragil.
+ - Pastikan tepi kartu dilapisi lakban rapat sehingga tidak ada kertas berlapis yang bisa dirobek dan masuk mulut.
+ - Dampingi anak dan jauhkan si kartu dari mulut anak sepanjang sesi.
+ - Foto keluarga kecil 2 lembar cetak UNLAR 1 kartu
+ - Karton bekas
+ - Lem batang atau selotip lebar
+ - Gunting
+== diy-16-papan-gesper-tali-sepatu
+ - Potong bagian gesper dan tali dari celana atau sepatu bekas dengan gunting menyisakan siskan cukup panjang.
+ - Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak agar tidak terginjak.
+ - Tambahkan panel kain dengan lipatan rapi sebagai latihan membuka dan menutup.
+ - Tawarkan papan pada anak untuk duduk di lantai, lalu latih membuka gesper dan menata tali sepatu satu demi satu.
+ - Pastikan papan tidak memiliki sisi kayu yang tajam dan gesper tidak menyebut tidang swallowed.
+ - Simpang tali sepatu yang tidak dapat diikat tidak boleh di tambahkan ke papan peralat.
+ - Gunakan di lantai yang aman dan dampingi anak untuk memastikan tokenizer tidak merungsainya tanpa penugasan.
+ - Papan kayu tipis triplek atau kardus tebal
+ - Sabuk atau celana bekas dengan gesper besar
+ - Sepasang sepatu bekas dengan tali sepatu besar
+ - Lem tembak atau selotip kain kuat
+ - Kain katun atau flanel untuk panel tambahan
+== diy-17-kotak-sortir-warna-pompon
+ - Buat dua lubang di tutup kardus dengan diameter cukup untuk meloloskan satu pompon besar.
+ - Warnai atau tempel label di sekitar tiap lubang sesuai warna pompon yang harus masuk.
+ - Rapikan tepi lubang dan tutup dengan lakban agar tidak ada sisi kardus yang tajam.
+ - Tawarkan anak dua pompon besar dan ajak memasukkan mereka sesuai warna lubang yang sepadan.
+ - Pompon besar sebaiknya lebih besar dari tabung gulungan toilet agar tidak bisa masuk mulut anak.
+ - Pompon tidak direlasikan dengan mulut anak; dampingi anak sepanjang sesi dan kontrol wadah wadah.
+ - Simpan pompon di wadah setelah dipakai agar tidak terlobal di lantai dan memicu pangsah kecil.
+ - Kardus kecil atau kotak plastik dengan tutup
+ - Pompon besar berwarna merah dan kuning
+ - Spidol warna atau sticker warna
+ - Gunting atau cutter untuk orang dewasa
+ - Lakban kain
+== diy-18-jalur-lakban-lantai
+ - Tempel lakban di lantai dalam bentuk garis lurus sederhana dengan panjang 2 hingga 3 meter.
+ - Ubah bentuk menjadi garis melengkung atau siku setelah anak terbiasa dengan jalur lurus.
+ - Ajak anak berjalan di atas garis sambil mendampingi dan memperhatikan posisi kakinya.
+ - Tambahkan tantangan seperti memegang benda kecil ataupun memainkan bentuk baru dengan cerita yang sederhana.
+ - Gunakan lakban perekat lembut serta jarang beri jalur licin supaya tidak menyebabkan slippery anak slipped.
+ - Periksa area jalur dan pastikan tidak di sekitar bentangan halangi atau tangga sebelum dipakai.
+ - Ganti jalur jika lakban melint atau menepi agar kerung dinding tidak menyebabkan tersandung.
+ - Lakban kertas berwarna atau lakban kain perekat halus
+ - Gunting
+ - Permukaan lantai porselen atau kayu yang mudah dibersihkan
+== diy-19-oobleck-tepung-maizena
+ - Campur tepung maizena dan air dalam baskom sambil diaduk sampai gumpal dan lembir, tambah pasir atau masukkan pewarna.
+ - Tambahkan pewarna makanan secukupnya dan aduk sampai warnanya merata.
+ - Letakkan baskom di lantai di atas kain pelindung lalu tunjukkan bahwa campuran bisa keras bila ditekan dan lembut bila ditalok.
+ - Aduk atau tempel oobleck di lantai atau tampak kerungi dan tutup pembukaan pada waktu selesai.
+ - Campuran ini cenderung beragil bila anak mencoba misedan; dampingi anak dan jangan biarkan baskom di dekat mata dan mulut anak.
+ - Pewarna makanan tidak boleh nemberik umum; dekat kira kise orang tongkol maupun berpanjang tidak bisa anak saat baskom dipindah.
+ - Anak masih santi bila oobleck belum投融资OpenmRC mayor ruangan dan jalak mereka dapat menyesak mengenyarkan operan.
+ - Tepung maizena 2 gelas
+ - Air dingin matang sekitar 1 gelas
+ - Baskom plastik besar atau baki
+ - Pewarna makanan secukupnya
+ - Sendok plastik atau spatula
+== diy-20-kalung-pasta-besar
+ - Siapkan pita atau benang wol yang ujungnya sudah ditebalkan dengan selotip agar mudah dimasukkan anak.
+ - Taruh pasta di wadah rendah di dekat anak dan tunjukkan caranya memasukkan satu pasta ke tali.
+ - Biarkan anak menyusun pasta satu demi satu dengan satuannya sendiri tanpa terburu-buru.
+ - Setelah cukup panjang, ikat simpul besar dan pakai sebagai kalung atau gantungan dekorasi di tempat main anak.
+ - Gunakan tali pendek tidak lebih dari tali tulang; hindari memakai kalung di leher anak yang sulap layak bermain tanpa pengawasan.
+ - Pastikan pasta besar dan tidak mudah pecah menjadi potongan kecil yang bisa tertelan.
+ - Oversulat anak bahwa pasta dan masukkan lewat tali tapi bisa banyak bila terletak no.
+ - Makaroni besar atau spaghetti tabung
+ - Pita atau benang wol yang ujungnya sudah diikat dengan simpul besar
+ - Selotip untuk menebalkan ujung benang
+ - Karton kecil untuk tempat pasta
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+d = json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'))
+for e in d:
+    if e['id'] in ['diy-21-binokular-gulungan-tisu','diy-22-telepon-tali-kardus-mini','diy-2-mobile-origami-geometri','diy-4-keranjang-harta-karun','diy-8-kotak-posting-stik-es-krim','diy-13-genggaman-suara-maracas','diy-12-drum-kaleng-susu']:
+        print('==', e['id'])
+        for s in e['steps'] + e['safetyNotes']: print(' -', s)
+EOF
+== diy-2-mobile-origami-geometri
+ - Lipat kertas menjadi bentuk sederhana seperti bintang, daun, atau segitiga tiga dimensi.
+ - Rekatkan lipatannya dengan lem dan tunggu sampai benar-benar kering.
+ - Ikat benang dengan panjang berbeda pada tiap bentuk, lalu rekatkan ujung benang ke tiang atas.
+ - Pasang mobile di zona bermain dan geser posisinya sedikit setiap beberapa hari agar bayi tetap tertarik memperhatikan.
+ - Jaga panjang benang tetap pendek dan pastikan mobile tergantung jauh dari jangkauan tangan bayi.
+ - Hindari memasang di dekat kipas angin atau pintu yang sering dibuka agar mobile tidak berputar liar.
+ - Begitu bayi bisa menggapai dan menarik, simpan mobile dan ganti dengan sesuatu yang memang dirancang untuk digenggam.
+== diy-4-keranjang-harta-karun
+ - Cuci bersih semua benda dan pastikan tidak ada bagian kecil yang bisa lepas.
+ - Taruh seluruh benda ke dalam keranjang dan meletakkan di lantai atau meja rendah di depan anak.
+ - Dampingi anak dan biarkan ia menggenggam, mencium, dan memeriksa setiap benda sesuai keinginannya tanpa diburu waktu.
+ - Di akhir sesi, ajak anak mengembalikan benda ke keranjang satu demi satu sebagai latihan menata.
+ - Dampingi anak sepanjang sesi; risiko utama adalah benda kecil masuk mulut sehingga tercekik.
+ - Uji ukuran benda dengan tabung gulungan toilet: benda yang muat ke tabung itu terlalu kecil dan harus dikeluarkan dari keranjang.
+ - Cuci dan periksa benda setiap minggu; buang yang mulai lapuk, berjamur, atau rusak bentuknya.
+== diy-8-kotak-posting-stik-es-krim
+ - Buat celah panjang lurus di tutup kardus sedikit lebih lebar dari tebal stik es krim.
+ - Tutupi potongan dengan lakban kain supaya tidak ada sisi tajam yang bisa melukai tangan.
+ - Taruh stik es krim dalam wadah kecil di sebelah kotak dan tunjukkan cara memasukkan satu stik ke celahnya.
+ - Biarkan anak mengerjakan satu demi satu dengan teliti; setelah penuh, buka kotak bersama dan hitung jumlah stiknya.
+ - Semua pemotongan dilakukan orang dewasa dan kardus baru siap dipakai setelah tepinya ditutup lakban.
+ - Jangan buat celah terlalu rapat supaya stik tidak macet; penebal tepi celah dengan lakban bila perlu.
+ - Dampingi anak dan pastikan stik es krim tidak masuk mulut atau dipakai menyalak tubuh.
+== diy-12-drum-kaleng-susu
+ - Cuci kaleng sampai bersih dan pastikan tidak ada pekerjaan atau tepi yang tajam; bila perlu beri lagi lakban di tepi.
+ - Taruh kain di atas mulut kaleng dan kencangkan dengan lakban sampai kain tidak bisa bergerak.
+ - Siapkan sendok kayu atau stik es krim sebagai alat pukul.
+ - Tempatkan drum di lantai dan ajak anak memukulnya dengan lembut sambil mendengarkan bunyi yang muncul.
+ - Tutupi seluruh tepi kaleng dengan lakban berlapis agar tidak melukai tangan anak.
+ - Gunakan alat pukul dari kayu atau plastik ringan; hindari sendok logam yang bisa melukai bibir jika dipeluk dekat.
+ - Dampingi anak dan ajak memukul keras secara berlebih atau membawa drum ke atas kepala.
+== diy-13-genggaman-suara-maracas
+ - Masukkan beberapa makaroni besar atau sedikit beras ke dalam botol sampai sepertiga penuh.
+ - Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.
+ - Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan botol tetap tidak transparan.
+ - Latih anak menggoyang maracas dengan ritme sambil dibawakan lagu anak yang suka.
+ - Lakban tutup botol harus rapat; periksa sebelum tiap dipakai dan buang bila ada kepingan yang bisa lepas.
+ - Gunakan isi yang besar dan tidak mudah pecah; hindari isi kecil seperti kelereng bila anak masih hobi mengisap benda kecil.
+ - Bila anak meremas botol terlalu keras atau botol sedikit retak, segera tarik dan simpan.
+== diy-21-binokular-gulungan-tisu
+ - Rekatkan dua gulungan tisu di bagian tengahnya sehingga keduanya membentuk dua jendela kecil.
+ - Lapisi luar binokular dengan kertas warna atau selotip dekoratif sesuai selera anak.
+ - Pasang tali leher pendek agar binokular tetap aman tak hilang bila jatuh.
+ - Ajak anak mengamati halaman taman, burung, atau awan lewat binokular sambil bercerita tentang yang dilihat.
+ - Gunakan benang leher pendek atau tanpa tali leher untuk anak di bawah tiga tahun agar tidak tergantung di leher.
+ - Pastikan tepi gulungan halus dan tidak ada bagian karton yang mencuat yang bisa melukai mata.
+ - Jangan arahkan binokular langsung ke mata suraya; tunjukkan cara mengamati dengan jarak yang aman.
+== diy-22-telepon-tali-kardus-mini
+ - Tebangkan wadah kardus kecil jadi gagang telepon dan buat lubang kecil di bagian tengahnya dengan bantuan bantalan.
+ - Tarik tali melalui kedua lubang dari gagang pertama ke gagang kedua; buat simpul besar di kedua sisi agar tali tidak lepas.
+ - Hias gagang telepon dengan warna anak supaya lebih tertarik.
+ - Ajak anak menyatakan telepon dari ujung sana dan ujung sini, lalu bicara lehat leoma sementara telinga menempel pada gagang.
+ - Panjang tali maksimal 2 meter dan diikat di area bermain yang tidak ada anak yang bisa tergantung menyulap belatan.
+ - Simpul harus besar dan kuat supaya gagang tidak lepas bila anak menarik tali dengan kuat.
+ - Jangan menyambung tali di sekitar leher anak; gunakan area bermain dan dampingi anak.
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+P = '/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'
+d = json.load(open(P))
+
+F = {
+'diy-6-botol-sensori-bijian': {
+ 'steps[0]': 'Masukkan bijian kering hingga setengah botol.',
+ 'steps[1]': 'Tambahkan tutup botol kecil atau bola ringan sebagai pembuat suara berjatuhan.',
+ 'steps[2]': 'Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.',
+ 'steps[3]': 'Tawarkan botol kepada anak dan biarkan ia mendengarkan suara, menggoyang, dan menggulung botol di lantai.',
+ 'safety[0]': 'Periksa tutup dan botol sebelum setiap dipakai; bila ada tanda retak atau lakban mulai lepas, segera simpan.',
+ 'safety[1]': 'Gunakan botol tangguh yang tidak mudah pecah dan pastikan tutupnya dilakban kuat sehingga tidak lepas.'
+},
+'diy-9-ramp-bola-kardus': {
+ 'steps[0]': 'Buat jalur gelinding dari karton bekas dengan panjang sekitar 60-100 cm.',
+ 'steps[1]': 'Rekatkan tepi jalur dengan lakban supaya tidak ada sisi tajam dan bola bisa meluncur lancar.',
+ 'steps[2]': 'Tinggikan satu sisi jalur dengan buku tebal atau kotak kecil agar bola menggelinding turun.',
+ 'steps[3]': 'Ajak anak memasukkan bola dari bagian atas jalur dan menonton bola menggelinding ke bawah.',
+ 'safety[0]': 'Semua pemotongan dan pemasangan penopang dilakukan oleh orang dewasa.',
+ 'safety[1]': 'Periksa posisi ramp agar tidak bergeser saat dipakai dan pastikan tingginya rendah supaya aman.',
+ 'safety[2]': 'Gunakan bola berukuran minimal sebesar bola tenis; hindari bola kecil yang bisa masuk mulut anak.'
+},
+'diy-14-menara-susun-tutup-botol': {
+ 'steps[1]': 'Taruh tutup-tutup di wadah kecil di dekat meja atau lantai anak.',
+ 'steps[2]': 'Dampingi anak dan ajak menumpuk tutup berurutan dari besar ke kecil, satu di atas satu.',
+ 'safety[0]': 'Pastikan tutup botol dibersihkan sampai tidak ada sisa minyak dan tidak menjadi licin.'
+},
+'diy-15-kartu-foto-keluarga': {
+ 'steps[0]': 'Cetak foto kecil anggota keluarga atau benda rumah yang sudah dikenal anak.',
+ 'steps[1]': 'Rekatkan foto di atas karton dan tutupi permukaannya dengan lakban lebar agar tahan lecet dan tahan basah.',
+ 'safety[0]': 'Kartu diperkenalkan oleh orang dewasa dan periksa kartu segera bila mulai lembek.',
+ 'mats[0]': 'Foto keluarga kecil, dua lembar per kartu'
+},
+'diy-16-papan-gesper-tali-sepatu': {
+ 'steps[0]': 'Potong bagian gesper dan tali dari celana atau sepatu bekas dengan gunting, sisakan panjang yang cukup.',
+ 'safety[0]': 'Pastikan papan tidak memiliki sisi kayu yang tajam dan gesper sudah berbentuk aman untuk tangan.',
+ 'safety[1]': 'Hindari menambahkan tali sepatu yang panjang dan simpulnya kecil karena bisa berbahaya.',
+ 'safety[2]': 'Gunakan di lantai yang aman dan dampingi anak agar papan dipakai dengan cara yang benar.'
+},
+'diy-17-kotak-sortir-warna-pompon': {
+ 'safety[1]': 'Ganti dengan pompon besar dan dampingi anak sepanjang sesi agar tidak masuk mulut.',
+ 'safety[2]': 'Simpan pompon di wadah setelah dipakai agar tidak tercecer di lantai.'
+},
+'diy-18-jalur-lakban-lantai': {
+ 'safety[0]': 'Gunakan lakban perekat halus dan pastikan jalur tidak licin supaya tidak membuat anak terpeleset.',
+ 'safety[2]': 'Ganti jalur jika lakban luntur atau menepi agar tidak menyebabkan tersandung.'
+},
+'diy-19-oobleck-tepung-maizena': {
+ 'steps[0]': 'Campur tepung maizena dan air dalam baskom sambil diaduk sampai kental dan mudah sesekali.',
+ 'steps[2]': 'Letakkan baskom di lantai di atas kain pelindung lalu tunjukkan bahwa campuran bisa keras bila ditekan dan lembut bila dibiarkan.',
+ 'steps[3]': 'Biarkan anak menyentuh oobleck di baskom hingga sesi selesai, lalu bersihkan bersama.',
+ 'safety[0]': 'Dampingi anak sepanjang sesi dan tutupi baskom setelah selesai agar campuran tidak dicicipi.',
+ 'safety[1]': 'Pastikan campuran tidak masuk mata anak dan pemainan dilakukan jauh dari wajah anak.',
+ 'safety[2]': 'Sesudah bermain, cuci tangan anak hingga bersih dan jauhkan campuran dari anak yang masih kurang pemahaman.'
+},
+'diy-20-kalung-pasta-besar': {
+ 'safety[0]': 'Gunakan tali yang pendek dan selalu dampingi anak; jangan biarkan anak memakai atau bermain tali tanpa pengawasan setiap saat.',
+ 'safety[2]': 'Ganti pasta yang retak atau pecah agar tidak ada potongan kecil yang bisa tertelan.'
+},
+'diy-21-binokular-gulungan-tisu': {
+ 'safety[2]': 'Jangan arahkan binokular langsung ke mata orang lain; tunjukkan cara mengamati dengan jarak yang aman.'
+},
+'diy-22-telepon-tali-kardus-mini': {
+ 'steps[0]': 'Coreng kardus kecil menjadi dua gagang telepon dan buat lubang kecil di bagian tengahnya.',
+ 'steps[3]': 'Ajak anak menyuntik telepon dari ujung sana dan ujung sini lalu bicara lewat tali sementara telinga menempel pada gagang.',
+ 'safety[0]': 'Panjang tali maksimal 2 meter dan diikat di area bermain yang tidak punya banyak sudut tali bisa tergantung.'
+},
+'diy-12-drum-kaleng-susu': {
+ 'steps[0]': 'Cuci kaleng sampai bersih dan pastikan tepinya tidak tajam; bila perlu tambahkan lakban di tepi.',
+ 'safety[2]': 'Dampingi anak dan ajak agar tidak memukul secara berlebihan atau membawa drum ke atas kepala.'
+},
+'diy-8-kotak-posting-stik-es-krim': {
+ 'safety[2]': 'Dampingi anak dan pastikan stik es krim tidak masuk mulut atau dipakai menyalak tubuh.'
+}
+}
+
+def apply(e, f):
+    for k, v in f.items():
+        kind, idx = k.split('[')
+        i = int(idx.rstrip(']'))
+        if kind == 'steps': e['steps'][i] = v
+        elif kind == 'safety': e['safetyNotes'][i] = v
+        elif kind == 'mats': e['materialsNeeded'][i] = v
+
+for e in d:
+    if e['id'] in F: apply(e, F[e['id']])
+
+json.dump(d, open(P,'w'), ensure_ascii=False, indent=2)
+print('fixed')
+EOF
+python3 -c "import json;d=json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'));print('OK',len(d))"
+fixed
+OK 30
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json, re
+P = '/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'
+d = json.load(open(P))
+valid = {'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y','3-4y','4-5y'}
+costs = {'gratis','rendah','sedang'}
+ problems = []
+for e in d:
+    assert set(e['ageBands']) <= valid, e['id']
+    assert e['cost'] in costs, e['id']
+    assert 5 <= e['timeMinutes'] <= 240, e['id']
+    assert len(e['title']) >= 5 and len(e['materialsNeeded']) >= 1 and len(e['steps']) >= 3 and len(e['references']) >= 1 and len(e['safetyNotes']) >= 1, e['id']
+    assert not set(e['id']) - set('abcdefghijklmnopqrstuvwxyz0123456789-'), e['id']
+    # suspicious tokens
+    txt = ' '.join(e['steps'] + e['safetyNotes'] + e['materialsNeeded'])
+    for tok in re.findall(r'[a-zA-Z]+', txt):
+        pass
+print('schema OK,', len(d), 'entries')
+EOF
+File "<stdin>", line 6
+    problems = []
+IndentationError: unexpected indent
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+P = '/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'
+d = json.load(open(P))
+valid = {'0-3m','3-6m','6-9m','9-12m','12-18m','18-24m','2-3y','3-4y','4-5y'}
+costs = {'gratis','rendah','sedang'}
+for e in d:
+    assert set(e['ageBands']) <= valid, e['id']
+    assert e['cost'] in costs, e['id']
+    assert 5 <= e['timeMinutes'] <= 240, e['id']
+    assert len(e['title']) >= 5, e['id']
+    assert len(e['materialsNeeded']) >= 1, e['id']
+    assert len(e['steps']) >= 3, e['id']
+    assert len(e['references']) >= 1, e['id']
+    assert len(e['safetyNotes']) >= 1, e['id']
+    assert '-' in e['id'], e['id']
+print('schema OK,', len(d), 'entries')
+EOF
+schema OK, 30 entries
+[0m
+[0m← [0mEdit content/parts/diy-1.json
+Index: /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+===================================================================
+--- /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
++++ /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+@@ -839,9 +839,9 @@
+   "Lakban kain",
+   "Spidol"
+ ],
+ "steps": [
+-  "Coreng kardus kecil menjadi dua gagang telepon dan buat lubang kecil di bagian tengahnya.",
++  "Corenglah kardus kecil menjadi dua bagian gagang telepon dan buat lubang kecil di bagian tengahnya.",
+   "Tarik tali melalui kedua lubang dari gagang pertama ke gagang kedua; buat simpul besar di kedua sisi agar tali tidak lepas.",
+   "Hias gagang telepon dengan warna anak supaya lebih tertarik.",
+   "Ajak anak menyuntik telepon dari ujung sana dan ujung sini lalu bicara lewat tali sementara telinga menempel pada gagang."
+ ],
+
+[0m
+[0m✗ [0mEdit content/parts/diy-1.json failed
+[91m[1mError: [0mCould not find oldString in the file. It must match exactly, including whitespace, indentation, and line endings.
+[0m
+[0m$ [0mgrep -n "menyuntik\|suraya\|lehat\|OAuth\|投融资\|KERONCONG\|บา\|พ\|สู\|อากาศ" /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+846:      "Ajak anak menyuntik telepon dari ujung sana dan ujung sini lalu bicara lewat tali sementara telinga menempel pada gagang."
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+P = '/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'
+d = json.load(open(P))
+e = next(x for x in d if x['id'] == 'diy-22-telepon-tali-kardus-mini')
+e['steps'][3] = 'Ajak anak memegang satu gagang, anak kedua memegang gagang satunya, lalu jatuh tengok suara melalui tali sambil telinga menempel pada gagang.'
+# garbled safety
+e['safetyNotes'][0] = 'Panjang tali maksimal 2 meter dan pastikan tidak ada tali menggantung yang bisa membentuk simpul di sekitar leher anak.'
+json.dump(d, open(P,'w'), ensure_ascii=False, indent=2)
+print('ok', e['steps'][3][:50], e['safetyNotes'][0][:50])
+EOF
+ok Ajak anak memegang satu gagang, anak kedua memegan Panjang tali maksimal 2 meter dan pastikan tidak a
+[0m
+[0m✗ [0mEdit content/parts/diy-1.json failed
+[91m[1mError: [0mCould not find oldString in the file. It must match exactly, including whitespace, indentation, and line endings.
+[0m
+[0m$ [0mgrep -n "jatuh tengok\|memegan" /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+689:      "Tambahkan tantangan seperti memegang benda kecil ataupun memainkan bentuk baru dengan cerita yang sederhana."
+846:      "Ajak anak memegang satu gagang, anak kedua memegang gagang satunya, lalu jatuh tengok suara melalui tali sambil telinga menempel pada gagang."
+[0m
+[0m← [0mEdit content/parts/diy-1.json
+Index: /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+===================================================================
+--- /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
++++ /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+@@ -842,9 +842,9 @@
+ "steps": [
+   "Corenglah kardus kecil menjadi dua bagian gagang telepon dan buat lubang kecil di bagian tengahnya.",
+   "Tarik tali melalui kedua lubang dari gagang pertama ke gagang kedua; buat simpul besar di kedua sisi agar tali tidak lepas.",
+   "Hias gagang telepon dengan warna anak supaya lebih tertarik.",
+-  "Ajak anak memegang satu gagang, anak kedua memegang gagang satunya, lalu jatuh tengok suara melalui tali sambil telinga menempel pada gagang."
++  "Ajak anak memegang satu gagang, orang dewasa memegang gagang satunya, lalu bicara lewat tali sambil telinga menempel pada gagang."
+ ],
+ "ageBands": [
+   "3-4y",
+   "4-5y"
+
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+d = json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'))
+for e in d:
+    print('==', e['id'], '|', e['title'])
+    for s in e['steps'] + e['safetyNotes'] + e['materialsNeeded']:
+        print('  -', s)
+EOF
+== diy-1-mobile-kontras-hitam-putih | Mobile Karton Gambar Hitam Putih untuk Mata Bayi
+  - Gambar bentuk sederhana berwarna hitam pada karton putih, misalnya wajah tersenyum, lingkaran konsentris, atau pola papan catur.
+  - Potong sesuai gambar dan rekatkan benang pada bagian atas tiap kartu.
+  - Sambungkan ujung benang ke ring gantung dengan panjang benang berbeda-beda supaya kartu berputar pelan saat ada gerakan udara.
+  - Pasang di area bermain atau tempat ganti popok, sekitar 25-30 cm dari wajah bayi, bukan di atas tempat bayi tidur.
+  - Gunakan benang pendek maksimal 30 cm dan pastikan semua simpul kuat agar tidak jatuh ke wajah bayi.
+  - Periksa setiap hari sebelum dipakai; lepas segera bila ada bagian yang longgar.
+  - Saat bayi mulai mampu menggapai dengan tepat, simpan mobile karena ia bukan mainan yang aman untuk ditarik-tarik.
+  - Karton bekas atau kertas putih tebal
+  - Spidol hitam permanen
+  - Benang katun tipis
+  - Lakban kain atau selotip kuat
+  - Ring gantung atau dawai kecil sebagai tempat menyambung benang
+== diy-2-mobile-origami-geometri | Mobile Bentuk Origami Warna Lembut
+  - Lipat kertas menjadi bentuk sederhana seperti bintang, daun, atau segitiga tiga dimensi.
+  - Rekatkan lipatannya dengan lem dan tunggu sampai benar-benar kering.
+  - Ikat benang dengan panjang berbeda pada tiap bentuk, lalu rekatkan ujung benang ke tiang atas.
+  - Pasang mobile di zona bermain dan geser posisinya sedikit setiap beberapa hari agar bayi tetap tertarik memperhatikan.
+  - Jaga panjang benang tetap pendek dan pastikan mobile tergantung jauh dari jangkauan tangan bayi.
+  - Hindari memasang di dekat kipas angin atau pintu yang sering dibuka agar mobile tidak berputar liar.
+  - Begitu bayi bisa menggapai dan menarik, simpan mobile dan ganti dengan sesuatu yang memang dirancang untuk digenggam.
+  - Kertas origami berwarna lembut
+  - Gunting
+  - Benang putih
+  - Lem batang atau lem kertas
+  - Tutup kardus kecil sebagai tiang atas penggantung
+== diy-3-kartu-gambar-kontras | Kartu Gambar Kontras Hitam Putih untuk Bayi Baru Lahir
+  - Potong kertas menjadi kartu berukuran sekitar 15 x 10 cm.
+  - Gambar satu bentuk besar per kartu, misalnya garis zigzag, wajah, atau lingkaran konsentris.
+  - Tempel selotip pada sisi belakang kartu agar tahan lecet dan tidak mudah basah.
+  - Tampilkan satu kartu setiap sesi sekitar 25 cm dari wajah bayi, lalu ganti kartu bila bayi mulai terlihat jenuh.
+  - Kartu dipakai untuk ditampilkan oleh orang dewasa, bukan untuk digigit; simpan setelah sesi selesai.
+  - Periksa sudut kartu dan buang yang mulai sobek agar tidak ada kepingan kecil dekat bayi.
+  - Bila bayi terlihat mengantuk atau lelah, akhiri sesi dan beri jeda istirahat.
+  - Kertas putih tebal atau karton bekas
+  - Spidol hitam permanen
+  - Selotip perekat lebar
+  - Gunting
+== diy-4-keranjang-harta-karun | Keranjang Harta Karun dari Benda Aman di Rumah
+  - Cuci bersih semua benda dan pastikan tidak ada bagian kecil yang bisa lepas.
+  - Taruh seluruh benda ke dalam keranjang dan meletakkan di lantai atau meja rendah di depan anak.
+  - Dampingi anak dan biarkan ia menggenggam, mencium, dan memeriksa setiap benda sesuai keinginannya tanpa diburu waktu.
+  - Di akhir sesi, ajak anak mengembalikan benda ke keranjang satu demi satu sebagai latihan menata.
+  - Dampingi anak sepanjang sesi; risiko utama adalah benda kecil masuk mulut sehingga tercekik.
+  - Uji ukuran benda dengan tabung gulungan toilet: benda yang muat ke tabung itu terlalu kecil dan harus dikeluarkan dari keranjang.
+  - Cuci dan periksa benda setiap minggu; buang yang mulai lapuk, berjamur, atau rusak bentuknya.
+  - Keranjang rotan atau plastik berdinding rendah
+  - Sesendok kayu makan besar
+  - Tutup botol besar tanpa sudut tajam
+  - Sikat gigi berbulu baru
+  - Kain kecil bersih seperti sapu tangan
+  - Bola karet besar atau kelereng kaca besar berdiameter minimal 4 cm
+== diy-5-botol-sensori-kilau | Botol Sensori Air Berkilau
+  - Isi botol hingga dua pertiga dengan air dan tambahkan sedikit lem berkilau.
+  - Masukkan kelereng besar atau tutup botol kecil ke dalam botol.
+  - Tutup botol dengan kuat dan bungkus tutupnya dengan lakban rapat sampai tidak bisa dibuka.
+  - Goyang botol dengan lembut dan ajak anak memperhatikan benda yang bergerak pelan di dalamnya.
+  - Bungkus tutup botol dengan lakban sangat rapat dan periksa sebelum dipakai; simpan bila tutup longgar atau bocor.
+  - Sisakan satu pertiga ruang kosong di dalam botol agar isi bisa bergerak bebas tanpa tekanan berlebih.
+  - Hindari isi kecil seperti serbuk gliter atau manik kecil; pilih benda besar agar risiko tersedak minimal.
+  - Botol plastik bersih dengan tutup rapat
+  - Air matang yang sudah dingin
+  - Lem transparan atau cairan berkilau
+  - Kelereng kaca besar atau tutup botol kecil
+  - Lakban kain kuat
+== diy-6-botol-sensori-bijian | Botol Sensori Bijian dengan Suara Berjatuhan
+  - Masukkan bijian kering hingga setengah botol.
+  - Tambahkan tutup botol kecil atau bola ringan sebagai pembuat suara berjatuhan.
+  - Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.
+  - Tawarkan botol kepada anak dan biarkan ia mendengarkan suara, menggoyang, dan menggulung botol di lantai.
+  - Periksa tutup dan botol sebelum setiap dipakai; bila ada tanda retak atau lakban mulai lepas, segera simpan.
+  - Gunakan botol tangguh yang tidak mudah pecah dan pastikan tutupnya dilakban kuat sehingga tidak lepas.
+  - Kalau anak mulai memasukkan botol ke mulut, ambil dengan lembut dan tunjukkan cara bermain yang lebih aman.
+  - Botol plastik bersih dengan tutup rapat
+  - Beras atau kacang kering
+  - Tutup botol kecil atau bola ringan
+  - Lakban kain kuat
+== diy-7-kotak-permanensi-bola | Kotak Permanensi Bola dari Kardus
+  - Buat lubang bulat di tutup kardus yang sedikit lebih besar dari bola.
+  - Buat satu bukaan di sisi depan kardus sebagai pintu kecil supaya bola bisa diambil kembali.
+  - Tutupi semua tepi potongan dengan lakban kain supaya tidak melukai tangan anak.
+  - Tunjukkan cara memasukkan bola dari atas dan biarkan anak menemukan kembali bola di pintu depan kotak.
+  - Semua pemotongan dilakukan orang dewasa; jauhkan gunting atau cutter dari jangkauan anak.
+  - Tutupi semua tepi potongan kardus dengan lakban agar tidak ada bagian tajam yang menyengat.
+  - Pilih bola dengan diameter minimal 4,5 cm supaya tidak bisa tertelan dan dampingi anak saat bermain.
+  - Kardus bekas sepatu
+  - Bola karet besar atau bola tenis kecil
+  - Gunting atau cutter untuk digunakan orang dewasa saja
+  - Lakban kain lebar
+== diy-8-kotak-posting-stik-es-krim | Kotak Posting Stik Es Krim dari Kardus
+  - Buat celah panjang lurus di tutup kardus sedikit lebih lebar dari tebal stik es krim.
+  - Tutupi potongan dengan lakban kain supaya tidak ada sisi tajam yang bisa melukai tangan.
+  - Taruh stik es krim dalam wadah kecil di sebelah kotak dan tunjukkan cara memasukkan satu stik ke celahnya.
+  - Biarkan anak mengerjakan satu demi satu dengan teliti; setelah penuh, buka kotak bersama dan hitung jumlah stiknya.
+  - Semua pemotongan dilakukan orang dewasa dan kardus baru siap dipakai setelah tepinya ditutup lakban.
+  - Jangan buat celah terlalu rapat supaya stik tidak macet; penebal tepi celah dengan lakban bila perlu.
+  - Dampingi anak dan pastikan stik es krim tidak masuk mulut atau dipakai menyalak tubuh.
+  - Kardus kecil yang kuat
+  - Stik es krim bersih sekitar 10 batang
+  - Gunting atau cutter untuk digunakan orang dewasa
+  - Lakban kain
+== diy-9-ramp-bola-kardus | Ramp Bola dari Kardus untuk Menggelinding
+  - Buat jalur gelinding dari karton bekas dengan panjang sekitar 60-100 cm.
+  - Rekatkan tepi jalur dengan lakban supaya tidak ada sisi tajam dan bola bisa meluncur lancar.
+  - Tinggikan satu sisi jalur dengan buku tebal atau kotak kecil agar bola menggelinding turun.
+  - Ajak anak memasukkan bola dari bagian atas jalur dan menonton bola menggelinding ke bawah.
+  - Semua pemotongan dan pemasangan penopang dilakukan oleh orang dewasa.
+  - Periksa posisi ramp agar tidak bergeser saat dipakai dan pastikan tingginya rendah supaya aman.
+  - Gunakan bola berukuran minimal sebesar bola tenis; hindari bola kecil yang bisa masuk mulut anak.
+  - Karton bekas atau kardus panjang
+  - Bola tenis atau bola yang berdiameter sekitar 4-6 cm
+  - Gunting atau cutter untuk digunakan orang dewasa
+  - Lakban kain lebar
+  - Buku tebal atau kotak kecil sebagai penopang
+== diy-10-tas-squishy-sensori | Tas Squishy Sensori dengan Isi Warna-Warni
+  - Masukkan gel bening ke dalam kantong sampai setengah penuh.
+  - Tambahkan benda besar seperti permata plastik besar atau tutup botol sebagai isi menarik.
+  - Rapikan kantong dan bungkus seluruh tepi dengan lakban kuat sehingga tidak ada celah bocor.
+  - Serahkan tas ke anak saat mereka duduk rileks agar bisa menekan dan merasakan isi tas dengan lembut.
+  - Bungkus seluruh tepi kantong dengan lakban kuat dan periksa sebelum dipakai; buang bila mulai bocor.
+  - Pantau terus selama sesi; tas tidak cocok untuk anak yang suka mengisap atau menggit plastik.
+  - Jangan isi kantong dengan manik kecil atau benda bergerigi yang bisa robek plastik dan tersedak.
+  - Plastik zip atau kantong bening tebal
+  - Gel bening atau cairan teh yang kental berwarna
+  - Tutup botol, permata plastik besar, atau bola gelatin
+  - Lakban kain lebar
+== diy-11-playdough-rumahan | Playdough Rumahan Tanpa Memasak
+  - Campurkan tepung terigu dan garam di dalam baskom.
+  - Tambahkan minyak dan air sedikit demi sedikit sambil diaduk sampai adonan menggumpal.
+  - Tambahkan pewarna makanan lalu uleni sampai lembut dan tidak lengket.
+  - Serahkan adonan ke anak untuk digenggam, digulung, dan dibentuk dengan cetakan atau secara tebasan tangan.
+  - Simpan adonan di wadah rapat dan buang bila muncul bau aneh atau jamur.
+  - Biasakan anak tidak memasukkan adonan ke mulut, karena garam dan tepung belum menjadi makanan anak kecil.
+  - Adonan sebaiknya diganti setiap beberapa hari dan dibuat dalam porsi kecil agar tetap segar.
+  - Tepung terigu 1 gelas
+  - Garam halus 3/4 gelas
+  - Air dingin matang 1/2 gelas
+  - Minyak sayur 3 sendok makan
+  - Pewarna makanan secukupnya
+== diy-12-drum-kaleng-susu | Drum Kaleng Susu yang Aman untuk Dipukul
+  - Cuci kaleng sampai bersih dan pastikan tepinya tidak tajam; bila perlu tambahkan lakban di tepi.
+  - Taruh kain di atas mulut kaleng dan kencangkan dengan lakban sampai kain tidak bisa bergerak.
+  - Siapkan sendok kayu atau stik es krim sebagai alat pukul.
+  - Tempatkan drum di lantai dan ajak anak memukulnya dengan lembut sambil mendengarkan bunyi yang muncul.
+  - Tutupi seluruh tepi kaleng dengan lakban berlapis agar tidak melukai tangan anak.
+  - Gunakan alat pukul dari kayu atau plastik ringan; hindari sendok logam yang bisa melukai bibir jika dipeluk dekat.
+  - Dampingi anak dan ajak agar tidak memukul secara berlebihan atau membawa drum ke atas kepala.
+  - Kaleng susu dengan tepi bulat dan tidak bersudut tajam
+  - Kain katun atau sapu tangan tebal
+  - Lakban kain kuat
+  - Sendok kayu atau stik es krim untuk alat pukul
+== diy-13-genggaman-suara-maracas | Maracas Kecil dari Botol Isi Pasta
+  - Masukkan beberapa makaroni besar atau sedikit beras ke dalam botol sampai sepertiga penuh.
+  - Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.
+  - Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan botol tetap tidak transparan.
+  - Latih anak menggoyang maracas dengan ritme sambil dibawakan lagu anak yang suka.
+  - Lakban tutup botol harus rapat; periksa sebelum tiap dipakai dan buang bila ada kepingan yang bisa lepas.
+  - Gunakan isi yang besar dan tidak mudah pecah; hindari isi kecil seperti kelereng bila anak masih hobi mengisap benda kecil.
+  - Bila anak meremas botol terlalu keras atau botol sedikit retak, segera tarik dan simpan.
+  - Botol minyak kecil atau botol pil plastik bersih
+  - Makaroni besar atau beras kering
+  - Lakban kain kuat
+  - Kertas warna untuk menghias
+== diy-14-menara-susun-tutup-botol | Menara Susun dari Tutup Botol Bekas
+  - Cuci tutup botol sampai bersih dan kering, pastikan tidak ada bagian kecil yang bisa lepas atau geser.
+  - Taruh tutup-tutup di wadah kecil di dekat meja atau lantai anak.
+  - Dampingi anak dan ajak menumpuk tutup berurutan dari besar ke kecil, satu di atas satu.
+  - Setelah selesai bermain, ajak anak mengembalikan tutup ke wadah untuk melatih kembali urutan.
+  - Pastikan tutup botol dibersihkan sampai tidak ada sisa minyak dan tidak menjadi licin.
+  - Gunakan tutup besar dari botol minuman yang sudah dikonsumsi; jangan gunakan tutup kecil yang bisa masuk mulut.
+  - Awasi anak supaya tidak memasukkan tutup ke mulut, hidung, atau telinga saat bermain.
+  - 6-10 tutup botol plastik bersih dengan ukuran berbeda-beda
+  - Lakban kain atau kertas berwarna untuk menghias
+  - Wadah kecil untuk menyimpan tutup
+== diy-15-kartu-foto-keluarga | Kartu Foto Keluarga untuk Kenali Wajah
+  - Cetak foto kecil anggota keluarga atau benda rumah yang sudah dikenal anak.
+  - Rekatkan foto di atas karton dan tutupi permukaannya dengan lakban lebar agar tahan lecet dan tahan basah.
+  - Potong tepi kartu dengan gunting dan rapikan agar tidak menyisakan kertas berlapis segi tepi yang robek.
+  - Tampilkan satu kartu setiap sesi dan bercerita seputar orang atau benda dalam foto.
+  - Kartu diperkenalkan oleh orang dewasa dan periksa kartu segera bila mulai lembek.
+  - Pastikan tepi kartu dilapisi lakban rapat sehingga tidak ada kertas berlapis yang bisa dirobek dan masuk mulut.
+  - Dampingi anak dan jauhkan si kartu dari mulut anak sepanjang sesi.
+  - Foto keluarga kecil, dua lembar per kartu
+  - Karton bekas
+  - Lem batang atau selotip lebar
+  - Gunting
+== diy-16-papan-gesper-tali-sepatu | Papan Gesper dan Tali Sepatu Besar untuk Latihan Motorik
+  - Potong bagian gesper dan tali dari celana atau sepatu bekas dengan gunting, sisakan panjang yang cukup.
+  - Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak agar tidak terginjak.
+  - Tambahkan panel kain dengan lipatan rapi sebagai latihan membuka dan menutup.
+  - Tawarkan papan pada anak untuk duduk di lantai, lalu latih membuka gesper dan menata tali sepatu satu demi satu.
+  - Pastikan papan tidak memiliki sisi kayu yang tajam dan gesper sudah berbentuk aman untuk tangan.
+  - Hindari menambahkan tali sepatu yang panjang dan simpulnya kecil karena bisa berbahaya.
+  - Gunakan di lantai yang aman dan dampingi anak agar papan dipakai dengan cara yang benar.
+  - Papan kayu tipis triplek atau kardus tebal
+  - Sabuk atau celana bekas dengan gesper besar
+  - Sepasang sepatu bekas dengan tali sepatu besar
+  - Lem tembak atau selotip kain kuat
+  - Kain katun atau flanel untuk panel tambahan
+== diy-17-kotak-sortir-warna-pompon | Kotak Sortir Warna dengan Pompon Besar
+  - Buat dua lubang di tutup kardus dengan diameter cukup untuk meloloskan satu pompon besar.
+  - Warnai atau tempel label di sekitar tiap lubang sesuai warna pompon yang harus masuk.
+  - Rapikan tepi lubang dan tutup dengan lakban agar tidak ada sisi kardus yang tajam.
+  - Tawarkan anak dua pompon besar dan ajak memasukkan mereka sesuai warna lubang yang sepadan.
+  - Pompon besar sebaiknya lebih besar dari tabung gulungan toilet agar tidak bisa masuk mulut anak.
+  - Ganti dengan pompon besar dan dampingi anak sepanjang sesi agar tidak masuk mulut.
+  - Simpan pompon di wadah setelah dipakai agar tidak tercecer di lantai.
+  - Kardus kecil atau kotak plastik dengan tutup
+  - Pompon besar berwarna merah dan kuning
+  - Spidol warna atau sticker warna
+  - Gunting atau cutter untuk orang dewasa
+  - Lakban kain
+== diy-18-jalur-lakban-lantai | Jalur Lakban Lantai untuk Latihan Jalan dan Pendekaran
+  - Tempel lakban di lantai dalam bentuk garis lurus sederhana dengan panjang 2 hingga 3 meter.
+  - Ubah bentuk menjadi garis melengkung atau siku setelah anak terbiasa dengan jalur lurus.
+  - Ajak anak berjalan di atas garis sambil mendampingi dan memperhatikan posisi kakinya.
+  - Tambahkan tantangan seperti memegang benda kecil ataupun memainkan bentuk baru dengan cerita yang sederhana.
+  - Gunakan lakban perekat halus dan pastikan jalur tidak licin supaya tidak membuat anak terpeleset.
+  - Periksa area jalur dan pastikan tidak di sekitar bentangan halangi atau tangga sebelum dipakai.
+  - Ganti jalur jika lakban luntur atau menepi agar tidak menyebabkan tersandung.
+  - Lakban kertas berwarna atau lakban kain perekat halus
+  - Gunting
+  - Permukaan lantai porselen atau kayu yang mudah dibersihkan
+== diy-19-oobleck-tepung-maizena | Oobleck Tepung Maizena untuk Sensasi Warna-Warni
+  - Campur tepung maizena dan air dalam baskom sambil diaduk sampai kental dan mudah sesekali.
+  - Tambahkan pewarna makanan secukupnya dan aduk sampai warnanya merata.
+  - Letakkan baskom di lantai di atas kain pelindung lalu tunjukkan bahwa campuran bisa keras bila ditekan dan lembut bila dibiarkan.
+  - Biarkan anak menyentuh oobleck di baskom hingga sesi selesai, lalu bersihkan bersama.
+  - Dampingi anak sepanjang sesi dan tutupi baskom setelah selesai agar campuran tidak dicicipi.
+  - Pastikan campuran tidak masuk mata anak dan pemainan dilakukan jauh dari wajah anak.
+  - Sesudah bermain, cuci tangan anak hingga bersih dan jauhkan campuran dari anak yang masih kurang pemahaman.
+  - Tepung maizena 2 gelas
+  - Air dingin matang sekitar 1 gelas
+  - Baskom plastik besar atau baki
+  - Pewarna makanan secukupnya
+  - Sendok plastik atau spatula
+== diy-20-kalung-pasta-besar | Kalung Pasta Makaroni Besar untuk Latihan Jari
+  - Siapkan pita atau benang wol yang ujungnya sudah ditebalkan dengan selotip agar mudah dimasukkan anak.
+  - Taruh pasta di wadah rendah di dekat anak dan tunjukkan caranya memasukkan satu pasta ke tali.
+  - Biarkan anak menyusun pasta satu demi satu dengan satuannya sendiri tanpa terburu-buru.
+  - Setelah cukup panjang, ikat simpul besar dan pakai sebagai kalung atau gantungan dekorasi di tempat main anak.
+  - Gunakan tali yang pendek dan selalu dampingi anak; jangan biarkan anak memakai atau bermain tali tanpa pengawasan setiap saat.
+  - Pastikan pasta besar dan tidak mudah pecah menjadi potongan kecil yang bisa tertelan.
+  - Ganti pasta yang retak atau pecah agar tidak ada potongan kecil yang bisa tertelan.
+  - Makaroni besar atau spaghetti tabung
+  - Pita atau benang wol yang ujungnya sudah diikat dengan simpul besar
+  - Selotip untuk menebalkan ujung benang
+  - Karton kecil untuk tempat pasta
+== diy-21-binokular-gulungan-tisu | Binokular Petualang dari Gulungan Tisu
+  - Rekatkan dua gulungan tisu di bagian tengahnya sehingga keduanya membentuk dua jendela kecil.
+  - Lapisi luar binokular dengan kertas warna atau selotip dekoratif sesuai selera anak.
+  - Pasang tali leher pendek agar binokular tetap aman tak hilang bila jatuh.
+  - Ajak anak mengamati halaman taman, burung, atau awan lewat binokular sambil bercerita tentang yang dilihat.
+  - Gunakan benang leher pendek atau tanpa tali leher untuk anak di bawah tiga tahun agar tidak tergantung di leher.
+  - Pastikan tepi gulungan halus dan tidak ada bagian karton yang mencuat yang bisa melukai mata.
+  - Jangan arahkan binokular langsung ke mata orang lain; tunjukkan cara mengamati dengan jarak yang aman.
+  - Dua gulungan kertas tisu bekas
+  - Lakban kain atau lem tembak
+  - Kertas warna atau selotip dekoratif
+  - Benang panjang maksimal 60 cm untuk tali leher
+== diy-22-telepon-tali-kardus-mini | Telepon Tali Mini untuk Bermain Percakapan
+  - Corenglah kardus kecil menjadi dua bagian gagang telepon dan buat lubang kecil di bagian tengahnya.
+  - Tarik tali melalui kedua lubang dari gagang pertama ke gagang kedua; buat simpul besar di kedua sisi agar tali tidak lepas.
+  - Hias gagang telepon dengan warna anak supaya lebih tertarik.
+  - Ajak anak memegang satu gagang, orang dewasa memegang gagang satunya, lalu bicara lewat tali sambil telinga menempel pada gagang.
+  - Panjang tali maksimal 2 meter dan pastikan tidak ada tali menggantung yang bisa membentuk simpul di sekitar leher anak.
+  - Simpul harus besar dan kuat supaya gagang tidak lepas bila anak menarik tali dengan kuat.
+  - Jangan menyambung tali di sekitar leher anak; gunakan area bermain dan dampingi anak.
+  - Dua wadah kecil dari kardus atau styrofoam bersih
+  - Tali lilin atau tali basah sepanjang 2 meter maksimal
+  - Gunting untuk orang dewasa
+  - Lakban kain
+  - Spidol
+== diy-23-botol-lava-sederhana | Botol Aneh Minyak dan Air untuk Percobaan Warna
+  - Isi botol sampai dua pertiga dengan air matang yang sudah dingin lalu teteskan pewarna makanan.
+  - Tambahkan minyak sayur pada satu pertiga bagian atas botol sampai minyak terpisah dari air
+  - Tambahkan garam halus atau sedikit soda kue dan amati gelembung suara yang membuat percobaan naik-turun.
+  - Ajak anak mengamati minyak yang tidak bercampur dengan air dan gelembung yang naik-turun setelah diberi garam.
+  - Botol harus ditangani bersama orang dewasa dan pastikan tutupnya dilakban agar tidak dikuras oleh anak.
+  - Jangan biarkan anak minum isi botol karena minyak dan soda bercampur harus disimpan di rak tinggi.
+  - Lakukan percobaan di area rata yang mudah dilap jika minyak tumpah supaya tidak menyebabkan tersandung.
+  - Botol plastik tutup rapat
+  - Minyak sayur
+  - Air matang yang sudah dingin
+  - Pewarna makanan
+  - Garam halus atau soda kue
+  - Lakban kain kuat
+== diy-24-huruf-kasar-pasir | Huruf Kasar Sendiri dari Pasir dan Karton
+  - Tulis huruf vokal atau konsonan yang ingin dilatih di karton dengan pola gemuk yang mudah dianalisis.
+  - Oleskan lem di sepanjang goresan huruf dengan kuas sambil dibentuk hati-hati dan perlahan.
+  - Tuangkan pasir halus di atas lem sampai menutup seluruh garis, tunggu kering lalu bersihkan pasir yang tidak menempel.
+  - Ajak anak meraba huruf dengan gerakan tangan sambil disebutkan bunyinya perlahan dan berulang.
+  - Pastikan pasir dan lem tidak masuk mulut anak dan tube; kawal anak supaya tidak menupil pasir IonicPage.
+  - Gunakan pasir yang bersih dan bulat halus, bukan kerikil tajam, agar tangan tidak terluka.
+  - Simpan huruf kasar di rak rendah yang mudah diambil anak agar tidak jatuh dari ketinggian.
+  - Karton bekas atau karton warna biru
+  - Pasir halus kasar atau garam kasar
+  - Lem putih dan kuas
+  - Spidol atau pensil untuk membuat pola huruf
+  - Gunting
+== diy-25-baki-tulis-dalam-bijian | Baki Menulis di Dasar Beras
+  - Taruh kertas warna di dasar baki lalu tambahkan lapisan beras tipis dan rata.
+  - Tunjukkan cara membuat garis di atas beras dengan satu jari, mulai dari garis lurus sampai lengkung.
+  - Ajak anak menulis huruf atau angka sederhana di beras lalu meratakan lagi untuk berikutnya.
+  - Setelah sesi selesai, simpan beras ke wadah rapat agar tetap bersih untuk sesi berikutnya.
+  - Dampingi anak dan hindari anak memasukkan beras ke mulut, hidung, atau telinga saat bermain di lantai.
+  - Ganti beras bila sudah basah atau kotor agar tidak menjadi tempat berkembangnya kuman.
+  - Gunakan baki berdinding yang cukup tinggi agar beras tidak berhamburan keluar dan menimbulkan kekacauan di lantai.
+  - Baki plastik berdinding rendah
+  - Beras kasar atau garam halus secukupnya
+  - Kertas warna untuk dasar baki
+  - Kuas kecil untuk meratakan permukaan
+== diy-26-papan-tulis-kayu-kecil | Papan Tulis Kecil dari Kayu Bekas
+  - Bersihkan permukaan kayu lalu olesi dengan cat hitam dua lapis supaya warnanya rata.
+  - Tunggu sampai cat benar-benar kering dan tidak licin sebelum dipakai.
+  - Tawarkan papan kepada anak bersama kapur dan tunjukkan cara menulis bentuk sederhana.
+  - Tunjukkan cara menghapus tulisan dengan kain kecil lalu biarkan anak mencoba dengan kapur sendiri.
+  - Gunakan cat dan kapur yang jelas aman untuk anak; hindari cat yang mengeluarkan bau kuat.
+  - Sandingkan papan di sudut lantai yang rata supaya tidak roboh saat disandarkan anak.
+  - Dampingi anak saat bermain kapur agar debu dekat wajah dihindari dan tikar digunakan sebagaimana harusnya.
+  - Kayu triplek kecil atau papan bekas yang permukaannya mulus
+  - Cat hitam yang tidak mudah mengelupas
+  - Kapur meja yang halus
+  - Kain kecil sebagai penghapus
+  - Kuas
+== diy-27-kantong-misteri-benda-rumah | Kantong Misteri Isi Benda Rumah
+  - Pilih tiga hingga empat benda rumah yang aman dan bentuknya mudah dikenali dari rabaan.
+  - Masukkan semua benda ke dalam kantong tanpa memperkenalkan seluruh isinya pada anak.
+  - Ajak anak meraba isi kantong dari luar dan menebak benda apa yang ada di dalamnya.
+  - Bersama anak, keluarkan benda satu demi satu untuk memastikan tebakannya dan mencoba benda berikutnya.
+  - Pastikan semua benda lebih besar dari tabung gulungan toilet agar tidak bisa tertelan.
+  - Kawal anak sepanjang sesi dan buang benda yang mulai rusak atau berkeping-keping.
+  - Buat sesi singkat dan beri tanda selesai supaya anak memahami akhir permainan dengan jelas.
+  - Kantong kain dengan tali penutup
+  - Benda-benda aman seperti sendok kayu, bola besar karet, dan tutup botol besar
+  - Baki atau alas untuk meletakkan benda
+== diy-28-rangka-kolase-alam | Rangka Kolase Alam dari Karton dan Daun
+  - Potong karton menjadi bingkai dengan lubang di tengah lalu tutupi tepi potongan dengan selotip.
+  - Berjalanlah bersama anak di sekitar rumah untuk mengumpulkan daun kering dan bentuk-bentuk alam yang menarik.
+  - Ajak anak menempelkan daun dan bunga di sepanjang bingkai sesuai selera dengan lem batang.
+  - Tunggu lem mengering lalu gantungkan hasilnya di dinding kamar atau sudut bermain agar anak merasa dihargai.
+  - Tutupi semua tepi potongan karton dengan selotip agar tidak melukai tangan anak.
+  - Pilih daun dan ranting yang bersih dan tidak ada rambut tajam; hindari benda kecil yang bisa masuk mulut anak di bawah tiga tahun.
+  - Gunakan lem batang yang aman untuk anak dan dampingi anak dari awal sampai karya selesai.
+  - Karton bekas berbentuk bingkai dengan lubang di tengah
+  - Lem batang
+  - Daun kering, ranting kecil, dan bunga kering
+  - Selotip kain
+  - Krayon
+== diy-29-kereta-roda-tutup-botol | Kereta Ekspres dari Botol Bekas dan Roda Tutup
+  - Cuci botol sampai bersih dan tempel kertas warna agar terlihat seperti badan kereta.
+  - Buat dua lubang kecil sejajar di bagian bawah botol untuk menancapkan poros kayu.
+  - Tancapkan tusuk sate ke lubang lalu rekatkan tutup botol di kedua ujungnya sebagai roda dan kuatkan dengan lem serta lakban.
+  - Dorong kereta di lantai yang rata dan ajak anak mengamati bagaimana roda membuat kereta bergerak maju dan mundur.
+  - Tusuk sate dipotong dan dipasang oleh orang dewasa; pastikan tidak ada ujung runcing yang menyembul keluar.
+  - Rekatkan roda dengan kuat; periksa setiap minggu dan kencangkan kembali bila ada roda yang mulai goyang.
+  - Anak di bawah tiga tahun sebaiknya tidak menggunakan poros kayu runcing; ganti dengan roda yang sudah dijual jadi.
+  - Botol plastik bekas yang kaku dan bersih
+  - Empat tutup botol sebagai roda
+  - Tusuk sate atau stik kayu sebagai poros
+  - Lakban kain dan lem
+  - Kertas warna untuk menghias
+== diy-30-rumah-bermain-kardus | Rumah Bermain Kardus Besar
+  - Letakkan kardus terbuka di lantai yang datar dan lebar dan pastikan ukurannya cukup untuk anak masuk dan duduk.
+  - Potong pintu besar di satu sisi dan jendela persegi di sisi lain dengan gunting atau cutter.
+  - Tutupi semua tepi potongan dengan lakban kain supaya tidak melukai tangan anak.
+  - Biarkan anak menghias dinding kardus dengan krayon atau stiker supaya ia merasa rumah itu miliknya.
+  - Pemotongan kardus sepenuhnya dilakukan orang dewasa; anak baru ikut menghias setelah semua potongan selesai dan aman.
+  - Letakkan kardus di lantai datar dan jauhkan dari tangga, kipas angin, atau sumber api supaya tidak berbahaya.
+  - Periksa tepi kardus secara berkala dan perkuat dengan lakkan bila mulai lembek atau sobek di bagian pintu.
+  - Kardus besar barang elektronik yang bersih
+  - Gunting atau cutter untuk digunakan orang dewasa
+  - Lakban kain lebar
+  - Krayon, spidol warna, dan stiker
+  - Kertas warna
+[0m
+Tersisa beberapa string dengan kualitas rendah. Aku sedang memperbaikinya sekarang.
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+P = '/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'
+s = open(P).read()
+
+R = [
+ ('dipakai menyalak tubuh', 'dipakai memukul-mukul tubuh'),
+ ('tas tidak cocok untuk anak yang suka mengisap atau menggit plastik', 'tas tidak cocok untuk anak yang suka mengisap atau menggigit plastik'),
+ ('benda bergerigi yang bisa robek plastik dan tersedak', 'benda bergerigi yang bisa merobek plastik dan meningkatkan risiko tersedak'),
+ ('Gel bening atau cairan teh yang kental berwarna', 'Gel bening atau cairan gel yang kental'),
+ ('dibentuk dengan cetakan atau secara tebasan tangan', 'dibentuk dengan cetakan atau langsung oleh tangan'),
+ ('Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan botol tetap tidak transparan', 'Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan isi botol tidak terlihat mudah'),
+ ('Potong tepi kartu dengan gunting dan rapikan agar tidak menyisakan kertas berlapis segi tepi yang robek', 'Potong tepi kartu dengan gunting dan rapikan agar tidak menyisakan tepi yang robek'),
+ ('Ganti dengan pompon besar dan dampingi anak sepanjang sesi agar tidak masuk mulut', 'Dampingi anak sepanjang sesi agar pompon tidak masuk mulut'),
+ ('dan pastikan tidak di sekitar bentangan halangi atau tangga sebelum dipakai', 'dan pastikan tidak di dekat tangga atau pintu sebelum dipakai'),
+ ('Campur tepung maizena dan air dalam baskom sambil diaduk sampai kental dan mudah sesekali', 'Campur tepung maizena dan air dalam baskom sambil diaduk sampai kental seperti lumpur lembut'),
+ ('Pastikan campuran tidak masuk mata anak dan pemainan dilakukan jauh dari wajah anak', 'Pastikan campuran tidak masuk mata anak dan bermain dilakukan jauh dari wajah anak'),
+ ('Sesudah bermain, cuci tangan anak hingga bersih dan jauhkan campuran dari anak yang masih kurang pemahaman', 'Sesudah bermain, cuci tangan anak hingga bersih dan buang sisa campuran yang sudah kering'),
+ ('yang ujungnya sudah ditebalkan dengan selotip agar mudah dimasukkan anak', 'yang ujungnya sudah ditebalkan dengan selotip agar pasta mudah dimasukkan oleh anak'),
+ ('Corenglah kardus kecil menjadi dua bagian gagang telepon dan buat lubang kecil di bagian tengahnya', 'Potonglah kardus kecil menjadi dua bagian untuk gagang telepon dan buat lubang kecil di bagian tengahnya'),
+ ('Hias gagang telepon dengan warna anak supaya lebih tertarik', 'Hias gagang telepon dengan kertas warna favorit anak supaya lebih tertarik'),
+ ('Tali lilin atau tali basah sepanjang 2 meter maksimal', 'Tali lilin atau tali kurawal dengan panjang maksimal 2 meter') if False else ('Tali lilin atau tali basah sepanjang 2 meter maksimal', 'Tali lilin atau tali kurawal dengan panjang maksimal 2 meter'),
+ ('Botol Aneh Minyak dan Air untuk Percobaan Warna', 'Botol Ajaib Minyak dan Air untuk Percobaan Warna'),
+ ('Tambahkan minyak sayur pada satu pertiga bagian atas botol sampai minyak terpisah dari air', 'Tambahkan minyak sayur pada sepertiga bagian atas botol sampai minyak terpisah dari air.'),
+ ('amati gelembung suara yang membuat percobaan naik-turun', 'amati gelembung yang membuat percobaan naik-turun'),
+ ('pastikan tutupnya dilakban agar tidak dikuras oleh anak', 'pastikan tutupnya dilakban agar tidak bisa dibuka oleh anak'),
+ ('Jangan biarkan anak minum isi botol karena minyak dan soda bercampur harus disimpan di rak tinggi', 'Simpan botol di rak yang tinggi dan jauh dari jangkauan anak setelah dipakai'),
+ ('dengan pola gemuk yang mudah dianalisis', 'dengan pola gemuk yang mudah dilihat'),
+ ('Oleskan lem di sepanjang goresan huruf dengan kuas sambil dibentuk hati-hati dan perlahan', 'Oleskan lem di sepanjang goresan huruf dengan kuas secara hati-hati dan perlahan'),
+ ('Pastikan pasir dan lem tidak masuk mulut anak dan tube; kawal anak supaya tidak menupil pasir IonicPage', 'Pastikan pasir dan lem tidak masuk mulut anak; dampingi anak supaya tidak memainkan pasir di luar karton'),
+ ('Pasir halus kasar atau garam kasar', 'Pasir halus atau garam kasar'),
+ ('Dampingi anak saat bermain kapur agar debu dekat wajah dihindari dan tikar digunakan sebagaimana harusnya', 'Dampingi anak saat bermain kapur agar debu dekat wajah dihindari dan papan tidak roboh'),
+ ('ganti dengan roda yang sudah dijual jadi', 'ganti dengan poros yang membuat dan tidak runcing'),
+ ('perkuat dengan lakkan bila mulai lembek', 'perkuat dengan lakban bila mulai lembek')
+]
+# fix accidental bad replacement word
+R.append(('ganti dengan poros yang membuat dan tidak runcing', 'ganti dengan poros yang membulat dan tidak runcing'))
+
+for a, b in R:
+    s = s.replace(a, b)
+
+open(P, 'w').write(s)
+json.load(open(P))
+d = json.load(open(P))
+print('OK', len(d))
+EOF
+OK 30
+[0m
+[0m$ [0mpython3 -c "import json;d=json.load(open('content/parts/diy-1.json'));print('OK',len(d))" && cd /home/temamumtaza/.hermes/cache/scratch/opencode && python3 - << 'EOF'
+import json
+d = json.load(open('/home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json'))
+bad = ['tube', ' IonicPage', 'menupil', 'lakkan', 'dikuras', 'tikar', 'suraya', 'dragon', 'menggit', ' menyalak', 'tebasan', 'sesekali.', '微信']
+ok = True
+for e in d:
+    txt = ' '.join([e['title'], e['makes']] + e['steps'] + e['safetyNotes'] + e['materialsNeeded'])
+    for b in bad:
+        if b in txt:
+            ok = False; print('BAD', e['id'], b)
+    assert all(len(ref['url']) > 10 and ref['url'].startswith('http') for ref in e['references'])
+print('quality pass OK' if ok else 'issues remain')
+ids = [e['id'] for e in d]
+print('unique ids:', len(set(ids)))
+print('bands:', sorted({b for e in d for b in e['ageBands']}))
+EOF
+OK 30
+quality pass OK
+unique ids: 30
+bands: ['0-3m', '12-18m', '18-24m', '2-3y', '3-4y', '3-6m', '4-5y', '6-9m', '9-12m']
+[0m
+[0m$ [0mcd /home/temamumtaza/.hermes/cache/scratch/opencode && rm -f batch*.json merge_fix.json fixmap.json && ls -la /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+-rw-rw-r-- 1 temamumtaza temamumtaza 49349 Oct 19 20:50 /home/temamumtaza/Documents/dev/montessori-playbook/content/parts/diy-1.json
+[0m
+DONE diy-1

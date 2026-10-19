@@ -1,7 +1,875 @@
 [0m
 > build · deepseek-v4.1-flash-free
 [0m
-I'll create the file with 30 activities for ages 3-6 months.
-[0m$ [0mls content/parts 2>/dev/null || echo "NO_DIR"
+[0m$ [0mls content/parts 2>/dev/null || ls
 glossary-1.json
 [0m
+[0m$ [0mls -la content/parts
+total 24
+drwxrwxr-x 2 temamumtaza temamumtaza  4096 Oct 19 18:35 .
+drwxrwxr-x 4 temamumtaza temamumtaza  4096 Oct 19 18:34 ..
+-rw-rw-r-- 1 temamumtaza temamumtaza 13706 Oct 19 18:35 glossary-1.json
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json, os
+
+acts = [
+{
+ "id":"36m-tummy-time-dengan-cermin",
+ "title":"Tengkurap Seru di Depan Cermin",
+ "summary":"Letakkan cermin bayi yang aman di depan anak saat tengkurap agar ia tertarik mengangkat kepala dan melihat wajahnya sendiri.",
+ "ageBands":["3-6m"],
+ "areas":["movement","sensorial"],
+ "skills":["kontrol kepala","kekuatan leher","fokus visual"],
+ "objectives":["Melatih otot leher dan punggung lewat tengkurap","Menarik perhatian anak dengan pantulan wajah"],
+ "materials":[{"name":"cermin akrilik bayi tanpa tepi tajam","fromHome":False,"optional":False},{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan kontras tinggi","fromHome":True,"optional":True}],
+ "prepMinutes":3,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak tengkurap di matras dengan nyaman."},{"step":2,"text":"Sandarkan cermin akrilik di depannya, sekitar 20-30 cm."},{"step":3,"text":"Tunjuk wajah di cermin dan sebut namanya dengan ceria."},{"step":4,"text":"Biarkan anak menikmati sebentar, lalu angkat bila tampak lelah."}],
+ "controlOfError":"Anak akan menangis atau menurunkan kepala saat ototnya lelah, tanda waktunya berhenti.",
+ "variations":["Letakkan cermin agak ke samping agar anak berlatih menoleh","Gunakan mainan berwarna kontras di samping cermin"],
+ "readySigns":["Anak sudah bisa mengangkat kepala sebentar","Anak tertarik pada wajah dan benda di depannya"],
+ "struggleSigns":["Kepala sering jatuh dan anak rewel","Anak menolak posisi tengkurap sama sekali"],
+ "safetyNotes":["Awasi anak sepanjang waktu dan jangan pernah meninggalkannya saat tengkurap.","Gunakan cermin akrilik ringan tanpa sudut tajam, bukan cermin kaca.","Hentikan bila anak tampak lelah; tengkurap hanya saat anak bangun dan diawasi."],
+ "references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-meraih-kain-warna-kontras",
+ "title":"Meraih Kain Warna Kontras",
+ "summary":"Gantungkan kain lembut berwarna kontras dalam jangkauan anak agar ia berlatih mengarahkan tangan dan menggenggam.",
+ "ageBands":["3-6m"],
+ "areas":["movement","sensorial"],
+ "skills":["koordinasi mata-tangan","menggenggam","mengikuti objek"],
+ "objectives":["Melatih tangan meraih objek yang terlihat","Memperkuat genggaman dengan bahan lembut"],
+ "materials":[{"name":"kain katun lembut warna kontras","fromHome":True,"optional":False},{"name":"tali penggantung lebar dan pendek","fromHome":True,"optional":True}],
+ "prepMinutes":5,
+ "durationMinutes":8,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Pilih kain lembut tanpa bagian yang bisa terlepas."},{"step":2,"text":"Pegang kain di atas dada anak, sekitar 25 cm dari wajah."},{"step":3,"text":"Gerakkan perlahan agar anak mengikuti dengan mata."},{"step":4,"text":"Dekatkan kain ke tangannya dan biarkan ia meraih."}],
+ "controlOfError":"Bila kain terlalu jauh, anak berhenti mencoba; dekatkan sedikit agar ia bisa berhasil.",
+ "variations":["Gunakan kain berbeda tekstur secara bergantian","Gerakkan kain dari kiri ke kanan perlahan"],
+ "readySigns":["Tangan mulai terbuka dan sering bergerak ke depan","Mata mengikuti benda bergerak"],
+ "struggleSigns":["Tangan tetap mengepal dan tidak mencoba meraih","Anak menoleh menjauh atau rewel"],
+ "safetyNotes":["Pegang kain langsung; jangan menggantungnya di leher atau tempat tidur anak.","Pastikan tidak ada tali panjang, kancing, atau bagian kecil yang bisa lepas.","Awasi anak agar kain tidak menutupi hidung dan mulutnya."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-lagu-dengan-gerakan-tangan",
+ "title":"Lagu dengan Gerakan Tangan",
+ "summary":"Nyanyikan lagu sederhana sambil menggerakkan tangan anak dengan lembut, memperkuat hubungan bahasa, irama, dan gerak tubuh.",
+ "ageBands":["3-6m"],
+ "areas":["language","art-music"],
+ "skills":["mendengar","irama","ikatan sosial"],
+ "objectives":["Mengenalkan pola suara dan irama","Membangun momen kedekatan lewat nyanyian"],
+ "materials":[{"name":"suara orang tua","fromHome":True,"optional":False},{"name":"selimut lembut","fromHome":True,"optional":True}],
+ "prepMinutes":0,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk nyaman dengan anak di pangkuan, saling berhadapan."},{"step":2,"text":"Nyanyikan lagu pendek dengan tempo lambat."},{"step":3,"text":"Gerakkan tangan anak mengikuti irama dengan lembut."},{"step":4,"text":"Berhenti sejenak dan tersenyum, lalu ulangi bila anak senang."}],
+ "controlOfError":"Anak akan tersenyum, menatap, atau bersuara bila menikmati; bila menoleh, hentikan lagu.",
+ "variations":["Ganti lagu dengan suara lembut yang dibuat sendiri","Tambahkan gerakan kaki lembut saat anak berbaring"],
+ "readySigns":["Anak menatap wajah saat diajak bicara","Anak bersuara atau tersenyum sebagai respons"],
+ "struggleSigns":["Anak menangis saat diajak bernyanyi","Anak menoleh dan tidak tertarik pada wajah"],
+ "safetyNotes":["Gerakkan tangan dan kaki anak dengan sangat lembut, jangan menarik sendi.","Jangan mengayun anak dengan kuat atau melemparnya ke udara.","Awasi posisi kepala anak agar tetap tertopang."],
+ "references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-berguling-ke-sisi",
+ "title":"Berguling ke Sisi Kanan dan Kiri",
+ "summary":"Bantu anak menemukan gerakan berguling dengan mainan menarik di sampingnya, tanpa memaksa tubuhnya berputar.",
+ "ageBands":["3-6m"],
+ "areas":["movement"],
+ "skills":["berguling","kekuatan inti","koordinasi tubuh"],
+ "objectives":["Mengenalkan gerakan berguling","Melatih otot perut dan punggung"],
+ "materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan kerincing besar","fromHome":True,"optional":False}],
+ "prepMinutes":2,
+ "durationMinutes":6,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak telentang di matras yang empuk."},{"step":2,"text":"Letakkan mainan di sisi kanan, agak jauh dari tangan."},{"step":3,"text":"Biarkan anak berusaha menoleh dan memutar tubuh sendiri."},{"step":4,"text":"Bila perlu, topang pinggulnya sedikit tanpa mendorong paksa."}],
+ "controlOfError":"Anak akan berhenti atau menangis bila posisi terasa tidak nyaman, tanda untuk beristirahat.",
+ "variations":["Ganti sisi mainan agar kedua arah terlatih","Lakukan setelah mandi saat anak rileks"],
+ "readySigns":["Anak aktif menendang dan memutar kepala","Anak mulai miringkan tubuh ke satu sisi"],
+ "struggleSigns":["Tubuh anak kaku saat dimiringkan","Anak menangis setiap kali diposisikan miring"],
+ "safetyNotes":["Jangan pernah meninggalkan anak sendirian di permukaan tinggi seperti kasur atau meja.","Lakukan di lantai beralas matras, bukan di sofa.","Jangan memaksa anak berguling; hentikan bila ia menangis."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-menendang-bola-lunak",
+ "title":"Menendang Bola Lunak",
+ "summary":"Letakkan bola kain ringan dekat kaki anak saat berbaring agar ia menemukan sensasi menendang dan melihat bola bergerak.",
+ "ageBands":["3-6m"],
+ "areas":["movement","sensorial"],
+ "skills":["kekuatan kaki","sebab-akibat","koordinasi kaki"],
+ "objectives":["Menguatkan otot kaki","Mengenalkan hubungan tendangan dan gerakan bola"],
+ "materials":[{"name":"bola kain lunak berukuran sedang","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False}],
+ "prepMinutes":1,
+ "durationMinutes":7,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan bola kain menyentuh telapak kakinya."},{"step":3,"text":"Biarkan anak menendang dan melihat bola bergerak."},{"step":4,"text":"Kembalikan bola ke kakinya dan ulangi dengan gembira."}],
+ "controlOfError":"Bola yang terlalu jauh tidak tersentuh; dekatkan kembali agar anak bisa merasakan hasil tendangannya.",
+ "variations":["Gunakan bola dengan bunyi lembut di dalamnya","Lakukan tanpa alas kaki agar sensasi lebih terasa"],
+ "readySigns":["Anak sering menendang dan mengangkat kaki","Anak memperhatikan benda yang bergerak"],
+ "struggleSigns":["Kaki anak jarang bergerak","Anak tidak tertarik pada bola"],
+ "safetyNotes":["Gunakan bola kain yang ringan dan tidak memiliki bagian kecil lepas.","Awasi anak agar bola tidak menutupi wajahnya.","Jangan menggunakan bola plastik keras atau bola kecil."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-memegang-gelang-kayu-besar",
+ "title":"Memegang Gelang Kayu Besar",
+ "summary":"Berikan gelang kayu berukuran besar dan halus untuk digenggam, digerakkan, dan dipindahkan antar tangan.",
+ "ageBands":["3-6m"],
+ "areas":["sensorial","movement"],
+ "skills":["genggaman","koordinasi dua tangan","eksplorasi tekstur"],
+ "objectives":["Melatih genggaman yang makin kuat","Mengenalkan berat dan tekstur kayu"],
+ "materials":[{"name":"gelang kayu besar halus","fromHome":False,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],
+ "prepMinutes":2,
+ "durationMinutes":6,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Tunjukkan gelang kayu di depan mata anak."},{"step":2,"text":"Sentuhkan gelang ke tangannya sampai jari-jarinya menggenggam."},{"step":3,"text":"Biarkan anak memegang dan memutar gelang sendiri."},{"step":4,"text":"Tawarkan gelang lagi dari sisi lain untuk latihan meraih."}],
+ "controlOfError":"Gelang akan jatuh bila genggaman belum kuat; anak belajar mengulang tanpa perlu dikoreksi.",
+ "variations":["Sediakan dua gelang untuk latihan memindahkan","Gunakan bola kayu besar dengan permukaan halus"],
+ "readySigns":["Tangan anak mulai menggenggam benda yang disentuhkan","Anak membawa tangan ke arah mulut"],
+ "struggleSigns":["Benda selalu langsung terlepas","Anak tidak mau memegang benda"],
+ "safetyNotes":["Pilih gelang berdiameter jauh lebih besar dari mulut anak agar tidak bisa ditelan.","Pastikan permukaan kayu halus, tidak ada serpihan atau cat mengelupas.","Awasi anak karena bayi usia ini cenderung memasukkan benda ke mulut."],
+ "references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-bicara-balas-suara-bayi",
+ "title":"Bicara Balas Suara Bayi",
+ "summary":"Tirukan celotehan dan suara anak, lalu beri jeda agar ia merasakan giliran berbicara dalam percakapan sederhana.",
+ "ageBands":["3-6m"],
+ "areas":["language","grace-courtesy"],
+ "skills":["celoteh","giliran bicara","kontak mata"],
+ "objectives":["Merangsang anak bersuara lebih banyak","Mengenalkan pola percakapan bergantian"],
+ "materials":[{"name":"wajah dan suara orang tua","fromHome":True,"optional":False}],
+ "prepMinutes":0,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak dekat."},{"step":2,"text":"Tunggu anak mengeluarkan suara seperti ooh atau aah."},{"step":3,"text":"Tirukan suaranya dengan nada ramah, lalu berhenti."},{"step":4,"text":"Beri waktu anak membalas sebelum Anda bersuara lagi."}],
+ "controlOfError":"Bila orang tua bicara terus, anak tidak punya kesempatan membalas; jeda adalah kuncinya.",
+ "variations":["Tambahkan gerakan mulut yang jelas agar anak meniru","Gunakan suara berbeda saat mengganti topik"],
+ "readySigns":["Anak mengeluarkan suara selain menangis","Anak menatap wajah dan mulut orang tua"],
+ "struggleSigns":["Anak jarang bersuara saat diajak","Anak menghindari kontak mata"],
+ "safetyNotes":["Lakukan saat anak tenang dan bangun, bukan saat mengantuk atau lapar.","Jaga jarak wajah yang nyaman dan jangan menutupi hidung anak.","Awasi anak selama sesi berlangsung."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]
+},
+{
+ "id":"36m-bercermin-mengenal-wajah",
+ "title":"Bercermin dan Mengenal Wajah",
+ "summary":"Ajak anak melihat cermin sambil menunjuk mata, hidung, dan mulut, membangun kesadaran diri dan kosakata tubuh.",
+ "ageBands":["3-6m"],
+ "areas":["self-care","language"],
+ "skills":["kesadaran diri","kosakata tubuh","kontak sosial"],
+ "objectives":["Mengenalkan bagian wajah","Membangun rasa aman pada wajah sendiri"],
+ "materials":[{"name":"cermin akrilik aman","fromHome":False,"optional":False},{"name":"matras","fromHome":True,"optional":False}],
+ "prepMinutes":2,
+ "durationMinutes":6,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Letakkan cermin tegak di depan anak yang sedang tengkurap atau duduk ditopang."},{"step":2,"text":"Tunjuk wajah di cermin dan sebut nama anak."},{"step":3,"text":"Sebutkan mata, hidung, dan mulut sambil menunjuk lembut."},{"step":4,"text":"Beri anak waktu mengamati dan tersenyum pada pantulannya."}],
+ "controlOfError":"Anak akan menoleh atau rewel bila bosan; cukup akhiri sesi tanpa memaksa.",
+ "variations":["Gunakan cermin saat anak duduk di pangkuan","Bandingkan wajah anak dan wajah orang tua di cermin"],
+ "readySigns":["Anak tertarik menatap wajah","Anak tersenyum pada pantulan atau wajah orang"],
+ "struggleSigns":["Anak menghindari cermin","Anak menangis melihat pantulan"],
+ "safetyNotes":["Gunakan cermin akrilik yang ringan dan tidak mudah pecah.","Pastikan cermin tidak bisa jatuh menimpa anak.","Awasi anak dan jangan meninggalkannya bersama cermin."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-meraba-tekstur-kain",
+ "title":"Meraba Berbagai Tekstur Kain",
+ "summary":"Sediakan beberapa kain dengan tekstur berbeda untuk diraba dan digenggam, memperkaya pengalaman sensorik anak.",
+ "ageBands":["3-6m"],
+ "areas":["sensorial","language"],
+ "skills":["diskriminasi taktil","genggaman","kosakata tekstur"],
+ "objectives":["Mengenalkan perbedaan tekstur","Melatih tangan mengeksplorasi benda"],
+ "materials":[{"name":"potongan kain katun, wol, dan satin","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],
+ "prepMinutes":8,
+ "durationMinutes":7,
+ "prepLevel":"sedang",
+ "presentation":[{"step":1,"text":"Siapkan tiga kain bersih dengan tekstur berbeda."},{"step":2,"text":"Sentuhkan satu kain ke telapak tangan anak."},{"step":3,"text":"Sebutkan teksturnya, misalnya lembut atau kasar."},{"step":4,"text":"Ganti kain dan biarkan anak meraba sendiri."}],
+ "controlOfError":"Anak akan melepas kain yang tidak nyaman; ia belajar memilih tekstur yang disukai.",
+ "variations":["Gunakan kain hangat dan dingin secara bergantian","Masukkan kain ke dalam kantong kain untuk diambil"],
+ "readySigns":["Anak membuka dan menutup tangan","Anak memperhatikan benda yang disentuhkan"],
+ "struggleSigns":["Anak menangis saat disentuh kain tertentu","Anak tidak mau memegang apa pun"],
+ "safetyNotes":["Cuci kain terlebih dahulu dan pastikan tidak ada benang panjang yang bisa melilit jari.","Jangan gunakan kain berbulu yang seratnya mudah lepas.","Awasi anak karena kain bisa masuk ke mulut."],
+ "references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]
+},
+{
+ "id":"36m-lagu-anggota-tubuh",
+ "title":"Lagu Anggota Tubuh Sambil Menyentuh",
+ "summary":"Nyanyikan lagu tentang anggota tubuh sambil menyentuh tangan, kaki, dan hidung anak dengan lembut agar kosakata terasa nyata.",
+ "ageBands":["3-6m"],
+ "areas":["language","art-music"],
+ "skills":["kosakata tubuh","mendengar","kesadaran tubuh"],
+ "objectives":["Mengenalkan nama anggota tubuh","Mengaitkan suara dengan sentuhan lembut"],
+ "materials":[{"name":"suara orang tua","fromHome":True,"optional":False},{"name":"boneka kain","fromHome":True,"optional":True}],
+ "prepMinutes":0,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Letakkan anak dalam posisi nyaman dan saling berhadapan."},{"step":2,"text":"Nyanyikan lagu pendek tentang tangan dan kaki."},{"step":3,"text":"Sentuh bagian tubuh yang disebut dengan sangat lembut."},{"step":4,"text":"Ulangi sambil menunggu reaksi anak."}],
+ "controlOfError":"Bila anak menarik tangan atau menoleh, sentuhan terlalu banyak; kurangi dan beri jeda.",
+ "variations":["Gunakan boneka untuk menunjukkan anggota tubuh","Ganti lagu dengan nama bagian tubuh lain"],
+ "readySigns":["Anak menikmati sentuhan lembut","Anak menatap mulut saat bernyanyi"],
+ "struggleSigns":["Anak rewel saat disentuh","Anak tidak merespons suara"],
+ "safetyNotes":["Sentuh anak dengan lembut, hindari menekan ubun-ubun atau perut.","Jangan menggelitik berlebihan hingga anak kepayahan.","Awasi reaksi anak dan hentikan bila ia tidak nyaman."],
+ "references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-mengikuti-benda-bergerak-lambat",
+ "title":"Mengikuti Benda Bergerak Lambat",
+ "summary":"Gerakkan mainan sederhana perlahan dari kiri ke kanan agar mata anak berlatih mengikuti arah tanpa kehilangan fokus.",
+ "ageBands":["3-6m"],
+ "areas":["sensorial","language"],
+ "skills":["pelacakan visual","fokus","perhatian bersama"],
+ "objectives":["Melatih mata mengikuti objek","Memperpanjang rentang perhatian anak"],
+ "materials":[{"name":"mainan kontras tinggi tanpa bagian kecil","fromHome":True,"optional":False}],
+ "prepMinutes":1,
+ "durationMinutes":4,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Posisikan anak telentang atau duduk ditopang."},{"step":2,"text":"Pegang mainan sekitar 30 cm dari wajahnya."},{"step":3,"text":"Gerakkan perlahan ke samping kanan lalu kiri."},{"step":4,"text":"Berhenti sejenak agar anak bisa memfokuskan mata."}],
+ "controlOfError":"Bila gerakan terlalu cepat, mata anak tertinggal; perlambat dan ulangi.",
+ "variations":["Gerakkan mainan naik dan turun perlahan","Gunakan mainan berbunyi lembut"],
+ "readySigns":["Mata anak mengikuti wajah orang tua","Anak menatap benda dalam jarak dekat"],
+ "struggleSigns":["Mata anak tidak mengikuti benda","Anak cepat kehilangan minat"],
+ "safetyNotes":["Pilih mainan besar tanpa bagian kecil yang bisa lepas.","Jangan menggerakkan benda terlalu dekat ke mata anak.","Awasi anak dan hentikan bila ia tampak pusing atau rewel."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-duduk-ditopang-bantal",
+ "title":"Duduk Ditopang Bantal",
+ "summary":"Beri pengalaman duduk singkat dengan bantal penyangga agar anak melatih keseimbangan sambil tetap aman.",
+ "ageBands":["3-6m"],
+ "areas":["movement"],
+ "skills":["keseimbangan duduk","kontrol batang tubuh","kekuatan inti"],
+ "objectives":["Mengenalkan posisi duduk","Melatih otot inti dengan topangan"],
+ "materials":[{"name":"bantal penyangga empuk","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False},{"name":"mainan ringan","fromHome":True,"optional":True}],
+ "prepMinutes":2,
+ "durationMinutes":4,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Susun bantal membentuk huruf U di atas matras."},{"step":2,"text":"Dudukkan anak di tengah dengan punggung tersangga."},{"step":3,"text":"Letakkan mainan ringan di depannya."},{"step":4,"text":"Duduk di dekat anak dan akhiri sesi saat ia mulai miring."}],
+ "controlOfError":"Tubuh anak akan mulai miring saat lelah, tanda sesi duduk sudah cukup.",
+ "variations":["Gunakan pangkuan orang tua sebagai penyangga","Lakukan di depan cermin agar anak melihat dirinya"],
+ "readySigns":["Anak bisa menahan kepala dengan stabil","Anak suka melihat sekeliling saat digendong"],
+ "struggleSigns":["Kepala masih jatuh ke depan","Tubuh melengkung dan anak menangis"],
+ "safetyNotes":["Selalu duduk dalam jangkauan tangan orang dewasa.","Jangan menggunakan bantal di dalam tempat tidur atau kereta bayi saat tidur.","Lakukan di lantai beralas matras, bukan di permukaan tinggi."],
+ "references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-memindahkan-benda-antar-tangan",
+ "title":"Memindahkan Benda Antar Tangan",
+ "summary":"Berikan benda ringan yang mudah digenggam agar anak berlatih memindahkannya dari satu tangan ke tangan lain.",
+ "ageBands":["3-6m"],
+ "areas":["movement","sensorial"],
+ "skills":["koordinasi dua tangan","kontrol genggaman","perhatian"],
+ "objectives":["Melatih perpindahan benda antar tangan","Memperkuat jari dan pergelangan"],
+ "materials":[{"name":"mainan genggam ringan tanpa bagian kecil","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],
+ "prepMinutes":1,
+ "durationMinutes":6,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Letakkan mainan di tangan kanan anak."},{"step":2,"text":"Tunggu sampai ia menggenggam dengan kuat."},{"step":3,"text":"Sentuhkan tangan kirinya ke mainan itu."},{"step":4,"text":"Biarkan anak menemukan cara memindahkannya sendiri."}],
+ "controlOfError":"Benda akan jatuh bila perpindahan belum lancar; anak dapat mencoba lagi tanpa dikoreksi.",
+ "variations":["Gunakan dua benda identik untuk saling ditukar","Lakukan sambil bernyanyi agar lebih menyenangkan"],
+ "readySigns":["Anak bisa menggenggam benda sebentar","Anak membawa tangan ke tengah tubuh"],
+ "struggleSigns":["Satu tangan selalu mengepal","Anak melepas benda dengan cepat"],
+ "safetyNotes":["Pastikan benda lebih besar dari mulut anak dan tidak punya bagian kecil.","Awasi anak karena benda akan sering dibawa ke mulut.","Hindari benda dengan tali, pita, atau lonceng kecil."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"Montessori Global","url":"https://montessoriglobal.com/"}]
+},
+{
+ "id":"36m-berjemur-pagi-di-teduh",
+ "title":"Berjemur Pagi di Tempat Teduh",
+ "summary":"Ajak anak keluar rumah pada pagi hari untuk merasakan udara segar dan cahaya alami tanpa paparan matahari langsung.",
+ "ageBands":["3-6m"],
+ "areas":["outdoor","self-care"],
+ "skills":["adaptasi lingkungan","pengalaman sensorik","ritme harian"],
+ "objectives":["Mengenalkan anak pada lingkungan luar rumah","Membantu membangun ritme siang dan malam"],
+ "materials":[{"name":"matras luar","fromHome":True,"optional":False},{"name":"topi lebar","fromHome":True,"optional":False},{"name":"selimut tipis","fromHome":True,"optional":True}],
+ "prepMinutes":5,
+ "durationMinutes":15,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Pilih waktu pagi saat matahari belum terlalu terik."},{"step":2,"text":"Cari area teduh dan jauh dari angin kencang."},{"step":3,"text":"Baringkan anak di matras dengan pakaian nyaman."},{"step":4,"text":"Amati bersama daun dan awan, lalu kembali bila anak rewel."}],
+ "controlOfError":"Anak akan rewel bila kepanasan atau silau; tanda untuk segera pindah ke tempat sejuk.",
+ "variations":["Ajak anak mengamati pohon dari gendongan","Lakukan di teras rumah saat teduh"],
+ "readySigns":["Anak terbiasa dibawa keluar rumah","Anak tenang saat berada di tempat baru"],
+ "struggleSigns":["Anak menangis saat diajak keluar","Anak kepanasan atau kedinginan"],
+ "safetyNotes":["Hindari sinar matahari langsung; gunakan tempat teduh dan topi lebar.","Jangan tinggalkan anak sendirian di luar rumah.","Periksa suhu kulit anak dan segera masuk bila terlalu panas atau dingin."],
+ "references":[{"title":"WHO - Child health","url":"https://www.who.int/health-topics/child-health"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]
+},
+{
+ "id":"36m-mendengar-suara-rumah",
+ "title":"Mendengar Suara-Suara Rumah",
+ "summary":"Ajak anak berhenti sejenak untuk mendengarkan suara sekitar, lalu ceritakan sumber bunyi dengan kata-kata sederhana.",
+ "ageBands":["3-6m"],
+ "areas":["language","sensorial"],
+ "skills":["kesadaran bunyi","mendengar","kosakata"],
+ "objectives":["Melatih kepekaan terhadap bunyi","Mengenalkan kata untuk suara sehari-hari"],
+ "materials":[{"name":"lingkungan rumah","fromHome":True,"optional":False}],
+ "prepMinutes":0,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk bersama anak di ruangan yang tenang."},{"step":2,"text":"Diam sejenak dan dengarkan suara di sekitar."},{"step":3,"text":"Tunjuk arah suara dan sebutkan sumbernya."},{"step":4,"text":"Ajak anak tersenyum saat suara baru terdengar."}],
+ "controlOfError":"Bila ruangan terlalu bising, anak sulit membedakan bunyi; pilih waktu yang lebih tenang.",
+ "variations":["Dengarkan suara hujan dari dekat jendela","Gunakan mainan berbunyi halus sebagai pembanding"],
+ "readySigns":["Anak menoleh ke arah suara","Anak terdiam saat mendengar bunyi baru"],
+ "struggleSigns":["Anak tidak bereaksi pada suara keras","Anak menangis karena suara tertentu"],
+ "safetyNotes":["Jauhkan anak dari suara yang terlalu keras atau tiba-tiba.","Jangan meletakkan sumber bunyi dekat telinga anak.","Awasi anak selama sesi mendengarkan."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]
+},
+{
+ "id":"36m-menoleh-ke-arah-bunyi",
+ "title":"Menoleh ke Arah Bunyi",
+ "summary":"Bunyikan mainan lembut di sisi kanan dan kiri kepala anak agar ia berlatih mencari sumber suara dengan menoleh.",
+ "ageBands":["3-6m"],
+ "areas":["language","sensorial"],
+ "skills":["lokalisasi suara","kontrol leher","perhatian"],
+ "objectives":["Melatih anak mencari sumber bunyi","Memperkuat otot leher untuk menoleh"],
+ "materials":[{"name":"mainan kerincing lembut","fromHome":True,"optional":False}],
+ "prepMinutes":1,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak telentang dengan nyaman."},{"step":2,"text":"Bunyikan mainan pelan di sisi kanan kepalanya."},{"step":3,"text":"Tunggu anak menoleh sebelum memindahkan bunyi."},{"step":4,"text":"Ulangi di sisi kiri dengan lembut."}],
+ "controlOfError":"Bunyi yang terlalu keras membuat anak kaget; gunakan bunyi pelan dan beri jeda.",
+ "variations":["Gunakan suara orang tua dari sisi berbeda","Bunyikan benda sehari-hari seperti sendok kayu"],
+ "readySigns":["Anak menoleh ke arah suara","Anak mengikuti wajah orang tua dengan mata"],
+ "struggleSigns":["Anak tidak menoleh pada suara","Anak kaget dan menangis setiap kali mendengar bunyi"],
+ "safetyNotes":["Jauhkan mainan dari telinga dan wajah anak.","Gunakan bunyi lembut, jangan mengagetkan anak.","Awasi anak sepanjang sesi."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-bermain-air-saat-mandi",
+ "title":"Bermain Air Saat Mandi",
+ "summary":"Manfaatkan waktu mandi untuk mengajak anak merasakan air, menepuk permukaan, dan mendengar suara cipratan.",
+ "ageBands":["3-6m"],
+ "areas":["self-care","sensorial"],
+ "skills":["sensasi air","gerak tangan","kebiasaan mandi"],
+ "objectives":["Membuat waktu mandi terasa menyenangkan","Mengenalkan sensasi air pada tangan dan kaki"],
+ "materials":[{"name":"bak mandi bayi","fromHome":True,"optional":False},{"name":"waslap lembut","fromHome":True,"optional":False},{"name":"mainan mandi besar","fromHome":True,"optional":True}],
+ "prepMinutes":5,
+ "durationMinutes":10,
+ "prepLevel":"sedang",
+ "presentation":[{"step":1,"text":"Siapkan air hangat suam-suam kuku dan semua perlengkapan mandi."},{"step":2,"text":"Masukkan anak perlahan sambil menopang kepala dan tubuhnya."},{"step":3,"text":"Tepuk permukaan air dengan tangan anak dengan lembut."},{"step":4,"text":"Biarkan anak merasakan air, lalu selesaikan mandi dengan cepat."}],
+ "controlOfError":"Anak akan merenggang atau menangis bila air terlalu dingin atau panas; periksa suhu sebelum masuk.",
+ "variations":["Gunakan cangkir kecil untuk menuang air perlahan","Lakukan di bak mandi bayi dengan waslap berbeda tekstur"],
+ "readySigns":["Anak tenang saat mandi","Anak menikmati sentuhan air"],
+ "struggleSigns":["Anak menangis setiap kali mandi","Anak kedinginan atau menggigil"],
+ "safetyNotes":["Jangan pernah meninggalkan anak di air, bahkan sebentar; awasi terus.","Isi air setinggi beberapa sentimeter saja dan periksa suhunya dengan siku.","Pegang anak dengan aman agar tidak tergelincir."],
+ "references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-pijat-lembut-kaki-dan-tangan",
+ "title":"Pijat Lembut Kaki dan Tangan",
+ "summary":"Pijat ringan pada kaki dan tangan anak setelah mandi untuk memberi rasa nyaman dan mengenalkan sentuhan teratur.",
+ "ageBands":["3-6m"],
+ "areas":["self-care","sensorial"],
+ "skills":["relaksasi","kesadaran tubuh","ikatan sosial"],
+ "objectives":["Memberi pengalaman sentuhan yang menenangkan","Membantu anak mengenal bagian tubuhnya"],
+ "materials":[{"name":"minyak bayi tanpa pewangi","fromHome":True,"optional":True},{"name":"handuk lembut","fromHome":True,"optional":False}],
+ "prepMinutes":3,
+ "durationMinutes":8,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Pastikan ruangan hangat dan tangan orang tua bersih."},{"step":2,"text":"Letakkan anak di handuk setelah mandi."},{"step":3,"text":"Usap kaki dan tangan dengan gerakan lembut dari pangkal ke ujung."},{"step":4,"text":"Beri jeda dan hentikan bila anak mulai gelisah."}],
+ "controlOfError":"Anak akan menarik kaki atau menangis bila sentuhan terlalu kuat; kurangi tekanan.",
+ "variations":["Lakukan tanpa minyak bila kulit anak sensitif","Tambahkan lagu pelan saat memijat"],
+ "readySigns":["Anak tenang saat disentuh","Anak menikmati waktu setelah mandi"],
+ "struggleSigns":["Anak menangis saat kaki disentuh","Kulit anak memerah atau gatal"],
+ "safetyNotes":["Hindari minyak bila ada luka atau ruam kulit; konsultasikan ke dokter bila kulit bermasalah.","Jangan memijat dengan tekanan kuat atau menarik sendi.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],
+ "references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]
+},
+{
+ "id":"36m-bergoyang-sambil-bernyanyi",
+ "title":"Bergoyang Lembut Sambil Bernyanyi",
+ "summary":"Gendong anak dengan aman dan bergoyang pelan mengikuti lagu, memberi rasa ritme serta kedekatan yang menenangkan.",
+ "ageBands":["3-6m"],
+ "areas":["movement","art-music"],
+ "skills":["keseimbangan","irama","rasa aman"],
+ "objectives":["Mengenalkan gerakan berirama","Memperkuat rasa aman lewat dekapan"],
+ "materials":[{"name":"gendongan atau pelukan orang tua","fromHome":True,"optional":False}],
+ "prepMinutes":0,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Gendong anak dengan kepala dan leher tertopang."},{"step":2,"text":"Nyanyikan lagu pelan sambil bergoyang lembut."},{"step":3,"text":"Gerakkan tubuh ke kiri dan kanan dengan ritme stabil."},{"step":4,"text":"Berhenti dan peluk anak, lalu ulangi bila ia senang."}],
+ "controlOfError":"Bila goyangan terlalu cepat, anak akan gelisah; perlambat dan jaga gerakan stabil.",
+ "variations":["Bergoyang sambil berjalan pelan di ruangan","Gunakan selendang gendong yang aman"],
+ "readySigns":["Anak tenang saat digendong","Anak menikmati suara dan gerakan berulang"],
+ "struggleSigns":["Anak menangis saat digoyang","Anak kaku atau tampak pusing"],
+ "safetyNotes":["Topang kepala dan leher anak selama bergoyang.","Jangan mengguncang anak dengan keras atau melemparnya.","Jangan berjalan di lantai licin atau dekat tangga."],
+ "references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-melihat-buku-kontras-tinggi",
+ "title":"Melihat Buku Kontras Tinggi",
+ "summary":"Buka buku bergambar hitam-putih di depan anak dan ceritakan gambarnya, melatih fokus serta minat pada buku.",
+ "ageBands":["3-6m"],
+ "areas":["language","sensorial"],
+ "skills":["fokus visual","kosakata","minat buku"],
+ "objectives":["Melatih mata memfokuskan gambar","Membangun kebiasaan membaca bersama"],
+ "materials":[{"name":"buku kain atau buku karton kontras tinggi","fromHome":False,"optional":False}],
+ "prepMinutes":1,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk dengan anak di pangkuan, buku di depannya."},{"step":2,"text":"Buka satu halaman dan tunjuk gambar sederhana."},{"step":3,"text":"Sebutkan nama gambar dengan suara hangat."},{"step":4,"text":"Beri waktu anak mengamati sebelum membuka halaman berikutnya."}],
+ "controlOfError":"Anak akan menoleh atau rewel bila halaman terlalu cepat berganti; perlambat ritme.",
+ "variations":["Gunakan buku kain yang bisa dipegang","Ceritakan gambar dengan suara berbeda"],
+ "readySigns":["Anak menatap gambar dengan fokus","Anak tenang saat dibacakan"],
+ "struggleSigns":["Anak tidak tertarik pada buku","Anak menangis saat dibacakan"],
+ "safetyNotes":["Pilih buku kain atau karton tebal tanpa bagian kecil yang bisa lepas.","Awasi anak karena buku akan dimasukkan ke mulut.","Jangan menggunakan buku dengan staples atau ujung tajam."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-meraih-kaus-kaki-lunak",
+ "title":"Meraih Kaus Kaki Lunak",
+ "summary":"Gunakan kaus kaki bersih yang digulung sebagai bola ringan agar anak berlatih meraih dan menggenggam benda di dekatnya.",
+ "ageBands":["3-6m"],
+ "areas":["movement","sensorial"],
+ "skills":["meraih","menggenggam","koordinasi tangan"],
+ "objectives":["Melatih tangan meraih ke arah benda","Mengenalkan benda ringan yang mudah digenggam"],
+ "materials":[{"name":"kaus kaki katun bersih","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False}],
+ "prepMinutes":2,
+ "durationMinutes":6,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Gulung kaus kaki menjadi bola ringan."},{"step":2,"text":"Letakkan di dada anak dalam jangkauan tangannya."},{"step":3,"text":"Biarkan anak meraih dan menggenggam sendiri."},{"step":4,"text":"Bila jatuh, letakkan kembali tanpa mengoreksi caranya."}],
+ "controlOfError":"Bola akan menggelinding saat disentuh; anak belajar menyesuaikan gerakan tangannya.",
+ "variations":["Gunakan dua bola kaus kaki untuk latihan memilih","Lakukan sambil berbaring tengkurap"],
+ "readySigns":["Anak mulai mengarahkan tangan ke benda","Anak memegang benda sebentar"],
+ "struggleSigns":["Tangan belum terarah ke benda","Anak melepas benda terlalu cepat"],
+ "safetyNotes":["Gunakan kaus kaki bersih tanpa kancing atau hiasan lepas.","Jangan menggunakan benda kecil atau isian yang bisa keluar.","Awasi anak karena benda akan dibawa ke mulut."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"Montessori Global","url":"https://montessoriglobal.com/"}]
+},
+{
+ "id":"36m-latihan-berguling-balik",
+ "title":"Latihan Berguling Balik",
+ "summary":"Ajak anak berlatih berguling dari telentang ke tengkurap dan sebaliknya dengan mainan sebagai pemancing di sisi tubuh.",
+ "ageBands":["3-6m"],
+ "areas":["movement"],
+ "skills":["berguling","kekuatan otot","kesadaran posisi"],
+ "objectives":["Melatih peralihan posisi tubuh","Menguatkan otot leher, punggung, dan perut"],
+ "materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan menarik","fromHome":True,"optional":True}],
+ "prepMinutes":2,
+ "durationMinutes":6,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan mainan di samping agar anak menoleh."},{"step":3,"text":"Bantu pinggulnya berputar sedikit bila ia sudah mencoba."},{"step":4,"text":"Beri pujian dan biarkan anak beristirahat."}],
+ "controlOfError":"Anak akan berhenti bila lelah atau posisinya tidak nyaman; jangan meneruskan latihan.",
+ "variations":["Lakukan setelah bangun tidur saat anak segar","Gunakan cermin di sisi sebagai pemancing"],
+ "readySigns":["Anak bisa mengangkat kepala saat tengkurap","Anak mulai memiringkan badan sendiri"],
+ "struggleSigns":["Tubuh anak kaku saat diputar","Anak menangis setiap kali diletakkan tengkurap"],
+ "safetyNotes":["Lakukan hanya di lantai beralas matras dan awasi anak terus-menerus.","Jangan memutar leher atau lengan anak dengan paksa.","Hentikan bila anak tampak kesakitan atau sangat rewel."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+},
+{
+ "id":"36m-menarik-kain-dari-kotak",
+ "title":"Menarik Kain dari Kotak Kosong",
+ "summary":"Isi kotak tisu kosong dengan kain lembut yang ujungnya menonjol agar anak berlatih menarik dan mengeluarkan benda.",
+ "ageBands":["3-6m"],
+ "areas":["sensorial","movement"],
+ "skills":["menarik","koordinasi tangan","sebab-akibat"],
+ "objectives":["Melatih gerakan menarik dengan tangan","Mengenalkan hubungan tarikan dan hasil"],
+ "materials":[{"name":"kotak tisu kosong","fromHome":True,"optional":False},{"name":"kain lembut besar","fromHome":True,"optional":False}],
+ "prepMinutes":5,
+ "durationMinutes":8,
+ "prepLevel":"sedang",
+ "presentation":[{"step":1,"text":"Masukkan kain lembut ke dalam kotak hingga ujungnya menonjol."},{"step":2,"text":"Tunjukkan ujung kain dan biarkan anak meraihnya."},{"step":3,"text":"Bantu anak menarik kain keluar perlahan."},{"step":4,"text":"Masukkan kembali dan ulangi bila anak masih tertarik."}],
+ "controlOfError":"Bila kain tersangkut, anak akan berhenti menarik; gunakan kain yang cukup besar dan longgar.",
+ "variations":["Gunakan beberapa kain berbeda warna","Ganti kotak dengan wadah plastik berlubang lebar"],
+ "readySigns":["Anak bisa menggenggam kain","Anak tertarik menarik benda ke arahnya"],
+ "struggleSigns":["Anak tidak mencoba menarik","Anak cepat bosan dan melepas kain"],
+ "safetyNotes":["Pastikan kotak tidak memiliki staples atau tepi tajam.","Gunakan kain besar yang tidak bisa tertelan dan tidak ada tali.","Awasi anak agar kain tidak melilit leher atau menutupi wajah."],
+ "references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]
+},
+{
+ "id":"36m-menirukan-bunyi-bayi",
+ "title":"Menirukan Bunyi Bayi",
+ "summary":"Tirukan bunyi yang dibuat anak lalu tambahkan satu bunyi baru, mendorong anak bereksperimen dengan suaranya.",
+ "ageBands":["3-6m"],
+ "areas":["language"],
+ "skills":["eksplorasi suara","giliran bicara","pendengaran"],
+ "objectives":["Merangsang variasi celotehan","Melatih anak mendengar dan meniru"],
+ "materials":[{"name":"suara orang tua","fromHome":True,"optional":False}],
+ "prepMinutes":0,
+ "durationMinutes":4,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk dekat anak dengan wajah sejajar."},{"step":2,"text":"Tirukan bunyi yang baru saja ia keluarkan."},{"step":3,"text":"Tambahkan satu bunyi baru yang mudah, lalu berhenti."},{"step":4,"text":"Tunggu anak mencoba menirukan bunyi tersebut."}],
+ "controlOfError":"Bila orang tua terus berbicara, anak kehilangan giliran; beri jeda setelah setiap bunyi.",
+ "variations":["Gunakan bunyi hewan sederhana","Lakukan sambil bercermin agar anak melihat mulut"],
+ "readySigns":["Anak sering mengeluarkan bunyi berulang","Anak menatap mulut orang tua"],
+ "struggleSigns":["Anak jarang bersuara","Anak tidak menoleh saat diajak bicara"],
+ "safetyNotes":["Lakukan saat anak bangun dan tenang, bukan saat mengantuk.","Jaga jarak wajah agar anak tidak merasa tertekan.","Awasi anak selama sesi."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]
+},
+{
+ "id":"36m-tengkurap-di-dada-orang-tua",
+ "title":"Tengkurap di Dada Orang Tua",
+ "summary":"Baringkan anak tengkurap di dada orang tua yang bersandar agar ia berlatih mengangkat kepala dalam posisi nyaman dan dekat.",
+ "ageBands":["3-6m"],
+ "areas":["movement","grace-courtesy"],
+ "skills":["kontrol kepala","kedekatan","kekuatan leher"],
+ "objectives":["Melatih tengkurap dengan rasa aman","Memperkuat ikatan lewat kontak tubuh"],
+ "materials":[{"name":"dada orang tua","fromHome":True,"optional":False},{"name":"selimut tipis","fromHome":True,"optional":True}],
+ "prepMinutes":0,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Bersandarlah nyaman di kursi atau bantal."},{"step":2,"text":"Letakkan anak tengkurap di dada Anda, kepalanya di dekat bahu."},{"step":3,"text":"Ajak bicara agar anak mengangkat kepala mencari wajah Anda."},{"step":4,"text":"Berhenti saat anak mulai lelah atau mengantuk."}],
+ "controlOfError":"Anak akan menurunkan kepala atau merengek saat lelah; itu tanda untuk berhenti.",
+ "variations":["Lakukan sambil bersandar di sofa","Tambahkan lagu pelan saat anak tengkurap"],
+ "readySigns":["Anak bisa mengangkat kepala sebentar","Anak nyaman dengan kontak badan"],
+ "struggleSigns":["Anak menangis saat tengkurap","Kepala selalu jatuh dan anak tampak lelah"],
+ "safetyNotes":["Pastikan wajah dan hidung anak tidak tertutup pakaian atau selimut.","Jangan tertidur saat anak tengkurap di dada Anda.","Awasi anak terus dan hentikan bila ia tampak sesak atau lelah."],
+ "references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-mengenal-warna-dengan-kartu",
+ "title":"Mengenal Warna dengan Kartu Sederhana",
+ "summary":"Tunjukkan satu kartu warna cerah pada satu waktu dan sebutkan namanya, memberi pengalaman visual yang fokus dan sederhana.",
+ "ageBands":["3-6m"],
+ "areas":["sensorial","language"],
+ "skills":["persepsi warna","fokus visual","kosakata"],
+ "objectives":["Mengenalkan warna dasar","Melatih perhatian pada satu objek"],
+ "materials":[{"name":"kartu warna besar tanpa laminasi tajam","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],
+ "prepMinutes":5,
+ "durationMinutes":4,
+ "prepLevel":"sedang",
+ "presentation":[{"step":1,"text":"Siapkan dua atau tiga kartu warna yang berbeda."},{"step":2,"text":"Tunjukkan satu kartu sekitar 30 cm dari wajah anak."},{"step":3,"text":"Sebutkan warnanya dengan jelas, lalu diam sejenak."},{"step":4,"text":"Ganti kartu setelah anak tampak bosan."}],
+ "controlOfError":"Anak akan menoleh bila warna atau kartu terlalu banyak; kurangi jumlah kartu.",
+ "variations":["Gunakan benda nyata berwarna sama","Pasangkan kartu dengan kain berwarna serupa"],
+ "readySigns":["Anak bisa memfokuskan mata pada benda","Anak tertarik pada warna cerah"],
+ "struggleSigns":["Anak tidak menatap kartu","Anak menangis saat terlalu banyak stimulus"],
+ "safetyNotes":["Gunakan kartu besar yang tidak bisa dimasukkan ke mulut.","Pastikan tepi kartu tidak tajam dan tidak ada laminasi yang terkelupas.","Awasi anak agar kartu tidak menutupi wajahnya."],
+ "references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-gerakan-sepeda-lembut",
+ "title":"Gerakan Sepeda Lembut",
+ "summary":"Gerakkan kaki anak perlahan seperti mengayuh sepeda saat berbaring, membantu mobilitas dan kesadaran tubuh.",
+ "ageBands":["3-6m"],
+ "areas":["movement","self-care"],
+ "skills":["mobilitas kaki","kesadaran tubuh","relaksasi"],
+ "objectives":["Melatih gerakan kaki bergantian","Membantu anak rileks setelah aktivitas"],
+ "materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"popok bersih","fromHome":True,"optional":True}],
+ "prepMinutes":1,
+ "durationMinutes":4,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak telentang di matras empuk."},{"step":2,"text":"Pegang kedua kakinya dengan lembut di bagian betis."},{"step":3,"text":"Gerakkan kaki bergantian seperti mengayuh sepeda."},{"step":4,"text":"Lakukan pelan sambil tersenyum dan bernyanyi."}],
+ "controlOfError":"Anak akan menendang atau menangis bila gerakan tidak nyaman; hentikan dan istirahatkan kaki.",
+ "variations":["Lakukan setelah mandi saat otot rileks","Gerakkan satu kaki saja secara bergantian"],
+ "readySigns":["Kaki anak aktif bergerak","Anak tenang saat kakinya dipegang"],
+ "struggleSigns":["Anak menangis saat kaki digerakkan","Kaki anak terasa kaku"],
+ "safetyNotes":["Gerakkan kaki perlahan tanpa menarik sendi atau memutar paksa.","Jangan mengangkat kaki terlalu tinggi atau menekuk berlebihan.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]
+},
+{
+ "id":"36m-senyum-dan-bercermin-bersama",
+ "title":"Senyum dan Bercermin Bersama",
+ "summary":"Ajak anak tersenyum dan bereaksi pada pantulan wajah orang tua di cermin, memperkuat interaksi sosial yang hangat.",
+ "ageBands":["3-6m"],
+ "areas":["grace-courtesy","self-care"],
+ "skills":["interaksi sosial","kontak mata","respons emosi"],
+ "objectives":["Melatih anak merespons senyum","Membangun kesadaran diri dan orang lain"],
+ "materials":[{"name":"cermin akrilik aman","fromHome":False,"optional":False}],
+ "prepMinutes":1,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk bersama anak di depan cermin."},{"step":2,"text":"Tersenyum pada anak dan pada pantulan wajahnya."},{"step":3,"text":"Sebut namanya dan tunggu reaksi senyumnya."},{"step":4,"text":"Buat ekspresi sederhana lain seperti mulut terbuka."}],
+ "controlOfError":"Bila anak menghindari cermin, sesi terlalu lama; akhiri dan coba lagi lain waktu.",
+ "variations":["Main cilukba di depan cermin","Gunakan boneka untuk melambai di cermin"],
+ "readySigns":["Anak tersenyum pada wajah orang","Anak menikmati kontak mata"],
+ "struggleSigns":["Anak menghindari tatapan","Anak tidak merespons senyum"],
+ "safetyNotes":["Gunakan cermin akrilik ringan dan pastikan tidak mudah jatuh.","Jangan menempelkan cermin di dalam tempat tidur anak.","Awasi anak selama bermain di depan cermin."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-menepuk-meja-berirama",
+ "title":"Menepuk Meja Berirama",
+ "summary":"Ajak anak menepuk permukaan meja atau matras dengan tangan sambil berirama, melatih gerak tangan dan kepekaan bunyi.",
+ "ageBands":["3-6m"],
+ "areas":["art-music","movement"],
+ "skills":["irama","gerak tangan","sebab-akibat"],
+ "objectives":["Mengenalkan irama sederhana","Melatih anak mengangkat dan menurunkan tangan"],
+ "materials":[{"name":"meja rendah atau matras","fromHome":True,"optional":False}],
+ "prepMinutes":0,
+ "durationMinutes":4,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk dengan anak di pangkuan dekat permukaan meja."},{"step":2,"text":"Tepuk meja perlahan beberapa kali."},{"step":3,"text":"Bantu tangan anak menepuk dengan lembut."},{"step":4,"text":"Ulangi pola tepukan yang sama agar terasa berirama."}],
+ "controlOfError":"Bila tepukan terlalu keras, anak bisa terkejut; gunakan tekanan ringan dan tempo lambat.",
+ "variations":["Gunakan matras empuk agar suara lebih pelan","Tambahkan lagu sambil menepuk"],
+ "readySigns":["Anak bisa mengangkat tangan ke arah benda","Anak tertarik pada bunyi yang ia buat"],
+ "struggleSigns":["Anak tidak mengangkat tangan","Anak kaget dan menangis karena bunyi"],
+ "safetyNotes":["Jangan menepuk di dekat wajah atau telinga anak.","Pastikan permukaan tidak tajam dan tidak ada benda kecil di sekitarnya.","Awasi anak agar tangan tidak terbentur benda keras."],
+ "references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]
+},
+{
+ "id":"36m-mengamati-daun-dari-gendongan",
+ "title":"Mengamati Daun dari Gendongan",
+ "summary":"Ajak anak melihat daun dan pohon dari gendongan yang aman, membangun rasa ingin tahu tentang alam sekitar.",
+ "ageBands":["3-6m"],
+ "areas":["outdoor","culture"],
+ "skills":["observasi","pengalaman alam","perhatian"],
+ "objectives":["Mengenalkan anak pada tanaman","Membangun minat pada lingkungan sekitar"],
+ "materials":[{"name":"gendongan bayi aman","fromHome":True,"optional":False},{"name":"topi lebar","fromHome":True,"optional":False}],
+ "prepMinutes":2,
+ "durationMinutes":10,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Gendong anak dengan posisi kepala dan leher tertopang."},{"step":2,"text":"Dekati pohon atau daun yang aman untuk dilihat."},{"step":3,"text":"Tunjuk daun dan sebutkan warnanya dengan pelan."},{"step":4,"text":"Biarkan anak mengamati, lalu lanjutkan berjalan pelan."}],
+ "controlOfError":"Anak akan menoleh atau rewel bila bosan; pindah ke objek lain atau kembali ke rumah.",
+ "variations":["Amati bunga berwarna cerah dari jarak aman","Lakukan di halaman rumah saat teduh"],
+ "readySigns":["Anak bisa menahan kepala saat digendong","Anak tertarik melihat lingkungan baru"],
+ "struggleSigns":["Anak rewel saat berada di luar","Anak tidak tertarik pada objek di sekitarnya"],
+ "safetyNotes":["Pastikan gendongan terpasang benar dan kepala anak tertopang.","Jangan biarkan anak memetik, memasukkan daun, atau menyentuh tanaman berbahaya ke mulut.","Awasi anak dan hindari area dengan insekta atau tanaman berduri."],
+ "references":[{"title":"WHO - Child health","url":"https://www.who.int/health-topics/child-health"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]
+},
+{
+ "id":"36m-bermain-cilukba-dengan-kain",
+ "title":"Bermain Cilukba dengan Kain",
+ "summary":"Tutup wajah orang tua dengan kain lalu buka sambil berkata cilukba, melatih pemahaman bahwa sesuatu yang hilang bisa muncul lagi.",
+ "ageBands":["3-6m"],
+ "areas":["language","grace-courtesy"],
+ "skills":["permanensi objek","kontak mata","humor sosial"],
+ "objectives":["Mengenalkan permainan giliran","Melatih anak menunggu dan merespons"],
+ "materials":[{"name":"kain ringan bersih","fromHome":True,"optional":False}],
+ "prepMinutes":1,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak dekat."},{"step":2,"text":"Tutup wajah Anda dengan kain, bukan wajah anak."},{"step":3,"text":"Tanya dengan suara ceria, lalu buka kain dan ucapkan cilukba."},{"step":4,"text":"Ulangi beberapa kali dan beri jeda reaksi."}],
+ "controlOfError":"Bila anak belum merespons, ulangi dengan tempo lebih lambat dan ekspresi jelas.",
+ "variations":["Gunakan boneka untuk disembunyikan","Biarkan anak memegang ujung kain saat dibuka"],
+ "readySigns":["Anak tersenyum saat bermain bersama","Anak menatap wajah dan mengikuti gerakan kain"],
+ "struggleSigns":["Anak menangis saat wajah tertutup","Anak tidak tertarik pada permainan"],
+ "safetyNotes":["Tutup wajah orang tua saja, jangan pernah menutupi wajah anak dengan kain.","Gunakan kain tipis dan ringan yang tidak menghalangi napas.","Awasi anak dan hentikan bila ia tampak takut."],
+ "references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-eksplorasi-botol-sensorik-berbunyi",
+ "title":"Eksplorasi Botol Sensorik Berbunyi",
+ "summary":"Berikan botol plastik tertutup rapat berisi biji besar yang bergerak agar anak melihat dan mendengar sebab-akibat dari gerakannya.",
+ "ageBands":["3-6m"],
+ "areas":["sensorial","movement"],
+ "skills":["sebab-akibat","menggenggam","pendengaran"],
+ "objectives":["Melatih anak menggenggam dan menggoyang benda","Mengenalkan hubungan gerakan dan bunyi"],
+ "materials":[{"name":"botol plastik bening bertutup rapat","fromHome":True,"optional":False},{"name":"biji besar atau manik kayu besar","fromHome":False,"optional":False},{"name":"lakban kuat","fromHome":True,"optional":False}],
+ "prepMinutes":10,
+ "durationMinutes":6,
+ "prepLevel":"sedang",
+ "presentation":[{"step":1,"text":"Isi botol dengan biji besar secukupnya, lalu tutup rapat dan lakban."},{"step":2,"text":"Tunjukkan botol dan goyangkan perlahan di depan anak."},{"step":3,"text":"Letakkan botol di tangannya agar ia menggoyang sendiri."},{"step":4,"text":"Amati bersama bunyi yang muncul setiap kali botol bergerak."}],
+ "controlOfError":"Bila tutup botol longgar atau isi tidak bergerak, mainan tidak berfungsi; periksa sebelum diberikan.",
+ "variations":["Gunakan isi berbeda untuk bunyi yang berbeda","Balut sebagian botol dengan kain agar teksturnya bervariasi"],
+ "readySigns":["Anak bisa menggenggam benda silinder","Anak tertarik pada bunyi yang ia buat"],
+ "struggleSigns":["Anak tidak mau memegang botol","Anak melepas botol dengan cepat"],
+ "safetyNotes":["Pastikan tutup botol direkatkan dengan lakban kuat dan tidak bisa dibuka anak.","Gunakan biji berukuran besar agar tidak tersedak bila tutup terbuka.","Awasi anak dan periksa botol sebelum setiap penggunaan."],
+ "references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+},
+{
+ "id":"36m-berlatih-miring-dan-kembali",
+ "title":"Berlatih Miring dan Kembali",
+ "summary":"Biarkan anak mencoba memiringkan tubuh ke kanan dan kiri lalu kembali telentang, melatih kontrol tubuh secara bertahap.",
+ "ageBands":["3-6m"],
+ "areas":["movement"],
+ "skills":["kontrol tubuh","keseimbangan","kekuatan samping"],
+ "objectives":["Melatih otot samping tubuh","Mengenalkan perpindahan posisi"],
+ "materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan ringan","fromHome":True,"optional":True}],
+ "prepMinutes":1,
+ "durationMinutes":5,
+ "prepLevel":"rendah",
+ "presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan mainan di satu sisi agar anak tertarik miring."},{"step":3,"text":"Biarkan anak mencoba memiringkan tubuh sendiri."},{"step":4,"text":"Bantu kembali ke posisi telentang dengan lembut bila perlu."}],
+ "controlOfError":"Anak akan berhenti bila ototnya lelah; beri istirahat sebelum mencoba sisi lain.",
+ "variations":["Gunakan cermin di sisi sebagai pemancing","Lakukan setelah anak bangun tidur"],
+ "readySigns":["Anak sering memiringkan badan","Anak bisa mengangkat kepala saat tengkurap"],
+ "struggleSigns":["Tubuh anak kaku","Anak menangis saat dimiringkan"],
+ "safetyNotes":["Awasi anak sepanjang latihan dan tetap di lantai beralas matras.","Jangan mendorong atau memutar tubuh anak dengan paksa.","Hentikan bila anak tampak kesakitan."],
+ "references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]
+}
+]
+
+assert len(acts) == 30, len(acts)
+ids = [a["id"] for a in acts]
+assert len(set(ids)) == 30
+titles = [a["title"] for a in acts]
+assert len(set(titles)) == 30
+allowed = {"practical-life","sensorial","language","math","culture","movement","grace-courtesy","self-care","art-music","outdoor"}
+for a in acts:
+    assert a["id"].startswith("36m-")
+    assert len(a["title"]) >= 5
+    assert len(a["summary"]) >= 30
+    assert a["ageBands"] == ["3-6m"]
+    assert 1 <= len(a["areas"]) <= 3 and set(a["areas"]) <= allowed
+    assert a["skills"] and a["objectives"] and a["materials"]
+    assert 0 <= a["prepMinutes"] <= 30
+    assert 3 <= a["durationMinutes"] <= 60
+    assert a["prepLevel"] in {"rendah","sedang","tinggi"}
+    assert len(a["presentation"]) >= 2
+    for i, p in enumerate(a["presentation"], 1):
+        assert p["step"] == i
+        assert len(p["text"]) >= 15
+    assert a["controlOfError"]
+    assert a["variations"] and a["readySigns"] and a["struggleSigns"]
+    assert a["safetyNotes"] and all(len(s) > 0 for s in a["safetyNotes"])
+    assert a["references"] and all(r.get("title") and r.get("url","").startswith("https://") for r in a["references"])
+
+os.makedirs("content/parts", exist_ok=True)
+with open("content/parts/act-3-6m.json","w",encoding="utf-8") as f:
+    json.dump(acts, f, ensure_ascii=False, indent=2)
+print("written", len(acts))
+PY
+python3 -c "import json;d=json.load(open('content/parts/act-3-6m.json'));assert len(d)==30;print('OK',len(d))"
+Traceback (most recent call last):
+  File "<stdin>", line 666, in <module>
+AssertionError: 33
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('content/parts/act-3-6m.json'));assert len(d)==30;print('OK',len(d))
+                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'content/parts/act-3-6m.json'
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json, os
+
+acts = [
+{"id":"36m-tummy-time-dengan-cermin","title":"Tengkurap Seru di Depan Cermin","summary":"Letakkan cermin bayi yang aman di depan anak saat tengkurap agar ia tertarik mengangkat kepala dan melihat wajahnya sendiri.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["kontrol kepala","kekuatan leher","fokus visual"],"objectives":["Melatih otot leher dan punggung lewat tengkurap","Menarik perhatian anak dengan pantulan wajah"],"materials":[{"name":"cermin akrilik bayi tanpa tepi tajam","fromHome":False,"optional":False},{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan kontras tinggi","fromHome":True,"optional":True}],"prepMinutes":3,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak tengkurap di matras dengan nyaman."},{"step":2,"text":"Sandarkan cermin akrilik di depannya, sekitar 20-30 cm."},{"step":3,"text":"Tunjuk wajah di cermin dan sebut namanya dengan ceria."},{"step":4,"text":"Biarkan anak menikmati sebentar, lalu angkat bila tampak lelah."}],"controlOfError":"Anak akan menangis atau menurunkan kepala saat ototnya lelah, tanda waktunya berhenti.","variations":["Letakkan cermin agak ke samping agar anak berlatih menoleh","Gunakan mainan berwarna kontras di samping cermin"],"readySigns":["Anak sudah bisa mengangkat kepala sebentar","Anak tertarik pada wajah dan benda di depannya"],"struggleSigns":["Kepala sering jatuh dan anak rewel","Anak menolak posisi tengkurap sama sekali"],"safetyNotes":["Awasi anak sepanjang waktu dan jangan pernah meninggalkannya saat tengkurap.","Gunakan cermin akrilik ringan tanpa sudut tajam, bukan cermin kaca.","Hentikan bila anak tampak lelah; tengkurap hanya saat anak bangun dan diawasi."],"references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-meraih-kain-warna-kontras","title":"Meraih Kain Warna Kontras","summary":"Gantungkan kain lembut berwarna kontras dalam jangkauan anak agar ia berlatih mengarahkan tangan dan menggenggam.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["koordinasi mata-tangan","menggenggam","mengikuti objek"],"objectives":["Melatih tangan meraih objek yang terlihat","Memperkuat genggaman dengan bahan lembut"],"materials":[{"name":"kain katun lembut warna kontras","fromHome":True,"optional":False},{"name":"tali penggantung lebar dan pendek","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":8,"prepLevel":"rendah","presentation":[{"step":1,"text":"Pilih kain lembut tanpa bagian yang bisa terlepas."},{"step":2,"text":"Pegang kain di atas dada anak, sekitar 25 cm dari wajah."},{"step":3,"text":"Gerakkan perlahan agar anak mengikuti dengan mata."},{"step":4,"text":"Dekatkan kain ke tangannya dan biarkan ia meraih."}],"controlOfError":"Bila kain terlalu jauh, anak berhenti mencoba; dekatkan sedikit agar ia bisa berhasil.","variations":["Gunakan kain berbeda tekstur secara bergantian","Gerakkan kain dari kiri ke kanan perlahan"],"readySigns":["Tangan mulai terbuka dan sering bergerak ke depan","Mata mengikuti benda bergerak"],"struggleSigns":["Tangan tetap mengepal dan tidak mencoba meraih","Anak menoleh menjauh atau rewel"],"safetyNotes":["Pegang kain langsung; jangan menggantungnya di leher atau tempat tidur anak.","Pastikan tidak ada tali panjang, kancing, atau bagian kecil yang bisa lepas.","Awasi anak agar kain tidak menutupi hidung dan mulutnya."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-lagu-dengan-gerakan-tangan","title":"Lagu dengan Gerakan Tangan","summary":"Nyanyikan lagu sederhana sambil menggerakkan tangan anak dengan lembut, memperkuat hubungan bahasa, irama, dan gerak tubuh.","ageBands":["3-6m"],"areas":["language","art-music"],"skills":["mendengar","irama","ikatan sosial"],"objectives":["Mengenalkan pola suara dan irama","Membangun momen kedekatan lewat nyanyian"],"materials":[{"name":"suara orang tua","fromHome":True,"optional":False},{"name":"selimut lembut","fromHome":True,"optional":True}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk nyaman dengan anak di pangkuan, saling berhadapan."},{"step":2,"text":"Nyanyikan lagu pendek dengan tempo lambat."},{"step":3,"text":"Gerakkan tangan anak mengikuti irama dengan lembut."},{"step":4,"text":"Berhenti sejenak dan tersenyum, lalu ulangi bila anak senang."}],"controlOfError":"Anak akan tersenyum, menatap, atau bersuara bila menikmati; bila menoleh, hentikan lagu.","variations":["Ganti lagu dengan suara lembut yang dibuat sendiri","Tambahkan gerakan kaki lembut saat anak berbaring"],"readySigns":["Anak menatap wajah saat diajak bicara","Anak bersuara atau tersenyum sebagai respons"],"struggleSigns":["Anak menangis saat diajak bernyanyi","Anak menoleh dan tidak tertarik pada wajah"],"safetyNotes":["Gerakkan tangan dan kaki anak dengan sangat lembut, jangan menarik sendi.","Jangan mengayun anak dengan kuat atau melemparnya ke udara.","Awasi posisi kepala anak agar tetap tertopang."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-menendang-bola-lunak","title":"Menendang Bola Lunak","summary":"Letakkan bola kain ringan dekat kaki anak saat berbaring agar ia menemukan sensasi menendang dan melihat bola bergerak.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["kekuatan kaki","sebab-akibat","koordinasi kaki"],"objectives":["Menguatkan otot kaki","Mengenalkan hubungan tendangan dan gerakan bola"],"materials":[{"name":"bola kain lunak berukuran sedang","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":7,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan bola kain menyentuh telapak kakinya."},{"step":3,"text":"Biarkan anak menendang dan melihat bola bergerak."},{"step":4,"text":"Kembalikan bola ke kakinya dan ulangi dengan gembira."}],"controlOfError":"Bola yang terlalu jauh tidak tersentuh; dekatkan kembali agar anak bisa merasakan hasil tendangannya.","variations":["Gunakan bola dengan bunyi lembut di dalamnya","Lakukan tanpa alas kaki agar sensasi lebih terasa"],"readySigns":["Anak sering menendang dan mengangkat kaki","Anak memperhatikan benda yang bergerak"],"struggleSigns":["Kaki anak jarang bergerak","Anak tidak tertarik pada bola"],"safetyNotes":["Gunakan bola kain yang ringan dan tidak memiliki bagian kecil lepas.","Awasi anak agar bola tidak menutupi wajahnya.","Jangan menggunakan bola plastik keras atau bola kecil."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-memegang-gelang-kayu-besar","title":"Memegang Gelang Kayu Besar","summary":"Berikan gelang kayu berukuran besar dan halus untuk digenggam, digerakkan, dan dipindahkan antar tangan.","ageBands":["3-6m"],"areas":["sensorial","movement"],"skills":["genggaman","koordinasi dua tangan","eksplorasi tekstur"],"objectives":["Melatih genggaman yang makin kuat","Mengenalkan berat dan tekstur kayu"],"materials":[{"name":"gelang kayu besar halus","fromHome":False,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":2,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Tunjukkan gelang kayu di depan mata anak."},{"step":2,"text":"Sentuhkan gelang ke tangannya sampai jari-jarinya menggenggam."},{"step":3,"text":"Biarkan anak memegang dan memutar gelang sendiri."},{"step":4,"text":"Tawarkan gelang lagi dari sisi lain untuk latihan meraih."}],"controlOfError":"Gelang akan jatuh bila genggaman belum kuat; anak belajar mengulang tanpa perlu dikoreksi.","variations":["Sediakan dua gelang untuk latihan memindahkan","Gunakan bola kayu besar dengan permukaan halus"],"readySigns":["Tangan anak mulai menggenggam benda yang disentuhkan","Anak membawa tangan ke arah mulut"],"struggleSigns":["Benda selalu langsung terlepas","Anak tidak mau memegang benda"],"safetyNotes":["Pilih gelang berdiameter jauh lebih besar dari mulut anak agar tidak bisa ditelan.","Pastikan permukaan kayu halus, tidak ada serpihan atau cat mengelupas.","Awasi anak karena bayi usia ini cenderung memasukkan benda ke mulut."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-bicara-balas-suara-bayi","title":"Bicara Balas Suara Bayi","summary":"Tirukan celotehan dan suara anak, lalu beri jeda agar ia merasakan giliran berbicara dalam percakapan sederhana.","ageBands":["3-6m"],"areas":["language","grace-courtesy"],"skills":["celoteh","giliran bicara","kontak mata"],"objectives":["Merangsang anak bersuara lebih banyak","Mengenalkan pola percakapan bergantian"],"materials":[{"name":"wajah dan suara orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak dekat."},{"step":2,"text":"Tunggu anak mengeluarkan suara seperti ooh atau aah."},{"step":3,"text":"Tirukan suaranya dengan nada ramah, lalu berhenti."},{"step":4,"text":"Beri waktu anak membalas sebelum Anda bersuara lagi."}],"controlOfError":"Bila orang tua bicara terus, anak tidak punya kesempatan membalas; jeda adalah kuncinya.","variations":["Tambahkan gerakan mulut yang jelas agar anak meniru","Gunakan suara berbeda saat mengganti topik"],"readySigns":["Anak mengeluarkan suara selain menangis","Anak menatap wajah dan mulut orang tua"],"struggleSigns":["Anak jarang bersuara saat diajak","Anak menghindari kontak mata"],"safetyNotes":["Lakukan saat anak tenang dan bangun, bukan saat mengantuk atau lapar.","Jaga jarak wajah yang nyaman dan jangan menutupi hidung anak.","Awasi anak selama sesi berlangsung."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-meraba-tekstur-kain","title":"Meraba Berbagai Tekstur Kain","summary":"Sediakan beberapa kain dengan tekstur berbeda untuk diraba dan digenggam, memperkaya pengalaman sensorik anak.","ageBands":["3-6m"],"areas":["sensorial","language"],"skills":["diskriminasi taktil","genggaman","kosakata tekstur"],"objectives":["Mengenalkan perbedaan tekstur","Melatih tangan mengeksplorasi benda"],"materials":[{"name":"potongan kain katun, wol, dan satin","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":8,"durationMinutes":7,"prepLevel":"sedang","presentation":[{"step":1,"text":"Siapkan tiga kain bersih dengan tekstur berbeda."},{"step":2,"text":"Sentuhkan satu kain ke telapak tangan anak."},{"step":3,"text":"Sebutkan teksturnya, misalnya lembut atau kasar."},{"step":4,"text":"Ganti kain dan biarkan anak meraba sendiri."}],"controlOfError":"Anak akan melepas kain yang tidak nyaman; ia belajar memilih tekstur yang disukai.","variations":["Gunakan kain hangat dan dingin secara bergantian","Masukkan kain ke dalam kantong kain untuk diambil"],"readySigns":["Anak membuka dan menutup tangan","Anak memperhatikan benda yang disentuhkan"],"struggleSigns":["Anak menangis saat disentuh kain tertentu","Anak tidak mau memegang apa pun"],"safetyNotes":["Cuci kain terlebih dahulu dan pastikan tidak ada benang panjang yang bisa melilit jari.","Jangan gunakan kain berbulu yang seratnya mudah lepas.","Awasi anak karena kain bisa masuk ke mulut."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-lagu-anggota-tubuh","title":"Lagu Anggota Tubuh Sambil Menyentuh","summary":"Nyanyikan lagu tentang anggota tubuh sambil menyentuh tangan, kaki, dan hidung anak dengan lembut agar kosakata terasa nyata.","ageBands":["3-6m"],"areas":["language","art-music"],"skills":["kosakata tubuh","mendengar","kesadaran tubuh"],"objectives":["Mengenalkan nama anggota tubuh","Mengaitkan suara dengan sentuhan lembut"],"materials":[{"name":"suara orang tua","fromHome":True,"optional":False},{"name":"boneka kain","fromHome":True,"optional":True}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Letakkan anak dalam posisi nyaman dan saling berhadapan."},{"step":2,"text":"Nyanyikan lagu pendek tentang tangan dan kaki."},{"step":3,"text":"Sentuh bagian tubuh yang disebut dengan sangat lembut."},{"step":4,"text":"Ulangi sambil menunggu reaksi anak."}],"controlOfError":"Bila anak menarik tangan atau menoleh, sentuhan terlalu banyak; kurangi dan beri jeda.","variations":["Gunakan boneka untuk menunjukkan anggota tubuh","Ganti lagu dengan nama bagian tubuh lain"],"readySigns":["Anak menikmati sentuhan lembut","Anak menatap mulut saat bernyanyi"],"struggleSigns":["Anak rewel saat disentuh","Anak tidak merespons suara"],"safetyNotes":["Sentuh anak dengan lembut, hindari menekan ubun-ubun atau perut.","Jangan menggelitik berlebihan hingga anak kepayahan.","Awasi reaksi anak dan hentikan bila ia tidak nyaman."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-mengikuti-benda-bergerak-lambat","title":"Mengikuti Benda Bergerak Lambat","summary":"Gerakkan mainan sederhana perlahan dari kiri ke kanan agar mata anak berlatih mengikuti arah tanpa kehilangan fokus.","ageBands":["3-6m"],"areas":["sensorial","language"],"skills":["pelacakan visual","fokus","perhatian bersama"],"objectives":["Melatih mata mengikuti objek","Memperpanjang rentang perhatian anak"],"materials":[{"name":"mainan kontras tinggi tanpa bagian kecil","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Posisikan anak telentang atau duduk ditopang."},{"step":2,"text":"Pegang mainan sekitar 30 cm dari wajahnya."},{"step":3,"text":"Gerakkan perlahan ke samping kanan lalu kiri."},{"step":4,"text":"Berhenti sejenak agar anak bisa memfokuskan mata."}],"controlOfError":"Bila gerakan terlalu cepat, mata anak tertinggal; perlambat dan ulangi.","variations":["Gerakkan mainan naik dan turun perlahan","Gunakan mainan berbunyi lembut"],"readySigns":["Mata anak mengikuti wajah orang tua","Anak menatap benda dalam jarak dekat"],"struggleSigns":["Mata anak tidak mengikuti benda","Anak cepat kehilangan minat"],"safetyNotes":["Pilih mainan besar tanpa bagian kecil yang bisa lepas.","Jangan menggerakkan benda terlalu dekat ke mata anak.","Awasi anak dan hentikan bila ia tampak pusing atau rewel."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-duduk-ditopang-bantal","title":"Duduk Ditopang Bantal","summary":"Beri pengalaman duduk singkat dengan bantal penyangga agar anak melatih keseimbangan sambil tetap aman.","ageBands":["3-6m"],"areas":["movement"],"skills":["keseimbangan duduk","kontrol batang tubuh","kekuatan inti"],"objectives":["Mengenalkan posisi duduk","Melatih otot inti dengan topangan"],"materials":[{"name":"bantal penyangga empuk","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False},{"name":"mainan ringan","fromHome":True,"optional":True}],"prepMinutes":2,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Susun bantal membentuk huruf U di atas matras."},{"step":2,"text":"Dudukkan anak di tengah dengan punggung tersangga."},{"step":3,"text":"Letakkan mainan ringan di depannya."},{"step":4,"text":"Duduk di dekat anak dan akhiri sesi saat ia mulai miring."}],"controlOfError":"Tubuh anak akan mulai miring saat lelah, tanda sesi duduk sudah cukup.","variations":["Gunakan pangkuan orang tua sebagai penyangga","Lakukan di depan cermin agar anak melihat dirinya"],"readySigns":["Anak bisa menahan kepala dengan stabil","Anak suka melihat sekeliling saat digendong"],"struggleSigns":["Kepala masih jatuh ke depan","Tubuh melengkung dan anak menangis"],"safetyNotes":["Selalu duduk dalam jangkauan tangan orang dewasa.","Jangan menggunakan bantal di dalam tempat tidur atau kereta bayi saat tidur.","Lakukan di lantai beralas matras, bukan di permukaan tinggi."],"references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-memindahkan-benda-antar-tangan","title":"Memindahkan Benda Antar Tangan","summary":"Berikan benda ringan yang mudah digenggam agar anak berlatih memindahkannya dari satu tangan ke tangan lain.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["koordinasi dua tangan","kontrol genggaman","perhatian"],"objectives":["Melatih perpindahan benda antar tangan","Memperkuat jari dan pergelangan"],"materials":[{"name":"mainan genggam ringan tanpa bagian kecil","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":1,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Letakkan mainan di tangan kanan anak."},{"step":2,"text":"Tunggu sampai ia menggenggam dengan kuat."},{"step":3,"text":"Sentuhkan tangan kirinya ke mainan itu."},{"step":4,"text":"Biarkan anak menemukan cara memindahkannya sendiri."}],"controlOfError":"Benda akan jatuh bila perpindahan belum lancar; anak dapat mencoba lagi tanpa dikoreksi.","variations":["Gunakan dua benda identik untuk saling ditukar","Lakukan sambil bernyanyi agar lebih menyenangkan"],"readySigns":["Anak bisa menggenggam benda sebentar","Anak membawa tangan ke tengah tubuh"],"struggleSigns":["Satu tangan selalu mengepal","Anak melepas benda dengan cepat"],"safetyNotes":["Pastikan benda lebih besar dari mulut anak dan tidak punya bagian kecil.","Awasi anak karena benda akan sering dibawa ke mulut.","Hindari benda dengan tali, pita, atau lonceng kecil."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"Montessori Global","url":"https://montessoriglobal.com/"}]},
+{"id":"36m-berjemur-pagi-di-teduh","title":"Berjemur Pagi di Tempat Teduh","summary":"Ajak anak keluar rumah pada pagi hari untuk merasakan udara segar dan cahaya alami tanpa paparan matahari langsung.","ageBands":["3-6m"],"areas":["outdoor","self-care"],"skills":["adaptasi lingkungan","pengalaman sensorik","ritme harian"],"objectives":["Mengenalkan anak pada lingkungan luar rumah","Membantu membangun ritme siang dan malam"],"materials":[{"name":"matras luar","fromHome":True,"optional":False},{"name":"topi lebar","fromHome":True,"optional":False},{"name":"selimut tipis","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":15,"prepLevel":"rendah","presentation":[{"step":1,"text":"Pilih waktu pagi saat matahari belum terlalu terik."},{"step":2,"text":"Cari area teduh dan jauh dari angin kencang."},{"step":3,"text":"Baringkan anak di matras dengan pakaian nyaman."},{"step":4,"text":"Amati bersama daun dan awan, lalu kembali bila anak rewel."}],"controlOfError":"Anak akan rewel bila kepanasan atau silau; tanda untuk segera pindah ke tempat sejuk.","variations":["Ajak anak mengamati pohon dari gendongan","Lakukan di teras rumah saat teduh"],"readySigns":["Anak terbiasa dibawa keluar rumah","Anak tenang saat berada di tempat baru"],"struggleSigns":["Anak menangis saat diajak keluar","Anak kepanasan atau kedinginan"],"safetyNotes":["Hindari sinar matahari langsung; gunakan tempat teduh dan topi lebar.","Jangan tinggalkan anak sendirian di luar rumah.","Periksa suhu kulit anak dan segera masuk bila terlalu panas atau dingin."],"references":[{"title":"WHO - Child health","url":"https://www.who.int/health-topics/child-health"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-mendengar-suara-rumah","title":"Mendengar Suara-Suara Rumah","summary":"Ajak anak berhenti sejenak untuk mendengarkan suara sekitar, lalu ceritakan sumber bunyi dengan kata-kata sederhana.","ageBands":["3-6m"],"areas":["language","sensorial"],"skills":["kesadaran bunyi","mendengar","kosakata"],"objectives":["Melatih kepekaan terhadap bunyi","Mengenalkan kata untuk suara sehari-hari"],"materials":[{"name":"lingkungan rumah","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk bersama anak di ruangan yang tenang."},{"step":2,"text":"Diam sejenak dan dengarkan suara di sekitar."},{"step":3,"text":"Tunjuk arah suara dan sebutkan sumbernya."},{"step":4,"text":"Ajak anak tersenyum saat suara baru terdengar."}],"controlOfError":"Bila ruangan terlalu bising, anak sulit membedakan bunyi; pilih waktu yang lebih tenang.","variations":["Dengarkan suara hujan dari dekat jendela","Gunakan mainan berbunyi halus sebagai pembanding"],"readySigns":["Anak menoleh ke arah suara","Anak terdiam saat mendengar bunyi baru"],"struggleSigns":["Anak tidak bereaksi pada suara keras","Anak menangis karena suara tertentu"],"safetyNotes":["Jauhkan anak dari suara yang terlalu keras atau tiba-tiba.","Jangan meletakkan sumber bunyi dekat telinga anak.","Awasi anak selama sesi mendengarkan."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-menoleh-ke-arah-bunyi","title":"Menoleh ke Arah Bunyi","summary":"Bunyikan mainan lembut di sisi kanan dan kiri kepala anak agar ia berlatih mencari sumber suara dengan menoleh.","ageBands":["3-6m"],"areas":["language","sensorial"],"skills":["lokalisasi suara","kontrol leher","perhatian"],"objectives":["Melatih anak mencari sumber bunyi","Memperkuat otot leher untuk menoleh"],"materials":[{"name":"mainan kerincing lembut","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang dengan nyaman."},{"step":2,"text":"Bunyikan mainan pelan di sisi kanan kepalanya."},{"step":3,"text":"Tunggu anak menoleh sebelum memindahkan bunyi."},{"step":4,"text":"Ulangi di sisi kiri dengan lembut."}],"controlOfError":"Bunyi yang terlalu keras membuat anak kaget; gunakan bunyi pelan dan beri jeda.","variations":["Gunakan suara orang tua dari sisi berbeda","Bunyikan benda sehari-hari seperti sendok kayu"],"readySigns":["Anak menoleh ke arah suara","Anak mengikuti wajah orang tua dengan mata"],"struggleSigns":["Anak tidak menoleh pada suara","Anak kaget dan menangis setiap kali mendengar bunyi"],"safetyNotes":["Jauhkan mainan dari telinga dan wajah anak.","Gunakan bunyi lembut, jangan mengagetkan anak.","Awasi anak sepanjang sesi."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-bermain-air-saat-mandi","title":"Bermain Air Saat Mandi","summary":"Manfaatkan waktu mandi untuk mengajak anak merasakan air, menepuk permukaan, dan mendengar suara cipratan.","ageBands":["3-6m"],"areas":["self-care","sensorial"],"skills":["sensasi air","gerak tangan","kebiasaan mandi"],"objectives":["Membuat waktu mandi terasa menyenangkan","Mengenalkan sensasi air pada tangan dan kaki"],"materials":[{"name":"bak mandi bayi","fromHome":True,"optional":False},{"name":"waslap lembut","fromHome":True,"optional":False},{"name":"mainan mandi besar","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":10,"prepLevel":"sedang","presentation":[{"step":1,"text":"Siapkan air hangat suam-suam kuku dan semua perlengkapan mandi."},{"step":2,"text":"Masukkan anak perlahan sambil menopang kepala dan tubuhnya."},{"step":3,"text":"Tepuk permukaan air dengan tangan anak dengan lembut."},{"step":4,"text":"Biarkan anak merasakan air, lalu selesaikan mandi dengan cepat."}],"controlOfError":"Anak akan merenggang atau menangis bila air terlalu dingin atau panas; periksa suhu sebelum masuk.","variations":["Gunakan cangkir kecil untuk menuang air perlahan","Lakukan di bak mandi bayi dengan waslap berbeda tekstur"],"readySigns":["Anak tenang saat mandi","Anak menikmati sentuhan air"],"struggleSigns":["Anak menangis setiap kali mandi","Anak kedinginan atau menggigil"],"safetyNotes":["Jangan pernah meninggalkan anak di air, bahkan sebentar; awasi terus.","Isi air setinggi beberapa sentimeter saja dan periksa suhunya dengan siku.","Pegang anak dengan aman agar tidak tergelincir."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-pijat-lembut-kaki-dan-tangan","title":"Pijat Lembut Kaki dan Tangan","summary":"Pijat ringan pada kaki dan tangan anak setelah mandi untuk memberi rasa nyaman dan mengenalkan sentuhan teratur.","ageBands":["3-6m"],"areas":["self-care","sensorial"],"skills":["relaksasi","kesadaran tubuh","ikatan sosial"],"objectives":["Memberi pengalaman sentuhan yang menenangkan","Membantu anak mengenal bagian tubuhnya"],"materials":[{"name":"minyak bayi tanpa pewangi","fromHome":True,"optional":True},{"name":"handuk lembut","fromHome":True,"optional":False}],"prepMinutes":3,"durationMinutes":8,"prepLevel":"rendah","presentation":[{"step":1,"text":"Pastikan ruangan hangat dan tangan orang tua bersih."},{"step":2,"text":"Letakkan anak di handuk setelah mandi."},{"step":3,"text":"Usap kaki dan tangan dengan gerakan lembut dari pangkal ke ujung."},{"step":4,"text":"Beri jeda dan hentikan bila anak mulai gelisah."}],"controlOfError":"Anak akan menarik kaki atau menangis bila sentuhan terlalu kuat; kurangi tekanan.","variations":["Lakukan tanpa minyak bila kulit anak sensitif","Tambahkan lagu pelan saat memijat"],"readySigns":["Anak tenang saat disentuh","Anak menikmati waktu setelah mandi"],"struggleSigns":["Anak menangis saat kaki disentuh","Kulit anak memerah atau gatal"],"safetyNotes":["Hindari minyak bila ada luka atau ruam kulit; konsultasikan ke dokter bila kulit bermasalah.","Jangan memijat dengan tekanan kuat atau menarik sendi.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-bergoyang-sambil-bernyanyi","title":"Bergoyang Lembut Sambil Bernyanyi","summary":"Gendong anak dengan aman dan bergoyang pelan mengikuti lagu, memberi rasa ritme serta kedekatan yang menenangkan.","ageBands":["3-6m"],"areas":["movement","art-music"],"skills":["keseimbangan","irama","rasa aman"],"objectives":["Mengenalkan gerakan berirama","Memperkuat rasa aman lewat dekapan"],"materials":[{"name":"gendongan atau pelukan orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Gendong anak dengan kepala dan leher tertopang."},{"step":2,"text":"Nyanyikan lagu pelan sambil bergoyang lembut."},{"step":3,"text":"Gerakkan tubuh ke kiri dan kanan dengan ritme stabil."},{"step":4,"text":"Berhenti dan peluk anak, lalu ulangi bila ia senang."}],"controlOfError":"Bila goyangan terlalu cepat, anak akan gelisah; perlambat dan jaga gerakan stabil.","variations":["Bergoyang sambil berjalan pelan di ruangan","Gunakan selendang gendong yang aman"],"readySigns":["Anak tenang saat digendong","Anak menikmati suara dan gerakan berulang"],"struggleSigns":["Anak menangis saat digoyang","Anak kaku atau tampak pusing"],"safetyNotes":["Topang kepala dan leher anak selama bergoyang.","Jangan mengguncang anak dengan keras atau melemparnya.","Jangan berjalan di lantai licin atau dekat tangga."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-melihat-buku-kontras-tinggi","title":"Melihat Buku Kontras Tinggi","summary":"Buka buku bergambar hitam-putih di depan anak dan ceritakan gambarnya, melatih fokus serta minat pada buku.","ageBands":["3-6m"],"areas":["language","sensorial"],"skills":["fokus visual","kosakata","minat buku"],"objectives":["Melatih mata memfokuskan gambar","Membangun kebiasaan membaca bersama"],"materials":[{"name":"buku kain atau buku karton kontras tinggi","fromHome":False,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk dengan anak di pangkuan, buku di depannya."},{"step":2,"text":"Buka satu halaman dan tunjuk gambar sederhana."},{"step":3,"text":"Sebutkan nama gambar dengan suara hangat."},{"step":4,"text":"Beri waktu anak mengamati sebelum membuka halaman berikutnya."}],"controlOfError":"Anak akan menoleh atau rewel bila halaman terlalu cepat berganti; perlambat ritme.","variations":["Gunakan buku kain yang bisa dipegang","Ceritakan gambar dengan suara berbeda"],"readySigns":["Anak menatap gambar dengan fokus","Anak tenang saat dibacakan"],"struggleSigns":["Anak tidak tertarik pada buku","Anak menangis saat dibacakan"],"safetyNotes":["Pilih buku kain atau karton tebal tanpa bagian kecil yang bisa lepas.","Awasi anak karena buku akan dimasukkan ke mulut.","Jangan menggunakan buku dengan staples atau ujung tajam."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-meraih-kaus-kaki-lunak","title":"Meraih Kaus Kaki Lunak","summary":"Gunakan kaus kaki bersih yang digulung sebagai bola ringan agar anak berlatih meraih dan menggenggam benda di dekatnya.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["meraih","menggenggam","koordinasi tangan"],"objectives":["Melatih tangan meraih ke arah benda","Mengenalkan benda ringan yang mudah digenggam"],"materials":[{"name":"kaus kaki katun bersih","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False}],"prepMinutes":2,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Gulung kaus kaki menjadi bola ringan."},{"step":2,"text":"Letakkan di dada anak dalam jangkauan tangannya."},{"step":3,"text":"Biarkan anak meraih dan menggenggam sendiri."},{"step":4,"text":"Bila jatuh, letakkan kembali tanpa mengoreksi caranya."}],"controlOfError":"Bola akan menggelinding saat disentuh; anak belajar menyesuaikan gerakan tangannya.","variations":["Gunakan dua bola kaus kaki untuk latihan memilih","Lakukan sambil berbaring tengkurap"],"readySigns":["Anak mulai mengarahkan tangan ke benda","Anak memegang benda sebentar"],"struggleSigns":["Tangan belum terarah ke benda","Anak melepas benda terlalu cepat"],"safetyNotes":["Gunakan kaus kaki bersih tanpa kancing atau hiasan lepas.","Jangan menggunakan benda kecil atau isian yang bisa keluar.","Awasi anak karena benda akan dibawa ke mulut."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"Montessori Global","url":"https://montessoriglobal.com/"}]},
+{"id":"36m-latihan-berguling-balik","title":"Latihan Berguling Balik","summary":"Ajak anak berlatih berguling dari telentang ke tengkurap dan sebaliknya dengan mainan sebagai pemancing di sisi tubuh.","ageBands":["3-6m"],"areas":["movement"],"skills":["berguling","kekuatan otot","kesadaran posisi"],"objectives":["Melatih peralihan posisi tubuh","Menguatkan otot leher, punggung, dan perut"],"materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan menarik","fromHome":True,"optional":True}],"prepMinutes":2,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan mainan di samping agar anak menoleh."},{"step":3,"text":"Bantu pinggulnya berputar sedikit bila ia sudah mencoba."},{"step":4,"text":"Beri pujian dan biarkan anak beristirahat."}],"controlOfError":"Anak akan berhenti bila lelah atau posisinya tidak nyaman; jangan meneruskan latihan.","variations":["Lakukan setelah bangun tidur saat anak segar","Gunakan cermin di sisi sebagai pemancing"],"readySigns":["Anak bisa mengangkat kepala saat tengkurap","Anak mulai memiringkan badan sendiri"],"struggleSigns":["Tubuh anak kaku saat diputar","Anak menangis setiap kali diletakkan tengkurap"],"safetyNotes":["Lakukan hanya di lantai beralas matras dan awasi anak terus-menerus.","Jangan memutar leher atau lengan anak dengan paksa.","Hentikan bila anak tampak kesakitan atau sangat rewel."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-menarik-kain-dari-kotak","title":"Menarik Kain dari Kotak Kosong","summary":"Isi kotak tisu kosong dengan kain lembut yang ujungnya menonjol agar anak berlatih menarik dan mengeluarkan benda.","ageBands":["3-6m"],"areas":["sensorial","movement"],"skills":["menarik","koordinasi tangan","sebab-akibat"],"objectives":["Melatih gerakan menarik dengan tangan","Mengenalkan hubungan tarikan dan hasil"],"materials":[{"name":"kotak tisu kosong","fromHome":True,"optional":False},{"name":"kain lembut besar","fromHome":True,"optional":False}],"prepMinutes":5,"durationMinutes":8,"prepLevel":"sedang","presentation":[{"step":1,"text":"Masukkan kain lembut ke dalam kotak hingga ujungnya menonjol."},{"step":2,"text":"Tunjukkan ujung kain dan biarkan anak meraihnya."},{"step":3,"text":"Bantu anak menarik kain keluar perlahan."},{"step":4,"text":"Masukkan kembali dan ulangi bila anak masih tertarik."}],"controlOfError":"Bila kain tersangkut, anak akan berhenti menarik; gunakan kain yang cukup besar dan longgar.","variations":["Gunakan beberapa kain berbeda warna","Ganti kotak dengan wadah plastik berlubang lebar"],"readySigns":["Anak bisa menggenggam kain","Anak tertarik menarik benda ke arahnya"],"struggleSigns":["Anak tidak mencoba menarik","Anak cepat bosan dan melepas kain"],"safetyNotes":["Pastikan kotak tidak memiliki staples atau tepi tajam.","Gunakan kain besar yang tidak bisa tertelan dan tidak ada tali.","Awasi anak agar kain tidak melilit leher atau menutupi wajah."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-menirukan-bunyi-bayi","title":"Menirukan Bunyi Bayi","summary":"Tirukan bunyi yang dibuat anak lalu tambahkan satu bunyi baru, mendorong anak bereksperimen dengan suaranya.","ageBands":["3-6m"],"areas":["language"],"skills":["eksplorasi suara","giliran bicara","pendengaran"],"objectives":["Merangsang variasi celotehan","Melatih anak mendengar dan meniru"],"materials":[{"name":"suara orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk dekat anak dengan wajah sejajar."},{"step":2,"text":"Tirukan bunyi yang baru saja ia keluarkan."},{"step":3,"text":"Tambahkan satu bunyi baru yang mudah, lalu berhenti."},{"step":4,"text":"Tunggu anak mencoba menirukan bunyi tersebut."}],"controlOfError":"Bila orang tua terus berbicara, anak kehilangan giliran; beri jeda setelah setiap bunyi.","variations":["Gunakan bunyi hewan sederhana","Lakukan sambil bercermin agar anak melihat mulut"],"readySigns":["Anak sering mengeluarkan bunyi berulang","Anak menatap mulut orang tua"],"struggleSigns":["Anak jarang bersuara","Anak tidak menoleh saat diajak bicara"],"safetyNotes":["Lakukan saat anak bangun dan tenang, bukan saat mengantuk.","Jaga jarak wajah agar anak tidak merasa tertekan.","Awasi anak selama sesi."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-tengkurap-di-dada-orang-tua","title":"Tengkurap di Dada Orang Tua","summary":"Baringkan anak tengkurap di dada orang tua yang bersandar agar ia berlatih mengangkat kepala dalam posisi nyaman dan dekat.","ageBands":["3-6m"],"areas":["movement","grace-courtesy"],"skills":["kontrol kepala","kedekatan","kekuatan leher"],"objectives":["Melatih tengkurap dengan rasa aman","Memperkuat ikatan lewat kontak tubuh"],"materials":[{"name":"dada orang tua","fromHome":True,"optional":False},{"name":"selimut tipis","fromHome":True,"optional":True}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Bersandarlah nyaman di kursi atau bantal."},{"step":2,"text":"Letakkan anak tengkurap di dada Anda, kepalanya di dekat bahu."},{"step":3,"text":"Ajak bicara agar anak mengangkat kepala mencari wajah Anda."},{"step":4,"text":"Berhenti saat anak mulai lelah atau mengantuk."}],"controlOfError":"Anak akan menurunkan kepala atau merengek saat lelah; itu tanda untuk berhenti.","variations":["Lakukan sambil bersandar di sofa","Tambahkan lagu pelan saat anak tengkurap"],"readySigns":["Anak bisa mengangkat kepala sebentar","Anak nyaman dengan kontak badan"],"struggleSigns":["Anak menangis saat tengkurap","Kepala selalu jatuh dan anak tampak lelah"],"safetyNotes":["Pastikan wajah dan hidung anak tidak tertutup pakaian atau selimut.","Jangan tertidur saat anak tengkurap di dada Anda.","Awasi anak terus dan hentikan bila ia tampak sesak atau lelah."],"references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-mengenal-warna-dengan-kartu","title":"Mengenal Warna dengan Kartu Sederhana","summary":"Tunjukkan satu kartu warna cerah pada satu waktu dan sebutkan namanya, memberi pengalaman visual yang fokus dan sederhana.","ageBands":["3-6m"],"areas":["sensorial","language"],"skills":["persepsi warna","fokus visual","kosakata"],"objectives":["Mengenalkan warna dasar","Melatih perhatian pada satu objek"],"materials":[{"name":"kartu warna besar tanpa laminasi tajam","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":4,"prepLevel":"sedang","presentation":[{"step":1,"text":"Siapkan dua atau tiga kartu warna yang berbeda."},{"step":2,"text":"Tunjukkan satu kartu sekitar 30 cm dari wajah anak."},{"step":3,"text":"Sebutkan warnanya dengan jelas, lalu diam sejenak."},{"step":4,"text":"Ganti kartu setelah anak tampak bosan."}],"controlOfError":"Anak akan menoleh bila warna atau kartu terlalu banyak; kurangi jumlah kartu.","variations":["Gunakan benda nyata berwarna sama","Pasangkan kartu dengan kain berwarna serupa"],"readySigns":["Anak bisa memfokuskan mata pada benda","Anak tertarik pada warna cerah"],"struggleSigns":["Anak tidak menatap kartu","Anak menangis saat terlalu banyak stimulus"],"safetyNotes":["Gunakan kartu besar yang tidak bisa dimasukkan ke mulut.","Pastikan tepi kartu tidak tajam dan tidak ada laminasi yang terkelupas.","Awasi anak agar kartu tidak menutupi wajahnya."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-gerakan-sepeda-lembut","title":"Gerakan Sepeda Lembut","summary":"Gerakkan kaki anak perlahan seperti mengayuh sepeda saat berbaring, membantu mobilitas dan kesadaran tubuh.","ageBands":["3-6m"],"areas":["movement","self-care"],"skills":["mobilitas kaki","kesadaran tubuh","relaksasi"],"objectives":["Melatih gerakan kaki bergantian","Membantu anak rileks setelah aktivitas"],"materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"popok bersih","fromHome":True,"optional":True}],"prepMinutes":1,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang di matras empuk."},{"step":2,"text":"Pegang kedua kakinya dengan lembut di bagian betis."},{"step":3,"text":"Gerakkan kaki bergantian seperti mengayuh sepeda."},{"step":4,"text":"Lakukan pelan sambil tersenyum dan bernyanyi."}],"controlOfError":"Anak akan menendang atau menangis bila gerakan tidak nyaman; hentikan dan istirahatkan kaki.","variations":["Lakukan setelah mandi saat otot rileks","Gerakkan satu kaki saja secara bergantian"],"readySigns":["Kaki anak aktif bergerak","Anak tenang saat kakinya dipegang"],"struggleSigns":["Anak menangis saat kaki digerakkan","Kaki anak terasa kaku"],"safetyNotes":["Gerakkan kaki perlahan tanpa menarik sendi atau memutar paksa.","Jangan mengangkat kaki terlalu tinggi atau menekuk berlebihan.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-senyum-dan-bercermin-bersama","title":"Senyum dan Bercermin Bersama","summary":"Ajak anak tersenyum dan bereaksi pada pantulan wajah orang tua di cermin, memperkuat interaksi sosial yang hangat.","ageBands":["3-6m"],"areas":["grace-courtesy","self-care"],"skills":["interaksi sosial","kontak mata","respons emosi"],"objectives":["Melatih anak merespons senyum","Membangun kesadaran diri dan orang lain"],"materials":[{"name":"cermin akrilik aman","fromHome":False,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk bersama anak di depan cermin."},{"step":2,"text":"Tersenyum pada anak dan pada pantulan wajahnya."},{"step":3,"text":"Sebut namanya dan tunggu reaksi senyumnya."},{"step":4,"text":"Buat ekspresi sederhana lain seperti mulut terbuka."}],"controlOfError":"Bila anak menghindari cermin, sesi terlalu lama; akhiri dan coba lagi lain waktu.","variations":["Main cilukba di depan cermin","Gunakan boneka untuk melambai di cermin"],"readySigns":["Anak tersenyum pada wajah orang","Anak menikmati kontak mata"],"struggleSigns":["Anak menghindari tatapan","Anak tidak merespons senyum"],"safetyNotes":["Gunakan cermin akrilik ringan dan pastikan tidak mudah jatuh.","Jangan menempelkan cermin di dalam tempat tidur anak.","Awasi anak selama bermain di depan cermin."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-menepuk-meja-berirama","title":"Menepuk Meja Berirama","summary":"Ajak anak menepuk permukaan meja atau matras dengan tangan sambil berirama, melatih gerak tangan dan kepekaan bunyi.","ageBands":["3-6m"],"areas":["art-music","movement"],"skills":["irama","gerak tangan","sebab-akibat"],"objectives":["Mengenalkan irama sederhana","Melatih anak mengangkat dan menurunkan tangan"],"materials":[{"name":"meja rendah atau matras","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk dengan anak di pangkuan dekat permukaan meja."},{"step":2,"text":"Tepuk meja perlahan beberapa kali."},{"step":3,"text":"Bantu tangan anak menepuk dengan lembut."},{"step":4,"text":"Ulangi pola tepukan yang sama agar terasa berirama."}],"controlOfError":"Bila tepukan terlalu keras, anak bisa terkejut; gunakan tekanan ringan dan tempo lambat.","variations":["Gunakan matras empuk agar suara lebih pelan","Tambahkan lagu sambil menepuk"],"readySigns":["Anak bisa mengangkat tangan ke arah benda","Anak tertarik pada bunyi yang ia buat"],"struggleSigns":["Anak tidak mengangkat tangan","Anak kaget dan menangis karena bunyi"],"safetyNotes":["Jangan menepuk di dekat wajah atau telinga anak.","Pastikan permukaan tidak tajam dan tidak ada benda kecil di sekitarnya.","Awasi anak agar tangan tidak terbentur benda keras."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-mengamati-daun-dari-gendongan","title":"Mengamati Daun dari Gendongan","summary":"Ajak anak melihat daun dan pohon dari gendongan yang aman, membangun rasa ingin tahu tentang alam sekitar.","ageBands":["3-6m"],"areas":["outdoor","culture"],"skills":["observasi","pengalaman alam","perhatian"],"objectives":["Mengenalkan anak pada tanaman","Membangun minat pada lingkungan sekitar"],"materials":[{"name":"gendongan bayi aman","fromHome":True,"optional":False},{"name":"topi lebar","fromHome":True,"optional":False}],"prepMinutes":2,"durationMinutes":10,"prepLevel":"rendah","presentation":[{"step":1,"text":"Gendong anak dengan posisi kepala dan leher tertopang."},{"step":2,"text":"Dekati pohon atau daun yang aman untuk dilihat."},{"step":3,"text":"Tunjuk daun dan sebutkan warnanya dengan pelan."},{"step":4,"text":"Biarkan anak mengamati, lalu lanjutkan berjalan pelan."}],"controlOfError":"Anak akan menoleh atau rewel bila bosan; pindah ke objek lain atau kembali ke rumah.","variations":["Amati bunga berwarna cerah dari jarak aman","Lakukan di halaman rumah saat teduh"],"readySigns":["Anak bisa menahan kepala saat digendong","Anak tertarik melihat lingkungan baru"],"struggleSigns":["Anak rewel saat berada di luar","Anak tidak tertarik pada objek di sekitarnya"],"safetyNotes":["Pastikan gendongan terpasang benar dan kepala anak tertopang.","Jangan biarkan anak memetik, memasukkan daun, atau menyentuh tanaman berbahaya ke mulut.","Awasi anak dan hindari area dengan insekta atau tanaman berduri."],"references":[{"title":"WHO - Child health","url":"https://www.who.int/health-topics/child-health"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-bermain-cilukba-dengan-kain","title":"Bermain Cilukba dengan Kain","summary":"Tutup wajah orang tua dengan kain lalu buka sambil berkata cilukba, melatih pemahaman bahwa sesuatu yang hilang bisa muncul lagi.","ageBands":["3-6m"],"areas":["language","grace-courtesy"],"skills":["permanensi objek","kontak mata","humor sosial"],"objectives":["Mengenalkan permainan giliran","Melatih anak menunggu dan merespons"],"materials":[{"name":"kain ringan bersih","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak dekat."},{"step":2,"text":"Tutup wajah Anda dengan kain, bukan wajah anak."},{"step":3,"text":"Tanya dengan suara ceria, lalu buka kain dan ucapkan cilukba."},{"step":4,"text":"Ulangi beberapa kali dan beri jeda reaksi."}],"controlOfError":"Bila anak belum merespons, ulangi dengan tempo lebih lambat dan ekspresi jelas.","variations":["Gunakan boneka untuk disembunyikan","Biarkan anak memegang ujung kain saat dibuka"],"readySigns":["Anak tersenyum saat bermain bersama","Anak menatap wajah dan mengikuti gerakan kain"],"struggleSigns":["Anak menangis saat wajah tertutup","Anak tidak tertarik pada permainan"],"safetyNotes":["Tutup wajah orang tua saja, jangan pernah menutupi wajah anak dengan kain.","Gunakan kain tipis dan ringan yang tidak menghalangi napas.","Awasi anak dan hentikan bila ia tampak takut."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-eksplorasi-botol-sensorik-berbunyi","title":"Eksplorasi Botol Sensorik Berbunyi","summary":"Berikan botol plastik tertutup rapat berisi biji besar yang bergerak agar anak melihat dan mendengar sebab-akibat dari gerakannya.","ageBands":["3-6m"],"areas":["sensorial","movement"],"skills":["sebab-akibat","menggenggam","pendengaran"],"objectives":["Melatih anak menggenggam dan menggoyang benda","Mengenalkan hubungan gerakan dan bunyi"],"materials":[{"name":"botol plastik bening bertutup rapat","fromHome":True,"optional":False},{"name":"biji besar atau manik kayu besar","fromHome":False,"optional":False},{"name":"lakban kuat","fromHome":True,"optional":False}],"prepMinutes":10,"durationMinutes":6,"prepLevel":"sedang","presentation":[{"step":1,"text":"Isi botol dengan biji besar secukupnya, lalu tutup rapat dan lakban."},{"step":2,"text":"Tunjukkan botol dan goyangkan perlahan di depan anak."},{"step":3,"text":"Letakkan botol di tangannya agar ia menggoyang sendiri."},{"step":4,"text":"Amati bersama bunyi yang muncul setiap kali botol bergerak."}],"controlOfError":"Bila tutup botol longgar atau isi tidak bergerak, mainan tidak berfungsi; periksa sebelum diberikan.","variations":["Gunakan isi berbeda untuk bunyi yang berbeda","Balut sebagian botol dengan kain agar teksturnya bervariasi"],"readySigns":["Anak bisa menggenggam benda silinder","Anak tertarik pada bunyi yang ia buat"],"struggleSigns":["Anak tidak mau memegang botol","Anak melepas botol dengan cepat"],"safetyNotes":["Pastikan tutup botol direkatkan dengan lakban kuat dan tidak bisa dibuka anak.","Gunakan biji berukuran besar agar tidak tersedak bila tutup terbuka.","Awasi anak dan periksa botol sebelum setiap penggunaan."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-lagu-sambil-memandang-wajah","title":"Lagu Sambil Memandang Wajah","summary":"Duduk berhadapan dan nyanyikan lagu dengan ekspresi wajah berubah-ubah agar anak terlatih membaca mimik dan suara.","ageBands":["3-6m"],"areas":["language","art-music","grace-courtesy"],"skills":["kontak mata","membaca ekspresi","mendengar"],"objectives":["Melatih anak memperhatikan wajah","Mengaitkan ekspresi dengan nada suara"],"materials":[{"name":"wajah dan suara orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak nyaman."},{"step":2,"text":"Nyanyikan lagu pendek dengan ekspresi ceria."},{"step":3,"text":"Ubah ekspresi wajah sesuai bagian lagu."},{"step":4,"text":"Berhenti dan tunggu anak menatap atau tersenyum."}],"controlOfError":"Bila anak menoleh, ekspresi terlalu banyak; sederhanakan wajah dan suara.","variations":["Gunakan boneka dengan ekspresi berbeda","Nyanyikan lagu yang sama setiap hari sebagai rutinitas"],"readySigns":["Anak menatap wajah orang tua","Anak tersenyum sebagai respons"],"struggleSigns":["Anak menghindari tatapan","Anak rewel saat diajak berinteraksi"],"safetyNotes":["Jaga jarak wajah yang nyaman dan jangan menutupi hidung anak.","Lakukan saat anak bangun dan tenang.","Awasi anak dan hentikan bila ia tampak lelah."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-mengamati-bayangan-tangan","title":"Mengamati Bayangan Tangan","summary":"Gerakkan tangan atau benda di depan cahaya lembut agar anak melihat bayangan bergerak dan melatih fokus visual.","ageBands":["3-6m"],"areas":["sensorial","art-music"],"skills":["fokus visual","mengikuti gerakan","imajinasi"],
+"objectives":["Melatih mata mengikuti bayangan","Memberi pengalaman visual yang menenangkan"],"materials":[{"name":"lampu meja redup","fromHome":True,"optional":False},{"name":"dinding polos","fromHome":True,"optional":False}],"prepMinutes":3,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Nyalakan lampu redup dan arahkan ke dinding polos."},{"step":2,"text":"Baringkan anak dengan nyaman menghadap dinding."},{"step":3,"text":"Gerakkan tangan perlahan hingga bayangan terlihat."},{"step":4,"text":"Amati bersama dan hentikan bila anak bosan."}],"controlOfError":"Bila cahaya terlalu terang atau gerakan terlalu cepat, anak menoleh; redupkan dan perlambat.","variations":["Gunakan mainan berbentuk sederhana","Buat bayangan dengan kedua tangan"],"readySigns":["Anak bisa memfokuskan mata pada dinding","Anak tertarik pada gerakan cahaya"],"struggleSigns":["Anak tidak memperhatikan bayangan","Anak silau dan menangis"],"safetyNotes":["Jangan mengarahkan lampu langsung ke mata anak.","Gunakan cahaya redup dan jauhkan lampu dari jangkauan anak.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]}
+]
+
+assert len(acts) == 30, len(acts)
+ids = [a["id"] for a in acts]
+assert len(set(ids)) == 30, "dup id"
+titles = [a["title"] for a in acts]
+assert len(set(titles)) == 30, "dup title"
+allowed = {"practical-life","sensorial","language","math","culture","movement","grace-courtesy","self-care","art-music","outdoor"}
+for a in acts:
+    assert a["id"].startswith("36m-")
+    assert len(a["title"]) >= 5
+    assert len(a["summary"]) >= 30
+    assert a["ageBands"] == ["3-6m"]
+    assert 1 <= len(a["areas"]) <= 3 and set(a["areas"]) <= allowed, a["id"]
+    assert a["skills"] and a["objectives"] and a["materials"]
+    assert 0 <= a["prepMinutes"] <= 30
+    assert 3 <= a["durationMinutes"] <= 60
+    assert a["prepLevel"] in {"rendah","sedang","tinggi"}
+    assert len(a["presentation"]) >= 2
+    for i, p in enumerate(a["presentation"], 1):
+        assert p["step"] == i, a["id"]
+        assert len(p["text"]) >= 15, (a["id"], p["text"])
+    assert a["controlOfError"]
+    assert a["variations"] and a["readySigns"] and a["struggleSigns"]
+    assert a["safetyNotes"] and all(len(s) > 0 for s in a["safetyNotes"])
+    assert a["references"] and all(r.get("title") and r.get("url","").startswith("https://") for r in a["references"])
+
+os.makedirs("content/parts", exist_ok=True)
+with open("content/parts/act-3-6m.json","w",encoding="utf-8") as f:
+    json.dump(acts, f, ensure_ascii=False, indent=2)
+print("written", len(acts))
+PY
+python3 -c "import json;d=json.load(open('content/parts/act-3-6m.json'));assert len(d)==30;print('OK',len(d))"
+Traceback (most recent call last):
+  File "<stdin>", line 39, in <module>
+AssertionError: 32
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json;d=json.load(open('content/parts/act-3-6m.json'));assert len(d)==30;print('OK',len(d))
+                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'content/parts/act-3-6m.json'
+[0m
+[0m$ [0mhistory 2>/dev/null | tail -5; ls -la /tmp | tail -5
+-rw-rw-r--  1 temamumtaza temamumtaza     5922 Oct 12 21:04 v.sh
+-rw-rw-r--  1 temamumtaza temamumtaza     5922 Oct 12 21:03 verify_iam.sh
+-rw-rw-r--  1 temamumtaza temamumtaza      255 Oct 11 10:14 w-test.txt
+-rw-rw-r--  1 temamumtaza temamumtaza     1189 Oct 11 08:30 wd_status_report.sh
+-rw-rw-r--  1 temamumtaza temamumtaza     3736 Oct 17 19:47 zenmodels.json
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json, os
+
+acts = [
+{"id":"36m-tummy-time-dengan-cermin","title":"Tengkurap Seru di Depan Cermin","summary":"Letakkan cermin bayi yang aman di depan anak saat tengkurap agar ia tertarik mengangkat kepala dan melihat wajahnya sendiri.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["kontrol kepala","kekuatan leher","fokus visual"],"objectives":["Melatih otot leher dan punggung lewat tengkurap","Menarik perhatian anak dengan pantulan wajah"],"materials":[{"name":"cermin akrilik bayi tanpa tepi tajam","fromHome":False,"optional":False},{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan kontras tinggi","fromHome":True,"optional":True}],"prepMinutes":3,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak tengkurap di matras dengan nyaman."},{"step":2,"text":"Sandarkan cermin akrilik di depannya, sekitar 20-30 cm."},{"step":3,"text":"Tunjuk wajah di cermin dan sebut namanya dengan ceria."},{"step":4,"text":"Biarkan anak menikmati sebentar, lalu angkat bila tampak lelah."}],"controlOfError":"Anak akan menangis atau menurunkan kepala saat ototnya lelah, tanda waktunya berhenti.","variations":["Letakkan cermin agak ke samping agar anak berlatih menoleh","Gunakan mainan berwarna kontras di samping cermin"],"readySigns":["Anak sudah bisa mengangkat kepala sebentar","Anak tertarik pada wajah dan benda di depannya"],"struggleSigns":["Kepala sering jatuh dan anak rewel","Anak menolak posisi tengkurap sama sekali"],"safetyNotes":["Awasi anak sepanjang waktu dan jangan pernah meninggalkannya saat tengkurap.","Gunakan cermin akrilik ringan tanpa sudut tajam, bukan cermin kaca.","Hentikan bila anak tampak lelah; tengkurap hanya saat anak bangun dan diawasi."],"references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-meraih-kain-warna-kontras","title":"Meraih Kain Warna Kontras","summary":"Gantungkan kain lembut berwarna kontras dalam jangkauan anak agar ia berlatih mengarahkan tangan dan menggenggam.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["koordinasi mata-tangan","menggenggam","mengikuti objek"],"objectives":["Melatih tangan meraih objek yang terlihat","Memperkuat genggaman dengan bahan lembut"],"materials":[{"name":"kain katun lembut warna kontras","fromHome":True,"optional":False},{"name":"tali penggantung lebar dan pendek","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":8,"prepLevel":"rendah","presentation":[{"step":1,"text":"Pilih kain lembut tanpa bagian yang bisa terlepas."},{"step":2,"text":"Pegang kain di atas dada anak, sekitar 25 cm dari wajah."},{"step":3,"text":"Gerakkan perlahan agar anak mengikuti dengan mata."},{"step":4,"text":"Dekatkan kain ke tangannya dan biarkan ia meraih."}],"controlOfError":"Bila kain terlalu jauh, anak berhenti mencoba; dekatkan sedikit agar ia bisa berhasil.","variations":["Gunakan kain berbeda tekstur secara bergantian","Gerakkan kain dari kiri ke kanan perlahan"],"readySigns":["Tangan mulai terbuka dan sering bergerak ke depan","Mata mengikuti benda bergerak"],"struggleSigns":["Tangan tetap mengepal dan tidak mencoba meraih","Anak menoleh menjauh atau rewel"],"safetyNotes":["Pegang kain langsung; jangan menggantungnya di leher atau tempat tidur anak.","Pastikan tidak ada tali panjang, kancing, atau bagian kecil yang bisa lepas.","Awasi anak agar kain tidak menutupi hidung dan mulutnya."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-lagu-dengan-gerakan-tangan","title":"Lagu dengan Gerakan Tangan","summary":"Nyanyikan lagu sederhana sambil menggerakkan tangan anak dengan lembut, memperkuat hubungan bahasa, irama, dan gerak tubuh.","ageBands":["3-6m"],"areas":["language","art-music"],"skills":["mendengar","irama","ikatan sosial"],"objectives":["Mengenalkan pola suara dan irama","Membangun momen kedekatan lewat nyanyian"],"materials":[{"name":"suara orang tua","fromHome":True,"optional":False},{"name":"selimut lembut","fromHome":True,"optional":True}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk nyaman dengan anak di pangkuan, saling berhadapan."},{"step":2,"text":"Nyanyikan lagu pendek dengan tempo lambat."},{"step":3,"text":"Gerakkan tangan anak mengikuti irama dengan lembut."},{"step":4,"text":"Berhenti sejenak dan tersenyum, lalu ulangi bila anak senang."}],"controlOfError":"Anak akan tersenyum, menatap, atau bersuara bila menikmati; bila menoleh, hentikan lagu.","variations":["Ganti lagu dengan suara lembut yang dibuat sendiri","Tambahkan gerakan kaki lembut saat anak berbaring"],"readySigns":["Anak menatap wajah saat diajak bicara","Anak bersuara atau tersenyum sebagai respons"],"struggleSigns":["Anak menangis saat diajak bernyanyi","Anak menoleh dan tidak tertarik pada wajah"],"safetyNotes":["Gerakkan tangan dan kaki anak dengan sangat lembut, jangan menarik sendi.","Jangan mengayun anak dengan kuat atau melemparnya ke udara.","Awasi posisi kepala anak agar tetap tertopang."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-menendang-bola-lunak","title":"Menendang Bola Lunak","summary":"Letakkan bola kain ringan dekat kaki anak saat berbaring agar ia menemukan sensasi menendang dan melihat bola bergerak.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["kekuatan kaki","sebab-akibat","koordinasi kaki"],"objectives":["Menguatkan otot kaki","Mengenalkan hubungan tendangan dan gerakan bola"],"materials":[{"name":"bola kain lunak berukuran sedang","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":7,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan bola kain menyentuh telapak kakinya."},{"step":3,"text":"Biarkan anak menendang dan melihat bola bergerak."},{"step":4,"text":"Kembalikan bola ke kakinya dan ulangi dengan gembira."}],"controlOfError":"Bola yang terlalu jauh tidak tersentuh; dekatkan kembali agar anak bisa merasakan hasil tendangannya.","variations":["Gunakan bola dengan bunyi lembut di dalamnya","Lakukan tanpa alas kaki agar sensasi lebih terasa"],"readySigns":["Anak sering menendang dan mengangkat kaki","Anak memperhatikan benda yang bergerak"],"struggleSigns":["Kaki anak jarang bergerak","Anak tidak tertarik pada bola"],"safetyNotes":["Gunakan bola kain yang ringan dan tidak memiliki bagian kecil lepas.","Awasi anak agar bola tidak menutupi wajahnya.","Jangan menggunakan bola plastik keras atau bola kecil."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-memegang-gelang-kayu-besar","title":"Memegang Gelang Kayu Besar","summary":"Berikan gelang kayu berukuran besar dan halus untuk digenggam, digerakkan, dan dipindahkan antar tangan.","ageBands":["3-6m"],"areas":["sensorial","movement"],"skills":["genggaman","koordinasi dua tangan","eksplorasi tekstur"],"objectives":["Melatih genggaman yang makin kuat","Mengenalkan berat dan tekstur kayu"],"materials":[{"name":"gelang kayu besar halus","fromHome":False,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":2,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Tunjukkan gelang kayu di depan mata anak."},{"step":2,"text":"Sentuhkan gelang ke tangannya sampai jari-jarinya menggenggam."},{"step":3,"text":"Biarkan anak memegang dan memutar gelang sendiri."},{"step":4,"text":"Tawarkan gelang lagi dari sisi lain untuk latihan meraih."}],"controlOfError":"Gelang akan jatuh bila genggaman belum kuat; anak belajar mengulang tanpa perlu dikoreksi.","variations":["Sediakan dua gelang untuk latihan memindahkan","Gunakan bola kayu besar dengan permukaan halus"],"readySigns":["Tangan anak mulai menggenggam benda yang disentuhkan","Anak membawa tangan ke arah mulut"],"struggleSigns":["Benda selalu langsung terlepas","Anak tidak mau memegang benda"],"safetyNotes":["Pilih gelang berdiameter jauh lebih besar dari mulut anak agar tidak bisa ditelan.","Pastikan permukaan kayu halus, tidak ada serpihan atau cat mengelupas.","Awasi anak karena bayi usia ini cenderung memasukkan benda ke mulut."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-bicara-balas-suara-bayi","title":"Bicara Balas Suara Bayi","summary":"Tirukan celotehan dan suara anak, lalu beri jeda agar ia merasakan giliran berbicara dalam percakapan sederhana.","ageBands":["3-6m"],"areas":["language","grace-courtesy"],"skills":["celoteh","giliran bicara","kontak mata"],"objectives":["Merangsang anak bersuara lebih banyak","Mengenalkan pola percakapan bergantian"],"materials":[{"name":"wajah dan suara orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak dekat."},{"step":2,"text":"Tunggu anak mengeluarkan suara seperti ooh atau aah."},{"step":3,"text":"Tirukan suaranya dengan nada ramah, lalu berhenti."},{"step":4,"text":"Beri waktu anak membalas sebelum Anda bersuara lagi."}],"controlOfError":"Bila orang tua bicara terus, anak tidak punya kesempatan membalas; jeda adalah kuncinya.","variations":["Tambahkan gerakan mulut yang jelas agar anak meniru","Gunakan suara berbeda saat mengganti topik"],"readySigns":["Anak mengeluarkan suara selain menangis","Anak menatap wajah dan mulut orang tua"],"struggleSigns":["Anak jarang bersuara saat diajak","Anak menghindari kontak mata"],"safetyNotes":["Lakukan saat anak tenang dan bangun, bukan saat mengantuk atau lapar.","Jaga jarak wajah yang nyaman dan jangan menutupi hidung anak.","Awasi anak selama sesi berlangsung."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-meraba-tekstur-kain","title":"Meraba Berbagai Tekstur Kain","summary":"Sediakan beberapa kain dengan tekstur berbeda untuk diraba dan digenggam, memperkaya pengalaman sensorik anak.","ageBands":["3-6m"],"areas":["sensorial","language"],"skills":["diskriminasi taktil","genggaman","kosakata tekstur"],"objectives":["Mengenalkan perbedaan tekstur","Melatih tangan mengeksplorasi benda"],"materials":[{"name":"potongan kain katun, wol, dan satin","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":8,"durationMinutes":7,"prepLevel":"sedang","presentation":[{"step":1,"text":"Siapkan tiga kain bersih dengan tekstur berbeda."},{"step":2,"text":"Sentuhkan satu kain ke telapak tangan anak."},{"step":3,"text":"Sebutkan teksturnya, misalnya lembut atau kasar."},{"step":4,"text":"Ganti kain dan biarkan anak meraba sendiri."}],"controlOfError":"Anak akan melepas kain yang tidak nyaman; ia belajar memilih tekstur yang disukai.","variations":["Gunakan kain hangat dan dingin secara bergantian","Masukkan kain ke dalam kantong kain untuk diambil"],"readySigns":["Anak membuka dan menutup tangan","Anak memperhatikan benda yang disentuhkan"],"struggleSigns":["Anak menangis saat disentuh kain tertentu","Anak tidak mau memegang apa pun"],"safetyNotes":["Cuci kain terlebih dahulu dan pastikan tidak ada benang panjang yang bisa melilit jari.","Jangan gunakan kain berbulu yang seratnya mudah lepas.","Awasi anak karena kain bisa masuk ke mulut."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-lagu-anggota-tubuh","title":"Lagu Anggota Tubuh Sambil Menyentuh","summary":"Nyanyikan lagu tentang anggota tubuh sambil menyentuh tangan, kaki, dan hidung anak dengan lembut agar kosakata terasa nyata.","ageBands":["3-6m"],"areas":["language","art-music"],"skills":["kosakata tubuh","mendengar","kesadaran tubuh"],"objectives":["Mengenalkan nama anggota tubuh","Mengaitkan suara dengan sentuhan lembut"],"materials":[{"name":"suara orang tua","fromHome":True,"optional":False},{"name":"boneka kain","fromHome":True,"optional":True}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Letakkan anak dalam posisi nyaman dan saling berhadapan."},{"step":2,"text":"Nyanyikan lagu pendek tentang tangan dan kaki."},{"step":3,"text":"Sentuh bagian tubuh yang disebut dengan sangat lembut."},{"step":4,"text":"Ulangi sambil menunggu reaksi anak."}],"controlOfError":"Bila anak menarik tangan atau menoleh, sentuhan terlalu banyak; kurangi dan beri jeda.","variations":["Gunakan boneka untuk menunjukkan anggota tubuh","Ganti lagu dengan nama bagian tubuh lain"],"readySigns":["Anak menikmati sentuhan lembut","Anak menatap mulut saat bernyanyi"],"struggleSigns":["Anak rewel saat disentuh","Anak tidak merespons suara"],"safetyNotes":["Sentuh anak dengan lembut, hindari menekan ubun-ubun atau perut.","Jangan menggelitik berlebihan hingga anak kepayahan.","Awasi reaksi anak dan hentikan bila ia tidak nyaman."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-mengikuti-benda-bergerak-lambat","title":"Mengikuti Benda Bergerak Lambat","summary":"Gerakkan mainan sederhana perlahan dari kiri ke kanan agar mata anak berlatih mengikuti arah tanpa kehilangan fokus.","ageBands":["3-6m"],"areas":["sensorial","language"],"skills":["pelacakan visual","fokus","perhatian bersama"],"objectives":["Melatih mata mengikuti objek","Memperpanjang rentang perhatian anak"],"materials":[{"name":"mainan kontras tinggi tanpa bagian kecil","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Posisikan anak telentang atau duduk ditopang."},{"step":2,"text":"Pegang mainan sekitar 30 cm dari wajahnya."},{"step":3,"text":"Gerakkan perlahan ke samping kanan lalu kiri."},{"step":4,"text":"Berhenti sejenak agar anak bisa memfokuskan mata."}],"controlOfError":"Bila gerakan terlalu cepat, mata anak tertinggal; perlambat dan ulangi.","variations":["Gerakkan mainan naik dan turun perlahan","Gunakan mainan berbunyi lembut"],"readySigns":["Mata anak mengikuti wajah orang tua","Anak menatap benda dalam jarak dekat"],"struggleSigns":["Mata anak tidak mengikuti benda","Anak cepat kehilangan minat"],"safetyNotes":["Pilih mainan besar tanpa bagian kecil yang bisa lepas.","Jangan menggerakkan benda terlalu dekat ke mata anak.","Awasi anak dan hentikan bila ia tampak pusing atau rewel."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-duduk-ditopang-bantal","title":"Duduk Ditopang Bantal","summary":"Beri pengalaman duduk singkat dengan bantal penyangga agar anak melatih keseimbangan sambil tetap aman.","ageBands":["3-6m"],"areas":["movement"],"skills":["keseimbangan duduk","kontrol batang tubuh","kekuatan inti"],"objectives":["Mengenalkan posisi duduk","Melatih otot inti dengan topangan"],"materials":[{"name":"bantal penyangga empuk","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False},{"name":"mainan ringan","fromHome":True,"optional":True}],"prepMinutes":2,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Susun bantal membentuk huruf U di atas matras."},{"step":2,"text":"Dudukkan anak di tengah dengan punggung tersangga."},{"step":3,"text":"Letakkan mainan ringan di depannya."},{"step":4,"text":"Duduk di dekat anak dan akhiri sesi saat ia mulai miring."}],"controlOfError":"Tubuh anak akan mulai miring saat lelah, tanda sesi duduk sudah cukup.","variations":["Gunakan pangkuan orang tua sebagai penyangga","Lakukan di depan cermin agar anak melihat dirinya"],"readySigns":["Anak bisa menahan kepala dengan stabil","Anak suka melihat sekeliling saat digendong"],"struggleSigns":["Kepala masih jatuh ke depan","Tubuh melengkung dan anak menangis"],"safetyNotes":["Selalu duduk dalam jangkauan tangan orang dewasa.","Jangan menggunakan bantal di dalam tempat tidur atau kereta bayi saat tidur.","Lakukan di lantai beralas matras, bukan di permukaan tinggi."],"references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-memindahkan-benda-antar-tangan","title":"Memindahkan Benda Antar Tangan","summary":"Berikan benda ringan yang mudah digenggam agar anak berlatih memindahkannya dari satu tangan ke tangan lain.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["koordinasi dua tangan","kontrol genggaman","perhatian"],"objectives":["Melatih perpindahan benda antar tangan","Memperkuat jari dan pergelangan"],"materials":[{"name":"mainan genggam ringan tanpa bagian kecil","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":1,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Letakkan mainan di tangan kanan anak."},{"step":2,"text":"Tunggu sampai ia menggenggam dengan kuat."},{"step":3,"text":"Sentuhkan tangan kirinya ke mainan itu."},{"step":4,"text":"Biarkan anak menemukan cara memindahkannya sendiri."}],"controlOfError":"Benda akan jatuh bila perpindahan belum lancar; anak dapat mencoba lagi tanpa dikoreksi.","variations":["Gunakan dua benda identik untuk saling ditukar","Lakukan sambil bernyanyi agar lebih menyenangkan"],"readySigns":["Anak bisa menggenggam benda sebentar","Anak membawa tangan ke tengah tubuh"],"struggleSigns":["Satu tangan selalu mengepal","Anak melepas benda dengan cepat"],"safetyNotes":["Pastikan benda lebih besar dari mulut anak dan tidak punya bagian kecil.","Awasi anak karena benda akan sering dibawa ke mulut.","Hindari benda dengan tali, pita, atau lonceng kecil."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"Montessori Global","url":"https://montessoriglobal.com/"}]},
+{"id":"36m-berjemur-pagi-di-teduh","title":"Berjemur Pagi di Tempat Teduh","summary":"Ajak anak keluar rumah pada pagi hari untuk merasakan udara segar dan cahaya alami tanpa paparan matahari langsung.","ageBands":["3-6m"],"areas":["outdoor","self-care"],"skills":["adaptasi lingkungan","pengalaman sensorik","ritme harian"],"objectives":["Mengenalkan anak pada lingkungan luar rumah","Membantu membangun ritme siang dan malam"],"materials":[{"name":"matras luar","fromHome":True,"optional":False},{"name":"topi lebar","fromHome":True,"optional":False},{"name":"selimut tipis","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":15,"prepLevel":"rendah","presentation":[{"step":1,"text":"Pilih waktu pagi saat matahari belum terlalu terik."},{"step":2,"text":"Cari area teduh dan jauh dari angin kencang."},{"step":3,"text":"Baringkan anak di matras dengan pakaian nyaman."},{"step":4,"text":"Amati bersama daun dan awan, lalu kembali bila anak rewel."}],"controlOfError":"Anak akan rewel bila kepanasan atau silau; tanda untuk segera pindah ke tempat sejuk.","variations":["Ajak anak mengamati pohon dari gendongan","Lakukan di teras rumah saat teduh"],"readySigns":["Anak terbiasa dibawa keluar rumah","Anak tenang saat berada di tempat baru"],"struggleSigns":["Anak menangis saat diajak keluar","Anak kepanasan atau kedinginan"],"safetyNotes":["Hindari sinar matahari langsung; gunakan tempat teduh dan topi lebar.","Jangan tinggalkan anak sendirian di luar rumah.","Periksa suhu kulit anak dan segera masuk bila terlalu panas atau dingin."],"references":[{"title":"WHO - Child health","url":"https://www.who.int/health-topics/child-health"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-mendengar-suara-rumah","title":"Mendengar Suara-Suara Rumah","summary":"Ajak anak berhenti sejenak untuk mendengarkan suara sekitar, lalu ceritakan sumber bunyi dengan kata-kata sederhana.","ageBands":["3-6m"],"areas":["language","sensorial"],"skills":["kesadaran bunyi","mendengar","kosakata"],"objectives":["Melatih kepekaan terhadap bunyi","Mengenalkan kata untuk suara sehari-hari"],"materials":[{"name":"lingkungan rumah","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk bersama anak di ruangan yang tenang."},{"step":2,"text":"Diam sejenak dan dengarkan suara di sekitar."},{"step":3,"text":"Tunjuk arah suara dan sebutkan sumbernya."},{"step":4,"text":"Ajak anak tersenyum saat suara baru terdengar."}],"controlOfError":"Bila ruangan terlalu bising, anak sulit membedakan bunyi; pilih waktu yang lebih tenang.","variations":["Dengarkan suara hujan dari dekat jendela","Gunakan mainan berbunyi halus sebagai pembanding"],"readySigns":["Anak menoleh ke arah suara","Anak terdiam saat mendengar bunyi baru"],"struggleSigns":["Anak tidak bereaksi pada suara keras","Anak menangis karena suara tertentu"],"safetyNotes":["Jauhkan anak dari suara yang terlalu keras atau tiba-tiba.","Jangan meletakkan sumber bunyi dekat telinga anak.","Awasi anak selama sesi mendengarkan."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-menoleh-ke-arah-bunyi","title":"Menoleh ke Arah Bunyi","summary":"Bunyikan mainan lembut di sisi kanan dan kiri kepala anak agar ia berlatih mencari sumber suara dengan menoleh.","ageBands":["3-6m"],"areas":["language","sensorial"],"skills":["lokalisasi suara","kontrol leher","perhatian"],"objectives":["Melatih anak mencari sumber bunyi","Memperkuat otot leher untuk menoleh"],"materials":[{"name":"mainan kerincing lembut","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang dengan nyaman."},{"step":2,"text":"Bunyikan mainan pelan di sisi kanan kepalanya."},{"step":3,"text":"Tunggu anak menoleh sebelum memindahkan bunyi."},{"step":4,"text":"Ulangi di sisi kiri dengan lembut."}],"controlOfError":"Bunyi yang terlalu keras membuat anak kaget; gunakan bunyi pelan dan beri jeda.","variations":["Gunakan suara orang tua dari sisi berbeda","Bunyikan benda sehari-hari seperti sendok kayu"],"readySigns":["Anak menoleh ke arah suara","Anak mengikuti wajah orang tua dengan mata"],"struggleSigns":["Anak tidak menoleh pada suara","Anak kaget dan menangis setiap kali mendengar bunyi"],"safetyNotes":["Jauhkan mainan dari telinga dan wajah anak.","Gunakan bunyi lembut, jangan mengagetkan anak.","Awasi anak sepanjang sesi."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-bermain-air-saat-mandi","title":"Bermain Air Saat Mandi","summary":"Manfaatkan waktu mandi untuk mengajak anak merasakan air, menepuk permukaan, dan mendengar suara cipratan.","ageBands":["3-6m"],"areas":["self-care","sensorial"],"skills":["sensasi air","gerak tangan","kebiasaan mandi"],"objectives":["Membuat waktu mandi terasa menyenangkan","Mengenalkan sensasi air pada tangan dan kaki"],"materials":[{"name":"bak mandi bayi","fromHome":True,"optional":False},{"name":"waslap lembut","fromHome":True,"optional":False},{"name":"mainan mandi besar","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":10,"prepLevel":"sedang","presentation":[{"step":1,"text":"Siapkan air hangat suam-suam kuku dan semua perlengkapan mandi."},{"step":2,"text":"Masukkan anak perlahan sambil menopang kepala dan tubuhnya."},{"step":3,"text":"Tepuk permukaan air dengan tangan anak dengan lembut."},{"step":4,"text":"Biarkan anak merasakan air, lalu selesaikan mandi dengan cepat."}],"controlOfError":"Anak akan merenggang atau menangis bila air terlalu dingin atau panas; periksa suhu sebelum masuk.","variations":["Gunakan cangkir kecil untuk menuang air perlahan","Lakukan di bak mandi bayi dengan waslap berbeda tekstur"],"readySigns":["Anak tenang saat mandi","Anak menikmati sentuhan air"],"struggleSigns":["Anak menangis setiap kali mandi","Anak kedinginan atau menggigil"],"safetyNotes":["Jangan pernah meninggalkan anak di air, bahkan sebentar; awasi terus.","Isi air setinggi beberapa sentimeter saja dan periksa suhunya dengan siku.","Pegang anak dengan aman agar tidak tergelincir."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-pijat-lembut-kaki-dan-tangan","title":"Pijat Lembut Kaki dan Tangan","summary":"Pijat ringan pada kaki dan tangan anak setelah mandi untuk memberi rasa nyaman dan mengenalkan sentuhan teratur.","ageBands":["3-6m"],"areas":["self-care","sensorial"],"skills":["relaksasi","kesadaran tubuh","ikatan sosial"],"objectives":["Memberi pengalaman sentuhan yang menenangkan","Membantu anak mengenal bagian tubuhnya"],"materials":[{"name":"minyak bayi tanpa pewangi","fromHome":True,"optional":True},{"name":"handuk lembut","fromHome":True,"optional":False}],"prepMinutes":3,"durationMinutes":8,"prepLevel":"rendah","presentation":[{"step":1,"text":"Pastikan ruangan hangat dan tangan orang tua bersih."},{"step":2,"text":"Letakkan anak di handuk setelah mandi."},{"step":3,"text":"Usap kaki dan tangan dengan gerakan lembut dari pangkal ke ujung."},{"step":4,"text":"Beri jeda dan hentikan bila anak mulai gelisah."}],"controlOfError":"Anak akan menarik kaki atau menangis bila sentuhan terlalu kuat; kurangi tekanan.","variations":["Lakukan tanpa minyak bila kulit anak sensitif","Tambahkan lagu pelan saat memijat"],"readySigns":["Anak tenang saat disentuh","Anak menikmati waktu setelah mandi"],"struggleSigns":["Anak menangis saat kaki disentuh","Kulit anak memerah atau gatal"],"safetyNotes":["Hindari minyak bila ada luka atau ruam kulit; konsultasikan ke dokter bila kulit bermasalah.","Jangan memijat dengan tekanan kuat atau menarik sendi.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-bergoyang-sambil-bernyanyi","title":"Bergoyang Lembut Sambil Bernyanyi","summary":"Gendong anak dengan aman dan bergoyang pelan mengikuti lagu, memberi rasa ritme serta kedekatan yang menenangkan.","ageBands":["3-6m"],"areas":["movement","art-music"],"skills":["keseimbangan","irama","rasa aman"],"objectives":["Mengenalkan gerakan berirama","Memperkuat rasa aman lewat dekapan"],"materials":[{"name":"gendongan atau pelukan orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Gendong anak dengan kepala dan leher tertopang."},{"step":2,"text":"Nyanyikan lagu pelan sambil bergoyang lembut."},{"step":3,"text":"Gerakkan tubuh ke kiri dan kanan dengan ritme stabil."},{"step":4,"text":"Berhenti dan peluk anak, lalu ulangi bila ia senang."}],"controlOfError":"Bila goyangan terlalu cepat, anak akan gelisah; perlambat dan jaga gerakan stabil.","variations":["Bergoyang sambil berjalan pelan di ruangan","Gunakan selendang gendong yang aman"],"readySigns":["Anak tenang saat digendong","Anak menikmati suara dan gerakan berulang"],"struggleSigns":["Anak menangis saat digoyang","Anak kaku atau tampak pusing"],"safetyNotes":["Topang kepala dan leher anak selama bergoyang.","Jangan mengguncang anak dengan keras atau melemparnya.","Jangan berjalan di lantai licin atau dekat tangga."],"references":[{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-melihat-buku-kontras-tinggi","title":"Melihat Buku Kontras Tinggi","summary":"Buka buku bergambar hitam-putih di depan anak dan ceritakan gambarnya, melatih fokus serta minat pada buku.","ageBands":["3-6m"],"areas":["language","sensorial"],"skills":["fokus visual","kosakata","minat buku"],"objectives":["Melatih mata memfokuskan gambar","Membangun kebiasaan membaca bersama"],"materials":[{"name":"buku kain atau buku karton kontras tinggi","fromHome":False,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk dengan anak di pangkuan, buku di depannya."},{"step":2,"text":"Buka satu halaman dan tunjuk gambar sederhana."},{"step":3,"text":"Sebutkan nama gambar dengan suara hangat."},{"step":4,"text":"Beri waktu anak mengamati sebelum membuka halaman berikutnya."}],"controlOfError":"Anak akan menoleh atau rewel bila halaman terlalu cepat berganti; perlambat ritme.","variations":["Gunakan buku kain yang bisa dipegang","Ceritakan gambar dengan suara berbeda"],"readySigns":["Anak menatap gambar dengan fokus","Anak tenang saat dibacakan"],"struggleSigns":["Anak tidak tertarik pada buku","Anak menangis saat dibacakan"],"safetyNotes":["Pilih buku kain atau karton tebal tanpa bagian kecil yang bisa lepas.","Awasi anak karena buku akan dimasukkan ke mulut.","Jangan menggunakan buku dengan staples atau ujung tajam."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-meraih-kaus-kaki-lunak","title":"Meraih Kaus Kaki Lunak","summary":"Gunakan kaus kaki bersih yang digulung sebagai bola ringan agar anak berlatih meraih dan menggenggam benda di dekatnya.","ageBands":["3-6m"],"areas":["movement","sensorial"],"skills":["meraih","menggenggam","koordinasi tangan"],"objectives":["Melatih tangan meraih ke arah benda","Mengenalkan benda ringan yang mudah digenggam"],"materials":[{"name":"kaus kaki katun bersih","fromHome":True,"optional":False},{"name":"matras","fromHome":True,"optional":False}],"prepMinutes":2,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Gulung kaus kaki menjadi bola ringan."},{"step":2,"text":"Letakkan di dada anak dalam jangkauan tangannya."},{"step":3,"text":"Biarkan anak meraih dan menggenggam sendiri."},{"step":4,"text":"Bila jatuh, letakkan kembali tanpa mengoreksi caranya."}],"controlOfError":"Bola akan menggelinding saat disentuh; anak belajar menyesuaikan gerakan tangannya.","variations":["Gunakan dua bola kaus kaki untuk latihan memilih","Lakukan sambil berbaring tengkurap"],"readySigns":["Anak mulai mengarahkan tangan ke benda","Anak memegang benda sebentar"],"struggleSigns":["Tangan belum terarah ke benda","Anak melepas benda terlalu cepat"],"safetyNotes":["Gunakan kaus kaki bersih tanpa kancing atau hiasan lepas.","Jangan menggunakan benda kecil atau isian yang bisa keluar.","Awasi anak karena benda akan dibawa ke mulut."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"Montessori Global","url":"https://montessoriglobal.com/"}]},
+{"id":"36m-latihan-berguling-balik","title":"Latihan Berguling Balik","summary":"Ajak anak berlatih berguling dari telentang ke tengkurap dan sebaliknya dengan mainan sebagai pemancing di sisi tubuh.","ageBands":["3-6m"],"areas":["movement"],"skills":["berguling","kekuatan otot","kesadaran posisi"],"objectives":["Melatih peralihan posisi tubuh","Menguatkan otot leher, punggung, dan perut"],"materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"mainan menarik","fromHome":True,"optional":True}],"prepMinutes":2,"durationMinutes":6,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang di matras."},{"step":2,"text":"Letakkan mainan di samping agar anak menoleh."},{"step":3,"text":"Bantu pinggulnya berputar sedikit bila ia sudah mencoba."},{"step":4,"text":"Beri pujian dan biarkan anak beristirahat."}],"controlOfError":"Anak akan berhenti bila lelah atau posisinya tidak nyaman; jangan meneruskan latihan.","variations":["Lakukan setelah bangun tidur saat anak segar","Gunakan cermin di sisi sebagai pemancing"],"readySigns":["Anak bisa mengangkat kepala saat tengkurap","Anak mulai memiringkan badan sendiri"],"struggleSigns":["Tubuh anak kaku saat diputar","Anak menangis setiap kali diletakkan tengkurap"],"safetyNotes":["Lakukan hanya di lantai beralas matras dan awasi anak terus-menerus.","Jangan memutar leher atau lengan anak dengan paksa.","Hentikan bila anak tampak kesakitan atau sangat rewel."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"}]},
+{"id":"36m-menarik-kain-dari-kotak","title":"Menarik Kain dari Kotak Kosong","summary":"Isi kotak tisu kosong dengan kain lembut yang ujungnya menonjol agar anak berlatih menarik dan mengeluarkan benda.","ageBands":["3-6m"],"areas":["sensorial","movement"],"skills":["menarik","koordinasi tangan","sebab-akibat"],"objectives":["Melatih gerakan menarik dengan tangan","Mengenalkan hubungan tarikan dan hasil"],"materials":[{"name":"kotak tisu kosong","fromHome":True,"optional":False},{"name":"kain lembut besar","fromHome":True,"optional":False}],"prepMinutes":5,"durationMinutes":8,"prepLevel":"sedang","presentation":[{"step":1,"text":"Masukkan kain lembut ke dalam kotak hingga ujungnya menonjol."},{"step":2,"text":"Tunjukkan ujung kain dan biarkan anak meraihnya."},{"step":3,"text":"Bantu anak menarik kain keluar perlahan."},{"step":4,"text":"Masukkan kembali dan ulangi bila anak masih tertarik."}],"controlOfError":"Bila kain tersangkut, anak akan berhenti menarik; gunakan kain yang cukup besar dan longgar.","variations":["Gunakan beberapa kain berbeda warna","Ganti kotak dengan wadah plastik berlubang lebar"],"readySigns":["Anak bisa menggenggam kain","Anak tertarik menarik benda ke arahnya"],"struggleSigns":["Anak tidak mencoba menarik","Anak cepat bosan dan melepas kain"],"safetyNotes":["Pastikan kotak tidak memiliki staples atau tepi tajam.","Gunakan kain besar yang tidak bisa tertelan dan tidak ada tali.","Awasi anak agar kain tidak melilit leher atau menutupi wajah."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-menirukan-bunyi-bayi","title":"Menirukan Bunyi Bayi","summary":"Tirukan bunyi yang dibuat anak lalu tambahkan satu bunyi baru, mendorong anak bereksperimen dengan suaranya.","ageBands":["3-6m"],"areas":["language"],"skills":["eksplorasi suara","giliran bicara","pendengaran"],"objectives":["Merangsang variasi celotehan","Melatih anak mendengar dan meniru"],"materials":[{"name":"suara orang tua","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk dekat anak dengan wajah sejajar."},{"step":2,"text":"Tirukan bunyi yang baru saja ia keluarkan."},{"step":3,"text":"Tambahkan satu bunyi baru yang mudah, lalu berhenti."},{"step":4,"text":"Tunggu anak mencoba menirukan bunyi tersebut."}],"controlOfError":"Bila orang tua terus berbicara, anak kehilangan giliran; beri jeda setelah setiap bunyi.","variations":["Gunakan bunyi hewan sederhana","Lakukan sambil bercermin agar anak melihat mulut"],"readySigns":["Anak sering mengeluarkan bunyi berulang","Anak menatap mulut orang tua"],"struggleSigns":["Anak jarang bersuara","Anak tidak menoleh saat diajak bicara"],"safetyNotes":["Lakukan saat anak bangun dan tenang, bukan saat mengantuk.","Jaga jarak wajah agar anak tidak merasa tertekan.","Awasi anak selama sesi."],"references":[{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-tengkurap-di-dada-orang-tua","title":"Tengkurap di Dada Orang Tua","summary":"Baringkan anak tengkurap di dada orang tua yang bersandar agar ia berlatih mengangkat kepala dalam posisi nyaman dan dekat.","ageBands":["3-6m"],"areas":["movement","grace-courtesy"],"skills":["kontrol kepala","kedekatan","kekuatan leher"],"objectives":["Melatih tengkurap dengan rasa aman","Memperkuat ikatan lewat kontak tubuh"],"materials":[{"name":"dada orang tua","fromHome":True,"optional":False},{"name":"selimut tipis","fromHome":True,"optional":True}],"prepMinutes":0,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Bersandarlah nyaman di kursi atau bantal."},{"step":2,"text":"Letakkan anak tengkurap di dada Anda, kepalanya di dekat bahu."},{"step":3,"text":"Ajak bicara agar anak mengangkat kepala mencari wajah Anda."},{"step":4,"text":"Berhenti saat anak mulai lelah atau mengantuk."}],"controlOfError":"Anak akan menurunkan kepala atau merengek saat lelah; itu tanda untuk berhenti.","variations":["Lakukan sambil bersandar di sofa","Tambahkan lagu pelan saat anak tengkurap"],"readySigns":["Anak bisa mengangkat kepala sebentar","Anak nyaman dengan kontak badan"],"struggleSigns":["Anak menangis saat tengkurap","Kepala selalu jatuh dan anak tampak lelah"],"safetyNotes":["Pastikan wajah dan hidung anak tidak tertutup pakaian atau selimut.","Jangan tertidur saat anak tengkurap di dada Anda.","Awasi anak terus dan hentikan bila ia tampak sesak atau lelah."],"references":[{"title":"HealthyChildren.org - Baby Development","url":"https://www.healthychildren.org/English/ages-stages/baby/Pages/default.aspx"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-mengenal-warna-dengan-kartu","title":"Mengenal Warna dengan Kartu Sederhana","summary":"Tunjukkan satu kartu warna cerah pada satu waktu dan sebutkan namanya, memberi pengalaman visual yang fokus dan sederhana.","ageBands":["3-6m"],"areas":["sensorial","language"],"skills":["persepsi warna","fokus visual","kosakata"],"objectives":["Mengenalkan warna dasar","Melatih perhatian pada satu objek"],"materials":[{"name":"kartu warna besar tanpa laminasi tajam","fromHome":True,"optional":False},{"name":"keranjang kecil","fromHome":True,"optional":True}],"prepMinutes":5,"durationMinutes":4,"prepLevel":"sedang","presentation":[{"step":1,"text":"Siapkan dua atau tiga kartu warna yang berbeda."},{"step":2,"text":"Tunjukkan satu kartu sekitar 30 cm dari wajah anak."},{"step":3,"text":"Sebutkan warnanya dengan jelas, lalu diam sejenak."},{"step":4,"text":"Ganti kartu setelah anak tampak bosan."}],"controlOfError":"Anak akan menoleh bila warna atau kartu terlalu banyak; kurangi jumlah kartu.","variations":["Gunakan benda nyata berwarna sama","Pasangkan kartu dengan kain berwarna serupa"],"readySigns":["Anak bisa memfokuskan mata pada benda","Anak tertarik pada warna cerah"],"struggleSigns":["Anak tidak menatap kartu","Anak menangis saat terlalu banyak stimulus"],"safetyNotes":["Gunakan kartu besar yang tidak bisa dimasukkan ke mulut.","Pastikan tepi kartu tidak tajam dan tidak ada laminasi yang terkelupas.","Awasi anak agar kartu tidak menutupi wajahnya."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-gerakan-sepeda-lembut","title":"Gerakan Sepeda Lembut","summary":"Gerakkan kaki anak perlahan seperti mengayuh sepeda saat berbaring, membantu mobilitas dan kesadaran tubuh.","ageBands":["3-6m"],"areas":["movement","self-care"],"skills":["mobilitas kaki","kesadaran tubuh","relaksasi"],"objectives":["Melatih gerakan kaki bergantian","Membantu anak rileks setelah aktivitas"],"materials":[{"name":"matras empuk","fromHome":True,"optional":False},{"name":"popok bersih","fromHome":True,"optional":True}],"prepMinutes":1,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Baringkan anak telentang di matras empuk."},{"step":2,"text":"Pegang kedua kakinya dengan lembut di bagian betis."},{"step":3,"text":"Gerakkan kaki bergantian seperti mengayuh sepeda."},{"step":4,"text":"Lakukan pelan sambil tersenyum dan bernyanyi."}],"controlOfError":"Anak akan menendang atau menangis bila gerakan tidak nyaman; hentikan dan istirahatkan kaki.","variations":["Lakukan setelah mandi saat otot rileks","Gerakkan satu kaki saja secara bergantian"],"readySigns":["Kaki anak aktif bergerak","Anak tenang saat kakinya dipegang"],"struggleSigns":["Anak menangis saat kaki digerakkan","Kaki anak terasa kaku"],"safetyNotes":["Gerakkan kaki perlahan tanpa menarik sendi atau memutar paksa.","Jangan mengangkat kaki terlalu tinggi atau menekuk berlebihan.","Awasi anak dan hentikan bila ia tampak tidak nyaman."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-senyum-dan-bercermin-bersama","title":"Senyum dan Bercermin Bersama","summary":"Ajak anak tersenyum dan bereaksi pada pantulan wajah orang tua di cermin, memperkuat interaksi sosial yang hangat.","ageBands":["3-6m"],"areas":["grace-courtesy","self-care"],"skills":["interaksi sosial","kontak mata","respons emosi"],"objectives":["Melatih anak merespons senyum","Membangun kesadaran diri dan orang lain"],"materials":[{"name":"cermin akrilik aman","fromHome":False,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk bersama anak di depan cermin."},{"step":2,"text":"Tersenyum pada anak dan pada pantulan wajahnya."},{"step":3,"text":"Sebut namanya dan tunggu reaksi senyumnya."},{"step":4,"text":"Buat ekspresi sederhana lain seperti mulut terbuka."}],"controlOfError":"Bila anak menghindari cermin, sesi terlalu lama; akhiri dan coba lagi lain waktu.","variations":["Main cilukba di depan cermin","Gunakan boneka untuk melambai di cermin"],"readySigns":["Anak tersenyum pada wajah orang","Anak menikmati kontak mata"],"struggleSigns":["Anak menghindari tatapan","Anak tidak merespons senyum"],"safetyNotes":["Gunakan cermin akrilik ringan dan pastikan tidak mudah jatuh.","Jangan menempelkan cermin di dalam tempat tidur anak.","Awasi anak selama bermain di depan cermin."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-menepuk-meja-berirama","title":"Menepuk Meja Berirama","summary":"Ajak anak menepuk permukaan meja atau matras dengan tangan sambil berirama, melatih gerak tangan dan kepekaan bunyi.","ageBands":["3-6m"],"areas":["art-music","movement"],"skills":["irama","gerak tangan","sebab-akibat"],"objectives":["Mengenalkan irama sederhana","Melatih anak mengangkat dan menurunkan tangan"],"materials":[{"name":"meja rendah atau matras","fromHome":True,"optional":False}],"prepMinutes":0,"durationMinutes":4,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk dengan anak di pangkuan dekat permukaan meja."},{"step":2,"text":"Tepuk meja perlahan beberapa kali."},{"step":3,"text":"Bantu tangan anak menepuk dengan lembut."},{"step":4,"text":"Ulangi pola tepukan yang sama agar terasa berirama."}],"controlOfError":"Bila tepukan terlalu keras, anak bisa terkejut; gunakan tekanan ringan dan tempo lambat.","variations":["Gunakan matras empuk agar suara lebih pelan","Tambahkan lagu sambil menepuk"],"readySigns":["Anak bisa mengangkat tangan ke arah benda","Anak tertarik pada bunyi yang ia buat"],"struggleSigns":["Anak tidak mengangkat tangan","Anak kaget dan menangis karena bunyi"],"safetyNotes":["Jangan menepuk di dekat wajah atau telinga anak.","Pastikan permukaan tidak tajam dan tidak ada benda kecil di sekitarnya.","Awasi anak agar tangan tidak terbentur benda keras."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"NHS - Baby and toddler health","url":"https://www.nhs.uk/baby/"}]},
+{"id":"36m-mengamati-daun-dari-gendongan","title":"Mengamati Daun dari Gendongan","summary":"Ajak anak melihat daun dan pohon dari gendongan yang aman, membangun rasa ingin tahu tentang alam sekitar.","ageBands":["3-6m"],"areas":["outdoor","culture"],"skills":["observasi","pengalaman alam","perhatian"],"objectives":["Mengenalkan anak pada tanaman","Membangun minat pada lingkungan sekitar"],"materials":[{"name":"gendongan bayi aman","fromHome":True,"optional":False},{"name":"topi lebar","fromHome":True,"optional":False}],"prepMinutes":2,"durationMinutes":10,"prepLevel":"rendah","presentation":[{"step":1,"text":"Gendong anak dengan posisi kepala dan leher tertopang."},{"step":2,"text":"Dekati pohon atau daun yang aman untuk dilihat."},{"step":3,"text":"Tunjuk daun dan sebutkan warnanya dengan pelan."},{"step":4,"text":"Biarkan anak mengamati, lalu lanjutkan berjalan pelan."}],"controlOfError":"Anak akan menoleh atau rewel bila bosan; pindah ke objek lain atau kembali ke rumah.","variations":["Amati bunga berwarna cerah dari jarak aman","Lakukan di halaman rumah saat teduh"],"readySigns":["Anak bisa menahan kepala saat digendong","Anak tertarik melihat lingkungan baru"],"struggleSigns":["Anak rewel saat berada di luar","Anak tidak tertarik pada objek di sekitarnya"],"safetyNotes":["Pastikan gendongan terpasang benar dan kepala anak tertopang.","Jangan biarkan anak memetik, memasukkan daun, atau menyentuh tanaman berbahaya ke mulut.","Awasi anak dan hindari area dengan insekta atau tanaman berduri."],"references":[{"title":"WHO - Child health","url":"https://www.who.int/health-topics/child-health"},{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"}]},
+{"id":"36m-bermain-cilukba-dengan-kain","title":"Bermain Cilukba dengan Kain","summary":"Tutup wajah orang tua dengan kain lalu buka sambil berkata cilukba, melatih pemahaman bahwa sesuatu yang hilang bisa muncul lagi.","ageBands":["3-6m"],"areas":["language","grace-courtesy"],"skills":["permanensi objek","kontak mata","humor sosial"],"objectives":["Mengenalkan permainan giliran","Melatih anak menunggu dan merespons"],"materials":[{"name":"kain ringan bersih","fromHome":True,"optional":False}],"prepMinutes":1,"durationMinutes":5,"prepLevel":"rendah","presentation":[{"step":1,"text":"Duduk berhadapan dengan anak dalam jarak dekat."},{"step":2,"text":"Tutup wajah Anda dengan kain, bukan wajah anak."},{"step":3,"text":"Tanya dengan suara ceria, lalu buka kain dan ucapkan cilukba."},{"step":4,"text":"Ulangi beberapa kali dan beri jeda reaksi."}],"controlOfError":"Bila anak belum merespons, ulangi dengan tempo lebih lambat dan ekspresi jelas.","variations":["Gunakan boneka untuk disembunyikan","Biarkan anak memegang ujung kain saat dibuka"],"readySigns":["Anak tersenyum saat bermain bersama","Anak menatap wajah dan mengikuti gerakan kain"],"struggleSigns":["Anak menangis saat wajah tertutup","Anak tidak tertarik pada permainan"],"safetyNotes":["Tutup wajah orang tua saja, jangan pernah menutupi wajah anak dengan kain.","Gunakan kain tipis dan ringan yang tidak menghalangi napas.","Awasi anak dan hentikan bila ia tampak takut."],"references":[{"title":"Zero to Three - Resources","url":"https://www.zerotothree.org/resources/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]},
+{"id":"36m-eksplorasi-botol-sensorik-berbunyi","title":"Eksplorasi Botol Sensorik Berbunyi","summary":"Berikan botol plastik tertutup rapat berisi biji besar yang bergerak agar anak melihat dan mendengar sebab-akibat dari gerakannya.","ageBands":["3-6m"],"areas":["sensorial","movement"],"skills":["sebab-akibat","menggenggam","pendengaran"],"objectives":["Melatih anak menggenggam dan menggoyang benda","Mengenalkan hubungan gerakan dan bunyi"],"materials":[{"name":"botol plastik bening bertutup rapat","fromHome":True,"optional":False},{"name":"biji besar atau manik kayu besar","fromHome":False,"optional":False},{"name":"lakban kuat","fromHome":True,"optional":False}],"prepMinutes":10,"durationMinutes":6,"prepLevel":"sedang","presentation":[{"step":1,"text":"Isi botol dengan biji besar secukupnya, lalu tutup rapat dan lakban."},{"step":2,"text":"Tunjukkan botol dan goyangkan perlahan di depan anak."},{"step":3,"text":"Letakkan botol di tangannya agar ia menggoyang sendiri."},{"step":4,"text":"Amati bersama bunyi yang muncul setiap kali botol bergerak."}],"controlOfError":"Bila tutup botol longgar atau isi tidak bergerak, mainan tidak berfungsi; periksa sebelum diberikan.","variations":["Gunakan isi berbeda untuk bunyi yang berbeda","Balut sebagian botol dengan kain agar teksturnya bervariasi"],"readySigns":["Anak bisa menggenggam benda silinder","Anak tertarik pada bunyi yang ia buat"],"struggleSigns":["Anak tidak mau memegang botol","Anak melepas botol dengan cepat"],"safetyNotes":["Pastikan tutup botol direkatkan dengan lakban kuat dan tidak bisa dibuka anak.","Gunakan biji berukuran besar agar tidak tersedak bila tutup terbuka.","Awasi anak dan periksa botol sebelum setiap penggunaan."],"references":[{"title":"Montessori Global","url":"https://montessoriglobal.com/"},{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]}
+]
+
+assert len(acts) == 30, len(acts)
+ids = [a["id"] for a in acts]
+assert len(set(ids)) == 30, "dup id"
+titles = [a["title"] for a in acts]
+assert len(set(titles)) == 30, "dup title"
+allowed = {"practical-life","sensorial","language","math","culture","movement","grace-courtesy","self-care","art-music","outdoor"}
+for a in acts:
+    assert a["id"].startswith("36m-")
+    assert len(a["title"]) >= 5
+    assert len(a["summary"]) >= 30
+    assert a["ageBands"] == ["3-6m"]
+    assert 1 <= len(a["areas"]) <= 3 and set(a["areas"]) <= allowed, a["id"]
+    assert a["skills"] and a["objectives"] and a["materials"]
+    assert 0 <= a["prepMinutes"] <= 30
+    assert 3 <= a["durationMinutes"] <= 60
+    assert a["prepLevel"] in {"rendah","sedang","tinggi"}
+    assert len(a["presentation"]) >= 2
+    for i, p in enumerate(a["presentation"], 1):
+        assert p["step"] == i, a["id"]
+        assert len(p["text"]) >= 15, (a["id"], p["text"])
+    assert a["controlOfError"]
+    assert a["variations"] and a["readySigns"] and a["struggleSigns"]
+    assert a["safetyNotes"] and all(len(s) > 0 for s in a["safetyNotes"])
+    assert a["references"] and all(r.get("title") and r.get("url","").startswith("https://") for r in a["references"])
+
+os.makedirs("content/parts", exist_ok=True)
+with open("content/parts/act-3-6m.json","w",encoding="utf-8") as f:
+    json.dump(acts, f, ensure_ascii=False, indent=2)
+print("written", len(acts))
+PY
+python3 -c "import json;d=json.load(open('content/parts/act-3-6m.json'));assert len(d)==30;print('OK',len(d))"
+written 30
+OK 30
+[0m
+DONE act-3-6m

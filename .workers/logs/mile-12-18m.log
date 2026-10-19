@@ -1,3 +1,240 @@
 [0m
 > build · deepseek-v4.1-flash-free
 [0m
+[0m$ [0mls content/parts 2>/dev/null | head -20; python3 --version
+act-0-3m.json
+act-12-18m.json
+act-18-24m.json
+act-2-3y.json
+act-3-4y.json
+act-3-6m.json
+act-4-5y.json
+act-6-9m.json
+act-9-12m.json
+glossary-1.json
+mile-0-3m.json
+mile-3-6m.json
+mile-6-9m.json
+mile-9-12m.json
+Python 3.14.7
+[0m
+[0m$ [0mhead -c 2000 content/parts/mile-9-12m.json
+[
+  {
+    "id": "mile-912m-berdiri-berpegangan",
+    "title": "Berdiri sambil berpegangan",
+    "ageBand": "9-12m",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak mulai menarik dirinya untuk berdiri dengan bantuan meja atau sofa, lalu menahan diri berdiri beberapa saat tanpa bantuan orang dewasa.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila mendekati 12 bulan si kecil sama sekali belum bisa menopang berat badannya dengan kaki saat ditopang berdiri, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 12 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "HealthyChildren - Developmental Milestones", "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"}
+    ]
+  },
+  {
+    "id": "mile-912m-rangkak-jalan-dibantu",
+    "title": "Merangkak dan berjalan dibantu",
+    "ageBand": "9-12m",
+    "domain": "motorik-kasar",
+    "description": "Umumnya bayi mengembangkan caranya sendiri untuk berpindah tempat, misalnya merangkak, merangkak gaya kodok, atau berjalan sambil dipegang tangan oleh orang tua.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+    "redFlags": [
+      "Bila si kecil hanya menggunakan satu sisi badan atau tampak kaku saat bergerak, sebaiknya konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"},
+      {"title": "NHS - Baby development 9-12 months", "url": "https://www.nhs.uk/conditions/baby/babys-development/9-12-months/"}
+    ]
+  },
+  {
+    "id": "mile-912m-pincer-grasp",
+    "title": "Menggenggam dengan ujung jari",
+    "ageBand": "9-12m",
+    "domain": "motorik-halus",
+    "description": "Kemampuan mengambil benda kecil dengan ujung ibu jari dan telunjuk makin matang, sehingga si kecil bisa memungut remah atau kue kecil secara mandiri.",
+    "typicalFromMonths": 9,
+    "typicalToMonths": 12,
+[0m
+[0m$ [0mpython3 - <<'PY'
+import json, os
+
+data = [
+  {
+    "id": "mile-1218m-berjalan-mandiri",
+    "title": "Berjalan sendiri tanpa bantuan",
+    "ageBand": "12-18m",
+    "domain": "motorik-kasar",
+    "description": "Banyak anak mulai melepas pegangan dan melangkah sendiri, meski jalannya masih goyang, lebar, atau sesekali jatuh.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila mendekati 18 bulan si kecil belum bisa berdiri sendiri atau belum menunjukkan usaha melangkah, konsultasikan ke dokter",
+      "Bila cara berjalannya sangat timpang atau satu kaki tampak kaku, sebaiknya diperiksa dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 15 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-15mo.html"},
+      {"title": "CDC Milestones 18 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-18mo.html"}
+    ]
+  },
+  {
+    "id": "mile-1218m-naik-tangga-memanjat",
+    "title": "Memanjat dan naik tangga dengan bantuan",
+    "ageBand": "12-18m",
+    "domain": "motorik-kasar",
+    "description": "Keseimbangan dan kekuatan kaki berkembang, sehingga anak umumnya mulai bisa naik tangga sambil berpegangan atau memanjat ke sofa rendah.",
+    "typicalFromMonths": 13,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak tampak kesakitan, menolak menumpukan berat badan pada satu kaki, atau gerakan satu sisi badan jauh lebih lemah, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "HealthyChildren - Toddler Development", "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"},
+      {"title": "CDC Milestones", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}
+    ]
+  },
+  {
+    "id": "mile-1218m-mencoret-krayon",
+    "title": "Mencoret dengan krayon",
+    "ageBand": "12-18m",
+    "domain": "motorik-halus",
+    "description": "Anak mulai menggenggam krayon atau alat tulis besar dan membuat coretan acak, yang menjadi latihan awal kontrol tangan dan jari.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila tangan si kecil selalu menggenggam erat dengan jari mengepal dan sulit membuka, atau satu tangan jarang digunakan, konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 15 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-15mo.html"},
+      {"title": "Zero to Three - Early Development", "url": "https://www.zerotothree.org/resources/"}
+    ]
+  },
+  {
+    "id": "mile-1218m-menyusun-balok",
+    "title": "Menyusun dua balok",
+    "ageBand": "12-18m",
+    "domain": "motorik-halus",
+    "description": "Koordinasi mata dan tangan makin rapi, sehingga anak umumnya bisa menumpuk dua balok atau memasukkan benda kecil ke dalam wadah.",
+    "typicalFromMonths": 13,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak tidak tertarik sama sekali mengambil benda kecil atau tampak kesulitan memegangnya setelah 18 bulan, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 18 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-18mo.html"},
+      {"title": "HealthyChildren - Developmental Milestones", "url": "https://www.healthychildren.org/English/ages-stages/baby/pages/default.aspx"}
+    ]
+  },
+  {
+    "id": "mile-1218m-kata-pertama",
+    "title": "Mengucapkan beberapa kata bermakna",
+    "ageBand": "12-18m",
+    "domain": "bahasa",
+    "description": "Selain mama dan papa, banyak anak mulai mengucapkan beberapa kata lain yang bisa dikenali, meski pelafalannya belum sempurna.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila mendekati 18 bulan anak belum mengucapkan satu kata bermakna dan belum memakai gestur seperti menunjuk atau melambai, sebaiknya konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 18 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-18mo.html"},
+      {"title": "NHS - Baby and toddler development", "url": "https://www.nhs.uk/conditions/baby/babys-development/"}
+    ]
+  },
+  {
+    "id": "mile-1218m-menunjuk-dan-mengikuti-arah",
+    "title": "Menunjuk dan mengikuti arahan sederhana",
+    "ageBand": "12-18m",
+    "domain": "bahasa",
+    "description": "Anak mulai menunjuk untuk menunjukkan atau meminta sesuatu, serta bisa mengikuti instruksi pendek seperti mengambil bola atau memberi benda.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak tidak menoleh saat namanya dipanggil berulang kali atau tidak memakai gestur untuk berkomunikasi, konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 15 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-15mo.html"},
+      {"title": "CDC - Learn the Signs Act Early", "url": "https://www.cdc.gov/ncbddd/actearly/index.html"}
+    ]
+  },
+  {
+    "id": "mile-1218m-mencari-benda-disembunyikan",
+    "title": "Mencari benda yang disembunyikan",
+    "ageBand": "12-18m",
+    "domain": "kognitif",
+    "description": "Anak mulai paham bahwa benda tetap ada walau tidak terlihat, lalu berusaha mencari mainan yang ditutup kain atau diambil dari pandangannya.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak tidak tampak mencari benda yang jatuh atau hilang dari pandangan setelah 18 bulan, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 15 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-15mo.html"},
+      {"title": "Zero to Three - Brain Development", "url": "https://www.zerotothree.org/resources/"}
+    ]
+  },
+  {
+    "id": "mile-1218m-meniru-kegiatan-harian",
+    "title": "Meniru kegiatan sehari-hari",
+    "ageBand": "12-18m",
+    "domain": "kognitif",
+    "description": "Anak senang meniru hal yang dilihatnya, misalnya menyapu, mengelap meja, atau memberi makan boneka, sebagai awal belajar melalui peran.",
+    "typicalFromMonths": 14,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak tidak menunjukkan minat meniru gerakan sederhana seperti melambaikan tangan atau menepuk tangan setelah 18 bulan, konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "HealthyChildren - Toddler Play and Development", "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"},
+      {"title": "CDC Milestones 18 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-18mo.html"}
+    ]
+  },
+  {
+    "id": "mile-1218m-kasih-sayang-ke-orang-terdekat",
+    "title": "Menunjukkan kasih sayang ke orang terdekat",
+    "ageBand": "12-18m",
+    "domain": "sosial-emosional",
+    "description": "Anak mulai menunjukkan kedekatan dengan cara memeluk, menempel, tersenyum, atau memberikan mainan kepada orang yang dikenalnya.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak hampir tidak pernah mencari kontak dengan pengasuh utama, tidak tersenyum, atau sangat sulit ditenangkan, sebaiknya konsultasikan ke dokter"
+    ],
+    "references": [
+      {"title": "CDC Milestones 15 Bulan", "url": "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-15mo.html"},
+      {"title": "Zero to Three - Social Emotional Development", "url": "https://www.zerotothree.org/resources/"}
+    ]
+  },
+  {
+    "id": "mile-1218m-makan-minum-mandiri",
+    "title": "Makan dan minum dengan sedikit bantuan",
+    "ageBand": "12-18m",
+    "domain": "self-help",
+    "description": "Anak mulai mengambil makanan dengan jari dan mencoba minum dari cangkir atau gelas terbuka, walau masih banyak yang tumpah.",
+    "typicalFromMonths": 12,
+    "typicalToMonths": 18,
+    "redFlags": [
+      "Bila anak sering tersedak saat makan, menolak hampir semua tekstur, atau berat badannya tidak naik, tanyakan pada dokter"
+    ],
+    "references": [
+      {"title": "HealthyChildren - Feeding Toddlers", "url": "https://www.healthychildren.org/English/ages-stages/toddler/Pages/default.aspx"},
+      {"title": "WHO - Child Growth Standards", "url": "https://www.who.int/tools/child-growth-standards/standards"}
+    ]
+  }
+]
+
+os.makedirs("content/parts", exist_ok=True)
+with open("content/parts/mile-12-18m.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("written", len(data))
+PY
+python3 -c "import json;d=json.load(open('content/parts/mile-12-18m.json'));print('OK',len(d))"
+written 10
+OK 10
+[0m
+DONE mile-12-18m
