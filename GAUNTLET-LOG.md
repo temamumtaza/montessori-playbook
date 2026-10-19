@@ -111,7 +111,21 @@ Optimasi perf yang sudah diterapkan: code-split per AgeBand (8 chunk JSON→JS t
 
 ---
 
-## Putaran 4 — 2026-10-19 (perf optimization round)
+## Putaran 6 — 2026-10-19 (barometer-2: showcase fitur)
+
+Barometer visual kedua (`docs/design/reference-features.jpg`) — showcase fitur native-like. Diimplementasikan penuh via Codex luna (2 worker):
+
+### Fitur baru
+- **Pencarian diperkaya**: header besar, clear-✕ di search bar, **riwayat pencarian** (5 chip, localStorage), filter tipe hasil (Semua/Aktivitas/Glosarium/Panduan/Offline), sort "Paling relevan/Terbaru", badge tipe berwarna per kartu
+- **Glosarium A-Z**: search mini + bar huruf A-Z (huruf tanpa entri disabled), kartu entri berikon
+- **BottomSheet reusable**: drag-handle, backdrop-dismiss, Escape, aria-modal — dipakai untuk **Pilih Durasi Aktivitas** (5/10/15/30/rekomendasi → timer countdown, selesai = toast "Waktu selesai! 🎉")
+- **ActionSheet**: Bagikan (Web Share API + fallback copy), Favorit, Simpan Offline — dari kartu rekomendasi
+- **Confetti** saat milestone di-set mahir + toast 🎉
+- **MorePage diperkaya**: Pengingat Lembut (toggle + jam), Bahasa (badge ID, siap i18n), Cara Install PWA (expand 4 langkah), Tentang (versi + repo), Red Flag langsung dari menu
+
+### Verifikasi
+- typecheck 0 error · build ✅ · E2E **18/18** · Lighthouse mobile: A11y **100**, BP **100**, SEO **100**, Perf 84
+
 
 ### Eksperimen & hasil
 | Eksperimen | Perf | TBT | Keputusan |
