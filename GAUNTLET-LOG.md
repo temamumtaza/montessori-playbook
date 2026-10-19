@@ -142,6 +142,29 @@ Bundle awal: **~210KB gzip** (target <250KB ✅) — react 59 + index 54 + fonts
 - Judul duotone kontras dinaikkan (sky-700/candy-600)
 - Toast update pakai CSS animation (konsisten tanpa framer-motion)
 
-### E2E final: 18/18 ✅
+---
+
+## Putaran 5 — 2026-10-19 (shell prerender + polish + final audit)
+
+### Diterapkan & terverifikasi
+- ✅ **Prerendered app shell** di index.html (header + welcome + tab bar inline CSS) — tampil instan sebelum React parse; memenuhi requirement bagian 5 "app shell instan (tanpa white flash)"
+- ✅ Avatar picker onboarding (8 maskot, radio-group a11y) — komponen wajib #1 tuntas
+- ✅ Link "🚩 Red flags usia ini" dari halaman Progres → /#/belajar
+- ✅ Shadow token sky-tinted (.shadow-sky-sm/md) dipakai di kartu Today/Playbook
+- ✅ Kontras tab bar diperkuat (inactive 75%, active sky-700) — audit kontras desktop = **0 issue**
+
+### Lighthouse final (produksi Vercel)
+| Preset | Perf | A11y | BP | SEO |
+|---|---|---|---|---|
+| **Desktop** | **92** ✅ | **100** ✅ | **100** ✅ | 100 ✅ |
+| Mobile | 76 (runs 72-85, median 80; best run 85) ⚠️ | **100** ✅ | **100** ✅ | 100 ✅ |
+
+Catatan jujur mobile perf: skor fluktuatif tergantung beban VM audit (5 runs: 74/85/79/80/80 → 72/76/78 pada run berikutnya). Metrik inti di run terbaik: FCP 1.5s, LCP 1.7s, TBT 416ms. TBT tersisa (400-600ms) = parse+eval React core (393ms long task, bukan kode app). Jalur 90 mobile: Preact compat / prerender penuh semua route (SSG) — dicatat sebagai roadmap; stack React dipertahankan sesuai keputusan awal.
+
+### E2E final: 18/18 ✅ (setiap putaran)
+
+### Status akhir semua gate
+1. Content ✅  2. Safety ✅  3. Functional ✅  4. PWA ✅ (desktop LH: 4 kategori ≥92)  5. Native feel ✅  6. A11y ✅ (mobile 100, desktop 100)  7. UX ✅  8. Design ✅  9. Security/Privacy ✅  · Performance mobile ⚠️ 76-85 (desktop 92 ✅) — dibuktikan & didokumentasikan di atas.
+
 
 

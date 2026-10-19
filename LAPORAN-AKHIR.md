@@ -63,6 +63,14 @@ Tab bar 5 + scroll memory, transisi push CSS 60fps, collapsing large title, safe
 
 ---
 
+### Lighthouse final (produksi Vercel, putaran 5)
+| Preset | Perf | A11y | BP | SEO |
+|---|---|---|---|---|
+| **Desktop** | **92** ✅ | **100** ✅ | **100** ✅ | 100 ✅ |
+| Mobile | 76 (runs 72-85; best 85; median 80) ⚠️ | **100** ✅ | **100** ✅ | 100 ✅ |
+
+R5 tambahan: prerendered app shell (LCP dari HTML murni), avatar picker onboarding (komponen wajib #1), link red-flags dari Progres, shadow token sky-tinted, kontras tab bar diperkuat → audit kontras desktop = 0 issue.
+
 ## Keputusan penting
 1. **HashRouter** (bukan BrowserRouter) — SPA rewrite Vercel tetap ada, tapi hash menjamin deep link jalan tanpa konfigurasi server mana pun.
 2. **Konten JSON → chunk JS per AgeBand** — lazy-load on-demand, precache oleh Workbox.
