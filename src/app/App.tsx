@@ -129,7 +129,7 @@ function TabBar({ tabs }: { tabs: typeof TABS }) {
             end={t.to === '/'}
             className={({ isActive }) =>
               `flex flex-col items-center gap-0.5 py-2 min-h-[48px] justify-center text-[11px] font-medium transition-colors ${
-                isActive ? 'text-sky-600 dark:text-sky-400' : 'text-sky-900/45 dark:text-sky-100/45'
+                isActive ? 'text-sky-600 dark:text-sky-400' : 'text-sky-900/60 dark:text-sky-100/60'
               }`
             }
           >
