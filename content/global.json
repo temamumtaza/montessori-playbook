@@ -7028,6 +7028,406 @@
      "url": "https://montessoriglobal.com/"
     }
    ]
+  },
+  {
+   "term": "Kubus binomial",
+   "termEn": "Binomial Cube",
+   "definition": "Material kubus tiga dimensi untuk mengenalkan pola aljabar melalui susunan dua warna dan ukuran yang saling berulang.",
+   "relatedTerms": [
+    "kubus trinomial",
+    "isolasi kesulitan",
+    "material matematika"
+   ]
+  },
+  {
+   "term": "Kubus trinomial",
+   "termEn": "Trinomial Cube",
+   "definition": "Kubus Montessori yang membantu anak menemukan pola ruang, urutan, dan hubungan ukuran lewat tiga kelompok warna.",
+   "relatedTerms": [
+    "kubus binomial",
+    "material matematika",
+    "pola"
+   ]
+  },
+  {
+   "term": "Gradasi warna",
+   "termEn": "Color Grading",
+   "definition": "Kegiatan mengurutkan keping warna dari paling terang ke paling gelap agar pengamatan visual dan kosakata warna berkembang.",
+   "relatedTerms": [
+    "tablet warna",
+    "sensorial",
+    "pencocokan"
+   ]
+  },
+  {
+   "term": "Segitiga konstruktif",
+   "termEn": "Constructive Triangles",
+   "definition": "Kumpulan segitiga berwarna yang disusun menjadi bentuk geometri baru untuk melatih persepsi bentuk dan penalaran ruang.",
+   "relatedTerms": [
+    "geometri",
+    "sensorial",
+    "isolasi kesulitan"
+   ]
+  },
+  {
+   "term": "Lempeng logam",
+   "termEn": "Metal Insets",
+   "definition": "Bingkai dan lempeng logam yang dipakai anak untuk menjiplak, mengarsir, dan menguatkan kesiapan gerak menulis.",
+   "relatedTerms": [
+    "kesiapan menulis",
+    "koordinasi tangan-mata",
+    "motorik halus"
+   ]
+  },
+  {
+   "term": "Batang bilangan",
+   "termEn": "Number Rods",
+   "definition": "Sepuluh batang bertambah panjang secara berurutan untuk memperkenalkan jumlah satu sampai sepuluh melalui pengalaman konkret.",
+   "relatedTerms": [
+    "angka pasir",
+    "matematika konkret",
+    "bilangan"
+   ]
+  },
+  {
+   "term": "Kotak gelendong",
+   "termEn": "Spindle Box",
+   "definition": "Material dengan laci angka dan gelendong yang membantu anak menghubungkan lambang angka dengan jumlah benda nyata.",
+   "relatedTerms": [
+    "batang bilangan",
+    "nol",
+    "kuantitas"
+   ]
+  },
+  {
+   "term": "Huruf amplas",
+   "termEn": "Sandpaper Letters",
+   "definition": "Papan huruf bertekstur yang diraba mengikuti bentuknya sambil diucapkan untuk menghubungkan bunyi, gerak, dan simbol.",
+   "relatedTerms": [
+    "alfabet bergerak",
+    "kesadaran fonemik",
+    "menulis"
+   ]
+  },
+  {
+   "term": "Alfabet bergerak",
+   "termEn": "Movable Alphabet",
+   "definition": "Kumpulan huruf lepas yang memungkinkan anak menyusun kata sebelum tangannya siap menulis dengan pensil.",
+   "relatedTerms": [
+    "huruf amplas",
+    "membangun kata",
+    "bunyi fonetik"
+   ]
+  },
+  {
+   "term": "Manik-manik emas",
+   "termEn": "Golden Beads",
+   "definition": "Material manik-manik untuk memperagakan satuan, puluhan, ratusan, dan ribuan secara konkret dalam matematika.",
+   "relatedTerms": [
+    "sistem desimal",
+    "permainan stempel",
+    "matematika konkret"
+   ]
+  },
+  {
+   "term": "Permainan stempel",
+   "termEn": "Stamp Game",
+   "definition": "Permainan kartu kecil berwarna yang mengajak anak berlatih operasi hitung dan nilai tempat tanpa benda besar.",
+   "relatedTerms": [
+    "manik-manik emas",
+    "nilai tempat",
+    "operasi hitung"
+   ]
+  },
+  {
+   "term": "Permainan titik",
+   "termEn": "Dot Game",
+   "definition": "Kegiatan menuliskan hasil perkalian pada lembar titik untuk memperkuat ingatan fakta perkalian secara bertahap.",
+   "relatedTerms": [
+    "perkalian",
+    "papan perkalian",
+    "matematika"
+   ]
+  },
+  {
+   "term": "Permainan ular",
+   "termEn": "Snake Game",
+   "definition": "Permainan mengubah rangkaian manik berwarna menjadi sepuluh untuk melatih penjumlahan dan pengenalan kombinasi bilangan.",
+   "relatedTerms": [
+    "manik-manik emas",
+    "penjumlahan",
+    "komposisi bilangan"
+   ]
+  },
+  {
+   "term": "Membangun kata",
+   "termEn": "Word Building",
+   "definition": "Kegiatan merangkai huruf atau kartu bunyi menjadi kata bermakna agar anak memahami hubungan bunyi dan tulisan.",
+   "relatedTerms": [
+    "alfabet bergerak",
+    "benda fonetik",
+    "membaca"
+   ]
+  },
+  {
+   "term": "Benda fonetik",
+   "termEn": "Phonetic Objects",
+   "definition": "Benda nyata yang namanya mengikuti pola bunyi sederhana, dipakai anak untuk mencocokkan benda dengan kata tertulis.",
+   "relatedTerms": [
+    "membangun kata",
+    "kesadaran fonemik",
+    "bahasa"
+   ]
+  },
+  {
+   "term": "Meja alam",
+   "termEn": "Nature Table",
+   "definition": "Tempat pajangan benda alam yang berubah sesuai musim atau tema, sehingga anak dapat mengamati, menyentuh, dan berdiskusi.",
+   "relatedTerms": [
+    "pengamatan alam",
+    "budaya",
+    "klasifikasi"
+   ]
+  },
+  {
+   "term": "Pelajaran kesopanan dan tata krama",
+   "termEn": "Grace and Courtesy Lesson",
+   "definition": "Demonstrasi singkat tentang cara menyapa, meminta bantuan, menunggu giliran, atau menjaga ruang bersama dengan hormat.",
+   "relatedTerms": [
+    "kesopanan",
+    "kehidupan sosial",
+    "role play"
+   ]
+  },
+  {
+   "term": "Berjalan di garis",
+   "termEn": "Walking on the Line",
+   "definition": "Latihan berjalan perlahan mengikuti garis elips untuk mengembangkan keseimbangan, koordinasi, dan kesadaran terhadap gerak tubuh.",
+   "relatedTerms": [
+    "permainan keheningan",
+    "keseimbangan",
+    "koordinasi"
+   ]
+  },
+  {
+   "term": "Permainan keheningan",
+   "termEn": "Silence Game",
+   "definition": "Kegiatan hening yang mengajak anak mengendalikan gerak, mendengarkan lingkungan, dan menyadari kehadiran dirinya.",
+   "relatedTerms": [
+    "berjalan di garis",
+    "konsentrasi",
+    "pengaturan diri"
+   ]
+  },
+  {
+   "term": "Waktu berita",
+   "termEn": "News Period",
+   "definition": "Kesempatan anak menceritakan pengalaman atau peristiwa yang ingin dibagikan dengan mendengarkan teman secara bergiliran.",
+   "relatedTerms": [
+    "show and tell",
+    "bahasa lisan",
+    "komunitas kelas"
+   ]
+  },
+  {
+   "term": "Show and tell",
+   "termEn": "Show and Tell",
+   "definition": "Kegiatan membawa atau memilih benda untuk ditunjukkan sambil menjelaskan ciri, fungsi, atau alasan benda itu penting.",
+   "relatedTerms": [
+    "waktu berita",
+    "bahasa lisan",
+    "kepercayaan diri"
+   ]
+  },
+  {
+   "term": "Urutan aktivitas kehidupan sehari-hari",
+   "termEn": "Practical Life Sequence",
+   "definition": "Rangkaian langkah yang disusun berurutan dalam suatu pekerjaan agar anak memahami proses, tujuan, dan cara menyelesaikannya.",
+   "relatedTerms": [
+    "kehidupan sehari-hari",
+    "analisis gerak",
+    "kemandirian"
+   ]
+  },
+  {
+   "term": "Merawat lingkungan",
+   "termEn": "Care of Environment",
+   "definition": "Kegiatan menjaga ruang bersama seperti menyapu, menata rak, dan menyiram tanaman agar anak merasa memiliki tanggung jawab.",
+   "relatedTerms": [
+    "merawat diri",
+    "kehidupan sehari-hari",
+    "tanggung jawab"
+   ]
+  },
+  {
+   "term": "Merawat diri",
+   "termEn": "Care of Self",
+   "definition": "Latihan yang membantu anak mengurus tubuh dan kebutuhannya sendiri dengan langkah sederhana, teratur, dan sesuai kemampuan.",
+   "relatedTerms": [
+    "merawat lingkungan",
+    "kemandirian",
+    "urutan aktivitas"
+   ]
+  },
+  {
+   "term": "Menyiapkan makanan",
+   "termEn": "Food Preparation",
+   "definition": "Kegiatan seperti mencuci, memotong lunak, mengoles, atau menyajikan makanan untuk melatih kemandirian dan keterampilan hidup.",
+   "relatedTerms": [
+    "kehidupan sehari-hari",
+    "merawat diri",
+    "koordinasi tangan-mata"
+   ]
+  },
+  {
+   "term": "Bingkai berpakaian",
+   "termEn": "Dressing Frame",
+   "definition": "Bingkai latihan dengan pengancing tertentu yang memberi anak kesempatan berlatih berpakaian secara perlahan dan mandiri.",
+   "relatedTerms": [
+    "bingkai kancing",
+    "merawat diri",
+    "kemandirian"
+   ]
+  },
+  {
+   "term": "Bingkai kancing",
+   "termEn": "Button Frame",
+   "definition": "Bingkai berpakaian dengan deretan kancing untuk melatih jari membuka dan menutup pakaian dengan koordinasi yang terarah.",
+   "relatedTerms": [
+    "bingkai berpakaian",
+    "motorik halus",
+    "merawat diri"
+   ]
+  },
+  {
+   "term": "Bingkai ritsleting",
+   "termEn": "Zipper Frame",
+   "definition": "Bingkai latihan yang memusatkan perhatian pada cara memegang, memasukkan, dan menarik ritsleting sampai tertutup.",
+   "relatedTerms": [
+    "bingkai berpakaian",
+    "merawat diri",
+    "koordinasi tangan-mata"
+   ]
+  },
+  {
+   "term": "Latihan menuang",
+   "termEn": "Pouring Exercise",
+   "definition": "Latihan memindahkan cairan atau bahan kering dari satu wadah ke wadah lain dengan gerak perlahan dan terkontrol.",
+   "relatedTerms": [
+    "memindahkan dengan sendok",
+    "koordinasi tangan-mata",
+    "kehidupan sehari-hari"
+   ]
+  },
+  {
+   "term": "Latihan menyendok",
+   "termEn": "Spooning Exercise",
+   "definition": "Kegiatan memindahkan benda kecil menggunakan sendok agar anak mengatur tekanan, arah gerak, dan ketepatan tangan.",
+   "relatedTerms": [
+    "latihan menuang",
+    "motorik halus",
+    "konsentrasi"
+   ]
+  },
+  {
+   "term": "Memindahkan dengan penjepit",
+   "termEn": "Tong Transfer",
+   "definition": "Kegiatan memindahkan benda memakai penjepit untuk menguatkan genggaman, koordinasi, dan ketelitian tanpa tergesa-gesa.",
+   "relatedTerms": [
+    "latihan menyendok",
+    "motorik halus",
+    "koordinasi tangan-mata"
+   ]
+  },
+  {
+   "term": "Latihan pipet",
+   "termEn": "Dropper Work",
+   "definition": "Kegiatan mengambil dan meneteskan cairan dengan pipet untuk melatih kekuatan jari, kontrol gerak, dan ketepatan.",
+   "relatedTerms": [
+    "memindahkan dengan penjepit",
+    "koordinasi tangan-mata",
+    "motorik halus"
+   ]
+  },
+  {
+   "term": "Memeras spons",
+   "termEn": "Sponging",
+   "definition": "Latihan menyerap lalu memindahkan air menggunakan spons agar anak mengembangkan kekuatan tangan dan pengendalian gerak.",
+   "relatedTerms": [
+    "latihan menuang",
+    "merawat lingkungan",
+    "kekuatan tangan"
+   ]
+  },
+  {
+   "term": "Memoles",
+   "termEn": "Polishing",
+   "definition": "Kegiatan menggosok permukaan benda hingga bersih atau mengilap untuk melatih gerak berulang, perhatian, dan kepedulian.",
+   "relatedTerms": [
+    "memoles cermin",
+    "merawat lingkungan",
+    "koordinasi"
+   ]
+  },
+  {
+   "term": "Melipat kain",
+   "termEn": "Folding Cloths",
+   "definition": "Latihan melipat kain mengikuti garis atau sudutnya agar anak belajar ketepatan, urutan kerja, dan kerapian.",
+   "relatedTerms": [
+    "urutan aktivitas",
+    "merawat lingkungan",
+    "koordinasi tangan-mata"
+   ]
+  },
+  {
+   "term": "Mencuci meja",
+   "termEn": "Table Washing",
+   "definition": "Kegiatan membersihkan meja melalui langkah mengambil air, menggosok, mengeringkan, dan mengembalikan alat ke tempatnya.",
+   "relatedTerms": [
+    "merawat lingkungan",
+    "memeras spons",
+    "urutan aktivitas"
+   ]
+  },
+  {
+   "term": "Urutan mencuci tangan",
+   "termEn": "Hand Washing Sequence",
+   "definition": "Rangkaian langkah mencuci tangan secara lengkap agar anak memahami kebersihan, urutan, dan tanggung jawab terhadap tubuhnya.",
+   "relatedTerms": [
+    "merawat diri",
+    "urutan aktivitas",
+    "kebersihan"
+   ]
+  },
+  {
+   "term": "Memoles cermin",
+   "termEn": "Mirror Polishing",
+   "definition": "Kegiatan membersihkan cermin dengan kain dan bahan secukupnya sambil mengamati perubahan permukaan secara langsung.",
+   "relatedTerms": [
+    "memoles",
+    "merawat lingkungan",
+    "koordinasi"
+   ]
+  },
+  {
+   "term": "Merangkai bunga",
+   "termEn": "Flower Arranging",
+   "definition": "Kegiatan memilih, memotong seperlunya, dan menata bunga dalam wadah untuk mengembangkan keindahan, ketelitian, dan kepedulian.",
+   "relatedTerms": [
+    "merawat lingkungan",
+    "menyiapkan makanan",
+    "estetika"
+   ]
+  },
+  {
+   "term": "Latihan menggunting",
+   "termEn": "Cutting Exercise",
+   "definition": "Kegiatan menggunting garis atau bahan sederhana untuk membangun kekuatan jari, koordinasi kedua tangan, dan kesiapan berkarya.",
+   "relatedTerms": [
+    "lempeng logam",
+    "motorik halus",
+    "kesiapan menulis"
+   ]
   }
  ],
  "checklists": [
