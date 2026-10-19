@@ -1,0 +1,8 @@
+[0m
+> build · glm-5.3-flash-free
+[0m
+[0m$ [0mls content/parts/ 2>/dev/null | head -20; ls content 2>/dev/null
+glossary-1.json
+bundles
+parts
+[0m

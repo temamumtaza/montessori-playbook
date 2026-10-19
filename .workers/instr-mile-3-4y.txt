@@ -1,0 +1,17 @@
+Tulis file content/parts/mile-3-4y.json berisi ARRAY 9-11 objek Milestone perkembangan untuk usia 3-4y (dasarkan pola umum CDC/WHO, parafrase Indonesia).
+
+Skema persis:
+{
+  "id": "mile-34y-<topik-kebab>",
+  "title": "judul singkat (min 5 karakter)",
+  "ageBand": "3-4y",
+  "domain": "motorik-kasar|motorik-halus|bahasa|kognitif|sosial-emosional|self-help",
+  "description": "penjelasan 1 kalimat (min 30 karakter)",
+  "typicalFromMonths": angka,
+  "typicalToMonths": angka,
+  "redFlags": ["tanda perlu konsultasi dokter (boleh kosong)"],
+  "references": [{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+}
+Campur domain beragam. Rentang bulan wajar untuk band 3-4y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/mile-3-4y.json'));print('OK',len(d))"
+Jawab: DONE mile-3-4y

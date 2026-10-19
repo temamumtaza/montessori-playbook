@@ -1,0 +1,4 @@
+Tulis file content/parts/parents-1.json berisi ARRAY. Isi: 22 objek ParentGuide (skema: id, title min 5, category enum filosofi|komunikasi|disiplin|rutinitas|screen-time|sibling|toilet|tantrum|observasi|self-care, ageBands array boleh kosong, body STRING markdown panjang minimal 1200 karakter per panduan — paragraf dengan \n\n, keyTakeaways array min 3, references min 1). Cakup semua category.
+Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/parents-1.json'));print('OK',len(d))"
+Jawab: DONE parents-1

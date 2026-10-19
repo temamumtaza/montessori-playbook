@@ -1,0 +1,7 @@
+[0m
+> build · deepseek-v4.1-flash-free
+[0m
+I'll create the file with 30 activities for ages 3-6 months.
+[0m$ [0mls content/parts 2>/dev/null || echo "NO_DIR"
+glossary-1.json
+[0m

@@ -1,0 +1,4 @@
+Tulis file content/parts/materials-2.json berisi ARRAY. Isi: 32 objek Material lain (JANGAN duplikat mobil Munari/interlocking discs/pink tower — buat variasi lain: object permanence box, imbangan, kancing dressing frame generik, dsb). Skema sama seperti Material.
+Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/materials-2.json'));print('OK',len(d))"
+Jawab: DONE materials-2

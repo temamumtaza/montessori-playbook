@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <ScrollCtx.Provider value={{ save: () => {}, get: (t) => scrollMem[t] ?? 0 }}>
-      <div className="min-h-dvh bg-cream-50 dark:bg-navy-900 text-sky-900 dark:text-sky-100 transition-colors">
+      <div className="min-h-dvh bg-sky-50 dark:bg-navy-900 text-sky-900 dark:text-sky-100 transition-colors">
         {/* Header collapsing large title */}
         <Header title={titleFor(location.pathname)} />
 
@@ -102,7 +102,7 @@ function Header({ title }: { title: string }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
   return (
-    <header className="sticky top-0 z-40 bg-cream-50/85 dark:bg-navy-900/85 backdrop-blur-md pt-safe">
+    <header className="sticky top-0 z-40 bg-sky-50/85 dark:bg-navy-900/85 backdrop-blur-md pt-safe">
       <div className="px-5 pb-2 transition-all" style={{ height: compact ? 48 : 84 }}>
         <h1
           className={`font-[family-name:var(--font-display)] font-bold text-sky-700 dark:text-sky-300 transition-all ${compact ? 'text-xl leading-[48px]' : 'text-3xl leading-[84px]'}`}

@@ -1,0 +1,27 @@
+Tulis file content/parts/act-9-12m.json berisi ARRAY tepat 30 objek Activity Montessori untuk usia 9-12m.
+
+Skema WAJIB tiap objek (field name persis):
+{
+  "id": "kebab-case-unik-dimulai-912m",
+  "title": "nama aktivitas bahasa Indonesia (min 5 karakter)",
+  "summary": "ringkasan 1-2 kalimat (min 30 karakter)",
+  "ageBands": ["9-12m"],
+  "areas": ["pilih 1-3 dari: practical-life, sensorial, language, math, culture, movement, grace-courtesy, self-care, art-music, outdoor"],
+  "skills": ["kata kunci skill"],
+  "objectives": ["1-3 tujuan"],
+  "materials": [{"name":"bahan","fromHome":true,"optional":false}],
+  "prepMinutes": angka 0-30,
+  "durationMinutes": angka 3-60,
+  "prepLevel": "rendah|sedang|tinggi",
+  "presentation": [{"step":1,"text":"langkah minimal 15 karakter"}, {"step":2,"text":"..."}],
+  "controlOfError": "cara anak tahu salah/benar sendiri (opsional tapi disarankan)",
+  "variations": ["variasi"],
+  "readySigns": ["tanda anak siap (min 1)"],
+  "struggleSigns": ["tanda kesulitan"],
+  "safetyNotes": ["WAJIB minimal 1 untuk usia 0-3y: supervisi, ukuran benda, tali, posisi, alergi, dll"],
+  "references": [{"title":"CDC Milestones 9-12m","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+}
+
+VARIASI KONTEN: campur area berbeda (movement, language, practical-life, sensorial, self-care, art-music, outdoor sesuai usia), durasi & prepLevel bervariasi, JANGN ada dua aktivitas dengan judul mirip. Sesuai tahap perkembangan usia 9-12m (motorik, bahasa, kognitif, sosial yang realistis).
+Setelah menulis file, validasi: python3 -c "import json;d=json.load(open('content/parts/act-9-12m.json'));assert len(d)==30;print('OK',len(d))"
+Jawab: DONE act-9-12m

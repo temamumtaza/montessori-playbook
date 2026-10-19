@@ -41,7 +41,7 @@ export function ProgressPage() {
       </section>
 
       {milestones.length === 0 ? (
-        <EmptyState emoji="🌱" title="Milestone usia ini belum tersedia" text="Konten progres sedang dibangun bertahap." />
+        <EmptyState title="Milestone usia ini belum tersedia" text="Konten progres sedang dibangun bertahap." />
       ) : (
         <ul className="space-y-3">
           {milestones.map((m) => {

@@ -1,0 +1,17 @@
+Tulis file content/parts/mile-0-3m.json berisi ARRAY 9-11 objek Milestone perkembangan untuk usia 0-3m (dasarkan pola umum CDC/WHO, parafrase Indonesia).
+
+Skema persis:
+{
+  "id": "mile-03m-<topik-kebab>",
+  "title": "judul singkat (min 5 karakter)",
+  "ageBand": "0-3m",
+  "domain": "motorik-kasar|motorik-halus|bahasa|kognitif|sosial-emosional|self-help",
+  "description": "penjelasan 1 kalimat (min 30 karakter)",
+  "typicalFromMonths": angka,
+  "typicalToMonths": angka,
+  "redFlags": ["tanda perlu konsultasi dokter (boleh kosong)"],
+  "references": [{"title":"CDC Milestones","url":"https://www.cdc.gov/ncbddd/actearly/milestones/index.html"}]
+}
+Campur domain beragam. Rentang bulan wajar untuk band 0-3m.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/mile-0-3m.json'));print('OK',len(d))"
+Jawab: DONE mile-0-3m

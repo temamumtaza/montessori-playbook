@@ -1,0 +1,4 @@
+Tulis file content/parts/rooms-1.json berisi ARRAY. Isi: 6 objek RoomSetup (skema: id, room enum kamar-anak|kamar-mandi|dapur|ruang-keluarga|area-makan|outdoor, title, principles array min 3, items array min 5 objek {name, essential bool, budgetRendah string, budgetSedang string opsional, diy bool}, layoutTips array min 2, ageBands array, references min 1). SATU objek per nilai room enum.
+Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/rooms-1.json'));print('OK',len(d))"
+Jawab: DONE rooms-1

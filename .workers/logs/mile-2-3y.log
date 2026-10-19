@@ -1,0 +1,8 @@
+[0m
+> build · deepseek-v4.1-flash-free
+[0m
+[0m$ [0mls content/parts 2>/dev/null && ls content 2>/dev/null
+glossary-1.json
+bundles
+parts
+[0m

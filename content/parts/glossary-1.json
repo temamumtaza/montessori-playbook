@@ -1,0 +1,402 @@
+[
+  {
+    "term": "absorbent mind",
+    "termEn": "Absorbent Mind",
+    "definition": "Cara anak kecil menyerap pengalaman, bahasa, dan kebiasaan dari sekitarnya secara alami, seperti spons menyerap air, tanpa perlu diajari secara formal.",
+    "relatedTerms": [
+      "sensitive period",
+      "prepared environment",
+      "observation"
+    ]
+  },
+  {
+    "term": "sensitive period",
+    "termEn": "Sensitive Period",
+    "definition": "Masa tertentu dalam perkembangan anak ketika ia sangat tertarik dan mudah mempelajari keterampilan tertentu, misalnya bahasa atau keteraturan, sebelum minat itu mereda.",
+    "relatedTerms": [
+      "absorbent mind",
+      "observation",
+      "observation"
+    ]
+  },
+  {
+    "term": "prepared environment",
+    "termEn": "Prepared Environment",
+    "definition": "Ruang belajar yang sengaja ditata agar aman, rapi, mudah dijangkau anak, dan mendorong kemandirian serta pilihan kegiatan yang sesuai usianya.",
+    "relatedTerms": [
+      "freedom within limits",
+      "independence",
+      "didactic material"
+    ]
+  },
+  {
+    "term": "freedom within limits",
+    "termEn": "Freedom Within Limits",
+    "definition": "Kebebasan anak untuk memilih kegiatan dan bergerak, tetap dibatasi oleh aturan keselamatan, rasa hormat, dan tanggung jawab bersama.",
+    "relatedTerms": [
+      "prepared environment",
+      "self-regulation",
+      "grace and courtesy"
+    ]
+  },
+  {
+    "term": "normalization",
+    "termEn": "Normalization",
+    "definition": "Kondisi ketika anak menunjukkan konsentrasi, ketenangan, dan disiplin diri secara wajar setelah kebutuhan perkembangannya terpenuhi dengan baik.",
+    "relatedTerms": [
+      "concentration",
+      "work cycle",
+      "self-regulation"
+    ]
+  },
+  {
+    "term": "practical life",
+    "termEn": "Practical Life",
+    "definition": "Kegiatan sehari-hari seperti menuang, menyapu, atau berpakaian yang melatih kemandirian, koordinasi gerak, dan rasa tanggung jawab anak.",
+    "relatedTerms": [
+      "independence",
+      "fine motor",
+      "control of error"
+    ]
+  },
+  {
+    "term": "sensorial",
+    "termEn": "Sensorial",
+    "definition": "Pendekatan belajar yang melatih pengamatan anak melalui indra, seperti membedakan ukuran, warna, tekstur, bunyi, atau bau dengan bahan yang konkret.",
+    "relatedTerms": [
+      "didactic material",
+      "concrete to abstract",
+      "sensory integration"
+    ]
+  },
+  {
+    "term": "control of error",
+    "termEn": "Control of Error",
+    "definition": "Ciri pada alat atau kegiatan yang membuat anak dapat mengetahui sendiri apakah pekerjaannya sudah tepat, sehingga ia belajar memeriksa dan memperbaiki diri.",
+    "relatedTerms": [
+      "isolation of difficulty",
+      "independence",
+      "didactic material"
+    ]
+  },
+  {
+    "term": "isolation of difficulty",
+    "termEn": "Isolation of Difficulty",
+    "definition": "Cara menyederhanakan kegiatan agar hanya satu tantangan utama yang dilatih, misalnya hanya soal ukuran, sehingga anak lebih mudah memahami dan berhasil.",
+    "relatedTerms": [
+      "control of error",
+      "didactic material",
+      "concrete to abstract"
+    ]
+  },
+  {
+    "term": "grace and courtesy",
+    "termEn": "Grace and Courtesy",
+    "definition": "Pembelajaran sopan santun dan keterampilan sosial, seperti menyapa, meminta izin, mengantre, atau menunggu giliran, melalui contoh dan latihan yang hangat.",
+    "relatedTerms": [
+      "freedom within limits",
+      "self-regulation",
+      "mixed-age classroom"
+    ]
+  },
+  {
+    "term": "work cycle",
+    "termEn": "Work Cycle",
+    "definition": "Rangkaian waktu ketika anak memilih kegiatan, mengerjakannya dengan tekun, lalu merapikan dan mengembalikan alat sebelum memilih kegiatan lain.",
+    "relatedTerms": [
+      "concentration",
+      "normalization",
+      "independence"
+    ]
+  },
+  {
+    "term": "didactic material",
+    "termEn": "Didactic Material",
+    "definition": "Alat belajar yang dirancang khusus untuk melatih satu keterampilan tertentu, biasanya menarik, konkret, dan dapat digunakan berulang kali oleh anak.",
+    "relatedTerms": [
+      "sensorial",
+      "isolation of difficulty",
+      "control of error"
+    ]
+  },
+  {
+    "term": "observation",
+    "termEn": "Observation",
+    "definition": "Kebiasaan mengamati anak dengan tenang dan tanpa menghakimi untuk memahami minat, kebutuhan, dan cara belajarnya sebelum mengambil keputusan.",
+    "relatedTerms": [
+      "sensitive period",
+      "prepared environment",
+      "scaffolding"
+    ]
+  },
+  {
+    "term": "independence",
+    "termEn": "Independence",
+    "definition": "Kemampuan anak melakukan hal-hal untuk dirinya sendiri sesuai usia, mulai dari makan dan berpakaian hingga menyelesaikan tugas sederhana.",
+    "relatedTerms": [
+      "practical life",
+      "freedom within limits",
+      "scaffolding"
+    ]
+  },
+  {
+    "term": "concentration",
+    "termEn": "Concentration",
+    "definition": "Keadaan ketika anak benar-benar tenggelam dalam kegiatan yang ia pilih dan menikmatinya, sehingga ia mampu bertahan fokus lebih lama.",
+    "relatedTerms": [
+      "work cycle",
+      "normalization",
+      "self-regulation"
+    ]
+  },
+  {
+    "term": "three-period lesson",
+    "termEn": "Three-Period Lesson",
+    "definition": "Cara mengenalkan konsep baru melalui tiga tahap sederhana, yaitu menyebut nama, meminta anak menunjukkan, lalu meminta anak menyebutkan sendiri.",
+    "relatedTerms": [
+      "concrete to abstract",
+      "receptive language",
+      "expressive language"
+    ]
+  },
+  {
+    "term": "concrete to abstract",
+    "termEn": "Concrete to Abstract",
+    "definition": "Prinsip belajar yang dimulai dari benda nyata yang bisa disentuh dan dilihat, kemudian perlahan beralih ke gagasan atau lambang yang lebih abstrak.",
+    "relatedTerms": [
+      "sensorial",
+      "didactic material",
+      "observation"
+    ]
+  },
+  {
+    "term": "mixed-age classroom",
+    "termEn": "Mixed-Age Classroom",
+    "definition": "Kelompok belajar yang berisi anak dengan rentang usia berbeda, sehingga anak yang lebih besar dapat menjadi contoh dan anak yang lebih kecil belajar dari mereka.",
+    "relatedTerms": [
+      "grace and courtesy",
+      "independence",
+      "observation"
+    ]
+  },
+  {
+    "term": "casa dei bambini",
+    "termEn": "Casa dei Bambini",
+    "definition": "Istilah Italia untuk rumah anak, yaitu nama kelas Montessori pertama yang menekankan lingkungan hangat, kemandirian, dan pembelajaran melalui kegiatan nyata.",
+    "relatedTerms": [
+      "prepared environment",
+      "practical life",
+      "mixed-age classroom"
+    ]
+  },
+  {
+    "term": "cosmic education",
+    "termEn": "Cosmic Education",
+    "definition": "Pandangan pendidikan yang mengenalkan anak pada keterhubungan manusia, alam, dan semesta, agar tumbuh rasa ingin tahu dan tanggung jawab terhadap dunia.",
+    "relatedTerms": [
+      "grace and courtesy",
+      "observation",
+      "independence"
+    ]
+  },
+  {
+    "term": "milestone",
+    "termEn": "Milestone",
+    "definition": "Tonggak kemampuan yang umumnya muncul pada rentang usia tertentu, seperti duduk, berjalan, atau bicara, sebagai petunjuk arah perkembangan anak.",
+    "relatedTerms": [
+      "gross motor",
+      "fine motor",
+      "expressive language"
+    ]
+  },
+  {
+    "term": "pincer grasp",
+    "termEn": "Pincer Grasp",
+    "definition": "Kemampuan menjepit benda kecil menggunakan ujung ibu jari dan telunjuk, yang penting untuk makan sendiri, menulis, dan keterampilan tangan lainnya.",
+    "relatedTerms": [
+      "fine motor",
+      "hand-eye coordination",
+      "milestone"
+    ]
+  },
+  {
+    "term": "object permanence",
+    "termEn": "Object Permanence",
+    "definition": "Pemahaman bahwa benda atau orang tetap ada meskipun sedang tidak terlihat, yang membuat bayi mulai mencari mainan atau orang tua yang tersembunyi.",
+    "relatedTerms": [
+      "milestone",
+      "separation anxiety",
+      "symbolic play"
+    ]
+  },
+  {
+    "term": "joint attention",
+    "termEn": "Joint Attention",
+    "definition": "Saat anak dan orang dewasa bersama-sama memperhatikan hal yang sama, misalnya menunjuk kucing dan saling melihat, yang mendukung perkembangan bahasa dan sosial.",
+    "relatedTerms": [
+      "serve and return",
+      "receptive language",
+      "milestone"
+    ]
+  },
+  {
+    "term": "self-regulation",
+    "termEn": "Self-Regulation",
+    "definition": "Kemampuan anak mengelola perasaan, menahan keinginan sesaat, dan menyesuaikan perilaku sesuai situasi, yang berkembang bertahap dengan bimbingan orang dewasa.",
+    "relatedTerms": [
+      "executive function",
+      "freedom within limits",
+      "temperament"
+    ]
+  },
+  {
+    "term": "executive function",
+    "termEn": "Executive Function",
+    "definition": "Kumpulan keterampilan otak untuk merencanakan, mengingat aturan, fokus, dan mengendalikan diri, yang membantu anak menyelesaikan tugas sehari-hari.",
+    "relatedTerms": [
+      "self-regulation",
+      "concentration",
+      "scaffolding"
+    ]
+  },
+  {
+    "term": "separation anxiety",
+    "termEn": "Separation Anxiety",
+    "definition": "Rasa cemas atau sedih yang wajar pada anak ketika berpisah dari orang yang lekat dengannya, biasanya memuncak di usia bayi hingga balita awal.",
+    "relatedTerms": [
+      "object permanence",
+      "temperament",
+      "milestone"
+    ]
+  },
+  {
+    "term": "parallel play",
+    "termEn": "Parallel Play",
+    "definition": "Tahap bermain ketika anak-anak berada di dekat satu sama lain dan melakukan kegiatan serupa, tetapi belum benar-benar bermain bersama.",
+    "relatedTerms": [
+      "symbolic play",
+      "joint attention",
+      "milestone"
+    ]
+  },
+  {
+    "term": "symbolic play",
+    "termEn": "Symbolic Play",
+    "definition": "Bermain pura-pura yang menggunakan benda atau peran untuk mewakili hal lain, seperti memakai kotak sebagai mobil, yang mendukung imajinasi dan bahasa.",
+    "relatedTerms": [
+      "object permanence",
+      "expressive language",
+      "parallel play"
+    ]
+  },
+  {
+    "term": "receptive language",
+    "termEn": "Receptive Language",
+    "definition": "Kemampuan memahami kata, pertanyaan, dan instruksi yang didengar anak, yang biasanya berkembang lebih dahulu daripada kemampuan berbicara.",
+    "relatedTerms": [
+      "expressive language",
+      "joint attention",
+      "three-period lesson"
+    ]
+  },
+  {
+    "term": "expressive language",
+    "termEn": "Expressive Language",
+    "definition": "Kemampuan anak menyampaikan keinginan, perasaan, dan gagasan melalui kata, isyarat, atau kalimat yang dapat dipahami orang lain.",
+    "relatedTerms": [
+      "receptive language",
+      "symbolic play",
+      "milestone"
+    ]
+  },
+  {
+    "term": "gross motor",
+    "termEn": "Gross Motor",
+    "definition": "Keterampilan menggerakkan otot besar tubuh, seperti merangkak, berjalan, melompat, dan menjaga keseimbangan saat bermain atau berpindah tempat.",
+    "relatedTerms": [
+      "fine motor",
+      "milestone",
+      "vestibular sense"
+    ]
+  },
+  {
+    "term": "fine motor",
+    "termEn": "Fine Motor",
+    "definition": "Keterampilan menggunakan otot kecil, terutama tangan dan jari, untuk menggenggam, menuang, meronce, mengancingkan baju, atau memegang alat tulis.",
+    "relatedTerms": [
+      "pincer grasp",
+      "hand-eye coordination",
+      "practical life"
+    ]
+  },
+  {
+    "term": "hand-eye coordination",
+    "termEn": "Hand-Eye Coordination",
+    "definition": "Kemampuan menyelaraskan gerakan tangan dengan apa yang dilihat mata, misalnya saat menangkap bola, memasukkan benda ke lubang, atau menulis.",
+    "relatedTerms": [
+      "fine motor",
+      "pincer grasp",
+      "sensory integration"
+    ]
+  },
+  {
+    "term": "sensory integration",
+    "termEn": "Sensory Integration",
+    "definition": "Cara otak mengolah dan menggabungkan informasi dari indra agar anak dapat bergerak, belajar, dan menanggapi lingkungan dengan tepat.",
+    "relatedTerms": [
+      "sensorial",
+      "proprioception",
+      "vestibular sense"
+    ]
+  },
+  {
+    "term": "proprioception",
+    "termEn": "Proprioception",
+    "definition": "Kesadaran tubuh tentang posisi dan kekuatan geraknya, yang membantu anak mengatur tenaga saat memeluk, mengangkat, atau memegang benda.",
+    "relatedTerms": [
+      "vestibular sense",
+      "sensory integration",
+      "gross motor"
+    ]
+  },
+  {
+    "term": "vestibular sense",
+    "termEn": "Vestibular Sense",
+    "definition": "Indra keseimbangan yang memberi tahu tubuh tentang gerakan dan posisi kepala, berperan saat anak berayun, berputar, atau menjaga keseimbangan.",
+    "relatedTerms": [
+      "proprioception",
+      "sensory integration",
+      "gross motor"
+    ]
+  },
+  {
+    "term": "scaffolding",
+    "termEn": "Scaffolding",
+    "definition": "Dukungan sementara yang diberikan orang dewasa, seperti petunjuk atau contoh kecil, lalu dikurangi sedikit demi sedikit saat anak sudah mampu sendiri.",
+    "relatedTerms": [
+      "observation",
+      "independence",
+      "executive function"
+    ]
+  },
+  {
+    "term": "serve and return",
+    "termEn": "Serve and Return",
+    "definition": "Pola interaksi timbal balik ketika anak memberi isyarat dan orang dewasa menanggapi dengan hangat, seperti bola pingpong yang menguatkan hubungan dan bahasa.",
+    "relatedTerms": [
+      "joint attention",
+      "receptive language",
+      "temperament"
+    ]
+  },
+  {
+    "term": "temperament",
+    "termEn": "Temperament",
+    "definition": "Kecenderungan bawaan anak dalam merespons dunia, misalnya mudah tenang atau lebih sensitif, yang memengaruhi cara orang tua mendampinginya.",
+    "relatedTerms": [
+      "self-regulation",
+      "separation anxiety",
+      "observation"
+    ]
+  }
+]

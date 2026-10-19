@@ -1,0 +1,4 @@
+Tulis file content/parts/parents-2.json berisi ARRAY. Isi: 22 objek ParentGuide lain (topik beda dari partner-mu: jadwal harian per usia, transisi aktivitas, berbagi/sharing, pujian vs deskripsi, batas layar praktis, persiapan saudara baru, makan picky eater, tidur, berpakaian mandiri, out & about). body min 1200 karakter markdown.
+Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/parents-2.json'));print('OK',len(d))"
+Jawab: DONE parents-2

@@ -1,0 +1,4 @@
+Tulis file content/parts/checklists-1.json berisi ARRAY. Isi: 8 objek Checklist (skema: id, title, kind enum environment|rutinitas|persiapan-aktivitas|keselamatan, scope string, items array min 6 objek {text, hint opsional}, references min 1). Cakup: safety-proof rumah per usia, checklist kamar montessori, tas ke luar rumah, rutinitas pagi/malam, persiapan MPASI, persiapan toilet learning, kotak rotasi mainan.
+Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/checklists-1.json'));print('OK',len(d))"
+Jawab: DONE checklists-1

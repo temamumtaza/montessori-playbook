@@ -1,0 +1,4 @@
+Tulis file content/parts/materials-1.json berisi ARRAY. Isi: 32 objek Material Montessori (skema: id kebab-case, name, purpose min 30 karakter, ageBands array dari enum 0-3m..4-5y, budget rendah|sedang|tinggi, buyHint opsional, diy boolean, safetyNotes array, references array minimal 1). Cakup: mobil (Munari dll generik), grasping toys, stacking, inset, threading, tray praktis, dsb.
+Enum ageBands valid: 0-3m, 3-6m, 6-9m, 9-12m, 12-18m, 18-24m, 2-3y, 3-4y, 4-5y.
+Validasi: python3 -c "import json;d=json.load(open('content/parts/materials-1.json'));print('OK',len(d))"
+Jawab: DONE materials-1

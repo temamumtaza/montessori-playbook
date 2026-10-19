@@ -59,7 +59,7 @@ export function JournalPage() {
       {!entries ? (
         <p className="text-sm opacity-60">Memuat…</p>
       ) : entries.length === 0 ? (
-        <EmptyState emoji="📝" title="Belum ada catatan" text="Observasi pertamamu akan muncul di sini." />
+        <EmptyState title="Belum ada catatan" text="Observasi pertamamu akan muncul di sini." />
       ) : (
         <ol className="space-y-3">
           {entries.map((e) => (
