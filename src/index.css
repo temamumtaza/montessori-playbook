@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ===== Brand: SKY BLUE (skala penuh) ===== */
+  --color-sky-50: #f0f9ff;
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-300: #7dd3fc;
+  --color-sky-400: #38bdf8; /* dekoratif */
+  --color-sky-500: #0ea5e9;
+  --color-sky-600: #0284c7;
+  --color-sky-700: #0369a1; /* teks/tombol di atas putih (AA) */
+  --color-sky-800: #075985;
+  --color-sky-900: #0c3d5c;
+
+  /* ===== Warna identitas Area & AgeBand (di atas dasar sky) ===== */
+  --color-apple-100: #fee2e2;
+  --color-apple-400: #f87171;
+  --color-apple-500: #ef4444;
+  --color-apple-600: #dc2626;
+  --color-apple-700: #b91c1c;
+
+  --color-mango-100: #ffedd5;
+  --color-mango-400: #fb923c;
+  --color-mango-500: #f97316;
+  --color-mango-600: #ea580c;
+  --color-mango-700: #c2410c;
+
+  --color-sunny-100: #fef9c3;
+  --color-sunny-400: #facc15;
+  --color-sunny-500: #eab308;
+  --color-sunny-600: #ca8a04;
+  --color-sunny-700: #a16207;
+
+  --color-leaf-100: #dcfce7;
+  --color-leaf-400: #4ade80;
+  --color-leaf-500: #22c55e;
+  --color-leaf-600: #16a34a;
+  --color-leaf-700: #15803d;
+
+  --color-grape-100: #f3e8ff;
+  --color-grape-400: #c084fc;
+  --color-grape-500: #a855f7;
+  --color-grape-600: #9333ea;
+  --color-grape-700: #7e22ce;
+
+  --color-candy-100: #fce7f3;
+  --color-candy-400: #f472b6;
+  --color-candy-500: #ec4899;
+  --color-candy-600: #db2777;
+  --color-candy-700: #be185d;
+
+  --color-tosca-100: #ccfbf1;
+  --color-tosca-400: #2dd4bf;
+  --color-tosca-500: #14b8a6;
+  --color-tosca-600: #0d9488;
+  --color-tosca-700: #0f766e;
+
+  /* ===== Latar: sky tint muda + krem hangat (bukan putih polos) ===== */
+  --color-cream-50: #fdfaf3;
+  --color-cream-100: #faf4e8;
+  --color-cream-200: #f3ead7;
+
+  /* ===== Dark mode: sky navy ===== */
+  --color-navy-700: #0f2a3d;
+  --color-navy-800: #0b2233;
+  --color-navy-900: #071724;
+  --color-navy-950: #04101a;
+
+  /* Bentuk membulat besar */
+  --radius-blob: 1.75rem;
+
+  --font-display: 'Baloo 2', 'Quicksand', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ===== Native feel global ===== */
+html {
+  background: var(--color-sky-50);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: none; /* cegah pull-bounce browser */
+}
+
+body {
+  font-family: var(--font-body);
+  touch-action: manipulation; /* matikan double-tap zoom */
+  overscroll-behavior-y: none;
+}
+
+/* Elemen UI tidak bisa diseleksi; konten bacaan tetap bisa */
+button, nav, header, [role='tablist'], .no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Safe area helpers (notch & home indicator) */
+.pt-safe { padding-top: max(env(safe-area-inset-top), 0.5rem); }
+.pb-safe { padding-bottom: max(env(safe-area-inset-bottom), 0.25rem); }
+.px-safe { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+/* ===== Dark mode (class-based) ===== */
+.dark html, html.dark {
+  background: var(--color-navy-900);
+}
+
+/* Scrollbar disembunyikan di chip scroller horizontal */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

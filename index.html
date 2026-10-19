@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>Montessori Playbook</title>
+    <meta name="description" content="Panduan Montessori lengkap untuk orang tua dengan anak usia 0-5 tahun" />
+    <link rel="icon" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Playbook" />
+    <meta name="theme-color" content="#38bdf8" />
+    <!-- Splash screen inline: cegah white flash sebelum JS hidup -->
+    <style>
+      html { background: #f0f7fb; }
+      #boot-splash {
+        position: fixed; inset: 0; z-index: 9999;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        background: linear-gradient(180deg, #e0f2fe 0%, #f0f7fb 60%, #fdf9ef 100%);
+        transition: opacity .25s ease;
+      }
+      #boot-splash.hide { opacity: 0; pointer-events: none; }
+      #boot-splash .logo {
+        width: 84px; height: 84px; border-radius: 26px;
+        background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 44px; box-shadow: 0 8px 24px rgba(14,165,233,.35);
+        animation: bob 1.6s ease-in-out infinite;
+      }
+      @keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+    </style>
+  </head>
+  <body>
+    <div id="boot-splash">
+      <div class="logo">☁️</div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
