@@ -2509,7 +2509,7 @@
   },
   {
    "id": "mile-36m-mulai-berguling",
-   "title": "Perburuan guling pertama",
+   "title": "Percobaan guling pertama",
    "ageBand": "3-6m",
    "domain": "motorik-kasar",
    "description": "Di rentang 3-6 bulan umumnya bayi mulai melatih tubuhnya untuk mengguling, awalnya dari telentang ke tengkurap atau sebaliknya, walau tidak semua anak tepat di bulan yang sama.",
@@ -2533,7 +2533,7 @@
    "title": "Mulai menggapai mainan",
    "ageBand": "3-6m",
    "domain": "motorik-halus",
-   "description": "Umumnya bayi di rentang usia ini mulai berani mengulurkan tangan untuk menyentuh atau menepuk mainan yang digantung di depannya, meski bidikan masih sering belum tepat.",
+   "description": "Umumnya bayi di rentang usia ini mulai berani mengulurkan tangan untuk menyentuh atau menepuk mainan yang digantung di depannya, meski bidikannya belum tepat.",
    "typicalFromMonths": 4,
    "typicalToMonths": 6,
    "safetyNotes": [
@@ -2575,7 +2575,7 @@
    "title": "Meraban dan balas-membalas suara",
    "ageBand": "3-6m",
    "domain": "bahasa",
-   "description": "Umumnya bayi di rentang usia ini rajin mengeluarkan bunyi seru dan meraban seperti bunyi bunyi bila-bila atau bunyi bunyi guku-guku, dan mulai senang menunggu giliran bersuara selayaknya sedang berbincang dengan orang tuanya.",
+   "description": "Umumnya bayi di rentang usia ini rajin mengeluarkan bunyi seru dan meraban seperti 'bila-bila' atau 'guku-guku', dan mulai senang menunggu giliran bersuara selayaknya sedang berbincang dengan orang tuanya.",
    "typicalFromMonths": 4,
    "typicalToMonths": 6,
    "safetyNotes": [
@@ -2596,11 +2596,11 @@
    "title": "Tawa gemas awal",
    "ageBand": "3-6m",
    "domain": "sosial-emosional",
-   "description": "Banyak bayi di rentang usia ini mulai tertawa kecil atau bersuara berdecak saat mengajaknya bercanda dan bermanja-manja, tanda mana hangatnya ikatan di antara si kecil dengan orang tuanya sedang tumbuh.",
+   "description": "Banyak bayi di rentang usia ini mulai tertawa kecil atau bersuara berdecak saat mengajaknya bercanda dan bermanja-manja, tanda bahwa ikatan hangat di antara si kecil dengan orang tuanya sedang tumbuh.",
    "typicalFromMonths": 3,
    "typicalToMonths": 5,
    "safetyNotes": [
-    "Kalau mengajak bercanda, pilih gerakan lembut seperti dengulan atau sentuhan kecil; jangan goncangkan atau perahkan badan bayi karena sangat berbahaya bagi kepalanya."
+    "Kalau mengajak bercanda, pilih gerakan lembut seperti dengung lembut atau sentuhan kecil; jangan menggoyang atau menghentak badan bayi karena sangat berbahaya bagi kepalanya."
    ],
    "redFlags": [],
    "references": [
@@ -2636,7 +2636,7 @@
    "title": "Mata kerja melacak",
    "ageBand": "3-6m",
    "domain": "kognitif",
-   "description": "Banyak bayi pada rentang usia ini mulai bisa mengikuti benda yang bergerak pelan dengan matanya dan memperhatikan wajah orang di dekatnya dengan sungguh-sungguh, latihan sederhana ini bisa Anda pepuput setiap hari.",
+   "description": "Banyak bayi pada rentang usia ini mulai bisa mengikuti benda yang bergerak pelan dengan matanya dan memperhatikan wajah orang di dekatnya dengan sungguh-sungguh, latihan sederhana ini bisa Anda lakukan setiap hari.",
    "typicalFromMonths": 3,
    "typicalToMonths": 6,
    "safetyNotes": [
@@ -2661,7 +2661,7 @@
    "typicalFromMonths": 3,
    "typicalToMonths": 6,
    "safetyNotes": [
-    "Beri jalan kepada selera raba-raba tangannya dengan menjaga tangan dan sisir kuku bayi tetap bersih dan terpotong pendek supaya raba-raba aman."
+    "Beri kesempatan pada keingintahuannya untuk meraba dengan menjaga tangan dan kuku bayi tetap bersih serta terpotong pendek agar aman."
    ],
    "redFlags": [],
    "references": [

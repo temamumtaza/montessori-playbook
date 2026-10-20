@@ -1,15 +1,15 @@
-import { useEffect, useState, createContext, useContext } from 'react'
+import { lazy, Suspense, useEffect, useState, useRef, createContext, useContext } from 'react'
 import { Routes, Route, NavLink, useLocation } from 'react-router-dom'
 import { TodayPage } from './pages/TodayPage'
-import { PlaybookPage } from './pages/PlaybookPage'
-import { JournalPage } from './pages/JournalPage'
-import { ProgressPage } from './pages/ProgressPage'
-import { MorePage } from './pages/MorePage'
-import { ActivityDetailPage } from './pages/ActivityDetailPage'
-import { SearchGlossaryPage } from './pages/SearchGlossaryPage'
-import { EnvironmentPage } from './pages/EnvironmentPage'
-import { LearnPage } from './pages/LearnPage'
-import { OnboardingPage } from './pages/OnboardingPage'
+const PlaybookPage = lazy(() => import('./pages/PlaybookPage').then((m) => ({ default: m.PlaybookPage })))
+const JournalPage = lazy(() => import('./pages/JournalPage').then((m) => ({ default: m.JournalPage })))
+const ProgressPage = lazy(() => import('./pages/ProgressPage').then((m) => ({ default: m.ProgressPage })))
+const MorePage = lazy(() => import('./pages/MorePage').then((m) => ({ default: m.MorePage })))
+const ActivityDetailPage = lazy(() => import('./pages/ActivityDetailPage').then((m) => ({ default: m.ActivityDetailPage })))
+const SearchGlossaryPage = lazy(() => import('./pages/SearchGlossaryPage').then((m) => ({ default: m.SearchGlossaryPage })))
+const EnvironmentPage = lazy(() => import('./pages/EnvironmentPage').then((m) => ({ default: m.EnvironmentPage })))
+const LearnPage = lazy(() => import('./pages/LearnPage').then((m) => ({ default: m.LearnPage })))
+const OnboardingPage = lazy(() => import('./pages/OnboardingPage').then((m) => ({ default: m.OnboardingPage })))
 import { UpdateToast } from './components/UpdateToast'
 import { swUpdate } from './pwa'
 import { useChildStore } from './stores/children'
@@ -33,6 +33,8 @@ const TABS = [
 export default function App() {
   const location = useLocation()
   const [scrollMem, setScrollMem] = useState<TabScroll>({})
+  const scrollMemRef = useRef(scrollMem)
+  useEffect(() => { scrollMemRef.current = scrollMem }, [scrollMem])
   const [isDark, setIsDark] = useState(
     () => localStorage.getItem('mp-theme') === 'dark' ||
       (localStorage.getItem('mp-theme') === null && window.matchMedia('(prefers-color-scheme: dark)').matches),
@@ -48,7 +50,7 @@ export default function App() {
   // Simpan scroll per tab & restore saat kembali
   useEffect(() => {
     const tab = TABS.find((t) => t.to === location.pathname)?.to ?? location.pathname
-    const saved = scrollMem[tab]
+    const saved = scrollMemRef.current[tab]
     if (saved !== undefined) requestAnimationFrame(() => window.scrollTo(0, saved))
     const onScroll = () => {
       setScrollMem((m) => (m[tab] === window.scrollY ? m : { ...m, [tab]: window.scrollY }))
@@ -63,18 +65,20 @@ export default function App() {
         {!isOnboarding && <Header title={titleFor(location.pathname)} />}
 
         <main className={`${isOnboarding ? 'px-safe' : 'px-safe pb-28 pt-2'} page-enter`} key={location.pathname}>
-          <Routes location={location}>
-            <Route path="/" element={<TodayPage />} />
-            <Route path="/onboarding" element={<OnboardingPage />} />
-            <Route path="/playbook" element={<PlaybookPage />} />
-            <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
-            <Route path="/cari" element={<SearchGlossaryPage />} />
-            <Route path="/jurnal" element={<JournalPage />} />
-            <Route path="/progres" element={<ProgressPage />} />
-            <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
-            <Route path="/lingkungan" element={<EnvironmentPage />} />
-            <Route path="/belajar" element={<LearnPage />} />
-          </Routes>
+          <Suspense fallback={<div className="min-h-48 animate-pulse rounded-3xl bg-white/70" role="status" aria-label="Memuat halaman" />}>
+            <Routes location={location}>
+              <Route path="/" element={<TodayPage />} />
+              <Route path="/onboarding" element={<OnboardingPage />} />
+              <Route path="/playbook" element={<PlaybookPage />} />
+              <Route path="/aktivitas/:id" element={<ActivityDetailPage />} />
+              <Route path="/cari" element={<SearchGlossaryPage />} />
+              <Route path="/jurnal" element={<JournalPage />} />
+              <Route path="/progres" element={<ProgressPage />} />
+              <Route path="/lainnya" element={<MorePage isDark={isDark} onToggleDark={() => setIsDark((d) => !d)} />} />
+              <Route path="/lingkungan" element={<EnvironmentPage />} />
+              <Route path="/belajar" element={<LearnPage />} />
+            </Routes>
+          </Suspense>
         </main>
 
         {!isOnboarding && <TabBar tabs={TABS} />}

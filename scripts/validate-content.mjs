@@ -55,16 +55,6 @@ function checkActivity(a, file, i) {
   stats.activities++
 }
 
-function checkGenericList(list, file, key, minFields, counter) {
-  if (!Array.isArray(list)) { err(file, `${key} harus array`); return }
-  list.forEach((item, i) => {
-    if (!item.id || !kebab(item.id)) err(file, `${key}[${i}].id harus kebab-case`)
-    for (const f of minFields) if (item[f] === undefined) err(file, `${key}[${i}].${f} wajib ada`)
-    checkSource(item.references ?? [{ title: 'internal', url: 'https://example.com' }], file, `${key}[${i}]`)
-    counter()
-  })
-}
-
 // ===== global.json =====
 const gp = join(contentDir, 'global.json')
 if (existsSync(gp)) {

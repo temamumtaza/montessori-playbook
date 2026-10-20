@@ -14,13 +14,13 @@ Tiga kualitas berulang di hampir semua sumber: lingkungan itu **cantik dan tenan
 
 ### 2.1 Aksesibel pada tinggi anak
 
-Aturan paling mendasar: segala yang anak perlukan secara rutin harus bisa dijangkau **tanpa meminta bantuan**. Kalau anak harus minta tolong tiap kali mau ambil gelas, baju, atau mainan, lingkungan itu belum "dipersiapkan" — ia masih milik orang dewasa. Bentuk konkret prinsip ini: rak terbuka rendah, kait setinggi bahu anak, cermin rendah, step stool di wastafel, laci pakaian yang bisa ditarik sendiri, pitcher kecil untuk menuang sendiri.
+Aturan paling mendasar: segala yang anak perlukan secara rutin harus bisa dijangkau **tanpa meminta bantuan**. Kalau anak harus minta tolong tiap kali mau ambil gelas, baju, atau mainan, lingkungan itu belum "dipersiapkan" — ia masih milik orang dewasa. Bentuk konkret prinsip ini: rak terbuka rendah, kait setinggi bahu anak, cermin rendah, step stool di wastafel, laci pakaian yang bisa ditarik sendiri, teko tuang kecil untuk menuang sendiri.
 
 Cara mengujinya sederhana: berjongkok, lalu merangkak menyusuri rumah pada garis pandang anak. Apa yang terlihat? Apa yang bisa dijangkau? Apa yang menggantung membahayakan? Pengalaman visual orang dewasa dan anak sangat berbeda — meja tampak seperti dinding, lemari seperti tebing panjat, kabel seperti tali tarik yang mengundang.
 
 ### 2.2 Terbatas dan tertata
 
-Kesalahan paling umum di rumah bukan terlalu sedikit mainan, melainkan terlalu banyak. Rak yang penuh sesak membuat anak kewalahan: ia berpindah-pindah tanpa pernah mendalam, atau membuang-buang isi keranjang tanpa benar-benar bermain. Rekomendasi yang konsisten antar sumber: **4–8 aktivitas** yang terlihat pada satu waktu (beberapa sumber memberi kisaran hingga 10–12 untuk usia prasekolah; bayi cukup 3–5). Setiap materi diletakkan di **tray atau keranjang terpisah** — satu aktivitas satu wadah, lengkap dengan segala yang dibutuhkan aktivitas itu. Tray bukan sekadar wadah: ia mendefinisikan "ruang kerja" aktivitas, dan mengajarkan anak membawa serta lalu mengembalikan satu kesatuan utuh.
+Kesalahan paling umum di rumah bukan terlalu sedikit mainan, melainkan terlalu banyak. Rak yang penuh sesak membuat anak kewalahan: ia berpindah-pindah tanpa pernah mendalam, atau membuang-buang isi keranjang tanpa benar-benar bermain. Rekomendasi yang konsisten antar sumber: **4–8 aktivitas** yang terlihat pada satu waktu (beberapa sumber memberi kisaran hingga 10–12 untuk usia prasekolah; bayi cukup 3–5). Setiap materi diletakkan di **nampan atau keranjang terpisah** — satu aktivitas satu wadah, lengkap dengan segala yang dibutuhkan aktivitas itu. nampan bukan sekadar wadah: ia mendefinisikan "ruang kerja" aktivitas, dan mengajarkan anak membawa serta lalu mengembalikan satu kesatuan utuh.
 
 Aturan kedua: setiap benda punya tempatnya — anak menata kembali hanya jika tahu ke mana tempatnya. Konsistensi tempat membangun rasa urutan internal, fondasi konsentrasi dan kedisiplinan diri. Rak boleh diberi siluet/gambar isinya agar anak kecil bisa mengembalikan tanpa perlu bisa membaca.
 
@@ -30,7 +30,7 @@ Karena jumlah yang terlihat dibatasi, sisanya disimpan — dan diperkenalkan kem
 
 ### 2.4 Urutan dan rutinitas
 
-Urutan dalam prepared environment bekerja dua arah. Horizontal: materi di rak disusun dari sederhana ke kompleks, kiri ke kanan, konkret ke abstrak — anak belajar "membaca" rak dari kiri. Vertikal: tingkat tersulit di rak bawah (paling mudah dijangkau anak), tingkat lebih mudah di atas. Rutinitas adalah versi temporal dari urutan: langkah yang sama, dengan urutan yang sama, setiap kali. Rutinitas tidur (mandi, piyama, buku, lampu mati) dan rutinitas pulang (sepatu di rak, tas di kait, mainan kembali ke tray) memberi anak prediktabilitas; dari prediktabilitas lahirlah rasa aman, dan dari rasa aman lahirlah kemandirian. Anak yang tahu persis apa yang terjadi setelah ini tidak perlu menguji batas untuk merasa terkendali.
+Urutan dalam prepared environment bekerja dua arah. Horizontal: materi di rak disusun dari sederhana ke kompleks, kiri ke kanan, konkret ke abstrak — anak belajar "membaca" rak dari kiri. Vertikal: tingkat tersulit di rak bawah (paling mudah dijangkau anak), tingkat lebih mudah di atas. Rutinitas adalah versi temporal dari urutan: langkah yang sama, dengan urutan yang sama, setiap kali. Rutinitas tidur (mandi, piyama, buku, lampu mati) dan rutinitas pulang (sepatu di rak, tas di kait, mainan kembali ke nampan) memberi anak prediktabilitas; dari prediktabilitas lahirlah rasa aman, dan dari rasa aman lahirlah kemandirian. Anak yang tahu persis apa yang terjadi setelah ini tidak perlu menguji batas untuk merasa terkendali.
 
 ### 2.5 Minim distraksi, kaya ruang gerak
 
@@ -48,11 +48,11 @@ Elemen lain kamar tidur: (1) **rak mainan rendah terbuka** berisi 6–8 aktivita
 
 ### 3.2 Kamar mandi: step stool, handuk rendah, stasiun perawatan diri
 
-Inti kamar mandi versi anak: **step stool kokoh** di depan wastafel. Dengan alat sekecil itu anak bisa cuci tangan, sikat gigi, dan cuci muka sepenuhnya sendiri — sebagian sumber menyebut step stool perubahan tunggal paling berdampak di seluruh rumah. Pelengkapnya: **handuk kecil di kait rendah** (cuci, kering, gantung sendiri — satu siklus utuh milik anak), sikat gigi dan pasta dalam cangkir terjangkau, sabun pump foam, keranjang lap bertanda, dan **cermin setinggi anak** — bila cermin utama terlalu tinggi, pasang cermin kecil rendah. Untuk belajar toilet: pispot kecil atau dudukan insert plus step stool agar kaki stabil. Tempat sampah dan keranjang pakaian kotor terjangkau melengkapi siklus beres-beres mandiri; sebagian keluarga menambah kartu rutinitas bergambar.
+Inti kamar mandi versi anak: **step stool kokoh** di depan wastafel. Dengan alat sekecil itu anak bisa cuci tangan, sikat gigi, dan cuci muka sepenuhnya sendiri — sebagian sumber menyebut step stool perubahan tunggal paling berdampak di seluruh rumah. Pelengkapnya: **handuk kecil di kait rendah** (cuci, kering, gantung sendiri — satu siklus utuh milik anak), sikat gigi dan pasta dalam cangkir terjangkau, sabun busa berpompa (foam soap), keranjang lap bertanda, dan **cermin setinggi anak** — bila cermin utama terlalu tinggi, pasang cermin kecil rendah. Untuk belajar toilet: pispot kecil atau dudukan insert plus step stool agar kaki stabil. Tempat sampah dan keranjang pakaian kotor terjangkau melengkapi siklus beres-beres mandiri; sebagian keluarga menambah kartu rutinitas bergambar.
 
 ### 3.3 Dapur: pantry rendah, snack station, alat ukuran anak
 
-Dapur adalah laboratorium practical life terbesar di rumah. Pertama, **snack station**: satu rak rendah di pantry atau laci bawah berisi 2–3 camilan sehat dalam wadah yang bisa dibuka sendiri — pisang, biskuit dalam toples, kismis dalam jar; anak yang lapar mengambil sendiri, drama "aku lapar — tunggu, Ibu sibuk" menghilang. Kedua, **laci peralatan anak**: piring, gelas, mangkuk, sendok garpu ukuran anak di kabinet rendah tanpa pengaman — anak bisa menata meja makan sendiri. Pakai peralatan sungguhan (keramik kecil oke dari ±18 bulan): pecahnya pelajaran konsekuensi alami, dan rasa dipercaya lebih bernilai daripada risiko satu gelas. Ketiga, **air mandiri**: pitcher kecil atau dispenser lambat. Keempat, **alat ukuran anak**: pisau aman, talenan kecil, pengupas, whisk, celemek di kait rendah, sapu kecil dan pengki, botol semprot air, wadah sisa, keranjang kain kotor. Kelima, untuk ikut memasak di meja dapur: **learning tower** berpagar atau step stool kokoh — satu-satunya "perabot" yang banyak keluarga anggap layak dibeli baru, karena menyangkut keselamatan di ketinggian.
+Dapur adalah laboratorium kehidupan praktis terbesar di rumah. Pertama, **snack station**: satu rak rendah di pantry atau laci bawah berisi 2–3 camilan sehat dalam wadah yang bisa dibuka sendiri — pisang, biskuit dalam toples, kismis dalam jar; anak yang lapar mengambil sendiri, drama "aku lapar — tunggu, Ibu sibuk" menghilang. Kedua, **laci peralatan anak**: piring, gelas, mangkuk, sendok garpu ukuran anak di kabinet rendah tanpa pengaman — anak bisa menata meja makan sendiri. Pakai peralatan sungguhan (keramik kecil oke dari ±18 bulan): pecahnya pelajaran konsekuensi alami, dan rasa dipercaya lebih bernilai daripada risiko satu gelas. Ketiga, **air mandiri**: teko tuang kecil atau dispenser lambat. Keempat, **alat ukuran anak**: pisau aman, talenan kecil, pengupas, whisk, celemek di kait rendah, sapu kecil dan pengki, botol semprot air, wadah sisa, keranjang kain kotor. Kelima, untuk ikut memasak di meja dapur: **learning tower** berpagar atau step stool kokoh — satu-satunya "perabot" yang banyak keluarga anggap layak dibeli baru, karena menyangkut keselamatan di ketinggian.
 
 ### 3.4 Ruang keluarga
 
@@ -68,21 +68,21 @@ Perabot inti prepared environment di rumah sebenarnya pendek:
 
 | # | Perabot | Fungsi | Catatan |
 |---|---------|--------|---------|
-| 1 | Rak terbuka 1–3 tingkat | Etalase aktivitas terbatas; ambil & kembalikan mandiri | Tinggi total ideal 40–80 cm; kedalaman 25–30 cm agar tray muat; **wajib di-anchor** |
+| 1 | Rak terbuka 1–3 tingkat | Etalase aktivitas terbatas; ambil & kembalikan mandiri | Tinggi total ideal 40–80 cm; kedalaman 25–30 cm agar nampan muat; **wajib dipasangi pengikat antiroboh** |
 | 2 | Meja + kursi kecil | Kerja, makan camilan, seni | Permukaan 30–45 cm sesuai usia; kursi ringan agar anak bisa memindah sendiri |
-| 3 | Alat ukuran anak | Practical life: dapur, mandi, bersih-bersih | Pisau aman, pitcher, sapu kecil, celemek; kuncinya fungsional, bukan mainan |
+| 3 | Alat ukuran anak | kehidupan praktis: dapur, mandi, bersih-bersih | Pisau aman, teko tuang, sapu kecil, celemek; kuncinya fungsional, bukan mainan |
 | 4 | Step stool / learning tower | Jangkauan wastafel & meja dapur | Step stool anti-slip untuk kamar mandi; tower berpagar untuk memasak bersama |
 | 5 | Cermin rendah | Kesadaran tubuh & perawatan diri | Bayi: horizontal di lantai, akrilik atau terpasang kokoh; anak besar: cermin berdiri kecil |
 | 6 | Etalase buku menghadap depan | Menumbuhkan minat baca | Rak bumbu/picture ledge cukup; 5–8 buku, sampul keluar |
 | 7 | Gantungan & laci pakaian rendah | Memilih & membereskan pakaian | 3–5 pilihan saja; keranjang piyama dan baju kotor |
-| 8 | Tray dan keranjang | Satu aktivitas satu wadah | Rotasi tray dari nampan dapur murah; konsistensi tempat |
+| 8 | nampan dan keranjang | Satu aktivitas satu wadah | Rotasi nampan dari nampan dapur murah; konsistensi tempat |
 | 9 | Matras / karpet kerja | Mendefinisikan area kerja & gerak | Anti-slip, mudah dicuci |
 
 Kalau anggaran hanya cukup untuk tiga hal, urutan prioritas yang disarankan berbagai sumber: **(1) rak rendah terbuka, (2) satu step stool kokoh, (3) kait/keranjang setinggi anak**. Sisanya menyusul bertahap.
 
 ## 5. Opsi budget: rendah vs sedang, plus DIY
 
-Tidak ada keharusan membeli perabot "Montessori" bermerek; hampir semua panduan menekankan prinsip bisa dipenuhi dengan perabot murah, barang second, dan barang yang sudah ada di rumah. Tabel berikut membandingkan opsi rendah dan sedang per item plus alternatif DIY (angka USD, rentang kasar antar panduan; padanannya di Indonesia mudah dicari di toko furniture lokal atau marketplace — rak plastik susun, kubus kayu lokal, kursi jati belanda).
+Tidak ada keharusan membeli perabot "Montessori" bermerek; hampir semua panduan menekankan prinsip bisa dipenuhi dengan perabot murah, barang bekas, dan barang yang sudah ada di rumah. Tabel berikut membandingkan opsi rendah dan sedang per item plus alternatif DIY (angka USD, rentang kasar antar panduan; padanannya di Indonesia mudah dicari di toko furniture lokal atau marketplace — rak plastik susun, kubus kayu lokal, kursi jati belanda).
 
 | Item | Opsi rendah | Opsi sedang | Alternatif DIY |
 |------|-------------|-------------|----------------|
@@ -91,14 +91,14 @@ Tidak ada keharusan membeli perabot "Montessori" bermerek; hampir semua panduan 
 | Meja-kursi anak | Set kayu ringan lokal ~USD 30–40 | Meja+kursi kayu solid USD 80–150 | Papan di atas dua tumpukan kardus tebal (sementara, beban ringan) |
 | Learning tower / step stool | Step stool kokoh USD 15–25 | Learning tower USD 80–150 | Stool dewasa yang stabil + pengawasan dekat; tower DIY dari papan (butuh alat dan keahlian) |
 | Cermin rendah | Lembar cermin/akrilik + perekat dinding < USD 20 | Cermin kaca berbingkai terpasang kokoh USD 30–60 | Cermin kecil dipasang rendah di dinding dengan perekat kuat |
-| Alat dapur anak | Pisau nylon, talenan, mangkuk, pitcher lokal < USD 15 total | Set "real tools" anak USD 30–60 | Sendok, gelas, mangkuk dari rak dapur sendiri (gratis) |
-| Tray aktivitas | Nampan dapur plastik/melamin USD 2–5/pcs | Tray kayu USD 8–15/pcs | Nampan dapur bekas, tutup wadah plastik, kardus tipis dilapisi selotip |
+| Alat dapur anak | Pisau nylon, talenan, mangkuk, teko tuang lokal < USD 15 total | Set "real tools" anak USD 30–60 | Sendok, gelas, mangkuk dari rak dapur sendiri (gratis) |
+| nampan aktivitas | Nampan dapur plastik/melamin USD 2–5/pcs | nampan kayu USD 8–15/pcs | Nampan dapur bekas, tutup wadah plastik, kardus tipis dilapisi selotip |
 | Keranjang | Keranjang plastik/rotan sintetis USD 3–8 | Keranjang rotan asli USD 15–30 | Kardus bekas dilapisi kain; tas kain tua |
 | Kait rendah | Command hook / kait tempel USD 3–5 | Kait kuningan + dudukan USD 10–20 | Kait dari kayu sisa berbentuk L |
 | Matras kerja | Keset anti-slip USD 5–10 | Matras Montessori USD 30–60 | Keset mandi tua; taplak meja tebal anti-slip |
-| Anchor keselamatan | Strap anti-tipping USD 5–10/paket | L-bracket metal + plug USD 10–20 | Kawat galvanis + sekrup ke dinding (kokoh tapi kurang rapi) |
+| pengikat antiroboh keselamatan | Strap anti-tipping USD 5–10/paket | L-bracket metal + plug USD 10–20 | Kawat galvanis + sekrup ke dinding (kokoh tapi kurang rapi) |
 
-Prinsipnya: **versi rendah dan DIY sama fungsinya** asal tiga syarat terpenuhi — kokoh (tidak goyang, tidak bersudut tajam), stabil (tidak mudah roboh; kardus hanya untuk beban ringan, bukan untuk dipanjat), dan konsisten (aturan rak/tray tetap berlaku). Untuk rak utama, kayu atau particle board tetap lebih aman daripada kardus. Jika hanya satu hal yang layak dibeli baru, pilih learning tower/step stool berkualitas — menyangkut keselamatan di ketinggian.
+Prinsipnya: **versi rendah dan DIY sama fungsinya** asal tiga syarat terpenuhi — kokoh (tidak goyang, tidak bersudut tajam), stabil (tidak mudah roboh; kardus hanya untuk beban ringan, bukan untuk dipanjat), dan konsisten (aturan rak/nampan tetap berlaku). Untuk rak utama, kayu atau papan partikel tetap lebih aman daripada kardus. Jika hanya satu hal yang layak dibeli baru, pilih learning tower/step stool berkualitas — menyangkut keselamatan di ketinggian.
 
 ## 6. Rotasi materi: berapa, kapan, dan penyimpanannya
 
@@ -112,7 +112,7 @@ Ritme dasar yang disarankan: **setiap 1–2 minggu** untuk balita, bisa 2–4 mi
 
 - Ada materi yang **tak disentuh sekitar seminggu penuh**.
 - Mainan **dibuang atau dilempar** alih-alih dipakai sesuai fungsinya.
-- Anak **berpindah-pindah** tanpa pernah mendalami, atau meminta layar/camilan/ortu alih-alih memilih materi.
+- Anak **berpindah-pindah** tanpa pernah mendalami, atau meminta layar, camilan, atau orang tua alih-alih memilih materi.
 - Sebuah materi **dikuasai dalam hitungan detik** — terlalu mudah, tak lagi menantang.
 - Beres-beres berubah jadi pertengkaran, atau lantai penuh sesak hanya dalam sejam.
 
@@ -124,29 +124,29 @@ Sebelum menukar materi, duduklah diam di dekat anak selama ia bekerja: materi ap
 
 ### 6.4 Penyimpanan rotasi
 
-Sisanya simpan **di luar jangkauan dan pandangan** — lemari tertutup, rak tinggi, kardus di bawah kasur. Praktik yang disarankan: bagi sisa mainan menjadi 3–4 **bin berlabel** berisi campuran kategori (motorik halus, practical life, bahasa, bermain peran) supaya tiap rotasi masuk seimbang tanpa berpikir panjang; label gambar memudahkan semua pengasuh. Apa yang tak terlihat tidak mengundang — anak tidak bisa meminta barang rotasi yang tidak ia lihat. Total koleksi tak perlu besar: cukup sekitar dua kali jumlah yang tampil (misalnya 8 di rak + 8–10 di simpanan). Rotasi juga berlaku untuk buku (ganti sampul etalase mingguan) dan materi musiman.
+Sisanya simpan **di luar jangkauan dan pandangan** — lemari tertutup, rak tinggi, kardus di bawah kasur. Praktik yang disarankan: bagi sisa mainan menjadi 3–4 **bin berlabel** berisi campuran kategori (motorik halus, kehidupan praktis, bahasa, bermain peran) supaya tiap rotasi masuk seimbang tanpa berpikir panjang; label gambar memudahkan semua pengasuh. Apa yang tak terlihat tidak mengundang — anak tidak bisa meminta barang rotasi yang tidak ia lihat. Total koleksi tak perlu besar: cukup sekitar dua kali jumlah yang tampil (misalnya 8 di rak + 8–10 di simpanan). Rotasi juga berlaku untuk buku (ganti sampul etalase mingguan) dan materi musiman.
 
 ## 7. Keselamatan rumah: fondasi kemandirian
 
 Kemandirian hanya aman bila lingkungannya aman untuk dijelajahi tanpa pengawasan ketat — dan untuk anak dengan floor bed, ini bukan opsional.
 
-### 7.1 Anchor perabot ke dinding
+### 7.1 pengikat antiroboh perabot ke dinding
 
 Ini peringatan paling keras dari semua sumber keselamatan. Data Consumer Product Safety Commission (AS): 2000–2019 tercatat ±450 kematian anak akibat perabot/TV terjatuh (*tip-over*), rata-rata **±11.000 anak per tahun** dirawat di unit gawat darurat; mayoritas korban di bawah 6 tahun, separuh insiden fatal terjadi di kamar tidur — termasuk saat orang tua mengira anaknya tertidur. Skenario khasnya persis aktivitas anak di prepared environment: **memanjat, menarik-narik, berpegangan pada perabot untuk berdiri**. Rak rendah pun yang dipanjat tetap bisa roboh.
 
-Praktiknya: pasang strap anti-tipping atau L-bracket metal pada semua rak, lemari, dan cermin; sekrup masuk ke **stud dinding** (umumnya berselang ±40 cm) atau pakai plug sesuai jenis dinding; pasang di kayu solid perabot, bukan papan tipis; makin berat perabot, makin banyak titik ikatan. Barang berat di rak/laci bawah; jangan simpan mainan menarik di tempat tinggi — itu undangan memanjat; jangan letakkan TV di atas lemari. Beri laci *stop* agar tak jadi tangga. Uji dengan menarik perabot ke depan: kalau bergeser, perkuat.
+Praktiknya: pasang strap anti-tipping atau L-bracket metal pada semua rak, lemari, dan cermin; sekrup menancap ke balok rangka dinding (umumnya berjarak ±40 cm) atau pakai angkur (dynabolt) atau plug, sesuai jenis dinding; pasang di kayu solid perabot, bukan papan tipis; makin berat perabot, makin banyak titik ikatan. Barang berat di rak/laci bawah; jangan simpan mainan menarik di tempat tinggi — itu undangan memanjat; jangan letakkan TV di atas lemari. Beri laci *stop* agar tak jadi tangga. Uji dengan menarik perabot ke depan: kalau bergeser, perkuat.
 
 ### 7.2 Aman listrik
 
-Stop kontak tak terpakai ditutup **penutup kejut** yang sulit dicabut anak; stop kontak terpakai di area bermain pakai kotak pelindung. Kabel lampu, charger, dan TV dirapatkan, diikat, atau masuk kotak kabel — kabel menggantung bahaya strangulasi sekaligus undangan menarik alat jatuh. Strip listrik dinaikkan atau dipenutup; hindari kabel ekstensi melintang di lantai bermain. Lampu dalam jangkauan anak sebaiknya LED tak panas dengan kabel terikat. Karena anak floor bed bebas berjalan tengah malam, semua ini mencakup kamar tidur, bukan hanya ruang bermain.
+Stop kontak tak terpakai ditutup penutup stop kontak anti-sengat (plugin protector) yang sulit dicabut anak; stop kontak terpakai di area bermain pakai kotak pelindung. Kabel lampu, charger, dan TV dirapatkan, diikat, atau masuk kotak kabel — kabel menggantung bahaya strangulasi sekaligus undangan menarik alat jatuh. Strip listrik dinaikkan atau dipenutup; hindari kabel ekstensi melintang di lantai bermain. Lampu dalam jangkauan anak sebaiknya LED tak panas dengan kabel terikat. Karena anak floor bed bebas berjalan tengah malam, semua ini mencakup kamar tidur, bukan hanya ruang bermain.
 
 ### 7.3 Tanaman non-toksik
 
-Tanaman mempercantik prepared environment dan bisa jadi materi perawatan (menyiram, mengelap daun), tapi harus aman bila tersentuh — atau ditelan sedikit, karena anak pasti mencoba. Umumnya aman: **spider plant (Chlorophytum comosum)** — juara utama: tahan banting, non-toksik, tunasnya menggantung menarik — serta **Boston fern**, **areca palm**, **calathea**, **African violet**. Jauhkan dari jangkauan (banyak yang umum di rumah): **pothos**, **snake plant**, monstera, philodendron, dieffenbachia, oleander, kaktus/euphorbia berduri atau bergetah iritan. Aturan penempatan: selama ada balita, tanaman di rak tinggi atau gantungan; pot berat ber alas lebar agar tak roboh saat ditarik; tutup media tanam (tanah bisa jadi bahan main dan tersedak). Tanaman lama yang diragukan dicek ke daftar tanaman beracun (ASPCA/poison center) atau dititipkan dulu. Pisahkan tanaman hias dari tanaman pangan agar anak tidak mengira semua tanaman boleh dimakan.
+Tanaman mempercantik prepared environment dan bisa jadi materi perawatan (menyiram, mengelap daun), tapi harus aman bila tersentuh — atau ditelan sedikit, karena anak pasti mencoba. Umumnya aman: **spider plant (Chlorophytum comosum)** — juara utama: tahan banting, non-toksik, tunasnya menggantung menarik — serta **Boston fern**, **areca palm**, **calathea**, **African violet**. Jauhkan dari jangkauan (banyak yang umum di rumah): **pothos**, **snake plant**, monstera, philodendron, dieffenbachia, oleander, kaktus/euphorbia berduri atau bergetah iritan. Aturan penempatan: selama ada balita, tanaman di rak tinggi atau gantungan; pot berat beralas lebar agar tak roboh saat ditarik; tutup media tanam (tanah bisa jadi bahan main dan tersedak). Tanaman lama yang diragukan dicek ke daftar tanaman beracun (ASPCA/poison center) atau dititipkan dulu. Pisahkan tanaman hias dari tanaman pangan agar anak tidak mengira semua tanaman boleh dimakan.
 
 ### 7.4 Ritual "merangkak" berkala
 
-Prepared environment berubah seiring pertumbuhan anak; jadikan pemeriksaan keselamatan bagian dari ritme rotasi. Setiap satu-dua bulan, merangkaklah menyusuri area anak: periksa sudut tajam baru, kabel baru, benda kecil pencedok (uji tabung kertas toilet: yang masuk terlalu kecil untuk balita), tanaman yang menggantung rendah, dan anchor yang kendur. Keselamatan bukan proyek sekali jadi; ia ikut berotasi.
+Prepared environment berubah seiring pertumbuhan anak; jadikan pemeriksaan keselamatan bagian dari ritme rotasi. Setiap satu-dua bulan, merangkaklah menyusuri area anak: periksa sudut tajam baru, kabel baru, dan benda kecil yang bisa tertelan (uji tabung kertas toilet: yang masuk terlalu kecil untuk balita), tanaman yang menggantung rendah, dan pengikat antiroboh yang kendur. Keselamatan bukan proyek sekali jadi; ia ikut berotasi.
 
 ## 8. Urutan penerapan: mulai kecil, bertahap
 
@@ -195,24 +195,24 @@ Semua sumber diparafrase; diakses Oktober 2026.
 - Prepared environment = ruang yang disusun agar anak bisa bertindak mandiri: aksesibel setinggi anak, terbatas jumlahnya, tertata, aman, minim distraksi; lingkungan berperan sebagai "guru ketiga".
 - Tiga kualitas inti: cantik & tenang (bersih, minim pajangan), aksesibel (bisa diambil & dikembalikan sendiri), fungsional (tiap elemen punya tujuan jelas) — plus aman untuk ditinggal tanpa pengawasan ketat.
 - Uji aksesibilitas: berjongkok/merangkak mengikuti garis pandang anak; semua yang dipakai rutin harus terjangkau tanpa minta tolong.
-- Batasi aktivitas terlihat: bayi 3–4, balita 1–3 tahun 6–8, usia prasekolah 8–12; satu aktivitas = satu tray/keranjang; sebagian kubus rak sengaja dibiarkan kosong.
+- Batasi aktivitas terlihat: bayi 3–4, balita 1–3 tahun 6–8, usia prasekolah 8–12; satu aktivitas = satu nampan/keranjang; sebagian kubus rak sengaja dibiarkan kosong.
 - Setiap benda punya tempat tetap; rak bisa diberi siluet/gambar agar anak bisa membereskan tanpa perlu bisa membaca.
 - Susun rak kiri→kanan dari sederhana ke kompleks; benda termudah di rak bawah, yang sulit di atas.
 - Kamar tidur: floor bed (kasur keras di lantai/bingkai 5–10 cm; kasur lunak tidak aman untuk bayi <12 bulan), rak mainan rendah, etalase buku sampul-depan 5–8 buku, cermin rendah (bayi: horizontal, akrilik/kokoh), gantungan 3–5 pakaian, keranjang piyama & baju kotor, lampu yang bisa dioperasikan anak.
-- Floor bed mengubah kamar jadi "boks" raksasa: seluruh kamar harus aman dijelajahi tanpa pengawasan — anchor, tutup stop kontak, kabel blind terikat tinggi, pagar pintu bila perlu.
+- Floor bed mengubah kamar jadi "boks" raksasa: seluruh kamar harus aman dijelajahi tanpa pengawasan — pengikat antiroboh, tutup stop kontak, kabel blind terikat tinggi, pagar pintu bila perlu.
 - Kamar mandi: step stool kokoh (perubahan paling berdampak di rumah), handuk di kait rendah, sikat gigi & sabun foam terjangkau, cermin setinggi anak, pispot/insert + stool untuk toilet learning, keranjang pakaian kotor terjangkau.
-- Dapur: snack station (rak/laci rendah, 2–3 camilan sehat dalam wadah terbuka-mandi), laci peralatan anak (piring/gelas/mangkuk sungguhan; keramik oke dari ±18 bulan), pitcher air mandiri, alat ukuran anak (pisau aman, talenan, celemek di kait rendah, sapu kecil), learning tower/step stool untuk ikut memasak.
+- Dapur: snack station (rak/laci rendah, 2–3 camilan sehat dalam wadah yang mudah dibuka sendiri), laci peralatan anak (piring/gelas/mangkuk sungguhan; keramik oke dari ±18 bulan), teko tuang air mandiri, alat ukuran anak (pisau aman, talenan, celemek di kait rendah, sapu kecil), learning tower/step stool untuk ikut memasak.
 - Ruang keluarga: "pulau anak" — rak rendah 4–6 aktivitas, karpet area bermain, meja kecil; pagari sudut tajam, rapikan kabel TV/charger, amankan TV.
 - Area belajar (2,5 th+): meja-kursi ukuran anak (kaki menyentuh lantai), matras kerja yang digulung, stasiun seni sederhana, etalase buku; konsistensi tempat lebih penting daripada ruangan khusus.
-- Perabot inti: rak terbuka 1–3 tingkat (tinggi 40–80 cm, dalam 25–30 cm, WAJIB di-anchor), meja-kursi kecil, alat ukuran anak, step stool/tower, cermin rendah, etalase buku, tray & keranjang, matras kerja.
+- Perabot inti: rak terbuka 1–3 tingkat (tinggi 40–80 cm, dalam 25–30 cm, WAJIB dipasangi pengikat antiroboh), meja-kursi kecil, alat ukuran anak, step stool/tower, cermin rendah, etalase buku, nampan & keranjang, matras kerja.
 - Prioritas beli saat anggaran terbatas: (1) rak rendah terbuka, (2) step stool kokoh, (3) kait/keranjang setinggi anak; sisanya bertahap.
-- Opsi murah terbukti cukup: rak kubus dibaringkan (~USD 40–70) untuk rak aktivitas, rak bumbu/picture ledge (~USD 5–15) untuk etalase buku, step stool kokoh (~USD 15–25); DIY: rak dari peti kardus tebal + papan, etalase buku dari talang PVC, tray dari nampan dapur, kait dari kayu sisa; syarat DIY: kokoh, stabil, tanpa sudut tajam — kardus hanya untuk beban ringan.
+- Opsi murah terbukti cukup: rak kubus dibaringkan (~USD 40–70) untuk rak aktivitas, rak bumbu/picture ledge (~USD 5–15) untuk etalase buku, step stool kokoh (~USD 15–25); DIY: rak dari peti kardus tebal + papan, etalase buku dari talang PVC, nampan dari nampan dapur, kait dari kayu sisa; syarat DIY: kokoh, stabil, tanpa sudut tajam — kardus hanya untuk beban ringan.
 - Rotasi: tiap 1–2 minggu (balita) atau 2–4 minggu (prasekolah); ganti hanya 2–4 materi sekaligus, maksimal 3 materi baru, saat anak tidak ada.
 - Tanda perlu rotasi: materi tak disentuh ±1 minggu, mainan dibuang/dilempar, anak berpindah tanpa mendalam atau minta layar, materi dikuasai dalam hitungan detik, beres-beres jadi pertengkaran; JANGAN rotasi materi yang sedang diminati.
 - Observasi sebelum rotasi: catat materi pilihan, durasi, cara pakai, titik frustrasi; simpan materi yang dihindari dan tawarkan lagi nanti.
 - Penyimpanan rotasi: di luar pandangan & jangkauan, dibagi 3–4 bin berlabel (label gambar) berisi campuran kategori; total koleksi cukup ±2x jumlah yang tampil; buku juga dirotasi mingguan.
-- Keselamatan — anchor: pasang strap/L-bracket ke stud dinding pada semua rak, lemari, cermin; data CPSC: ±11.000 kunjungan ER/tahun di AS, mayoritas korban <6 tahun, separuh insiden fatal di kamar tidur; barang berat di bawah, jangan simpan mainan di tempat tinggi, laci diberi stop.
-- Keselamatan — listrik: penutup stop kontak yang sulit dicabut, kotak pelindung untuk stop kontak terpakai, kabel dirapatkan/diikat/di-box, strip listrik dinaikkan, hindari ekstensi melintang; lampu anak = LED tak panas.
-- Keselamatan — tanaman: aman = spider plant, Boston fern, areca palm, calathea, African violet; jauhkan = pothos, snake plant, monstera, philodendron, dieffenbachia, oleander, kaktus/euphorbia; pot berat ber alas lebar, tutup media tanam (tanah = bahaya tersedak), cek tanaman lama ke daftar tanaman beracun (ASPCA/poison center).
-- Ritual berkala: merangkak menyusuri area anak tiap 1–2 bulan — cek sudut baru, kabel baru, benda kecil (uji tabung toilet), anchor kendur; keselamatan ikut berotasi.
+- Keselamatan — pengikat antiroboh: pasang strap/L-bracket ke balok rangka dinding pada semua rak, lemari, cermin; data CPSC: ±11.000 kunjungan ER/tahun di AS, mayoritas korban <6 tahun, separuh insiden fatal di kamar tidur; barang berat di bawah, jangan simpan mainan di tempat tinggi, laci diberi stop.
+- Keselamatan — listrik: penutup stop kontak yang sulit dicabut, kotak pelindung untuk stop kontak terpakai, kabel dirapatkan, diikat, atau dimasukkan ke kotak kabel, strip listrik dinaikkan, hindari ekstensi melintang; lampu anak = LED tak panas.
+- Keselamatan — tanaman: aman = spider plant, Boston fern, areca palm, calathea, African violet; jauhkan = pothos, snake plant, monstera, philodendron, dieffenbachia, oleander, kaktus/euphorbia; pot berat beralas lebar, tutup media tanam (tanah = bahaya tersedak), cek tanaman lama ke daftar tanaman beracun (ASPCA/poison center).
+- Ritual berkala: merangkak menyusuri area anak tiap 1–2 bulan — cek sudut baru, kabel baru, benda kecil (uji tabung toilet), pengikat antiroboh kendur; keselamatan ikut berotasi.
 - Penerapan bertahap: satu zona dulu, satu kemenangan kemandirian per pekan, observasi, baru perluas; ukuran sukses = anak bisa pilih–pakai–kembalikan sendiri dan konsentrasi makin panjang, bukan estetika ruangan.

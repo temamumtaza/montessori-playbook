@@ -4,7 +4,7 @@
 
 ## 1. Cara Membaca Dokumen Ini
 
-Dokumen ini memuat aktivitas Montessori untuk anak 3–5 tahun dalam lima area: practical life, sensorial, bahasa, matematika, dan budaya. Tiap aktivitas memuat **Tujuan, Usia, Bahan, Langkah, Kontrol kesalahan, Variasi, Keselamatan,** dan **Sumber**.
+Dokumen ini memuat aktivitas Montessori untuk anak 3–5 tahun dalam lima area: kehidupan praktis, sensorial, bahasa, matematika, dan budaya. Tiap aktivitas memuat **Tujuan, Usia, Bahan, Langkah, Kontrol kesalahan, Variasi, Keselamatan,** dan **Sumber**.
 
 Tiap area dibuka dengan **tabel urutan presentasi** yang dirangkum dari sumber kurikulum publik. Urutannya indikatif, bukan jadwal: anak boleh mengulang lama di satu materi atau mundur. Yang dijaga adalah prinsip dari konkret ke abstrak, sederhana ke kompleks, dan satu kesulitan baru pada satu waktu.
 
@@ -25,27 +25,27 @@ Di usia 3–5 tahun presentasi Montessori menjadi lebih terstruktur dibanding ma
 1. **Ajakan, bukan pengumuman.** "Ibu punya sesuatu untuk ditunjukkan. Mau lihat?" Pilih saat anak segar dan tidak sedang sibuk.
 2. **Materi dibawa bersama.** Menggendong nampan ke meja adalah bagian awal siklus kerja.
 3. **Demonstrasi lambat, sedikit kata.** Gerakan setengah kecepatan; anak tak bisa menonton tangan sambil memproses kalimat panjang.
-4. **Tayang di sisi dominan anak** agar tangannya terlihat jelas.
+4. Peragakan di sisi tangan dominan anak agar gerakannya terlihat jelas.
 5. **Serahkan lalu mundur.** Jangan memperbaiki genggaman atau menunjuk kesalahan.
 6. **Siklus utuh.** Siap, pakai, bereskan termasuk dampaknya, kembalikan ke rak.
 7. **Pengulangan adalah tujuan.** Mengulang satu materi berhari-hari tanda konsentrasi tumbuh.
 
 Untuk nama baru dipakai **pelajaran tiga periode**: periode satu menamai ("ini …"), periode dua melatih pengenalan dan paling panjang ("tunjukkan yang mana …"), periode tiga menguji ingatan ("ini apa?"). Periode tiga hanya bila periode dua lancar; bila keliru, kembali ke periode dua tanpa berkata "salah". Dua latihan gerak kolektif khas usia ini adalah **jalan di garis** dan **permainan diam** — pelajaran grup yang menarik, bukan alat menertibkan.
 
-## 4. Practical Life (Kehidupan Praktis)
+## 4. Kehidupan Praktis (Practical Life)
 
-Practical life di usia 3–6 tahun lazim dibagi lima jalur: penajaman gerak, perawatan diri, perawatan lingkungan, kesantunan (grace & courtesy), serta analisis gerak. Urutannya dari gerak dasar — menuang, memindah, menyendok, meremas — menuju rangkaian panjang seperti mencuci meja dan menyiapkan makanan, lalu pekerjaan presisi seperti menggunting dan melipat. Tabel ruang lingkup Montessori Foundation memperlihatkan gradasi menuang yang khas: kering antar pitcher identik → air antar pitcher identik → satu pitcher besar ke dua kecil → wadah beda ukuran → sampai garis → lewat corong. Panduan orang tua menambahkan: satu keterampilan baru pada satu waktu, kesulitan diisolasi (misalnya pisang dikupas setengah dulu agar yang dilatih hanya memotong), dan tumpahan dibersihkan sebagai bagian pekerjaan, bukan hukuman.
+Kehidupan praktis di usia 3–6 tahun lazim dibagi lima jalur: penajaman gerak, perawatan diri, perawatan lingkungan, kesantunan (grace & courtesy), serta analisis gerak. Urutannya dari gerak dasar — menuang, memindah, menyendok, meremas — menuju rangkaian panjang seperti mencuci meja dan menyiapkan makanan, lalu pekerjaan presisi seperti menggunting dan melipat. Tabel ruang lingkup Montessori Foundation memperlihatkan gradasi menuang yang khas: kering antar teko tuang identik → air antar teko tuang identik → satu teko tuang besar ke dua kecil → wadah beda ukuran → sampai garis → lewat corong. Panduan orang tua menambahkan: satu keterampilan baru pada satu waktu, kesulitan diisolasi (misalnya pisang dikupas setengah dulu agar yang dilatih hanya memotong), dan tumpahan dibersihkan sebagai bagian pekerjaan, bukan hukuman.
 
 Untuk 3–4 tahun fokusnya kendali gerak dan siklus kerja; untuk 4–5 tahun rangkaian banyak langkah, kemandirian makan, dan kesantunan yang lebih rumit.
 
-### Urutan presentasi Practical Life
+### Urutan presentasi kehidupan praktis
 
 | No | Aktivitas | Fokus | Umumnya dikenalkan |
 |---|---|---|---|
 | 1 | Kesantunan dasar: menyapa, "tolong", "terima kasih", memotong pembicaraan dengan sopan | bahasa sosial | sepanjang usia 3–5 |
-| 2 | Logistik: menggendong nampan, jug kosong, keranjang; menggeser kursi; menggulung matras | kendali tubuh | awal usia 3 |
-| 3 | Menuang kering antar dua pitcher identik | pergelangan, presisi | 3 tahun |
-| 4 | Menuang air antar pitcher; menyeka tumpahan | kendali cairan | 3–3,5 tahun |
+| 2 | Logistik: menggendong nampan, teko tuang kosong, keranjang; menggeser kursi; menggulung matras | kendali tubuh | awal usia 3 |
+| 3 | Menuang kering antar dua teko tuang identik | pergelangan, presisi | 3 tahun |
+| 4 | Menuang air antar teko tuang; menyeka tumpahan | kendali cairan | 3–3,5 tahun |
 | 5 | Menyendok dan memindah dengan penjepit | genggaman tiga jari | 3–3,5 tahun |
 | 6 | Meremas spons; memindah dengan pipet | kekuatan tangan | 3–3,5 tahun |
 | 7 | Rangkaian berpakaian: kancing, pengait, resleting | perawatan diri | 3–4 tahun |
@@ -56,19 +56,19 @@ Untuk 3–4 tahun fokusnya kendali gerak dan siklus kerja; untuk 4–5 tahun ran
 | 12 | Menggunting, melipat kain, jahitan kartu | presisi dan simetri | 4–5 tahun |
 | 13 | Menata meja makan, melayani tamu, menawarkan bantuan | sosial kompleks | 4–5 tahun |
 
-### 4.1 Menuang Air Antar Pitcher
+### 4.1 Menuang Air Antar Teko Tuang
 
 **Tujuan:** kendali pergelangan dengan cairan, koordinasi dua tangan, dan tanggung jawab membersihkan tumpahan sendiri.
 **Usia:** 3–3,5 tahun, setelah menuang kering lancar.
-**Bahan:** nampan; dua pitcher kecil identik berpegangan (kiri berisi air setengah wadah, kanan kosong); spons kecil; lap lantai di dekat nampan; celemek bila perlu.
+**Bahan:** nampan; dua teko tuang kecil identik berpegangan (kiri berisi air setengah wadah, kanan kosong); spons kecil; lap lantai di dekat nampan; celemek bila perlu.
 **Langkah:**
 1. Anak menggendong nampan ke meja; orang dewasa duduk di sisi dominan anak.
-2. Orang dewasa memegang pitcher: satu tangan di pegangan, satu menopang badannya.
+2. Orang dewasa memegang teko tuang: satu tangan di pegangan, satu menopang badannya.
 3. Miringkan perlahan sampai air mengalir, tegakkan sampai tetes terakhir turun, letakkan tanpa bunyi.
 4. Tumpahan diseka dengan spons, lalu spons dibilas dan diperas kembali.
-5. Anak menuang bolak-balik; air kembali ke pitcher asal; nampan digenapkan dan ke rak.
-**Kontrol kesalahan:** air yang tumpah terlihat jelas di nampan; bunyi tetesan saat meletakkan pitcher menandakan terlalu kasar; sisa air berlebihan di wadah asal menandakan aliran belum terkendali.
-**Variasi:** satu pitcher besar ke dua gelas; wadah makin kecil; menuang sampai garis; lewat corong ke botol leher sempit.
+5. Anak menuang bolak-balik hingga air kembali ke teko tuang asal, lalu mengeringkan nampan dan mengembalikannya ke rak.
+**Kontrol kesalahan:** air yang tumpah terlihat jelas di nampan; bunyi tetesan saat meletakkan teko tuang menandakan terlalu kasar; sisa air berlebihan di wadah asal menandakan aliran belum terkendali.
+**Variasi:** satu teko tuang besar ke dua gelas; wadah makin kecil; menuang sampai garis; lewat corong ke botol leher sempit.
 **Keselamatan:** air secukupnya; lap lantai segera agar tak licin; gelas kaca hanya bila anak sudah terbiasa; pengawasan penuh.
 **Sumber:** [Montessori FYI Lesson Library](https://montessori.fyi/lessons?area=practical-life); [Family Alliance Montessori](https://familyalliance.montessori.org/guides/activities/3-years).
 
@@ -118,7 +118,7 @@ Materi sensorial melatih anak membedakan dan mengurutkan kualitas — besar-keci
 | 5 | Kotak warna 1 dan 2 (pencocokan, lalu gradasi) | penglihatan warna | 3–4 tahun |
 | 6 | Kombinasi materi: kubus pink + tangga cokelat | analisis dua dimensi | 3,5–4,5 tahun |
 | 7 | Silinder tanpa kenop (4 kotak, satu per satu lalu gabungan) | konsolidasi dimensi | 3,5–4,5 tahun |
-| 8 | Laci geometri, benda-benda di dalam kain, kotak berat | bentuk, taktil, bariknos | 3,5–4,5 tahun |
+| 8 | Laci geometri, benda-benda di dalam kain, kotak berat | bentuk, taktil, berat (indra barik — materi kotak berat) | 3,5–4,5 tahun |
 | 9 | Lonceng/misteri bunyi, silinder bunyi, bel | pendengaran | 4–5 tahun |
 | 10 | Tablet tekstur, tablet termik, kartu nomenklatur | taktil, termik, nama sifat | 4–5 tahun |
 
@@ -159,13 +159,13 @@ Materi sensorial melatih anak membedakan dan mengurutkan kualitas — besar-keci
 **Bahan:** kotak 1: sepasang kartu warna dasar; kotak 2: sebelas pasang warna termasuk gradasi. Versi rumah: spidol berwarna, manik, potongan kain, atau tutup botol.
 **Langkah:**
 1. Anak membawa kotak ke meja.
-2. Kartu dituang ke matras; orang dewasa mengambil satu, melihatnya sekali, lalu mencari pasangannya.
+2. Kartu ditumpuk di matras; orang dewasa mengambil satu, melihatnya sekali, lalu mencari pasangannya.
 3. Pasangan diletakkan berdampingan; dilanjutkan sampai semua pasangan ditemukan.
 4. Kotak 2: gradasi satu warna disusun dari gelap ke terang seperti tangga.
 5. Setelah lancar, warna dinamai lewat pelajaran tiga periode.
 **Kontrol kesalahan:** sepasang warna yang tidak sama terlihat jelas saat diletakkan berdampingan; gradasi yang tidak urut membuat tangga tampak tidak beraturan.
 **Variasi:** mencari benda sewarna di dalam ruangan; bermain "tunjukkan yang merah" dengan benda sekitar; memadukan warna dan objek (bunga, daun, kancing); melanjutkan ke melipatgandakan warna dalam gambar.
-**Keselamatan:** hindari kartu berpigmen beracun; cukup bahaya kecil — perhatikan benda kecil pada anak yang masih suka memasukkan benda ke mulut.
+**Keselamatan:** hindari kartu berpigmen beracun; risiko utamanya hanya benda kecil — awasi anak yang masih suka memasukkan benda ke mulut.
 **Sumber:** [Trillium Montessori — Cultural Curriculum](https://www.trilliummontessori.org/montessori-cultural-curriculum/); [Montessorian.vip — Sensorial](https://montessorian.vip/en/article/sensorial-curriculum).
 
 ## 6. Bahasa
@@ -191,7 +191,7 @@ Kurikulum bahasa Montessori usia ini berdiri di atas empat kunci: permainan suar
 
 **Tujuan:** kesadaran bunyi (fonemik) — mendengar bahwa kata tersusun dari bunyi-bunyi yang bisa dipisahkan — fondasi membaca dan menulis.
 **Usia:** 3 tahun untuk bunyi awal; 3,5–4 tahun untuk bunyi akhir dan tengah.
-**Bahan:** keranjang berisi 3–5 benda nyata berkata pendek dan jelas bunyi awalnya (bola, kunci, gigi mainan, topi); tidak perlu kartu.
+**Bahan:** keranjang berisi 3–5 benda nyata dengan bunyi awal yang pendek dan jelas (bola, kunci, gigi mainan, topi); tidak perlu kartu.
 **Langkah:**
 1. Duduk berhadapan; sebut nama tiap benda bersama dulu agar pasti.
 2. "Aku melihat sesuatu yang bunyi awalnya /b/"; anak menebak.
@@ -222,7 +222,7 @@ Kurikulum bahasa Montessori usia ini berdiri di atas empat kunci: permainan suar
 ### 6.3 Insets Logam dan Pramenulis
 
 **Tujuan:** menguasai genggaman pensil tiga jari, menekan ringan, menjaga garis tetap di tepi bentuk, dan gerakan arsir yang teratur — persiapan tak langsung menulis.
-**Usia:** 4 tahun ke atas, setelah tangan cukup kuat dari pekerjaan practical life.
+**Usia:** 4 tahun ke atas, setelah tangan cukup kuat dari pekerjaan kehidupan praktis.
 **Bahan:** insets logam atau versi rumah: benda aman untuk ditelusuri (tutup toples, cetakan kue), pensil warna, kertas, papan alas.
 **Langkah:**
 1. Anak menyiapkan kertas, pensil, satu bingkai (lingkaran paling mudah).
@@ -232,7 +232,7 @@ Kurikulum bahasa Montessori usia ini berdiri di atas empat kunci: permainan suar
 5. Karya dikumpulkan dalam buku anak; bentuk boleh dipadukan menjadi gambar.
 **Kontrol kesalahan:** garis yang keluar bentuk atau arsir yang menembus tepi terlihat langsung; anak menilai kerapian karyanya sendiri tanpa dinilai orang dewasa.
 **Variasi:** pola arsir berbeda (vertikal, diagonal, titik, anyam); bentuk ditumpuk dan digeser menjadi bunga; tangan dilemas lewat nampan pasir dulu bagi anak yang pensilnya masih berat.
-**Keselamatan:** pensil dipendekkan ujung runcingnya diawasi; jangan biarkan anak berjalan dengan pensil di tangan; pilih benda telusuri yang tidak tajam.
+**Keselamatan:** pensil dipendekkan; awasi anak saat memakai pensil, termasuk ujung runcingnya; jangan biarkan anak berjalan sambil memegang pensil; pilih benda telusuri yang tidak tajam.
 **Sumber:** [Montessori Mom — Metal Insets](https://montessorimom.com/lesson-day-69-metal-insets/); [Northwest Montessori — Metal Insets](https://www.nwmontessori.vic.edu.au/metal-insets/).
 
 ## 7. Matematika
@@ -279,7 +279,7 @@ Matematika Montessori bermula dari angka 1–10 dan tidak melangkah sebelum area
 3. Dilanjutkan ke kompartemen berikutnya sampai selesai.
 4. Saat nol: "nol berarti tidak ada" — kotak kosong.
 5. Selesai: 45 stik habis tepat — hitung mundur bersama saat membereskan.
-**Kontrol kesalahan:** total 45 stik ditetapkan; bila ada kompartemen kekurangan, berarti ada yang salah di belakang dan anak bisa menyusuri ulang; kompartemen nol yang harus kosong adalah cek tersendiri.
+**Kontrol kesalahan:** total 45 stik ditetapkan; bila ada kompartemen kekurangan, berarti ada yang keliru di langkah sebelumnya dan anak bisa menyusuri ulang; kompartemen nol yang harus kosong adalah cek tersendiri.
 **Variasi:** tulis angka di kertas lalu minta anak meletakkan sejumlah kancing; mainkan "beri aku nol benda"; kelompok angka 0–4 dulu bagi anak yang cepat lelah.
 **Keselamatan:** stik pendek dan ujung tumpul; kerikil/lidi diawasi pada anak yang masih suka memasukkan benda ke mulut.
 **Sumber:** [Montessori Nature — Math Tools](https://printables.montessorinature.com/montessori-math-tools-materials/); [Werribee Montessori — Maths](https://www.werribeemontessori.org.au/fileadmin/filemount/montessori_western_metro/Maths.pdf).
@@ -302,7 +302,7 @@ Matematika Montessori bermula dari angka 1–10 dan tidak melangkah sebelum area
 
 ## 8. Budaya
 
-Area budaya mencakup geografi, alam (botani dan zoologi), sains, seni, dan musik. Prinsipnya dari gambaran utuh menuju detail: bumi sebagai bola daratan-air dulu, baru benua, baru negara. Anak usia ini sedang peka pada kosakata dan fakta sehingga nama benua, bentang air, dan nama hewan mudah melekat. Bentang daratan-air dipahami lewat tray yang anak bentuk sendiri; alam hidup lewat kartu nomenklatur, pengamatan daun dan serangga, perawatan tanaman; musik dimulai dari bernyanyi dan bergerak, lalu pendengaran halus dengan lonceng dan alat ritme.
+Area budaya mencakup geografi, alam (botani dan zoologi), sains, seni, dan musik. Prinsipnya dari gambaran utuh menuju detail: bumi sebagai bola daratan-air dulu, baru benua, baru negara. Anak usia ini sedang peka pada kosakata dan fakta sehingga nama benua, bentang air, dan nama hewan mudah melekat. Bentang daratan-air dipahami lewat nampan yang anak bentuk sendiri; alam hidup lewat kartu nomenklatur, pengamatan daun dan serangga, perawatan tanaman; musik dimulai dari bernyanyi dan bergerak, lalu pendengaran halus dengan lonceng dan alat ritme.
 
 ### Urutan presentasi Budaya
 
@@ -338,16 +338,16 @@ Area budaya mencakup geografi, alam (botani dan zoologi), sains, seni, dan musik
 
 **Tujuan:** menamai dan memahami pasangan bentang: pulau-danau, tanjung-teluk, tanah genting-selat; menghubungkan model tangan dengan bola dan peta.
 **Usia:** 3,5–4,5 tahun.
-**Bahan:** dua tray berisi air berwarna biru dan tanah/liat; spon, handuk kecil; kartu nomenklatur bentang.
+**Bahan:** dua nampan berisi air berwarna biru dan tanah/liat; spon, handuk kecil; kartu nomenklatur bentang.
 **Langkah:**
-1. Orang dewasa menuang air di tray pertama, lalu membentuk gundukan tanah: "daratan yang dikelilingi air sepenuhnya bernama pulau."
-2. Tray kedua: air dikelilingi tanah — "danau".
+1. Orang dewasa menuang air di nampan pertama, lalu membentuk gundukan tanah: "daratan yang dikelilingi air sepenuhnya bernama pulau."
+2. nampan kedua: air dikelilingi tanah — "danau".
 3. Anak membentuk pulau dan danau sendiri.
 4. Kartu dipasangkan dengan model, lalu dicari di bola dan peta.
-5. Selesai: air dituang kembali, tray dikeringkan, alat dibereskan oleh anak.
-**Kontrol kesalahan:** air yang tumpah keluar tray terlihat jelas; model pulau yang terhubung tanah otomatis menjadi bukan pulau; kartu cocok-gambar memeriksa sendiri.
+5. Selesai: air dituang kembali, nampan dikeringkan, alat dibereskan oleh anak.
+**Kontrol kesalahan:** air yang tumpah keluar nampan terlihat jelas; model pulau yang masih tersambung dengan daratan otomatis bukan lagi pulau; kartu cocok-gambar memeriksa sendiri.
 **Variasi:** lanjut tanjung-teluk lalu tanah genting-selat; bentuk dari adonan tanpa air; cari pulau nyata di atlas.
-**Keselamatan:** air sedalam 1–2 cm saja; handuk siap; pengawasan penuh; tray anti pecah.
+**Keselamatan:** air sedalam 1–2 cm saja; handuk siap; pengawasan penuh; nampan anti pecah.
 **Sumber:** [Via Montessori — Cultural](https://via-montessori.com/learning-areas/cultural); [Trillium Montessori — Cultural Curriculum](https://www.trilliummontessori.org/montessori-cultural-curriculum/).
 
 ### 8.3 Merawat Tanaman dan Alam Sekitar
@@ -411,8 +411,8 @@ Area budaya mencakup geografi, alam (botani dan zoologi), sains, seni, dan musik
 - Prinsip lintas area: konkret → abstrak, sederhana → kompleks, satu kesulitan baru per presentasi, siklus kerja utuh (bawa–pakai–bereskan).
 - Pelajaran tiga periode untuk nama baru: "ini…" → "tunjukkan…" → "ini apa?"; gagal di periode 3 = ulangi periode 2 tanpa kata "salah".
 - Tonggak CDC 3 dan 4 tahun = kerangka pemantauan, bukan target; khawatir = konsultasi dokter.
-- Practical Life urutan: menuang kering → air → sendok/penjepit → berpakaian → jalan di garis → mencuci meja → siapkan makanan → gunting/lipat → menata & melayani.
-- Gradasi menuang: 2 pitcher identik → besar ke 2 kecil → beda ukuran → sampai garis → lewat corong.
+- kehidupan praktis urutan: menuang kering → air → sendok/penjepit → berpakaian → jalan di garis → mencuci meja → siapkan makanan → gunting/lipat → menata & melayani.
+- Gradasi menuang: 2 teko tuang identik → besar ke 2 kecil → beda ukuran → sampai garis → lewat corong.
 - Menyiapkan makanan: pisau anak tanpa mata tajam, bahan lunak potong memanjang (anti-tersedak), cek alergi.
 - Sensorial urutan: silinder berkenop → kubus pink (3 dimensi) → tangga cokelat (2 dimensi) → batang merah (1 dimensi) → kotak warna → kombinasi → silinder tanpa kenop → bunyi/tekstur.
 - Silinder berkenop = kontrol kesalahan terkuat; materi sensorial pertama.

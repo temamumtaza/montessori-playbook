@@ -2,7 +2,7 @@
 // Jalankan: npx playwright test tests/gauntlet.spec.ts
 import { test, expect, devices } from '@playwright/test'
 
-const BASE = 'https://montessori-playbook.vercel.app'
+const BASE = 'http://127.0.0.1:4173'
 const iphone = { ...devices['iPhone 13'] }
 const android = { ...devices['Pixel 7'] }
 

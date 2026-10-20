@@ -31,7 +31,7 @@ Montessori membagi masa ini menjadi dua fase (AMI Archives — Four Planes; MOC 
 1. **0-3 tahun: penyerapan tak sadar.** Anak menyerap segala sesuatu — suara, bahasa, suasana emosional rumah, rutinitas, cara orang dewasa berbicara — tanpa filter dan tanpa bisa memilih. Kita tidak bisa "mengajari" langsung; yang bisa dilakukan adalah memastikan lingkungan dan contoh yang diserap bernilai baik.
 2. **3-6 tahun: penyerapan sadar.** Anak mulai bisa terlibat secara sengaja: memilih kegiatan, meminta nama benda, mengulang aktivitas yang sama berhari-hari. Di fase ini orang dewasa bisa mengajak anak berpartisipasi aktif dalam kehidupan sehari-hari.
 
-Implikasi praktisnya besar untuk orang tua: pada usia 0-5 tahun, anak belajar paling kuat dari apa yang **dilakukan dan dicontekan** orang dewasa, bukan dari apa yang dikatakan. Karena penyerapan terjadi tanpa diskriminasi — anak menyerap hal baik dan buruk secara sama rata — konsistensi keteladanan (cara kita bicara, cara kita menata rumah, cara kita menangani konflik) adalah "kurikulum" yang sebenarnya (Montessori School of the Berkshires; AMI Archives). Setelah usia enam, belajar menuntut upaya sadar seperti pada orang dewasa, sehingga enam tahun pertama dianggap fondasi seumur hidup (AMI Archives — Four Planes).
+Implikasi praktisnya besar untuk orang tua: pada usia 0-5 tahun, anak belajar paling kuat dari apa yang **dilakukan dan dicontoh** orang dewasa, bukan dari apa yang dikatakan. Karena penyerapan terjadi tanpa membeda-bedakan — anak menyerap hal baik dan buruk sama kuatnya — konsistensi keteladanan (cara kita bicara, cara kita menata rumah, cara kita menangani konflik) adalah "kurikulum" yang sebenarnya (Montessori School of the Berkshires; AMI Archives). Setelah usia enam, belajar menuntut upaya sadar seperti pada orang dewasa, sehingga enam tahun pertama dianggap fondasi seumur hidup (AMI Archives — Four Planes).
 
 **Rujukan:**
 - AMI Montessori Archives — "Absorbent Mind" (glosarium) — https://archives.montessori-ami.org/help/glossary/absorbent-mind
@@ -51,7 +51,7 @@ Rentang usia yang dilaporkan berbagai sumber memang bervariasi (setiap anak berb
 |---|---|---|
 | Bahasa | Lahir-6 th (puncak 0-3; ledakan kosakata 2-4 th) | Tertarik pada suara dan wajah yang berbicara, mengulang kata, ledakan pertanyaan |
 | Gerak kasar | Lahir-2,5 th | Mengangkat kepala, berguling, merangkak, berdiri, berjalan |
-| Gerak halus | 2,5-4,5 th | Cengkeraman presisi (pincer), memindah benda kecil dengan teliti |
+| Gerak halus | 2,5-4,5 th | genggaman jempol-telunjuk (pincer grasp), memindah benda kecil dengan teliti |
 | Urutan/tatanan (order) | 0,5-3,5 th (puncak 1-3 th) | Rewel saat rutinitas berubah, ingin benda kembali ke tempatnya, senang ritme harian |
 | Objek kecil & detail | 1-3,5 th (puncak 1-2,5 th) | Fokus pada serangga, keretakkan di lantai, memungut benda mungil |
 | Penghalusan indra | 2,5-6 th | Tertarik membedakan warna, tekstur, bunyi, bau, berat |
@@ -101,7 +101,7 @@ Prinsip yang berulang di banyak sumber:
 
 - **Kebebasan selalu sebanding dengan kemampuan anak.** Bayi diberi kebebasan bergerak dalam ruang aman dan memilih salah satu dari dua benda; balita diberi pilihan antara dua baju; anak yang lebih besar diberi lebih banyak tanggung jawab (Montessori Australia).
 - **Batasnya sedikit, jelas, dan tidak arbitrer** — umumnya hanya untuk menjaga keselamatan anak, menghormati orang lain, dan menghormati lingkungan serta bahan (Montessori Toledo; Montessori School of San Antonio).
-- **Konsekuensi alami dan percakapan tenang lebih dipilih daripada hukuman.** Anak belajar dari akibat nyata pilihannya, difasilitasi dialog yang hormat, bukan ancaman atau suap (Melbourne Montessori College; Montessori Toledo).
+- **Konsekuensi alami dan percakapan tenang lebih dipilih daripada hukuman.** Anak belajar dari akibat nyata pilihannya, melalui dialog yang saling menghormati, bukan ancaman atau suap (Melbourne Montessori College; Montessori Toledo).
 - **Tujuan akhirnya disiplin diri.** Disiplin dalam pengertian Montessori adalah kendali diri yang tumbuh dari dalam, bukan kepatuhan yang dipaksakan; ia berkembang lewat latihan memilih dan menanggung akibat, bukan lewat kontrol eksternal (AMI Archives — Freedom; Oak Knoll Montessori).
 
 Penerapan sehari-hari di rumah: alih-alih "mau apa saja?" (terlalu banyak pilihan membuat anak kewalahan), beri **dua pilihan yang sama-sama bisa diterima** ("mau mandi sebelum atau sesudah makan?"); batasi ruangnya, bukan semangatnya; jaga aturan tetap sedikit tetapi dijalankan selalu sama; dan ingat bahwa kebebasan tanpa batas adalah penelantaran, sedangkan batas tanpa kebebasan adalah penindasan — keduanya merugikan anak (Oak Knoll Montessori; Melbourne Montessori College).
@@ -139,7 +139,7 @@ Observasi adalah antitesis pengasuhan reaktif. Banyak perilaku yang dikeluhkan o
 
 "Normalisasi" adalah istilah Montessori yang sering disalahpahami. Ia **bukan** berarti membuat anak penurut atau seragam. Yang dimaksud adalah kondisi perkembangan yang sehat: ketika anak secara berulang mengalami konsentrasi mendalam pada pekerjaan yang ia pilih sendiri, ia menampilkan karakteristik perkembangan normal — mencintai pekerjaan, terikat pada realitas, tenang, berdisiplin diri, dan peduli pada orang lain (AMI Archives — Normalisation; Montessori Foundation).
 
-Karakteristik anak ternormalisasi yang dirangkum E.M. Standing (dirujuk luas): cinta pada urutan, cinta pada pekerjaan, konsentrasi spontan yang mendalam, keterikatan pada realitas, gemar keheningan dan bekerja sendiri, melepaskan naluri posesif, kerja sama, kemandirian dan inisiatif, disiplin diri yang spontan, kegembiraan, serta kemampuan bertindak dari pilihan sungguhan — bukan sekadar iseng (Montessori Hawaii).
+Karakteristik anak ternormalisasi yang dirangkum E.M. Standing (dirujuk luas): cinta pada urutan, cinta pada pekerjaan, konsentrasi spontan yang mendalam, keterikatan pada realitas, gemar keheningan dan bekerja sendiri, melepaskan sifat ingin memiliki, kerja sama, kemandirian dan inisiatif, disiplin diri yang spontan, kegembiraan, serta kemampuan bertindak dari pilihan sungguhan — bukan sekadar iseng (Montessori Hawaii).
 
 Sebaliknya, perilaku yang sering dianggap "memang sifat anak" — gelisah, sulit fokus, menolak, tergantung terus — oleh Montessori dipandang sebagai **deviasi**: penyesuaian yang muncul ketika kebutuhan perkembangan tidak terpenuhi. Ketika kondisinya dikembalikan (lingkungan tertata, pekerjaan bermakna, kebebasan dalam batas), perilaku itu memudar dan sifat asli anak yang tenang dan fokus muncul kembali (Montessori Foundation — Enduring Insights; Bluffview Montessori).
 
@@ -154,7 +154,7 @@ Pesan utama untuk orang tua: normalisasi tidak bisa dipaksakan; ia muncul sendir
 
 ## Peran Orang Dewasa
 
-Dalam Montessori, orang dewasa bukan penceramah melainkan **pemandu** (guide/directress): orang yang menyiapkan lingkungan, menghubungkan anak dengan bahan yang tepat di saat yang tepat, lalu mundur ke belakang. AMS merumuskan peran guru sebagai "mengarahkan setiap anak pada aktivitas bermakna berdasarkan pengamatan atas kesiapan dan minat masing-masing anak" (AMS; AMI Canada).
+Dalam Montessori, orang dewasa bukan penceramah melainkan **pemandu** (guide/directress): orang yang menyiapkan lingkungan, menghubungkan anak dengan bahan yang tepat di saat yang tepat, lalu mundur. AMS merumuskan peran guru sebagai "mengarahkan setiap anak pada aktivitas bermakna berdasarkan pengamatan atas kesiapan dan minat masing-masing anak" (AMS; AMI Canada).
 
 Empat fungsi inti orang dewasa:
 
@@ -174,7 +174,7 @@ Sikap dasarnya: tahu kapan harus campur tangan, dan yang lebih penting, tahu kap
 
 ## Temuan Penelitian Modern (Sekilas)
 
-Klaim-klaim Montessori yang berusia lebih dari seabad mendapat sorotan riset modern dengan hasil yang umumnya mendukung — dengan beberapa catatan. Tinjauan sistematis Campbell (32 studi yang memenuhi standar kualitas minimal) menemukan efek positif pendidikan Montessori dibanding pendidikan tradisional pada hasil akademik (ukuran efek gabungan sekitar 0,24) dan non-akademik (sekitar 0,33), termasuk fungsi eksekutif dan pengalaman positif terhadap sekolah; efeknya paling kuat pada jenjang preschool dan elementary (Randolph dkk., 2023, via Wiley dan Campbell Collaboration). Tinjauan basis bukti di PMC menyimpulkan bahwa ketika diterapkan dengan setia (high-fidelity), Montessori mendorong hasil akademik dan sosial yang setara atau lebih baik daripada sekolah pembanding, meskipun banyak studi lama memiliki keterbatasan metodologis (PMC6161506).
+Klaim-klaim Montessori yang berusia lebih dari seabad mendapat sorotan riset modern dengan hasil yang umumnya mendukung — dengan beberapa catatan. Tinjauan sistematis Campbell (32 studi yang memenuhi standar kualitas minimal) menemukan efek positif pendidikan Montessori dibanding pendidikan tradisional pada hasil akademik (ukuran efek gabungan sekitar 0,24) dan non-akademik (sekitar 0,33), termasuk fungsi eksekutif dan pengalaman positif terhadap sekolah; efeknya paling kuat pada jenjang preschool dan elementary (Randolph dkk., 2023, melalui Wiley dan Campbell Collaboration). Tinjauan basis bukti di PMC menyimpulkan bahwa ketika diterapkan dengan setia (high-fidelity), Montessori mendorong hasil akademik dan sosial yang setara atau lebih baik daripada sekolah pembanding, meskipun banyak studi lama memiliki keterbatasan metodologis (PMC6161506).
 
 Catatan kritis yang perlu masuk ke konten aplikasi: (1) kualitas dan kesetiaan implementasi menentukan — kata "Montessori" pada nama sekolah tidak menjamin praktik autentik; (2) banyak studi awal bermasalah secara metodologis; (3) temuan positif terkuat ada pada implementasi setia dan durasi pendaftaran yang lebih panjang (PMC6161506; Wiley/Campbell). Artinya, filosofi ini didukung bukti secara bertahap, bukan ajaib — dan prinsip-prinsip intinya (lingkungan tertata, kebebasan dalam batas, observasi) tetap masuk akal diterapkan di rumah tanpa harus membeli perangkat mahal.
 

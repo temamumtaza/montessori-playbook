@@ -200,7 +200,7 @@
   {
     "id": "diy-6-botol-sensori-bijian",
     "title": "Botol Sensori Bijian dengan Suara Berjatuhan",
-    "makes": "1 botol berisi bijian dengan suara berjatuhan yang cocok untuk maupun pendengaran maupun pergerakan",
+    "makes": "1 botol berisi bijian dengan suara berjatuhan yang cocok untuk pendengaran maupun pergerakan",
     "timeMinutes": 10,
     "cost": "rendah",
     "materialsNeeded": [
@@ -357,7 +357,7 @@
   {
     "id": "diy-10-tas-squishy-sensori",
     "title": "Tas Squishy Sensori dengan Isi Warna-Warni",
-    "makes": "1 tas benda empuk yang bisa ditekan dan dilepelaskan dengan isi benda hias besar",
+    "makes": "1 tas benda empuk yang bisa ditekan dan dilepaskan dengan isi benda hias besar",
     "timeMinutes": 25,
     "cost": "rendah",
     "materialsNeeded": [
@@ -398,7 +398,7 @@
   {
     "id": "diy-11-playdough-rumahan",
     "title": "Playdough Rumahan Tanpa Memasak",
-    "makes": "1 adonan mainan lembut untuk mencacat, digulung, dan membentuk",
+    "makes": "1 adonan mainan lembut untuk mencetak, menggulung, dan membentuk",
     "timeMinutes": 20,
     "cost": "rendah",
     "materialsNeeded": [
@@ -477,7 +477,7 @@
   {
     "id": "diy-13-genggaman-suara-maracas",
     "title": "Maracas Kecil dari Botol Isi Pasta",
-    "makes": "1-2 alat musik genggaman dengan suara gotenggoteng saat digoyang",
+    "makes": "1-2 alat musik genggaman dengan suara gemerincing saat digoyang",
     "timeMinutes": 15,
     "cost": "rendah",
     "materialsNeeded": [
@@ -490,7 +490,7 @@
       "Masukkan beberapa makaroni besar atau sedikit beras ke dalam botol sampai sepertiga penuh.",
       "Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.",
       "Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan isi botol tidak terlihat mudah.",
-      "Latih anak menggoyang maracas dengan ritme sambil dibawakan lagu anak yang suka."
+      "Latih anak menggoyang maracas dengan ritme sambil diiringi lagu anak yang disukai."
     ],
     "ageBands": [
       "9-12m",
@@ -517,7 +517,7 @@
   {
     "id": "diy-14-menara-susun-tutup-botol",
     "title": "Menara Susun dari Tutup Botol Bekas",
-    "makes": "1 set tutup botol berbacahan ukuran untuk disusun jadi menara atau dijejer seperti garis",
+    "makes": "1 set tutup botol berbagai ukuran untuk disusun jadi menara atau dijejerkan seperti garis",
     "timeMinutes": 10,
     "cost": "gratis",
     "materialsNeeded": [
@@ -607,7 +607,7 @@
     ],
     "steps": [
       "Potong bagian gesper dan tali dari celana atau sepatu bekas dengan gunting, sisakan panjang yang cukup.",
-      "Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak agar tidak terginjak.",
+      "Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak yang aman agar tidak terinjak.",
       "Tambahkan panel kain dengan lipatan rapi sebagai latihan membuka dan menutup.",
       "Tawarkan papan pada anak untuk duduk di lantai, lalu latih membuka gesper dan menata tali sepatu satu demi satu."
     ],
@@ -673,7 +673,7 @@
   },
   {
     "id": "diy-18-jalur-lakban-lantai",
-    "title": "Jalur Lakban Lantai untuk Latihan Jalan dan Pendekaran",
+    "title": "Jalur Lakban Lantai untuk Latihan Jalan dan Keseimbangan",
     "makes": "1 jalur berwarna dari lakban di lantai untuk berjalan menyeimbangkan tubuh",
     "timeMinutes": 10,
     "cost": "rendah",
@@ -686,7 +686,7 @@
       "Tempel lakban di lantai dalam bentuk garis lurus sederhana dengan panjang 2 hingga 3 meter.",
       "Ubah bentuk menjadi garis melengkung atau siku setelah anak terbiasa dengan jalur lurus.",
       "Ajak anak berjalan di atas garis sambil mendampingi dan memperhatikan posisi kakinya.",
-      "Tambahkan tantangan seperti memegang benda kecil ataupun memainkan bentuk baru dengan cerita yang sederhana."
+      "Tambahkan tantangan seperti memegang benda kecil atau membentuk jalur baru dengan cerita yang sederhana."
     ],
     "ageBands": [
       "2-3y",
@@ -696,7 +696,7 @@
     "safetyNotes": [
       "Gunakan lakban perekat halus dan pastikan jalur tidak licin supaya tidak membuat anak terpeleset.",
       "Periksa area jalur dan pastikan tidak di dekat tangga atau pintu sebelum dipakai.",
-      "Ganti jalur jika lakban luntur atau menepi agar tidak menyebabkan tersandung."
+      "Ganti jalur jika lakban longgar atau terkelupas agar tidak menyebabkan tersandung."
     ],
     "references": [
       {
@@ -764,7 +764,7 @@
     "steps": [
       "Siapkan pita atau benang wol yang ujungnya sudah ditebalkan dengan selotip agar pasta mudah dimasukkan oleh anak.",
       "Taruh pasta di wadah rendah di dekat anak dan tunjukkan caranya memasukkan satu pasta ke tali.",
-      "Biarkan anak menyusun pasta satu demi satu dengan satuannya sendiri tanpa terburu-buru.",
+      "Biarkan anak menyusun pasta satu demi satu tanpa terburu-buru.",
       "Setelah cukup panjang, ikat simpul besar dan pakai sebagai kalung atau gantungan dekorasi di tempat main anak."
     ],
     "ageBands": [
@@ -868,7 +868,7 @@
   {
     "id": "diy-23-botol-lava-sederhana",
     "title": "Botol Ajaib Minyak dan Air untuk Percobaan Warna",
-    "makes": "1 botol percobaan dengan minyak dan air yang saling terpisah dan timbuk sana",
+    "makes": "1 botol percobaan dengan minyak dan air yang saling terpisah dan tampak jelas batasnya",
     "timeMinutes": 20,
     "cost": "rendah",
     "materialsNeeded": [
@@ -909,7 +909,7 @@
   {
     "id": "diy-24-huruf-kasar-pasir",
     "title": "Huruf Kasar Sendiri dari Pasir dan Karton",
-    "makes": "1 set huruf bertekstur dalam satu sebuah seluruh abjad",
+    "makes": "1 set huruf bertekstur untuk seluruh abjad",
     "timeMinutes": 90,
     "cost": "rendah",
     "materialsNeeded": [
@@ -931,7 +931,7 @@
     ],
     "safetyNotes": [
       "Pastikan pasir dan lem tidak masuk mulut anak; dampingi anak supaya tidak memainkan pasir di luar karton.",
-      "Gunakan pasir yang bersih dan bulat halus, bukan kerikil tajam, agar tangan tidak terluka.",
+      "Gunakan pasir yang bersih dan berbutir halus, bukan kerikil tajam, agar tangan tidak terluka.",
       "Simpan huruf kasar di rak rendah yang mudah diambil anak agar tidak jatuh dari ketinggian."
     ],
     "references": [
@@ -948,7 +948,7 @@
   {
     "id": "diy-25-baki-tulis-dalam-bijian",
     "title": "Baki Menulis di Dasar Beras",
-    "makes": "1 baki dengan dasar beras atau garam untuk mencacat huruf dan angka dengan jari",
+    "makes": "1 baki dengan dasar beras atau garam untuk menulis huruf dan angka dengan jari",
     "timeMinutes": 10,
     "cost": "gratis",
     "materialsNeeded": [
@@ -1010,7 +1010,7 @@
     ],
     "safetyNotes": [
       "Gunakan cat dan kapur yang jelas aman untuk anak; hindari cat yang mengeluarkan bau kuat.",
-      "Sandingkan papan di sudut lantai yang rata supaya tidak roboh saat disandarkan anak.",
+      "Sandarkan papan di sudut lantai yang rata supaya tidak roboh saat disandarkan anak.",
       "Dampingi anak saat bermain kapur agar debu dekat wajah dihindari dan papan tidak roboh."
     ],
     "references": [
@@ -1087,7 +1087,7 @@
     ],
     "safetyNotes": [
       "Tutupi semua tepi potongan karton dengan selotip agar tidak melukai tangan anak.",
-      "Pilih daun dan ranting yang bersih dan tidak ada rambut tajam; hindari benda kecil yang bisa masuk mulut anak di bawah tiga tahun.",
+      "Pilih daun dan ranting yang bersih dan tidak ada bagian tajam; hindari benda kecil yang bisa masuk mulut anak di bawah tiga tahun.",
       "Gunakan lem batang yang aman untuk anak dan dampingi anak dari awal sampai karya selesai."
     ],
     "references": [
@@ -1154,7 +1154,7 @@
       "Kertas warna"
     ],
     "steps": [
-      "Letakkan kardus terbuka di lantai yang datar dan lebar dan pastikan ukurannya cukup untuk anak masuk dan duduk.",
+      "Letakkan kardus terbuka di lantai yang datar dan luas, lalu pastikan ukurannya cukup untuk anak masuk dan duduk.",
       "Potong pintu besar di satu sisi dan jendela persegi di sisi lain dengan gunting atau cutter.",
       "Tutupi semua tepi potongan dengan lakban kain supaya tidak melukai tangan anak.",
       "Biarkan anak menghias dinding kardus dengan krayon atau stiker supaya ia merasa rumah itu miliknya."

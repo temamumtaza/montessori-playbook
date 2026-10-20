@@ -1,0 +1,743 @@
+{
+  "skor_per_dokumen": {
+    "01-filosofi.md": 8,
+    "02-pemetaan-kurikulum.md": 6,
+    "03-usia-0-12bulan.md": 7,
+    "04-usia-1-3tahun.md": 8,
+    "05-usia-3-5tahun.md": 6,
+    "06-prepared-environment.md": 7,
+    "07-parent-mindset-communication.md": 6,
+    "08-keamanan-kesehatan.md": 7
+  },
+  "kutipan_problematik": [
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "beberapa kritik sector memandangnya sebagai akselerasi",
+      "masalah": "Kata Inggris 'sector' tertinggal mentah (bukan 'sektor' Indonesia); struktur kala-pasif Inggris 'some sector critics view it as'.",
+      "perbaikan": "beberapa kritik dari kalangan pendidik memandangnya sebagai akselerasi"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "Memetakan Montessori ke kerangka-kermakaian resmi itu sah",
+      "masalah": "Salah ketik/autokoreksi 'kermakaian' — kata tidak ada; pola kalimat setelah-terjemahan.",
+      "perbaikan": "Memetakan Montessori ke kerangka resmi itu sah"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "Sensory: silinder tak berbulu, kantong misteri (stereognostic)",
+      "masalah": "Kalkiran salah makna: 'knobless' (tanpa kenop) diterjemah 'tak berbulu' (hairless); istilah juga tidak konsisten dengan 'silinder tanpa kenop' di dok 05.",
+      "perbaikan": "Sensorial: silinder tanpa kenop (knobless cylinders), kantong misteri (stereognostik)"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "Gerak kasar: merangkak, memanjat, papan titik (payung piramida)",
+      "masalah": "'Papan titik (payung piramida)' tidak bermakna — kemungkinan kalkiran rusak dari 'climbing triangle/Pikler triangle'.",
+      "perbaikan": "Gerak kasar: merangkak, memanjat, segitiga memanjat (pikler triangle)"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "Razia bahasa bentuk: geometri, konstruksi balok (pink tower, brown stair)",
+      "masalah": "'Razia' (penyisakan/kejar-kejaran) salah total untuk 'language of shapes'; nama materi Inggris tidak konsisten dengan 'kubus pink, tangga cokelat' di dok 05.",
+      "perbaikan": "Bahasa bentuk: geometri, konstruksi balok (kubus pink, tangga cokelat)"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "bayi aktif beberapa kali sehari via bermain interaktif berbasis lantai",
+      "masalah": "Preposisi Inggris 'via' dipakai sebagai penghubung; 'berbasis lantai' kalkiran 'floor-based'.",
+      "perbaikan": "bayi aktif beberapa kali sehari melalui bermain interaktif di lantai"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "minimal 30 menit prone position tersebar sepanjang hari",
+      "masalah": "Istilah medis Inggris 'prone position' tidak diterjemah, padahal di dok lain memakai 'telungkup'.",
+      "perbaikan": "minimal 30 menit posisi telungkup yang tersebar sepanjang hari"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "checklist milestone bukan pengganti skrining validasi formal [5][6][17]",
+      "masalah": "Rangkaian nomina ala Inggris 'validated formal screening' ditata mundur jadi 'skrining validasi formal' — makna menggeser.",
+      "perbaikan": "ceklis tonggak bukan pengganti skrining formal yang tervalidasi"
+    },
+    {
+      "file": "02-pemetaan-kurikulum.md",
+      "kutipan": "pikiran penyerap (absorbent mind)",
+      "masalah": "Dua terjemahan untuk satu istilah: dok 01 memakai 'pikiran yang menyerap', dok 02 'pikiran penyerap'.",
+      "perbaikan": "pikiran yang menyerap (absorbent mind) — bakukan satu padanan di seluruh dokumen"
+    },
+    {
+      "file": "01-filosofi.md",
+      "kutipan": "difasilitasi dialog yang hormat",
+      "masalah": "Pasif berimbuhan ala terjemahan ('difasilitasi') + 'dialog yang hormat' kalkiran 'respectful dialogue' (yang hormat ≠ saling menghormati).",
+      "perbaikan": "melalui dialog yang saling menghormati"
+    },
+    {
+      "file": "01-filosofi.md",
+      "kutipan": "anak menyerap hal baik dan buruk secara sama rata",
+      "masalah": "'Secara sama rata' kalkiran 'equally' — frasa tidak idiomatik dalam konteks ini.",
+      "perbaikan": "anak menyerap hal baik dan buruk dalam ukuran yang sama"
+    },
+    {
+      "file": "01-filosofi.md",
+      "kutipan": "menghubungkan anak dengan bahan yang tepat di saat yang tepat, lalu mundur ke belakang",
+      "masalah": "'Mundur ke belakang' pleonasme (mundur sudah berarti ke belakang) — kalkiran 'steps back'.",
+      "perbaikan": "menghubungkan anak dengan bahan yang tepat di saat yang tepat, lalu mundur"
+    },
+    {
+      "file": "03-usia-0-12bulan.md",
+      "kutipan": "CDC mencatat bayi umumnya menarik diri ke berdiri",
+      "masalah": "Kalkiran kata-demi-kata 'pulls self up to stand' — 'menarik diri' berarti withdraw/mundur.",
+      "perbaikan": "CDC mencatat bayi umumnya menarik tubuhnya untuk berdiri (berdiri sambil berpegang)"
+    },
+    {
+      "file": "03-usia-0-12bulan.md",
+      "kutipan": "manik silikon besar grade makanan yang dirangkai kuat",
+      "masalah": "'Grade makanan' campuran kode Inggris; tidak ada dalam KBBI.",
+      "perbaikan": "manik silikon besar yang aman untuk mulut (food-grade) dan dirangkai kuat"
+    },
+    {
+      "file": "03-usia-0-12bulan.md",
+      "kutipan": "kertas cardstock hitam-putih",
+      "masalah": "Kata 'cardstock' tidak diterjemah; register campur.",
+      "perbaikan": "karton tebal hitam-putih"
+    },
+    {
+      "file": "03-usia-0-12bulan.md",
+      "kutipan": "rayakan tanpa menyeret tubuhnya",
+      "masalah": "Kalkiran ambigu 'without dragging his body' — terkesan anak diseret.",
+      "perbaikan": "rayakan tanpa memindahkan atau mendorong tubuhnya paksa"
+    },
+    {
+      "file": "03-usia-0-12bulan.md",
+      "kutipan": "Seluruh sesi di bawah supervisi orang dewasa",
+      "masalah": "Dok 03 konsisten memakai 'supervisi/disupervisi' (29x) sedangkan dok 04–08 memakai 'pengawasan/diawasi' (37x) — inkonsistensi antarfile.",
+      "perbaikan": "Seluruh sesi di bawah pengawasan orang dewasa — bakukan 'pengawasan', hindari 'disupervisi'"
+    },
+    {
+      "file": "04-usia-1-3tahun.md",
+      "kutipan": "memikul bantal; berhenti-diaba; memanjat struktur taman",
+      "masalah": "'Berhenti-diaba' kata rekaan (kalkiran rusak 'stop-and-go'); tanda hubung tidak baku.",
+      "perbaikan": "memikul bantal; berhenti-lalu-jalan; memanjat struktur taman"
+    },
+    {
+      "file": "04-usia-1-3tahun.md",
+      "kutipan": "Setup Kamar Mandi Montessori",
+      "masalah": "'Setup' anglikisme (muncul 15x di dok 04 & 06) padahal padanan Indonesia lugas.",
+      "perbaikan": "Tata Kamar Mandi Montessori / Menyiapkan Kamar Mandi Montessori"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "bentuk, taktil, bariknos",
+      "masalah": "'Bariknos' kata tidak dikenal (kalkiran rusak 'baric' — indra berat).",
+      "perbaikan": "bentuk, taktil, berat (indra barik — materi kotak berat)"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "**Tayang di sisi dominan anak** agar tangannya terlihat jelas",
+      "masalah": "'Tayang' (istilah media) salah pilih untuk 'present/present the material'.",
+      "perbaikan": "Peragakan di sisi tangan dominan anak agar gerakannya terlihat jelas"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "Kartu dituang ke matras; orang dewasa mengambil satu",
+      "masalah": "'Dituang' (menuang cairan) dipakai untuk kartu — kalkiran 'cards are laid out'; pasif tanpa pelaku.",
+      "perbaikan": "Kartu ditumpuk di matras; orang dewasa mengambil satu"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "benda nyata berkata pendek dan jelas bunyi awalnya",
+      "masalah": "Struktur kalimat kacau setelah terjemahan ('objects with short, clear initial sounds').",
+      "perbaikan": "benda nyata dengan bunyi awal yang pendek dan jelas"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "berarti ada yang salah di belakang dan anak bisa menyusuri ulang",
+      "masalah": "'Salah di belakang' kalkiran 'wrong at the back' — rujukannya tidak jelas.",
+      "perbaikan": "berarti ada yang keliru di langkah sebelumnya dan anak bisa menyusuri ulang"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "model pulau yang terhubung tanah otomatis menjadi bukan pulau",
+      "masalah": "'Terhubung tanah' kalkiran 'connected to land' — unsur preposisi hilang.",
+      "perbaikan": "model pulau yang masih tersambung dengan daratan otomatis bukan lagi pulau"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "hindari kartu berpigmen beracun; cukup bahaya kecil — perhatikan benda kecil",
+      "masalah": "'Cukup bahaya kecil' rusak makna (kemungkinan 'the only hazard is small parts').",
+      "perbaikan": "hindari kartu berpigmen beracun; risiko utamanya hanya benda kecil — awasi anak yang masih suka memasukkan benda ke mulut"
+    },
+    {
+      "file": "05-usia-3-5tahun.md",
+      "kutipan": "dua tray berisi air berwarna biru dan tanah/liat",
+      "masalah": "Dok 05 memakai 'tray' (7x) sekaligus 'nampan' (14x) dan 'pitcher' (12x) sekaligus 'jug' (1x) — inkonsistensi dalam satu file.",
+      "perbaikan": "dua nampan berisi air berwarna biru dan tanah/liat — bakukan 'nampan' dan 'jug' di semua dokumen"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "2–3 camilan sehat dalam wadah terbuka-mandi",
+      "masalah": "'Terbuka-mandi' kata gabungan rekaan (kemungkinan 'open-and-grab').",
+      "perbaikan": "2–3 camilan sehat dalam wadah yang mudah dibuka sendiri"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "kabel dirapatkan/diikat/di-box",
+      "masalah": "Anglikisme 'di-box' (dari 'box the cables') — imbuhan di- + kata Inggris.",
+      "perbaikan": "kabel dirapatkan, diikat, atau dimasukkan ke kotak kabel"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "sabun pump foam",
+      "masalah": "Campuran kode 'pump foam' untuk 'foam pump dispenser'.",
+      "perbaikan": "sabun busa berpompa (foam soap)"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "pot berat ber alas lebar",
+      "masalah": "Kesalahan spasi 'ber alas' (harusnya 'beralas'); pola muncul juga di 'diplester rapi'.",
+      "perbaikan": "pot berat beralas lebar"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "periksa sudut tajam baru, kabel baru, benda kecil pencedok",
+      "masalah": "'Pencedok' kata rekaan untuk 'choking hazard'.",
+      "perbaikan": "periksa sudut tajam baru, kabel baru, dan benda kecil yang bisa tertelan"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "Stop kontak tak terpakai ditutup **penutup kejut**",
+      "masalah": "'Penutup kejut' terkesan 'shock absorber'; 'kejut' dalam bahasa Indonesia identik dengan kejut listrik medis/terasering.",
+      "perbaikan": "Stop kontak tak terpakai ditutup penutup stop kontak anti-sengat (plugin protector)"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "sekrup masuk ke **stud dinding** (umumnya berselang ±40 cm)",
+      "masalah": "'Stud dinding' istilah konstruksi Inggris tanpa penjelasan — pembaca awam tidak paham.",
+      "perbaikan": "sekrup menancap ke balok rangka dinding (umumnya berjarak ±40 cm) atau pakai dinabang sesuai jenis dinding"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "perabot murah, barang second, dan barang yang sudah ada di rumah",
+      "masalah": "'Barang second' campuran kode; register tidak konsisten dengan 'barang bekas' di bagian lain.",
+      "perbaikan": "perabot murah, barang bekas, dan barang yang sudah ada di rumah"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "minta layar/camilan/ortu alih-alih memilih materi",
+      "masalah": "'Ortu' singkatan informal; register turun drastis dibanding 'orang tua' di 300+ tempat lain.",
+      "perbaikan": "meminta layar, camilan, atau orang tua alih-alih memilih materi"
+    },
+    {
+      "file": "06-prepared-environment.md",
+      "kutipan": "kamar jadi \"boks\" raksasa: seluruh kamar harus aman dijelajahi tanpa pengawasan — anchor, tutup stop kontak, kabel blind terikat tinggi",
+      "masalah": "Dok 06 memakai 'boks raksasa', dok 03 'kandang raksasa' — metafora sama dua kata; 'anchor' dan 'kabel blind' belum diterjemah.",
+      "perbaikan": "bakukan satu metafora (mis. 'kamar berubah menjadi area jelajah raksasa'); 'pasang pengikat anti-roboh', 'tutup stop kontak', 'tali/kabel penutup jendela diikat tinggi'"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "Anak yang sama benda tidak berarti anak yang sama materi",
+      "masalah": "Struktur kalimat rusak setelah terjemahan ('same child, same material?' hilang unsur).",
+      "perbaikan": "Benda yang sama tidak berarti materi yang sama untuk dua anak"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "Tahan tangan, bukan batal menolong",
+      "masalah": "'Batal menolong' kalkiran 'not cancelling help' — tidak idiomatik.",
+      "perbaikan": "Tahan tangan, bukan menolak menolong"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "intervensi yang terlalu cepat mengambil dari ia kesempatan menemukan",
+      "masalah": "'Mengambil dari ia kesempatan' — struktur dasar + 'dari ia' (bukan 'darinya'); kalkiran 'takes from him the opportunity'.",
+      "perbaikan": "intervensi yang terlalu cepat mencabut kesempatannya untuk menemukan"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "tak ada orang tua yang benar 100% waktu",
+      "masalah": "'Benar 100% waktu' kalkiran 'right 100% of the time'.",
+      "perbaikan": "tak ada orang tua yang selalu benar sepanjang waktu"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "Susu tumpah. Ada lap di bawah sinko.",
+      "masalah": "'Sinko' serapan daerah/belanda yang tidak baku dan tidak konsisten dengan 'wastafel/bak cuci' di dok 04 & 06.",
+      "perbaikan": "Susu tumpah. Ada lap di bawah bak cuci."
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "puzzle yang tak muat kalau dipaksa, roster yang tinggal satu karena satu ditumpahkan",
+      "masalah": "'Roster' dipakai salah makna (daftar jadwal ≠ susunan silinder); kalkiran 'the cylinder left over'.",
+      "perbaikan": "puzzle yang tak muat kalau dipaksa, silinder yang tersisa satu lubang kosong karena satu ditumpahkan"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "Materi dengan bagian kecil (koin, kancing, biji) adalah benda asfiksiasi bagi bayi",
+      "masalah": "'Asfiksiasi' kata rekaan dari 'asphyxiation' — tidak ada dalam KBBI.",
+      "perbaikan": "Materi dengan bagian kecil (koin, kancing, biji) berisiko menyebabkan sesak (tersedak) pada bayi"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "tidak menganggap layar sebagai musuh yang harus dideklarasikan perang terhadapnya",
+      "masalah": "'Dideklarasikan perang terhadapnya' — pasif + kalkiran 'declare war on it' yang menggantung.",
+      "perbaikan": "tidak memperlakukan layar sebagai musuh yang harus dilawan"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "memberi anak peta menit-menisnya",
+      "masalah": "'Peta menit-menisnya' kalkiran 'minute-by-minute map' — frasa menggantung.",
+      "perbaikan": "memberi anak gambaran urutan kejadian yang akan datang"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "anak terjaga di gendongan lantai atau karpet",
+      "masalah": "'Gendongan lantai' tidak bermakna — kalkiran rusak dari 'on the floor'.",
+      "perbaikan": "anak terjaga bermain di lantai atau karpet"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "Kamu menekan keping puzzlenya sampai terdengar klik",
+      "masalah": "Penulisan campuran 'puzzlenya' (puzzle + -nya tanpa tanda hubung).",
+      "perbaikan": "Kamu menekan keping puzzle-nya sampai terdengar bunyi klik"
+    },
+    {
+      "file": "07-parent-mindset-communication.md",
+      "kutipan": "makan pendamping lewat explorasi (baik itu makan sendiri dengan tangan)",
+      "masalah": "Salah eja 'explorasi' (baku: eksplorasi); '(baik itu ...)' konstruksi setelah-terjemahan.",
+      "perbaikan": "makan pendamping lewat eksplorasi, misalnya makan sendiri dengan tangan"
+    },
+    {
+      "file": "08-keamanan-kesehatan.md",
+      "kutipan": "daging/ikan berduri berbuka",
+      "masalah": "'Berduri berbuka' kata 'berbuka' tidak jelas maknanya (kalkiran rusak 'bony/bone-in').",
+      "perbaikan": "daging bersendi besar / ikan yang masih berduri dan berongga"
+    },
+    {
+      "file": "08-keamanan-kesehatan.md",
+      "kutipan": "gigi geraham belum lengkap dan pola mengunyah-menelan masih kasar.WHO pun",
+      "masalah": "Spasi hilang setelah titik ('kasar.WHO') — kesalahan mekanis.",
+      "perbaikan": "...pola mengunyah-menelan masih kasar. WHO pun..."
+    },
+    {
+      "file": "08-keamanan-kesehatan.md",
+      "kutipan": "from crib ke bed besar tidak ada angka tunggal",
+      "masalah": "'From ... ke ...' campuran kode Inggris-Indonesia dalam satu frasa.",
+      "perbaikan": "peralihan dari crib ke kasur besar tidak punya angka tunggal"
+    },
+    {
+      "file": "08-keamanan-kesehatan.md",
+      "kutipan": "anak **duduk tegak** (bukan recline di stroller/car seat)",
+      "masalah": "'Recline' kata kerja Inggris dipertahankan mentah.",
+      "perbaikan": "anak duduk tegak (bukan setengah rebah di stroller/car seat)"
+    },
+    {
+      "file": "08-keamanan-kesehatan.md",
+      "kutipan": "dianggap sama berbahayanya dengan posisi tengkurap",
+      "masalah": "Dok 08 memakai 'tengkurap' (2x) sekaligus 'telungkup' (12x di dok 02/03/08) untuk satu konsep.",
+      "perbaikan": "bakukan satu kata: 'telungkup' (konsisten dengan dok 03) atau 'tengkurap' — pilih satu untuk seluruh seri"
+    }
+  ],
+  "glosarium_baku": [
+    {
+      "en": "absorbent mind",
+      "id_rekomendasi": "pikiran yang menyerap",
+      "bentuk": "terjemah",
+      "catatan": "Bakukan; tolak varian 'pikiran penyerap'. Saat pertama: pikiran yang menyerap (absorbent mind)."
+    },
+    {
+      "en": "sensitive period",
+      "id_rekomendasi": "periode sensitif",
+      "bentuk": "terjemah",
+      "catatan": "Sudah jadi padanan umum komunitas Montessori Indonesia; bukan kalkiran buruk. Konsisten dipakai dok 01/02."
+    },
+    {
+      "en": "prepared environment",
+      "id_rekomendasi": "lingkungan yang disiapkan",
+      "bentuk": "terjemah",
+      "catatan": "Ganti 'dipersiapkan' (pasif ganda) → 'disiapkan'; tulis 'lingkungan yang disiapkan (prepared environment)' saat pertama."
+    },
+    {
+      "en": "practical life",
+      "id_rekomendasi": "kehidupan praktis",
+      "bentuk": "terjemah",
+      "catatan": "Header boleh 'Kehidupan Praktis (Practical Life)'. Jangan campur 'practical life' telanjang di badan teks dok 04/05/06."
+    },
+    {
+      "en": "control of error",
+      "id_rekomendasi": "kontrol kesalahan",
+      "bentuk": "terjemah",
+      "catatan": "Sudah konsisten di dok 04/05 (42x); pertahankan. 'Self-correcting material' → 'materi yang mengoreksi diri'."
+    },
+    {
+      "en": "grace and courtesy",
+      "id_rekomendasi": "kesantunan",
+      "bentuk": "terjemah",
+      "catatan": "Satu padanan; hindari 'Kesantunan dan Kehalusian' (dok 04) vs 'kesantunan' (dok 05) bergantian."
+    },
+    {
+      "en": "freedom within limits",
+      "id_rekomendasi": "kebebasan dalam batas",
+      "bentuk": "terjemah",
+      "catatan": "Konsisten di semua dokumen; pertahankan."
+    },
+    {
+      "en": "normalization / normalisation",
+      "id_rekomendasi": "normalisasi",
+      "bentuk": "terjemah",
+      "catatan": "Padanan mapan; pilih satu ejaan sumber (normalisation) untuk sitasi."
+    },
+    {
+      "en": "guide / directress",
+      "id_rekomendasi": "pemandu",
+      "bentuk": "terjemah",
+      "catatan": "'Pemandu Montessori'; hindari 'directress' telanjang."
+    },
+    {
+      "en": "three-period lesson",
+      "id_rekomendasi": "pelajaran tiga periode",
+      "bentuk": "terjemah",
+      "catatan": "Bakukan; tolak varian 'pembelajaran tiga periode' (dok 04). Urutan: penamaan → pengenalan → penamaan mandiri."
+    },
+    {
+      "en": "nomenclature cards / three-part cards",
+      "id_rekomendasi": "kartu nomenklatur (kartu tiga bagian)",
+      "bentuk": "hybrid",
+      "catatan": "'Nomenklatur' mapan; sebut 'kartu tiga bagian' sebagai sinonim satu kali."
+    },
+    {
+      "en": "sandpaper letters",
+      "id_rekomendasi": "huruf kasar",
+      "bentuk": "terjemah",
+      "catatan": "Padanan dok 05 bagus; 'amplas' cukup di kurung deskripsi bahan."
+    },
+    {
+      "en": "metal insets",
+      "id_rekomendasi": "inset logam",
+      "bentuk": "hybrid",
+      "catatan": "'Inset' mapan di komunitas; jangan diterjemah 'sisipan'."
+    },
+    {
+      "en": "movable alphabet",
+      "id_rekomendasi": "alfabet berpindah",
+      "bentuk": "terjemah",
+      "catatan": "Dok 02 menulis 'alfabet bergerak' — samakan ke 'alfabet berpindah' (dok 05)."
+    },
+    {
+      "en": "pink tower",
+      "id_rekomendasi": "kubus pink",
+      "bentuk": "hybrid",
+      "catatan": "Dok 02 'pink tower', dok 05 'kubus pink' — bakukan 'kubus pink (pink tower)' saat pertama."
+    },
+    {
+      "en": "brown stair",
+      "id_rekomendasi": "tangga cokelat",
+      "bentuk": "terjemah",
+      "catatan": "Konsisten dok 05; perbaiki dok 02 yang masih Inggris."
+    },
+    {
+      "en": "red rods",
+      "id_rekomendasi": "batang merah",
+      "bentuk": "terjemah",
+      "catatan": ""
+    },
+    {
+      "en": "knobbed cylinders",
+      "id_rekomendasi": "silinder berkenop",
+      "bentuk": "terjemah",
+      "catatan": "Konsisten dok 05; pertahankan."
+    },
+    {
+      "en": "knobless cylinders",
+      "id_rekomendasi": "silinder tanpa kenop",
+      "bentuk": "terjemah",
+      "catatan": "Perbaiki kalkiran 'silinder tak berbulu' di dok 02."
+    },
+    {
+      "en": "cylinder blocks",
+      "id_rekomendasi": "blok silinder",
+      "bentuk": "terjemah",
+      "catatan": "Perbaiki 'piring sukat' (dok 02) — tidak bermakna."
+    },
+    {
+      "en": "golden beads",
+      "id_rekomendasi": "manik emas",
+      "bentuk": "terjemah",
+      "catatan": "Konsisten dok 05."
+    },
+    {
+      "en": "spindle box",
+      "id_rekomendasi": "kotak spindle",
+      "bentuk": "hybrid",
+      "catatan": "Dok 05 'kotak spindle', dok 02 'spindle box' — bakukan 'kotak spindle'."
+    },
+    {
+      "en": "object permanence box",
+      "id_rekomendasi": "kotak permanensi objek",
+      "bentuk": "terjemah",
+      "catatan": "Dok 02 sudah benar; dok 03 sering menyingkat 'objek permanen' — pertahankan sebagai konsep, nama materi tetap 'kotak permanensi objek'."
+    },
+    {
+      "en": "treasure basket",
+      "id_rekomendasi": "keranjang harta karun",
+      "bentuk": "terjemah",
+      "catatan": "Sertakan (treasure basket) sekali di awal."
+    },
+    {
+      "en": "interlocking discs",
+      "id_rekomendasi": "cakram saling mengunci",
+      "bentuk": "terjemah",
+      "catatan": "Konsisten dok 03; pertahankan."
+    },
+    {
+      "en": "grasping beads",
+      "id_rekomendasi": "manik genggam",
+      "bentuk": "terjemah",
+      "catatan": "Dok 03 memakai 'grasping beads' Inggris — beri padanan Indonesia, Inggris di kurung."
+    },
+    {
+      "en": "walking on the line",
+      "id_rekomendasi": "berjalan di garis",
+      "bentuk": "terjemah",
+      "catatan": "Samakan 'jalan di garis' (dok 05) → 'berjalan di garis'."
+    },
+    {
+      "en": "silence game",
+      "id_rekomendasi": "permainan diam",
+      "bentuk": "terjemah",
+      "catatan": "Konsisten dok 05."
+    },
+    {
+      "en": "work cycle / uninterrupted work period",
+      "id_rekomendasi": "siklus kerja tanpa interupsi",
+      "bentuk": "terjemah",
+      "catatan": "'Siklus kerja 2–3 jam di rumah'; hindari 'work' telanjang tanpa penjelasan bahwa Montessori menyebut aktivitas anak 'kerja'."
+    },
+    {
+      "en": "milestone (CDC)",
+      "id_rekomendasi": "tonggak perkembangan",
+      "bentuk": "terjemah",
+      "catatan": "'Milestone' muncul 90x vs 'tonggak' 10x. Rumus: 'tonggak CDC' di teks; 'milestone' hanya dalam sitasi nama program."
+    },
+    {
+      "en": "tummy time",
+      "id_rekomendasi": "waktu telungkup",
+      "bentuk": "hybrid",
+      "catatan": "Tulis 'waktu telungkup (tummy time)' saat pertama; bakukan 'telungkup' (jangan 'tengkurap', jangan 'prone position')."
+    },
+    {
+      "en": "floor bed",
+      "id_rekomendasi": "kasur lantai",
+      "bentuk": "hybrid",
+      "catatan": "Saat pertama: 'floor bed (kasur lantai)'; setelah itu 'kasur lantai'."
+    },
+    {
+      "en": "toilet learning",
+      "id_rekomendasi": "belajar toilet",
+      "bentuk": "terjemah",
+      "catatan": "Pertahankan kontras dengan 'toilet training' yang memang dihindari; jangan pakai 'potty training' di teks utama."
+    },
+    {
+      "en": "potty",
+      "id_rekomendasi": "potty",
+      "bentuk": "keep English",
+      "bentuk_note": "Nama produk umum; dok 06 memakai 'pispot' — bakukan 'potty' (pahat komunitas) atau 'pispot', pilih satu. Rekomendasi: 'potty'."
+    },
+    {
+      "en": "safe sleep",
+      "id_rekomendasi": "tidur aman",
+      "bentuk": "hybrid",
+      "catatan": "'Tidur aman (safe sleep)' saat pertama; keep istilah AAP room-sharing/bed-sharing apa adanya (istilah teknis tanpa padanan setara)."
+    },
+    {
+      "en": "crib / bassinet / play yard",
+      "id_rekomendasi": "crib, bassinet, play yard",
+      "bentuk": "keep English",
+      "catatan": "Nama kategori produk berlabel standar keamanan AS; beri glos kecil saat pertama ('tempat tidur bayi berpagar')."
+    },
+    {
+      "en": "sleep sack / sleepsack",
+      "id_rekomendasi": "sleep sack (kantong tidur)",
+      "bentuk": "hybrid",
+      "catatan": "Bakukan ejaan 'sleep sack' + padanan 'kantong tidur'; dok 03 'sleep sack' vs dok 08 'sleepsack'."
+    },
+    {
+      "en": "swaddle",
+      "id_rekomendasi": "bungkus bayi (swaddle)",
+      "bentuk": "hybrid",
+      "catatan": ""
+    },
+    {
+      "en": "pacifier",
+      "id_rekomendasi": "empeng",
+      "bentuk": "terjemah",
+      "catatan": "Perbaiki 'pacifier' (dok 08) → 'empeng (pacifier)' saat pertama."
+    },
+    {
+      "en": "SIDS",
+      "id_rekomendasi": "SIDS (sindrom kematian bayi mendadak)",
+      "bentuk": "keep English",
+      "catatan": "Singkatan mapan; buka kepanjangannya sekali."
+    },
+    {
+      "en": "baby-led weaning (BLW)",
+      "id_rekomendasi": "MPASI mandiri (BLW)",
+      "bentuk": "hybrid",
+      "catatan": "'MPASI' sudah dipakai konsisten dok 03; jangan beralih ke 'weaning' Inggris."
+    },
+    {
+      "en": "choking / gagging",
+      "id_rekomendasi": "tersedak / refleks tersedak ringan (gagging)",
+      "bentuk": "terjemah",
+      "catatan": "'Choking' = tersedak (darurat); 'gagging' = refleks normal — bedakan eksplisit seperti dok 03 sudah lakukan."
+    },
+    {
+      "en": "supervision",
+      "id_rekomendasi": "pengawasan",
+      "bentuk": "terjemah",
+      "catatan": "'Disupervisi' (dok 03, 29x) → 'diawasi/pengawasan penuh'; samakan dengan dok 04–08."
+    },
+    {
+      "en": "pincer grasp",
+      "id_rekomendasi": "genggaman ibu jari–telunjuk (pincer)",
+      "bentuk": "hybrid",
+      "catatan": "Empat varian kini: pincer, pintal dua jari, jepitan jari, cengkeraman presisi — bakukan satu bentuk di atas."
+    },
+    {
+      "en": "toddler",
+      "id_rekomendasi": "balita",
+      "bentuk": "terjemah",
+      "catatan": "'Balita' lebih presisi (1–3 th); 'toddler' boleh tersisa di kutipan CDC/AAP. Rasio kini 62:17 terbalik."
+    },
+    {
+      "en": "screen time",
+      "id_rekomendasi": "waktu layar",
+      "bentuk": "terjemah",
+      "catatan": "Dok 07 sudah benar; perbaiki 'screen time' di dok 03."
+    },
+    {
+      "en": "quiet time",
+      "id_rekomendasi": "waktu tenang",
+      "bentuk": "terjemah",
+      "catatan": "Samakan 'quiet time'/'istirahat tenang' (dok 07) → 'waktu tenang'."
+    },
+    {
+      "en": "cozy corner",
+      "id_rekomendasi": "pojok tenang",
+      "bentuk": "terjemah",
+      "catatan": "Dok 07 memakai tiga varian (cozy corner, pojok tenang, ruang tenang); bakukan 'pojok tenang'."
+    },
+    {
+      "en": "time-out",
+      "id_rekomendasi": "waktu tenang (bukan time-out)",
+      "bentuk": "terjemah",
+      "catatan": "Sebut 'time-out' hanya untuk membedakannya dari pendekatan Montessori."
+    },
+    {
+      "en": "co-regulation",
+      "id_rekomendasi": "ko-regulasi",
+      "bentuk": "hybrid",
+      "catatan": "Konsisten dok 04/07."
+    },
+    {
+      "en": "sibling",
+      "id_rekomendasi": "saudara (antar-saudara)",
+      "bentuk": "terjemah",
+      "catatan": "Judul bagian 'Sibling: dua anak, satu rumah' → 'Antar-Saudara: dua anak, satu rumah'."
+    },
+    {
+      "en": "tray",
+      "id_rekomendasi": "nampan",
+      "bentuk": "terjemah",
+      "catatan": "Dok 05/06 memakai 'tray' (19x) bersama 'nampan' (35x) — bakukan 'nampan'; 'tray' boleh di kurung pertama."
+    },
+    {
+      "en": "jug / pitcher",
+      "id_rekomendasi": "jug",
+      "bentuk": "keep English",
+      "catatan": "'Jug' umum di dapur Indonesia; 'pitcher' (19x, dok 05/06/07) jarang — bakukan 'jug'."
+    },
+    {
+      "en": "snack station",
+      "id_rekomendasi": "sudut camilan",
+      "bentuk": "hybrid",
+      "catatan": "'Sudut camilan (snack station)' saat pertama — sejajar 'pojok tenang'."
+    },
+    {
+      "en": "learning tower",
+      "id_rekomendasi": "learning tower",
+      "bentuk": "keep English",
+      "catatan": "Nama produk; tambang deskripsi 'menara belajar berpagar' sekali."
+    },
+    {
+      "en": "step stool",
+      "id_rekomendasi": "bangku bertingkat",
+      "bentuk": "hybrid",
+      "catatan": "'Bangku bertingkat (step stool)' saat pertama."
+    },
+    {
+      "en": "babyproof / baby-proof",
+      "id_rekomendasi": "mengamankan ruangan untuk bayi",
+      "bentuk": "terjemah",
+      "catatan": "Hindari 'di-babyproof total' → 'diamankan menyeluruh untuk bayi'."
+    },
+    {
+      "en": "anchor (furniture)",
+      "id_rekomendasi": "pengikat anti-roboh",
+      "bentuk": "terjemah",
+      "catatan": "'Anchor perabot' → 'pasang pengikat anti-roboh (anti-tip)' — 'anchor' dipakai 8x sebagai nomina Indonesia."
+    },
+    {
+      "en": "red flags",
+      "id_rekomendasi": "tanda bahaya",
+      "bentuk": "terjemah",
+      "catatan": "'Red flags' di judul dok 08 → 'Tanda Bahaya Perkembangan'; boleh sertakan (red flags) sekali."
+    },
+    {
+      "en": "first aid",
+      "id_rekomendasi": "pertolongan pertama",
+      "bentuk": "terjemah",
+      "catatan": "Perbaiki 'pelatihan first aid' → 'pelatihan pertolongan pertama'; CPR boleh tetap (singkatan mapan)."
+    },
+    {
+      "en": "small parts",
+      "id_rekomendasi": "bagian kecil",
+      "bentuk": "terjemah",
+      "catatan": "'Uji small parts CPSC' → 'uji bagian kecil CPSC'; 'small parts' tetap di kurung."
+    },
+    {
+      "en": "observasi (observation)",
+      "id_rekomendasi": "observasi",
+      "bentuk": "keep English",
+      "catatan": "Serapan mapan dan dominan (41x vs 'pengamatan' 4x); bakukan 'observasi', jangan berganti 'pengamatan' di tengah dokumen."
+    },
+    {
+      "en": "materi / material",
+      "id_rekomendasi": "materi",
+      "bentuk": "terjemah",
+      "catatan": "Dok 05 memakai keduanya bergantian; bakukan 'materi' untuk bahan ajar Montessori."
+    },
+    {
+      "en": "set up / setup",
+      "id_rekomendasi": "tata / penataan",
+      "bentuk": "terjemah",
+      "catatan": "'Setup' 15x (dok 04/06) → 'tata', 'penataan', 'menyiapkan'."
+    },
+    {
+      "en": "via",
+      "id_rekomendasi": "melalui",
+      "bentuk": "terjemah",
+      "catatan": "'Via' muncul 9x sebagai penghubung kalimat — ganti 'melalui/lewat'."
+    }
+  ],
+  "resep_gaya": [
+    "Satu istilah, satu padanan: ikat semua istilah Montessori ke glosarium dan pakai bentuk finalnya di seluruh dokumen (jug — bukan pitcher; nampan — bukan tray; pengawasan — bukan supervisi; tonggak CDC — bukan milestone; pelajaran tiga periode — bukan pembelajaran tiga periode; alfabet berpindah — bukan alfabet bergerak). Istilah Inggris yang dipertahankan (floor bed, crib, toddler dalam kutipan) ditulis miring dan disertai padanan Indonesia hanya pada kemunculan pertama.",
+    "Utamakan kalimat aktif dengan pelaku nyata: 'orang tua menyiapkan rak dan mengawasi sesi', bukan 'bahan disediakan dan aktivitas disupervisi orang dewasa'. Pasif diperbolehkan maksimal satu per kalimat, dan hanya bila pelaku memang tak penting ('tumpahan dibersihkan bersama').",
+    "Pecah kalimat panjang: satu kalimat maksimal sekitar 25 kata atau dua klausa. Pola khas yang harus dihindari: klausa utama + sisipan + daftar 3 unsur + klausul rujukan sumber — pisah jadi dua kalimat, taruh rujukan di akhir kalimat kedua.",
+    "Jangan bungkus verba dalam nomina: bukan 'melakukan observasi/melakukan rotasi/melakukan presentasi', tapi 'mengamati, merotasi, memperagakan'. Hapus juga kalkiran 'dilakukan untuk' — sebut langsung tindakannya.",
+    "Ganti kata sambung dan preposisi Inggris yang bocor: via → melalui/lewat; based on → berdasarkan; e.g./like → misalnya; and/or → dan/atau. Koma jangan menggantikan 'dan' sebelum unsur terakhir dalam daftar berbahasa Indonesia.",
+    "Pertahankan kekayaan afiks Indonesia yang sudah benar di dokumen: ber- (berpakaian, bergilingan), ter- (terjangkau, terlihat), ke-an (kejangkauan), pe-an (penataan). Hindari rekaan tak baku: asfiksiasi, pencedok, bariknos, terbuka-mandi, berhenti-diaba, ber alas, di-box — cari padanan KBBI atau perjelas dengan frasa.",
+    "Sesuaikan register pembaca: sapa pembaca dengan 'Anda' di penjelasan dan 'kamu/aku' hanya di dalam contoh dialog orang tua–anak. Dilarang mencampur register: 'ortu', 'second', 'sinko', 'gadget', 'nggak' berdampingan dengan 'orang tua', 'barang bekas', 'bak cuci'.",
+    "Metafora Inggris diterjemahkan ke citra sehari-hari Indonesia, bukan kata-demi-kata: 'time budget' → porsi waktu; 'declare war on screens' → dianggap musuh yang harus dilawan; 'minute-by-minute map' → gambaran urutan kejadian; 'third teacher' boleh dipertahankan karena sudah jadi istilah Montessori ('guru ketiga').",
+    "Untuk penekanan, hindari struktur Inggris 'it is X that Y' beruntun ('Yang dimaksud adalah...', 'Yang terjadi adalah...'). Cukup satu per paragraf; selebihnya langsung: 'Maksudnya: biarkan anak berjuang sedikit sebelum ditolong.'",
+    "Konsisten format angka dan satuan gaya Indonesia: koma desimal (2,5 tahun), rentang dengan en-dash (18–24 bulan), 'pukul 07.00', '±' hanya untuk satu angka perkiraan (±40 cm), dan satuan tak disingkap campur (pilih 'bulan/bln' satu gaya per dokumen). Setelah titik selalu ada spasi (perbaiki 'kasar.WHO')."
+  ],
+  "ringkasan": "Audit 8 dokumen riset (~38.000 kata) selesai. Skor naturalness rata-rata 6,9/10: tulisan secara umum sudah berbahasa Indonesia baik (bukan hasil mesin), tetapi tiap dokumen menyisakan jejak pasca-terjemahan. Temuan utama: (1) ±50 kutipan problematik terverifikasi, terparah di 02 (kata asing mentah 'sector', 'prone position'; kalkiran rusak 'kerangka-kermakaian', 'silinder tak berbulu', 'Razia bahasa bentuk', 'papan titik') dan 05/07 (frasa rusak 'bariknos', 'Tayang di sisi dominan', 'Anak yang sama benda', 'batal menolong', 'mengambil dari ia kesempatan', 'dideklarasikan perang'); (2) inkonsistensi istilah antarfile terukur: supervisi 29x hanya di 03 vs pengawasan 37x di 04–08; milestone 90x vs tonggak 10x; jug 28x vs pitcher 19x; nampan 35x vs tray 19x; empat varian untuk pincer grasp; dua varian untuk absorbent mind, movable alphabet, three-period lesson, pink tower, cozy corner, tengkurap/telungkup, sleep sack/sleepsack; (3) anglikisme: setup 15x, via 9x, di-box, pump foam, barang second, ortu, stud dinding, recline, first aid. Diserahkan: 52 kutipan problematik dengan perbaikan, glosarium 68 istilah (bentuk: terjemah/hybrid/keep English), 10 aturan resep gaya. Rekomendasi prioritas: bakukan glosarium lewat satu lembar istilah untuk semua penulis konten app, lalu lakukan pass kedua khusus dokumen 02, 05, 07 yang skor terendah."
+}

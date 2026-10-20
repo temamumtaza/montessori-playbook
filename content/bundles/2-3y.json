@@ -2366,6 +2366,1051 @@
     }
    ],
    "materialIds": []
+  },
+  {
+   "id": "gap-culture-globe-benua-pasir",
+   "title": "Globe Benua DIY dengan Tekstur Pasir",
+   "summary": "Anak meraba bola dunia buatan sendiri: permukaan biru licin sebagai air dan benua berlapis pasir kasar sebagai daratan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "culture"
+   ],
+   "skills": [
+    "kesadaran geografi",
+    "diskriminasi taktil",
+    "kosakata benua"
+   ],
+   "objectives": [
+    "Mengenal bahwa bumi tersusun dari air dan daratan (benua).",
+    "Melatih memori taktil dengan meraba tekstur benua.",
+    "Mengenal nama satu-dua benua sebagai awal kosakata geografi."
+   ],
+   "materials": [
+    {
+     "name": "bola styrofoam atau bola plastik bekas berdiameter minimal 10 cm",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "lem putih non-toksik dan kuas",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasir halus bersih dalam wadah kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan untuk memuat tetesan lem",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 30,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Duduk berdampingan di alas kerja, tunjukkan bola: 'Bagian biru licin ini airnya.'"
+    },
+    {
+     "step": 2,
+     "text": "Tunjukkan bagian berpasir: 'Yang kasar ini benua, daratan tempat kita berjalan.'"
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak meraba tekstur pasir dengan ujung dua jari, satu benua satu benua."
+    },
+    {
+     "step": 4,
+     "text": "Namai satu benua saja hari ini: 'Ini Asia, tempat tinggal kita.'"
+    },
+    {
+     "step": 5,
+     "text": "Ulangi benua yang sama beberapa hari sampai dikenali, baru tambahkan satu benua berikutnya."
+    }
+   ],
+   "controlOfError": "Tekstur memberi umpan balik langsung: jari merasakan pasir kasar hanya di benua; jika permukaan licin, anak tahu itu air dan mencari daratan lagi tanpa perlu dikoreksi.",
+   "variations": [
+    "Sorot satu benua dengan lampu senter sambil bercerita tentang hewan di sana.",
+    "Tambahkan figurine hewan kecil di benua yang sudah dikenali anak."
+   ],
+   "readySigns": [
+    "Anak suka memegang dan memutar bola dengan dua tangan.",
+    "Anak meniru kata 'benua' atau 'air' saat diperkenalkan."
+   ],
+   "struggleSigns": [
+    "Anak melempar bola — ganti dengan bola yang lebih ringan dan lebih besar.",
+    "Anak belum menunjukkan minat — simpan dulu dan tawarkan kembali 2-4 minggu kemudian."
+   ],
+   "safetyNotes": [
+    "Gunakan lem non-toksik dan pastikan lapisan pasir benar-benar kering sebelum dipakai anak.",
+    "Pilih bola berdiameter minimal 10 cm agar tidak tertelan.",
+    "Gunakan pasir bersih dan halus, hindari pasir dengan pecahan kerikil tajam; aktivitas ditemani penuh."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale (AMI)",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "Wikipedia: Continent",
+     "url": "https://en.wikipedia.org/wiki/Continent"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-culture-kartu-benua-tiga-bagian",
+   "title": "Kartu Benua Tiga Bagian Sederhana",
+   "summary": "Anak mencocokkan kartu gambar benua dengan kartu kontrol: kartu penuh sebagai kunci jawaban, kartu gambar sebagai tantangan.",
+   "ageBands": [
+    "2-3y"
+   ],
+   "areas": [
+    "culture"
+   ],
+   "skills": [
+    "mencocokkan",
+    "diskriminasi visual",
+    "kosakata benua"
+   ],
+   "objectives": [
+    "Mencocokkan bentuk benua dengan kartu kontrol secara mandiri.",
+    "Memperkaya kosakata dengan nama benua.",
+    "Melatih ketelitian membandingkan bentuk."
+   ],
+   "materials": [
+    {
+     "name": "kertas tebal atau karton putih",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gambar bentuk benua (hasil cetak atau gambar tangan)",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gunting dan lem batang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "selotip bening atau laminasi untuk melapisi kartu",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 25,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kartu kontrol (gambar plus nama benua) satu per satu di alas kerja sambil menyebut namanya."
+    },
+    {
+     "step": 2,
+     "text": "Berikan kartu gambar saja: 'Cari yang sama.'"
+    },
+    {
+     "step": 3,
+     "text": "Anak menumpuk kartu gambar tepat di atas kartu kontrol yang cocok."
+    },
+    {
+     "step": 4,
+     "text": "Untuk anak yang sudah membaca huruf awal, tambahkan kartu label kata sebagai tahap ketiga."
+    }
+   ],
+   "controlOfError": "Kartu kontrol adalah kunci jawabannya: kartu gambar yang tidak cocok tidak bisa menutupi kartu kontrol dengan rapi, jadi anak melihat sendiri perbedaannya dan memperbaiki tanpa koreksi orang dewasa.",
+   "variations": [
+    "Mulai dengan dua benua saja, tambahkan satu benua setiap minggu.",
+    "Warnai benua sesuai warna peta Montessori: Asia kuning, Afrika hijau, Eropa merah, Amerika Utara oranye, Amerika Selatan pink, Australia cokelat, Antartika putih."
+   ],
+   "readySigns": [
+    "Anak bisa mencocokkan dua gambar yang sama dengan tepat.",
+    "Anak menunjuk bentuk benua di globe saat namanya disebut."
+   ],
+   "struggleSigns": [
+    "Terlalu banyak kartu membuat bingung — kurangi menjadi dua sampai tiga pasang dulu.",
+    "Anak asal menumpuk tanpa membandingkan — kembali ke sesi mencocokkan benda nyata sebelum kartu."
+   ],
+   "safetyNotes": [
+    "Gunting dipakai bersama orang dewasa; sudut kartu jadikan membulat agar tidak melukai.",
+    "Anak duduk di kursi meja saat memegang kartu, bukan sambil berjalan, agar tidak terjatuh."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale (AMI)",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "Wikipedia: Continent",
+     "url": "https://en.wikipedia.org/wiki/Continent"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-toilet-lepas-pasang-celana",
+   "title": "Lepas dan Pasang Celana Sendiri di Potty",
+   "summary": "Anak berlatih menurunkan dan menaikkan celana elastis dengan dua tangan, sebelum dan sesudah duduk di potty, tanpa bantuan.",
+   "ageBands": [
+    "18-24m",
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "kemandirian berpakaian",
+    "motorik halus",
+    "urutan"
+   ],
+   "objectives": [
+    "Melatih menurunkan dan menaikkan celana dengan dua tangan.",
+    "Membangun kebiasaan urutan: turunkan celana dulu, baru duduk.",
+    "Menumbuhkan rasa memiliki atas proses ke kakusnya sendiri."
+   ],
+   "materials": [
+    {
+     "name": "celana elastis berpinggang lebar (bukan kancing atau overal)",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "potty yang stabil di lantai",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "alas kecil anti-slip di bawah potty",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Ajak anak berdiri di depan potty dengan kakinya di alas."
+    },
+    {
+     "step": 2,
+     "text": "Contohkan menurunkan celana perlahan: dua tangan memegang pinggang, tarik ke bawah sampai lutut."
+    },
+    {
+     "step": 3,
+     "text": "Anak duduk di potty sendiri."
+    },
+    {
+     "step": 4,
+     "text": "Selesai, anak berdiri dan menaikkan celananya sendiri; bantu hanya bagian yang belum bisa."
+    },
+    {
+     "step": 5,
+     "text": "Sampaikan apresiasi untuk usahanya: 'Kamu naikkan celanamu sendiri.'"
+    }
+   ],
+   "controlOfError": "Celana yang melorot di mata kaki atau terpasang miring terlihat jelas oleh anak; pinggang elastis lebar hanya punya satu cara yang benar, jadi kesalahan langsung terasa dan bisa ia perbaiki sendiri.",
+   "variations": [
+    "Latihan lepas-pasang celana sebagai permainan di depan cermin, tanpa kakus.",
+    "Sediakan dua celana elastis dan biarkan anak memilih sendiri."
+   ],
+   "readySigns": [
+    "Anak menarik celananya sendiri turun saat bermain.",
+    "Anak menolak diganti popok dan ingin ke kakus sendiri."
+   ],
+   "struggleSigns": [
+    "Celana sulit diturunkan — ganti dengan pinggang yang lebih longgar.",
+    "Anak frustrasi — pecah latihan: hari ini hanya berlatih menaikkan celana."
+   ],
+   "safetyNotes": [
+    "Potty diletakkan di lantai rata dengan alas anti-slip di bawahnya.",
+    "Kamar mandi ditemani penuh dan lantainya kering dari genangan sebelum anak masuk.",
+    "Pinggang celana tidak menekan perut agar duduk dan berdiri nyaman."
+   ],
+   "references": [
+    {
+     "title": "ZERO TO THREE: Potty Training - Learning to the Use the Toilet",
+     "url": "https://www.zerotothree.org/resource/potty-training-learning-to-the-use-the-toilet/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP): Potty Training",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-toilet-stasiun-potty-mandiri",
+   "title": "Stasiun Potty Mandiri",
+   "summary": "Menata area kakus anak: potty, keranjang celana bersih, tempat celana kotor, dan kartu urutan sehingga anak bisa memulai sendiri.",
+   "ageBands": [
+    "18-24m",
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "kemandirian",
+    "urutan",
+    "perawatan lingkungan"
+   ],
+   "objectives": [
+    "Menata lingkungan agar anak bisa mengambil dan mengembalikan semua yang ia butuhkan.",
+    "Memperkenalkan urutan lengkap dari duduk di potty hingga cuci tangan.",
+    "Membiasakan anak memimpin prosesnya sendiri, bukan dikerahkan."
+   ],
+   "materials": [
+    {
+     "name": "potty, atau dudukan toilet plus step stool yang kokoh",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "keranjang celana bersih dengan isi sedikit",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "ember atau tas untuk celana kotor",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu urutan bergambar ditempel di dinding setinggi mata anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "satu buku kecil untuk dibaca sambil menunggu",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 20,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Ajak anak menata stasiun bersama: potty di sudutnya, keranjang celana di sampingnya."
+    },
+    {
+     "step": 2,
+     "text": "Bahas kartu urutan di dinding dari atas ke bawah sambil menunjuk gambar."
+    },
+    {
+     "step": 3,
+     "text": "Lakukan latihan tiruan: anak berjalan ke stasiun, duduk, berdiri, buang ke toilet, flush, cuci tangan."
+    },
+    {
+     "step": 4,
+     "text": "Setiap hari anak memimpin urutannya sendiri; orang dewasa hanya membantu bila diminta."
+    }
+   ],
+   "controlOfError": "Setiap benda punya tempat tetap: keranjang yang menyisakan ruang kosong dan tas celana kotor yang menunggu menunjukkan sendiri langkah mana yang belum dilakukan; kartu bergambar di dinding menjadi kontrol visual yang bisa diperiksa anak.",
+   "variations": [
+    "Tambahkan foto anak sendiri di dekat stasiun untuk memperkuat rasa milik.",
+    "Untuk rumah bertingkat, siapkan stasiun kedua di lantai tempat anak bermain."
+   ],
+   "readySigns": [
+    "Anak berhenti bermain dan berjalan sendiri ke area kakus saat keinginan muncul.",
+    "Anak mengambil celana bersih sendiri dari keranjang."
+   ],
+   "struggleSigns": [
+    "Anak bermain buku terlalu lama di potty — batasi satu buku pendek.",
+    "Stasiun terlalu jauh dari ruang main — pertimbangkan potty kedua yang lebih dekat."
+   ],
+   "safetyNotes": [
+    "Step stool harus kokoh, anti-slip, dan tidak mudah bergeser saat dipijak.",
+    "Pengawasan penuh di kamar mandi; jauhkan ember berisi air dari jangkauan anak saat tidak dipakai.",
+    "Semua benda berada dalam jangkauan anak tanpa perlu memanjat."
+   ],
+   "references": [
+    {
+     "title": "ZERO TO THREE: Toilet Learning - Steps to Success",
+     "url": "https://www.zerotothree.org/resource/toilet-learning-steps-to-success/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP): Potty Training",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-toilet-urutan-pasca-toilet",
+   "title": "Urutan Pasca-Toilet: Buang, Flush, Cuci",
+   "summary": "Anak memimpin tiga langkah tetap setelah kakus: membuang isi potty ke toilet, menekan flush, lalu mencuci tangan dengan sabun.",
+   "ageBands": [
+    "18-24m",
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "urutan",
+    "kebersihan diri",
+    "perawatan lingkungan"
+   ],
+   "objectives": [
+    "Mempelajari urutan tetap yang dilakukan setiap kali selesai kakus.",
+    "Menumbuhkan rasa tanggung jawab atas kebersihan diri dan toilet.",
+    "Menghubungkan kakus dengan penutup yang menyenangkan, bukan ketakutan."
+   ],
+   "materials": [
+    {
+     "name": "potty yang sudah dipakai",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "toilet yang bisa dijangkau anak atau step stool kokoh",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "sabun cuci tangan dengan dispenser mudah ditekan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "handuk kecil digantung di tingkat anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu urutan tiga langkah: buang, flush, cuci",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Selesai kakus, ajak anak bersama membawa potty: 'Isinya kita buang ke toilet.'"
+    },
+    {
+     "step": 2,
+     "text": "Anak menekan tombol flush (dibantu bila belum kuat) dan melihat isinya hilang."
+    },
+    {
+     "step": 3,
+     "text": "Ucapkan selamat tinggal: 'Bye-bye!' lalu tutup toilet bersama."
+    },
+    {
+     "step": 4,
+     "text": "Berjalan ke wastafel: basahkan tangan, tekan sabun, gosok sambil menyanyi lagu pendek, bilas, keringkan."
+    },
+    {
+     "step": 5,
+     "text": "Lihat kartu urutan bersama: langkah mana yang sudah dilewati hari ini?"
+    }
+   ],
+   "controlOfError": "Tangan yang belum dicuci terasa lengket atau kotor, dan air yang tetap jernih setelah dibilas menunjukkan tangan sudah bersih; kartu urutan menunjukkan sendiri langkah mana yang belum dilewati.",
+   "variations": [
+    "Nyanyikan lagu cuci tangan berdurasi 20 detik agar durasinya pas.",
+    "Tempel stiker penanda di dispenser sabun agar takaran sabun selalu sama."
+   ],
+   "readySigns": [
+    "Anak senang menekan flush dan menganggapnya bagian dari rutinitas.",
+    "Anak mengingatkan orang lain untuk mencuci tangan."
+   ],
+   "struggleSigns": [
+    "Anak takut suara flush — mulai dengan menekan bersama atau tutup dulu tutupnya.",
+    "Anak lupa langkah — tempel kartu bergambar di tingkat mata anak dekat toilet."
+   ],
+   "safetyNotes": [
+    "Air wastafel hangat, tidak panas; anak selalu ditemani di dekat air.",
+    "Step kokoh dan anti-slip di depan wastafel dan toilet agar kaki tidak licin.",
+    "Isi potty dengan kotoran ditangani orang dewasa; anak cukup menemani dan menekan flush."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org (AAP): Potty Training",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    },
+    {
+     "title": "ZERO TO THREE: Potty Training - Learning to the Use the Toilet",
+     "url": "https://www.zerotothree.org/resource/potty-training-learning-to-the-use-the-toilet/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-toilet-baca-sinyal-tubuh",
+   "title": "Membaca Sinyal Tubuh Sendiri",
+   "summary": "Anak belajar mengenali tanda tubuh sebelum pipis atau BAB — berhenti main, memegang area pop, bersembunyi — lalu menyebutnya dengan kata.",
+   "ageBands": [
+    "18-24m",
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "kesadaran tubuh",
+    "kosakata tubuh",
+    "pengaturan diri"
+   ],
+   "objectives": [
+    "Menghubungkan sensasi di dalam tubuh dengan kebutuhan ke kakus.",
+    "Memberi anak kata sederhana: 'pipis', 'BAB', 'kakus'.",
+    "Membangun kebiasaan berhenti sejenak dan mendengarkan tubuh sendiri."
+   ],
+   "materials": [
+    {
+     "name": "celana latihan berbahan katun yang terasa basah bila lewat",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "potty yang mudah dijangkau dari ruang bermain",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "buku bergambar tentang tubuh dan kakus",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 5,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Saat anak berhenti bermain, memegang popok, atau bersembunyi di sudut, namai sensasinya: 'Oh, kamu merasa pipis mau keluar.'"
+    },
+    {
+     "step": 2,
+     "text": "Ajak dengan tenang ke potty: 'Coba kita dengarkan tubuhmu.'"
+    },
+    {
+     "step": 3,
+     "text": "Sesudah berhasil, ulangi hubungannya: 'Tubuhmu memberi tahu, lalu kamu pergi ke potty.'"
+    },
+    {
+     "step": 4,
+     "text": "Bila celana jadi basah, namai dengan netral: 'Celana basah. Tubuhmu sudah bilang tadi. Nanti kita coba lagi.'"
+    }
+   ],
+   "controlOfError": "Celana latihan katun memberi umpan balik nyata: basah terasa dingin dan berat, kering terasa hangat — anak merasakan sendiri perbedaannya dan menghubungkannya dengan sinyal sebelumnya tanpa perlu diberi tahu.",
+   "variations": [
+    "Peragakan dengan boneka: boneka merasa pipis, lalu dibawa ke potty.",
+    "Ajak anak memberi tahu saat orang dewasa juga ke kakus: 'Ibu merasa pipis, ibu ke toilet dulu.'"
+   ],
+   "readySigns": [
+    "Anak menyebut 'pipis' atau memegang popok saat atau setelah buang air.",
+    "Anak kering selama dua jam atau bangun tidur dalam keadaan kering."
+   ],
+   "struggleSigns": [
+    "Anak belum menunjukkan sinyal apa pun — tunggu dan mulai lagi beberapa minggu kemudian.",
+    "Anak menolak potty sama sekali — hentikan sejenak, jangan dipaksa."
+   ],
+   "safetyNotes": [
+    "Jangan pernah memaksa anak duduk di potty; memaksa berisiko menahan buang air dan sembelit.",
+    "Perhatikan tanda sembelit seperti menahan atau menangis karena sakit; konsultasikan ke dokter bila berlanjut.",
+    "Lantai menuju potty anti-slip dan kering agar anak bisa berjalan cepat dengan aman."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org (AAP): Potty Training Readiness - Thinking, Language & Developmental Milestones",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/Cognitive-and-Verbal-Skills-Needed-for-Toilet-Training.aspx"
+    },
+    {
+     "title": "ZERO TO THREE: Potty Training - Learning to the Use the Toilet",
+     "url": "https://www.zerotothree.org/resource/potty-training-learning-to-the-use-the-toilet/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-toilet-latihan-pakaian-praktis",
+   "title": "Latihan Pakaian Praktis: Elastis, Bukan Overal",
+   "summary": "Anak berlatih memakai dan melepas pakaian yang mudah — celana elastis pinggang lebar tanpa kancing atau tali — agar ke kakus mandiri lancar.",
+   "ageBands": [
+    "18-24m",
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "berpakaian mandiri",
+    "motorik halus",
+    "membuat pilihan"
+   ],
+   "objectives": [
+    "Melatih tangan menarik dan mendorong bahan pakaian sendiri.",
+    "Memilih pakaian sehari-hari yang tidak menghambat kemandirian kakus.",
+    "Memberi anak pengalaman berhasil kecil setiap hari."
+   ],
+   "materials": [
+    {
+     "name": "beberapa celana atau rok elastis berpinggang lebar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kaos berleher lebar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang pakaian latihan berisi dua pilihan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "cermin rendah",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Sediakan keranjang berisi dua pakaian pilihan yang mudah dilepas-pasang."
+    },
+    {
+     "step": 2,
+     "text": "Anak memilih pakaiannya sendiri dari dua pilihan."
+    },
+    {
+     "step": 3,
+     "text": "Contohkan duduk di lantai memasukkan satu kaki, lalu kaki satunya, ke lubang celana."
+    },
+    {
+     "step": 4,
+     "text": "Anak menaikkan celana sendiri sampai pinggang dengan dua tangan."
+    },
+    {
+     "step": 5,
+     "text": "Periksa bersama di cermin rendah: 'Sudah pas belum?'"
+    }
+   ],
+   "controlOfError": "Pinggang yang terlipat, celana yang terbalik, atau gambar penanda depan yang pindah ke belakang terlihat di cermin atau dari jahitannya — anak melihat sendiri hasilnya dan memperbaiki tanpa dikoreksi.",
+   "variations": [
+    "Latihan lepas-pasang sepatu dan sepatu bervelcro sebagai lanjutan.",
+    "Jahit gambar kecil di bagian depan celana sebagai penanda arah depan-belakang."
+   ],
+   "readySigns": [
+    "Anak ingin memilih dan memakai pakaiannya sendiri.",
+    "Anak sudah bisa melepas sepatu atau kaus kaki sendiri."
+   ],
+   "struggleSigns": [
+    "Lengan kaos tersangkut di kepala — ganti dengan leher yang lebih lebar.",
+    "Anak menangis frustrasi — tawarkan bantuan setengah: 'Boleh ibu bantu bagian terakhirnya?'"
+   ],
+   "safetyNotes": [
+    "Hindari tali serut panjang di leher karena berisiko tersangkut.",
+    "Pakaian tidak menyempit di perut agar duduk di potty nyaman.",
+    "Latihan dilakukan di lantai yang rata dan anti-slip, bukan di tempat tinggi."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org (AAP): The Right Age to Potty Train",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/The-Right-Age-to-Toilet-Train.aspx"
+    },
+    {
+     "title": "ZERO TO THREE: Toilet Learning - Steps to Success",
+     "url": "https://www.zerotothree.org/resource/toilet-learning-steps-to-success/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-toilet-kembali-bersih",
+   "title": "Kembali Bersih Setelah Kecelakaan",
+   "summary": "Saat celana basah atau lantai tumpah, semua orang tetap tenang dan anak ikut urutan membersihkan: ganti pakaian, kumpulkan kotor, lap lantai.",
+   "ageBands": [
+    "18-24m",
+    "2-3y"
+   ],
+   "areas": [
+    "self-care"
+   ],
+   "skills": [
+    "perawatan lingkungan",
+    "tenang menghadapi kesalahan",
+    "urutan"
+   ],
+   "objectives": [
+    "Menghadapi kecelakaan tanpa hukuman, nada marah, atau rasa malu.",
+    "Melibatkan anak dalam urutan membersihkan sesuai kemampuannya.",
+    "Menanamkan pesan bahwa kecelakaan adalah bagian normal dari belajar."
+   ],
+   "materials": [
+    {
+     "name": "celana bersih di keranjang yang tingginya pas untuk anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kain lap kecil dan ember kecil berisi air sabun sedikit",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tas atau ember untuk celana kotor",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu urutan bergambar empat langkah membersihkan",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tetap tenang dan namai dengan netral: 'Celana basah. Tidak apa-apa.'"
+    },
+    {
+     "step": 2,
+     "text": "Anak membawa celana kotor ke tas atau ember yang ditentukan."
+    },
+    {
+     "step": 3,
+     "text": "Anak mengambil celana bersih dari keranjang dan menggantinya sendiri."
+    },
+    {
+     "step": 4,
+     "text": "Berikan anak kain lap kecil: lap genangan bersama-sama, lalu keringkan dengan kain kering."
+    },
+    {
+     "step": 5,
+     "text": "Cuci tangan bersama, lihat kartu urutan, lalu kembali bermain seperti biasa."
+    }
+   ],
+   "controlOfError": "Genangan dan celana basah terlihat dan terasa jelas; setelah dilap anak melihat sendiri lantai yang kembali kering — hasil kerjanya nyata, dan kain yang masih basah menunjukkan bagian yang belum selesai.",
+   "variations": [
+    "Anak yang lebih besar membawa celana kotor sampai ke tempat pencucian.",
+    "Buat kartu gambar empat langkah: ganti, kumpulkan, lap, cuci tangan."
+   ],
+   "readySigns": [
+    "Anak tetap tenang saat celananya basah.",
+    "Anak senang ikut mengelap dan menata barang ke tempatnya."
+   ],
+   "struggleSigns": [
+    "Anak menyembunyikan celana basah — jawab tetap netral tanpa marah dan cucikan bersama.",
+    "Anak menangis — beri jeda dan pelukan dulu, urutan membersihkan dilakukan setelah tenang."
+   ],
+   "safetyNotes": [
+    "Tanpa hukuman dan tanpa nada marah; respons yang keras membuat anak menahan diri dan memperlambat proses.",
+    "Air sabun di ember hanya sedikit dan selalu diawasi; ember langsung disingkirkan setelah selesai.",
+    "Lantai dikeringkan sampai benar-benar tidak licin; kotoran pada lantai dan potty dibersihkan orang dewasa lalu area dibereskan."
+   ],
+   "references": [
+    {
+     "title": "ZERO TO THREE: Potty Training - Learning to the Use the Toilet",
+     "url": "https://www.zerotothree.org/resource/potty-training-learning-to-the-use-the-toilet/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP): Potty Training",
+     "url": "https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/default.aspx"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-ritual-silence-game",
+   "title": "Silence Game dengan Hening Bertahap",
+   "summary": "Anak berlatih menyadari suara tubuh dan lingkungan melalui permainan diam yang berlangsung bertahap hingga lima menit.",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy"
+   ],
+   "skills": [
+    "pengendalian diri",
+    "kesadaran lingkungan",
+    "menunggu"
+   ],
+   "objectives": [
+    "Mengalami hening sebagai kegiatan bersama yang aman dan positif.",
+    "Menunggu sinyal pulih dan kembali bergerak dengan tenang."
+   ],
+   "materials": [
+    {
+     "name": "karpet atau lingkaran duduk",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "lonceng kecil atau bunyi lembut sebagai sinyal pulih",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "jam pasir atau timer visual lima menit",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Persiapan: pilih tempat aman, dudukkan anak nyaman di karpet, jelaskan bahwa kita akan mendengar suara tubuh dan ruangan, lalu tunjukkan timer serta sinyal lonceng."
+    },
+    {
+     "step": 2,
+     "text": "Mulai 30 detik hening; orang dewasa memberi model dengan tubuh tenang tanpa menuntut anak menutup mata atau diam sempurna."
+    },
+    {
+     "step": 3,
+     "text": "Naikkan bertahap menjadi 1 menit, 2 menit, 3 menit, lalu hingga 5 menit hanya jika anak siap; selama hening, amati suara napas, kain, burung, atau kendaraan tanpa mengomentari setiap suara."
+    },
+    {
+     "step": 4,
+     "text": "Sinyal pulih: bunyikan lonceng sekali, tunggu sampai bunyi hilang, lalu katakan pelan, 'Permainan selesai. Kita regangkan tangan dan kembali berjalan.' Ajak anak menyebut satu suara yang didengarnya."
+    }
+   ],
+   "controlOfError": "Timer visual menunjukkan lama hening dan bunyi lonceng menjadi batas yang konsisten; anak dapat melihat kapan hening dimulai dan berakhir tanpa terus dikoreksi.",
+   "variations": [
+    "Lakukan di luar ruangan dan dengarkan tiga suara alam.",
+    "Gunakan boneka sebagai teman yang duduk diam untuk anak yang belum siap duduk sendiri."
+   ],
+   "readySigns": [
+    "Anak dapat duduk atau berdiri tenang selama 30 detik.",
+    "Anak menoleh ke sumber suara tanpa mengganggu teman dan menunggu sinyal pulih."
+   ],
+   "struggleSigns": [
+    "Anak tegang atau takut — pendekkan durasi dan tawarkan duduk dekat orang dewasa.",
+    "Anak terus bergerak — akhiri dengan tenang dan coba lagi pada waktu yang lebih sesuai."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, jangan memaksa diam, menutup mulut, atau menutup mata; batasi hening pada beberapa detik hingga satu menit dan dampingi dalam jarak dekat.",
+    "Hentikan bila anak tampak tertekan, mengantuk berlebihan, atau lingkungan memiliki suara keras yang mengejutkan."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Grace and Courtesy",
+     "url": "https://www.infomontessori.com/practical-life/grace-and-courtesy/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-ritual-walking-line-oval",
+   "title": "Walking-on-the-Line dengan Garis Oval",
+   "summary": "Anak berjalan perlahan mengikuti garis elastis berbentuk oval dengan tumit menyentuh ujung kaki, membawa benda, dan merespons musik.",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy"
+   ],
+   "skills": [
+    "keseimbangan",
+    "kontrol gerak",
+    "kesadaran ruang"
+   ],
+   "objectives": [
+    "Menjaga langkah heel-to-toe di jalur oval.",
+    "Mengendalikan kecepatan, membawa benda dengan stabil, dan berhenti saat musik berhenti."
+   ],
+   "materials": [
+    {
+     "name": "garis elastis atau pita lantai yang dibentuk oval dan direkatkan rata",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "baki kecil dengan benda ringan dan tidak pecah",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "musik instrumental lembut dan pemutar musik",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Persiapan: rekatkan garis elastis oval di lantai yang rata dan kosong; tunjukkan arah berjalan, titik mulai, tempat mengambil baki, dan tempat mengembalikannya."
+    },
+    {
+     "step": 2,
+     "text": "Modelkan satu putaran tanpa benda: letakkan satu kaki di garis, tumit kaki belakang menyentuh ujung kaki depan, pandang ke depan, dan berjalan perlahan tanpa keluar dari oval."
+    },
+    {
+     "step": 3,
+     "text": "Berikan baki ringan atau benda tunggal untuk dibawa dengan dua tangan; mulai musik pelan, berhenti saat musik berhenti, dan lanjutkan hanya setelah musik dimulai lagi."
+    },
+    {
+     "step": 4,
+     "text": "Selesaikan satu atau dua putaran, letakkan benda kembali, lalu beri ruang untuk anak berikutnya. Akhiri dengan berjalan keluar dari oval, bukan melompat melewati garis."
+    }
+   ],
+   "controlOfError": "Kaki yang keluar dari pita, baki yang bergoyang, atau benda yang jatuh memberi umpan balik langsung; musik yang berhenti juga menandai kapan tubuh harus berhenti.",
+   "variations": [
+    "Mulai tanpa benda dan tanpa musik, kemudian tambahkan musik serta baki.",
+    "Gunakan lonceng lembut alih-alih musik untuk anak yang sensitif terhadap suara."
+   ],
+   "readySigns": [
+    "Anak dapat mengikuti garis tanpa berlari dan menjaga jarak.",
+    "Anak mampu berhenti ketika musik berhenti dan membawa benda ringan dengan dua tangan."
+   ],
+   "struggleSigns": [
+    "Anak berlari atau memotong oval — pendekkan lintasan dan hilangkan benda sementara.",
+    "Anak kehilangan keseimbangan — izinkan langkah biasa di garis sebelum meminta heel-to-toe."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan oval lebih lebar, tanpa benda di tangan pada percobaan awal, dan pegang tangan anak bila perlu; jangan gunakan tali yang bisa membuat tersandung.",
+    "Pastikan pita melekat rata, lantai tidak licin, musik tidak keras, dan area bebas kursi atau sudut tajam."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Movement",
+     "url": "https://www.infomontessori.com/practical-life/movement/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-ritual-pagi-work-cycle",
+   "title": "Ritual Pagi: Pilih, Kerjakan, Kembalikan",
+   "summary": "Anak memulai hari dengan tiga langkah konsisten yang membangun pilihan mandiri, konsentrasi dalam work cycle, dan tanggung jawab merapikan pekerjaan.",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy"
+   ],
+   "skills": [
+    "kemandirian",
+    "konsentrasi",
+    "merawat lingkungan"
+   ],
+   "objectives": [
+    "Mengikuti tiga langkah ritual pagi secara berurutan.",
+    "Menyelesaikan pekerjaan dalam rentang waktu yang sesuai lalu mengembalikan material ke rak."
+   ],
+   "materials": [
+    {
+     "name": "rak rendah dengan dua sampai empat nampan pekerjaan yang sudah dikenal anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu urutan bergambar: pilih, kerjakan, kembalikan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "karpet kerja atau meja kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 20,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Langkah 1 — pilih pekerjaan: berdiri bersama di depan rak, lihat dua sampai empat nampan, pilih satu dengan tenang, bawa dengan dua tangan, dan letakkan di karpet atau meja."
+    },
+    {
+     "step": 2,
+     "text": "Langkah 2 — kerjakan: tunjukkan bahwa anak bekerja dari awal sampai selesai dalam satu work cycle; orang dewasa mengamati dan hanya membantu bila keselamatan atau urutan benar-benar membutuhkan bantuan."
+    },
+    {
+     "step": 3,
+     "text": "Langkah 3 — kembalikan ke rak: setelah selesai, periksa area, masukkan kembali semua bagian ke nampan, bawa dengan dua tangan, dan taruh di tempat yang sama."
+    },
+    {
+     "step": 4,
+     "text": "Tutup ritual dengan kalimat singkat, 'Pekerjaanmu selesai dan rak siap untuk teman berikutnya.' Tawarkan pilihan pekerjaan lain hanya setelah anak mengembalikan pekerjaan pertama."
+    }
+   ],
+   "controlOfError": "Rak memiliki tempat yang ditandai atau siluet untuk setiap nampan; bagian yang tersisa di karpet atau nampan yang tidak pas menunjukkan pekerjaan belum selesai dan perlu diperiksa.",
+   "variations": [
+    "Untuk anak yang baru mulai, sediakan satu pilihan dan tambahkan pilihan kedua setelah rutinitas stabil.",
+    "Gunakan foto urutan pada rak agar anak dapat mengikuti ritual tanpa instruksi lisan berulang."
+   ],
+   "readySigns": [
+    "Anak dapat memilih dari pilihan terbatas dan membawa nampan dengan aman.",
+    "Anak bertahan pada pekerjaan selama beberapa menit dan mulai mengembalikan material tanpa diingatkan."
+   ],
+   "struggleSigns": [
+    "Anak berpindah-pindah sebelum selesai — kurangi jumlah bagian dan pilih pekerjaan yang lebih singkat.",
+    "Anak meninggalkan material — kembali ke kartu langkah ketiga dan modelkan pengembalian sekali."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan hanya nampan ringan berisi benda besar yang tidak mudah tertelan, rak yang stabil, dan pengawasan dekat saat membawa material.",
+    "Jauhkan pekerjaan dengan air panas, benda tajam, kaca, magnet, atau bagian kecil dari pilihan anak kecil."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Practical Life",
+     "url": "https://www.infomontessori.com/practical-life/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
   }
  ],
  "milestones": [

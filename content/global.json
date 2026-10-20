@@ -12,7 +12,7 @@
    "budget": "sedang",
    "diy": true,
    "safetyNotes": [
-    "Jangan pernah menggantung mobile di atas kasur tempat bayi tidur; pilih permukaan yang tegas seperti strip kayu atau pengait langit-langit yang kokoh. Jarak idealnya sekitar 25-30 cm dari wajah bayi dan bayi selalu dalam kawalan orang dewasa."
+    "Jangan pernah menggantung mobile di atas kasur tempat bayi tidur; pilih permukaan yang tegas seperti strip kayu atau pengait langit-langit yang kokoh. Jarak idealnya sekitar 25-30 cm dari wajah bayi dan bayi selalu dalam pengawasan orang dewasa."
    ],
    "references": [
     {
@@ -33,7 +33,7 @@
    "budget": "sedang",
    "diy": true,
    "safetyNotes": [
-    "Pastikan ikatan benang sangat kuat dan tidak bisa dijangkau tangan bayi. Sesegera mungkin begitu bayi mulai mengayunkan tangan ke arah mobile, pindahkan mobile ke locasi yang tetap aman atau tukar dengan mainan yang boleh dipegang."
+    "Pastikan ikatan benang sangat kuat dan tidak bisa dijangkau tangan bayi. Sesegera mungkin begitu bayi mulai mengayunkan tangan ke arah mobile, pindahkan mobile ke lokasi yang tetap aman atau tukar dengan mainan yang boleh dipegang."
    ],
    "references": [
     {
@@ -62,7 +62,7 @@
      "url": "https://www.cdc.gov/ncbddd/childdevelopment/facts.html"
     }
    ],
-   "buyHint": "Banyak penjual handmade lokal menjual set mobile bayi; pilih versi dengan bola tetap dari bahan tidak mudah bergaru."
+   "buyHint": "Banyak penjual handmade lokal menjual set mobile bayi; pilih versi dengan bola yang terpasang tetap dari bahan yang tidak mudah pecah."
   },
   {
    "id": "tactile-ribbon-ring",
@@ -75,7 +75,7 @@
    "budget": "rendah",
    "diy": true,
    "safetyNotes": [
-    "Setiap pita harus pendek (maksimal sekitar 10 cm) dan dijahit atau diikatan kuat ke cincin agar tidak lepas menggantung di jari. Berikan hanya saat bayi duduk bersama orang dewasa dan tidak sedang lelah."
+    "Setiap pita harus pendek (maksimal sekitar 10 cm) dan dijahit atau diikat kuat ke cincin agar tidak lepas menggantung di jari. Berikan hanya saat bayi duduk bersama orang dewasa dan tidak sedang lelah."
    ],
    "references": [
     {
@@ -88,7 +88,7 @@
   {
    "id": "grasping-beads",
    "name": "Grasping Beads (untai tiga manik besar)",
-   "purpose": "Tiga manik kayu besar disambung dengan tali kuat membentuk satu untai. Bayi berlatih mengenggam untai itu dengan satu tangan, kemudian memindahkannya ke tangan lain. Bentuk lonjongnya yang продаjut luas membuat lubang genggaman bayi mencoba posisi tangan yang berbeda-beda.",
+   "purpose": "Tiga manik kayu besar disambung dengan tali kuat membentuk satu untai. Bayi berlatih mengenggam untai itu dengan satu tangan, kemudian memindahkannya ke tangan lain. Bentuknya yang lonjong dengan ruang genggam yang lapang membuat bayi mencoba berbagai posisi tangan.",
    "ageBands": [
     "3-6m",
     "6-9m"
@@ -96,7 +96,7 @@
    "budget": "rendah",
    "diy": false,
    "safetyNotes": [
-    "Setiap manik harus sangat besar, jauh melebihi ukuran tabung gulungan kertas toilet, dan ikatan antar manik harus begitu kuat sehingga mustahil terpisah. Selalu periksa untai sebelum dipakai dan gunakan hanya dengan kawalan orang dewasa."
+    "Setiap manik harus sangat besar, jauh melebihi ukuran tabung gulungan kertas toilet, dan ikatan antar manik harus begitu kuat sehingga mustahil terpisah. Selalu periksa untai sebelum dipakai dan gunakan hanya dengan pengawasan orang dewasa."
    ],
    "references": [
     {
@@ -180,7 +180,7 @@
    "budget": "rendah",
    "diy": false,
    "safetyNotes": [
-    "Pilih rattle tanpa sudut tajam dan dengan bagian tengah yang cukup tipis untuk genggaman bayi namun keseluruhannya tidak bisa masuk ke mulut. Berpindah mainan cepat dengan perputaran rattle kecil sering membuat bayi asing; awasi setiap saat."
+    "Pilih rattle tanpa sudut tajam dan dengan bagian tengah yang cukup tipis untuk genggaman bayi namun keseluruhannya tidak bisa masuk ke mulut. Mengganti rattle kecil secara berkala sering menjaga bayi tetap tertarik; awasi setiap saat."
    ],
    "references": [
     {
@@ -201,7 +201,7 @@
    "budget": "sedang",
    "diy": true,
    "safetyNotes": [
-    "Ukuran bola harus atas ratusan pikul, jelas lebih besar dari tabung gulungan kertas toilet agar tidak bisa tertelan. Gunakan di lantai dengan anak duduk tersekrete orang dewasa, dan hindari kotak yang punya pegas kuat yang bisa menjepit jari."
+    "Ukuran bola harus jauh lebih besar dari tabung gulungan kertas toilet agar tidak bisa tertelan. Gunakan di lantai dengan anak duduk didampingi orang dewasa, dan hindari kotak yang punya pegas kuat yang bisa menjepit jari."
    ],
    "references": [
     {
@@ -213,8 +213,8 @@
   },
   {
    "id": "egg-and-cup",
-   "name": "Egg and Cup (kosong kayak telur dan cangkir)",
-   "purpose": "Sepasang benda kayu kecil berbentuk cangkir dan telur yang ditumbuhi cangkir itu. Anak belajar mengangkat telur dengan dua tangan lalu menempatkannya dengan cermat di dalam cangkir, keterampilan awal sebelum anak mengenal puzzle atau memasang barang kecil ke lubang.",
+   "name": "Egg and Cup (cangkir dan telur kayu)",
+   "purpose": "Sepasang benda kayu kecil berbentuk cangkir dan telur yang cocok dimasukkan ke cangkir. Anak belajar mengangkat telur dengan dua tangan lalu menempatkannya dengan cermat di dalam cangkir, keterampilan awal sebelum anak mengenal puzzle atau memasang barang kecil ke lubang.",
    "ageBands": [
     "9-12m",
     "12-18m"
@@ -222,7 +222,7 @@
    "budget": "sedang",
    "diy": true,
    "safetyNotes": [
-    "Bagian telur harus terlalu besar untuk masuk ke mulut balita. Gunakan di permukaan datar dan duduk bersama anak agar tidak ada bagian yang terlempar bila anak melemparkannya saat tugasan belum berhasil."
+    "Bagian telur harus terlalu besar untuk masuk ke mulut balita. Gunakan di permukaan datar dan duduk bersama anak agar tidak ada bagian yang terlempar bila anak melemparkannya saat belum berhasil."
    ],
    "references": [
     {
@@ -235,7 +235,7 @@
   {
    "id": "single-shape-puzzle",
    "name": "Puzzle satu bentuk (lingkaran, persegi, segitiga, trapesium)",
-   "purpose": "Papan kayu dengan satu lubang bentuk dan satu keping besar bergagang yang cocok dengan bentuk itu. Anak berlatih mengangkat keping dengan pegangan tiga jari lalu mengujanya ke lubang, pengalaman pertama yang memperlihatkan bahwa bentuk memiliki tepi dan ujung yang khas.",
+   "purpose": "Papan kayu dengan satu lubang bentuk dan satu keping besar bergagang yang cocok dengan bentuk itu. Anak berlatih mengangkat keping dengan pegangan tiga jari lalu mencocokkannya ke lubang, pengalaman pertama yang memperlihatkan bahwa bentuk memiliki tepi dan ujung yang khas.",
    "ageBands": [
     "12-18m",
     "18-24m"
@@ -265,7 +265,7 @@
    "budget": "sedang",
    "diy": false,
    "safetyNotes": [
-    "Pilih keping yang lebih besar dari leher tabung gulungan kertas toilet dan gagangan yang tidak mudah lepas. Awasi agar keping tidak dipasukkan ke mulut atau dilempar saat anak mulai kesal."
+    "Pilih keping yang lebih besar dari leher tabung gulungan kertas toilet dan gagang yang tidak mudah lepas. Awasi agar keping tidak dipasukkan ke mulut atau dilempar saat anak mulai kesal."
    ],
    "references": [
     {
@@ -288,7 +288,7 @@
    "budget": "rendah",
    "diy": false,
    "safetyNotes": [
-    "Cek tepi cangkir agar tidak ada celah yang bisa menggores kulit, dan gunakan di area bermain yang rapi. Bersihkan cangkir secara rutin karena dexing-nya mudah menyimpan air hangat yang bisa menjadi sarang mikroba."
+    "Cek tepi cangkir agar tidak ada celah yang bisa menggores kulit, dan gunakan di area bermain yang rapi. Bersihkan cangkir secara rutin karena celah-celahnya mudah menyimpan air hangat yang bisa menjadi sarang mikroba."
    ],
    "references": [
     {
@@ -296,12 +296,12 @@
      "url": "https://www.nhs.uk/conditions/baby/babys-development/play-ideas/"
     }
    ],
-   "buyHint": "Set cangkir susun hijang dengan berbagai warna mudah ditemukan di toko bayi; versi silikon lebih baik untuk anak yang senang menggigit."
+   "buyHint": "Set cangkir susun dengan berbagai warna mudah ditemukan di toko bayi; versi silikon lebih baik untuk anak yang senang menggigit."
   },
   {
    "id": "stacking-rings",
    "name": "Cincin susun (stacking rings)",
-   "purpose": "Tiang dengan cincin berwarna dari ukuran besar ke kecil yang dilarik ke atas. Anak berlatih membedakan ukuran dengan mata dan tangan, mengatur urutan dari besar ke kecil, dan menunggu kesempatan agar cincin yang lebih kecil dapat ditumpuk di atas yang lebih besar.",
+   "purpose": "Tiang dengan cincin berwarna dari ukuran besar ke kecil yang dimasukkan ke tiang. Anak berlatih membedakan ukuran dengan mata dan tangan, mengatur urutan dari besar ke kecil, dan menunggu kesempatan agar cincin yang lebih kecil dapat ditumpuk di atas yang lebih besar.",
    "ageBands": [
     "12-18m",
     "18-24m",
@@ -332,7 +332,7 @@
    "budget": "sedang",
    "diy": true,
    "safetyNotes": [
-    "Pastikan tepi kotak tidak tajam dan bagian tetingkap atau atap kotak tidak bisa menjepit jari. Gunakan di lantai dan dampingi anak agar pelukan kotak yang besar tidak diangkat ke atas kepala."
+    "Pastikan tepi kotak tidak tajam dan bagian tetingkap atau atap kotak tidak bisa menjepit jari. Gunakan di lantai dan dampingi anak agar kotak yang besar tidak diangkat ke atas kepala."
    ],
    "references": [
     {
@@ -345,7 +345,7 @@
   {
    "id": "cylinder-blocks",
    "name": "Cylinder blocks (blok silinder)",
-   "purpose": "Empat blok kayu yang masing-masing punya sepuluh silinder dengan tinggi atau lebar berbeda yang setiap satu cocok dengan satu cekungan di blok. Anak menangani silinder dengan pegangan tiga jari, pengalaman yang menghidupkan otot-otot yang nantinya dipakai ketika memegang pensil.",
+   "purpose": "Empat blok kayu yang masing-masing punya sepuluh silinder dengan tinggi atau lebar berbeda yang setiap satu cocok dengan satu cekungan di blok. Anak menangani silinder dengan pegangan tiga jari, pengalaman yang melatih otot-otot yang nantinya dipakai ketika memegang pensil.",
    "ageBands": [
     "2-3y",
     "3-4y",
@@ -367,7 +367,7 @@
   {
    "id": "pink-tower",
    "name": "Pink tower (menara kubus besar-kecil)",
-   "purpose": "Sepuluh kubus kayu berukuran bertingkat dari yang terkecil sampai yang terbesar. Anak membawa satu per satu kubus, menyusunnya dari besar di bawah hingga kecil di atas, mengamati perbedaan ukuran yang kian kecil, dan berlatih suka meluruskan sendiri bila menaranya miring.",
+   "purpose": "Sepuluh kubus kayu berukuran bertingkat dari yang terkecil sampai yang terbesar. Anak membawa satu per satu kubus, menyusunnya dari besar di bawah hingga kecil di atas, mengamati perbedaan ukuran yang kian kecil, dan belajar meluruskan sendiri bila menaranya miring.",
    "ageBands": [
     "2-3y",
     "3-4y"
@@ -410,7 +410,7 @@
   {
    "id": "knobbed-cylinders",
    "name": "Knobbed cylinders (silinder bergagang tanpa cekungan terpisah)",
-   "purpose": "Sepuluh silinder bergagang yang berderet dalam satu bingkai kayu dengan variasi uang tinggi atau lebar yang anak mencocokkan ke lubang bingkai itu sendiri. Berbeda dengan blok silinder yang cekungannya terpisah, versi ini memungkinkan anak lebih cepat mencoba dan mengulang.",
+   "purpose": "Sepuluh silinder bergagang yang berderet dalam satu bingkai kayu dengan variasi tinggi atau lebar yang anak mencocokkan ke lubang bingkai itu sendiri. Berbeda dengan blok silinder yang cekungannya terpisah, versi ini memungkinkan anak lebih cepat mencoba dan mengulang.",
    "ageBands": [
     "2-3y",
     "3-4y",
@@ -419,7 +419,7 @@
    "budget": "tinggi",
    "diy": true,
    "safetyNotes": [
-    "Gagangan silinder harus kuat dan tersambung rapat, tidak ada part yang mudah patah. Gunakan di meja atau lantai dan simpan setelah bermain agar anak yang lebih kecil tidak menemukan silindernya di lantai."
+    "Gagangan silinder harus kuat dan tersambung rapat, tidak ada bagian yang mudah patah. Gunakan di meja atau lantai dan simpan setelah bermain agar anak yang lebih kecil tidak menemukan silindernya di lantai."
    ],
    "references": [
     {
@@ -432,7 +432,7 @@
   {
    "id": "geometric-insets",
    "name": "Metal atau kayu inset geometris",
-   "purpose": "Kumpulan bingkai dengan bentuk-bentuk geometris seperti lingkaran, persegi, dan segitiga yang jangkar bentuknya bisa diangkat dan melacak dengan pensil. Anak melukis bentuk di kertas dengan jari lembut, latihan menyiapkan mata dan tangan menulis bentuk segi yang nanti dipakai untuk huruf dan angka.",
+   "purpose": "Kumpulan bingkai dengan bentuk-bentuk geometris seperti lingkaran, persegi, dan segitiga yang bentuknya bisa diangkat dan dijiplak dengan pensil. Anak melukis bentuk di kertas dengan jari lembut, latihan menyiapkan mata dan tangan menulis bentuk segi yang nanti dipakai untuk huruf dan angka.",
    "ageBands": [
     "3-4y",
     "4-5y"
@@ -453,7 +453,7 @@
   {
    "id": "color-matching-box",
    "name": "Kotak pencocokan warna (color tablets atau kecil berwarna)",
-   "purpose": "Sepasang atau lebih tabung, keping, atau karton warna yang sama. Anak dipasangkan dengan permainan mencocokkan warna yang tepat, latihan mengamati perbedaan rona yang layak berbanding dengan warna lain, dan melatih konsentrasi membandingkan dua benda yang nyaris serupa.",
+   "purpose": "Sepasang atau lebih tabung, keping, atau karton warna yang sama. Anak bermain mencocokkan warna yang tepat, latihan mengamati perbedaan rona dibandingkan warna lain, dan melatih konsentrasi membandingkan dua benda yang nyaris serupa.",
    "ageBands": [
     "2-3y",
     "3-4y"
@@ -469,12 +469,12 @@
      "url": "https://www.themontessorinotebook.com/montessori-activities/"
     }
    ],
-   "buyHint": "Cukup gunakan kertos warna, bobot benang warna, atau kaca mata kecil dengan tutup warna sama dari benda-benda rumah."
+   "buyHint": "Cukup gunakan kertas warna, gulungan benang warna, atau gelas kaca kecil dengan tutup berwarna sama dari benda-benda rumah."
   },
   {
    "id": "texture-fabric-basket",
    "name": "Keranjang kain berbagai tekstur",
-   "purpose": "Keranjang kecil berisi potongan kain yang berbeda rasa permukaannya, seperti halus berbulu, kasar, licin, dan kaku. Balita mengeluar-masukkan kain, mengrubanya, dan membiasakan diri dengan kata-kata lembut, kasar, licin yang kaya mendeskripsikan dunia raba tangannya.",
+   "purpose": "Keranjang kecil berisi potongan kain yang berbeda rasa permukaannya, seperti halus berbulu, kasar, licin, dan kaku. Balita mengeluar-masukkan kain, merabanya, dan membiasakan diri dengan kata-kata lembut, kasar, licin yang kaya mendeskripsikan dunia raba tangannya.",
    "ageBands": [
     "6-9m",
     "9-12m",
@@ -483,7 +483,7 @@
    "budget": "rendah",
    "diy": true,
    "safetyNotes": [
-    "Potong kain dengan ukuran yang tidak mudah terkeret ke mulut bayi (sekitar sekepalan tangan atau lebih besar). Hindari hiasan berumbai panjang, ikatan, dan kertas beruda, dan duduk bersama bayi selama bermain."
+    "Potong kain dengan ukuran yang tidak mudah masuk ke mulut bayi (sekitar sekepalan tangan atau lebih besar). Hindari hiasan berumbai panjang, ikatan, dan kertas berbulu, dan duduk bersama bayi selama bermain."
    ],
    "references": [
     {
@@ -491,12 +491,12 @@
      "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"
     }
    ],
-   "buyHint": "Gunakan potongan kain dari pake rusak bekas yang sudah dicuci bersih dan taruh di keranjang pendek yang mudah dijangkau anak."
+   "buyHint": "Gunakan potongan kain dari pakaian rusak bekas yang sudah dicuci bersih dan taruh di keranjang pendek yang mudah dijangkau anak."
   },
   {
    "id": "treasure-basket",
    "name": "Treasure basket (keranjang harta benda rumah tangga)",
-   "purpose": "Keranjang berisi benda-benda yang aman dari sekitar rumah dengan tekstur, bobot, dan bunyi yang berbeda, seperti sendok kayu, bola kayu besar, kertas foil, dan pens silikon. Bayi yang sudah duduk berlatih mengeksplore dunia nyata dengan perabaan yang penuh perhatian.",
+   "purpose": "Keranjang berisi benda-benda yang aman dari sekitar rumah dengan tekstur, bobot, dan bunyi yang berbeda, seperti sendok kayu, bola kayu besar, kertas foil, dan pensil silikon. Bayi yang sudah duduk berlatih mengeksplorasi dunia nyata dengan perabaan yang penuh perhatian.",
    "ageBands": [
     "6-9m",
     "9-12m"
@@ -512,12 +512,12 @@
      "url": "https://www.nhs.uk/conditions/baby/babys-development/play-ideas/"
     }
    ],
-   "buyHint": "Kumpulkan benda dari dapur dan ruang keluarga, tampilkan hanya lima sampai delapan benda sekaligus dan ganti berasal sesekali supaya tetap menarik."
+   "buyHint": "Kumpulkan benda dari dapur dan ruang keluarga, tampilkan hanya lima sampai delapan benda sekaligus dan ganti sesekali supaya tetap menarik."
   },
   {
    "id": "spindle-rod-box",
    "name": "Kotak bilah untuk angka (spindle box sederhana)",
-   "purpose": "Dua wadah berlabel angka 0-9 beserta 45 bilah kayu kecil yang ditanak anak ke wadah sesuai angkanya. Permainan ini membuat anak melihat dengan mata dan tangan bahwa angka 5 berarti pasti lima bilah, pengalaman yang membuat bilangan menjadi nyata bukan begitu saja suara yang dihafal.",
+   "purpose": "Dua wadah berlabel angka 0-9 beserta 45 bilah kayu kecil yang dimasukkan anak ke wadah sesuai angkanya. Permainan ini membuat anak melihat dengan mata dan tangan bahwa angka 5 berarti pasti lima bilah, pengalaman yang membuat bilangan menjadi nyata, bukan sekadar suara yang dihafal.",
    "ageBands": [
     "3-4y",
     "4-5y"
@@ -525,7 +525,7 @@
    "budget": "sedang",
    "diy": true,
    "safetyNotes": [
-    "Bilah kayu harus halus dan panjangnya cukup besar agar tidak bisa tertelan. Gunakan in meja atau lantai datar dan simpan setelah selesai supaya bilah-bilah tidak berkeliaran di ruang bermain."
+    "Bilah kayu harus halus dan panjangnya cukup besar agar tidak bisa tertelan. Gunakan di meja atau lantai datar dan simpan setelah selesai supaya bilah-bilah tidak berkeliaran di ruang bermain."
    ],
    "references": [
     {
@@ -554,12 +554,12 @@
      "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"
     }
    ],
-   "buyHint": "Bisa dibuat dari stik es krim yang dilem berpuluh atau dari bilah karton berwarna yang disusun berkelompok."
+   "buyHint": "Bisa dibuat dari stik es krim yang direkatkan atau dari bilah karton berwarna yang disusun berkelompok."
   },
   {
    "id": "threading-beads-large",
    "name": "Untai manik besar (threading beads)",
-   "purpose": "Manik-manik besar berlubang lebar dengan tali kokoh berujung kaku yang mudah dipegang anak. Menyelipkan tali ke dalam lubang manik adalah latihan mata-tangan cukup banyak yang bisa berhenti dan dilanjutkan sesuai kesabaran anak hari itu.",
+   "purpose": "Manik-manik besar berlubang lebar dengan tali kokoh berujung kaku yang mudah dipegang anak. Menyelipkan tali ke dalam lubang manik adalah latihan mata-tangan yang cukup menantang dan bisa berhenti dan dilanjutkan sesuai kesabaran anak hari itu.",
    "ageBands": [
     "2-3y",
     "3-4y",
@@ -589,7 +589,7 @@
    "budget": "rendah",
    "diy": true,
    "safetyNotes": [
-    "Tali harus pendek dan berujung tidak runcing. Mainkan di meja dekat orang dewasa dan simpan setelah selesai supaya tali tidak dipakai anak untuk meleaning pelintir benda lain."
+    "Tali harus pendek dan berujung tidak runcing. Mainkan di meja dekat orang dewasa dan simpan setelah selesai supaya tali tidak dipakai anak untuk melilitkan atau memelintir benda lain."
    ],
    "references": [
     {
@@ -602,7 +602,7 @@
   {
    "id": "transferring-tray",
    "name": "Tray memindahkan dengan sendok (transferring)",
-   "purpose": "Satu tray dengan dua mangkuk kecil dan satu sendok. Anak memindahkan bahan seperti bola karaton atau kacang-polong besar dari mangkuk satu ke yang lain dengan gerakan sendok yang hati-hati, latihan kecil setiap hari yang menyembunyikan persiapan tangan untuk makan sendiri.",
+   "purpose": "Satu tray dengan dua mangkuk kecil dan satu sendok. Anak memindahkan bahan seperti bola karton atau kacang polong besar dari mangkuk satu ke yang lain dengan gerakan sendok yang hati-hati, latihan kecil setiap hari yang menyembunyikan persiapan tangan untuk makan sendiri.",
    "ageBands": [
     "18-24m",
     "2-3y",
@@ -611,7 +611,7 @@
    "budget": "rendah",
    "diy": true,
    "safetyNotes": [
-    "Pilih bahan yang jelas lebih besar dari mulut anak supaya tidak berisiko tertelan. Duduk bersama anak agar bahan tidak dibawa ke mulut, dan hindari biji-bijian kecil atau marmer untuk anak-di-bawah tiga tahun."
+    "Pilih bahan yang jelas lebih besar dari mulut anak supaya tidak berisiko tertelan. Duduk bersama anak agar bahan tidak dibawa ke mulut, dan hindari biji-bijian kecil atau marmer untuk anak di bawah tiga tahun."
    ],
    "references": [
     {
@@ -645,7 +645,7 @@
   {
    "id": "dressing-frame-homemade",
    "name": "Papan latihan buka-tutup (dressing frame versi rumah)",
-   "purpose": "Papan kayu atau kardus dengan bahan bekas pakaian yang dilampirkan: velcro besar, kancing besar, atau zipper. Anak berlatih membuka dan menutup sendiri, keterampilan yang kelak membuat pagi berpakaian lebih mudah karena tangannya sudah banyak berlatih.",
+   "purpose": "Papan kayu atau kardus dengan bahan bekas pakaian yang dipasang: velcro besar, kancing besar, atau zipper. Anak berlatih membuka dan menutup sendiri, keterampilan yang kelak membuat pagi berpakaian lebih mudah karena tangannya sudah banyak berlatih.",
    "ageBands": [
     "2-3y",
     "3-4y",
@@ -654,7 +654,7 @@
    "budget": "rendah",
    "diy": true,
    "safetyNotes": [
-    "Hindari komponen kecil yang bisa lepas seperti kancing kecil atau zipper dengan ujung runcing. Jangan guna pita panjang yang bisa melilit jari, dan dampingi anak di awal sampai ia merasa yakin."
+    "Hindari komponen kecil yang bisa lepas seperti kancing kecil atau zipper dengan ujung runcing. Jangan gunakan pita panjang yang bisa melilit jari, dan dampingi anak di awal sampai ia merasa yakin."
    ],
    "references": [
     {
@@ -662,7 +662,7 @@
      "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"
     }
    ],
-   "buyHint": "Cukup pasang sepotong bekas kemeja atau sepatu velcro pada papan atau karung kecil, lalu sew sisi-sisinya supaya aman."
+   "buyHint": "Cukup pasang sepotong bekas kemeja atau sepatu velcro pada papan atau kardus kecil, lalu jahit sisi-sisinya supaya aman."
   },
   {
    "id": "folding-cloths",
@@ -683,12 +683,12 @@
      "url": "https://www.themontessorinotebook.com/montessori-activities/"
     }
    ],
-   "buyHint": "Cukup kain dari kaos bekas yang bersih dengan garis ditebarkan atau ditempel pita kasa sebagai petunjuk lipatan."
+   "buyHint": "Cukup kain dari kaos bekas yang bersih dengan garis yang digambar atau ditempel pita kasa sebagai petunjuk lipatan."
   },
   {
    "id": "crayon-tray",
    "name": "Tray krayon pendek dan kertas kecil",
-   "purpose": "Sekelompok krayon pendek dan selembar kertas di atas tray sebagai undangan menggambar bebas. Anak berlatih memegang alat gambar dengan posisi tangan yang sehat dan pelajari bahwa setiap alat punya tempatkannya kembali agar tray siap digunakan lain kali.",
+   "purpose": "Sekelompok krayon pendek dan selembar kertas di atas tray sebagai undangan menggambar bebas. Anak berlatih memegang alat gambar dengan posisi tangan yang sehat dan belajar bahwa setiap alat punya tempatnya dan dikembalikan agar tray siap digunakan lain kali.",
    "ageBands": [
     "18-24m",
     "2-3y",
@@ -698,7 +698,7 @@
    "budget": "rendah",
    "diy": false,
    "safetyNotes": [
-    "Pilih krayon dengan label non-toksik dan tanpa tutup kecil yang bisa tertelan. Anak yang masih kebiasaan menyelipkan benda ke mulut harus tetap didampingi, dan ganti krayon yang patah menjadi bagian kecil sebelum diberikan."
+    "Pilih krayon dengan label non-toksik dan tanpa tutup kecil yang bisa tertelan. Anak yang masih terbiasa menyelipkan benda ke mulut harus tetap didampingi, dan ganti krayon yang patah menjadi bagian kecil sebelum diberikan."
    ],
    "references": [
     {
@@ -1725,7 +1725,7 @@
   {
    "id": "diy-6-botol-sensori-bijian",
    "title": "Botol Sensori Bijian dengan Suara Berjatuhan",
-   "makes": "1 botol berisi bijian dengan suara berjatuhan yang cocok untuk maupun pendengaran maupun pergerakan",
+   "makes": "1 botol berisi bijian dengan suara berjatuhan yang cocok untuk pendengaran maupun pergerakan",
    "timeMinutes": 10,
    "cost": "rendah",
    "materialsNeeded": [
@@ -1882,7 +1882,7 @@
   {
    "id": "diy-10-tas-squishy-sensori",
    "title": "Tas Squishy Sensori dengan Isi Warna-Warni",
-   "makes": "1 tas benda empuk yang bisa ditekan dan dilepelaskan dengan isi benda hias besar",
+   "makes": "1 tas benda empuk yang bisa ditekan dan dilepaskan dengan isi benda hias besar",
    "timeMinutes": 25,
    "cost": "rendah",
    "materialsNeeded": [
@@ -1923,7 +1923,7 @@
   {
    "id": "diy-11-playdough-rumahan",
    "title": "Playdough Rumahan Tanpa Memasak",
-   "makes": "1 adonan mainan lembut untuk mencacat, digulung, dan membentuk",
+   "makes": "1 adonan mainan lembut untuk mencetak, menggulung, dan membentuk",
    "timeMinutes": 20,
    "cost": "rendah",
    "materialsNeeded": [
@@ -2002,7 +2002,7 @@
   {
    "id": "diy-13-genggaman-suara-maracas",
    "title": "Maracas Kecil dari Botol Isi Pasta",
-   "makes": "1-2 alat musik genggaman dengan suara gotenggoteng saat digoyang",
+   "makes": "1-2 alat musik genggaman dengan suara gemerincing saat digoyang",
    "timeMinutes": 15,
    "cost": "rendah",
    "materialsNeeded": [
@@ -2015,7 +2015,7 @@
     "Masukkan beberapa makaroni besar atau sedikit beras ke dalam botol sampai sepertiga penuh.",
     "Tutup botol dengan kuat dan bungkus tutupnya dengan lakban sampai tidak bisa dibuka.",
     "Hias badan botol dengan kertas warna yang direkat penuh agar anak lebih tertarik dan isi botol tidak terlihat mudah.",
-    "Latih anak menggoyang maracas dengan ritme sambil dibawakan lagu anak yang suka."
+    "Latih anak menggoyang maracas dengan ritme sambil diiringi lagu anak yang disukai."
    ],
    "ageBands": [
     "9-12m",
@@ -2042,7 +2042,7 @@
   {
    "id": "diy-14-menara-susun-tutup-botol",
    "title": "Menara Susun dari Tutup Botol Bekas",
-   "makes": "1 set tutup botol berbacahan ukuran untuk disusun jadi menara atau dijejer seperti garis",
+   "makes": "1 set tutup botol berbagai ukuran untuk disusun jadi menara atau dijejerkan seperti garis",
    "timeMinutes": 10,
    "cost": "gratis",
    "materialsNeeded": [
@@ -2132,7 +2132,7 @@
    ],
    "steps": [
     "Potong bagian gesper dan tali dari celana atau sepatu bekas dengan gunting, sisakan panjang yang cukup.",
-    "Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak agar tidak terginjak.",
+    "Rekatkan bagian gesper dan tali sepatu di atas papan pada posisi berjajar dengan jarak yang aman agar tidak terinjak.",
     "Tambahkan panel kain dengan lipatan rapi sebagai latihan membuka dan menutup.",
     "Tawarkan papan pada anak untuk duduk di lantai, lalu latih membuka gesper dan menata tali sepatu satu demi satu."
    ],
@@ -2198,7 +2198,7 @@
   },
   {
    "id": "diy-18-jalur-lakban-lantai",
-   "title": "Jalur Lakban Lantai untuk Latihan Jalan dan Pendekaran",
+   "title": "Jalur Lakban Lantai untuk Latihan Jalan dan Keseimbangan",
    "makes": "1 jalur berwarna dari lakban di lantai untuk berjalan menyeimbangkan tubuh",
    "timeMinutes": 10,
    "cost": "rendah",
@@ -2211,7 +2211,7 @@
     "Tempel lakban di lantai dalam bentuk garis lurus sederhana dengan panjang 2 hingga 3 meter.",
     "Ubah bentuk menjadi garis melengkung atau siku setelah anak terbiasa dengan jalur lurus.",
     "Ajak anak berjalan di atas garis sambil mendampingi dan memperhatikan posisi kakinya.",
-    "Tambahkan tantangan seperti memegang benda kecil ataupun memainkan bentuk baru dengan cerita yang sederhana."
+    "Tambahkan tantangan seperti memegang benda kecil atau membentuk jalur baru dengan cerita yang sederhana."
    ],
    "ageBands": [
     "2-3y",
@@ -2221,7 +2221,7 @@
    "safetyNotes": [
     "Gunakan lakban perekat halus dan pastikan jalur tidak licin supaya tidak membuat anak terpeleset.",
     "Periksa area jalur dan pastikan tidak di dekat tangga atau pintu sebelum dipakai.",
-    "Ganti jalur jika lakban luntur atau menepi agar tidak menyebabkan tersandung."
+    "Ganti jalur jika lakban longgar atau terkelupas agar tidak menyebabkan tersandung."
    ],
    "references": [
     {
@@ -2289,7 +2289,7 @@
    "steps": [
     "Siapkan pita atau benang wol yang ujungnya sudah ditebalkan dengan selotip agar pasta mudah dimasukkan oleh anak.",
     "Taruh pasta di wadah rendah di dekat anak dan tunjukkan caranya memasukkan satu pasta ke tali.",
-    "Biarkan anak menyusun pasta satu demi satu dengan satuannya sendiri tanpa terburu-buru.",
+    "Biarkan anak menyusun pasta satu demi satu tanpa terburu-buru.",
     "Setelah cukup panjang, ikat simpul besar dan pakai sebagai kalung atau gantungan dekorasi di tempat main anak."
    ],
    "ageBands": [
@@ -2393,7 +2393,7 @@
   {
    "id": "diy-23-botol-lava-sederhana",
    "title": "Botol Ajaib Minyak dan Air untuk Percobaan Warna",
-   "makes": "1 botol percobaan dengan minyak dan air yang saling terpisah dan timbuk sana",
+   "makes": "1 botol percobaan dengan minyak dan air yang saling terpisah dan tampak jelas batasnya",
    "timeMinutes": 20,
    "cost": "rendah",
    "materialsNeeded": [
@@ -2434,7 +2434,7 @@
   {
    "id": "diy-24-huruf-kasar-pasir",
    "title": "Huruf Kasar Sendiri dari Pasir dan Karton",
-   "makes": "1 set huruf bertekstur dalam satu sebuah seluruh abjad",
+   "makes": "1 set huruf bertekstur untuk seluruh abjad",
    "timeMinutes": 90,
    "cost": "rendah",
    "materialsNeeded": [
@@ -2456,7 +2456,7 @@
    ],
    "safetyNotes": [
     "Pastikan pasir dan lem tidak masuk mulut anak; dampingi anak supaya tidak memainkan pasir di luar karton.",
-    "Gunakan pasir yang bersih dan bulat halus, bukan kerikil tajam, agar tangan tidak terluka.",
+    "Gunakan pasir yang bersih dan berbutir halus, bukan kerikil tajam, agar tangan tidak terluka.",
     "Simpan huruf kasar di rak rendah yang mudah diambil anak agar tidak jatuh dari ketinggian."
    ],
    "references": [
@@ -2473,7 +2473,7 @@
   {
    "id": "diy-25-baki-tulis-dalam-bijian",
    "title": "Baki Menulis di Dasar Beras",
-   "makes": "1 baki dengan dasar beras atau garam untuk mencacat huruf dan angka dengan jari",
+   "makes": "1 baki dengan dasar beras atau garam untuk menulis huruf dan angka dengan jari",
    "timeMinutes": 10,
    "cost": "gratis",
    "materialsNeeded": [
@@ -2535,7 +2535,7 @@
    ],
    "safetyNotes": [
     "Gunakan cat dan kapur yang jelas aman untuk anak; hindari cat yang mengeluarkan bau kuat.",
-    "Sandingkan papan di sudut lantai yang rata supaya tidak roboh saat disandarkan anak.",
+    "Sandarkan papan di sudut lantai yang rata supaya tidak roboh saat disandarkan anak.",
     "Dampingi anak saat bermain kapur agar debu dekat wajah dihindari dan papan tidak roboh."
    ],
    "references": [
@@ -2612,7 +2612,7 @@
    ],
    "safetyNotes": [
     "Tutupi semua tepi potongan karton dengan selotip agar tidak melukai tangan anak.",
-    "Pilih daun dan ranting yang bersih dan tidak ada rambut tajam; hindari benda kecil yang bisa masuk mulut anak di bawah tiga tahun.",
+    "Pilih daun dan ranting yang bersih dan tidak ada bagian tajam; hindari benda kecil yang bisa masuk mulut anak di bawah tiga tahun.",
     "Gunakan lem batang yang aman untuk anak dan dampingi anak dari awal sampai karya selesai."
    ],
    "references": [
@@ -2679,7 +2679,7 @@
     "Kertas warna"
    ],
    "steps": [
-    "Letakkan kardus terbuka di lantai yang datar dan lebar dan pastikan ukurannya cukup untuk anak masuk dan duduk.",
+    "Letakkan kardus terbuka di lantai yang datar dan luas, lalu pastikan ukurannya cukup untuk anak masuk dan duduk.",
     "Potong pintu besar di satu sisi dan jendela persegi di sisi lain dengan gunting atau cutter.",
     "Tutupi semua tepi potongan dengan lakban kain supaya tidak melukai tangan anak.",
     "Biarkan anak menghias dinding kardus dengan krayon atau stiker supaya ia merasa rumah itu miliknya."
@@ -3881,33 +3881,302 @@
      "url": "https://www.cdc.gov/act-early/milestones/index.html"
     }
    ]
+  },
+  {
+   "id": "gap-diy-1-kubus-pink-kardus-tumpuk",
+   "title": "Kubus Pink DIY dari Kardus Tebal Bertumpuk 10 Ukuran",
+   "makes": "1 set menara 10 kubus pink, dari kubus besar sekitar 10x10x10 cm sampai kubus kecil 1x1x1 cm",
+   "timeMinutes": 120,
+   "cost": "gratis",
+   "materialsNeeded": [
+    "Kardus tebal bekas (kardus pengiriman, kardus sepatu, atau kardus elektronik), secukupnya untuk 10 kubus",
+    "Penggaris panjang (minimal 30 cm) dan pensil",
+    "Cutter tajam atau pisau olahraga (dipegang orang tua saja)",
+    "Lem putih non-toksik (lem kayu atau lem PVAc) dan kuas kecil",
+    "Kertas kado pink bekas, kain flanel pink, atau spidol/cat air pink untuk melapisi",
+    "Amplas halus (grit 180-240) untuk merapikan sisi kubus"
+   ],
+   "steps": [
+    "Gambarkan 10 kotak persegi di kardus dengan ukuran 10, 9, 8, 7, 6, 5, 4, 3, 2, dan 1 cm menggunakan penggaris dan pensil. Buat masing-masing 6 lembar kotak per ukuran supaya kubus bisa disusun utuh (10 cm x 6, 9 cm x 6, dan seterusnya).",
+    "Potong semua kotak mengikuti garis dengan cutter di atas alas kardus bekas. Ini tugas orang tua; anak cukup menunggu atau membantu memegang penggaris dari jarak aman.",
+    "Rangkai tiap kubus dengan menyusun 6 lembar menjadi bentuk kubus: 4 lembar untuk dinding samping, 1 untuk tutup atas, 1 untuk dasar. Rekatkan sambungan dengan lem putih, tahan sekitar 30 detik sampai menempel.",
+    "Agar kubus terasa padat dan berat bertingkat (seperti versi kayunya), masukkan potongan kardus kecil yang digulung atau dilipat ke dalam kubus-kubus besar sampai penuh sebelum menutup.",
+    "Amplas semua sisi dan rusuk tiap kubus dengan amplas halus sampai tidak ada bagian yang tajam atau berbulu kardus.",
+    "Lapisi tiap kubus dengan kertas kado pink, kain flanel, atau warnai dengan cat air pink, lalu jemur sampai benar-benar kering (sekitar 2-3 jam).",
+    "Uji kekuatan: tekan tiap kubus dengan telapak tangan dewasa dan susun sekali untuk latihan. Bila ada kubus yang penyok atau lepas, perbaiki dengan lem tambahan sebelum diberikan ke anak.",
+    "Saat bermain: ajak anak menyusun dari kubus terbesar di lantai, lalu ke yang lebih kecil di atasnya. Biarkan anak mengangkat sendiri perlahan dan merasakan perbedaan berat serta ukuran."
+   ],
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "safetyNotes": [
+    "Semua pemotongan kardus dengan cutter dilakukan orang tua saja; simpan cutter di tempat yang tidak dijangkau anak.",
+    "Amplas semua rusuk dan sudut dengan amplas halus sampai licin sebelum diberikan ke anak agar tidak melukai kulit.",
+    "Gunakan hanya lem non-toksik dan pastikan semua kubus kering total tanpa bau lem sebelum dipakai.",
+    "Uji kekuatan tiap kubus dengan menekan dan menyusunnya sebelum dipakai; periksa ulang seminggu sekali dan perbaiki bila ada yang lepas karena kubus bisa jatuh ke kaki anak."
+   ],
+   "references": [
+    {
+     "title": "How We Montessori - Montessori at Home",
+     "url": "https://www.howwemontessori.com/how-we-montessori/"
+    },
+    {
+     "title": "Montessori Guide (AMI/AMS) - Video Library",
+     "url": "https://montessoriguide.org/"
+    }
+   ]
+  },
+  {
+   "id": "gap-diy-2-tangga-cokelat-balok-kayu-strip",
+   "title": "Tangga Cokelat DIY dari Balok Kayu Strip Toko Bahan Bangunan",
+   "makes": "1 set tangga 10 balok kayu cokelat, panjang sama sekitar 50 cm, dengan ketebalan bertingkat dari 1 cm sampai 10 cm",
+   "timeMinutes": 240,
+   "cost": "rendah",
+   "materialsNeeded": [
+    "Kayu strip/kaso dari toko bahan bangunan secukupnya: 1 strip 1x1 cm, 2x2 cm, 3x3 cm, sampai 10x10 cm, masing-masing dipotong 50 cm (minta toko memotongkan)",
+    "Amplas halus (grit 180-240) secukupnya",
+    "Lem kayu putih non-toksik 1 botol kecil",
+    "Cat kayu atau stabilo cat kayu warna cokelat non-toksik",
+    "Kuas 1 inci dan koran bekas sebagai alas mengecat",
+    "Kain bersih untuk mengelap debu amplas"
+   ],
+   "steps": [
+    "Datang ke toko bahan bangunan dan beli kayu strip atau kaso dengan penampang 1x1 cm sampai 10x10 cm. Minta karyawan memotong semuanya sama panjang, misalnya 50 cm, supaya tidak perlu menggunting kayu sendiri di rumah. Jika balok 10x10 cm sulit didapat atau terlalu mahal, susun dan lem 4 strip 5x10 cm menumpuk hingga setebal 10 cm.",
+    "Amplas seluruh permukaan tiap balok dengan amplas halus sampai benar-benar licin, termasuk ujung-ujungnya. Usap dengan kain bersih untuk mengangkat debu.",
+    "Untuk balok yang dibangun dari strip menumpuk, oleskan lem kayu tipis-tipis pada permukaan yang direkatkan, tumpuk rapi, lalu berat dengan buku atau beban bersih dan diamkan minimal 24 jam sampai lem benar-benar kering.",
+    "Alasi lantai dengan koran bekas, cat semua balok warna cokelat dengan kuas, lalu jemur sampai bau cat hilang total (minimal semalam).",
+    "Uji kekuatan: tekan tiap balok dengan tangan dewasa dan letakkan satu per satu di lantai. Balok tidak boleh goyang atau lepas lem; bila ada yang lepas, lem ulang dan tunggu kering lagi.",
+    "Saat bermain: ajak anak menyusun tangga di lantai mulai dari balok paling tebal, mengerjakan dari kiri ke kanan, sampai balok paling tipis. Anak bisa merasakan perbedaan berat dan ketebalan dengan kedua tangan."
+   ],
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "safetyNotes": [
+    "Amplas semua sisi dan ujung balok dengan amplas halus sampai tidak ada serpihan atau duri kayu sebelum diberikan ke anak.",
+    "Gunakan hanya lem dan cat kayu berlabel non-toksik; jemur balok sampai bau cat dan lem hilang sepenuhnya sebelum dipakai.",
+    "Balok tebal cukup berat: ajarkan anak membawa satu balok dengan dua tangan dan jangan biarkan balok dilempar atau diangkat di atas kepala.",
+    "Uji kekuatan lem dan kestabilan balok setiap minggu; lepaskan dari rak bila ada bagian yang lepas dan perbaiki dulu sebelum dipakai lagi."
+   ],
+   "references": [
+    {
+     "title": "Montessori Guide (AMI/AMS) - Video Library",
+     "url": "https://montessoriguide.org/"
+    },
+    {
+     "title": "Living Montessori Now - Montessori Homeschool Ideas",
+     "url": "https://livingmontessorinow.com/"
+    }
+   ]
+  },
+  {
+   "id": "gap-diy-3-kotak-warna-gradasi-tutup-botol",
+   "title": "Kotak Warna Gradasi DIY dari Cat Sample dan Tutup Botol",
+   "makes": "1 boks berisi 16 tutup botol berwarna gradasi: 4 warna, masing-masing 4 tingkat dari paling gelap sampai paling terang",
+   "timeMinutes": 90,
+   "cost": "rendah",
+   "materialsNeeded": [
+    "16 tutup botol plastik bekas ukuran sama, diameter minimal 4 cm, dicuci bersih dan kering",
+    "Cat sample dinding bekas toko cat atau cat akrilik kecil: 4 warna (misalnya kuning, merah, biru, dan hijau) plus cat putih untuk membuat tingkatan",
+    "Wadah kecil bekas (cup yoghurt) untuk mencampur tingkatan warna",
+    "Kuas kecil atau stik es krim untuk mengecat",
+    "Kardus sepatu bekas atau kardus kotak kecil sebagai boks penyimpanan",
+    "Kertas bekas sebagai alas kerja dan spidol untuk label"
+   ],
+   "steps": [
+    "Kumpulkan 16 tutup botol bekas yang ukurannya sama, cuci dengan sabun, dan jemur sampai kering. Pilih tutup yang besar agar mudah dipegang anak.",
+    "Untuk tiap warna dasar, tuang sedikit cat ke cup bekas, lalu buat 4 tingkat: satu warna gelap penuh, kemudian tambahkan cat putih sedikit demi sedikit (sekitar 20%, 40%, dan 60% putih) sehingga menjadi gradasi dari paling gelap ke paling terang. Kerjakan satu warna sampai selesai sebelum pindah ke warna berikutnya.",
+    "Alasi meja dengan kertas bekas, cat tiap tutup dengan tingkatan warnanya (2 lapis supaya rata), lalu jemur sampai kering total.",
+    "Tulis angka 1 sampai 4 di bagian bawah tiap tutup sesuai tingkat gelapnya. Ini kunci koreksi: anak bisa membalik tutup dan memeriksa sendiri urutannya.",
+    "Beri label bawah kardus dengan garis penanda 1-4 sebagai pola penempatan, lalu simpan semua tutup di dalam boks.",
+    "Saat bermain tingkat pertama: cari pasangan warna yang sama. Tingkat lanjut: minta anak menyusun keempat tutup satu warna dari paling gelap ke paling terang di atas alas kardus, satu warna per sesi."
+   ],
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "safetyNotes": [
+    "Pilih tutup botol berdiameter minimal 4 cm agar tidak bisa masuk mulut dan tertelan anak.",
+    "Gunakan cat sample atau cat akrilik berlabel aman/bebas timbal; jemur sampai kering total dan tidak berbau sebelum diberikan ke anak.",
+    "Periksa lapisan cat tiap minggu; bila cat mulai mengelupas jadi serpihan kecil, cat ulang atau buang tutupnya agar tidak masuk mulut anak.",
+    "Bila ada tepi tutup yang kasar, rapikan dengan amplas halus; bila memakai lem, pilih lem non-toksik. Uji kekuatan tutup dan boks sebelum dipakai anak.",
+    "Untuk anak yang masih suka memasukkan benda ke mulut, mainkan hanya dengan pendampingan penuh dan kembalikan tutup ke boks setelah selesai."
+   ],
+   "references": [
+    {
+     "title": "The Montessori Notebook - Montessori at Home",
+     "url": "https://themontessorinotebook.com/montessori-at-home/"
+    },
+    {
+     "title": "Montessori Guide (AMI/AMS) - Video Library",
+     "url": "https://montessoriguide.org/"
+    }
+   ]
+  },
+  {
+   "id": "gap-diy-4-spindle-box-kardus-lidi",
+   "title": "Spindle Box DIY dari Kardus dan 45 Lidi Tunggal",
+   "makes": "1 boks pembagian angka dengan 10 petak bernomor 0-9 dan 45 lidi kayu untuk dihitung",
+   "timeMinutes": 90,
+   "cost": "rendah",
+   "materialsNeeded": [
+    "Kardus tebal bekas yang kokoh (kardus sepatu atau kardus susu kotak)",
+    "45 tusuk sate kayu atau lidi kering yang bersih dan lurus",
+    "Penggaris, pensil, dan spidol permanen hitam",
+    "Cutter dan gunting (dipegang orang tua saja)",
+    "Lem putih non-toksik dan selotip kuat",
+    "Amplas halus (grit 240) untuk menghaluskan ujung lidi"
+   ],
+   "steps": [
+    "Potong kardus menjadi boks memanjang sepanjang sekitar 40-50 cm dengan tinggi sekitar 7 cm, atau gunakan dua kardus kecil berdampingan: satu untuk angka 0-4 dan satu untuk 5-9.",
+    "Bagi bagian dalam boks menjadi 10 petak sama lebar dengan sekat kardus, tempel dengan lem dan selotip kuat sampai sekat tidak goyah. Tiap petak idealnya selebar 4-5 cm.",
+    "Tulis angka 0 sampai 9 dengan spidol hitam besar dan jelas di depan tiap petak, urut dari kiri ke kanan. Bisa juga tulis pada potongan kertas lalu tempel.",
+    "Hitung 45 lidi atau tusuk sate. Potong ujung paling runcing dan amplas dengan amplas halus sampai kedua ujung tumpul dan licin. Cuci lidi jika perlu, lalu jemur sampai kering.",
+    "Uji kekuatan boks: tekan tiap sekat dengan jari. Bila sekat bergeser atau lepas, perkuat dengan selotip tambahan sebelum dipakai anak.",
+    "Saat bermain: ajak anak menghitung lidi sambil dimasukkan ke petak yang sesuai angkanya (petak 1 berisi 1 lidi, petak 2 berisi 2 lidi, dan seterusnya). Tunjukkan bahwa petak 0 dibiarkan kosong sebagai pengenalan angka nol. Simpan lidi dalam kantong tertutup agar jumlahnya selalu lengkap 45."
+   ],
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "safetyNotes": [
+    "Pemotongan kardus dengan cutter dan gunting dilakukan orang tua saja.",
+    "Amplas dan bulatkan kedua ujung lidi dengan amplas halus supaya tidak melukai tangan anak; periksa ulang sebelum tiap sesi.",
+    "Gunakan lem non-toksik untuk sekat, dan uji kekuatan boks serta sekat sebelum dipakai anak.",
+    "Anak memakai lidi hanya saat duduk tenang di meja; ingatkan tidak sambil berlari, menjolok, atau memasukkan lidi ke mulut.",
+    "Uji kekuatan sekat dan dasar boks sebelum dipakai; boks yang roboh bisa membuat lidi berhamburan dan tajam di lantai."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale (AMI) USA - School Resources",
+     "url": "https://amiusa.org/school-resources/"
+    },
+    {
+     "title": "Living Montessori Now - Montessori Homeschool Ideas",
+     "url": "https://livingmontessorinow.com/"
+    }
+   ]
+  },
+  {
+   "id": "gap-diy-5-sandpaper-letters-karton-pasir",
+   "title": "Sandpaper Letters DIY dari Karton dan Pasir Halus",
+   "makes": "1 set 5 kartu huruf kasar berlapis pasir halus untuk diraba dengan ujung jari dan dikenalkan bersama bunyi awalnya",
+   "timeMinutes": 120,
+   "cost": "rendah",
+   "materialsNeeded": [
+    "Karton bekas yang agak tebal dan kaku (kemasan sereal, dus mie, atau manila karton) secukupnya",
+    "Pasir halus bersih sekitar 1 gelas: ayak dengan saringan halus, cuci, dan jemur sampai benar-benar kering (atau gunakan pasir mainan anak yang bersih)",
+    "Lem putih non-toksik (PVAc) 1 botol kecil",
+    "Kuas kecil atau tusuk gigi untuk menorehkan lem",
+    "Pensil dan gunting",
+    "Alas kertas bekas untuk menampung pasir berlebih"
+   ],
+   "steps": [
+    "Potong karton menjadi 5 kartu berukuran sekitar 10x14 cm. Pilih huruf yang bunyinya mudah diucapkan anak, misalnya m, s, b, k, dan a, lalu gunakan bunyi awal kata Indonesia seperti mata, sapi, bola, kaki, dan apel.",
+    "Tulis satu huruf kecil (huruf cetak sederhana, bukan kapital) di tengah tiap kartu dengan pensil, cukup besar sekitar 5-7 cm. Gunakan satu warna yang jelas agar bentuk huruf mudah diamati.",
+    "Taruh kartu di atas alas kertas bekas. Oleskan lem tipis mengikuti bentuk huruf dengan kuas kecil atau tusuk gigi, jaga agar garis lem tidak terlalu tebal.",
+    "Taburkan pasir halus sampai menutup seluruh garis lem, tekan pelan dengan jari, lalu angkat kartu dan ketuk-ketuk agar pasir berlebih jatuh ke alas. Kumpulkan pasir jatuh untuk dipakai lagi.",
+    "Jemur semua kartu minimal 2 jam sampai lem kering dan pasir tidak lepas saat disentuh. Uji dengan mengusap punggung jari: bila banyak pasir rontok, oles lem tipis lagi di atasnya dan tabur pasir sekali lagi.",
+    "Saat bermain: tunjukkan satu huruf, torehkan hurufnya dengan dua jari (jari tengah dan telunjuk) sambil mengucapkan bunyi awalnya, lalu ajak anak menirukan gerakan dan mencari benda yang bunyinya sama. Simpan kartu di dalam kotak atau map agar pasir tidak tergesek saat disimpan."
+   ],
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "safetyNotes": [
+    "Gunakan pasir yang bersih: ayak halus, cuci, dan jemur sampai kering agar bebas debu dan kotoran sebelum ditempel ke kartu.",
+    "Gunakan hanya lem non-toksik dan pastikan kartu kering total sebelum diberikan ke anak.",
+    "Awasi anak saat meraba agar pasir tidak masuk mata; ajarkan menyentuh dengan ujung jari, bukan mengucek kartu ke wajah. Bila pasir di satu kartu mulai banyak rontok, perbaiki atau buang kartu itu.",
+    "Gunakan amplas halus untuk merapikan tepi karton bila terasa tajam, lalu uji kekuatan lapisan pasir dan kartu sebelum dipakai anak.",
+    "Cuci tangan anak setelah bermain karena pasir dan lem bisa tertelan bila tangan langsung ke mulut."
+   ],
+   "references": [
+    {
+     "title": "Reading Rockets - Early Literacy",
+     "url": "https://www.readingrockets.org/"
+    },
+    {
+     "title": "Association Montessori Internationale (AMI) USA - School Resources",
+     "url": "https://amiusa.org/school-resources/"
+    }
+   ]
+  },
+  {
+   "id": "gap-diy-6-mystery-bag-kain-benda-rumah",
+   "title": "Mystery Bag DIY dari Kain Bekas dan Benda-Benda Rumah",
+   "makes": "1 kantong misteri berisi 3-8 benda aman dari dapur dan ruang keluarga untuk ditebak lewat perabaan",
+   "timeMinutes": 30,
+   "cost": "gratis",
+   "materialsNeeded": [
+    "Kain bekas yang agak tebal dan tidak transparan (sarung bantal bekas, kaos bekas lengan panjang, atau sisa kain tenun) ukuran sekitar 25x40 cm",
+    "Tali serut, pita, atau tali sepatu bersih sepanjang 50-60 cm",
+    "Jarum, benang, dan gunting (dipegang orang tua saja), atau selotip kain bila tidak jahit",
+    "5-8 benda rumah yang aman dan sudah dikenal anak, misalnya sendok kecil, tutup botol, stik es krim, sisir, bola kelereng besar, kunci bergagang besar, atau mainan kecil",
+    "Kantong plastik bersih untuk menyimpan benda saat tidak dipakai"
+   ],
+   "steps": [
+    "Cuci dan keringkan kain bekas terlebih dahulu. Potong menjadi persegi panjang sekitar 25x40 cm, lipat dua bagian dalam ke luar sehingga jadi 25x20 cm.",
+    "Jahit dua sisi kain dengan jahitan sederhana, sisakan bagian atas sebagai mulut kantong, lalu balikkan agar sisi kain yang bagus berada di luar. Lipat tepi mulut kantong sekitar 2 cm dan jahit melingkar dengan menyisakan celah untuk memasukkan tali serut. Masukkan tali, lalu ikat ujungnya. Versi tanpa jahit: gunakan sarung bantal bekas dan ikat mulutnya dengan pita pendek saat dimainkan bersama orang dewasa.",
+    "Uji kekuatan kantong: masukkan benda-benda, angkat, dan goyang pelan. Jahitan tidak boleh terbuka dan tali tidak boleh lepas; perbaiki dulu bila masih lemah.",
+    "Pilih 3-4 benda pertama yang sudah sangat dikenal anak dan aman (tidak tajam, tidak kecil, tidak mudah pecah). Tunjukkan tiap benda satu per satu sambil menyebut namanya, misalnya 'ini sendok'.",
+    "Masukkan benda-benda ke kantong, ikat tali. Anak memasukkan tangan dari mulut kantong, meraba satu benda tanpa melihat, menyebut namanya lebih dulu, lalu menariknya keluar untuk dicek.",
+    "Untuk tingkat lanjut: tambah jumlah benda sampai 8, atau siapkan pasangan kembar tiap benda di atas meja dan minta anak mencari benda yang sama di dalam kantong dengan perabaan saja."
+   ],
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "safetyNotes": [
+    "Hanya gunakan benda berukuran besar yang tidak bisa tertelan: pilih benda lebih besar dari diameter gulungan kertas toilet dan tanpa bagian tajam atau runcing.",
+    "Jahitan, gunting, dan jarum dikerjakan orang tua saja; uji kekuatan jahitan dan tali serut dengan menggoyang kantong berisi benda sebelum dipakai anak.",
+    "Cuci kain dan bersihkan benda sebelum masuk kantong; ganti benda yang sudah kotor atau rusak.",
+    "Bila memakai selotip atau lem untuk memperkuat bagian kain, pilih bahan non-toksik; amplas halus bagian kayu yang mungkin ikut dimasukkan dan uji kekuatan semua benda sebelum dipakai anak.",
+    "Untuk anak yang masih sering memasukkan benda ke mulut, mainkan dulu versi terbuka (benda ditunjukkan tanpa kantong) dan gunakan kantong hanya dengan pendampingan penuh."
+   ],
+   "references": [
+    {
+     "title": "The Montessori Notebook - Montessori at Home",
+     "url": "https://themontessorinotebook.com/montessori-at-home/"
+    },
+    {
+     "title": "ZERO TO THREE - Early Development Resources",
+     "url": "https://www.zerotothree.org/"
+    }
+   ]
   }
  ],
  "roomSetups": [
   {
    "id": "room-setup-kamar-anak",
    "room": "kamar-anak",
-   "title": "Menata Kamar Anak: Ruang Tidur dan Bermain yang matching dengan Ukuran Si Kecil",
+   "title": "Menata Kamar Anak: Ruang Tidur dan Bermain yang Sesuai Ukuran Si Kecil",
    "principles": [
-    "Kecilkan dunianya: rak, gantungan baju, dan keranjang diletakkan rendah supaya anak bisa mengambil dan Membereskan sendiri tanpa dipapah.",
-    "Sedikit namun bermakna: hanya sebagian mainan yang ditata di rak, sisanya disimpan lalu dirotasi setiap beberapa minggu agar anak fokus dan mudah Membereskan.",
+    "Kecilkan dunianya: rak, gantungan baju, dan keranjang diletakkan rendah supaya anak bisa mengambil dan membereskan sendiri tanpa dibantu.",
+    "Sedikit namun bermakna: hanya sebagian mainan yang ditata di rak, sisanya disimpan lalu dirotasi setiap beberapa minggu agar anak fokus dan mudah membereskan.",
     "Semua benda punya rumah: mainan, buku, dan pakaian punya tempat tetap yang mudah dikenali, sehingga merapikan menjadi bagian alami dari bermain.",
-    "Musim dingin visual yang tenang: dinding polos dengan satu-dua karya seni setinggi mata anak membantu konsentrasi lebih baik daripada dekor ramai.",
-    "Bebas bergerak: kasur rendah dan lantai bersih memberi kebebasan bergerak dan latihanmandiri sejak bayi."
+    "Suasana visual yang tenang: dinding polos dengan satu-dua karya seni setinggi mata anak membantu konsentrasi lebih baik daripada dekor ramai.",
+    "Bebas bergerak: kasur rendah dan lantai bersih memberi kebebasan bergerak dan latihan mandiri sejak bayi."
    ],
    "items": [
     {
-     "name": "Kasur lantai atau ranjang rendah berparkiran",
+     "name": "Kasur lantai atau ranjang rendah berpagar",
      "essential": true,
-     "budgetRendah": "Matras lipat atau kasur busa tipis dibungkus sarung tahan air, diletakan langsung di atas lantai bersih",
+     "budgetRendah": "Matras lipat atau kasur busa tipis dibungkus sarung tahan air, diletakkan langsung di atas lantai bersih",
      "budgetSedang": "Ranjang kayu rendah dengan pengaman sisi dan kasur tebal khusus anak",
      "diy": false
     },
     {
      "name": "Rak mainan rendah 2-3 susun",
      "essential": true,
-     "budgetRendah": "Rak plastik murah atau dus kardus kuat yang dilapisi kertas warna dan dijitak agar tidak roboh",
-     "budgetSedang": "Rak kayu putih koyo 40-50 cm dengan lebar masak dan mudah dijangkau",
+     "budgetRendah": "Rak plastik murah atau dus kardus kuat yang dilapisi kertas warna dan diikat agar tidak roboh",
+     "budgetSedang": "Rak kayu putih setinggi 40-50 cm dengan lebar cukup dan mudah dijangkau",
      "diy": true
     },
     {
@@ -3918,7 +4187,7 @@
      "diy": true
     },
     {
-     "name": "Sudut buku kecil dengan mukaan bertengger",
+     "name": "Sudut buku kecil dengan rak pajang",
      "essential": true,
      "budgetRendah": "Keset kecil plus tiga sampai empat buku dipajang dengan sampul agak ke luar",
      "budgetSedang": "Rak display buku pendek berhadapan dinding plus lampu tidur hangat",
@@ -3927,27 +4196,27 @@
     {
      "name": "Gantungan pakaian rendah untuk latihan mandiri",
      "essential": true,
-     "budgetRendah": "Paku tiing atau hook kuat dipasang di ketinggian anak plus gantung baju berangka ringan",
-     "budgetSedang": "Lackeri terbuka kecil dengan batang gantung dan beberapa sekotpik sepatu",
+     "budgetRendah": "Pengait dinding kokoh yang dipasang dengan angkur sesuai jenis dinding, pada ketinggian anak",
+     "budgetSedang": "Rak terbuka kecil dengan batang gantung dan beberapa kotak sepatu",
      "diy": true
     },
     {
-     "name": "Cermin akhir andalan yang dipasang kuat di dinding",
+     "name": "Cermin besar yang dipasang kuat di dinding",
      "essential": false,
-     "budgetRendah": "Cermin akrilik bulat 30-40 cm dipaku lalu diadali lagi dengan lem rangka",
-     "budgetSedang": "Bidak hask cermin dinding khusus anak bergabungan rangka kayu",
+     "budgetRendah": "Cermin akrilik bulat 30-40 cm dipaku lalu diperkuat dengan lem pada rangka",
+     "budgetSedang": "Bingkai cermin dinding khusus anak dengan rangka kayu",
      "diy": false
     },
     {
-     "name": "Lampu tidur tankai dengan cahaya kuning hangat",
+     "name": "Lampu tidur kecil dengan cahaya kuning hangat",
      "essential": false,
      "budgetRendah": "Lampu tidur colok murah berwarna hangat",
-     "budgetSedang": "Lampu tidur dengan sirkel pengatur terang dan timer",
+     "budgetSedang": "Lampu tidur dengan pengatur cahaya dan timer",
      "diy": false
     }
    ],
    "layoutTips": [
-    "Buang karpet tebal berambut panjang dan ganti dengan keset polos anti slip supaya bayi yang mulai merangkak lebih mudah letak konsep pandu.",
+    "Buang karpet tebal berambut panjang dan ganti dengan keset polos anti slip supaya bayi yang mulai merangkak lebih mudah bergerak dan menjelajah.",
     "Letakkan tempat tidur agak jauh dari colokan listrik dan jendela, lalu tutup semua colokan dengan pengaman colokan.",
     "Sisakan jalur bebas minimal 80-100 cm di tengah ruangan supaya anak bisa merangkak, berjalan, dan membawa mainan tanpa tersangkut.",
     "Hanya pasang dekor atau karya seni di ketinggian mata anak, bukan mata orang dewasa."
@@ -3967,7 +4236,7 @@
     "Semua lemari, rak, dan TV di ruang sekitar kamar harus diikat atau dipaku ke dinding agar tidak tumbang saat anak memanjat.",
     "Untuk bayi di bawah 1 tahun, tidurkan dalam posisi telentang di kasur yang datar tanpa bantal, guling, atau mainan lunak di sekitarnya, dan konsultasikan aturan tidur aman ke dokter atau posyandu.",
     "Singkirkan tali panjang, tali gorden, kabel, dan tali gantungan dari jangkauan anak karena bisa berbahaya bila melilit leher.",
-    "Ganti benda kecil yang bisa masuk mulut: patokan sederhananya, benda yang lebih besar dari tabung gulungan toilet umumnya aman untuk anak di atas 1 tahun."
+    "Singkirkan benda kecil yang bisa masuk mulut: patokan sederhananya, benda yang lebih besar dari tabung gulungan toilet umumnya aman untuk anak di atas 1 tahun."
    ],
    "references": [
     {
@@ -3998,12 +4267,12 @@
     {
      "name": "Tangga kecil (step stool) yang kokoh dan anti slip",
      "essential": true,
-     "budgetRendah": "Kardus tebal dijenihkan atau bangku plastik rendah dengan alas karet",
+     "budgetRendah": "Kardus tebal yang diperkuat atau bangku plastik rendah dengan alas karet",
      "budgetSedang": "Bangku kayu dua tingkat dengan alas karet dan tepi mengangkat",
      "diy": false
     },
     {
-     "name": "Pompa sabun cair ukuran kecil isi 2-3 jempol orang dewasa",
+     "name": "Pompa sabun cair ukuran kecil yang mudah ditekan anak",
      "essential": true,
      "budgetRendah": "Pompa sabun bekas dicuci bersih lalu diisi sabun cair",
      "budgetSedang": "Dispenser sabun saku bergambar dengan lubang dorongan yang mudah",
@@ -4017,10 +4286,10 @@
      "diy": false
     },
     {
-     "name": "Handuk berhutup kokoh bersabit dan kail di tinggi anak",
+     "name": "Handuk kokoh dengan sabuk dan kail di ketinggian anak",
      "essential": true,
      "budgetRendah": "Kail self-adhesive diplester bagus di dinding rendah plus handuk kecil",
-     "budgetSedang": "Kail kayu dipasang kuat plus handuk berkap untuk anak sus",
+     "budgetSedang": "Kail kayu dipasang kuat plus handuk lembut untuk anak",
      "diy": false
     },
     {
@@ -4047,13 +4316,13 @@
     {
      "name": "Keranjang mainan mandi berlubang agar cepat kering",
      "essential": false,
-     "budgetRendah": "Keranjang plastik bekas dengan lubang-lubang kecil disekat ampela",
-     "budgetSedang": "Keranjang jaring berkarung gantung di dinding batteering",
+     "budgetRendah": "Keranjang plastik bekas dengan lubang-lubang kecil dan diberi sekat",
+     "budgetSedang": "Keranjang jaring bergantung di dinding kamar mandi",
      "diy": true
     }
    ],
    "layoutTips": [
-    "Letakkan semua perlengkapan anak dalam satu keranjang di dekat bak atau shower supaya pembawaannya praktis dan dipakai tidak hilang.",
+    "Letakkan semua perlengkapan anak dalam satu keranjang di dekat bak atau shower supaya pembawaannya praktis dan tidak mudah hilang.",
     "Pasang kail handuk dan tempat sikat gigi sekitar ketinggian pinggang anak, bukan mata dewasa.",
     "Tempatkan step stool hanya di depan wastafel atau bak yang benar-benar aman, dan selalu periksa kakinya stabil sebelum dipakai.",
     "Pisahkan area basah dan kering dengan keset supaya lantai tidak licin saat anak keluar mandi."
@@ -4071,7 +4340,7 @@
    ],
    "safetyNotes": [
     "Jangan pernah meninggalkan anak 0-3 tahun sendirian di kamar mandi, bahkan dengan air sedikit, karena bayi dan anak kecil tenggelam dalam air sangat sedikit.",
-    "Kembalikan suhu air pemanas maksimum sekitar 49 derajat Celsius dan selalu cek air mandi dengan siku atau termometer sebelum anak masuk; umumnya air hangat cukup sekitar 37-38 derajat.",
+    "Atur suhu air pemanas maksimum sekitar 49 derajat Celsius dan selalu cek air mandi dengan siku atau termometer sebelum anak masuk; umumnya air hangat cukup sekitar 37-38 derajat.",
     "Tiriskan ember dan gayung segera setelah selesai serta simpan terbalik agar tidak jadi genangan atau bahaya tenggelam untuk bayi.",
     "Simpan obat, pisau cukur, gunting, dan benda tajam jauh dari jangkauan atau di kotak terkunci."
    ],
@@ -4093,12 +4362,12 @@
   {
    "id": "room-setup-dapur",
    "room": "dapur",
-   "title": "Dapur Jadi Ruang Seru: Ia Dapet Babtur Barangtuh Dengan Orang Tua",
+   "title": "Dapur Jadi Ruang Seru: Anak Dapat Banyak Tugas Bersama Orang Tua",
    "principles": [
-    "Anak belajar paling banyak di dapur aru tuker makanan, menumbuhkan sikap: mencuci, menuang, mengupas, dan Mengocok adalah latihan kemandirian nyata.",
-    "Sediakan alat ukuran anak: gelas kecil, pis aman, dan mangkuk ringan membuat anak mampu menegakkan mandiri untuk mencoba sendiri.",
-    "Buat satu station tetap: meja kecil atau dudukan belajar di sepanjang meja kerja, dengan peralatannya di satu keranjang yang sama setiap hari.",
-    "Beri pekerjaan nyata, bukan main-main: anak bisa membawa sayur, membasuh buah, menaburkan topping, dan Membereskan meja setelah makan."
+    "Anak belajar paling banyak di dapur saat ikut menyiapkan makanan: mencuci, menuang, mengupas, dan mengocok adalah latihan kemandirian nyata.",
+    "Sediakan alat ukuran anak: gelas kecil, pisau aman, dan mangkuk ringan membuat anak mampu mandiri untuk mencoba sendiri.",
+    "Buat satu area tetap: meja kecil atau dudukan belajar di sepanjang meja kerja, dengan peralatannya di satu keranjang yang sama setiap hari.",
+    "Beri pekerjaan nyata, bukan sekadar bermain: anak bisa membawa sayur, membasuh buah, menaburkan topping, dan membereskan meja setelah makan."
    ],
    "items": [
     {
@@ -4109,10 +4378,10 @@
      "diy": false
     },
     {
-     "name": "Pis aman untuk anak (pis mentega atau pis gerigi), dengan papan cetak kecil",
+     "name": "Pisau aman untuk anak (pisau mentega atau pisau gerigi), dengan papan potong kecil",
      "essential": true,
-     "budgetRendah": "Pis plastik atau pis kertas untuk mentega dipakai untuk memotong pisang dan stroberry yang lembak",
-     "budgetSedang": "Set pis kayu atau baja aman dengan papan cetak mini untuk anak",
+     "budgetRendah": "Pisau plastik atau pisau mentega dipakai untuk memotong pisang dan stroberi yang lembut",
+     "budgetSedang": "Set pisau kayu atau baja aman dengan papan potong mini untuk anak",
      "diy": false
     },
     {
@@ -4130,21 +4399,21 @@
      "diy": true
     },
     {
-     "name": "Lap kain kecil, sikat serbi, dan alat penyedot untuk membereskan sendiri",
+     "name": "Lap kain kecil, sikat kecil, dan alat penyedot untuk membereskan sendiri",
      "essential": true,
      "budgetRendah": "Kain lap dipotong jadi ukuran kecil dan sikat bekas yang masih bersih",
      "budgetSedang": "Set perkakas bersih ukuran anak dengan lap organik dan penyedot mini",
      "diy": true
     },
     {
-     "name": "Keranjang buah sekop di rak rendah dalam jangkauan anak",
+     "name": "Keranjang buah di rak rendah dalam jangkauan anak",
      "essential": false,
      "budgetRendah": "Mangkuk buah biasa di rak bawah dapur",
      "budgetSedang": "Rak buah bertangga yang mudah diambil anak untuk memilih sendiri",
      "diy": true
     },
     {
-     "name": "Anderson air mini dispenser rendah untuk minum sendiri",
+     "name": "Dispenser air mini rendah untuk minum sendiri",
      "essential": false,
      "budgetRendah": "Pitcher plastik setengah penuh di meja rendah",
      "budgetSedang": "Dispenser air mini stabil untuk anak isi ulang gelas sendiri",
@@ -4154,7 +4423,7 @@
      "name": "Apron kecil dengan kail pendek yang bisa dipakai lepas sendiri",
      "essential": false,
      "budgetRendah": "Apron dewasa diikat lebih longgar atau celemek kain bekas dipotong ukuran anak",
-     "budgetSedang": "Apron anak dengan kail depan jingga mudah langsung dibuka",
+     "budgetSedang": "Apron anak dengan pengikat depan yang mudah dibuka",
      "diy": true
     }
    ],
@@ -4174,10 +4443,10 @@
     "4-5y"
    ],
    "safetyNotes": [
-    "Jauhkan anak dari kompor, oven, ketel air panas, dan panci berteteh dengan pembatas dapur atau letak pegangan kompor menghadap ke dalam.",
-    "Pis aman untuk anak tetap membutuhkan pengawasan dewasa dan only dipakai bahan yang sudah lembut, seperti pisang atau strobery yang sudah dikupas.",
+    "Jauhkan anak dari kompor, oven, ketel air panas, dan panci bertutup dengan pembatas dapur atau letak pegangan kompor menghadap ke dalam.",
+    "Pisau aman untuk anak tetap membutuhkan pengawasan dewasa dan hanya dipakai untuk bahan yang sudah lembut, seperti pisang atau stroberi yang sudah dikupas.",
     "Dudukan belajar dapur harus dipasang stabil dan selalu didampingi orang dewasa saat anak berdiri di dalamnya.",
-    "Semua cairan panas, gula panas, dan minyak goreng disimpan jauh dari meja kerja anak; kabel listrik apron diatur rapi agar tidak ditarik."
+    "Semua cairan panas, gula panas, dan minyak goreng disimpan jauh dari meja kerja anak; kabel listrik di area dapur diatur rapi agar tidak ditarik."
    ],
    "references": [
     {
@@ -4200,7 +4469,7 @@
    "title": "Ruang Keluarga: Sudut Bermain di Tengah Keluarga",
    "principles": [
     "Anak tidak perlu kamar mainan luas; satu sudut tenang di ruang keluarga biasanya cukup supaya anak bermain dekat dengan orang tua.",
-    "Hanya boleh sampai delapan mainan untuk anak remon, dan sisanya disimpan lalu diganti berkala dengan prinsip rotasi agar mainan tidak menjadi kekacauan.",
+    "Tampilkan sekitar delapan mainan sekaligus; simpan dan rotasi sisanya secara berkala agar anak lebih mudah memilih dan merapikan.",
     "Buku ditampilkan dengan sampulnya menghadap keluar, sebagaimana rak toko buku, sehingga anak mudah memilih sendiri.",
     "Bergerak banyak adalah kebutuhan: pastikan ada lintasan kosong untuk merangkak, berjalan, memanjat kecil, dan menari."
    ],
@@ -4208,7 +4477,7 @@
     {
      "name": "Keset atau tikar area bermain di lantai",
      "essential": true,
-     "budgetRendah": "Tikar piknik polos atau sutera walagala yang mudah dibersihkan",
+     "budgetRendah": "Tikar piknik polos atau tikar plastik yang mudah dibersihkan",
      "budgetSedang": "Tikar busa EVA tebal atau karpet tipis berbulu pendek mudah disedot",
      "diy": false
     },
@@ -4229,8 +4498,8 @@
     {
      "name": "Rak display buku dengan sampul menghadap ke luar",
      "essential": true,
-     "budgetRendah": "Rak jumlah berdiri dipasang mur sampai anak bisa mengambil bukunya sendiri",
-     "budgetSedang": "Rak buku franchise berdiri kecil khusus anak dengan pilihan buku terbatas",
+     "budgetRendah": "Rak buku berdiri dipasang rendah agar anak bisa mengambil bukunya sendiri",
+     "budgetSedang": "Rak buku pajang kecil khusus anak dengan pilihan buku terbatas",
      "diy": false
     },
     {
@@ -4243,7 +4512,7 @@
     {
      "name": "Keranjang bahan kerja seni sederhana (kertas, krayon pendek, lem batang)",
      "essential": false,
-     "budgetRendah": "Toples krayon plus stack kertas bekas yang siap dipakai anak dalam kotak datar",
+     "budgetRendah": "Toples krayon plus tumpukan kertas bekas yang siap dipakai anak dalam kotak datar",
      "budgetSedang": "Kotak seni bersekat supaya setiap alat punya tempat dan mudah dibawa",
      "diy": true
     },
@@ -4257,9 +4526,9 @@
    ],
    "layoutTips": [
     "Letakkan area main di sudut yang masih terlihat dari tempat duduk orang tua, bukan di balik sofa, supaya supervisi terjadi alami sambil beraktivitas.",
-    "Ikat rak buku dan meja TV ke dinding serta singkat kabel antena dan colokan supaya tidak tertarik atau terselip di bawah mainan.",
+    "Ikat rak buku dan meja TV ke dinding serta rapikan kabel antena dan colokan supaya tidak tertarik atau terselip di bawah mainan.",
     "Rotasi mainan setiap dua sampai empat minggu: simpan yang jarang dipakai, ganti dengan mainan yang telah lama disimpan, dan lihat minat anak hidup kembali.",
-    "Sediakan papan kotak atau rak kecil untuk barang milik anak di sekitar sofa supaya mainan bisa dipulangkan ke rumahnya setiap malam."
+    "Sediakan papan kotak atau rak kecil untuk barang milik anak di sekitar sofa supaya mainan bisa dikembalikan ke tempatnya setiap malam."
    ],
    "ageBands": [
     "0-3m",
@@ -4274,8 +4543,8 @@
    ],
    "safetyNotes": [
     "Ikat semua perabot tinggi seperti rak TV, lemari, dan cermin ke dinding karena kalau tumbang bisa melukai anak berat.",
-    "Untuk anak di bawah 1 tahun, pastikan mainan dan sisa makanan kecil (selain digosong terbaca seperti kelereng, koin, dan potongan plastik) bebas dari lantai, terutama saat anak suka memasukkan mulut.",
-    "Benda cemara seperti ujung meja runcing dan sudut rak dilindungi dengan bantalan sudut, terutama ketika anak mulai belajar berjalan.",
+    "Untuk anak di bawah 1 tahun, pastikan mainan dan sisa makanan kecil (seperti kelereng, koin, dan potongan plastik) bebas dari lantai, terutama saat anak suka memasukkan mulut.",
+    "Benda tajam seperti ujung meja runcing dan sudut rak dilindungi dengan bantalan sudut, terutama ketika anak mulai belajar berjalan.",
     "TV, perangkat elektronik, dan kabel listrik diletakkan di tempat yang tak bisa dicapai anak atau ditutup pelindung colokan."
    ],
    "references": [
@@ -4296,33 +4565,33 @@
   {
    "id": "room-setup-area-makan",
    "room": "area-makan",
-   "title": "Area Makan: Ditenangkan, Mengasyikkan, dan Latihan Mandiri",
+   "title": "Area Makan: Tenang, Menyenangkan, dan Latihan Mandiri",
    "principles": [
-    "Kursi yang mendukung: kaki anak ditanji atau pijakan, punggung tegak, dan lutut sejajar dengan pinggang supaya duduk nyaman dan tangan bebas menikto.",
-    "Alat yang pas ukurannya: pelat kecil dengan bagian terpisah, sendok garpu bergenggam pendek, dan gelas terbuka kecil melatih koordinasi sejak dini.",
-    "Anak dilibatkan sebelum dan sesudah makan: membawa serbet, menyendok bahan, dan membawa pelat ke bak mencuci adalah pekerjaan yang menyenangkan mereka.",
-    "Fokuskan suasana: meja bersih dari mainan, layar dimatikan, dan orang tua makan bersama anak supaya makan jadi momen menyenangkan, bukan reklame."
+    "Kursi yang mendukung: kaki anak ditopang pijakan, punggung tegak, dan lutut sejajar dengan pinggang supaya duduk nyaman dan tangan bebas bergerak.",
+    "Alat yang pas ukurannya: piring kecil dengan bagian terpisah, sendok garpu berpegangan pendek, dan gelas terbuka kecil melatih koordinasi sejak dini.",
+    "Anak dilibatkan sebelum dan sesudah makan: membawa serbet, menyendok bahan, dan membawa piring ke bak mencuci adalah pekerjaan yang menyenangkan mereka.",
+    "Fokuskan suasana: meja bersih dari mainan, layar dimatikan, dan orang tua makan bersama anak supaya makan jadi momen menyenangkan, bukan sekadar acara."
    ],
    "items": [
     {
      "name": "Kursi makan dengan pijakan kaki dan meja makan kecil",
      "essential": true,
-     "budgetRendah": "Kursi makan sederhana dengan sesuaidang sandaran dan kaki berstandar kokoh",
+     "budgetRendah": "Kursi makan sederhana dengan sandaran sesuai dan kaki yang kokoh",
      "budgetSedang": "Kursi makan kayu dengan pijakan yang bisa naik turun mengikuti anak tumbuh",
      "diy": false
     },
     {
-     "name": "Pelat kecil dengan pembagian terpisah",
+     "name": "Piring kecil dengan pembagian terpisah",
      "essential": false,
-     "budgetRendah": "Pelat plastik berbagi bahan seperti baja yang mudah dicuci",
-     "budgetSedang": "Pelat stainless kecil dengan sekat lepas yang tahan jatuh",
+     "budgetRendah": "Piring plastik bersekat yang mudah dicuci",
+     "budgetSedang": "Piring stainless kecil dengan sekat lepas yang tahan jatuh",
      "diy": false
     },
     {
      "name": "Gelas terbuka kecil untuk melatih minum sendiri",
      "essential": true,
-     "budgetRendah": "Gelas kacau plastik kecil berisi setengah saja",
-     "budgetSedang": "Gelas kaca kecil tertawan dan kokoh yang menggairahkan anak minum sendiri",
+     "budgetRendah": "Gelas plastik kecil yang diisi setengah saja",
+     "budgetSedang": "Gelas kaca kecil yang tebal dan kokoh agar anak semangat minum sendiri",
      "diy": false
     },
     {
@@ -4333,31 +4602,31 @@
      "diy": false
     },
     {
-     "name": "Placemat dengan gambar posisi pelat, gelas, dan sendok",
+     "name": "Placemat dengan gambar posisi piring, gelas, dan sendok",
      "essential": false,
-     "budgetRendah": "Gambar sederhana posisi alat makan dibuat sendiri lalu dicet laminasi",
-     "budgetSedang": "Placemat kain dengan bordir garis posisi alat makan yang tahan wash",
+     "budgetRendah": "Gambar sederhana posisi alat makan dibuat sendiri lalu dicetak dan dilaminasi",
+     "budgetSedang": "Placemat kain dengan bordir garis posisi alat makan yang tahan cuci",
      "diy": true
     },
     {
-     "name": "Meja anak dan kursi kecil untuk sarapan kupu-kupu",
+     "name": "Meja anak dan kursi kecil untuk sarapan bersama",
      "essential": false,
-     "budgetRendah": "Meja lipat kardus atau meja kecil bekas dengan kursi barstool rendah",
+     "budgetRendah": "Meja lipat kardus atau meja kecil bekas dengan kursi rendah",
      "budgetSedang": "Set meja kursi kayu anak untuk area makan kedua di dapur atau teras",
      "diy": false
     },
     {
-     "name": "Wadah kecil atau keranjang buah di tinggi anak untuk snacking sendiri",
+     "name": "Wadah kecil atau keranjang buah di ketinggian anak untuk camilan sendiri",
      "essential": false,
      "budgetRendah": "Toples plastik rendah berisi buah potong di rak bawah",
-     "budgetSedang": "Station snack di rak rendah dengan pilihan terbatas yang berisi terisi 2 dipilih",
+     "budgetSedang": "Stasiun camilan di rak rendah dengan dua pilihan terbatas",
      "diy": true
     }
    ],
    "layoutTips": [
     "Tempatkan kursi makan anak di dekat orang tua yang makan supaya anak melihat contoh cara makan dan tahu bahwa setiap orang punya tempatnya.",
     "Sediakan serbet kecil, lap meja, dan bak kecil di dekat area makan supaya anak bisa membantu membereskan sendiri tumpahan atau sisa makanan.",
-    "Sistem tumpah tidak masalah: lantai area makan dengan keset mudah cuci supaya orang tua lebih santai dan anak lebih berani mencoba sendiri.",
+    "Tumpahan bukan masalah: lantai area makan dengan keset mudah cuci supaya orang tua lebih santai dan anak lebih berani mencoba sendiri.",
     "Konsistensi tempat makan membantu anak tahu kapan dan di mana momen makan, sehingga kebiasaan dan makanan makin baik."
    ],
    "ageBands": [
@@ -4393,18 +4662,18 @@
   {
    "id": "room-setup-outdoor",
    "room": "outdoor",
-   "title": "Outdoor: Gerak Bebas, Alam, dan Tanah yang Menyenangkan",
+   "title": "Bermain di Luar: Gerak Bebas, Alam, dan Tanah yang Menyenangkan",
    "principles": [
     "Keluar ruangan setiap hari bila cuaca izin: cahaya matahari, tanah, dan angin memberi pengalaman yang tidak bisa diganti mainan di dalam rumah.",
-    "Gerak yang bervariasi: berjalan di permukaan berbeda, mendorong membawa, memanjat membawa, bermanik bebas buat latihan kekuatan dan keseimbangan.",
+    "Gerak yang bervariasi: berjalan di permukaan berbeda, mendorong, membawa, memanjat, dan bermain bebas untuk latihan kekuatan dan keseimbangan.",
     "Anak dilibatkan merawat: menyiram tanaman, menyapu teras, dan menanam biji jadi pekerjaan nyata yang mereka banggakan.",
-    "Amatilah kecil kecil: semut, daun kering, hujan berhenti, sampai awan bisa jadi percakapan dan eksplorasi yang tak terbatas."
+    "Amatilah hal-hal kecil: semut, daun kering, hujan berhenti, sampai awan bisa jadi percakapan dan eksplorasi yang tak terbatas."
    ],
    "items": [
     {
      "name": "Bak pasir atau bak plastik isi pasir plus alat gali",
      "essential": true,
-     "budgetRendah": "Bak plastik murah isi pasir bersih dan sendok cangkul kecil mampu bermain",
+     "budgetRendah": "Bak plastik murah isi pasir bersih dan sendok cangkul kecil untuk bermain",
      "budgetSedang": "Bak pasir kayu dengan tutup dan bangku yang tahan hujan dan aman",
      "diy": false
     },
@@ -4419,13 +4688,13 @@
      "name": "Bola dalam berbagai ukuran dan tekstur",
      "essential": true,
      "budgetRendah": "Bola plastik besar dan bola kecil bertekstur untuk digenggam dan ditekan",
-     "budgetSedang": "Bola beruas atau bola longjourn yang memancing lempar dan tendang",
+     "budgetSedang": "Bola beruas atau bola lunak yang memancing lempar dan tendang",
      "diy": false
     },
     {
      "name": "Gerobak dorong atau kereta dorong ringan yang bisa dibawa anak",
      "essential": false,
-     "budgetRendah": "Kereta dorong plastik murah dengan stabil yang mudah didorong di halaman",
+     "budgetRendah": "Kereta dorong plastik murah yang stabil dan mudah didorong di halaman",
      "budgetSedang": "Gerobak kayu gandengan bekas beroda dengan tali yang mudah ditarik",
      "diy": false
     },
@@ -4433,25 +4702,25 @@
      "name": "Alat kebun mini berbahan ringan: sprayer kecil, sapu lidi mini, trowel",
      "essential": false,
      "budgetRendah": "Sapu kecil dan ember kecil untuk membereskan daun di halaman",
-     "budgetSedang": "Set alat kebun anak yang lebih kuat namun ringan untuk menerban banyak kegiatan",
+     "budgetSedang": "Set alat kebun anak yang lebih kuat namun ringan untuk berbagai kegiatan",
      "diy": true
     },
     {
      "name": "Matras atau tikar piknik untuk duduk bermain dan menyusu di luar",
      "essential": false,
-     "budgetRendah": "Kain datar besar atau selerung plastik yang bisa dilipat di tas",
+     "budgetRendah": "Kain datar besar atau tikar plastik yang bisa dilipat di tas",
      "budgetSedang": "Tikar piknik tahan air dan hangat dengan tas jinjing untuk berjalan jauh",
      "diy": false
     },
     {
-     "name": "Keranjang belanja kecil atau bot besi untuk mengumpulkan temuan alam",
+     "name": "Keranjang belanja kecil atau wadah besi untuk mengumpulkan temuan alam",
      "essential": false,
      "budgetRendah": "Keranjang plastik kecil untuk memetik daun, biji, dan batu unik",
      "budgetSedang": "Keranjang rotan dengan tali panjang gantungan bahu yang mudah dibawa",
      "diy": true
     },
     {
-     "name": "Kolam人类社会 reuse spi kecil atau ember rendah untuk bermain air saat cuaca panas",
+     "name": "Kolam kecil atau ember rendah untuk bermain air saat cuaca panas",
      "essential": false,
      "budgetRendah": "Ember rendah besar isi air plus gelas dan mangkuk untuk menuang",
      "budgetSedang": "Bak air tipis dari bahan kokoh dengan luas yang bisa diatur",
@@ -4460,9 +4729,9 @@
    ],
    "layoutTips": [
     "Khususkan sudut luar ruangan yang selalu siap: rak kecil tahan cuaca berisi pasir, alat gali, bola, dan gembor supaya anak bisa mengajak keluar sendiri tanpa diberi izin panjang.",
-    "Beri jalur mandiri: halaman depan atau teras dengan pasir dan tanam kecil mendampingi anak menggali dan menyiram, sementara orang tua menemani di dekatnya.",
+    "Beri jalur mandiri: halaman depan atau teras dengan pasir dan tanaman kecil, dampingi anak menggali dan menyiram sementara orang tua menemani di dekatnya.",
     "Rotasi alat luar ruangan antara pasir, air, dan kebun supaya anak tidak bosan dan tiap minggu nuansanya berubah.",
-    "Perhatikan permukaan: tanah dan rumput lebih menyenangkan daripada beton licin meninggalkan posisi lebih aman untuk anak yang belajar berlari dan jatuh."
+    "Perhatikan permukaan: tanah dan rumput lebih menyenangkan daripada beton licin; pilih posisi yang lebih aman untuk anak yang belajar berlari dan jatuh."
    ],
    "ageBands": [
     "0-3m",
@@ -4476,8 +4745,8 @@
     "4-5y"
    ],
    "safetyNotes": [
-    "Selalu dampingi anak di dekat air, termasuk ember, bak pasir berbau air, dan kolam kecil, bahkan yang dangkal sekalipun.",
-    "Gunakan topi dan tabir surya saat bermain di luar, umumnya sebaiknya hindar matahari paling terik sekitar pukul 10 sampai 16.",
+    "Selalu dampingi anak di dekat air, termasuk ember, bak pasir berisi air, dan kolam kecil, bahkan yang dangkal sekalipun.",
+    "Gunakan topi dan tabir surya saat bermain di luar, umumnya sebaiknya hindari matahari paling terik sekitar pukul 10 sampai 16.",
     "Cek area bermain dari benda tajam, batu lancip, dan tumbuhan berduri, dan pastikan taman bermain punya lantai lunak serta aman usia anak.",
     "Gunakan helm dan pelindung saat anak mulai naik sepeda atau mainan luncur, dan selalu ingatkan bahwa tali ayunan atau tali panjang bisa berbahaya bila melilit leher."
    ],
@@ -5741,6 +6010,266 @@
      "url": "https://www.healthychildren.org"
     }
    ]
+  },
+  {
+   "id": "parents-mulai-montessori-dari-nol-indonesia",
+   "title": "Bagaimana Mulai Montessori dari Nol di Rumah Indonesia",
+   "category": "filosofi",
+   "ageBands": [
+    "0-3m",
+    "3-6m",
+    "6-9m",
+    "9-12m",
+    "12-18m",
+    "18-24m",
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Banyak orang tua Indonesia merasa Montessori itu mahal: alat peraga impor, kursus bersertifikat, kamar penuh rak kayu jati. Kenyataannya, kelas Montessori pertama di Roma diisi anak-anak kampung miskin dengan perabot buatan tangan. Yang membuat sebuah rumah menjadi \"Montessori\" bukan alatnya, melainkan tiga keputusan sehari-hari: (1) perlakukan anak sebagai orang yang ingin mampu, bukan orang yang harus dilayani; (2) siapkan lingkungan agar ia bisa berbuat sendiri - gelas rendah, keranjang mainan sedikit, tangga kecil di kamar mandi; (3) tahan diri untuk tidak memotong upayanya, asalkan aman.\n\nCara paling realistis memulai dari nol di rumah: pilih SATU kebiasaan dulu selama dua minggu. Contoh paling melekat di budaya kita: mandi dan berpakaian mandiri, atau menata sendiri piring setelah makan. Siapkan alas fisiknya (gantungan baju rendah, stempel tempat piring) sebelum minta anak melakukannya. Ketika satu kebiasaan melekat, tambah satu lagi. Jangan mulai dengan membeli alat; mulai dengan mengubah cara bicara: ganti \"jangan dipegang\" dengan \"pegang dengan dua tangan begini\".\n\nManfaatkan kekayaan rumah Indonesia yang justru sangat Montessori: dapur yang aktif (mencuci beras, mengupas bawang, melipat daun pepaya), halaman berisi tanaman, budaya gotong royong. Anak yang ikut memasak, menyapu halaman, dan membawa kue ke tetangga sedang menjalani practical life yang sesungguhnya. Bahasa Indonesia pun kaya kalimat sopan yang sejalan dengan grace and courtesy: \"tolong\", \"maaf\", \"terima kasih\" - latih ini bukan dengan hukuman, tapi dengan dimodelkan setiap hari.\n\nYang penting menjaga ekspektasi: sebulan pertama sering terasa lebih lambat dan lebih berantakan daripada cara lama. Itu tanda anak sedang belajar. Tidakkah lebih baik 5 menit lebih lama menunggu anak memakai kaus kaki sendiri hari ini, daripada 5 tahun menjadi orang yang menunggu dilayani?",
+   "keyTakeaways": [
+    "Mulai dari satu kebiasaan mandiri selama dua minggu, jangan semua sekaligus.",
+    "Ubah lingkungan lebih dulu, bukan permintaan: gelas rendah, gantungan rendah, keranjang sedikit.",
+    "Rumah Indonesia justru kaya bahan Montessori: dapur aktif, halaman, budaya gotong royong.",
+    "Ganti larangan dengan instruksi positif yang bisa ditiru: 'pegang dengan dua tangan'."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "AMI USA - Montessori at Home",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "WHO - Nurturing care framework for early childhood development",
+     "url": "https://www.who.int/publications/i/item/97892400020986"
+    }
+   ]
+  },
+  {
+   "id": "parents-montessori-vs-paud-biasa",
+   "title": "Montessori vs Sekolah PAUD Biasa: Apa Bedanya?",
+   "category": "filosofi",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Pertanyaan ini muncul saat orang tua mulai memilih lembaga. Secara besar, perbedaannya ada di empat hal.\n\n1. Alur kegiatannya. Di PAUD pada umumnya kegiatan dipilih guru dan seragam untuk semua: jam 8 bermain, jam 8.30 bernyanyi, semuanya serentak. Di kelas Montessori ada siklus kerja panjang (idealnya 2-3 jam) di mana anak memilih pekerjaan dari rak, mengerjakan berulang, dan membereskannya sendiri. Guru memberi pelajaran satu per satu saat anak siap.\n\n2. Campur usia. Kelas Montessori mengelompokkan rentang usia 3-6 tahun dalam satu ruang. Kakak belajar menolong tanpa menggurui, adik belajar dari mengamati. PAUD biasa umumnya memisahkan per tahun kelahiran.\n\n3. Peran alat. Materi Montessori bersifat didaktik: ada kontrol kesalahan di dalam alat, sehingga anak tahu sendiri jika salah tanpa dikoreksi guru. Justru karena itu kejujuran internal tumbuh. Mainan biasa umumnya tidak punya mekanisme ini.\n\n4. Ukuran keberhasilan. PAUD sering diukur dari output yang terlihat: karya warna, hafalan, tampil panggung. Montessori mengukur hal yang kurang terlihat: konsentrasi, kemandirian, urutan kerja, cinta pada belajar.\n\nArtinya apa bagi keluarga Indonesia yang anaknya sudah bersekolah di PAUD biasa, atau yang biaya Montessori tidak terjangkau? Pendekatannya bukan \"montessori-kan\" semuanya dan melawan sekolah, tapi melengkapi: jaga di rumah siklus bermain yang panjang tanpa diselingi instruksi, beri anak pekerjaan rumah nyata (mencuci piring sendiri, merapikan sepatu), dan pertahankan sikap menghormati pilihan anak saat bermain di rumah. Anak bisa tumbuh dengan kemandirian Montessori di rumah meski sekolahnya biasa saja.",
+   "keyTakeaways": [
+    "Beda utamanya: alur (anak memilih vs guru menentukan), campur usia, alat dengan kontrol kesalahan, dan ukuran keberhasilan.",
+    "Sekolah biasa + rumah yang benar jauh lebih baik daripada sekolah Montessori mahal + rumah yang melawan.",
+    "Ciri kelas Montessori sejati: siklus kerja panjang, anak bekerja sendiri, guru memberi pelajaran satu per satu.",
+    "Jangan menjadikan rumah 'sekolah kedua'; jadikan rumah tempat anak punya pekerjaan nyata."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "AMI USA - Montessori at Home",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "UNESCO - Early Childhood Care and Education",
+     "url": "https://www.unesco.org/en/early-childhood-care-and-education"
+    }
+   ]
+  },
+  {
+   "id": "parents-budget-minim-montessori",
+   "title": "Budget Minim: Montessori Tanpa Alat Mahal",
+   "category": "filosofi",
+   "ageBands": [
+    "18-24m",
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Alat Montessori resmi memang mahal: tower pink, kotak binomial, huruf amplas bisa jutaan rupiah. Tetapi prinsip dasarnya bekerja di rumah berbiaya rendah sekalipun, sebab inti Montessori bukan barang, melainkan tiga hal: kegiatan nyata, gerakan yang bisa diulang, dan lingkungan yang rapi.\n\nDaftar paling murah yang tetap asli Montessori:\n- Practical life: menyendok kacang, menuang air, mengeringkan daun, memakai jepitan, mencuci sayur, menyapu, melipat kain - semuanya dari dapur sendiri. Biaya: hampir nol.\n- Sensorial DIY: botol isi beras-kacang-pasir untuk bunyi, kain kasar-halus dari potongan serbet, karton gradasi warna dari sampul bekas, kantong berat berisi beras beda banyak. Biaya: sepele.\n- Bahasa: berkeliling rumah menamai benda, baca nyaring setiap hari, kartu gambar dari majalah bekas, huruf dari pasir di nampan.\n- Matematika: menghitung benda nyata (klengkeng, sendok, lidi), batang bilangan dari stik es krim ditempel, kartu angka tulis tangan.\n- Budaya: peta dunia dari karton, bendera dari kertas, kotak benua berisi benda dari rumah.\n\nTiga jebakan yang harus dihindari: pertama, membeli banyak mainan murah yang membuat anak tak fokus - lebih baik 6 kegiatan yang dirotasi daripada 60 yang menumpuk. Kedua, alat DIY yang kurang bagus justru mengganggu (warna luntur, potongan kasar melukai) - buat sedikit tapi rapi. Ketiga, menganggap alat mahal akan mendidik secara otomatis; alat apa pun tidak bekerja tanpa presentasi singkat dan kebebasan mengulang.\n\nKalau anggaran sangat terbatas, urutan yang paling berdampak: satu meja-kursi kecil (bisa dari meja plastik rendah), satu rak rendah (bisa dari papan dan bata, atau rak plastik), dan sisa biaya untuk kertas, pensil, gunting, dan buku bekas. Itu sudah cukup untuk memulai.",
+   "keyTakeaways": [
+    "Practical life butuh biaya hampir nol dan justru inti dari Montessori.",
+    "6 kegiatan dirotasi lebih baik daripada 60 mainan menumpuk.",
+    "Investasi pertama yang berdampak: meja rendah, rak rendah, kertas-pensil-gunting, buku bekas.",
+    "Alat DIY boleh, tetapi buat sedikit dan rapi; alat buruk justru mengganggu fokus."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "WHO - Nurturing care framework for early childhood development",
+     "url": "https://www.who.int/publications/i/item/97892400020986"
+    },
+    {
+     "title": "HealthyChildren.org (AAP) - Ages & Stages Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "parents-ayah-dalam-montessori",
+   "title": "Ayah dalam Montessori: Peran yang Sering Terlupakan",
+   "category": "filosofi",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Di banyak keluarga Indonesia, Montessori jebak pada satu orang - biasanya ibu - sementara ayah dianggap pendamping yang datang setelah semua diatur. Padahal riset perkembangan anak konsisten menunjukkan keterlibatan kedua pengasuh menghasilkan bahasa lebih kaya, pengaturan emosi lebih baik, dan rasa aman yang lebih kuat. Montessori sendiri sangat menghormati ayah: ia yang berdesakan melindungi \"anak sebagai pekerja dirinya\" dengan cara memperlakukan anak dari tangan orang dewasa yang terlalu cepat membantu.\n\nPeran ayah tidak perlu menduplikasi ibu. Justru kekhasan ayah sering berbentuk:\n- Aktivitas besar dan kecepatan berbeda: diangkat, dibalik, diajak berjalan jauh, dimanjakan di tempat yang berani - hal-hal yang membangun kepercayaan diri tubuh.\n- Kerja nyata luar rumah: mencuci motor, menanam di kebun, memperbaiki rak, ke pasar pagi. Ini practical life penuh.\n- Keheningan yang berbeda: ayah yang duduk bersama anak tanpa mengarahkan memberi ruang yang jarang diberi orang dewasa lain.\n- Konsistensi batas: anak sangat peka jika batas hanya hidup di satu orang. Kalimat ayah \"di rumah ini kita menata mainan sebelum tidur\" yang diucapkan dengan hangat dan tanpa diulang-ulang jauh lebih kuat daripada dua jam penjelasan.\n\nYang paling sering terjadi dan bisa segera diubah: ayah bermain \"menyibak\" anak lalu mengangkat diri, atau mengerjakan pekerjaan anak karena lebih cepat. Ganti dengan menunggu: beri anak waktu menyelesaikan sendiri, sambil ayah diam mengamati. Kesalahan kedua: komunikasi yang tidak selaras dengan ibu - anak cepat memahami celah dan justru terombang-ambing. Luangkan 10 menit seminggu berdua: apa satu kemandirian yang sedang kami latih bulan ini? Sepakati sama sama.\n\nYang akan terasa: bukan ayah menjadi guru tambahan, tapi anak yang melihat kedua orang tuanya punya bahasa yang sama tentang dirinya: 'anakku mampu, tugas kami menyediakan jalan.'",
+   "keyTakeaways": [
+    "Kehadiran kedua pengasuh memperkuat bahasa, emosi, dan rasa aman anak.",
+    "Peran ayah tidak meniru ibu: bawa kekuatan khasnya - kerja nyata, aktivitas fisik, keheningan.",
+    "Tahan diri mengerjakan pekerjaan anak demi cepat; tunggu dan amati.",
+    "Sepakati satu kemandirian yang sedang dilatih bulan ini bersama pasangan agar batas konsisten."
+   ],
+   "references": [
+    {
+     "title": "Harvard Center on the Developing Child - Serve and Return",
+     "url": "https://developingchild.harvard.edu/science/key-concepts/serve-and-return/"
+    },
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP) - Ages & Stages Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    }
+   ]
+  },
+  {
+   "id": "parents-anak-tk-gadget",
+   "title": "Montessori untuk Anak TK yang Sudah Terbiasa Gadget",
+   "category": "screen-time",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Kondisi paling umum di Indonesia hari ini: anak 3-5 tahun yang sudah mengenal HP sebelum mengenal gunting, yang tahu cara membuka YouTube sebelum bisa menata sepatu. Jika ini rumahmu, buang rasa bersalah dan mulai dari yang sekarang. Otak anak usia ini masih sangat lentur; kebiasaan baru terbentuk dalam hitungan minggu, bukan tahun.\n\nYang TIDAK berhasil: menyita mendadak, mengomel setiap hari, atau menganggap gadget dosa. Anak akan memandangnya sebagai harta karun yang terlarang, dan tarikannya justru bisa makin kuat. Yang berhasil bekerja pada tiga lapis:\n\nLapis 1 - Lingkungan lebih menarik daripada layar. Anak menonton bukan karena bodoh, tapi karena tidak ada kegiatan lain yang cukup menarik di sekitarnya. Sediakan dua atau tiga kegiatan yang sudah disiapkan di rak rendah: nampan menuang, kartu gambar, gunting dan kertas, atau adonan. Kuncinya: kegiatan harus siap pakai (tidak perlu 'nanti ya, ibu sibuk'), sesuai tantangan (tidak terlalu mudah), dan sering dirotasi.\n\nLapis 2 - Kehadiran manusia. Riset perkembangan otak menunjukkan anak belajar dari interaksi manusia yang merespons, bukan dari layar yang responsif sekalipun. Layar tidak bisa menatap mata, tidak bisa menunggu, tidak bisa tertawa di tengah kalimat. Sepuluh menit bermain papan peran bersama lebih bernilai daripada satu jam video edukasi. Jadwalkan waktu khusus: setelah Maghrib, 20 menit, hanya anak dan orang tuanya, tanpa HP (HP orang tua juga - ini bagian tersulit).\n\nLapis 3 - Aturan layar yang jelas dan ditegakkan tenang. AAP menyarankan untuk usia 2-5 tahun: maksimal 1 jam per hari konten berkualitas, dan ditonton BERSAMA orang tua bila memungkinkan. Tetapkan kapan (mis. akhir pekan saja, atau 30 menit sore), di mana (di ruang keluarga, bukan kamar), dan apa (konten yang dipilih orang tua). Diucapkan sekali dengan tenang, ditegakkan setiap kali, dan anak akan berhenti menawar. Ketika waktunya habis: beri peringatan 5 menit sebelum berakhir, lalu ganti dengan kegiatan yang sudah menunggu di rak. Transisi adalah saat tersulit - siapkan kegiatan pengganti yang menarik, jangan hanya melarang.\n\nYang wajar di awal: 3-7 hari anak menangis dan marah saat aturan baru berlaku. Itu bukan tanda gagal; itu proses otak menyesuaikan hadiah yang lebih lambat tapi lebih dalam. Bertahan dengan hangat, tanpa menyerah dan tanpa membentak.",
+   "keyTakeaways": [
+    "Anak menonton karena lingkungan sekitar kurang menarik - siapkan 2-3 kegiatan siap pakai di rak rendah.",
+    "Layar tidak bisa menggantikan interaksi manusia yang responsif; 10 menit bermain bersama lebih berharga dari 1 jam video.",
+    "AAP: usia 2-5 tahun maksimal 1 jam/hari, konten berkualitas, semampu mungkin ditonton bersama.",
+    "Aturan layar ditetapkan sekali dengan tenang dan ditegakkan konsisten; siapkan kegiatan pengganti saat transisi."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org (AAP) - Media Use Guidelines",
+     "url": "https://www.healthychildren.org/English/media/Pages/default.aspx"
+    },
+    {
+     "title": "Harvard Center on the Developing Child - Serve and Return",
+     "url": "https://developingchild.harvard.edu/science/key-concepts/serve-and-return/"
+    },
+    {
+     "title": "WHO - Nurturing care framework for early childhood development",
+     "url": "https://www.who.int/publications/i/item/97892400020986"
+    }
+   ]
+  },
+  {
+   "id": "parents-observasi-5-menit",
+   "title": "Cara Observasi 5 Menit per Hari",
+   "category": "observasi",
+   "ageBands": [
+    "0-3m",
+    "3-6m",
+    "6-9m",
+    "9-12m",
+    "12-18m",
+    "18-24m",
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Observasi adalah keterampilan paling berdampak di Montessori dan paling sering dilewati, sebab terasa seperti tidak melakukan apa-apa. Padahal di situlah semua keputusan baik berawal: kegiatan apa yang disiapkan, bantuan apa yang menolong, batas mana yang perlu dikencangkan.\n\nCaranya sederhana dan hanya butuh 5 menit:\n1. Pilih waktu yang sama setiap hari (mis. jam 4 sore saat anak bermain bebas).\n2. Set pengatur waktu 5 menit. HP diletakkan jauh.\n3. Duduk atau berdiri dekat anak, tidak terlibat. Jika anak mengajak bermain, katakan lembut: 'Ibu sedang menonton kamu bermain, sebentar lagi ibu ikut.'\n4. Amati dan catat hal-hal ini: (a) apa yang anak pilih pertama dan paling lama; (b) bagaimana ia menghadapi kesulitan - langsung menyerah, bertanya, atau mencoba lagi; (c) gerakan yang diulang; (d) saat ia berkonsentrasi penuh - bagaimana wajah dan tubuhnya; (e) hal yang ia minta bantuan padahal bisa sendiri, dan sebaliknya.\n5. Setelah berbunyi, tuliskan 2-3 kalimat saja di buku/ponsel. Jangan menilai ('malas', 'cerewet'), cukup fakta ('mengulang menuang 6x, berhenti saat adik memanggil, kembali lagi').\n\nSeminggu ini saja, pola akan muncul: anak menunjuk kebutuhan yang belum terpenuhi. Contoh: mengulang menuang setiap hari = ia sedang menghalusi koordinasi, sediakan variasi baru. Sering menyerah di tengah = kegiatan mungkin terlalu sulit, pecah menjadi langkah lebih kecil. Selalu memanggil orang tua saat bisa sendiri = bantuan sering datang terlalu cepat.\n\nKesalahan umum: observasi berubah jadi mengawasi-dan-menghakimi. Tandanya: kita mulai memotong aktivitas anak, mengoreksi cara memegang, atau berpikir 'harusnya dia sudah bisa'. Observasi Montessori justru menunda penilaian: kita mencatat apa yang ADA, bukan apa yang HARUSNYA. Gunakan temuan hari itu hanya untuk satu perubahan kecil besok - kegiatan yang lebih menantang, alat yang lebih kecil, atau keputusan untuk tidak menolong.",
+   "keyTakeaways": [
+    "Observasi 5 menit setiap hari pada jam yang sama cukup untuk menemukan pola kebutuhan anak.",
+    "Catat fakta, bukan penilaian: apa yang dipilih, diulang, dituntaskan, dan di mana ia tersendat.",
+    "Satu observasi = satu perubahan kecil besok; jangan mengubah semuanya sekaligus.",
+    "Jangan memotong momen konsentrasi anak hanya karena kita ingin mengajar."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "Harvard Center on the Developing Child - Serve and Return",
+     "url": "https://developingchild.harvard.edu/science/key-concepts/serve-and-return/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ]
+  },
+  {
+   "id": "parents-transisi-sekolah-formal",
+   "title": "Transisi ke Sekolah Formal: Menyiapkan Anak Montessori",
+   "category": "rutinitas",
+   "ageBands": [
+    "4-5y"
+   ],
+   "body": "Pertanyaan yang muncul setiap tahun ajaran: apakah anak yang terbiasa memilih pekerjaannya sendiri akan kewalahan di sekolah formal yang serba perintah? Pengalaman banyak keluarga menunjukkan sebaliknya: anak Montessori biasanya justru siap - ia sudah punya konsentrasi, urutan kerja, dan rasa mampu. Yang perlu disiapkan bukan mengubah anak, melainkan menjembatani tiga perbedaan.\n\nPertama, perbedaan struktur waktu. Di rumah anak memilih; di kelas ada jadwal. Mulai 2-3 bulan sebelum sekolah, perkenalkan ritme yang lebih terstruktur di rumah: kegiatan pagi dengan urutan tetap, jam makan dan bermain yang bisa diperkirakan, kalimat 'setelah ini kita akan...' yang lebih sering. Anak tidak perlu duduk diam berjam-jam; ia hanya perlu terbiasa dengan ide bahwa waktu punya urutan yang tidak selalu dia tentukan.\n\nKedua, perbedaan arahan. Di sekolah ada instruksi kelompok: semua anak mengerjakan hal yang sama bersamaan. Latih di rumah lewat permainan yang menyenangkan: masak resep dengan urutan, permainan 'kata ibu lalu...'- yang semuanya menyenangkan, bukan drill. Anak yang terbiasa mengikuti instruksi saat diminta dan bebas saat tidak, akan fleksibel.\n\nKetiga, keterampilan yang diharapkan di kelas: membuka bekal sendiri, memakai seragam dan sepatu, ke toilet sendiri, meminta tolong pada guru, menunggu giliran. Ini semua adalah kemandirian yang sudah dilatih Montessori - tinggal dipraktikkan dalam konteks sekolah: berbelanja tas sekolah bersama, berlatih pakai seragam sebagai permainan berpakaian, kunjungan ke sekolah sebelum hari pertama.\n\nSelama masa transisi (biasanya 1-3 bulan pertama), jaga hal ini: tidur yang cukup, sarapan yang tenang, dan rumah yang tetap menjadi tempat anak bisa memilih. Jangan menghapus kebebasan di rumah karena sekolah sudah 'memerintah' - anak justru butuh tempat untuk mengisi ulang. Tanda transisi berjalan baik: anak bercerita tentang sekolah dengan bebas, tidak menolak pagi hari, dan masih punya energi bermain setelah pulang. Bila dua minggu berturut anak menangis intens atau menolak sekolah, bicara dengan guru - mungkin ada penyesuaian kecil yang bisa dilakukan, bukan kegagalan anak.",
+   "keyTakeaways": [
+    "Anak Montessori biasanya siap sekolah formal: konsentrasi dan kemandiriannya sudah terbentuk.",
+    "Latih struktur waktu dan instruksi kelompok lewat rutinitas dan permainan 2-3 bulan sebelum sekolah.",
+    "Fokuskan persiapan pada kemandirian kontekstual: seragam, bekal, toilet, meminta tolong.",
+    "Jaga rumah tetap sebagai tempat anak bisa memilih; itu tempat mengisi ulang selama masa adaptasi."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP) - Ages & Stages Preschool",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/default.aspx"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ]
+  },
+  {
+   "id": "parents-anak-tidak-fokus-saat-presentasi",
+   "title": "Anak Tidak Fokus saat Presentasi - Apa yang Salah?",
+   "category": "observasi",
+   "ageBands": [
+    "18-24m",
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "body": "Kita menyiapkan kegiatan dengan sungguh-sungguh, memanggil anak dengan penuh harap... dan anak pergi setelah tiga puluh detik, atau memainkan alat dengan cara yang tidak seharusnya. Sebelum menyimpulkan anak 'tidak bisa fokus', periksa enam penyebab paling umum - hampir selalu salah satunya yang bekerja.\n\n1. Waktu yang salah. Presentasi di tengah anak sedang asyik bermain, atau menjelang waktu makan/tidur, hampir selalu gagal. Pilih saat anak sudah terisi: tidak lapar, tidak mengantuk, tidak baru pulang dari luar.\n\n2. Presentasi terlalu panjang. Anak usia dini menangkap lewat gerakan, bukan ceramah. Tunjukkan lambat dan sunyi: satu gerakan penuh tanpa kata berlebihan, lalu berhenti. Bila butuh penjelasan, gunakan dua kalimat. Jika presentasi lebih dari 2-3 menit, pecah menjadi dua hari.\n\n3. Tingkat kesulitan meleset. Terlalu mudah = anak pergi karena bosan. Terlalu sulit = anak pergi karena frustrasi. Periksa ulang: apakah langkahnya bisa dikuasai anak dalam beberapa kali percobaan?\n\n4. Kita bicara terlalu banyak. Setiap kata tambahan adalah distraksi. Prinsip Montessori: tunjukkan, jangan ceramah (show, don't tell). Anak meniru apa yang dilihat, bukan yang didengar.\n\n5. Ada gangguan di sekitar. TV menyala, adik bermain di sebelah, mainan lain terlihat di rak. Presentasi diberikan di meja/karpet yang bersih, satu aktivitas, satu baki.\n\n6. Anak sedang tidak pada periode sensitif untuk keterampilan itu. Ia mungkin sedang asyik gerak kasar (lari, memanjat) sementara kita menawarkan menuang yang butuh gerak halus. Tunda; tawarkan aktivitas yang sesuai dorongan hari itu.\n\nJika semua sudah diperiksa dan anak tetap pergi: biarkan. Alat diletakkan kembali di rak, tanpa komentar negatif. Sering kali anak kembali sendiri di hari atau pekan berikutnya. Yang harus dijaga: presentasi tidak menjadi medan kekuasaan ('duduk sampai selesai!') - itu justru mematikan rasa ingin tahu yang ingin kita tanam. Fokus itu bukan kepatuhan; fokus tumbuh dari pekerjaan yang tepat pada waktu yang tepat.",
+   "keyTakeaways": [
+    "Periksa enam hal: waktu, panjang presentasi, tingkat kesulitan, jumlah kata, gangguan lingkungan, dan periode sensitif.",
+    "Tunjukkan dengan gerakan lambat dan sunyi, bukan ceramah; maksimal 2-3 menit.",
+    "Jika anak pergi, biarkan dengan tenang; sering kali ia kembali sendiri nanti.",
+    "Fokus adalah hasil dari kesesuaian kegiatan, bukan hasil dari perintah 'duduk sampai selesai'."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale - The Montessori Approach",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "Harvard Center on the Developing Child - Serve and Return",
+     "url": "https://developingchild.harvard.edu/science/key-concepts/serve-and-return/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ]
   }
  ],
  "glossary": [
@@ -5760,7 +6289,6 @@
    "definition": "Masa tertentu dalam perkembangan anak ketika ia sangat tertarik dan mudah mempelajari keterampilan tertentu, misalnya bahasa atau keteraturan, sebelum minat itu mereda.",
    "relatedTerms": [
     "absorbent mind",
-    "observation",
     "observation"
    ]
   },
@@ -6149,9 +6677,9 @@
    "termEn": "Daily Rhythm",
    "definition": "Pola urutan kegiatan yang berulang setiap hari, misalnya bangun, makan, bermain, tidur siang, dan tidur malam. Ritme yang cukup konsisten membantu anak kecil merasa aman karena ia bisa menebak apa yang akan terjadi berikutnya, tanpa harus selalu sama persis menit demi menit.",
    "relatedTerms": [
-    "bedtime routine",
-    "mealtime routine",
-    "transition"
+    "rutinitas tidur",
+    "rutinitas makan",
+    "peralihan"
    ],
    "references": [
     {
@@ -6170,8 +6698,8 @@
    "definition": "Keterampilan anak mengurus kebutuhan dasarnya sendiri, seperti makan, minum, mencuci tangan, berpakaian, dan ke toilet. Orang tua bisa mendukung dengan menyiapkan alat yang mudah dijangkau dan memberi waktu anak mencoba, bukan langsung mengerjakan semuanya untuknya.",
    "relatedTerms": [
     "independence",
-    "toilet learning",
-    "dressing frame"
+    "belajar toilet",
+    "bingkai berpakaian"
    ],
    "references": [
     {
@@ -6189,9 +6717,9 @@
    "termEn": "Toilet Learning",
    "definition": "Proses anak memahami sinyal tubuhnya dan belajar menggunakan toilet dengan bantuan yang makin lama makin sedikit. Setiap anak punya waktu siap yang berbeda; tanda siap umumnya muncul ketika anak bisa duduk stabil, tertarik pada toilet, dan mulai tidak nyaman memakai popok basah.",
    "relatedTerms": [
-    "self-care",
+    "merawat diri",
     "independence",
-    "daily rhythm"
+    "ritme harian"
    ],
    "references": [
     {
@@ -6209,9 +6737,9 @@
    "termEn": "Mealtime Routine",
    "definition": "Kebiasaan yang mengelilingi waktu makan, seperti duduk bersama, menyiapkan alat makan, mencoba makanan baru, dan merapikan meja. Rutinitas yang tenang dan tidak terburu-buru biasanya membantu anak lebih menikmati makan dan mengenali rasa lapar serta kenyang.",
    "relatedTerms": [
-    "daily rhythm",
-    "self-care",
-    "transition"
+    "ritme harian",
+    "merawat diri",
+    "peralihan"
    ],
    "references": [
     {
@@ -6229,9 +6757,9 @@
    "termEn": "Bedtime Routine",
    "definition": "Rangkaian kegiatan singkat dan berulang sebelum tidur, misalnya mandi, memakai piyama, membaca buku, lalu meredupkan lampu. Urutan yang sama setiap malam memberi isyarat kepada anak bahwa waktu tidur akan tiba.",
    "relatedTerms": [
-    "daily rhythm",
-    "floor bed",
-    "transition"
+    "ritme harian",
+    "kasur lantai",
+    "peralihan"
    ],
    "references": [
     {
@@ -6249,8 +6777,8 @@
    "termEn": "Transition",
    "definition": "Momen berpindah dari satu kegiatan ke kegiatan lain, seperti dari bermain ke mandi atau dari rumah ke tempat bermain. Peralihan sering terasa sulit bagi anak kecil, sehingga memberi pemberitahuan lebih dulu dan menyediakan pilihan sederhana biasanya membantu.",
    "relatedTerms": [
-    "daily rhythm",
-    "uninterrupted play",
+    "ritme harian",
+    "bermain tanpa interupsi",
     "temperament"
    ],
    "references": [
@@ -6269,9 +6797,9 @@
    "termEn": "Floor Bed",
    "definition": "Kasur rendah yang diletakkan langsung di lantai agar anak bisa naik dan turun sendiri dengan aman saat hendak tidur atau bangun. Pendekatan ini memberi anak kebebasan bergerak, tetapi tetap memerlukan ruangan yang aman dan pengawasan orang dewasa.",
    "relatedTerms": [
-    "free movement",
-    "bedtime routine",
-    "yes space"
+    "gerak bebas",
+    "rutinitas tidur",
+    "ruang aman"
    ],
    "safetyNotes": [
     "Pastikan kasur tidak berada dekat stopkontak, kabel, atau perabot yang bisa jatuh.",
@@ -6294,9 +6822,9 @@
    "termEn": "Tummy Time",
    "definition": "Waktu singkat ketika bayi dibaringkan tengkurap saat ia bangun dan dalam pengawasan, untuk melatih otot leher, bahu, dan punggung. Mulailah dengan beberapa menit beberapa kali sehari, lalu tambah perlahan sesuai kenyamanan bayi.",
    "relatedTerms": [
-    "free movement",
+    "gerak bebas",
     "gross motor",
-    "crawling"
+    "merangkak"
    ],
    "safetyNotes": [
     "Lakukan hanya saat bayi bangun dan ada orang dewasa yang mengawasi.",
@@ -6319,7 +6847,7 @@
    "termEn": "Free Movement",
    "definition": "Kesempatan anak bergerak sesuai keinginannya di ruang yang aman, tanpa terlalu banyak dibatasi atau dipindahkan posisinya oleh orang dewasa. Anak diberi waktu untuk berguling, merangkak, duduk, dan berdiri dengan usahanya sendiri.",
    "relatedTerms": [
-    "yes space",
+    "ruang aman",
     "gross motor",
     "independence"
    ],
@@ -6344,7 +6872,7 @@
    "termEn": "Yes Space",
    "definition": "Area bermain yang sudah diperiksa dan disiapkan sehingga hampir semua benda di dalamnya boleh disentuh dan dijelajahi anak. Dengan begitu, orang tua tidak perlu terus berkata 'jangan', dan anak bisa bergerak lebih leluasa.",
    "relatedTerms": [
-    "free movement",
+    "gerak bebas",
     "prepared environment",
     "independence"
    ],
@@ -6370,7 +6898,7 @@
    "definition": "Sikap mengamati minat, tempo, dan kesiapan anak, lalu menyesuaikan dukungan orang dewasa dengan hal tersebut. Ini bukan berarti anak bebas tanpa batas, melainkan orang tua lebih peka terhadap apa yang sedang anak butuhkan dan coba kuasai.",
    "relatedTerms": [
     "observation",
-    "child-led learning",
+    "pembelajaran dipimpin anak",
     "sensitive period"
    ],
    "references": [
@@ -6389,8 +6917,8 @@
    "termEn": "Indirect Preparation",
    "definition": "Kegiatan yang tampaknya sederhana, tetapi diam-diam melatih keterampilan yang dibutuhkan untuk tugas yang lebih besar nanti. Misalnya, memindahkan bola dengan sendok melatih koordinasi tangan yang kelak berguna untuk menulis.",
    "relatedTerms": [
-    "direct aim",
-    "transfer activity",
+    "tujuan langsung",
+    "aktivitas memindahkan",
     "concrete to abstract"
    ],
    "references": [
@@ -6409,8 +6937,8 @@
    "termEn": "Direct Aim",
    "definition": "Keterampilan utama yang ingin dilatih oleh sebuah kegiatan, misalnya memasukkan koin ke celah untuk melatih koordinasi mata dan tangan. Tujuan langsung membantu orang dewasa memilih kegiatan yang sesuai dengan kemampuan anak saat ini.",
    "relatedTerms": [
-    "indirect preparation",
-    "posting box",
+    "persiapan tidak langsung",
+    "kotak memasukkan",
     "isolation of difficulty"
    ],
    "references": [
@@ -6431,7 +6959,7 @@
    "relatedTerms": [
     "three-period lesson",
     "observation",
-    "montessori guide"
+    "panduan Montessori"
    ],
    "references": [
     {
@@ -6450,8 +6978,7 @@
    "definition": "Cara menata bahan atau kegiatan agar anak tertarik mencoba tanpa dipaksa, misalnya menaruh keranjang berisi bola dan wadah di rak rendah. Undangan yang sederhana biasanya lebih menarik daripada tumpukan mainan yang terlalu banyak.",
    "relatedTerms": [
     "prepared environment",
-    "uninterrupted play",
-    "accessible shelf"
+    "bermain tanpa interupsi"
    ],
    "references": [
     {
@@ -6471,7 +6998,7 @@
    "relatedTerms": [
     "concentration",
     "work cycle",
-    "child-led learning"
+    "pembelajaran dipimpin anak"
    ],
    "references": [
     {
@@ -6489,9 +7016,9 @@
    "termEn": "Child-Led Learning",
    "definition": "Pendekatan ketika anak menjadi pemimpin dalam memilih dan mendalami kegiatan, sementara orang dewasa menyiapkan lingkungan dan batas yang aman. Peran orang tua lebih sebagai pengamat dan pendamping daripada pengatur semua langkah.",
    "relatedTerms": [
-    "follow the child",
+    "mengikuti anak",
     "independence",
-    "uninterrupted play"
+    "bermain tanpa interupsi"
    ],
    "references": [
     {
@@ -6511,7 +7038,7 @@
    "relatedTerms": [
     "independence",
     "scaffolding",
-    "self-care"
+    "merawat diri"
    ],
    "references": [
     {
@@ -6531,7 +7058,7 @@
    "relatedTerms": [
     "prepared environment",
     "observation",
-    "presentation"
+    "presentasi"
    ],
    "references": [
     {
@@ -6551,7 +7078,7 @@
    "relatedTerms": [
     "self-regulation",
     "temperament",
-    "yes space"
+    "ruang aman"
    ],
    "safetyNotes": [
     "Letakkan sudut tenang di area yang tetap terlihat orang dewasa.",
@@ -6576,7 +7103,7 @@
    "relatedTerms": [
     "pincer grasp",
     "fine motor",
-    "grasping toy"
+    "mainan genggam"
    ],
    "references": [
     {
@@ -6595,8 +7122,8 @@
    "definition": "Cara bayi berpindah tempat dengan menggerakkan tangan dan lutut, atau dengan gaya lain seperti merayap. Tidak semua bayi melewati tahap ini dengan cara yang sama, dan variasinya cukup umum selama anak terus menunjukkan kemajuan bergerak.",
    "relatedTerms": [
     "gross motor",
-    "cruising",
-    "tummy time"
+    "berpegangan saat berjalan",
+    "waktu tengkurap"
    ],
    "safetyNotes": [
     "Awasi bayi di tangga dan permukaan tinggi, serta pasang pagar pengaman bila perlu.",
@@ -6620,8 +7147,8 @@
    "definition": "Tahap ketika anak berjalan sambil memegang perabot atau dinding untuk menjaga keseimbangan, sebelum berani melangkah sendiri. Tahap ini biasanya muncul di sekitar akhir tahun pertama, tetapi waktunya bisa berbeda pada setiap anak.",
    "relatedTerms": [
     "gross motor",
-    "crawling",
-    "free movement"
+    "merangkak",
+    "gerak bebas"
    ],
    "safetyNotes": [
     "Pastikan perabot yang dipegangi anak kokoh dan tidak mudah terguling.",
@@ -6646,7 +7173,7 @@
    "relatedTerms": [
     "receptive language",
     "expressive language",
-    "word spurt"
+    "ledakan kata"
    ],
    "references": [
     {
@@ -6666,7 +7193,7 @@
    "relatedTerms": [
     "expressive language",
     "receptive language",
-    "babbling"
+    "celoteh"
    ],
    "references": [
     {
@@ -6685,7 +7212,7 @@
    "definition": "Rasa tidak nyaman atau takut yang umumnya muncul pada bayi menjelang akhir tahun pertama saat berhadapan dengan orang yang tidak dikenalnya. Ini adalah bagian dari perkembangan kelekatan, dan biasanya mereda seiring anak merasa aman.",
    "relatedTerms": [
     "separation anxiety",
-    "attachment",
+    "kelekatan",
     "temperament"
    ],
    "references": [
@@ -6705,7 +7232,6 @@
    "definition": "Tahap bermain ketika anak-anak mulai bermain bersama dengan tujuan atau aturan yang disepakati, bukan hanya bermain di dekat satu sama lain. Kemampuan ini umumnya berkembang setelah usia tiga tahun dan membutuhkan latihan bergiliran serta bernegosiasi.",
    "relatedTerms": [
     "parallel play",
-    "social skills",
     "grace and courtesy"
    ],
    "references": [
@@ -6724,7 +7250,7 @@
    "termEn": "Attachment",
    "definition": "Ikatan emosional yang terbentuk antara anak dan pengasuh utamanya melalui interaksi yang hangat dan konsisten. Kelekatan yang aman memberi anak rasa percaya untuk menjelajah, karena ia tahu ada tempat kembali yang aman.",
    "relatedTerms": [
-    "responsive caregiving",
+    "pengasuhan responsif",
     "separation anxiety",
     "serve and return"
    ],
@@ -6744,7 +7270,7 @@
    "termEn": "Responsive Caregiving",
    "definition": "Cara menanggapi isyarat anak dengan cepat dan sesuai kebutuhannya, misalnya mengangkat bayi saat ia menangis atau membalas senyumnya. Tanggapan yang konsisten membantu anak merasa dipahami dan membangun rasa aman.",
    "relatedTerms": [
-    "attachment",
+    "kelekatan",
     "serve and return",
     "observation"
    ],
@@ -6764,7 +7290,7 @@
    "termEn": "Play Schema",
    "definition": "Pola perilaku bermain yang berulang, seperti memasukkan, menjatuhkan, membungkus, atau memutar benda. Mengenali skema membantu orang tua menyediakan bahan yang sesuai tanpa menganggap pengulangan itu sebagai tingkah yang aneh.",
    "relatedTerms": [
-    "child-led learning",
+    "pembelajaran dipimpin anak",
     "symbolic play",
     "sensitive period"
    ],
@@ -6784,9 +7310,8 @@
    "termEn": "Grasping Toy",
    "definition": "Mainan ringan berukuran pas untuk tangan bayi, sering berbentuk bola berongga atau silinder dengan pegangan. Mainan seperti ini mengundang bayi meraih, menggenggam, dan memindahkan benda dari satu tangan ke tangan lain.",
    "relatedTerms": [
-    "palmar grasp",
-    "fine motor",
-    "rattles"
+    "genggaman telapak",
+    "fine motor"
    ],
    "safetyNotes": [
     "Pilih mainan yang lebih besar dari tabung gulungan toilet agar tidak tersedak.",
@@ -6809,8 +7334,7 @@
    "termEn": "Montessori Mobile",
    "definition": "Rangkaian gantungan visual sederhana yang diperkenalkan bertahap kepada bayi, mulai dari bentuk kontras hingga bentuk geometris. Tujuannya memberi sesuatu yang menarik untuk dilihat dan diikuti mata, bukan untuk menstimulasi berlebihan.",
    "relatedTerms": [
-    "visual tracking",
-    "grasping toy",
+    "mainan genggam",
     "sensitive period"
    ],
    "safetyNotes": [
@@ -6835,8 +7359,7 @@
    "definition": "Keranjang berisi aneka benda rumah tangga dengan tekstur, berat, dan bentuk berbeda untuk dijelajahi bayi yang sudah bisa duduk. Benda-benda nyata memberi pengalaman sensoris yang kaya tanpa perlu mainan elektronik.",
    "relatedTerms": [
     "sensory integration",
-    "grasping toy",
-    "exploration"
+    "mainan genggam"
    ],
    "safetyNotes": [
     "Gunakan benda yang lebih besar dari tabung gulungan toilet dan tidak bisa masuk mulut.",
@@ -6861,7 +7384,7 @@
    "relatedTerms": [
     "object permanence",
     "fine motor",
-    "direct aim"
+    "tujuan langsung"
    ],
    "safetyNotes": [
     "Pilih benda yang cukup besar sehingga tidak bisa tertelan atau tersangkut di tenggorokan.",
@@ -6885,8 +7408,7 @@
    "definition": "Mainan berupa tiang dengan beberapa gelang berukuran berbeda untuk disusun atau dilepas. Selain melatih koordinasi, mainan ini memberi pengalaman awal tentang urutan ukuran dan konsep besar-kecil.",
    "relatedTerms": [
     "fine motor",
-    "hand-eye coordination",
-    "sequencing"
+    "hand-eye coordination"
    ],
    "safetyNotes": [
     "Pastikan gelang tidak cukup kecil untuk masuk mulut anak.",
@@ -6911,7 +7433,7 @@
    "relatedTerms": [
     "fine motor",
     "hand-eye coordination",
-    "indirect preparation"
+    "persiapan tidak langsung"
    ],
    "safetyNotes": [
     "Gunakan manik yang lebih besar dari tabung gulungan toilet dan tali pendek.",
@@ -6934,8 +7456,7 @@
    "termEn": "Transfer Activity",
    "definition": "Kegiatan memindahkan benda dari satu wadah ke wadah lain dengan tangan, sendok, atau penjepit. Mulai dari benda besar, lalu bertahap ke benda kecil untuk melatih ketelitian dan kemandirian.",
    "relatedTerms": [
-    "indirect preparation",
-    "spooning activity",
+    "persiapan tidak langsung",
     "fine motor"
    ],
    "safetyNotes": [
@@ -6959,8 +7480,8 @@
    "termEn": "Pouring Activity",
    "definition": "Kegiatan memindahkan air, pasir, atau biji-bijian dari satu wadah ke wadah lain, sering dimulai dari menuang air ke gelas. Kegiatan ini melatih koordinasi, konsentrasi, dan kemandirian saat makan atau minum.",
    "relatedTerms": [
-    "transfer activity",
-    "direct aim",
+    "aktivitas memindahkan",
+    "tujuan langsung",
     "practical life"
    ],
    "safetyNotes": [
@@ -6984,7 +7505,7 @@
    "termEn": "Dressing Frame",
    "definition": "Rangka kayu berisi kain dengan berbagai pengunci, seperti kancing, ritsleting, atau tali, untuk berlatih membuka dan menutup pakaian. Alat ini memisahkan keterampilan berpakaian dari pakaian sungguhan agar anak bisa berlatih dengan tenang.",
    "relatedTerms": [
-    "self-care",
+    "merawat diri",
     "independence",
     "fine motor"
    ],
@@ -7010,8 +7531,7 @@
    "definition": "Sepuluh kubus kayu berwarna pink dengan ukuran yang berkurang berurutan untuk disusun menjadi menara. Alat ini melatih pengenalan perbedaan ukuran, koordinasi motorik, dan konsentrasi melalui pengalaman langsung.",
    "relatedTerms": [
     "sensorial",
-    "isolation of difficulty",
-    "sequencing"
+    "isolation of difficulty"
    ],
    "safetyNotes": [
     "Gunakan di lantai atau meja yang rata agar menara tidak mudah jatuh.",
@@ -7034,9 +7554,7 @@
    "termEn": "Binomial Cube",
    "definition": "Material kubus tiga dimensi untuk mengenalkan pola aljabar melalui susunan dua warna dan ukuran yang saling berulang.",
    "relatedTerms": [
-    "kubus trinomial",
-    "isolasi kesulitan",
-    "material matematika"
+    "Kubus trinomial"
    ]
   },
   {
@@ -7044,9 +7562,7 @@
    "termEn": "Trinomial Cube",
    "definition": "Kubus Montessori yang membantu anak menemukan pola ruang, urutan, dan hubungan ukuran lewat tiga kelompok warna.",
    "relatedTerms": [
-    "kubus binomial",
-    "material matematika",
-    "pola"
+    "Kubus binomial"
    ]
   },
   {
@@ -7054,9 +7570,7 @@
    "termEn": "Color Grading",
    "definition": "Kegiatan mengurutkan keping warna dari paling terang ke paling gelap agar pengamatan visual dan kosakata warna berkembang.",
    "relatedTerms": [
-    "tablet warna",
-    "sensorial",
-    "pencocokan"
+    "sensorial"
    ]
   },
   {
@@ -7064,39 +7578,27 @@
    "termEn": "Constructive Triangles",
    "definition": "Kumpulan segitiga berwarna yang disusun menjadi bentuk geometri baru untuk melatih persepsi bentuk dan penalaran ruang.",
    "relatedTerms": [
-    "geometri",
-    "sensorial",
-    "isolasi kesulitan"
+    "sensorial"
    ]
   },
   {
    "term": "Lempeng logam",
    "termEn": "Metal Insets",
    "definition": "Bingkai dan lempeng logam yang dipakai anak untuk menjiplak, mengarsir, dan menguatkan kesiapan gerak menulis.",
-   "relatedTerms": [
-    "kesiapan menulis",
-    "koordinasi tangan-mata",
-    "motorik halus"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Batang bilangan",
    "termEn": "Number Rods",
    "definition": "Sepuluh batang bertambah panjang secara berurutan untuk memperkenalkan jumlah satu sampai sepuluh melalui pengalaman konkret.",
-   "relatedTerms": [
-    "angka pasir",
-    "matematika konkret",
-    "bilangan"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Kotak gelendong",
    "termEn": "Spindle Box",
    "definition": "Material dengan laci angka dan gelendong yang membantu anak menghubungkan lambang angka dengan jumlah benda nyata.",
    "relatedTerms": [
-    "batang bilangan",
-    "nol",
-    "kuantitas"
+    "Batang bilangan"
    ]
   },
   {
@@ -7104,9 +7606,7 @@
    "termEn": "Sandpaper Letters",
    "definition": "Papan huruf bertekstur yang diraba mengikuti bentuknya sambil diucapkan untuk menghubungkan bunyi, gerak, dan simbol.",
    "relatedTerms": [
-    "alfabet bergerak",
-    "kesadaran fonemik",
-    "menulis"
+    "Alfabet bergerak"
    ]
   },
   {
@@ -7114,9 +7614,8 @@
    "termEn": "Movable Alphabet",
    "definition": "Kumpulan huruf lepas yang memungkinkan anak menyusun kata sebelum tangannya siap menulis dengan pensil.",
    "relatedTerms": [
-    "huruf amplas",
-    "membangun kata",
-    "bunyi fonetik"
+    "Huruf amplas",
+    "Membangun kata"
    ]
   },
   {
@@ -7124,9 +7623,7 @@
    "termEn": "Golden Beads",
    "definition": "Material manik-manik untuk memperagakan satuan, puluhan, ratusan, dan ribuan secara konkret dalam matematika.",
    "relatedTerms": [
-    "sistem desimal",
-    "permainan stempel",
-    "matematika konkret"
+    "Permainan stempel"
    ]
   },
   {
@@ -7134,29 +7631,22 @@
    "termEn": "Stamp Game",
    "definition": "Permainan kartu kecil berwarna yang mengajak anak berlatih operasi hitung dan nilai tempat tanpa benda besar.",
    "relatedTerms": [
-    "manik-manik emas",
-    "nilai tempat",
-    "operasi hitung"
+    "Manik-manik emas",
+    "nilai tempat"
    ]
   },
   {
    "term": "Permainan titik",
    "termEn": "Dot Game",
    "definition": "Kegiatan menuliskan hasil perkalian pada lembar titik untuk memperkuat ingatan fakta perkalian secara bertahap.",
-   "relatedTerms": [
-    "perkalian",
-    "papan perkalian",
-    "matematika"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Permainan ular",
    "termEn": "Snake Game",
    "definition": "Permainan mengubah rangkaian manik berwarna menjadi sepuluh untuk melatih penjumlahan dan pengenalan kombinasi bilangan.",
    "relatedTerms": [
-    "manik-manik emas",
-    "penjumlahan",
-    "komposisi bilangan"
+    "Manik-manik emas"
    ]
   },
   {
@@ -7164,9 +7654,8 @@
    "termEn": "Word Building",
    "definition": "Kegiatan merangkai huruf atau kartu bunyi menjadi kata bermakna agar anak memahami hubungan bunyi dan tulisan.",
    "relatedTerms": [
-    "alfabet bergerak",
-    "benda fonetik",
-    "membaca"
+    "Alfabet bergerak",
+    "Benda fonetik"
    ]
   },
   {
@@ -7174,39 +7663,27 @@
    "termEn": "Phonetic Objects",
    "definition": "Benda nyata yang namanya mengikuti pola bunyi sederhana, dipakai anak untuk mencocokkan benda dengan kata tertulis.",
    "relatedTerms": [
-    "membangun kata",
-    "kesadaran fonemik",
-    "bahasa"
+    "Membangun kata"
    ]
   },
   {
    "term": "Meja alam",
    "termEn": "Nature Table",
    "definition": "Tempat pajangan benda alam yang berubah sesuai musim atau tema, sehingga anak dapat mengamati, menyentuh, dan berdiskusi.",
-   "relatedTerms": [
-    "pengamatan alam",
-    "budaya",
-    "klasifikasi"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Pelajaran kesopanan dan tata krama",
    "termEn": "Grace and Courtesy Lesson",
    "definition": "Demonstrasi singkat tentang cara menyapa, meminta bantuan, menunggu giliran, atau menjaga ruang bersama dengan hormat.",
-   "relatedTerms": [
-    "kesopanan",
-    "kehidupan sosial",
-    "role play"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Berjalan di garis",
    "termEn": "Walking on the Line",
    "definition": "Latihan berjalan perlahan mengikuti garis elips untuk mengembangkan keseimbangan, koordinasi, dan kesadaran terhadap gerak tubuh.",
    "relatedTerms": [
-    "permainan keheningan",
-    "keseimbangan",
-    "koordinasi"
+    "Permainan keheningan"
    ]
   },
   {
@@ -7214,9 +7691,7 @@
    "termEn": "Silence Game",
    "definition": "Kegiatan hening yang mengajak anak mengendalikan gerak, mendengarkan lingkungan, dan menyadari kehadiran dirinya.",
    "relatedTerms": [
-    "berjalan di garis",
-    "konsentrasi",
-    "pengaturan diri"
+    "Berjalan di garis"
    ]
   },
   {
@@ -7224,9 +7699,7 @@
    "termEn": "News Period",
    "definition": "Kesempatan anak menceritakan pengalaman atau peristiwa yang ingin dibagikan dengan mendengarkan teman secara bergiliran.",
    "relatedTerms": [
-    "show and tell",
-    "bahasa lisan",
-    "komunitas kelas"
+    "Show and tell"
    ]
   },
   {
@@ -7234,29 +7707,21 @@
    "termEn": "Show and Tell",
    "definition": "Kegiatan membawa atau memilih benda untuk ditunjukkan sambil menjelaskan ciri, fungsi, atau alasan benda itu penting.",
    "relatedTerms": [
-    "waktu berita",
-    "bahasa lisan",
-    "kepercayaan diri"
+    "Waktu berita"
    ]
   },
   {
    "term": "Urutan aktivitas kehidupan sehari-hari",
    "termEn": "Practical Life Sequence",
    "definition": "Rangkaian langkah yang disusun berurutan dalam suatu pekerjaan agar anak memahami proses, tujuan, dan cara menyelesaikannya.",
-   "relatedTerms": [
-    "kehidupan sehari-hari",
-    "analisis gerak",
-    "kemandirian"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Merawat lingkungan",
    "termEn": "Care of Environment",
    "definition": "Kegiatan menjaga ruang bersama seperti menyapu, menata rak, dan menyiram tanaman agar anak merasa memiliki tanggung jawab.",
    "relatedTerms": [
-    "merawat diri",
-    "kehidupan sehari-hari",
-    "tanggung jawab"
+    "Merawat diri"
    ]
   },
   {
@@ -7264,9 +7729,7 @@
    "termEn": "Care of Self",
    "definition": "Latihan yang membantu anak mengurus tubuh dan kebutuhannya sendiri dengan langkah sederhana, teratur, dan sesuai kemampuan.",
    "relatedTerms": [
-    "merawat lingkungan",
-    "kemandirian",
-    "urutan aktivitas"
+    "Merawat lingkungan"
    ]
   },
   {
@@ -7274,9 +7737,7 @@
    "termEn": "Food Preparation",
    "definition": "Kegiatan seperti mencuci, memotong lunak, mengoles, atau menyajikan makanan untuk melatih kemandirian dan keterampilan hidup.",
    "relatedTerms": [
-    "kehidupan sehari-hari",
-    "merawat diri",
-    "koordinasi tangan-mata"
+    "Merawat diri"
    ]
   },
   {
@@ -7284,9 +7745,8 @@
    "termEn": "Dressing Frame",
    "definition": "Bingkai latihan dengan pengancing tertentu yang memberi anak kesempatan berlatih berpakaian secara perlahan dan mandiri.",
    "relatedTerms": [
-    "bingkai kancing",
-    "merawat diri",
-    "kemandirian"
+    "Bingkai kancing",
+    "Merawat diri"
    ]
   },
   {
@@ -7294,9 +7754,8 @@
    "termEn": "Button Frame",
    "definition": "Bingkai berpakaian dengan deretan kancing untuk melatih jari membuka dan menutup pakaian dengan koordinasi yang terarah.",
    "relatedTerms": [
-    "bingkai berpakaian",
-    "motorik halus",
-    "merawat diri"
+    "Bingkai berpakaian",
+    "Merawat diri"
    ]
   },
   {
@@ -7304,29 +7763,22 @@
    "termEn": "Zipper Frame",
    "definition": "Bingkai latihan yang memusatkan perhatian pada cara memegang, memasukkan, dan menarik ritsleting sampai tertutup.",
    "relatedTerms": [
-    "bingkai berpakaian",
-    "merawat diri",
-    "koordinasi tangan-mata"
+    "Bingkai berpakaian",
+    "Merawat diri"
    ]
   },
   {
    "term": "Latihan menuang",
    "termEn": "Pouring Exercise",
    "definition": "Latihan memindahkan cairan atau bahan kering dari satu wadah ke wadah lain dengan gerak perlahan dan terkontrol.",
-   "relatedTerms": [
-    "memindahkan dengan sendok",
-    "koordinasi tangan-mata",
-    "kehidupan sehari-hari"
-   ]
+   "relatedTerms": []
   },
   {
    "term": "Latihan menyendok",
    "termEn": "Spooning Exercise",
    "definition": "Kegiatan memindahkan benda kecil menggunakan sendok agar anak mengatur tekanan, arah gerak, dan ketepatan tangan.",
    "relatedTerms": [
-    "latihan menuang",
-    "motorik halus",
-    "konsentrasi"
+    "Latihan menuang"
    ]
   },
   {
@@ -7334,9 +7786,7 @@
    "termEn": "Tong Transfer",
    "definition": "Kegiatan memindahkan benda memakai penjepit untuk menguatkan genggaman, koordinasi, dan ketelitian tanpa tergesa-gesa.",
    "relatedTerms": [
-    "latihan menyendok",
-    "motorik halus",
-    "koordinasi tangan-mata"
+    "Latihan menyendok"
    ]
   },
   {
@@ -7344,9 +7794,7 @@
    "termEn": "Dropper Work",
    "definition": "Kegiatan mengambil dan meneteskan cairan dengan pipet untuk melatih kekuatan jari, kontrol gerak, dan ketepatan.",
    "relatedTerms": [
-    "memindahkan dengan penjepit",
-    "koordinasi tangan-mata",
-    "motorik halus"
+    "Memindahkan dengan penjepit"
    ]
   },
   {
@@ -7354,9 +7802,8 @@
    "termEn": "Sponging",
    "definition": "Latihan menyerap lalu memindahkan air menggunakan spons agar anak mengembangkan kekuatan tangan dan pengendalian gerak.",
    "relatedTerms": [
-    "latihan menuang",
-    "merawat lingkungan",
-    "kekuatan tangan"
+    "Latihan menuang",
+    "Merawat lingkungan"
    ]
   },
   {
@@ -7364,9 +7811,8 @@
    "termEn": "Polishing",
    "definition": "Kegiatan menggosok permukaan benda hingga bersih atau mengilap untuk melatih gerak berulang, perhatian, dan kepedulian.",
    "relatedTerms": [
-    "memoles cermin",
-    "merawat lingkungan",
-    "koordinasi"
+    "Memoles cermin",
+    "Merawat lingkungan"
    ]
   },
   {
@@ -7374,9 +7820,7 @@
    "termEn": "Folding Cloths",
    "definition": "Latihan melipat kain mengikuti garis atau sudutnya agar anak belajar ketepatan, urutan kerja, dan kerapian.",
    "relatedTerms": [
-    "urutan aktivitas",
-    "merawat lingkungan",
-    "koordinasi tangan-mata"
+    "Merawat lingkungan"
    ]
   },
   {
@@ -7384,9 +7828,8 @@
    "termEn": "Table Washing",
    "definition": "Kegiatan membersihkan meja melalui langkah mengambil air, menggosok, mengeringkan, dan mengembalikan alat ke tempatnya.",
    "relatedTerms": [
-    "merawat lingkungan",
-    "memeras spons",
-    "urutan aktivitas"
+    "Merawat lingkungan",
+    "Memeras spons"
    ]
   },
   {
@@ -7394,9 +7837,7 @@
    "termEn": "Hand Washing Sequence",
    "definition": "Rangkaian langkah mencuci tangan secara lengkap agar anak memahami kebersihan, urutan, dan tanggung jawab terhadap tubuhnya.",
    "relatedTerms": [
-    "merawat diri",
-    "urutan aktivitas",
-    "kebersihan"
+    "Merawat diri"
    ]
   },
   {
@@ -7404,9 +7845,8 @@
    "termEn": "Mirror Polishing",
    "definition": "Kegiatan membersihkan cermin dengan kain dan bahan secukupnya sambil mengamati perubahan permukaan secara langsung.",
    "relatedTerms": [
-    "memoles",
-    "merawat lingkungan",
-    "koordinasi"
+    "Memoles",
+    "Merawat lingkungan"
    ]
   },
   {
@@ -7414,9 +7854,8 @@
    "termEn": "Flower Arranging",
    "definition": "Kegiatan memilih, memotong seperlunya, dan menata bunga dalam wadah untuk mengembangkan keindahan, ketelitian, dan kepedulian.",
    "relatedTerms": [
-    "merawat lingkungan",
-    "menyiapkan makanan",
-    "estetika"
+    "Merawat lingkungan",
+    "Menyiapkan makanan"
    ]
   },
   {
@@ -7424,9 +7863,188 @@
    "termEn": "Cutting Exercise",
    "definition": "Kegiatan menggunting garis atau bahan sederhana untuk membangun kekuatan jari, koordinasi kedua tangan, dan kesiapan berkarya.",
    "relatedTerms": [
-    "lempeng logam",
-    "motorik halus",
-    "kesiapan menulis"
+    "Lempeng logam"
+   ]
+  },
+  {
+   "term": "latihan berguna",
+   "termEn": "Useful Exercise",
+   "definition": "Latihan yang hasilnya benar-benar berguna bagi rumah, bukan sekadar permainan: menyapu remah sungguhan, menyiapkan sarapan sungguhan, menyiram tanaman sungguhan. Bagi anak, tahu bahwa kerjanya nyata dan dibutuhkan keluarga adalah penguat motivasi yang lebih kuat daripada pujian apa pun.",
+   "relatedTerms": [
+    "Urutan aktivitas kehidupan sehari-hari",
+    "grace and courtesy",
+    "independence"
+   ]
+  },
+  {
+   "term": "titik menarik",
+   "termEn": "Points of Interest",
+   "definition": "Detail dalam sebuah kegiatan yang membuat mata dan tangan anak berhenti dan berkonsentrasi: bunyi tutup botol saat pas, tetesan air yang berhenti di tepi gelas, tepi kain yang bertemu tepi lain. Dewasa yang menemukan titik menarik dalam kegiatannya bisa menonjolkannya lewat gerakan pelan saat presentasi.",
+   "relatedTerms": [
+    "presentasi",
+    "isolation of difficulty",
+    "control of error"
+   ]
+  },
+  {
+   "term": "latihan menyapu",
+   "termEn": "Sweeping Exercise",
+   "definition": "Kegiatan practical life melatih gerakan menyapu yang terarah: sampah digiring dari tepi ke satu titik lalu dipindahkan dengan pengki dan kuas. Melatih koordinasi mata-tangan, perencanaan gerak, dan tanggung jawab merawat lingkungan. Kuncinya: sapu sesuai ukuran anak dan area sapuan yang kecil pada awalnya.",
+   "relatedTerms": [
+    "latihan berguna",
+    "Merawat lingkungan"
+   ]
+  },
+  {
+   "term": "urutan melipat",
+   "termEn": "Folding Sequence",
+   "definition": "Rangkaian latihan melipat kain dari sederhana ke rumit: persegi dilipat dua menjadi segitiga, dilipat empat menjadi persegi kecil, lalu pola lipat yang lebih kompleks. Garis jahit di tengah kain menjadi kontrol visual. Mempersiapkan tangan dan mata anak untuk melipat pakaian sendiri.",
+   "relatedTerms": [
+    "control of error"
+   ]
+  },
+  {
+   "term": "bermain peran kesopanan",
+   "termEn": "Grace and Courtesy Role-Play",
+   "definition": "Latihan kesopanan lewat bermain peran: bagaimana meminta tolong, menyela percakapan, menerima tamu, atau menolak dengan sopan. Dilakukan dalam suasana tenang dan menyenangkan, BUKAN saat anak baru saja melakukan kesalahan. Anak memerlukan 'wadah bahasa dan gerak' yang sudah dilatih sebelum situasi sosial yang sesungguhnya datang.",
+   "relatedTerms": [
+    "grace and courtesy",
+    "presentasi",
+    "bantu aku melakukannya sendiri"
+   ]
+  },
+  {
+   "term": "orang dewasa yang siap",
+   "termEn": "Prepared Adult",
+   "definition": "Sisi lain dari lingkungan yang siap: diri orang dewasa yang sudah menyiapkan dirinya - tenang, sabar, mengamati sebelum bertindak, dan sadar akan kecenderungannya sendiri untuk buru-buru menolong. Anak lebih dipengaruhi oleh apa yang dilakukan orang dewasa daripada apa yang dikatakannya.",
+   "relatedTerms": [
+    "prepared environment",
+    "observation",
+    "mengikuti anak"
+   ]
+  },
+  {
+   "term": "kecenderungan manusia",
+   "termEn": "Human Tendencies",
+   "definition": "Kecenderungan alami yang mendorong manusia berkembang sejak lahir: menjelajah, berorientasi, mengurutkan, bekerja, meniru, konsentrasi, kesempurnaan diri, dan berkomunikasi. Montessori merancang metodenya dengan melayani kecenderungan ini, bukan melawannya - misalnya anak yang suka mengulang sedang mengejar kesempurnaan, bukan sedang nakal.",
+   "relatedTerms": [
+    "absorbent mind",
+    "sensitive period",
+    "normalization"
+   ]
+  },
+  {
+   "term": "empat tahap perkembangan",
+   "termEn": "Four Planes of Development",
+   "definition": "Pembagian rentang kehidupan manusia dalam empat periode enam tahunan (0-6, 6-12, 12-18, 18-24) yang masing-masing punya ciri belajar berbeda. Masa 0-6 disebut masa otak menyerap; karakteristik tiap tahap menuntut lingkungan dan cara mendampingi yang berbeda pula.",
+   "relatedTerms": [
+    "absorbent mind",
+    "sensitive period",
+    "mixed-age classroom"
+   ]
+  },
+  {
+   "term": "dekanomial sensorial",
+   "termEn": "Sensorial Decanomial",
+   "definition": "Material sensorial tingkat lanjut berupa susunan kotak berisi persegi dan persegi panjang berbagai ukuran-warna yang disusun membentuk persegi besar (dekanomial = sepuluh bagian). Anak menyusunnya seperti puzzle raksasa; secara tidak langsung ia sedang menyiapkan mata dan tangan untuk tabel perkalian.",
+   "relatedTerms": [
+    "Segitiga konstruktif",
+    "didactic material"
+   ]
+  },
+  {
+   "term": "tablet barik",
+   "termEn": "Baric Tablets",
+   "definition": "Tablet kayu yang sama bentuk dan warnanya tetapi berbeda berat; anak membedakannya dengan menimbang di kedua telapak tangan, kadang dengan mata terpejam. Melatih indera berat (barik = berat) dan kosakata: berat, ringan, lebih berat. Menunjukkan bahwa tangan pun bisa 'melihat'.",
+   "relatedTerms": [
+    "tablet termik",
+    "sensorial"
+   ]
+  },
+  {
+   "term": "tablet termik",
+   "termEn": "Thermic Tablets",
+   "definition": "Tablet dari material berbeda (logam, kayu, kaca, felt) yang bersuhu ruang sama tetapi terasa berbeda saat disentuh telapak tangan. Anak mengelompokkan berdasarkan rasa hangat-dingin. Melatih kesadaran bahwa material memengaruhi sensasi suhu - konsep sains awal yang bisa dihubungkan dengan pengalaman sehari-hari.",
+   "relatedTerms": [
+    "tablet barik",
+    "sensorial"
+   ]
+  },
+  {
+   "term": "kotak benua",
+   "termEn": "Continent Box",
+   "definition": "Kotak atau keranjang berisi penjelajahan satu benua: peta, foto pemandangan dan rumah adat, bendera, benda khas (rempah, kain, mainan tradisional), dan terkadang resep atau lagu daerah. Anak memasangkan benda dengan gambar, menempatkannya di peta, dan mendengar cerita budaya. Menumbuhkan rasa ingin tahu dan hormat pada keberagaman dunia.",
+   "relatedTerms": []
+  },
+  {
+   "term": "kartu siklus hidup",
+   "termEn": "Life Cycle Cards",
+   "definition": "Kartu berurutan yang memperlihatkan tahapan kehidupan makhluk hidup: telur-menetas menjadi ulat menjadi kepompong menjadi kupu-kupu, atau biji-tunas-tanaman-bunga. Anak mengurutkan kartu, menamai tahapan, dan sering kali menirukannya dengan gerak tubuh. Melatih berpikir urutan ilmiah dan kosakata sains.",
+   "relatedTerms": [
+    "mengurutkan kartu cerita"
+   ]
+  },
+  {
+   "term": "kardinalitas",
+   "termEn": "Cardinality",
+   "definition": "Pemahaman bahwa angka terakhir yang disebut saat menghitung juga menyatakan JUMLAH keseluruhan: saat menghitung 'satu, dua, tiga' benda, 'tiga' berarti kelompok itu ada tiga. Pemahaman ini tidak lahir bersamaan dengan hafalan angka; anak butuh banyak pengalaman menghitung benda nyata sebelum benar-benar memahaminya.",
+   "relatedTerms": [
+    "Kotak gelendong",
+    "menghitung satu-satu",
+    "Batang bilangan"
+   ]
+  },
+  {
+   "term": "menghitung satu-satu",
+   "termEn": "One-to-One Correspondence",
+   "definition": "Kemampuan memasangkan satu kata bilangan dengan tepat satu benda saat menghitung: tidak ada benda yang terlewat dan tidak ada yang dihitung dua kali. Anak menguasainya lewat banyak gerak: memindahkan benda sambil menghitung, menyentuh tiap sekat batang bilangan, menata satu alas untuk satu orang.",
+   "relatedTerms": [
+    "kardinalitas",
+    "Kotak gelendong"
+   ]
+  },
+  {
+   "term": "nilai tempat",
+   "termEn": "Place Value",
+   "definition": "Sistem bahwa posisi angka menentukan nilainya: dalam 42, angka 4 berarti empat puluh, bukan empat. Montessori mengajarkannya secara konkret lewat manik-manik emas dan kartu angka besar-kecil (stamp game) jauh sebelum anak bekerja dengan angka di kertas.",
+   "relatedTerms": [
+    "Manik-manik emas",
+    "Permainan stempel"
+   ]
+  },
+  {
+   "term": "pelajaran tiga langkah",
+   "termEn": "Three-Period Lesson (istilah Indonesia)",
+   "definition": "Nama Indonesia untuk three-period lesson: pelajaran tiga periode untuk memperkenalkan kosakata atau konsep - diberi nama, dikenali dengan menunjuk, lalu disebut sendiri oleh anak. Melatih anak menguasai kosakata baru secara bertahap sesuai kecepatan ingatannya sendiri.",
+   "relatedTerms": [
+    "three-period lesson",
+    "Huruf amplas"
+   ]
+  },
+  {
+   "term": "alas kerja",
+   "termEn": "Work Mat / Saggi di Lavoro (istilah Indonesia: alas kerja)",
+   "definition": "Alas kerja pribadi (karpet kecil atau matras) yang dipakai anak untuk menggelar kegiatannya di lantai. Selain menjaga kegiatan tetap rapi, alas kerja mengajarkan dua hal penting: batas ruang pribadi ('inilah ruang kerjaku, jangan dilewati orang lain') dan siklus utuh mengambil-alas-menata-mengerjakan-membereskan-kembali.",
+   "relatedTerms": [
+    "work cycle",
+    "prepared environment"
+   ]
+  },
+  {
+   "term": "koordinasi mata-tangan",
+   "termEn": "Eye-Hand Coordination",
+   "definition": "Kemampuan mengarahkan gerakan tangan berdasarkan informasi yang dilihat mata: menuang tanpa tumpah, memasukkan lidi ke sekat, menjahit lubang kecil. Dilatih lewat ribuan pengulangan kegiatan practical life dan sensorial, dan menjadi fondasi menulis, menggunting, serta menggunakan alat makan.",
+   "relatedTerms": [
+    "menuang",
+    "titik menarik"
+   ]
+  },
+  {
+   "term": "mengurutkan kartu cerita",
+   "termEn": "Story Sequencing Cards",
+   "definition": "Kartu bergambar 3-6 adegan yang harus diurutkan menjadi cerita masuk akal: tanam-siram-panen-makan, atau bangun-sikat gigi-berangkat sekolah. Melatih pemahaman urutan (fondasi literasi dan logika), kosakata transisi ('pertama', 'kemudian', 'akhirnya'), dan bercerita.",
+   "relatedTerms": [
+    "kartu siklus hidup"
    ]
   }
  ],

@@ -22,12 +22,36 @@ def dedupe(items, key='id'):
     return out
 
 activities = load_all('act-*.json')
+activities += load_all('gap-activities.json')  # gap-fill batch
+for extra in ('gap-math-sensorial.json','gap-culture-toilet.json','gap-language-ritual.json'):
+    p = os.path.join(P, extra)
+    if os.path.exists(p):
+        activities += json.load(open(p))
 milestones = load_all('mile-*.json')
 materials = dedupe(load_all('materials-*.json'))
-diy = dedupe(load_all('diy-*.json'))
+diy = dedupe(load_all('diy-*.json') + load_all('gap-diy.json'))
 rooms = dedupe(load_all('rooms-*.json'))
-parents = dedupe(load_all('parents-*.json'))
-glossary = dedupe(load_all('glossary-*.json'), key='term')
+parents = dedupe(load_all('parents-*.json') + load_all('gap-parents.json'))
+glossary = dedupe(load_all('glossary-*.json') + load_all('gap-glossary.json'), key='term')
+# Resolve glossary cross-links to defined Indonesian terms only. Legacy content
+# sometimes stores English aliases in relatedTerms; map matching termEn labels,
+# drop links with no in-app target, and avoid duplicate links.
+glossary_terms = {entry.get('term', '').strip().casefold(): entry.get('term') for entry in glossary}
+english_terms = {}
+for entry in glossary:
+    term_en = entry.get('termEn', '').strip().casefold()
+    if term_en:
+        english_terms.setdefault(term_en, entry.get('term'))
+for entry in glossary:
+    resolved = []
+    seen_related = set()
+    for related in entry.get('relatedTerms', []):
+        label = str(related).strip()
+        canonical = glossary_terms.get(label.casefold()) or english_terms.get(label.casefold())
+        if canonical and canonical.casefold() != entry.get('term', '').strip().casefold() and canonical.casefold() not in seen_related:
+            resolved.append(canonical)
+            seen_related.add(canonical.casefold())
+    entry['relatedTerms'] = resolved
 checklists = dedupe(load_all('checklists-*.json'))
 
 # normalisasi ringan

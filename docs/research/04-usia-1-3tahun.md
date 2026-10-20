@@ -4,7 +4,7 @@
 
 ## 1. Cara Membaca Dokumen Ini
 
-Dokumen ini memuat 15 aktivitas Montessori untuk anak 1–3 tahun dalam tujuh bagian: practical life, bahasa, motorik halus, motorik kasar, toilet learning, tantrum dan ko-regulasi, serta grace & courtesy. Tiap aktivitas memuat delapan bagian tetap: **Tujuan**, **Usia**, **Bahan**, **Langkah**, **Kontrol kesalahan**, **Variasi**, **Keselamatan**, dan **Sumber**.
+Dokumen ini memuat 15 aktivitas Montessori untuk anak 1–3 tahun dalam tujuh bagian: kehidupan praktis, bahasa, motorik halus, motorik kasar, toilet learning, tantrum dan ko-regulasi, serta grace & courtesy. Tiap aktivitas memuat delapan bagian tetap: **Tujuan**, **Usia**, **Bahan**, **Langkah**, **Kontrol kesalahan**, **Variasi**, **Keselamatan**, dan **Sumber**.
 
 "Kontrol kesalahan" adalah ciri yang tertanam pada materi sehingga anak melihat sendiri kesalahannya tanpa dikoreksi orang dewasa — misalnya tumpahan yang terlihat jelas, atau biji yang berserakan. Umpan balik datang dari materi, bukan teguran, sehingga anak berlatih mengoreksi dirinya sendiri.
 
@@ -31,21 +31,21 @@ HealthyChildren.org (AAP) menekankan variasi perkembangan bahasa pada usia ini p
 5. **Kesalahan adalah informasi.** Jangan mengoreksi verbal saat anak berlatih; biarkan kontrol kesalahan materi bekerja.
 6. **Siklus utuh.** Nampan dibawa ke meja, dipakai, dibereskan termasuk membersihkan tumpahan, lalu kembali ke rak.
 7. **Observasi dulu.** Kenali minat anak sebelum menawarkan materi baru; presentasi di waktu anak tidak ingin hanya mengajarkan menolak.
-8. **Pilihan terbatas dan benda nyata.** Dua pilihan yang keduanya bisa diterima; gelas kaca, jug stainless, kain katun — bahan nyata memberi umpan balik nyata.
+8. **Pilihan terbatas dan benda nyata.** Dua pilihan yang keduanya bisa diterima; gelas kaca, teko tuang stainless, kain katun — bahan nyata memberi umpan balik nyata.
 
-## 4. Practical Life (Kehidupan Praktis)
+## 4. Kehidupan Praktis (Practical Life)
 
-Practical life adalah jantung Montessori untuk usia ini; panduan Montessori Parent's Guide menyebut 18 bulan–3 tahun sebagai masa puncaknya, ketika anak mulai sanggup mengerjakan aktivitas banyak langkah. CDC mencatat anak bahkan sudah meniru pekerjaan rumah jauh sebelum bisa melakukannya rapi. Nilai terbesarnya bukan "anak bisa membantu", melainkan pengulangan yang membangun konsentrasi, koordinasi, urutan kerja, dan rasa mampu.
+Kehidupan praktis adalah jantung Montessori untuk usia ini; panduan Montessori Parent's Guide menyebut 18 bulan–3 tahun sebagai masa puncaknya, ketika anak mulai sanggup mengerjakan aktivitas banyak langkah. CDC mencatat anak bahkan sudah meniru pekerjaan rumah jauh sebelum bisa melakukannya rapi. Nilai terbesarnya bukan "anak bisa membantu", melainkan pengulangan yang membangun konsentrasi, koordinasi, urutan kerja, dan rasa mampu.
 
 ### 4.1 Menuang Kering (Biji-bijian)
 
 **Tujuan:** koordinasi tangan-mata, kendali pergelangan, konsentrasi, fondasi menuang cairan.
 **Usia:** 18–24 bulan (boleh untuk 2–3 tahun yang belum pernah mencoba).
-**Bahan:** nampan; dua jug kecil berpegangan (kiri berisi kacang hijau atau kancing kayu besar, kanan kosong); lap; keranjang kecil.
+**Bahan:** nampan; dua teko tuang kecil berpegangan (kiri berisi kacang hijau atau kancing kayu besar, kanan kosong); lap; keranjang kecil.
 **Langkah:**
 1. Anak membawa nampan ke mejanya; duduk di sebelah kanan anak.
-2. Pegang jug penuh dua tangan: satu di pegangan, satu menopang badan jug.
-3. Angkat perlahan, dekatkan mulut jug ke wadah kosong, miringkan sampai biji mengalir, tegakkan, letakkan dengan lembut.
+2. Pegang teko tuang penuh dua tangan: satu di pegangan, satu menopang badan teko tuang.
+3. Angkat perlahan, dekatkan mulut teko tuang ke wadah kosong, miringkan sampai biji mengalir, tegakkan, letakkan dengan lembut.
 4. Tunjuk biji yang tercecer; tunjukkan memungut dan memasukkannya kembali.
 5. Ajak anak menuang bolak-balik antar wadah.
 6. Selesai: biji kembali penuh di wadah kiri, nampan ke rak oleh anak.
@@ -58,14 +58,14 @@ Practical life adalah jantung Montessori untuk usia ini; panduan Montessori Pare
 
 **Tujuan:** kendali pergelangan dan aliran cairan, koordinasi dua tangan, perawatan lingkungan lewat membersihkan tumpahan.
 **Usia:** 2–3 tahun, setelah menuang kering lancar.
-**Bahan:** nampan berbibir; dua jug kecil (kaca tipis tahan pecah atau stainless); air di jug kiri; spons kecil muat di tangan anak; lap lantai.
+**Bahan:** nampan berbibir; dua teko tuang kecil (kaca tipis tahan pecah atau stainless); air di teko tuang kiri; spons kecil muat di tangan anak; lap lantai.
 **Langkah:**
 1. Bawa nampan berisi air ke meja.
 2. Demonstrasikan: tuang perlahan sambil mengamati garis air naik, berhenti sebelum penuh.
 3. Tunjukkan memakai spons: tekan, angkat, usap tumpahan, peras ke nampan.
 4. Ajak anak menuang bolak-balik sampai selesai.
 5. Keringkan meja dan lantai, lap nampan, kembalikan ke rak.
-**Kontrol kesalahan:** tumpahan terlihat jelas; garis air pada jug bening; spons selalu tersedia sehingga membersihkan bagian dari aktivitas, bukan hukuman.
+**Kontrol kesalahan:** tumpahan terlihat jelas; garis air pada teko tuang bening; spons selalu tersedia sehingga membersihkan bagian dari aktivitas, bukan hukuman.
 **Variasi:** menuang air minum sendiri saat makan; menyiram tanaman; menambah corong; menuang ke dua gelas bergantian.
 **Keselamatan:** air suhu ruangan; bila memakai kaca, ajarkan diangkat dua tangan dan diletakkan lembut — bila belum siap pakai stainless; lantai basah dilap segera; pengawasan penuh.
 **Sumber:** [Global Montessori Network — Liquid Pouring](https://theglobalmontessorinetwork.org/resource/toddler/liquid-pouring-english/); [Montessori Parent's Guide](https://www.montessoriparentguide.com/blog/montessori-practical-life-activities).
@@ -136,7 +136,7 @@ Practical life adalah jantung Montessori untuk usia ini; panduan Montessori Pare
 
 ## 5. Bahasa
 
-Zero to Three menekankan empat hal untuk usia ini: bicara bersama anak setiap hari, ikuti minatnya, gunakan bahasa kaya dan bervariasi, jadikan membaca buku kegiatan interaktif yang menyenangkan. Montessori menambahkan urutan konkret: benda nyata lebih dulu daripada gambar, gambar lebih dulu daripada huruf, dan nama benda diajarkan lewat pembelajaran tiga periode. AAP mencatat sekitar usia 2 tahun terjadi ledakan kosakata — dari frasa dua kata menuju kalimat empat sampai enam kata.
+Zero to Three menekankan empat hal untuk usia ini: bicara bersama anak setiap hari, ikuti minatnya, gunakan bahasa kaya dan bervariasi, jadikan membaca buku kegiatan interaktif yang menyenangkan. Montessori menambahkan urutan konkret: benda nyata lebih dulu daripada gambar, gambar lebih dulu daripada huruf, dan nama benda diajarkan lewat pelajaran tiga periode. AAP mencatat sekitar usia 2 tahun terjadi ledakan kosakata — dari frasa dua kata menuju kalimat empat sampai enam kata.
 
 ### 5.1 Membaca Buku Nyata Bersama
 
@@ -164,14 +164,14 @@ Zero to Three menekankan empat hal untuk usia ini: bicara bersama anak setiap ha
 1. Pilih tiga pasang benda dan kartu untuk pemula; letakkan benda asli di meja.
 2. Kenalkan benda aslinya lebih dulu: pegang, sentuh, namai.
 3. Pasangkan: anak meletakkan kartu di samping benda yang sesuai.
-4. Untuk versi penuh, gunakan kartu sebagai materi pembelajaran tiga periode (5.3).
+4. Untuk versi penuh, gunakan kartu sebagai materi pelajaran tiga periode (5.3).
 5. Kartu kembali ke kotak, kotak ke rak.
 **Kontrol kesalahan:** pencocokan salah terlihat sendiri karena gambar tidak sama dengan benda; kartu kontrol adalah kunci jawaban yang bisa dicek anak.
 **Variasi:** tema sesuai minat (kendaraan, hewan, buah); kartu gerakan; kartu bagian tubuh; mencari benda di ruangan lain untuk dipasangkan.
 **Keselamatan:** kertas tebal atau laminasi bersudut bulat; ukuran minimal 12 cm agar tidak berisiko tersedak; tetap awasi.
 **Sumber:** [Montessori Mom](https://montessorimom.com/three-period-lesson/); [Montessori PTC](https://montessoriptc.com/montessori-three-period-lesson/); [Zero to Three — Literacy 24–36 Months](https://www.zerotothree.org/resource/language-and-literacy-skills-from-24-36-months/).
 
-### 5.3 Pembelajaran Tiga Periode (Three-Period Lesson)
+### 5.3 pelajaran tiga periode (Three-Period Lesson)
 
 **Tujuan:** mengenalkan nama benda, sifat, atau konsep baru dalam tiga tahap — penamaan, pengenalan, penamaan mandiri — kerangka baku Montessori untuk kosakata.
 **Usia:** 18–24 bulan untuk periode 1 dan 2; periode 3 biasanya mendekati 2–3 tahun. Dasarnya dari CDC: anak 2 tahun menunjuk gambar buku saat ditanya; usia 30 bulan menyebut benda di buku saat ditanya "apa ini?".
@@ -188,11 +188,11 @@ Zero to Three menekankan empat hal untuk usia ini: bicara bersama anak setiap ha
 
 ## 6. Motorik Halus
 
-Motorik halus usia ini bergerak dari menggenggam menuju pintal dua jari yang presisi. CDC merangkumnya: 18 bulan — mencoret dan minum dari gelas terbuka; 2 tahun — memegang benda di satu tangan sambil tangan lain bekerja; 30 bulan — memutar kenop, membuka tutup ulir, membalik halaman satu per satu. Aktivitas threading dan transfer melatih persis rangkaian itu.
+Motorik halus usia ini bergerak dari menggenggam menuju genggaman jempol-telunjuk (pincer grasp) yang presisi. CDC merangkumnya: 18 bulan — mencoret dan minum dari gelas terbuka; 2 tahun — memegang benda di satu tangan sambil tangan lain bekerja; 30 bulan — memutar kenop, membuka tutup ulir, membalik halaman satu per satu. Aktivitas threading dan transfer melatih persis rangkaian itu.
 
 ### 6.1 Threading (Memasukkan Tali ke Lubang)
 
-**Tujuan:** pintal dua jari, koordinasi tangan-mata, konsentrasi panjang, kesabaran mengulang urutan.
+**Tujuan:** genggaman jempol-telunjuk (pincer grasp), koordinasi tangan-mata, konsentrasi panjang, kesabaran mengulang urutan.
 **Usia:** 18–24 bulan (manik besar di tali kaku); 2–3 tahun (manik makin kecil, pola sederhana).
 **Bahan:** manik kayu besar minimal 4 cm atau donat kayu berlubang; tali kaku berujung dilapisi pita dan terikat simpul besar; keranjang dua bagian; nampan.
 **Langkah:**
@@ -251,7 +251,7 @@ HealthyChildren.org menyebut toddler butuh aktivitas fisik setiap hari seperti o
 3. **Tangga:** naik berpegangan, dua kaki di satu undakan dulu, baru pola bergantian saat siap.
 4. **Papan seimbang:** berjalan di papan rendah di atas matras; orang dewasa di samping, tangan siap menopang tanpa memegang.
 **Kontrol kesalahan:** kaki keluar garis terlihat; papan bergoyang memberi umpan balik keseimbangan; barang tumpah menandakan terlalu cepat.
-**Variasi:** berjalan mundur; garis melingkar; memikul bantal; berhenti-diaba; memanjat struktur taman dengan pengawasan dekat; berjalan di rumput dan pasir.
+**Variasi:** berjalan mundur; garis melingkar; memikul bantal; berhenti-lalu-jalan; memanjat struktur taman dengan pengawasan dekat; berjalan di rumput dan pasir.
 **Keselamatan:** ketinggian rendah dan di atas matras; orang dewasa selalu dalam jangkauan; papan di lantai rata, bukan ubin licin; jangan menarik tangan anak ke atas saat terpeleset (risiko sendi bahu) — biarkan anak bangun sendiri; pengawasan penuh di tangga.
 **Sumber:** [HealthyChildren — Active Toddler](https://www.healthychildren.org/English/ages-stages/toddler/fitness/Pages/The-Active-Toddler.aspx); [CDC — Milestones 18 Months](https://www.cdc.gov/act-early/milestones/18-months.html); [CDC — Milestones 30 Months](https://www.cdc.gov/act-early/milestones/30-months.html); [Zero to Three — Co-Regulation](https://www.zerotothree.org/resource/your-calm-is-their-calm-co-regulation-strategies-for-infants-and-toddlers/).
 
@@ -274,7 +274,7 @@ Montessori menyebutnya *toilet learning* — anak belajar keterampilan tubuh —
 **Keselamatan:** dudukan stabil dan pijakan kaki tersedia; jangan pernah memaksa duduk; hentikan beberapa hari bila anak menolak keras lalu coba lagi; buang air besar berdarah, sakit saat buang, atau sembelit menetap — konsultasikan ke dokter (informasi umum, bukan nasihat medis).
 **Sumber:** [HealthyChildren — Right Age to Potty Train](https://www.healthychildren.org/English/ages-stages/toddler/toilet-training/Pages/the-right-age-to-toilet-train.aspx); [HealthyChildren — Toilet Training](https://www.healthychildren.org/english/ages-stages/toddler/toilet-training/pages/default.aspx); [Montessori Foundation — Toilet Training](https://www.montessori.org/a-montessori-approach-to-toilet-training/).
 
-### 8.2 Setup Kamar Mandi Montessori
+### 8.2 Tata Kamar Mandi Montessori
 
 **Tujuan:** menyiapkan lingkungan agar anak menyelesaikan seluruh urutan toilet — turunkan celana, duduk, bersihkan, angkat celana, siram, cuci tangan — tanpa meminta bantuan tiap langkah.
 **Usia:** 18–24 bulan (potty lantai); 2–3 tahun (dudukan toilet plus pijakan).
@@ -366,18 +366,18 @@ Grace & courtesy adalah pelajaran sosial Montessori: cara meminta, menunggu, men
 
 - 15 aktivitas inti usia 1–3 tahun; tiap aktivitas memuat Tujuan/Usia/Bahan/Langkah/Kontrol kesalahan/Variasi/Keselamatan/Sumber.
 - Rentang usia dipetakan ke tonggak CDC (18 bulan, 2 tahun, 30 bulan); pakai sebagai petunjuk, bukan target wajib.
-- Practical life urut kesulitan: menuang kering → menuang air → menyendok → mengelap → berpakaian → memotong pisang.
-- Menuang kering (18–24m): biji besar di dua jug; kontrol kesalahan = biji berserakan; tunda bila anak masih suka memasukkan benda ke mulut.
-- Menuang air (2–3y): jug kecil, spons selalu tersedia; membersihkan tumpahan bagian dari aktivitas, bukan hukuman.
+- kehidupan praktis urut kesulitan: menuang kering → menuang air → menyendok → mengelap → berpakaian → memotong pisang.
+- Menuang kering (18–24m): biji besar di dua teko tuang; kontrol kesalahan = biji berserakan; tunda bila anak masih suka memasukkan benda ke mulut.
+- Menuang air (2–3y): teko tuang kecil, spons selalu tersedia; membersihkan tumpahan bagian dari aktivitas, bukan hukuman.
 - Menyendok: bahan besar (18–24m) → bahan halus (2–3y); perhatikan alergi keluarga.
 - Memotong pisang: pisau khusus anak tanpa mata tajam; "tangan di tangan" untuk pemula; bahan lunak potong memanjang untuk cegah tersedak.
-- Bahasa: buku nyata di rak depan-menghadap; kartu nomenklatur gambar-benda; pembelajaran tiga periode ("Ini…", "Tunjukkan…", "Ini apa?").
+- Bahasa: buku nyata di rak depan-menghadap; kartu nomenklatur gambar-benda; pelajaran tiga periode ("Ini…", "Tunjukkan…", "Ini apa?").
 - Periode 2 tiga-periode paling panjang; bila periode 3 gagal, kembali ke periode 2 tanpa menguji.
 - Motorik halus: threading manik ≥4 cm (aman dari tertelan); transfer jari → sendok → penjepit (posisi genggam pensil).
 - Motorik kasar: lari-berhenti, tendang, lempar, lompat dua kaki (30 bulan), jalan di garis, papan seimbang rendah di atas matras.
 - Jangan tarik tangan anak ke atas saat terpeleset; biarkan anak bangun sendiri.
 - Toilet learning: tanda siap AAP (kering 2 jam, isyarat buang air, jalan & melepas celana, minta diganti) lebih penting daripada usia.
-- Setup kamar mandi: potty/dudukan + pijakan anti-slip dua arah, keranjang celana bersih, wadah pakaian basah, kain lap; tanpa hukuman.
+- penataan kamar mandi: potty/dudukan + pijakan anti-slip dua arah, keranjang celana bersih, wadah pakaian basah, kain lap; tanpa hukuman.
 - Tantrum: pencegahan (ritme makan-tidur, peringatan transisi, pilihan ganda) → namai perasaan, tahan tindakan, tawarkan koneksi.
 - Ko-regulasi: orang dewasa tenang = anak cepat tenang; pojok tenang dibuat bersama anak, bukan tempat hukuman; hentikan memukul/menggigit segera.
 - Grace & courtesy: keteladanan utama; pelajaran kecil di waktu netral; jangan paksakan pelukan; latih menunggu, bukan berbagi paksa.

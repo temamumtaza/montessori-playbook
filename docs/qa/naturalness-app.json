@@ -1,0 +1,169 @@
+{
+  "ringkasan": "Sampling 40 field acak (30 presentation steps + 10 summary) dari bundle 2-3y.json (34 aktivitas) dan 12-18m.json (32 aktivitas), ditambah pindai pola atas seluruh 841 field kedua bundle serta parentGuides & glossary di global.json. Hasil: 42,5% natural, 50% kaku (kalque 'with X', 'dengan + adverbia' di ujung kalimat, hapus 'yang', verba ganda), 7,5% berat (salah urutan modifier, voice salah, verba jatuh). Fondasi bahasa sudah sehat: 0 kata Inggris tersisa di konten bundle, tidak ada pola 'melakukan X-ing' atau 'untuk dapat'. Masalah terbesar ada di konsistensi lintas file (perlahan/pelan/lambat; sebut/sebutkan; orang dewasa/orang tua/si kecil) dan di glossary global (173 relatedTerms menunjuk slug yang tidak ada, kepala istilah campur EN/ID tanpa pola).",
+  "pct_natural": 42.5,
+  "pct_kaku": 50.0,
+  "pct_berat": 7.5,
+  "kutipan": [
+    {
+      "lokasi": "12-18m/12-18m-menuang-air#step3",
+      "asli": "Biarkan anak mencoba dengan air sedikit.",
+      "masalah": "Urutan modifier terbalik (salah grammar): 'dengan air sedikit' mengikuti pola Inggris 'with a little water'.",
+      "revisi": "Biarkan anak mencoba dengan sedikit air."
+    },
+    {
+      "lokasi": "2-3y/2-3y-melompat-di-tempat#step3",
+      "asli": "Mendarat dengan lutut sedikit menekuk.",
+      "masalah": "Voice aktif padahal lutut dikenai tindakan (kalque 'with knees slightly bent'); 'lutut menekuk' tidak lazim.",
+      "revisi": "Mendarat dengan lutut sedikit ditekuk."
+    },
+    {
+      "lokasi": "12-18m/12-18m-minum-dengan-sedotan#step2",
+      "asli": "Tunjukkan menyentuhkan sedotan ke bibir.",
+      "masalah": "Verba ganda tanpa penghubung; 'Tunjukkan + verba mentah' kehilangan kata 'cara'.",
+      "revisi": "Tunjukkan cara menyentuhkan sedotan ke bibir."
+    },
+    {
+      "lokasi": "12-18m/12-18m-menunggu-giliran (summary)",
+      "asli": "Anak belajar memberikan dan menerima bola bersama orang dewasa dengan santai.",
+      "masalah": "Urutan 'memberikan dan menerima' kebalikan natural (dulu menerima, baru memberi); 'dengan santai' adalah kalque 'casually' yang menempel di ujung kalimat.",
+      "revisi": "Anak berlatih menerima lalu memberikan bola bersama orang dewasa dengan santai."
+    },
+    {
+      "lokasi": "2-3y/2-3y-menuang-biji (summary)",
+      "asli": "Anak mempraktikkan menuang bahan kering dengan kontrol gerak.",
+      "masalah": "Gaya berita/headline: 'mempraktikkan menuang' (verba telanjang) + 'kontrol gerak' tanpa 'meng-'; terdengar seperti terjemahan 'practices pouring with movement control'.",
+      "revisi": "Anak berlatih menuang bahan kering sambil mengendalikan gerakannya."
+    },
+    {
+      "lokasi": "12-18m/12-18m-mengikuti-arahan (summary)",
+      "asli": "Anak melakukan permintaan sederhana dalam rutinitas bermain sehari-hari.",
+      "masalah": "Kalque 'performs simple requests' — 'melakukan permintaan' bukan kolokasi Indonesia; yang dimaksud anak mengikuti/memenuhi permintaan.",
+      "revisi": "Anak mengikuti permintaan sederhana saat bermain sehari-hari."
+    },
+    {
+      "lokasi": "2-3y/2-3y-menuang-air#obj1",
+      "asli": "Mengontrol gerakan saat menuang",
+      "masalah": "'Mengontrol' bukan bakuan yang enak (KBBI: kendali); muncul juga di menyiram-tanaman#obj2 'Mengontrol jumlah air' dan menuang-pasir#obj1 'Mengontrol aliran bahan'.",
+      "revisi": "Mengendalikan gerakan saat menuang"
+    },
+    {
+      "lokasi": "2-3y/2-3y-membaca-buku-gambar (summary)",
+      "asli": "Anak menikmati buku dan berbicara tentang gambar bersama orang dewasa.",
+      "masalah": "Kalque 'talks about the pictures'; 'berbicara tentang' kaku untuk konteks santai.",
+      "revisi": "Anak menikmati buku dan membicarakan gambar bersama orang dewasa."
+    },
+    {
+      "lokasi": "2-3y/2-3y-membaca-buku-gambar#step3",
+      "asli": "Ajukan pertanyaan sederhana tentang halaman.",
+      "masalah": "'Tentang halaman' kalque 'about the page' — rujukannya melayang.",
+      "revisi": "Ajukan pertanyaan sederhana tentang isi halamannya."
+    },
+    {
+      "lokasi": "2-3y/2-3y-mencari-benda-awalan#step3",
+      "asli": "Ajak anak mencari benda lain yang serupa bunyinya.",
+      "masalah": "'Serupa bunyinya' konstruksi puitis-kaku (kalque 'similar in sound').",
+      "revisi": "Ajak anak mencari benda lain yang bunyinya mirip."
+    },
+    {
+      "lokasi": "12-18m/12-18m-memasukkan-benda#step3",
+      "asli": "Keluarkan bola dan tawarkan giliran anak.",
+      "masalah": "Kalque 'offer the child's turn' — 'tawarkan giliran anak' tidak jelas siapa memberi ke siapa.",
+      "revisi": "Keluarkan bolanya lalu ajak anak bergiliran."
+    },
+    {
+      "lokasi": "12-18m/12-18m-memasukkan-benda (summary)",
+      "asli": "Anak memasukkan benda besar ke lubang lebar lalu melihat hasilnya.",
+      "masalah": "'Melihat hasilnya' kalque 'sees the result'; dalam konteks main, yang dimaksud anak mengamati bola jatuh.",
+      "revisi": "Anak memasukkan benda besar ke lubang lebar lalu mengamati bola jatuh."
+    },
+    {
+      "lokasi": "12-18m/12-18m-mencocokkan-tutup#step2",
+      "asli": "Pasangkan satu tutup dengan gerak pelan.",
+      "masalah": "'Dengan gerak pelan' kalque 'with slow movement'; dalam perintah, adverbia cukup 'perlahan-lahan'.",
+      "revisi": "Pasangkan satu tutup perlahan-lahan."
+    },
+    {
+      "lokasi": "2-3y/2-3y-meronce-bentuk-besar#step1",
+      "asli": "Pegang ujung tali dan satu bentuk dengan tenang.",
+      "masalah": "Koordinasi 'pegang A dan B dengan tenang' kaku; adverbia 'dengan tenang' ditempel di ujung (kalque 'calmly').",
+      "revisi": "Pegang ujung tali dengan satu tangan, pegang bentuknya dengan tangan lainnya."
+    },
+    {
+      "lokasi": "2-3y/2-3y-menunggu-giliran#step2",
+      "asli": "Ambil satu giliran singkat lalu serahkan benda.",
+      "masalah": "'Ambil satu giliran singkat' kalque 'take one short turn'; Indonesia: 'bergiliran sekali'.",
+      "revisi": "Bergiliran sekali saja, lalu serahkan bendanya."
+    },
+    {
+      "lokasi": "2-3y/2-3y-mencari-pasangan-suara (summary)",
+      "asli": "Anak mendengarkan dan menemukan wadah yang menghasilkan suara sama.",
+      "masalah": "Penanda 'yang' gugur (kalque 'the same sound'): 'suara sama' → 'suara yang sama'.",
+      "revisi": "Anak mendengarkan lalu mencari wadah yang bunyinya sama."
+    },
+    {
+      "lokasi": "2-3y/2-3y-membaca-buku-gambar#step2",
+      "asli": "Sebut gambar dengan kalimat singkat.",
+      "masalah": "'Sebut gambar' kalque 'name the picture' — objeknya bukan gambar melainkan nama gambarnya.",
+      "revisi": "Sebutkan nama gambarnya dengan kalimat singkat."
+    },
+    {
+      "lokasi": "2-3y/2-3y-mengelompokkan-warna#step2",
+      "asli": "Ulangi dengan dua warna lain secara perlahan.",
+      "masalah": "'Secara perlahan' — 'secara' + adverbia adalah pola terjemahan 'slowly' yang kaku; urutan juga janggal.",
+      "revisi": "Ulangi perlahan dengan dua warna lain."
+    },
+    {
+      "lokasi": "2-3y/2-3y-mencari-benda-awalan (summary)",
+      "asli": "Anak bermain mencari benda yang namanya diawali bunyi tertentu.",
+      "masalah": "'Diawali bunyi tertentu' setengah-hidup; 'diawali dengan bunyi tertentu' lebih lazim.",
+      "revisi": "Anak bermain mencari benda yang namanya diawali bunyi yang sama."
+    },
+    {
+      "lokasi": "12-18m/12-18m-mendorong-gerobak (summary)",
+      "asli": "Anak mendorong gerobak ringan di jalur pendek dengan pendampingan.",
+      "masalah": "'Di jalur pendek' kalque 'on a short path'; Indonesia lazimnya 'sepanjang jarak pendek'.",
+      "revisi": "Anak mendorong gerobak ringan sepanjang jarak pendek dengan didampingi."
+    },
+    {
+      "lokasi": "global.json/parentGuides/bicara-dengan-suara-tenang",
+      "asli": "...iri adalah bagian dari merawat bayi. Seiring usia, ajak ia terlibat dalam percakapan sehari-hari.",
+      "masalah": "'Terlibat dalam percakapan' kalque 'involved in conversation' — kaku untuk konteks orang tua-bayi.",
+      "revisi": "Seiring usia, ajak ia ikut bercakap-cakap sehari-hari."
+    },
+    {
+      "lokasi": "global.json/parentGuides/observasi-harian-tanpa-menilai",
+      "asli": "Observasi membantu kita memberikan dukungan yang tepat, bukan sekadar menebak.",
+      "masalah": "'Memberikan dukungan' berat (calque 'provide support'); verba langsung lebih ringan.",
+      "revisi": "Observasi membantu kita mendukung dengan tepat, bukan sekadar menebak."
+    }
+  ],
+  "inkonsistensi": [
+    "Kecepatan 'lambat' ditulis 3 cara: 'perlahan' (18x, mayoritas 2-3y), 'pelan' (9x, mis. 2-3y-berjalan-di-garis#step2 'Berjalan pelan', 12-18m-mencocokkan-tutup#step2 'gerak pelan'), 'lambat' (2x, hanya 12-18m: bertepuk-irama#step2 'pola lambat', menyanyi-nama-anak#step2 'tempo lambat').",
+    "Imperatif 'sebut' (10x, semua di 2-3y) vs 'sebutkan' (1x, 12-18m-mengamati-daun#step2) untuk perintah yang sama.",
+    "'Mengontrol' (3x di objectives 2-3y) vs 'kontrol' (2x, menuang-biji & memindahkan-bola-kain#obj1 'kontrol gerak') — bakuan KBBI-nya 'kendali/mengendalikan'.",
+    "Sebutan orang pendamping tak seragam lintas bundle: 'orang dewasa' (dominan, 13x di 2 bundle audit; juga mayoritas bundle lain) vs 'orang tua' (17x di 3-6m, 3x di 9-12m) vs 'si kecil' (hanya di milestones 12-18m).",
+    "Glossary global: kepala istilah campur bahasa tanpa pola — 78 ber-kepala Inggris ('sensitive period', 'control of error', 'work cycle') vs 14 ber-kepala Indonesia ('kasur lantai', 'waktu tengkurap', 'rutinitas tidur'); tidak ada dobel konsep, tapi gayanya tak konsisten.",
+    "Glossary global: 173 relatedTerms menunjuk slug yang tidak ada di daftar istilah — padanannya justru ber-kepala Indonesia: 'daily rhythm' (ada: 'ritme harian'), 'floor bed' (ada: 'kasur lantai'), 'self-care' (ada: 'merawat diri'), 'transition' (ada: 'peralihan'), 'toilet learning' (ada: 'belajar toilet').",
+    "Glossary global: relatedTerms duplikat ('observation' muncul 2x pada entri 'sensitive period'); kapitalisasi kepala istilah campur ('Benda fonetik', 'Waktu berita' berhuruf kapital vs huruf kecil semua lainnya).",
+    "Keluarga istilah 'rutinitas/ritme' terpecah: glossary punya 'ritme harian' SEKALIGUS 'rutinitas makan' dan 'rutinitas tidur' sebagai entri terpisah; bundle memakai frasa lain lagi, 'rutinitas bermain sehari-hari' (12-18m-mengikuti-arahan).",
+    "Milestone 2-3y 'Berlari dan melompat dengan dua kaki': judul 'dengan dua kaki' vs deskripsi 'kedua kaki sekaligus'; konten aktivitas memakai pola 'dua tangan' (9x) bukan 'kedua tangan'.",
+    "Pola kalque 'dengan + nomina adverbia' di ujung kalimat berulang di seluruh konten: 'dengan tenang' (3x), 'dengan santai', 'dengan gerak pelan', 'dengan kontrol gerak', 'secara perlahan' — semua memindahkan struktur 'with + noun' Inggris ke Indonesia."
+  ],
+  "perbaikan_prioritas": [
+    "BAKUKAN ADVERBIA KECEPATAN: pilih satu dari perlahan/pelan/lambat untuk seluruh app (rekomendasi: 'perlahan', kecuali 'tempo lambat' untuk irama) — 29 kemunculan terpecah 3 kata; contoh: 12-18m-bertepuk-irama#step2 'dengan pola lambat' -> 'dengan pola perlahan'.",
+    "BURU KALQUE 'dengan + adverbia' DI UJUNG KALIMAT: 'dengan gerak pelan' -> 'perlahan-lahan', 'dengan kontrol gerak' -> 'sambil mengendalikan gerakan' (2-3y-menuang-biji); ini pola kaku paling sering (12+ kasus).",
+    "PERBAIKI 3 KESALAHAN GRAMATIKA: 'dengan air sedikit' -> 'dengan sedikit air' (12-18m-menuang-air#step3); 'lutut sedikit menekuk' -> 'lutut sedikit ditekuk' (2-3y-melompat-di-tempat#step3); 'Tunjukkan menyentuhkan' -> 'Tunjukkan cara menyentuhkan' (12-18m-minum-dengan-sedotan#step2).",
+    "GANTI 'melakukan/mempraktikkan + VERBA TELANJANG': 'melakukan permintaan sederhana' -> 'mengikuti permintaan sederhana' (12-18m-mengikuti-arahan); 'mempraktikkan menuang' -> 'berlatih menuang' (2-3y-menuang-biji).",
+    "STANDARKAN 'mengendalikan' MENGALIHKAN 'mengontrol': 3 objectives (2-3y-menuang-air#obj1, menyiram-tanaman#obj2, menuang-pasir#obj1).",
+    "STANDARKAN IMPERATIF 'sebutkan' (bukan 'sebut'): 10x di bundle 2-3y vs 1x 'sebutkan' di 12-18m — pilih 'sebutkan' untuk register konsisten.",
+    "URUSKAN 'yang' PENANDA YANG GUGUR: 'suara sama' -> 'suara yang sama' (2-3y-mencari-pasangan-suara); 'bunyi tertentu' -> 'bunyi yang sama/tertentu' — pola khas terjemahan artikel Inggris.",
+    "GANTI 'berbicara tentang X' -> 'membicarakan X': summary 2-3y-membaca-buku-gambar; sekalian 'pertanyaan tentang halaman' -> 'tentang isi halamannya'.",
+    "HINDARI KALQUE 'offer/take a turn': 'tawarkan giliran anak' -> 'ajak anak bergiliran' (12-18m-memasukkan-benda#step3); 'Ambil satu giliran singkat' -> 'Bergiliran sekali saja' (2-3y-menunggu-giliran#step2).",
+    "SATUKAN SEBUTAN ORANG DEWASA lintas bundle: dominan 'orang dewasa' vs 'orang tua' (3-6m, 9-12m) vs 'si kecil' (milestones) — pilih 'orang dewasa' untuk instruksi aktivitas dan 'si kecil' hanya di konten milestones, lalu selaraskan 3-6m & 9-12m.",
+    "PERBAIKI GLOSSARY relatedTerms: 173 referensi menunjuk slug Inggris yang tidak ada ('daily rhythm', 'floor bed', 'self-care', 'transition') — petakan ke slug Indonesia yang benar ('ritme harian', 'kasur lantai', 'merawat diri', 'peralihan').",
+    "RAPIKAN GLOSSARY STYLE: samakan bahasa kepala istilah (78 EN vs 14 ID), kapitalisasi ('Benda fonetik', 'Waktu berita' -> lowercase), hapus relatedTerms duplikat ('observation' 2x di 'sensitive period').",
+    "SATUKAN KELUARGA ISTILAH 'rutinitas': glossary memuat 'ritme harian' sekaligus 'rutinitas makan/tidur' dan bundle memakai 'rutinitas bermain sehari-hari' — pilih 'rutinitas' untuk semua, jadikan 'ritme harian' sinonim di definition.",
+    "LEBUR VERBA GANDA 'Tunjukkan + verba': tambahkan 'cara' setiap 'Tunjukkan' diikuti verba lain (2 kasus), dan ganti 'melihat hasilnya' -> 'mengamati bola jatuh' (12-18m-memasukkan-benda).",
+    "SARING 'secara + adverbia' dan 'di + nomina kalque': 'secara perlahan' -> 'perlahan' (2-3y-mengelompokkan-warna#step2); 'di jalur pendek' -> 'sepanjang jarak pendek' (12-18m-mendorong-gerobak)."
+  ]
+}

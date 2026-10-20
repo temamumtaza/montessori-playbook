@@ -2564,6 +2564,2960 @@
     }
    ],
    "materialIds": []
+  },
+  {
+   "id": "3-4y-membasuh-tangan-lengkap",
+   "title": "Membasuh Tangan Lengkap dengan Delapan Langkah",
+   "summary": "Anak menjalankan urutan membasuh tangan secara mandiri dari basahi, sabuni, gosok tiap sisi tangan, sampai mengeringkan dan menutup keran.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "urutan langkah",
+    "kemandirian",
+    "konsentrasi",
+    "koordinasi tangan"
+   ],
+   "objectives": [
+    "Melatih anak mengikuti urutan panjang tanpa diingatkan.",
+    "Membangun kebiasaan higiene mandiri sebagai dasar merawat diri.",
+    "Memperpanjang rentang konsentrasi melalui gerak yang runtut."
+   ],
+   "materials": [
+    {
+     "name": "sabun cair atau sabun batang kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "handuk kecil di gantungan rendah",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tangga/step stool aman agar anak sampai keran",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "stiker atau tanda batas air hangat di keran",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Ajak anak ke wastafel, pasang tangga kecil dengan tenang dan pastikan pijakan stabil."
+    },
+    {
+     "step": 2,
+     "text": "Ajak anak membuka keran perlahan dan membasahi kedua tangan sampai lembap."
+    },
+    {
+     "step": 3,
+     "text": "Tunjukkan mengambil sabun secukupnya lalu menutup/mengembalikan sabun ke tempatnya."
+    },
+    {
+     "step": 4,
+     "text": "Bimbing menggosok telapak bertemu telapak, hitung pelan sampai sepuluh."
+    },
+    {
+     "step": 5,
+     "text": "Gosok punggung kedua tangan, lalu sela-sela jari satu per satu."
+    },
+    {
+     "step": 6,
+     "text": "Gosok area ibu jari dan ujung jari/kuku dengan gerakan memutar."
+    },
+    {
+     "step": 7,
+     "text": "Bilas kedua tangan dari ujung jari ke pergelangan sampai sabun hilang."
+    },
+    {
+     "step": 8,
+     "text": "Tutup keran, kocok air di wastafel, lalu keringkan tangan dengan handuk."
+    },
+    {
+     "step": 9,
+     "text": "Gantung handuk kembali di tempatnya dan periksa bersama: apakah wastafel tetap kering?"
+    }
+   ],
+   "controlOfError": "Wastafel yang basah dan sabun yang belum kembali ke tempatnya menunjukkan urutan belum selesai.",
+   "variations": [
+    "Hafalkan lagu singkat berisi delapan langkah.",
+    "Buat kartu bergambar langkah yang ditempel di dekat wastafel.",
+    "Anak lebih besar dapat membasuh sampai pergelangan dan menggosok lengan baju."
+   ],
+   "readySigns": [
+    "Anak tertarik dengan air dan meniru orang dewasa mencuci tangan.",
+    "Anak dapat membuka dan menutup keran dengan dua tangan.",
+    "Anak sudah stabil berdiri di tangga kecil tanpa bantuan."
+   ],
+   "struggleSigns": [
+    "Anak melompati langkah dan hanya bermain air tanpa selesai.",
+    "Anak meminta dilayani padahal sudah terbiasa."
+   ],
+   "safetyNotes": [
+    "Awasi penggunaan air hangat; atur pemanas agar tidak melebihi suhu aman.",
+    "Pastikan tangga kecil stabil dan lantai sekitar tidak licin.",
+    "Ganti handuk basah agar tidak menjadi sarang kuman."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org (AAP) - Hand Hygiene",
+     "url": "https://www.healthychildren.org/English/health-issues/conditions/prevention/Pages/Hand-Washing-A-Powerful-Antidote-to-Illness.aspx"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    },
+    {
+     "title": "NHS - How to brush your teeth",
+     "url": "https://www.nhs.uk/live-well/healthy-teeth-and-gums/how-to-keep-your-teeth-clean/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-menyikat-gigi-sequence",
+   "title": "Urutan Menyikat Gigi Sendiri",
+   "summary": "Anak menjalankan rutinitas menyikat gigi utuh: ambil sikat, oles pasta, sikat atas-bawah tiap sisi, bilas, dan kembalikan semua alat.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "practical-life",
+    "self-care"
+   ],
+   "skills": [
+    "urutan langkah",
+    "merawat diri",
+    "koordinasi mulut-tangan",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Melatih urutan merawat diri yang harus dilakukan dua kali sehari.",
+    "Menguatkan kontrol gerak kecil di area mulut.",
+    "Menumbuhkan tanggung jawab atas tubuh sendiri."
+   ],
+   "materials": [
+    {
+     "name": "sikat gigi berkepala kecil usia anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasta gigi berfluoride ukuran beras",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gelas bilas kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "cermin rendah tempat anak berdiri",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "step stool stabil",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Anak mengambil sikat gigi dari tempatnya lalu duduk/berdiri di depan cermin."
+    },
+    {
+     "step": 2,
+     "text": "Dewasa meneteskan pasta sebesar butir beras ke sikat; seiring waktu anak meneteskan sendiri."
+    },
+    {
+     "step": 3,
+     "text": "Mulai dari gigi geraham atas: sikat dengan gerakan kecil memutar atau 45 derajat ke arah gusi."
+    },
+    {
+     "step": 4,
+     "text": "Lanjutkan ke gigi geraham bawah, hitung pelan sepuluh kali per sisi."
+    },
+    {
+     "step": 5,
+     "text": "Sikat sisi depan gigi atas dan bawah, lalu sisi dalamnya."
+    },
+    {
+     "step": 6,
+     "text": "Sikat permukaan rata gigi yang dipakai mengunyah."
+    },
+    {
+     "step": 7,
+     "text": "Anak mengambil gelas, menyeruput sedikit air, berkumur, dan meludah ke wastafel."
+    },
+    {
+     "step": 8,
+     "text": "Bilas sikat, kembalikan sikat dan gelas ke tempatnya, periksa senyum di cermin bersama."
+    }
+   ],
+   "controlOfError": "Jika ada sisa pasta di pipi atau sikat belum kembali, urutan belum selesai.",
+   "variations": [
+    "Dewasa menyikat ulang bagian yang terlewat setelah anak selesai (tahap bantu-berangsur).",
+    "Gunakan pengatur waktu dua menit atau lagu gigi.",
+    "Buat papan centang mandiri pagi dan malam."
+   ],
+   "readySigns": [
+    "Anak meminta menyikat gigi sendiri setelah melihat orang dewasa.",
+    "Anak sudah bisa berkumur dan meludah tanpa menelan.",
+    "Anak menikmati meniru rutinitas pagi orang dewasa."
+   ],
+   "struggleSigns": [
+    "Anak menelan pasta gigi atau menyikat terlalu cepat tanpa menyentuh semua sisi."
+   ],
+   "safetyNotes": [
+    "Gunakan pasta berfluoride sebesar butir beras dan awasi agar tidak ditelan.",
+    "Dewasa menyikat ulang atau memeriksa gigi anak hingga usia sekolah karena motorik halus belum lengkap.",
+    "Ganti sikat gigi setiap tiga bulan atau setelah sakit."
+   ],
+   "references": [
+    {
+     "title": "HealthyChildren.org (AAP) - Brushing Teeth",
+     "url": "https://www.healthychildren.org/English/healthy-living/oral-health/Pages/Brushing-Up-on-Oral-Health.aspx"
+    },
+    {
+     "title": "NHS - How to brush your teeth",
+     "url": "https://www.nhs.uk/live-well/healthy-teeth-and-gums/how-to-keep-your-teeth-clean/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-menata-bunga-sequence",
+   "title": "Menata Bunga di Vas: Urutan Penuh",
+   "summary": "Anak memotong tangkai bunga, mengupas daun yang akan tercelup, mengukur tinggi terhadap vas, dan menata bunga sendiri untuk meja keluarga.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "art-music",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "gunting aman",
+    "estetika",
+    "urutan kerja",
+    "merawat lingkungan"
+   ],
+   "objectives": [
+    "Melatih urutan panjang: memotong, menyesuaikan, menata, merapikan.",
+    "Mengasah estimasi tinggi dan kepekaan estetika.",
+    "Anak berkontribusi mempercantik ruang bersama."
+   ],
+   "materials": [
+    {
+     "name": "bunga segar atau bunga dari kebun",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gunting kecil aman untuk anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "vas kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "corong dan pitcher air kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan, alas, dan kain lap",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang sampah kecil untuk potongan daun",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 25,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Anak membawa nampan berisi vas kosong dan alat ke meja kerjanya."
+    },
+    {
+     "step": 2,
+     "text": "Anak menuang air ke vas sampai leher vas menggunakan corong."
+    },
+    {
+     "step": 3,
+     "text": "Anak memilih bunga satu per satu dan meletakkannya di alas kerja."
+    },
+    {
+     "step": 4,
+     "text": "Anak memegang tangkai di depan vas untuk memperkirakan tinggi yang pas."
+    },
+    {
+     "step": 5,
+     "text": "Anak memotong tangkai sepanjang ukuran tadi dengan gunting kecil."
+    },
+    {
+     "step": 6,
+     "text": "Anak mencabut daun yang posisinya akan tercelup di air."
+    },
+    {
+     "step": 7,
+     "text": "Anak menata bunga ke dalam vas, memutar-mutar agar tiap bunga terlihat."
+    },
+    {
+     "step": 8,
+     "text": "Anak membawa vas ke meja yang ditentukan dan menempatkannya dengan dua tangan."
+    },
+    {
+     "step": 9,
+     "text": "Anak mengembalikan alat, melap meja, dan membuang potongan daun ke tempat sampah."
+    }
+   ],
+   "controlOfError": "Bunga yang terlalu tinggi roboh atau daun di dalam air yang berubah busuk pada kunjungan berikutnya.",
+   "variations": [
+    "Gunakan bunga kering atau tangkai daun untuk latihan memotong awal.",
+    "Tambahkan satu titik warna: pilih dua warna bunga yang cocok.",
+    "Bandingkan dua penataan vas dan biarkan anak memilih yang ia rasa indah."
+   ],
+   "readySigns": [
+    "Anak memotong kertas atau daun dengan gunting dengan cukup terkendali.",
+    "Anak gemar merapikan meja dan memperhatikan bunga di rumah.",
+    "Anak bisa membawa nampan tanpa menumpahkan isi."
+   ],
+   "struggleSigns": [
+    "Anak memotong semua tangkai terlalu pendek sekaligus.",
+    "Anak menuang air terlalu penuh hingga meluap."
+   ],
+   "safetyNotes": [
+    "Gunting harus dipakai di bawah pengawasan; simpan di nampan dan kembalikan setelah selesai.",
+    "Air di vas cukup seperempat-sepertiga agar tidak berat dan tidak tumpah saat dibawa.",
+    "Periksa bunga tidak berduri atau beracun."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "WHO - Early childhood development",
+     "url": "https://www.who.int/health-topics/early-childhood-development"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-mencuci-meja-lengkap",
+   "title": "Mencuci Meja: Urutan Basah yang Panjang",
+   "summary": "Anak mencuci meja secara menyeluruh dengan spons, sabun, dan kain kering, lalu mengembalikan semua alat dan mengganti air kotor.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life"
+   ],
+   "skills": [
+    "urutan kerja",
+    "kekuatan lengan",
+    "konsentrasi",
+    "tanggung jawab"
+   ],
+   "objectives": [
+    "Melatih perencanaan: menyiapkan alat, bekerja, lalu membereskan.",
+    "Menguatkan otot lengan dan gerakan menyapu besar (circling).",
+    "Membangun tanggung jawab merawat lingkungan bersama."
+   ],
+   "materials": [
+    {
+     "name": "dua ember kecil (air sabun dan air bilas)",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "spons dan sikat kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kain lap kering",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pitcher kecil berisi air",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan/alas lantai dan apron",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 30,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Anak mengenakan apron dan membawa ember serta alat ke meja."
+    },
+    {
+     "step": 2,
+     "text": "Anak menuang air dari pitcher ke dua ember, satu diberi tetes sabun."
+    },
+    {
+     "step": 3,
+     "text": "Anak mencelupkan spons ke air sabun lalu mengusap meja dengan gerakan memutar dari sisi kiri ke kanan."
+    },
+    {
+     "step": 4,
+     "text": "Anak menyikat noda membandel dengan sikat kecil bila ada."
+    },
+    {
+     "step": 5,
+     "text": "Anak membilas spons di air bilas lalu mengusap ulang meja untuk membuang sisa sabun."
+    },
+    {
+     "step": 6,
+     "text": "Anak mengeringkan meja dengan kain lap dari ujung ke ujung."
+    },
+    {
+     "step": 7,
+     "text": "Anak memeriksa meja dengan telapak tangan: masihkah ada bagian basah?"
+    },
+    {
+     "step": 8,
+     "text": "Anak membawa ember kotor ke bak cuci, menuangnya perlahan, dan menaruh alat untuk dikeringkan."
+    },
+    {
+     "step": 9,
+     "text": "Anak melepas apron, melipatnya, dan mengembalikan semua alat ke raknya."
+    }
+   ],
+   "controlOfError": "Noda yang tersisa terlihat jelas saat meja mengering; sisa sabun terasa licin di telapak tangan.",
+   "variations": [
+    "Cuci permukaan kecil dulu seperti nampan atau kursi plastik.",
+    "Gunakan spons berwarna berbeda untuk sabun dan bilas.",
+    "Bagi tugas: anak mencuci, dewasa membantu menuang air kotor."
+   ],
+   "readySigns": [
+    "Anak sudah mahir melap tumpahan dengan kain.",
+    "Anak dapat membawa dua ember kecil tanpa tumpah.",
+    "Anak menikmati bermain air dengan tujuan."
+   ],
+   "struggleSigns": [
+    "Anak berhenti di tengah dan meja setengah basah.",
+    "Anak memainkan air sabun hingga lupa urutan."
+   ],
+   "safetyNotes": [
+    "Gunakan sedikit air saja dan sabun tidak beracun; lantai sekitar bisa licin.",
+    "Dampingi saat menuang air kotor agar tidak terpeleset.",
+    "Pastikan meja stabil dan tidak mudah bergeser."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "AMI USA - Montessori Parenting",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-metal-inset-generik",
+   "title": "Metal Insets: Menjiplak dan Mengarsir Bentuk",
+   "summary": "Anak menjiplak bingkai dan bidang logam, lalu mengarsir mengikuti garis dengan gerakan halus berulang sebagai persiapan menulis.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "sensorial",
+    "language"
+   ],
+   "skills": [
+    "genggaman pensil",
+    "koordinasi tangan-mata",
+    "kontrol gerak halus",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Memperkuat cengkeraman tiga jari yang dipakai saat menulis.",
+    "Melatih gerakan arsir searah dan tekanan yang terkontrol.",
+    "Mendalami pengenalan bentuk geometris lewat tangan."
+   ],
+   "materials": [
+    {
+     "name": "set metal inset (atau versi karton/kayu DIY dengan bingkai dan bidang)",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "pensil warna",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kertas gambar dan papan tulis kecil/clipboard",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 25,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Anak membawa baki berisi satu inset, dua lembar kertas, dan pensil ke mejanya."
+    },
+    {
+     "step": 2,
+     "text": "Anak meletakkan bingkai di kertas dan menjiplak tepi dalamnya dengan satu tangan menahan bingkai."
+    },
+    {
+     "step": 3,
+     "text": "Anak mengambil bidang (inset) lalu menjiplaknya tepat di tengah bentuk pertama."
+    },
+    {
+     "step": 4,
+     "text": "Anak mengarsir bidang dengan garis-garis sejajar dari atas ke bawah tanpa keluar garis."
+    },
+    {
+     "step": 5,
+     "text": "Anak mengganti pensil warna dan mengarsir ulang di sisi lain untuk efek gradasi bila mahir."
+    },
+    {
+     "step": 6,
+     "text": "Anak membandingkan hasilnya dengan bentuk aslinya lalu memberi nama bentuk."
+    },
+    {
+     "step": 7,
+     "text": "Anak merapikan alat dan menyimpan karyanya di berkas karya."
+    }
+   ],
+   "controlOfError": "Arsir yang keluar dari garis atau terlihat tidak rata langsung terlihat pada karya.",
+   "variations": [
+    "Mulai dari bentuk lingkaran sebelum bentuk segitiga atau segilima.",
+    "Arsir dengan garis zig-zag dulu sebelum garis sejajar penuh.",
+    "Ubah karya menjadi kartu bentuk: potong dan pasangkan dengan benda di rumah."
+   ],
+   "readySigns": [
+    "Anak menggenggam pensil dengan tiga jari tanpa bantuan.",
+    "Anak menikmati menggambar dan mengulang gerakan dengan sabar.",
+    "Anak sudah memahami konsep 'di dalam garis'."
+   ],
+   "struggleSigns": [
+    "Anak menekan pensil terlalu kuat hingga kertas robek.",
+    "Anak mengarsir acak tanpa arah dan cepat menyerah."
+   ],
+   "safetyNotes": [
+    "Pensil dipakai dengan pengawasan; jaga ujung runcing.",
+    "Duduk tegak dan meja stabil agar tangan bebas bergerak."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP) - Early Literacy",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/Learning-to-Read.html"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-sandpaper-letters-3period",
+   "title": "Huruf Amplas dengan Pelajaran Tiga Periode",
+   "summary": "Anak mengenal bentuk dan bunyi huruf lewat huruf amplas: menelusuri sambil mengucapkan bunyi, lalu diuji lewat pelajaran tiga periode.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "fonik awal",
+    "motorik halus pra-tulis",
+    "memori visual-kinestetik",
+    "kosakata bunyi"
+   ],
+   "objectives": [
+    "Mengaitkan bentuk huruf dengan bunyinya lewat sentuhan dan gerak.",
+    "Melatih urutan pelajaran tiga periode: penamaan, pengenalan, ingatan.",
+    "Mempersiapkan tangan untuk menulis sebelum membaca."
+   ],
+   "materials": [
+    {
+     "name": "tiga huruf amplas (mulai huruf yang sering dipakai dan berbunyi jelas, hindari mirip seperti b/d)",
+     "fromHome": false,
+     "optional": false
+    },
+    {
+     "name": "nampan pasir atau tray garam untuk melacak bentuk",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 7,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "PERIODE 1 - Penamaan: dewasa mengambil satu huruf, menelusuri dengan dua jari sambil mengucapkan bunyinya 'a... a... a', lalu mengundang anak menelusuri."
+    },
+    {
+     "step": 2,
+     "text": "PERIODE 1 - Ulangi dengan huruf kedua dan ketiga, tiap huruf ditelusuri 2-3 kali sambil bersuara."
+    },
+    {
+     "step": 3,
+     "text": "PERIODE 2 - Pengenalan (mengenali): dewasa bertanya 'mana yang bunyinya s?' - anak menunjuk, menyentuh, atau meletakkan huruf di tempat yang diminta; bervariasi pertanyaan dan geser posisi huruf."
+    },
+    {
+     "step": 4,
+     "text": "PERIODE 2 - Beri waktu anak mengulang penelusuran sebanyak yang ia mau; jika keliru, tidak dikoreksi, cukup ulangi periode 1 nanti."
+    },
+    {
+     "step": 5,
+     "text": "PERIODE 3 - Ingatan (menyebut): dewasa menunjuk huruf dan bertanya 'ini bunyi apa?' - anak menjawab sendiri."
+    },
+    {
+     "step": 6,
+     "text": "Tutup dengan memberi tahu anak bahwa besok bisa bermain lagi; simpan huruf di tempatnya."
+    },
+    {
+     "step": 7,
+     "text": "Ekstensi: anak menelusuri huruf di nampan pasir atau menulis di udara sambil mengucapkan bunyi."
+    }
+   ],
+   "controlOfError": "Anak sendiri dapat menunjuk huruf yang benar saat periode 2 tanpa ragu.",
+   "variations": [
+    "Mulai satu huruf saja untuk anak yang baru mulai.",
+    "Gunakan huruf dari nama anak sebagai huruf pertama.",
+    "Keluarkan benda kecil yang bunyi awalnya cocok dengan huruf."
+   ],
+   "readySigns": [
+    "Anak tertarik pada huruf di buku, papan, atau nama sendiri.",
+    "Anak dapat menelusuri dengan dua jari tanpa bantuan.",
+    "Anak mengucapkan bunyi huruf secara konsisten pada objek sehari-hari."
+   ],
+   "struggleSigns": [
+    "Anak menghafal nama huruf tapi tidak mengaitkan bunyinya.",
+    "Anak lelah, melihat huruf terbalik, atau tidak fokus - cukup satu huruf dulu."
+   ],
+   "safetyNotes": [
+    "Huruf amplas harus bersih dan tidak ada bagian amplas yang terkelupas.",
+    "Pilih huruf dengan bunyi awal jelas; hindari menggabungkan huruf yang mirip bentuk dalam satu sesi."
+   ],
+   "references": [
+    {
+     "title": "NHS - Learning to talk / letters and sounds",
+     "url": "https://www.nhs.uk/start-for-life/baby/learning-to-talk/"
+    },
+    {
+     "title": "HealthyChildren.org (AAP) - Early Literacy",
+     "url": "https://www.healthychildren.org/English/ages-stages/preschool/Pages/Learning-to-Read.html"
+    },
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-pelajaran-tiga-langkah-benda",
+   "title": "Pelajaran Tiga Langkah dengan Benda Rumah",
+   "summary": "Anak mengenal tiga benda baru lewat pelajaran tiga langkah: diberi nama, mengenali dengan menunjuk, lalu menyebut namanya sendiri.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "kosakata",
+    "memori ingatan",
+    "fokus mendengar",
+    "percaya diri berbicara"
+   ],
+   "objectives": [
+    "Memperkenalkan kosakata baru secara bertahap sesuai kemampuan ingatan anak.",
+    "Melatih anak mengenali benda hanya dari namanya.",
+    "Membangun kebanggaan saat anak bisa menyebut nama sendiri."
+   ],
+   "materials": [
+    {
+     "name": "tiga benda dari rumah yang belum dikenal namanya (mis. saringan, termometer, gunting kertas)",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "meja atau alas kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 3,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "LANGKAH 1 - Penamaan: 'Ini saringan' sambil menunjuk; ulangi untuk tiga benda dengan kalimat pendek."
+    },
+    {
+     "step": 2,
+     "text": "LANGKAH 1 - Anak menyentuh dan mengulang namanya, satu per satu, tanpa diburu."
+    },
+    {
+     "step": 3,
+     "text": "LANGKAH 2 - Pengenalan: 'Mana saringan?' - anak menunjuk; 'taruh saringan di atas meja' - anak bergerak membawanya."
+    },
+    {
+     "step": 4,
+     "text": "LANGKAH 2 - Variasikan perintah: 'pegang', 'sembunyikan di tangan', 'letakkan di belakang punggung'; geser posisi benda."
+    },
+    {
+     "step": 5,
+     "text": "LANGKAH 3 - Penyebutan: dewasa menunjuk satu benda dan diam; anak menyebut namanya sendiri."
+    },
+    {
+     "step": 6,
+     "text": "Jika anak keliru, jangan katakan 'salah'; diam, ulangi langkah 1 di kesempatan lain."
+    },
+    {
+     "step": 7,
+     "text": "Tutup dengan menepuk benda: 'kamu sudah tahu semuanya!' lalu merapikan benda ke tempatnya."
+    }
+   ],
+   "controlOfError": "Anak dapat menunjuk dan menyebut dengan benar pada langkah 2 dan 3 tanpa bantuan.",
+   "variations": [
+    "Ganti tema benda: alat dapur, alat kebun, peralatan mandi.",
+    "Untuk anak yang sudah membaca, ganti benda dengan kartu kata.",
+    "Gunakan untuk kosakata daerah atau bahasa kedua di rumah."
+   ],
+   "readySigns": [
+    "Anak gemar bertanya 'ini apa?' pada benda di rumah.",
+    "Anak dapat menunjuk gambar benda saat diberi nama.",
+    "Anak menikmati permainan 'mana...?'."
+   ],
+   "struggleSigns": [
+    "Anak hanya hafal urutan posisi, bukan nama: geser posisi benda saat langkah 2.",
+    "Anak tampak lelah: kurangi menjadi dua benda."
+   ],
+   "safetyNotes": [
+    "Pilih benda aman, tidak tajam dan tidak mudah pecah.",
+    "Awasi benda kecil bila ada adik bayi di rumah."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "NHS Start for Life - activities for kids",
+     "url": "https://www.nhs.uk/start-for-life/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-useful-exercise-menyapu",
+   "title": "Latihan Berguna: Menyapu Sampah ke Satu Titik",
+   "summary": "Anak menyapu remah atau pasir yang ditaburkan ke satu titik lalu memindahkannya ke tempat sampah - latihan berguna yang benar-benar membersihkan.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life"
+   ],
+   "skills": [
+    "koordinasi tangan-mata",
+    "gerak menyapu ke satu arah",
+    "tanggung jawab",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Melatih gerakan menyapu ke satu titik yang terkendali.",
+    "Membangun kebiasaan ikut membersihkan rumah sungguhan.",
+    "Memperpanjang fokus melalui pekerjaan berulang yang bermakna."
+   ],
+   "materials": [
+    {
+     "name": "sapu kecil sesuai tinggi anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pengki kecil dan kuas sapuan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "selotip untuk menandai kotak sapuan atau sudut",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "tempat sampah kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Dewasa menaburkan remah/kertas kecil di area lantai dan menempelkan tanda kotak sapuan."
+    },
+    {
+     "step": 2,
+     "text": "Anak mengambil sapu kecil dan berdiri dengan satu kaki sedikit di depan."
+    },
+    {
+     "step": 3,
+     "text": "Anak menyapu dengan gerakan pendek dari tepi luar menuju kotak tanda, sisi sapu tetap di lantai."
+    },
+    {
+     "step": 4,
+     "text": "Anak memeriksa: ada yang lolos di pinggir? Sapu ulang dari tepi."
+    },
+    {
+     "step": 5,
+     "text": "Ketika sampah terkumpul di satu titik, anak mengambil pengki dan kuas."
+    },
+    {
+     "step": 6,
+     "text": "Anak menyapukan sampah ke pengki dengan kuas, termasuk butir yang menempel."
+    },
+    {
+     "step": 7,
+     "text": "Anak membuang isi pengki ke tempat sampah lalu mengembalikan sapu, pengki, dan kuas ke tempatnya."
+    },
+    {
+     "step": 8,
+     "text": "Anak dan dewasa memeriksa lantai bersama: bersihkah sudah? Kotak tanda dilepas."
+    }
+   ],
+   "controlOfError": "Sisa remah yang masih terlihat di lantai menunjukkan sapuan belum selesai; anak melihat sendiri dan mengulang.",
+   "variations": [
+    "Ganti material: daun di teras, pasir di area outdoor, potongan kertas setelah kerajinan.",
+    "Sapu bersama saat memang membutuhkan (setelah makan, setelah bermain) agar latihan berguna.",
+    "Anak lebih besar menyapu area lebih luas tanpa tanda bantu."
+   ],
+   "readySigns": [
+    "Anak meniru orang dewasa menyapu atau tertarik saat melihat sapu.",
+    "Anak dapat mengangkat dan memegang sapu dengan dua tangan.",
+    "Anak senang meniru 'membereskan' setelah bermain."
+   ],
+   "struggleSigns": [
+    "Anak menyapu dengan gerakan acak yang mendorong sampah ke mana-mana.",
+    "Anak menyerah sebelum sampah terkumpul: kecilkan area sapuan."
+   ],
+   "safetyNotes": [
+    "Pilih sapu ringan dengan gagang tanpa ujung tajam.",
+    "Area sapuan bebas dari lantai licin dan barang mudah pecah."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-folding-sequence",
+   "title": "Urutan Melipat Kain: Persegi menjadi Segitiga",
+   "summary": "Anak melipat kain persegi mengikuti garis jahit dua kali sampai menjadi segitiga kecil, lalu membukanya kembali dan memeriksa hasil lipatannya.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "practical-life",
+    "sensorial"
+   ],
+   "skills": [
+    "motorik halus",
+    "memahami lipatan dua dimensi",
+    "kesabaran",
+    "kerapian"
+   ],
+   "objectives": [
+    "Melatih tangan melipat dengan tepi yang bertemu rapi.",
+    "Membangun konsep lipatan dua dan empat secara konkret.",
+    "Mempersiapkan anak melipat pakaian sendiri."
+   ],
+   "materials": [
+    {
+     "name": "5-6 kain persegi kecil dengan garis jahit di tengah (warna berbeda)",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang atau baki",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Anak membawa keranjang kain ke meja dan meletakkan satu kain di alas."
+    },
+    {
+     "step": 2,
+     "text": "Anak merapikan kain dengan mengusap dari tengah ke tepi agar datar."
+    },
+    {
+     "step": 3,
+     "text": "Anak memegang sudut kanan bawah, memutarnya ke sudut kiri atas sampai tepi bertemu tepi."
+    },
+    {
+     "step": 4,
+     "text": "Anak mengusap lipatan dengan dua jari agar garis lipatan tajam dan rapi."
+    },
+    {
+     "step": 5,
+     "text": "Anak melipat sekali lagi dari sudut kanan ke kiri mengikuti garis jahit."
+    },
+    {
+     "step": 6,
+     "text": "Anak mengusap hasil lipatan lalu membaliknya dan melihat bentuk segitiga kecilnya."
+    },
+    {
+     "step": 7,
+     "text": "Anak membuka kain kembali dan memeriksa: apakah garis lipatan cocok dengan garis jahit?"
+    },
+    {
+     "step": 8,
+     "text": "Anak mengulang untuk kain berikutnya, menumpuk hasil lipatan di keranjang."
+    },
+    {
+     "step": 9,
+     "text": "Semua kain kembali ke keranjang dan keranjang ke raknya."
+    }
+   ],
+   "controlOfError": "Garis jahit di tengah kain adalah tanda: jika lipatan tidak pas, tepi tidak akan bertemu dan terlihat miring.",
+   "variations": [
+    "Melipat serbet saat menata meja makan.",
+    "Melipat pakaian kecil: celana dalam, kaos.",
+    "Ganti kain persegi dengan kain persegi panjang untuk lipatan tiga bagian."
+   ],
+   "readySigns": [
+    "Anak melihat orang dewasa melipat pakaian dan menirukan.",
+    "Anak senang merapikan dan menata benda.",
+    "Anak dapat memadankan tepi dua benda."
+   ],
+   "struggleSigns": [
+    "Anak menggulung bukan melipat, atau lipatan tidak bertemu tepi.",
+    "Anak belum siap: mulai dengan kain lebih besar dan garis lebih tebal."
+   ],
+   "safetyNotes": [
+    "Kain bersih dan kering; cuci berkala.",
+    "Cukup ringan agar tidak berat di tangan anak."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-menyiapkan-meja-makan-urutan",
+   "title": "Menyiapkan Meja Makan: Urutan Lengkap",
+   "summary": "Anak menyiapkan meja makan dari alas, piring, sendok, gelas sampai lipatan serbet, satu per satu sesuai urutan, untuk seluruh anggota keluarga.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "practical-life",
+    "grace-courtesy"
+   ],
+   "skills": [
+    "urutan kerja",
+    "perawatan keluarga",
+    "estetika",
+    "perencanaan"
+   ],
+   "objectives": [
+    "Melatih urutan panjang dengan banyak benda yang harus lengkap.",
+    "Membangun kontribusi nyata anak bagi keluarga.",
+    "Menguatkan hitungan: satu alas untuk satu orang."
+   ],
+   "materials": [
+    {
+     "name": "alas meja (placemat) per orang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "piring, sendok, garpu, gelas",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "serbet kain kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "rak/nampan khusus peralatan makan anak",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Anak mengambil nampan berisi alas, piring, dan peralatan dari raknya."
+    },
+    {
+     "step": 2,
+     "text": "Anak menghitung berapa orang yang akan makan bersama hari ini."
+    },
+    {
+     "step": 3,
+     "text": "Anak meletakkan satu alas untuk setiap orang, mulai dari kursi pertama."
+    },
+    {
+     "step": 4,
+     "text": "Anak menata piring di atas alas satu per satu sambil menghitung."
+    },
+    {
+     "step": 5,
+     "text": "Anak meletakkan sendok di kanan piring dan garpu di kiri piring."
+    },
+    {
+     "step": 6,
+     "text": "Anak meletakkan gelas di atas kanan piring, dekat sendok."
+    },
+    {
+     "step": 7,
+     "text": "Anak melipat serbet kecil dan meletakkannya di samping piring."
+    },
+    {
+     "step": 8,
+     "text": "Anak memeriksa ulang: apakah setiap tempat lengkap? Apakah ada yang terlewat?"
+    },
+    {
+     "step": 9,
+     "text": "Anak mengundang keluarga: 'makan sudah siap!' lalu duduk di tempatnya."
+    }
+   ],
+   "controlOfError": "Setiap tempat makan harus sama lengkap; tempat yang kurang sendok atau gelas langsung terlihat.",
+   "variations": [
+    "Anak juga membantu membawa makanan ringan yang tidak panas ke meja.",
+    "Ganti dengan menata meja sarapan sebagai rutinitas pagi.",
+    "Setelah makan, anak menjadi orang yang pertama membawa piring ke bak cuci."
+   ],
+   "readySigns": [
+    "Anak tertarik ikut menata meja saat melihat orang dewasa.",
+    "Anak dapat menghitung anggota keluarga.",
+    "Anak bisa membawa piring plastik atau melamin yang tidak mudah pecah."
+   ],
+   "struggleSigns": [
+    "Anak membawa satu per satu terlalu lama sehingga makanan sudah habis ditata."
+   ],
+   "safetyNotes": [
+    "Mulailah dengan peralatan yang tidak mudah pecah; gelas kaca boleh setelah anak terbiasa.",
+    "Jauhkan area menata dari meja yang baru saja berisi makanan panas."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "3-4y-grace-courtesy-peran-tamu",
+   "title": "Bermain Peran: Menerima Tamu Rumah",
+   "summary": "Anak dan dewasa bermain peran kedatangan tamu: membukakan pintu, menyapa, mengundang duduk, menawarkan minum, dan berpamitan - urutan kesopanan yang utuh.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy",
+    "language"
+   ],
+   "skills": [
+    "kesopanan sosial",
+    "empati",
+    "percaya diri bersosialisasi",
+    "urutan sosial"
+   ],
+   "objectives": [
+    "Melatih rangkaian sopan santun untuk tamu yang datang ke rumah.",
+    "Membangun kepercayaan diri anak saat bertemu orang baru.",
+    "Menanamkan empati: memikirkan kenyamanan orang lain."
+   ],
+   "materials": [
+    {
+     "name": "kursi kecil dan meja kecil sebagai area tamu",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "teko/gelas mainan atau gelas kecil asli",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kerudung/topeng lelucon (opsional) untuk karakter tamu",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 20,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Dewasa mengetuk pintu dan berperan sebagai tamu; anak membukakan pintu."
+    },
+    {
+     "step": 2,
+     "text": "Anak menyapa tamu dengan senyum: 'selamat datang, silakan masuk'."
+    },
+    {
+     "step": 3,
+     "text": "Anak mengundang tamu duduk di kursi tamu."
+    },
+    {
+     "step": 4,
+     "text": "Anak bertanya: 'mau minum? kami punya air dan teh' lalu membawa gelas dengan dua tangan."
+    },
+    {
+     "step": 5,
+     "text": "Anak mengobrol singkat: 'bagaimana kabar Ibu? apakah perjalanan tidak lelah?'"
+    },
+    {
+     "step": 6,
+     "text": "Saat tamu pamit, anak mengantar ke pintu dan mengucapkan terima kasih telah datang."
+    },
+    {
+     "step": 7,
+     "text": "Anak menutup pintu dengan lembut dan merapikan gelas tamu."
+    },
+    {
+     "step": 8,
+     "text": "Bertukar peran: anak menjadi tamu dan mempraktikkan sisi lain: bagaimana menjadi tamu yang baik."
+    }
+   ],
+   "controlOfError": "Anak dan dewasa sama-sama tahu urutan yang hilang: mis. tamu sudah pamit tapi belum diantar ke pintu.",
+   "variations": [
+    "Bermain 'tamu dari negara lain' yang menyapa dengan bahasa daerah/Inggris sederhana.",
+    "Bermain peran situasi sulit: tamu menolak minum, atau tamu datang saat kita sibuk.",
+    "Praktikkan sungguhan saat keluarga atau tetangga benar-benar berkunjung."
+   ],
+   "readySigns": [
+    "Anak mulai menyapa orang dewasa dengan sendirinya.",
+    "Anak menikmati bermain peran dan bercerita.",
+    "Anak meniru kebiasaan menyapa keluarga."
+   ],
+   "struggleSigns": [
+    "Anak hanya hafal frasa tanpa memahami situasi: variasikan skenario.",
+    "Anak malu-malu: biarkan anak menjadi 'tamunya' dulu sebelum menjadi tuan rumah."
+   ],
+   "safetyNotes": [
+    "Gunakan gelas plastik atau kaca tebal untuk anak yang belum mantap.",
+    "Pilih area bermain bebas dari benda mudah pecah."
+   ],
+   "references": [
+    {
+     "title": "Association Montessori Internationale",
+     "url": "https://montessori-ami.org/"
+    },
+    {
+     "title": "CDC Developmental Milestones",
+     "url": "https://www.cdc.gov/ncbddd/actearly/milestones/index.html"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-math-batang-angka-rumah",
+   "title": "Batang Angka Versi Rumah",
+   "summary": "Anak menyusun sepuluh batang dari 10 cm sampai 1 m untuk melihat urutan panjang dan menghubungkannya dengan jumlah.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "urutan panjang",
+    "korespondensi satu-satu",
+    "konsentrasi"
+   ],
+   "objectives": [
+    "Menyusun sepuluh batang dari pendek ke panjang.",
+    "Menghubungkan kenaikan panjang dengan urutan angka 1 sampai 10."
+   ],
+   "materials": [
+    {
+     "name": "10 blok kayu bertanda panjang 10 cm, 20 cm, sampai 1 m",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "selotip kertas untuk menandai ujung dan angka 1-10",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "karpet kerja",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 20,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan sepuluh batang acak di karpet dengan ruang untuk menyusun."
+    },
+    {
+     "step": 2,
+     "text": "Pilih batang terpendek sebagai angka satu dan taruh di kiri."
+    },
+    {
+     "step": 3,
+     "text": "Cari batang berikutnya, rapatkan ujungnya, lalu lanjutkan sampai batang terpanjang."
+    },
+    {
+     "step": 4,
+     "text": "Sentuh satu segmen/tanda pada tiap batang sambil menyebut satu sampai sepuluh."
+    }
+   ],
+   "controlOfError": "Ujung batang yang tidak membentuk tangga naik atau tanda panjang yang tidak cocok dengan urutan angka menunjukkan susunan keliru.",
+   "variations": [
+    "Mulai hanya dengan lima batang pertama.",
+    "Minta anak mencari benda rumah yang kira-kira sepanjang satu batang."
+   ],
+   "readySigns": [
+    "Anak dapat membandingkan dua batang dengan merapatkan ujungnya.",
+    "Anak membawa batang panjang dengan dua tangan dan menjaga area kerja."
+   ],
+   "struggleSigns": [
+    "Anak memilih berdasarkan warna tanda saja.",
+    "Anak menumpuk batang atau kehilangan urutan kiri ke kanan."
+   ],
+   "safetyNotes": [
+    "Gunakan kayu ringan, ujung tumpul, dan dampingi saat membawa batang 1 m."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop - Free Resources",
+     "url": "https://www.montessoriprintshopusa.com/free-montessori-printables/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-math-angka-kasar-karton",
+   "title": "Angka Kasar dari Karton dan Pasir",
+   "summary": "Anak meraba angka 0 sampai 9 yang dibuat dari karton dan pasir, lalu menelusurinya dengan dua jari.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "ingatan bentuk angka",
+    "persiapan menulis",
+    "diskriminasi taktil"
+   ],
+   "objectives": [
+    "Mengenali bentuk angka melalui sentuhan dan penglihatan.",
+    "Menelusuri angka dengan arah gerak yang konsisten."
+   ],
+   "materials": [
+    {
+     "name": "kartu karton angka 0-9",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasir halus atau semolina dan lem",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 30,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Tunjukkan satu kartu dan telusuri angka dengan telunjuk serta jari tengah."
+    },
+    {
+     "step": 2,
+     "text": "Ucapkan nama angka tanpa menekan permukaan."
+    },
+    {
+     "step": 3,
+     "text": "Minta anak menelusuri, lalu menggambar angka di pasir."
+    },
+    {
+     "step": 4,
+     "text": "Campurkan dua atau tiga kartu untuk dicocokkan."
+    }
+   ],
+   "controlOfError": "Jari terasa keluar dari jalur pasir atau bentuk pada gambar pasir tidak kembali ke garis kartu sehingga anak dapat memperbaikinya sendiri.",
+   "variations": [
+    "Pasangkan kartu dengan jumlah benda yang sesuai.",
+    "Gunakan kain penutup untuk menebak angka berdasarkan rabaan."
+   ],
+   "readySigns": [
+    "Anak dapat mengikuti arah garis tanpa menggaruk kartu.",
+    "Anak menyebut nama angka setelah merabanya."
+   ],
+   "struggleSigns": [
+    "Anak menggosok seluruh kartu tanpa mengikuti bentuk.",
+    "Pasir lepas atau lem belum kering."
+   ],
+   "safetyNotes": [
+    "Gunakan pasir bersih, lem tidak beracun, dan awasi agar bahan tidak masuk mulut."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Info Montessori",
+     "url": "https://www.infomontessori.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-math-spindle-box-kardus",
+   "title": "Spindle Box dari Kardus dan 45 Lidi",
+   "summary": "Anak mengisi ruang angka 0 sampai 9 dengan jumlah lidi yang tepat dan melihat bahwa nol tidak berisi benda.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "kuantitas 0-9",
+    "korespondensi satu-satu",
+    "klasifikasi"
+   ],
+   "objectives": [
+    "Menghubungkan simbol angka dengan jumlah konkret.",
+    "Memahami bahwa nol berarti tidak ada benda."
+   ],
+   "materials": [
+    {
+     "name": "kotak kardus bersekat 0-9 dengan label angka besar",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "45 lidi pendek berujung tumpul",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "karet gelang lebar untuk mengikat kelompok",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 15,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan kotak berurutan dan lidi di sebelahnya."
+    },
+    {
+     "step": 2,
+     "text": "Baca angka satu, ambil satu lidi, lalu masukkan ke sekat satu."
+    },
+    {
+     "step": 3,
+     "text": "Ulangi dengan menyentuh satu lidi untuk setiap hitungan sampai sembilan."
+    },
+    {
+     "step": 4,
+     "text": "Buka sekat nol dan amati bahwa sekat itu tetap kosong."
+    }
+   ],
+   "controlOfError": "Jumlah lidi di setiap sekat harus sesuai label; lidi yang tersisa atau sekat yang kelebihan menunjukkan hitungan perlu diulang.",
+   "variations": [
+    "Ikat setiap kelompok setelah selesai.",
+    "Tutup label dan minta anak mengambil sekat berdasarkan jumlah benda."
+   ],
+   "readySigns": [
+    "Anak memindahkan satu lidi setiap kali menyebut angka.",
+    "Anak memahami sekat nol tidak perlu diisi."
+   ],
+   "struggleSigns": [
+    "Anak mengambil segenggam lidi tanpa menghitung.",
+    "Anak mencampur kembali sekat sebelum memeriksa."
+   ],
+   "safetyNotes": [
+    "Amplas ujung lidi, gunakan kotak yang kokoh, dan awasi agar lidi tidak diarahkan ke wajah."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop - Free Resources",
+     "url": "https://www.montessoriprintshopusa.com/free-montessori-printables/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-math-kartu-counter",
+   "title": "Kartu Angka dan Keping Hitung",
+   "summary": "Anak menyusun kartu 1 sampai 10 lalu menaruh keping hitung berpasangan untuk melihat bilangan genap dan ganjil.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "math"
+   ],
+   "skills": [
+    "urutan angka",
+    "kuantitas",
+    "genap dan ganjil"
+   ],
+   "objectives": [
+    "Mencocokkan kartu angka dengan jumlah counter.",
+    "Mengamati pasangan yang rapi dan counter yang tersisa."
+   ],
+   "materials": [
+    {
+     "name": "kartu angka 1-10",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "55 tutup botol besar sebagai counter",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja bergaris",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 15,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Susun kartu dari 1 sampai 10 dengan jarak yang sama."
+    },
+    {
+     "step": 2,
+     "text": "Letakkan keping hitung di bawah kartu satu per satu."
+    },
+    {
+     "step": 3,
+     "text": "Atur keping hitung dua-dua secara vertikal di bawah setiap kartu."
+    },
+    {
+     "step": 4,
+     "text": "Perhatikan baris yang berpasangan dan keping yang tersisa."
+    }
+   ],
+   "controlOfError": "Keping hitung yang tersisa atau jumlah keping yang tidak sama dengan angka pada kartu terlihat langsung; pasangan genap juga harus menutup rapi.",
+   "variations": [
+    "Mulai dari kartu 1-5.",
+    "Minta anak menyebut apakah angka terakhir memiliki pasangan."
+   ],
+   "readySigns": [
+    "Anak memindahkan keping hitung satu per satu.",
+    "Anak dapat memeriksa ulang dengan menghitung barisnya."
+   ],
+   "struggleSigns": [
+    "Anak menaruh keping hitung tanpa pola pasangan.",
+    "Anak melompati kartu saat menyusun."
+   ],
+   "safetyNotes": [
+    "Gunakan keping hitung yang lebih besar dari mulut anak dan hindari benda kecil untuk anak yang masih memasukkan benda ke mulut."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Info Montessori",
+     "url": "https://www.infomontessori.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-sensorial-kubus-pink-diy",
+   "title": "Kubus Pink DIY Bertingkat",
+   "summary": "Anak menyusun sepuluh kubus dari yang terbesar ke terkecil untuk membangun persepsi dimensi secara visual dan otot.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "sensorial"
+   ],
+   "skills": [
+    "diskriminasi ukuran",
+    "koordinasi",
+    "urutan"
+   ],
+   "objectives": [
+    "Mengurutkan sepuluh kubus berdasarkan ukuran.",
+    "Membangun menara stabil dengan sisi yang sejajar."
+   ],
+   "materials": [
+    {
+     "name": "10 kubus kardus/kayu dicat merah muda dengan sisi 1-10 cm",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas datar",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 30,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Sebarkan kubus acak di atas alas."
+    },
+    {
+     "step": 2,
+     "text": "Pilih kubus terbesar sebagai dasar."
+    },
+    {
+     "step": 3,
+     "text": "Temukan kubus berikutnya dan letakkan tepat di tengah."
+    },
+    {
+     "step": 4,
+     "text": "Lanjutkan sampai kubus terkecil di puncak, lalu bongkar dari atas."
+    }
+   ],
+   "controlOfError": "Kubus yang tertukar membuat sisi menara miring atau bertingkat tidak konsisten; kubus juga mudah jatuh bila tidak berpusat.",
+   "variations": [
+    "Susun berdampingan seperti tangga.",
+    "Tutup mata hanya setelah anak menguasai penyusunan visual."
+   ],
+   "readySigns": [
+    "Anak membandingkan dua kubus sebelum memilih.",
+    "Anak membawa kubus besar dengan dua tangan."
+   ],
+   "struggleSigns": [
+    "Anak menumpuk tanpa memperhatikan ukuran dasar.",
+    "Menara sering roboh karena alas tidak datar."
+   ],
+   "safetyNotes": [
+    "Pastikan kubus ringan, kuat, bebas staples, dan sediakan ruang agar jatuh tidak mengenai kaki."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Info Montessori",
+     "url": "https://www.infomontessori.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-sensorial-tangga-cokelat-strip",
+   "title": "Tangga Cokelat dari Blok Strip",
+   "summary": "Anak mengurutkan sepuluh strip cokelat dengan lebar atau tebal bertahap untuk melihat gradasi dimensi.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "sensorial"
+   ],
+   "skills": [
+    "perbandingan ketebalan",
+    "urutan",
+    "koordinasi mata-tangan"
+   ],
+   "objectives": [
+    "Menyusun strip dari paling tipis ke paling tebal.",
+    "Menggunakan bahasa tipis, tebal, dan di antara."
+   ],
+   "materials": [
+    {
+     "name": "10 blok strip kayu/kardus cokelat dengan lebar 1-10 cm dan panjang sama",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja panjang",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 25,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan strip acak dengan sisi panjang sejajar."
+    },
+    {
+     "step": 2,
+     "text": "Cari strip paling tipis dan letakkan di kiri."
+    },
+    {
+     "step": 3,
+     "text": "Tambahkan strip berikutnya dengan sisi panjang dan ujung rata."
+    },
+    {
+     "step": 4,
+     "text": "Telusuri tangga dari tipis ke tebal dengan dua jari."
+    }
+   ],
+   "controlOfError": "Ujung strip yang tidak rata atau celah pada tangga memperlihatkan urutan yang salah.",
+   "variations": [
+    "Bandingkan strip yang berdekatan dengan meraba sisi atas.",
+    "Gunakan tiga strip dulu sebelum sepuluh."
+   ],
+   "readySigns": [
+    "Anak menyelaraskan ujung strip sebelum membandingkan.",
+    "Anak memilih strip yang tepat tanpa hanya mengandalkan warna."
+   ],
+   "struggleSigns": [
+    "Anak mencampur ukuran panjang dan lebar.",
+    "Anak menggeser strip tanpa membuat barisan."
+   ],
+   "safetyNotes": [
+    "Gunakan strip ringan dengan tepi halus dan tidak mudah pecah."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop - Free Resources",
+     "url": "https://www.montessoriprintshopusa.com/free-montessori-printables/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-sensorial-kotak-warna-gradasi",
+   "title": "Kotak Warna Gradasi 3-4 Shade",
+   "summary": "Anak memasangkan dan mengurutkan kartu warna buatan rumah dari muda ke tua dalam tiga atau empat shade.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "sensorial"
+   ],
+   "skills": [
+    "diskriminasi visual",
+    "gradasi",
+    "bahasa warna"
+   ],
+   "objectives": [
+    "Mencocokkan warna yang sama.",
+    "Mengurutkan tingkat warna dari paling muda ke paling tua."
+   ],
+   "materials": [
+    {
+     "name": "Kartu warna tebal berpasangan dalam 3–4 tingkat warna per keluarga warna.",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kotak kecil atau baki bersekat",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 15,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Pilih satu keluarga warna dan letakkan kartu acak."
+    },
+    {
+     "step": 2,
+     "text": "Pasangkan dua kartu yang sama dengan membandingkan berdampingan."
+    },
+    {
+     "step": 3,
+     "text": "Urutkan tingkat warna dari muda ke tua."
+    },
+    {
+     "step": 4,
+     "text": "Ulangi dengan keluarga warna lain setelah kartu pertama rapi."
+    }
+   ],
+   "controlOfError": "Pasangan yang salah tampak berbeda saat kartu disandingkan; gradasi yang melompat terlihat karena urutan warna tidak mulus.",
+   "variations": [
+    "Gunakan cahaya alami dan kartu tanpa nama warna.",
+    "Minta anak memilih tingkat warna yang paling dekat dengan benda di rumah."
+   ],
+   "readySigns": [
+    "Anak membandingkan kartu di bawah pencahayaan yang sama.",
+    "Anak dapat menemukan kartu yang hilang dari suatu pasangan."
+   ],
+   "struggleSigns": [
+    "Anak memilih hanya berdasarkan posisi kartu.",
+    "Perbedaan tingkat warna terlalu tipis hingga sulit dibedakan."
+   ],
+   "safetyNotes": [
+    "Gunakan tinta/cat tidak beracun dan hindari silau atau pencahayaan yang menipu warna."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Info Montessori",
+     "url": "https://www.infomontessori.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-sensorial-mystery-bag-stereognostic",
+   "title": "Mystery Bag Stereognostic",
+   "summary": "Anak meraba benda aman di dalam kantong dan mencocokkannya dengan benda nyata tanpa melihat.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "sensorial"
+   ],
+   "skills": [
+    "stereognostik",
+    "memori taktil",
+    "kosakata bentuk"
+   ],
+   "objectives": [
+    "Mengenali bentuk dan tekstur melalui tangan.",
+    "Menghubungkan kesan taktil dengan benda yang dilihat setelahnya."
+   ],
+   "materials": [
+    {
+     "name": "kantong kain tidak tembus pandang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasangan benda rumah besar: bola, kubus, sendok kayu, balok, dan spons",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "baki untuk benda pembanding",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 10,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Letakkan benda contoh di atas baki dan pasangan benda di dalam kantong."
+    },
+    {
+     "step": 2,
+     "text": "Anak memasukkan satu tangan, meraba satu benda, dan menyebut cirinya."
+    },
+    {
+     "step": 3,
+     "text": "Anak mengambil benda yang dirasa cocok dari baki."
+    },
+    {
+     "step": 4,
+     "text": "Keluarkan benda untuk memeriksa pasangan, lalu kembalikan ke tempatnya."
+    }
+   ],
+   "controlOfError": "Benda yang dikeluarkan dari kantong dapat dibandingkan langsung dengan pilihan di baki; bentuk atau tekstur yang berbeda terasa saat dicocokkan.",
+   "variations": [
+    "Mulai dengan dua benda yang sangat berbeda.",
+    "Gunakan dua tangan untuk mencari pasangan setelah anak siap."
+   ],
+   "readySigns": [
+    "Anak menunggu sebelum melihat ke dalam kantong.",
+    "Anak mendeskripsikan bulat, bersudut, halus, atau kasar."
+   ],
+   "struggleSigns": [
+    "Anak mengintip atau mengguncang kantong keras.",
+    "Benda terlalu mirip atau terlalu kecil untuk diraba aman."
+   ],
+   "safetyNotes": [
+    "Pilih benda besar, bersih, tanpa ujung tajam atau bagian lepas; jangan gunakan benda yang mudah tertelan."
+   ],
+   "references": [
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Info Montessori",
+     "url": "https://www.infomontessori.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-culture-model-darat-air",
+   "title": "Model Daratan dan Air",
+   "summary": "Anak menuang air biru ke nampan berbukit pasir dan melihat sendiri di mana air mengalir dan di mana daratan tetap kering.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "culture"
+   ],
+   "skills": [
+    "konsep daratan-air",
+    "menuang",
+    "pengamatan sebab-akibat"
+   ],
+   "objectives": [
+    "Membedakan daratan dan perairan secara konkret.",
+    "Memahami bahwa air selalu mengumpul di bagian yang rendah.",
+    "Memperkaya kosakata geografi: pulau, danau, laut."
+   ],
+   "materials": [
+    {
+     "name": "nampan dalam atau baskom pipih",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "pasir atau tanah liat untuk membentuk bukit dan pulau",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "air dengan sedikit pewarna makanan biru",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "gelas penuang kecil",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kain lap",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 20,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Bentuk bukit dan pulau dari pasir di dalam nampan bersama anak."
+    },
+    {
+     "step": 2,
+     "text": "Tanyakan sambil menunjuk: 'Mana daratan? Mana tempat untuk air?'"
+    },
+    {
+     "step": 3,
+     "text": "Anak menuang air biru sedikit demi sedikit ke bagian rendah nampan."
+    },
+    {
+     "step": 4,
+     "text": "Amati bersama: air membasahi dasar, bukit tetap kering."
+    },
+    {
+     "step": 5,
+     "text": "Rangkum sambil menunjuk: 'Pulau dikelilingi air; danau adalah air di tengah daratan.'"
+    }
+   ],
+   "controlOfError": "Air biru terlihat jelas: jika air naik melewati bukit atau tumpah keluar nampan, anak melihat sendiri akibatnya dan mengelapnya dengan kain — tidak perlu diperingatkan orang dewasa.",
+   "variations": [
+    "Tambahkan batu sebagai gunung dan spons hijau sebagai padang rumput.",
+    "Buat versi cerita: hewan kecil tinggal di pulau dan berenang di laut di sekelilingnya."
+   ],
+   "readySigns": [
+    "Anak menuang air dengan kontrol yang cukup baik.",
+    "Anak bertanya 'kenapa air pergi ke bawah?'"
+   ],
+   "struggleSigns": [
+    "Air tumpah terus — ganti gelas dengan yang lebih kecil atau dampingi anak.",
+    "Anak hanya ingin bermain air tanpa fokus — batasi jumlah air ke satu gelas penuh."
+   ],
+   "safetyNotes": [
+    "Air di nampan dangkal saja dan aktivitas ditemani penuh oleh orang dewasa.",
+    "Lantai harus anti-slip; genangan yang tumpah dilap segera agar anak tidak terpeleset.",
+    "Pewarna makanan non-toksik dalam jumlah sedikit; air jangan diminum."
+   ],
+   "references": [
+    {
+     "title": "National Geographic Education: Landform",
+     "url": "https://education.nationalgeographic.org/resource/landform/"
+    },
+    {
+     "title": "Association Montessori Internationale (AMI)",
+     "url": "https://montessori-ami.org/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-culture-box-budaya-provinsi",
+   "title": "Kotak Budaya: Provinsi Sumatera Barat",
+   "summary": "Anak membuka kotak berisi benda asli khas satu provinsi Indonesia dan mencocokkan setiap benda dengan kartu gambarnya.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "culture"
+   ],
+   "skills": [
+    "kesadaran budaya",
+    "mencocokkan",
+    "kosakata"
+   ],
+   "objectives": [
+    "Mengenal bahwa Indonesia punya banyak daerah dengan rumah, kain, dan makanan berbeda.",
+    "Menghargai perbedaan budaya lewat benda nyata yang bisa diraba.",
+    "Melatih mencocokkan benda dengan gambar pasangannya."
+   ],
+   "materials": [
+    {
+     "name": "kotak kardus atau kotak kayu yang dihias bersama",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda asli khas Sumatera Barat: potongan kain songket, miniatur rumah gadang, gambar makanan rendang",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu gambar kecil pasangan untuk setiap benda",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja dan nampan",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 20,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Buka kotak perlahan, keluarkan satu benda: 'Ini kain songket dari Sumatera Barat.'"
+    },
+    {
+     "step": 2,
+     "text": "Raba dan amati bersama: warna, bentuk, dan teksturnya."
+    },
+    {
+     "step": 3,
+     "text": "Ajak anak mencari kartu gambar yang cocok dengan benda itu."
+    },
+    {
+     "step": 4,
+     "text": "Ulangi sampai semua benda menemukan pasangan kartunya."
+    },
+    {
+     "step": 5,
+     "text": "Tutup pekerjaan dengan menata ulang benda ke dalam kotaknya masing-masing."
+    }
+   ],
+   "controlOfError": "Setiap benda punya tepat satu kartu gambar pasangannya: benda yang belum menemukan kartunya masih tersisa di nampan, dan pasangan yang salah tidak bisa disamakan — anak melihat sendiri pekerjaan yang belum selesai.",
+   "variations": [
+    "Ganti provinsi setiap bulan: Bali, Papua, Jawa Barat, dan seterusnya.",
+    "Putar lagu daerah sambil membuka kotak budaya.",
+    "Masak atau cicip satu makanan khas provinsi yang sedang dibahas."
+   ],
+   "readySigns": [
+    "Anak menunjukkan minat pada gambar atau benda dari daerah lain.",
+    "Anak bisa mencocokkan benda nyata dengan gambar pasangannya."
+   ],
+   "struggleSigns": [
+    "Terlalu banyak benda membingungkan — batasi empat sampai lima benda dulu.",
+    "Anak memperlakukan benda sebagai mainan asal — kembali ke sesi satu benda dengan cerita pendek."
+   ],
+   "safetyNotes": [
+    "Semua benda tidak tajam dan ukurannya lebih dari 4 cm agar aman dari tertelan.",
+    "Cuci kain dan periksa benda sebelum dipakai anak.",
+    "Pengawasan penuh bila ditambahkan benda keramik atau yang bisa pecah."
+   ],
+   "references": [
+    {
+     "title": "Wikipedia: Rumah Gadang",
+     "url": "https://en.wikipedia.org/wiki/Rumah_Gadang"
+    },
+    {
+     "title": "Wikipedia: Provinces of Indonesia",
+     "url": "https://en.wikipedia.org/wiki/Provinces_of_Indonesia"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-culture-siklus-kupu-kupu",
+   "title": "Siklus Hidup Kupu-Kupu: Kartu Empat Tahap",
+   "summary": "Anak menata kartu telur, ulat, kepompong, dan kupu-kupu menjadi lingkaran siklus, lalu memeriksanya sendiri dengan kartu kontrol.",
+   "ageBands": [
+    "3-4y"
+   ],
+   "areas": [
+    "culture"
+   ],
+   "skills": [
+    "memahami urutan",
+    "siklus hidup",
+    "kosakata sains"
+   ],
+   "objectives": [
+    "Mengenal empat tahap metamorfosis kupu-kupu.",
+    "Memahami konsep siklus yang kembali ke tahap awal.",
+    "Melatih menata urutan secara logis dan memeriksanya sendiri."
+   ],
+   "materials": [
+    {
+     "name": "kartu empat tahap siklus kupu-kupu (gambar sendiri atau hasil cetak)",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu kontrol berisi lingkaran siklus lengkap",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "figurine siklus hidup kupu-kupu",
+     "fromHome": false,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 15,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Bacakan kartu kontrol dari telur hingga kupu-kupu sambil menunjuk tiap tahap."
+    },
+    {
+     "step": 2,
+     "text": "Acak kartu tahap di atas alas kerja."
+    },
+    {
+     "step": 3,
+     "text": "Anak menata urutan mulai dari telur: telur, ulat, kepompong, kupu-kupu."
+    },
+    {
+     "step": 4,
+     "text": "Anak membandingkan hasilnya sendiri dengan kartu kontrol."
+    },
+    {
+     "step": 5,
+     "text": "Tunjukkan bahwa kupu-kupu bertelur lagi, lalu susun kartu membentuk lingkaran."
+    }
+   ],
+   "controlOfError": "Kartu kontrol berbentuk lingkaran siklus adalah kuncinya: anak membandingkan urutannya sendiri dan langsung melihat bila ada tahap yang terlewat atau terbalik.",
+   "variations": [
+    "Amati ulat sungguhan di daun pepaya atau kobis dan gambar perubahannya tiap hari.",
+    "Bacakan buku bergambar tentang kupu-kupu sebagai cerita penutup."
+   ],
+   "readySigns": [
+    "Anak tertarik pada serangga atau kegiatan di taman.",
+    "Anak bisa menata tiga kartu berurutan dengan benar."
+   ],
+   "struggleSigns": [
+    "Empat tahap terlalu banyak — mulai dari dua tahap saja: ulat dan kupu-kupu.",
+    "Anak menghafal urutan tetapi belum paham — temui ulat sungguhan agar konsepnya nyata."
+   ],
+   "safetyNotes": [
+    "Cuci tangan anak setelah memegang ulat atau serangga sungguhan.",
+    "Jangan memegang serangga yang tidak dikenal atau yang menyengat seperti lebah.",
+    "Kartu dilaminasi karena anak masih suka memasukkan benda ke mulut."
+   ],
+   "references": [
+    {
+     "title": "Wikipedia: Monarch butterfly (Life cycle)",
+     "url": "https://en.wikipedia.org/wiki/Monarch_butterfly"
+    },
+    {
+     "title": "Association Montessori Internationale (AMI)",
+     "url": "https://montessori-ami.org/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-lang-huruf-kasar-karton-pasir",
+   "title": "Huruf Kasar dari Karton dan Pasir",
+   "summary": "Anak meraba satu huruf bunyi utama pada setiap sesi menggunakan huruf karton berlapis pasir, lalu menghubungkan bunyi, bentuk, dan gerak menulisnya.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "kesadaran fonem",
+    "diskriminasi taktil",
+    "persiapan menulis"
+   ],
+   "objectives": [
+    "Mengenali bunyi utama dan bentuk satu huruf per sesi.",
+    "Menelusuri huruf dengan arah gerak yang konsisten tanpa menghafal urutan A-Z."
+   ],
+   "materials": [
+    {
+     "name": "satu kartu karton berukuran besar dengan huruf timbul dari pasir halus dan lem non-toksik",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda kecil atau gambar yang memiliki bunyi awal huruf tersebut",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan kerja dan kain alas",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 20,
+   "durationMinutes": 10,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Periode 1 — penamaan: letakkan satu kartu dan telusuri huruf dari arah yang benar dengan dua jari sambil berkata, 'Ini bunyi /m/.' Ulangi bunyi utama, bukan nama abjadnya."
+    },
+    {
+     "step": 2,
+     "text": "Periode 2 — pengenalan: letakkan kartu huruf dan satu atau dua kartu lain, lalu tanyakan, 'Mana yang /m/?' Minta anak menunjuk dan menelusuri huruf yang benar."
+    },
+    {
+     "step": 3,
+     "text": "Periode 3 — mengingat kembali: tunjuk satu kartu tanpa memberi petunjuk dan tanyakan, 'Ini apa?' Tunggu anak menyebut bunyi /m/, lalu cocokkan dengan benda yang bunyi awalnya sama."
+    },
+    {
+     "step": 4,
+     "text": "Ajak anak mengulang penelusuran secara mandiri, kemudian kembalikan kartu ke baki sebelum memilih huruf lain pada sesi berikutnya."
+    }
+   ],
+   "controlOfError": "Pasir yang teraba memberi umpan balik ketika jari keluar dari jalur huruf; bunyi awal benda cocok atau tidak cocok dengan bunyi kartu sehingga anak dapat memperbaiki sendiri.",
+   "variations": [
+    "Ganti satu huruf bunyi utama setiap sesi dan pilih bunyi yang jelas dalam bahasa Indonesia, misalnya /m/, /s/, atau /b/.",
+    "Setelah bunyi mantap, tulis huruf di nampan berisi pasir atau tepung."
+   ],
+   "readySigns": [
+    "Anak dapat mengikuti arah penelusuran dengan dua jari.",
+    "Anak menoleh atau menunjuk saat mendengar bunyi target dan tertarik mengulangnya."
+   ],
+   "struggleSigns": [
+    "Anak menyebut nama huruf tetapi belum bunyinya — kembali ke satu kartu dan modelkan bunyi singkat.",
+    "Anak menggosok kartu tanpa mengikuti bentuk — perlambat gerakan dan batasi satu demonstrasi."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan hanya kartu besar yang tidak mudah robek, pasir yang sudah melekat sempurna, dan pendampingan penuh agar bahan tidak masuk mulut.",
+    "Amplas atau bulatkan tepi karton dan gunakan lem serta pasir yang tidak beracun."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Language",
+     "url": "https://www.infomontessori.com/language/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-lang-alfabet-lepas-karton-kayu",
+   "title": "Alfabet Lepas dari Karton atau Kayu",
+   "summary": "Anak menyusun kata sederhana dengan huruf lepas sambil mendengar bunyi tiap huruf dan membaca kata yang sudah dibangun.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "analisis bunyi",
+    "sintesis bunyi",
+    "persiapan membaca"
+   ],
+   "objectives": [
+    "Menghubungkan bunyi tutur dengan simbol huruf.",
+    "Menyusun kata fonetik sederhana dari kiri ke kanan."
+   ],
+   "materials": [
+    {
+     "name": "huruf lepas dari karton tebal atau kayu dengan vokal dan konsonan diberi warna berbeda",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "nampan atau kotak bersekat untuk menyimpan huruf",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda mini atau gambar kata fonetik sederhana seperti mata, sapi, dan batu",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 25,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Periode 1 — penamaan: pilih satu huruf, sentuh simbolnya, dan katakan, 'Ini adalah /s/.' Ulangi dengan dua atau tiga huruf yang akan dipakai, satu bunyi pada satu waktu."
+    },
+    {
+     "step": 2,
+     "text": "Periode 2 — pengenalan: campurkan tiga huruf dan tanyakan, 'Mana yang /a/?' Minta anak mengambil huruf yang disebut lalu menaruhnya di alas."
+    },
+    {
+     "step": 3,
+     "text": "Periode 3 — mengingat kembali: tunjuk satu huruf dan tanyakan, 'Ini apa?' Setelah bunyi dikenali, ajak anak merangkai huruf untuk kata yang dapat dibunyikan perlahan."
+    },
+    {
+     "step": 4,
+     "text": "Letakkan huruf dari kiri ke kanan, bunyikan setiap huruf, satukan bunyinya, cocokkan dengan benda atau gambar, lalu kembalikan semua huruf ke kompartemennya."
+    }
+   ],
+   "controlOfError": "Kata yang dibangun harus cocok dengan benda atau gambar kontrol; huruf yang kurang, terbalik, atau salah bunyi membuat kata tidak cocok sehingga anak dapat mengganti sendiri.",
+   "variations": [
+    "Mulai dengan kata tiga bunyi yang seluruhnya fonetik, lalu tambah kata empat bunyi.",
+    "Minta anak membangun nama benda di ruangan setelah ia dapat menganalisis bunyi awalnya."
+   ],
+   "readySigns": [
+    "Anak dapat memilih huruf yang diminta dari tiga pilihan.",
+    "Anak menjaga urutan kiri ke kanan dan mencoba menggabungkan bunyi."
+   ],
+   "struggleSigns": [
+    "Anak mengambil huruf berdasarkan bentuk atau warna saja — kembali ke latihan bunyi tunggal.",
+    "Anak menebak kata tanpa membunyikan huruf — modelkan perlahan dan gunakan kata lebih pendek."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, simpan huruf lepas di luar jangkauan dan gunakan hanya dengan pengawasan tangan-ke-tangan karena huruf kecil dapat tertelan.",
+    "Gunakan kayu halus atau karton tanpa staples, serpihan, dan sudut tajam."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Language",
+     "url": "https://www.infomontessori.com/language/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-lang-nomenklatur-benda-rumah",
+   "title": "Kartu Nomenklatur Tiga Bagian: Benda Rumah",
+   "summary": "Anak mencocokkan benda rumah dengan kartu gambar dan label kata melalui set kartu nomenklatur tiga bagian.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "kosakata",
+    "mencocokkan visual",
+    "pra-membaca"
+   ],
+   "objectives": [
+    "Menamai benda rumah yang akrab.",
+    "Mencocokkan benda, gambar, dan label kata secara bertahap."
+   ],
+   "materials": [
+    {
+     "name": "tiga sampai lima benda rumah nyata seperti cangkir, sendok, sapu, dan bantal",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu gambar benda dengan label kata terpisah dan kartu kontrol bergambar plus kata",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "keranjang dan alas kerja",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 20,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Periode 1 — penamaan: letakkan satu benda dan kartu gambarnya, lalu katakan, 'Ini adalah cangkir.' Ulangi hanya dua atau tiga nama benda pada sesi pertama."
+    },
+    {
+     "step": 2,
+     "text": "Periode 2 — pengenalan: letakkan benda-benda di depan anak dan tanyakan, 'Mana yang cangkir?' Minta anak mengambil atau menunjuk benda yang disebut, lalu cocokkan dengan kartu gambar."
+    },
+    {
+     "step": 3,
+     "text": "Periode 3 — mengingat kembali: tunjuk satu benda atau kartu gambar dan tanyakan, 'Ini apa?' Setelah anak menjawab, berikan label kata untuk dicocokkan dengan kartu kontrol."
+    },
+    {
+     "step": 4,
+     "text": "Ajak anak memasangkan semua kartu secara mandiri: gambar di atas label kata dan kartu kontrol di samping sebagai pemeriksa, lalu kembalikan set ke keranjang."
+    }
+   ],
+   "controlOfError": "Kartu kontrol bergambar dan berlabel menjadi kunci; label yang salah tidak sejajar atau tidak cocok dengan kata pada kartu kontrol, sehingga anak dapat memeriksa tanpa diberi tahu jawabannya.",
+   "variations": [
+    "Gunakan satu ruangan saja, misalnya dapur, dan tambahkan nama benda secara bertahap.",
+    "Setelah label dikenali, minta anak mencari benda sebenarnya di ruangan."
+   ],
+   "readySigns": [
+    "Anak dapat mencocokkan benda nyata dengan kartu gambar.",
+    "Anak memperhatikan detail gambar dan mulai membedakan label yang panjangnya berbeda."
+   ],
+   "struggleSigns": [
+    "Terlalu banyak benda membuat anak menebak — kurangi menjadi dua atau tiga pasang.",
+    "Anak membalik label tanpa melihat — kembali ke mencocokkan benda dan gambar."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, pilih benda besar, ringan, tidak pecah, dan tanpa bagian kecil; kartu hanya digunakan dengan pendampingan agar tidak dimasukkan ke mulut.",
+    "Jauhkan benda panas, tajam, mudah pecah, dan bahan pembersih dari set kegiatan."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Language",
+     "url": "https://www.infomontessori.com/language/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-lang-kotak-benda-bunyi-awal",
+   "title": "Kotak Benda Bunyi Awal",
+   "summary": "Anak mengelompokkan benda mini berdasarkan bunyi awalnya dengan mendengar kata secara perlahan dan membandingkan bunyi pertama.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "kesadaran fonem",
+    "klasifikasi bunyi",
+    "kosakata"
+   ],
+   "objectives": [
+    "Mendengar bunyi awal dalam kata yang dikenal.",
+    "Mengelompokkan benda berdasarkan bunyi awal tanpa bergantung pada bentuk huruf."
+   ],
+   "materials": [
+    {
+     "name": "kotak bersekat dengan dua atau tiga kartu bunyi target",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda mini besar yang aman, misalnya bola, batu, sisir, sapu, dan sendok",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "alas kerja dan kartu kontrol bergambar",
+     "fromHome": true,
+     "optional": true
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Periode 1 — penamaan: ambil satu benda, sebut perlahan, lalu katakan, 'Ini adalah bola. Bunyi awalnya /b/.' Namai satu bunyi target pada satu waktu."
+    },
+    {
+     "step": 2,
+     "text": "Periode 2 — pengenalan: letakkan dua benda dan tanyakan, 'Mana yang mulai dengan /b/?' Minta anak memilih benda yang tepat dan menaruhnya di bawah kartu bunyi."
+    },
+    {
+     "step": 3,
+     "text": "Periode 3 — mengingat kembali: tunjuk satu benda dan tanyakan, 'Ini apa? Bunyi awalnya apa?' Tunggu jawaban anak, lalu biarkan ia memasukkannya ke sekat yang sesuai."
+    },
+    {
+     "step": 4,
+     "text": "Tambahkan benda satu per satu, ucapkan setiap kata dengan jelas, dan buka kartu kontrol untuk memeriksa kelompok setelah semua benda selesai."
+    }
+   ],
+   "controlOfError": "Kartu kontrol bergambar atau daftar benda pada bagian belakang kotak menunjukkan kelompok yang benar; benda yang tersisa atau kelompok yang tidak cocok menandakan anak perlu mendengar ulang bunyi awal.",
+   "variations": [
+    "Mulai dengan dua bunyi yang sangat berbeda, kemudian gunakan bunyi yang lebih dekat.",
+    "Cari benda lain di rumah yang memiliki bunyi awal target setelah pengelompokan selesai."
+   ],
+   "readySigns": [
+    "Anak dapat mengucapkan kata benda dengan cukup jelas.",
+    "Anak mulai menahan bunyi awal dan membandingkannya sebelum memilih sekat."
+   ],
+   "struggleSigns": [
+    "Anak mengelompokkan berdasarkan warna atau bentuk — gunakan benda yang tampak berbeda dan kembali ke pengucapan perlahan.",
+    "Bunyi target terlalu mirip — kurangi menjadi dua benda dengan perbedaan jelas."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan benda yang lebih besar dari mulut anak, tanpa magnet, baterai, atau bagian lepas, serta lakukan pengawasan penuh.",
+    "Jangan gunakan kacang, kancing, atau benda mini yang mudah tertelan sebagai material bunyi."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Language",
+     "url": "https://www.infomontessori.com/language/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-lang-kartu-frasa-aksi",
+   "title": "Kartu Frasa Aksi Sederhana",
+   "summary": "Anak membaca atau mendengar frasa aksi sederhana, melakukan instruksinya, lalu mencocokkan bahasa dengan tindakan nyata.",
+   "ageBands": [
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "language"
+   ],
+   "skills": [
+    "pemahaman bahasa",
+    "membaca frasa",
+    "urutan tindakan"
+   ],
+   "objectives": [
+    "Memahami hubungan antara frasa tertulis dan tindakan.",
+    "Menyusun dan melakukan aksi sederhana dengan percaya diri."
+   ],
+   "materials": [
+    {
+     "name": "kartu frasa besar seperti 'tepuk tangan', 'ambil bola', 'buka buku', dan 'taruh di rak'",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "benda nyata yang diperlukan oleh tiap frasa",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu kontrol bergambar untuk setiap frasa",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 20,
+   "durationMinutes": 15,
+   "prepLevel": "sedang",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Periode 1 — penamaan: ambil satu kartu dan baca pelan, 'Ini adalah frasa: ambil bola.' Tunjukkan gambar atau lakukan sekali agar maknanya jelas."
+    },
+    {
+     "step": 2,
+     "text": "Periode 2 — pengenalan: letakkan dua kartu dan tanyakan, 'Mana yang berbunyi ambil bola?' Minta anak memilih kartu lalu melakukan aksinya."
+    },
+    {
+     "step": 3,
+     "text": "Periode 3 — mengingat kembali: tunjuk satu kartu aksi dan tanyakan, 'Ini apa?' Anak menyebut atau membaca frasanya, lalu melakukan tindakan yang sesuai."
+    },
+    {
+     "step": 4,
+     "text": "Berikan dua atau tiga kartu untuk dikerjakan berurutan, kemudian kembalikan benda ke tempatnya dan simpan kartu ke kotak."
+    }
+   ],
+   "controlOfError": "Kartu kontrol bergambar dan hasil tindakan memberi pemeriksaan langsung: frasa 'buka buku' harus menghasilkan buku yang terbuka, bukan benda lain.",
+   "variations": [
+    "Mulai dari frasa dua kata, kemudian tambahkan keterangan tempat seperti 'taruh di rak'.",
+    "Biarkan anak mendiktekan frasa baru yang dapat dilakukan dengan aman di rumah."
+   ],
+   "readySigns": [
+    "Anak memahami instruksi satu langkah tanpa demonstrasi ulang.",
+    "Anak menghubungkan kata kerja dengan tindakan dan mau mengulang frasa."
+   ],
+   "struggleSigns": [
+    "Anak melakukan aksi tanpa melihat kartu — kurangi pilihan dan arahkan kembali ke tulisan.",
+    "Frasa terlalu panjang — kembali ke dua kata dengan benda konkret."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan hanya aksi aman satu langkah dengan benda besar dan ringan; orang dewasa membaca kartu serta mendampingi perpindahan anak.",
+    "Hindari kartu yang meminta memanjat, berlari, menyentuh alat listrik, atau membawa benda panas dan tajam."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Language",
+     "url": "https://www.infomontessori.com/language/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-ritual-silence-game",
+   "title": "Silence Game dengan Hening Bertahap",
+   "summary": "Anak berlatih menyadari suara tubuh dan lingkungan melalui permainan diam yang berlangsung bertahap hingga lima menit.",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy"
+   ],
+   "skills": [
+    "pengendalian diri",
+    "kesadaran lingkungan",
+    "menunggu"
+   ],
+   "objectives": [
+    "Mengalami hening sebagai kegiatan bersama yang aman dan positif.",
+    "Menunggu sinyal pulih dan kembali bergerak dengan tenang."
+   ],
+   "materials": [
+    {
+     "name": "karpet atau lingkaran duduk",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "lonceng kecil atau bunyi lembut sebagai sinyal pulih",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "jam pasir atau timer visual lima menit",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 5,
+   "durationMinutes": 8,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Persiapan: pilih tempat aman, dudukkan anak nyaman di karpet, jelaskan bahwa kita akan mendengar suara tubuh dan ruangan, lalu tunjukkan timer serta sinyal lonceng."
+    },
+    {
+     "step": 2,
+     "text": "Mulai 30 detik hening; orang dewasa memberi model dengan tubuh tenang tanpa menuntut anak menutup mata atau diam sempurna."
+    },
+    {
+     "step": 3,
+     "text": "Naikkan bertahap menjadi 1 menit, 2 menit, 3 menit, lalu hingga 5 menit hanya jika anak siap; selama hening, amati suara napas, kain, burung, atau kendaraan tanpa mengomentari setiap suara."
+    },
+    {
+     "step": 4,
+     "text": "Sinyal pulih: bunyikan lonceng sekali, tunggu sampai bunyi hilang, lalu katakan pelan, 'Permainan selesai. Kita regangkan tangan dan kembali berjalan.' Ajak anak menyebut satu suara yang didengarnya."
+    }
+   ],
+   "controlOfError": "Timer visual menunjukkan lama hening dan bunyi lonceng menjadi batas yang konsisten; anak dapat melihat kapan hening dimulai dan berakhir tanpa terus dikoreksi.",
+   "variations": [
+    "Lakukan di luar ruangan dan dengarkan tiga suara alam.",
+    "Gunakan boneka sebagai teman yang duduk diam untuk anak yang belum siap duduk sendiri."
+   ],
+   "readySigns": [
+    "Anak dapat duduk atau berdiri tenang selama 30 detik.",
+    "Anak menoleh ke sumber suara tanpa mengganggu teman dan menunggu sinyal pulih."
+   ],
+   "struggleSigns": [
+    "Anak tegang atau takut — pendekkan durasi dan tawarkan duduk dekat orang dewasa.",
+    "Anak terus bergerak — akhiri dengan tenang dan coba lagi pada waktu yang lebih sesuai."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, jangan memaksa diam, menutup mulut, atau menutup mata; batasi hening pada beberapa detik hingga satu menit dan dampingi dalam jarak dekat.",
+    "Hentikan bila anak tampak tertekan, mengantuk berlebihan, atau lingkungan memiliki suara keras yang mengejutkan."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Grace and Courtesy",
+     "url": "https://www.infomontessori.com/practical-life/grace-and-courtesy/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-ritual-walking-line-oval",
+   "title": "Walking-on-the-Line dengan Garis Oval",
+   "summary": "Anak berjalan perlahan mengikuti garis elastis berbentuk oval dengan tumit menyentuh ujung kaki, membawa benda, dan merespons musik.",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy"
+   ],
+   "skills": [
+    "keseimbangan",
+    "kontrol gerak",
+    "kesadaran ruang"
+   ],
+   "objectives": [
+    "Menjaga langkah heel-to-toe di jalur oval.",
+    "Mengendalikan kecepatan, membawa benda dengan stabil, dan berhenti saat musik berhenti."
+   ],
+   "materials": [
+    {
+     "name": "garis elastis atau pita lantai yang dibentuk oval dan direkatkan rata",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "baki kecil dengan benda ringan dan tidak pecah",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "musik instrumental lembut dan pemutar musik",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 8,
+   "durationMinutes": 12,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Persiapan: rekatkan garis elastis oval di lantai yang rata dan kosong; tunjukkan arah berjalan, titik mulai, tempat mengambil baki, dan tempat mengembalikannya."
+    },
+    {
+     "step": 2,
+     "text": "Modelkan satu putaran tanpa benda: letakkan satu kaki di garis, tumit kaki belakang menyentuh ujung kaki depan, pandang ke depan, dan berjalan perlahan tanpa keluar dari oval."
+    },
+    {
+     "step": 3,
+     "text": "Berikan baki ringan atau benda tunggal untuk dibawa dengan dua tangan; mulai musik pelan, berhenti saat musik berhenti, dan lanjutkan hanya setelah musik dimulai lagi."
+    },
+    {
+     "step": 4,
+     "text": "Selesaikan satu atau dua putaran, letakkan benda kembali, lalu beri ruang untuk anak berikutnya. Akhiri dengan berjalan keluar dari oval, bukan melompat melewati garis."
+    }
+   ],
+   "controlOfError": "Kaki yang keluar dari pita, baki yang bergoyang, atau benda yang jatuh memberi umpan balik langsung; musik yang berhenti juga menandai kapan tubuh harus berhenti.",
+   "variations": [
+    "Mulai tanpa benda dan tanpa musik, kemudian tambahkan musik serta baki.",
+    "Gunakan lonceng lembut alih-alih musik untuk anak yang sensitif terhadap suara."
+   ],
+   "readySigns": [
+    "Anak dapat mengikuti garis tanpa berlari dan menjaga jarak.",
+    "Anak mampu berhenti ketika musik berhenti dan membawa benda ringan dengan dua tangan."
+   ],
+   "struggleSigns": [
+    "Anak berlari atau memotong oval — pendekkan lintasan dan hilangkan benda sementara.",
+    "Anak kehilangan keseimbangan — izinkan langkah biasa di garis sebelum meminta heel-to-toe."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan oval lebih lebar, tanpa benda di tangan pada percobaan awal, dan pegang tangan anak bila perlu; jangan gunakan tali yang bisa membuat tersandung.",
+    "Pastikan pita melekat rata, lantai tidak licin, musik tidak keras, dan area bebas kursi atau sudut tajam."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Movement",
+     "url": "https://www.infomontessori.com/practical-life/movement/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
+  },
+  {
+   "id": "gap-ritual-pagi-work-cycle",
+   "title": "Ritual Pagi: Pilih, Kerjakan, Kembalikan",
+   "summary": "Anak memulai hari dengan tiga langkah konsisten yang membangun pilihan mandiri, konsentrasi dalam work cycle, dan tanggung jawab merapikan pekerjaan.",
+   "ageBands": [
+    "2-3y",
+    "3-4y",
+    "4-5y"
+   ],
+   "areas": [
+    "grace-courtesy"
+   ],
+   "skills": [
+    "kemandirian",
+    "konsentrasi",
+    "merawat lingkungan"
+   ],
+   "objectives": [
+    "Mengikuti tiga langkah ritual pagi secara berurutan.",
+    "Menyelesaikan pekerjaan dalam rentang waktu yang sesuai lalu mengembalikan material ke rak."
+   ],
+   "materials": [
+    {
+     "name": "rak rendah dengan dua sampai empat nampan pekerjaan yang sudah dikenal anak",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "kartu urutan bergambar: pilih, kerjakan, kembalikan",
+     "fromHome": true,
+     "optional": false
+    },
+    {
+     "name": "karpet kerja atau meja kecil",
+     "fromHome": true,
+     "optional": false
+    }
+   ],
+   "prepMinutes": 10,
+   "durationMinutes": 20,
+   "prepLevel": "rendah",
+   "presentation": [
+    {
+     "step": 1,
+     "text": "Langkah 1 — pilih pekerjaan: berdiri bersama di depan rak, lihat dua sampai empat nampan, pilih satu dengan tenang, bawa dengan dua tangan, dan letakkan di karpet atau meja."
+    },
+    {
+     "step": 2,
+     "text": "Langkah 2 — kerjakan: tunjukkan bahwa anak bekerja dari awal sampai selesai dalam satu work cycle; orang dewasa mengamati dan hanya membantu bila keselamatan atau urutan benar-benar membutuhkan bantuan."
+    },
+    {
+     "step": 3,
+     "text": "Langkah 3 — kembalikan ke rak: setelah selesai, periksa area, masukkan kembali semua bagian ke nampan, bawa dengan dua tangan, dan taruh di tempat yang sama."
+    },
+    {
+     "step": 4,
+     "text": "Tutup ritual dengan kalimat singkat, 'Pekerjaanmu selesai dan rak siap untuk teman berikutnya.' Tawarkan pilihan pekerjaan lain hanya setelah anak mengembalikan pekerjaan pertama."
+    }
+   ],
+   "controlOfError": "Rak memiliki tempat yang ditandai atau siluet untuk setiap nampan; bagian yang tersisa di karpet atau nampan yang tidak pas menunjukkan pekerjaan belum selesai dan perlu diperiksa.",
+   "variations": [
+    "Untuk anak yang baru mulai, sediakan satu pilihan dan tambahkan pilihan kedua setelah rutinitas stabil.",
+    "Gunakan foto urutan pada rak agar anak dapat mengikuti ritual tanpa instruksi lisan berulang."
+   ],
+   "readySigns": [
+    "Anak dapat memilih dari pilihan terbatas dan membawa nampan dengan aman.",
+    "Anak bertahan pada pekerjaan selama beberapa menit dan mulai mengembalikan material tanpa diingatkan."
+   ],
+   "struggleSigns": [
+    "Anak berpindah-pindah sebelum selesai — kurangi jumlah bagian dan pilih pekerjaan yang lebih singkat.",
+    "Anak meninggalkan material — kembali ke kartu langkah ketiga dan modelkan pengembalian sekali."
+   ],
+   "safetyNotes": [
+    "Untuk anak di bawah 3 tahun, gunakan hanya nampan ringan berisi benda besar yang tidak mudah tertelan, rak yang stabil, dan pengawasan dekat saat membawa material.",
+    "Jauhkan pekerjaan dengan air panas, benda tajam, kaca, magnet, atau bagian kecil dari pilihan anak kecil."
+   ],
+   "references": [
+    {
+     "title": "Info Montessori - Practical Life",
+     "url": "https://www.infomontessori.com/practical-life/"
+    },
+    {
+     "title": "AMI USA",
+     "url": "https://amiusa.org/"
+    },
+    {
+     "title": "Montessori Print Shop",
+     "url": "https://www.montessoriprintshopusa.com/"
+    }
+   ],
+   "materialIds": []
   }
  ],
  "milestones": [

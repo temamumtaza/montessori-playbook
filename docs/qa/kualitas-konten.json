@@ -1,0 +1,56 @@
+{
+  "skor_montessori": 6.0,
+  "skor_catatan": "Rata-rata 30 aktivitas sampel acak (seed 42, dinilai glm-5.3-flash per aktivitas dengan rubrik prinsip Montessori): 5,97/10. Distribusi skor: ~30% kuat 7-8 (transfer/menuang, melipat serbet, mengusap meja, walking on the line - control of error desain-material genuine), ~33% tengah 5-6 (valid tapi CoE deskriptif, presentation kurang terurai), ~30% generik berlabel Montessori 3-4 (jeda-percakapan, menepuk-irama, menyusun-pola AB, mendengar-suara-rumah). Kekuatan: practical life & grading kesulitan. Kelemahan: controlOfError sering deskripsi hasil bukan mekanisme material, presentation 3-4 langkah generik, material klasik Montessori absen dari aktivitas.",
+  "distribusi": {
+    "0-3m": 30,
+    "3-6m": 30,
+    "6-9m": 30,
+    "9-12m": 30,
+    "12-18m": 32,
+    "18-24m": 32,
+    "2-3y": 34,
+    "3-4y": 34,
+    "4-5y": 34
+  },
+  "area_kurang": [
+    "culture: 21 aktivitas total, 0 di band 2-3y; didominasi alam (daun/hewan), geografi Montessori (globe benua, darat-air) nyaris absen",
+    "outdoor: 25 aktivitas, area paling tipis (<3 per band rata-rata)",
+    "math: 39 aktivitas tapi seluruhnya generik (menghitung benda, meronce pola, bermain toko); sekuens AMI (batang angka, angka kasar, spindle, manik emas) tidak dieksekusi satu pun",
+    "art-music: 37 aktivitas tanpa progresi seni Montessori (gunting bertahap, clay, apresiasi)",
+    "grace-courtesy: 43 aktivitas, tapi silence game tidak ada di band mana pun"
+  ],
+  "boilerplate_pct": 15,
+  "boilerplate_catatan": "Dua sampel independen 20 aktivitas (seed 42 & 123): 15% dan 15% aktivitas punya minimal 1 field boilerplate; field-level 5/80 (6,3%) dan 3/80 (3,8%). Kasus terburuk: 0-3m-narasi-ganti-popok (3/4 field boilerplate), 0-3m-suara-nama-bayi, 18-24m-mengelap-meja (readySigns generik).",
+  "gap_riset": [
+    "Sensorial sequence lanjutan 3-6 tidak lengkap di dok 05: ada kubus pink/tangga cokelat/batang merah/kotak warna, tapi knobless cylinders hanya 2 sebutan, geometry cabinet / binomial & trinomial cube / mystery bag (steriognostic) / baric & thermic tablets praktis 0",
+    "Progresi membaca 4-5y belum sampai ujung: dok 05 berhenti di metal insets; movable alphabet, phonetic object boxes, pembacaan pertama tidak dibahas",
+    "Bilingual & posisi bahasa daerah vs Bahasa Indonesia di rumah: 0 pembahasan padahal target pengguna Indonesia",
+    "Art progression Montessori (urutan gunting, clay, penggunaan palet, apresiasi seni): tidak ada dokumen/bab khusus",
+    "Toilet learning: dok 04 kuat di tanda-siap & setup, tapi tanpa progresi harian detail (malam hari, cloth vs disposable, mundur/regresi, kapan mundur)",
+    "Integrasi nilai agama & adab keluarga Indonesia: dok 02 hanya memetakan aspek 'nilai agama-moral' PAUD RI, tidak ada panduan praktis dalam kerangka Montessori",
+    "Pengasuh/daycare & orang tua bekerja penuh: hanya sebutan sekilas di dok 07, tidak ada panduan meneruskan prinsip Montessori ke pengasuh",
+    "Urutan musik Montessori (bells/lonceng nada, dari bunyi informal ke nada terstruktur): hanya sebutan tunggal, tidak ada bab"
+  ],
+  "gap_konten": [
+    "Toilet learning praktis: hanya 1 aktivitas (Bercerita Saat Ganti Popok, 0-3m) padahal riset 04 §8 padat + 3 ParentGuide ada; tambah ~6 aktivitas di 18-24m & 2-3y (lepas-pasang celana sendiri, stasiun potty, urutan pasca-toilet, tanda kesiapan dijadi aktivitas)",
+    "Math 3-6y tidak mengeksekusi sekuens dok 05: tidak ada satu pun aktivitas batang angka, angka kasar, kotak spindle, kartu & counter, manik emas; tambah ~8 aktivitas bertingkat di 3-4y & 4-5y",
+    "Sensorial 3-6y generik: 'menara berpola', 'mengurutkan pita' menggantikan kubus pink/tangga cokelat/batang merah; tambah ~6 aktivitas versi rumah + material klasik; DIYGuide hanya punya Silinder Suara (tanpa kubus pink, batang merah, kotak warna, globe)",
+    "Bahasa: tidak ada aktivitas sandpaper letters, movable alphabet, atau kartu nomenklatur 3-bagian (riset 05 §6 lengkap tapi tidak jadi konten); tambah ~5 aktivitas 3-5y dengan struktur pelajaran 3-periode eksplisit di presentation",
+    "Culture: 0 aktivitas di band 2-3y dan geografi hanya 'Menggambar peta rumah'; tambah ~5 aktivitas globe/bola benua DIY, kartu benua, model darat-air, budaya lokal Indonesia (pasar, kerajinan daerah)",
+    "Silence game tidak ada di semua band; walking-on-the-line hanya versi sederhana tanpa protokol penuh (heel-to-toe hanya ada di 1 aktivitas); tambah sebagai ritual harian 2-5y",
+    "Art-music tanpa progresi: tambah urutan gunting 2-5y (garis lurus -> zig-zag -> lingkaran) dan progresi musik sederhana",
+    "14 judul duplikat lintas band (31 aktivitas, mis. 'Menuang Air dengan Cangkir' 3x, 'Membaca Buku Gambar' 3x, 'Mengamati Daun di Luar' 3x) tanpa penanda grading eksplisit; aktivitas unik efektif hanya ~255 dari 286"
+  ],
+  "rekomendasi": [
+    "Tambah ~8 aktivitas matematika bertingkat di 3-4y & 4-5y mengikuti urutan dok 05 (batang angka -> angka kasar -> spindle -> kartu & counter -> manik emas) + 4 DIYGuide pendukung",
+    "Tambah ~6 aktivitas toilet learning praktis di 18-24m & 2-3y (area self-care): riset sudah ada di dok 04, tinggal dieksekusi ke konten",
+    "Tambah ~6 aktivitas sensorial material-klasik versi rumah + 4 DIYGuide baru (kubus pink DIY, tangga cokelat, kotak warna gradasi, mystery bag)",
+    "Tambah ~5 aktivitas bahasa 3-5y (sandpaper letters versi karton, movable alphabet kertas, kartu nomenklatur 3-bagian) dengan pelajaran 3-periode eksplisit di field presentation",
+    "Tambah ~5 aktivitas culture/geografi di 2-3y & 3-5y termasuk budaya lokal Indonesia; isi void band 2-3y",
+    "Perdalam dok riset 05 (knobless cylinders, geometry cabinet, binomial cube, baric/thermic, mystery bag; progresi membaca sampai movable alphabet) dan tulis dok riset #9: bilingual/bahasa daerah + integrasi nilai agama-adab keluarga Indonesia",
+    "Tulis rubrik penulisan controlOfError berbasis desain-material (bukan deskripsi hasil) di schema docs; ~1/3 sampel masih CoE deskriptif",
+    "Selesaikan boilerplate 15%: konsentrasi di aktivitas 0-3m (narasi-ganti-popok, jeda-percakapan, suara-nama-bayi); tulis ulang per aktivitas, bukan template",
+    "Buat grading lintas-band eksplisit di judul/variasi untuk 14 judul duplikat agar keberagaman 286 aktivitas tidak mengecil",
+    "Tambah aktivitas silence game & walking-on-the-line protokol penuh sebagai ritual harian band 2-5y"
+  ]
+}

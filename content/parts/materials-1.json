@@ -10,7 +10,7 @@
   "budget": "sedang",
   "diy": true,
   "safetyNotes": [
-   "Jangan pernah menggantung mobile di atas kasur tempat bayi tidur; pilih permukaan yang tegas seperti strip kayu atau pengait langit-langit yang kokoh. Jarak idealnya sekitar 25-30 cm dari wajah bayi dan bayi selalu dalam kawalan orang dewasa."
+   "Jangan pernah menggantung mobile di atas kasur tempat bayi tidur; pilih permukaan yang tegas seperti strip kayu atau pengait langit-langit yang kokoh. Jarak idealnya sekitar 25-30 cm dari wajah bayi dan bayi selalu dalam pengawasan orang dewasa."
   ],
   "references": [
    {
@@ -31,7 +31,7 @@
   "budget": "sedang",
   "diy": true,
   "safetyNotes": [
-   "Pastikan ikatan benang sangat kuat dan tidak bisa dijangkau tangan bayi. Sesegera mungkin begitu bayi mulai mengayunkan tangan ke arah mobile, pindahkan mobile ke locasi yang tetap aman atau tukar dengan mainan yang boleh dipegang."
+   "Pastikan ikatan benang sangat kuat dan tidak bisa dijangkau tangan bayi. Sesegera mungkin begitu bayi mulai mengayunkan tangan ke arah mobile, pindahkan mobile ke lokasi yang tetap aman atau tukar dengan mainan yang boleh dipegang."
   ],
   "references": [
    {
@@ -60,7 +60,7 @@
     "url": "https://www.cdc.gov/ncbddd/childdevelopment/facts.html"
    }
   ],
-  "buyHint": "Banyak penjual handmade lokal menjual set mobile bayi; pilih versi dengan bola tetap dari bahan tidak mudah bergaru."
+  "buyHint": "Banyak penjual handmade lokal menjual set mobile bayi; pilih versi dengan bola yang terpasang tetap dari bahan yang tidak mudah pecah."
  },
  {
   "id": "tactile-ribbon-ring",
@@ -73,7 +73,7 @@
   "budget": "rendah",
   "diy": true,
   "safetyNotes": [
-   "Setiap pita harus pendek (maksimal sekitar 10 cm) dan dijahit atau diikatan kuat ke cincin agar tidak lepas menggantung di jari. Berikan hanya saat bayi duduk bersama orang dewasa dan tidak sedang lelah."
+   "Setiap pita harus pendek (maksimal sekitar 10 cm) dan dijahit atau diikat kuat ke cincin agar tidak lepas menggantung di jari. Berikan hanya saat bayi duduk bersama orang dewasa dan tidak sedang lelah."
   ],
   "references": [
    {
@@ -86,7 +86,7 @@
  {
   "id": "grasping-beads",
   "name": "Grasping Beads (untai tiga manik besar)",
-  "purpose": "Tiga manik kayu besar disambung dengan tali kuat membentuk satu untai. Bayi berlatih mengenggam untai itu dengan satu tangan, kemudian memindahkannya ke tangan lain. Bentuk lonjongnya yang \u043f\u0440\u043e\u0434\u0430jut luas membuat lubang genggaman bayi mencoba posisi tangan yang berbeda-beda.",
+  "purpose": "Tiga manik kayu besar disambung dengan tali kuat membentuk satu untai. Bayi berlatih mengenggam untai itu dengan satu tangan, kemudian memindahkannya ke tangan lain. Bentuknya yang lonjong dengan ruang genggam yang lapang membuat bayi mencoba berbagai posisi tangan.",
   "ageBands": [
    "3-6m",
    "6-9m"
@@ -94,7 +94,7 @@
   "budget": "rendah",
   "diy": false,
   "safetyNotes": [
-   "Setiap manik harus sangat besar, jauh melebihi ukuran tabung gulungan kertas toilet, dan ikatan antar manik harus begitu kuat sehingga mustahil terpisah. Selalu periksa untai sebelum dipakai dan gunakan hanya dengan kawalan orang dewasa."
+   "Setiap manik harus sangat besar, jauh melebihi ukuran tabung gulungan kertas toilet, dan ikatan antar manik harus begitu kuat sehingga mustahil terpisah. Selalu periksa untai sebelum dipakai dan gunakan hanya dengan pengawasan orang dewasa."
   ],
   "references": [
    {
@@ -178,7 +178,7 @@
   "budget": "rendah",
   "diy": false,
   "safetyNotes": [
-   "Pilih rattle tanpa sudut tajam dan dengan bagian tengah yang cukup tipis untuk genggaman bayi namun keseluruhannya tidak bisa masuk ke mulut. Berpindah mainan cepat dengan perputaran rattle kecil sering membuat bayi asing; awasi setiap saat."
+   "Pilih rattle tanpa sudut tajam dan dengan bagian tengah yang cukup tipis untuk genggaman bayi namun keseluruhannya tidak bisa masuk ke mulut. Mengganti rattle kecil secara berkala sering menjaga bayi tetap tertarik; awasi setiap saat."
   ],
   "references": [
    {
@@ -199,7 +199,7 @@
   "budget": "sedang",
   "diy": true,
   "safetyNotes": [
-   "Ukuran bola harus atas ratusan pikul, jelas lebih besar dari tabung gulungan kertas toilet agar tidak bisa tertelan. Gunakan di lantai dengan anak duduk tersekrete orang dewasa, dan hindari kotak yang punya pegas kuat yang bisa menjepit jari."
+   "Ukuran bola harus jauh lebih besar dari tabung gulungan kertas toilet agar tidak bisa tertelan. Gunakan di lantai dengan anak duduk didampingi orang dewasa, dan hindari kotak yang punya pegas kuat yang bisa menjepit jari."
   ],
   "references": [
    {
@@ -211,8 +211,8 @@
  },
  {
   "id": "egg-and-cup",
-  "name": "Egg and Cup (kosong kayak telur dan cangkir)",
-  "purpose": "Sepasang benda kayu kecil berbentuk cangkir dan telur yang ditumbuhi cangkir itu. Anak belajar mengangkat telur dengan dua tangan lalu menempatkannya dengan cermat di dalam cangkir, keterampilan awal sebelum anak mengenal puzzle atau memasang barang kecil ke lubang.",
+  "name": "Egg and Cup (cangkir dan telur kayu)",
+  "purpose": "Sepasang benda kayu kecil berbentuk cangkir dan telur yang cocok dimasukkan ke cangkir. Anak belajar mengangkat telur dengan dua tangan lalu menempatkannya dengan cermat di dalam cangkir, keterampilan awal sebelum anak mengenal puzzle atau memasang barang kecil ke lubang.",
   "ageBands": [
    "9-12m",
    "12-18m"
@@ -220,7 +220,7 @@
   "budget": "sedang",
   "diy": true,
   "safetyNotes": [
-   "Bagian telur harus terlalu besar untuk masuk ke mulut balita. Gunakan di permukaan datar dan duduk bersama anak agar tidak ada bagian yang terlempar bila anak melemparkannya saat tugasan belum berhasil."
+   "Bagian telur harus terlalu besar untuk masuk ke mulut balita. Gunakan di permukaan datar dan duduk bersama anak agar tidak ada bagian yang terlempar bila anak melemparkannya saat belum berhasil."
   ],
   "references": [
    {
@@ -233,7 +233,7 @@
  {
   "id": "single-shape-puzzle",
   "name": "Puzzle satu bentuk (lingkaran, persegi, segitiga, trapesium)",
-  "purpose": "Papan kayu dengan satu lubang bentuk dan satu keping besar bergagang yang cocok dengan bentuk itu. Anak berlatih mengangkat keping dengan pegangan tiga jari lalu mengujanya ke lubang, pengalaman pertama yang memperlihatkan bahwa bentuk memiliki tepi dan ujung yang khas.",
+  "purpose": "Papan kayu dengan satu lubang bentuk dan satu keping besar bergagang yang cocok dengan bentuk itu. Anak berlatih mengangkat keping dengan pegangan tiga jari lalu mencocokkannya ke lubang, pengalaman pertama yang memperlihatkan bahwa bentuk memiliki tepi dan ujung yang khas.",
   "ageBands": [
    "12-18m",
    "18-24m"
@@ -263,7 +263,7 @@
   "budget": "sedang",
   "diy": false,
   "safetyNotes": [
-   "Pilih keping yang lebih besar dari leher tabung gulungan kertas toilet dan gagangan yang tidak mudah lepas. Awasi agar keping tidak dipasukkan ke mulut atau dilempar saat anak mulai kesal."
+   "Pilih keping yang lebih besar dari leher tabung gulungan kertas toilet dan gagang yang tidak mudah lepas. Awasi agar keping tidak dipasukkan ke mulut atau dilempar saat anak mulai kesal."
   ],
   "references": [
    {
@@ -286,7 +286,7 @@
   "budget": "rendah",
   "diy": false,
   "safetyNotes": [
-   "Cek tepi cangkir agar tidak ada celah yang bisa menggores kulit, dan gunakan di area bermain yang rapi. Bersihkan cangkir secara rutin karena dexing-nya mudah menyimpan air hangat yang bisa menjadi sarang mikroba."
+   "Cek tepi cangkir agar tidak ada celah yang bisa menggores kulit, dan gunakan di area bermain yang rapi. Bersihkan cangkir secara rutin karena celah-celahnya mudah menyimpan air hangat yang bisa menjadi sarang mikroba."
   ],
   "references": [
    {
@@ -294,12 +294,12 @@
     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-ideas/"
    }
   ],
-  "buyHint": "Set cangkir susun hijang dengan berbagai warna mudah ditemukan di toko bayi; versi silikon lebih baik untuk anak yang senang menggigit."
+  "buyHint": "Set cangkir susun dengan berbagai warna mudah ditemukan di toko bayi; versi silikon lebih baik untuk anak yang senang menggigit."
  },
  {
   "id": "stacking-rings",
   "name": "Cincin susun (stacking rings)",
-  "purpose": "Tiang dengan cincin berwarna dari ukuran besar ke kecil yang dilarik ke atas. Anak berlatih membedakan ukuran dengan mata dan tangan, mengatur urutan dari besar ke kecil, dan menunggu kesempatan agar cincin yang lebih kecil dapat ditumpuk di atas yang lebih besar.",
+  "purpose": "Tiang dengan cincin berwarna dari ukuran besar ke kecil yang dimasukkan ke tiang. Anak berlatih membedakan ukuran dengan mata dan tangan, mengatur urutan dari besar ke kecil, dan menunggu kesempatan agar cincin yang lebih kecil dapat ditumpuk di atas yang lebih besar.",
   "ageBands": [
    "12-18m",
    "18-24m",
@@ -330,7 +330,7 @@
   "budget": "sedang",
   "diy": true,
   "safetyNotes": [
-   "Pastikan tepi kotak tidak tajam dan bagian tetingkap atau atap kotak tidak bisa menjepit jari. Gunakan di lantai dan dampingi anak agar pelukan kotak yang besar tidak diangkat ke atas kepala."
+   "Pastikan tepi kotak tidak tajam dan bagian tetingkap atau atap kotak tidak bisa menjepit jari. Gunakan di lantai dan dampingi anak agar kotak yang besar tidak diangkat ke atas kepala."
   ],
   "references": [
    {
@@ -343,7 +343,7 @@
  {
   "id": "cylinder-blocks",
   "name": "Cylinder blocks (blok silinder)",
-  "purpose": "Empat blok kayu yang masing-masing punya sepuluh silinder dengan tinggi atau lebar berbeda yang setiap satu cocok dengan satu cekungan di blok. Anak menangani silinder dengan pegangan tiga jari, pengalaman yang menghidupkan otot-otot yang nantinya dipakai ketika memegang pensil.",
+  "purpose": "Empat blok kayu yang masing-masing punya sepuluh silinder dengan tinggi atau lebar berbeda yang setiap satu cocok dengan satu cekungan di blok. Anak menangani silinder dengan pegangan tiga jari, pengalaman yang melatih otot-otot yang nantinya dipakai ketika memegang pensil.",
   "ageBands": [
    "2-3y",
    "3-4y",
@@ -365,7 +365,7 @@
  {
   "id": "pink-tower",
   "name": "Pink tower (menara kubus besar-kecil)",
-  "purpose": "Sepuluh kubus kayu berukuran bertingkat dari yang terkecil sampai yang terbesar. Anak membawa satu per satu kubus, menyusunnya dari besar di bawah hingga kecil di atas, mengamati perbedaan ukuran yang kian kecil, dan berlatih suka meluruskan sendiri bila menaranya miring.",
+  "purpose": "Sepuluh kubus kayu berukuran bertingkat dari yang terkecil sampai yang terbesar. Anak membawa satu per satu kubus, menyusunnya dari besar di bawah hingga kecil di atas, mengamati perbedaan ukuran yang kian kecil, dan belajar meluruskan sendiri bila menaranya miring.",
   "ageBands": [
    "2-3y",
    "3-4y"
@@ -408,7 +408,7 @@
  {
   "id": "knobbed-cylinders",
   "name": "Knobbed cylinders (silinder bergagang tanpa cekungan terpisah)",
-  "purpose": "Sepuluh silinder bergagang yang berderet dalam satu bingkai kayu dengan variasi uang tinggi atau lebar yang anak mencocokkan ke lubang bingkai itu sendiri. Berbeda dengan blok silinder yang cekungannya terpisah, versi ini memungkinkan anak lebih cepat mencoba dan mengulang.",
+  "purpose": "Sepuluh silinder bergagang yang berderet dalam satu bingkai kayu dengan variasi tinggi atau lebar yang anak mencocokkan ke lubang bingkai itu sendiri. Berbeda dengan blok silinder yang cekungannya terpisah, versi ini memungkinkan anak lebih cepat mencoba dan mengulang.",
   "ageBands": [
    "2-3y",
    "3-4y",
@@ -417,7 +417,7 @@
   "budget": "tinggi",
   "diy": true,
   "safetyNotes": [
-   "Gagangan silinder harus kuat dan tersambung rapat, tidak ada part yang mudah patah. Gunakan di meja atau lantai dan simpan setelah bermain agar anak yang lebih kecil tidak menemukan silindernya di lantai."
+   "Gagangan silinder harus kuat dan tersambung rapat, tidak ada bagian yang mudah patah. Gunakan di meja atau lantai dan simpan setelah bermain agar anak yang lebih kecil tidak menemukan silindernya di lantai."
   ],
   "references": [
    {
@@ -430,7 +430,7 @@
  {
   "id": "geometric-insets",
   "name": "Metal atau kayu inset geometris",
-  "purpose": "Kumpulan bingkai dengan bentuk-bentuk geometris seperti lingkaran, persegi, dan segitiga yang jangkar bentuknya bisa diangkat dan melacak dengan pensil. Anak melukis bentuk di kertas dengan jari lembut, latihan menyiapkan mata dan tangan menulis bentuk segi yang nanti dipakai untuk huruf dan angka.",
+  "purpose": "Kumpulan bingkai dengan bentuk-bentuk geometris seperti lingkaran, persegi, dan segitiga yang bentuknya bisa diangkat dan dijiplak dengan pensil. Anak melukis bentuk di kertas dengan jari lembut, latihan menyiapkan mata dan tangan menulis bentuk segi yang nanti dipakai untuk huruf dan angka.",
   "ageBands": [
    "3-4y",
    "4-5y"
@@ -451,7 +451,7 @@
  {
   "id": "color-matching-box",
   "name": "Kotak pencocokan warna (color tablets atau kecil berwarna)",
-  "purpose": "Sepasang atau lebih tabung, keping, atau karton warna yang sama. Anak dipasangkan dengan permainan mencocokkan warna yang tepat, latihan mengamati perbedaan rona yang layak berbanding dengan warna lain, dan melatih konsentrasi membandingkan dua benda yang nyaris serupa.",
+  "purpose": "Sepasang atau lebih tabung, keping, atau karton warna yang sama. Anak bermain mencocokkan warna yang tepat, latihan mengamati perbedaan rona dibandingkan warna lain, dan melatih konsentrasi membandingkan dua benda yang nyaris serupa.",
   "ageBands": [
    "2-3y",
    "3-4y"
@@ -467,12 +467,12 @@
     "url": "https://www.themontessorinotebook.com/montessori-activities/"
    }
   ],
-  "buyHint": "Cukup gunakan kertos warna, bobot benang warna, atau kaca mata kecil dengan tutup warna sama dari benda-benda rumah."
+  "buyHint": "Cukup gunakan kertas warna, gulungan benang warna, atau gelas kaca kecil dengan tutup berwarna sama dari benda-benda rumah."
  },
  {
   "id": "texture-fabric-basket",
   "name": "Keranjang kain berbagai tekstur",
-  "purpose": "Keranjang kecil berisi potongan kain yang berbeda rasa permukaannya, seperti halus berbulu, kasar, licin, dan kaku. Balita mengeluar-masukkan kain, mengrubanya, dan membiasakan diri dengan kata-kata lembut, kasar, licin yang kaya mendeskripsikan dunia raba tangannya.",
+  "purpose": "Keranjang kecil berisi potongan kain yang berbeda rasa permukaannya, seperti halus berbulu, kasar, licin, dan kaku. Balita mengeluar-masukkan kain, merabanya, dan membiasakan diri dengan kata-kata lembut, kasar, licin yang kaya mendeskripsikan dunia raba tangannya.",
   "ageBands": [
    "6-9m",
    "9-12m",
@@ -481,7 +481,7 @@
   "budget": "rendah",
   "diy": true,
   "safetyNotes": [
-   "Potong kain dengan ukuran yang tidak mudah terkeret ke mulut bayi (sekitar sekepalan tangan atau lebih besar). Hindari hiasan berumbai panjang, ikatan, dan kertas beruda, dan duduk bersama bayi selama bermain."
+   "Potong kain dengan ukuran yang tidak mudah masuk ke mulut bayi (sekitar sekepalan tangan atau lebih besar). Hindari hiasan berumbai panjang, ikatan, dan kertas berbulu, dan duduk bersama bayi selama bermain."
   ],
   "references": [
    {
@@ -489,12 +489,12 @@
     "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"
    }
   ],
-  "buyHint": "Gunakan potongan kain dari pake rusak bekas yang sudah dicuci bersih dan taruh di keranjang pendek yang mudah dijangkau anak."
+  "buyHint": "Gunakan potongan kain dari pakaian rusak bekas yang sudah dicuci bersih dan taruh di keranjang pendek yang mudah dijangkau anak."
  },
  {
   "id": "treasure-basket",
   "name": "Treasure basket (keranjang harta benda rumah tangga)",
-  "purpose": "Keranjang berisi benda-benda yang aman dari sekitar rumah dengan tekstur, bobot, dan bunyi yang berbeda, seperti sendok kayu, bola kayu besar, kertas foil, dan pens silikon. Bayi yang sudah duduk berlatih mengeksplore dunia nyata dengan perabaan yang penuh perhatian.",
+  "purpose": "Keranjang berisi benda-benda yang aman dari sekitar rumah dengan tekstur, bobot, dan bunyi yang berbeda, seperti sendok kayu, bola kayu besar, kertas foil, dan pensil silikon. Bayi yang sudah duduk berlatih mengeksplorasi dunia nyata dengan perabaan yang penuh perhatian.",
   "ageBands": [
    "6-9m",
    "9-12m"
@@ -510,12 +510,12 @@
     "url": "https://www.nhs.uk/conditions/baby/babys-development/play-ideas/"
    }
   ],
-  "buyHint": "Kumpulkan benda dari dapur dan ruang keluarga, tampilkan hanya lima sampai delapan benda sekaligus dan ganti berasal sesekali supaya tetap menarik."
+  "buyHint": "Kumpulkan benda dari dapur dan ruang keluarga, tampilkan hanya lima sampai delapan benda sekaligus dan ganti sesekali supaya tetap menarik."
  },
  {
   "id": "spindle-rod-box",
   "name": "Kotak bilah untuk angka (spindle box sederhana)",
-  "purpose": "Dua wadah berlabel angka 0-9 beserta 45 bilah kayu kecil yang ditanak anak ke wadah sesuai angkanya. Permainan ini membuat anak melihat dengan mata dan tangan bahwa angka 5 berarti pasti lima bilah, pengalaman yang membuat bilangan menjadi nyata bukan begitu saja suara yang dihafal.",
+  "purpose": "Dua wadah berlabel angka 0-9 beserta 45 bilah kayu kecil yang dimasukkan anak ke wadah sesuai angkanya. Permainan ini membuat anak melihat dengan mata dan tangan bahwa angka 5 berarti pasti lima bilah, pengalaman yang membuat bilangan menjadi nyata, bukan sekadar suara yang dihafal.",
   "ageBands": [
    "3-4y",
    "4-5y"
@@ -523,7 +523,7 @@
   "budget": "sedang",
   "diy": true,
   "safetyNotes": [
-   "Bilah kayu harus halus dan panjangnya cukup besar agar tidak bisa tertelan. Gunakan in meja atau lantai datar dan simpan setelah selesai supaya bilah-bilah tidak berkeliaran di ruang bermain."
+   "Bilah kayu harus halus dan panjangnya cukup besar agar tidak bisa tertelan. Gunakan di meja atau lantai datar dan simpan setelah selesai supaya bilah-bilah tidak berkeliaran di ruang bermain."
   ],
   "references": [
    {
@@ -552,12 +552,12 @@
     "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"
    }
   ],
-  "buyHint": "Bisa dibuat dari stik es krim yang dilem berpuluh atau dari bilah karton berwarna yang disusun berkelompok."
+  "buyHint": "Bisa dibuat dari stik es krim yang direkatkan atau dari bilah karton berwarna yang disusun berkelompok."
  },
  {
   "id": "threading-beads-large",
   "name": "Untai manik besar (threading beads)",
-  "purpose": "Manik-manik besar berlubang lebar dengan tali kokoh berujung kaku yang mudah dipegang anak. Menyelipkan tali ke dalam lubang manik adalah latihan mata-tangan cukup banyak yang bisa berhenti dan dilanjutkan sesuai kesabaran anak hari itu.",
+  "purpose": "Manik-manik besar berlubang lebar dengan tali kokoh berujung kaku yang mudah dipegang anak. Menyelipkan tali ke dalam lubang manik adalah latihan mata-tangan yang cukup menantang dan bisa berhenti dan dilanjutkan sesuai kesabaran anak hari itu.",
   "ageBands": [
    "2-3y",
    "3-4y",
@@ -587,7 +587,7 @@
   "budget": "rendah",
   "diy": true,
   "safetyNotes": [
-   "Tali harus pendek dan berujung tidak runcing. Mainkan di meja dekat orang dewasa dan simpan setelah selesai supaya tali tidak dipakai anak untuk meleaning pelintir benda lain."
+   "Tali harus pendek dan berujung tidak runcing. Mainkan di meja dekat orang dewasa dan simpan setelah selesai supaya tali tidak dipakai anak untuk melilitkan atau memelintir benda lain."
   ],
   "references": [
    {
@@ -600,7 +600,7 @@
  {
   "id": "transferring-tray",
   "name": "Tray memindahkan dengan sendok (transferring)",
-  "purpose": "Satu tray dengan dua mangkuk kecil dan satu sendok. Anak memindahkan bahan seperti bola karaton atau kacang-polong besar dari mangkuk satu ke yang lain dengan gerakan sendok yang hati-hati, latihan kecil setiap hari yang menyembunyikan persiapan tangan untuk makan sendiri.",
+  "purpose": "Satu tray dengan dua mangkuk kecil dan satu sendok. Anak memindahkan bahan seperti bola karton atau kacang polong besar dari mangkuk satu ke yang lain dengan gerakan sendok yang hati-hati, latihan kecil setiap hari yang menyembunyikan persiapan tangan untuk makan sendiri.",
   "ageBands": [
    "18-24m",
    "2-3y",
@@ -609,7 +609,7 @@
   "budget": "rendah",
   "diy": true,
   "safetyNotes": [
-   "Pilih bahan yang jelas lebih besar dari mulut anak supaya tidak berisiko tertelan. Duduk bersama anak agar bahan tidak dibawa ke mulut, dan hindari biji-bijian kecil atau marmer untuk anak-di-bawah tiga tahun."
+   "Pilih bahan yang jelas lebih besar dari mulut anak supaya tidak berisiko tertelan. Duduk bersama anak agar bahan tidak dibawa ke mulut, dan hindari biji-bijian kecil atau marmer untuk anak di bawah tiga tahun."
   ],
   "references": [
    {
@@ -643,7 +643,7 @@
  {
   "id": "dressing-frame-homemade",
   "name": "Papan latihan buka-tutup (dressing frame versi rumah)",
-  "purpose": "Papan kayu atau kardus dengan bahan bekas pakaian yang dilampirkan: velcro besar, kancing besar, atau zipper. Anak berlatih membuka dan menutup sendiri, keterampilan yang kelak membuat pagi berpakaian lebih mudah karena tangannya sudah banyak berlatih.",
+  "purpose": "Papan kayu atau kardus dengan bahan bekas pakaian yang dipasang: velcro besar, kancing besar, atau zipper. Anak berlatih membuka dan menutup sendiri, keterampilan yang kelak membuat pagi berpakaian lebih mudah karena tangannya sudah banyak berlatih.",
   "ageBands": [
    "2-3y",
    "3-4y",
@@ -652,7 +652,7 @@
   "budget": "rendah",
   "diy": true,
   "safetyNotes": [
-   "Hindari komponen kecil yang bisa lepas seperti kancing kecil atau zipper dengan ujung runcing. Jangan guna pita panjang yang bisa melilit jari, dan dampingi anak di awal sampai ia merasa yakin."
+   "Hindari komponen kecil yang bisa lepas seperti kancing kecil atau zipper dengan ujung runcing. Jangan gunakan pita panjang yang bisa melilit jari, dan dampingi anak di awal sampai ia merasa yakin."
   ],
   "references": [
    {
@@ -660,7 +660,7 @@
     "url": "https://zerotothree.org/resource/brains-building-blocks-ways-to-boost-your-babys-brain-development/"
    }
   ],
-  "buyHint": "Cukup pasang sepotong bekas kemeja atau sepatu velcro pada papan atau karung kecil, lalu sew sisi-sisinya supaya aman."
+  "buyHint": "Cukup pasang sepotong bekas kemeja atau sepatu velcro pada papan atau kardus kecil, lalu jahit sisi-sisinya supaya aman."
  },
  {
   "id": "folding-cloths",
@@ -681,12 +681,12 @@
     "url": "https://www.themontessorinotebook.com/montessori-activities/"
    }
   ],
-  "buyHint": "Cukup kain dari kaos bekas yang bersih dengan garis ditebarkan atau ditempel pita kasa sebagai petunjuk lipatan."
+  "buyHint": "Cukup kain dari kaos bekas yang bersih dengan garis yang digambar atau ditempel pita kasa sebagai petunjuk lipatan."
  },
  {
   "id": "crayon-tray",
   "name": "Tray krayon pendek dan kertas kecil",
-  "purpose": "Sekelompok krayon pendek dan selembar kertas di atas tray sebagai undangan menggambar bebas. Anak berlatih memegang alat gambar dengan posisi tangan yang sehat dan pelajari bahwa setiap alat punya tempatkannya kembali agar tray siap digunakan lain kali.",
+  "purpose": "Sekelompok krayon pendek dan selembar kertas di atas tray sebagai undangan menggambar bebas. Anak berlatih memegang alat gambar dengan posisi tangan yang sehat dan belajar bahwa setiap alat punya tempatnya dan dikembalikan agar tray siap digunakan lain kali.",
   "ageBands": [
    "18-24m",
    "2-3y",
@@ -696,7 +696,7 @@
   "budget": "rendah",
   "diy": false,
   "safetyNotes": [
-   "Pilih krayon dengan label non-toksik dan tanpa tutup kecil yang bisa tertelan. Anak yang masih kebiasaan menyelipkan benda ke mulut harus tetap didampingi, dan ganti krayon yang patah menjadi bagian kecil sebelum diberikan."
+   "Pilih krayon dengan label non-toksik dan tanpa tutup kecil yang bisa tertelan. Anak yang masih terbiasa menyelipkan benda ke mulut harus tetap didampingi, dan ganti krayon yang patah menjadi bagian kecil sebelum diberikan."
   ],
   "references": [
    {
